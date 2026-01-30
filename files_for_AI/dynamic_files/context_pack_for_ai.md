@@ -48,6 +48,14 @@ Context Pack for AI
 4. 选手在被淘汰后不再获得有效周得分（数据中的后续0分代表退出而非真实表演得分）。 
 5. 粉丝投票对同一选手在相邻周之间变化相对平滑（可用作正则/先验以提升可识别性）。
 
+## 3.3 数据清洗
+
+- **P0 Data Triage 已跑通（可复现）**：已将原始 wide 格式 `weekX_judgeY_score` 展开为 **season–week–celebrity** 周面板，并按口径生成 **BL-0 baseline** 与一致性 KPI 表，形成后续“fan vote 估计模型”的可插拔输入接口。
+- **P0 sanity-check（可写入报告，但仅代表 BL-0）**：Overall（eligible weeks = 264）下，BL-0 的 Hit-Rate 为 **Rank 0.364 / Percent 0.375**，两种规则预测淘汰对象不一致的 FlipRate 为 **0.038**；分 era 切片后仍可复现（见 `tab_baseline_consistency.tex` 与 `fig_fliprate_by_season.pdf`）。
+- **重要风险标注（必须在报告轻描淡写但闭环）**：题面明确 season 28 的规则切换赛季“不确定但合理假设为 28”，因此 Rank-era/Percent-era 切片需做 27/28/29 的 stress test；同时数据存在结构性 N/A 周与淘汰后 0 分编码，需要在 active set 口径中显式处理。
+
+(English, report-ready) We have constructed a reproducible season–week–contestant panel and a BL-0 baseline pipeline that produces elimination-consistency metrics and rule-divergence summaries. Under BL-0, the overall hit-rate is 0.364 (rank) and 0.375 (percent) across 264 eligible weeks, with a flip rate of 0.038, serving as a sanity check rather than a final model result. Since the exact season of the return to rank-based aggregation is not confirmed, we explicitly treat the Season-28 switch as an assumption and will stress-test adjacent cutoffs (27/28/29).:contentReference[oaicite:4]{index=4}
+
 
 # 4 关键指标 (KPI)
 
@@ -66,7 +74,8 @@ Context Pack for AI
 
 ## 5.1 Data snapshot (only what affects conclusions) (v0.1 for Data Triage)
 
-- Data version/tag: `2026_MCM_Problem_C_Data.csv` (official COMAP file; seasons 1–34)
+
+- **Source of truth**: COMAP dataset `2026_MCM_Problem_C_Data.csv` (seasons 1–34; weekly judge scores + results/placement + basic contestant attributes).
 
 **Key columns (official):**
 ```
@@ -95,6 +104,15 @@ P1 重要字段（有则显著提升）
   - Judge index `judgeY` is not a persistent identity across weeks/seasons; only within-week totals/ranks are used.
   - The exact season of the return to rank-based aggregation is not confirmed; we assume Season 28 and will stress-test adjacent cutoffs.
   - Fan votes are unobserved by design; current baselines use only reproducible proxies and keep a plug-in interface for vote estimates.
+
+
+- **Panel granularity**: season–week–celebrity (built by reshaping `weekX_judgeY_score` wide columns into long rows).
+- **P0 eligibility / active-set**: a contestant is active in (season, week) iff at least one judge score exists for that week and the week is not after the exit week; post-elimination scores recorded as zeros are treated as inactive encoding rather than new performances.:contentReference[oaicite:6]{index=6}
+- **Known caveats (must be reported)**:
+  1) The return-to-rank season is not known with certainty; we use Season-28 as an explicit assumption and will stress-test 27/28/29 cutoffs.:contentReference[oaicite:7]{index=7}
+  2) Judge4 may be N/A because some weeks have only 3 judges; we aggregate with `skipna` and do not track judge identity across weeks.:contentReference[oaicite:8]{index=8}
+  3) There exist weeks with no elimination and weeks with multiple eliminations; we handle them explicitly in KPI denominators to avoid inflated consistency claims.:contentReference[oaicite:9]{index=9}
+
 
 
 ## 5.2 最大的数据缺口/口径风险（≤3条）
@@ -132,7 +150,17 @@ We reshape the official weekly judge-score columns into a season–week–contes
 # 7 Notation Chart(记号说明)
 
 # 8 Work-in-progress outputs (pre-contest can be empty)
+
 - Expected figure set (L0/L1/L2): see `fig_manifest.md`(todo)
+
+| Artifact (engine path) | What it is | Used for (Claim/KPI/Slice) |
+|---|---|---|
+| `output/table/tab_baseline_consistency.tex` | L1 summary table of BL-0 elimination hit-rate and FlipRate across slices | KPI1 (Rank/Percent Hit-Rate), KPI3 (FlipRate); slices: Overall / Rank-era / Percent-era |
+| `output/table/intermediate_weekly_panel.csv` | season–week–celebrity weekly panel with active/exit labels and judge-based rank/percent features | Minimal input interface for fan vote estimation models; supports all downstream KPI recomputation |
+| `output/table/intermediate_baseline_preds.csv` | season–week baseline predictions + eligibility flags (true_k, true_elims, pred sets, match flags, flip) | Debug / audit trail; enables exact reproduction of tab_baseline_consistency |
+| `output/figure/fig_fliprate_by_season.pdf` | FlipRate by season under BL-0 | L1 evidence for “rule divergence varies by season” (descriptive KPI3) |
+
+
 
 # 9 风险与回滚
 
