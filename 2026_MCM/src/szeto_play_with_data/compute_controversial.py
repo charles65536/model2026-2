@@ -89,15 +89,46 @@ def compute_controversial(input_csv: str, output_csv: Optional[str] = None, top:
     # compute difference: avg_weekly_rank - final_rank
     df["rank_difference"] = df["avg_weekly_rank"] - df["final_rank_parsed"]
 
+    # include season_flag if present
+    if "season_flag" in df.columns:
+        df["season_flag_parsed"] = df["season_flag"].astype(str)
+    else:
+        df["season_flag_parsed"] = "unknown"
+
+    # compute avg aggregated score across weeks (agg_week_*)
+    agg_cols = [c for c in df.columns if re.match(r"agg_week_\d+$", c)]
+    if agg_cols:
+        df["avg_agg_score"] = df[agg_cols].apply(pd.to_numeric, errors="coerce").mean(axis=1, skipna=True)
+    else:
+        df["avg_agg_score"] = np.nan
+
+    # compute average week variance (var_week_*) if present
+    var_cols = [c for c in df.columns if re.match(r"var_week_\d+$", c)]
+    if var_cols:
+        # var_week_* are season-specific constants per column; but we keep average across available var columns
+        df["avg_week_variance"] = df[var_cols].apply(pd.to_numeric, errors="coerce").mean(axis=1, skipna=True)
+        # also add season_mean_week_variance if present
+        if "season_mean_week_variance" in df.columns:
+            df["season_mean_week_variance"] = pd.to_numeric(df["season_mean_week_variance"], errors="coerce")
+        else:
+            df["season_mean_week_variance"] = df[var_cols].apply(pd.to_numeric, errors="coerce").mean(axis=1, skipna=True)
+    else:
+        df["avg_week_variance"] = np.nan
+        df["season_mean_week_variance"] = np.nan
+
     # identify controversial figures
     df_candidates = df.dropna(subset=["rank_difference"]).copy()  # only rows with a numeric difference
     df_candidates["abs_diff"] = df_candidates["rank_difference"].abs()
+
+    # sort by season asc then controversy desc
+    df_candidates["season_sort"] = pd.to_numeric(df_candidates.get("season", pd.Series("")), errors="coerce").fillna(9999)
+    df_candidates = df_candidates.sort_values(by=["season_sort", "abs_diff"], ascending=[True, False])
 
     if threshold is not None:
         controversial = df_candidates[df_candidates["abs_diff"] >= float(threshold)].copy()
         controversial = controversial.sort_values(by="abs_diff", ascending=False)
     else:
-        controversial = df_candidates.sort_values(by="abs_diff", ascending=False).head(top)
+        controversial = df_candidates.head(top)
 
     # build summary list including episodes_participated
     summary: List[dict] = []
@@ -108,6 +139,10 @@ def compute_controversial(input_csv: str, output_csv: Optional[str] = None, top:
         final_rank = r.get("final_rank_parsed")
         diff = r.get("rank_difference")
         episodes_part = r.get("episodes_participated_parsed")
+        season_flag = r.get("season_flag_parsed")
+        avg_agg = r.get("avg_agg_score")
+        avg_var = r.get("avg_week_variance")
+        season_var_mean = r.get("season_mean_week_variance")
         reason = ""
         if pd.isna(avg_rank) or pd.isna(final_rank):
             reason = "missing data"
@@ -118,16 +153,24 @@ def compute_controversial(input_csv: str, output_csv: Optional[str] = None, top:
                 reason = "finished lower (worse) than their weekly average"
             else:
                 reason = "no difference"
-        summary.append({
+        rec = {
             "celebrity_name": name,
             "season": season,
             "episodes_participated": None if pd.isna(episodes_part) else int(episodes_part),
+            "season_flag": season_flag,
+            "avg_agg_score": None if pd.isna(avg_agg) else float(avg_agg),
+            "avg_week_variance": None if pd.isna(avg_var) else float(avg_var),
+            "season_mean_week_variance": None if pd.isna(season_var_mean) else float(season_var_mean),
             "avg_weekly_rank": None if pd.isna(avg_rank) else float(avg_rank),
             "final_rank": None if pd.isna(final_rank) else float(final_rank),
             "difference": None if pd.isna(diff) else float(diff),
             "abs_difference": None if pd.isna(diff) else float(abs(diff)),
             "note": reason,
-        })
+        }
+        # attach per-week variances for visibility if present
+        for vc in var_cols:
+            rec[vc] = None if pd.isna(r.get(vc)) else float(r.get(vc))
+        summary.append(rec)
 
     # optionally write output CSV with added columns
     if output_csv:
@@ -138,7 +181,17 @@ def compute_controversial(input_csv: str, output_csv: Optional[str] = None, top:
     for item in summary:
         ep = item.get("episodes_participated")
         ep_str = "unknown" if ep is None else str(ep)
-        print(f"- {item['celebrity_name']} (Season {item['season']} | episodes_participated={ep_str}): avg_rank={item['avg_weekly_rank']}, final={item['final_rank']}, diff={item['difference']:.2f} -> {item['note']}")
+        sf = item.get("season_flag")
+        avgagg = item.get("avg_agg_score")
+        avgv = item.get("avg_week_variance")
+        smeanvar = item.get("season_mean_week_variance")
+        print(f"- {item['celebrity_name']} (Season {item['season']} | episodes_participated={ep_str} | season_flag={sf}): avg_rank={item['avg_weekly_rank']}, final={item['final_rank']}, diff={item['difference']:.2f} -> {item['note']}")
+        print(f"    avg_agg_score={avgagg}, avg_week_variance={avgv}, season_mean_week_variance={smeanvar}")
+        # print per-week variances compactly
+        for vc in var_cols[:6]:
+            if vc in item:
+                print(f"    {vc}={item.get(vc)}", end='')
+        print()
 
     # also return the dataframe and summary for programmatic use
     return df, summary

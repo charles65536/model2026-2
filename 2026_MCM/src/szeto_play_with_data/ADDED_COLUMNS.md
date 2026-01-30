@@ -10,8 +10,8 @@ This file documents the new columns added by the preprocessing and analysis scri
 ## Columns added by `preprocessing.py`
 
 - `agg_week_{n}`
-  - Description: Aggregated judge score for week `n` (mean of the judges' numeric scores for that week).
-  - Notes: Values <= 0 are treated as missing (NaN) during aggregation to reflect absent scores in the dataset.
+  - Description: Aggregated judge score for week `n` (SUM of the judges' numeric scores for that week for that contestant).
+  - Notes: Values <= 0 are treated as missing (NaN) during aggregation to reflect absent scores in the dataset. If all judges for a contestant-week are missing, the aggregated value is NaN (not zero).
   - Example column names: `agg_week_1`, `agg_week_2`, ...
 
 - `rank_of_week_{n}`
@@ -22,6 +22,16 @@ This file documents the new columns added by the preprocessing and analysis scri
 - `episodes_participated`
   - Description: Integer count of weeks for which the contestant has a non-missing `agg_week_{n}` value.
   - Notes: This measures how many weeks the contestant actually received judge scores in the dataset (used as a proxy for how many episodes they participated in).
+
+- `var_week_{n}`
+  - Description: Variance of the aggregated judge scores for week `n`, computed within each season among contestants who have a non-missing `agg_week_{n}` value.
+  - Notes: Implemented as population variance (ddof=0). Each `var_week_{n}` column contains the season-specific variance for that week repeated for every row of the same season.
+
+- `season_mean_week_variance`
+  - Description: For each contestant row, the mean of that season's `var_week_{n}` across all weeks present (a seasonal average of per-week variances).
+
+- `season_flag`
+  - Description: Boolean column marking `True` if numeric `season <= 27`, `False` otherwise. Non-numeric seasons map to `False`.
 
 ## Columns added by `compute_controversial.py`
 
@@ -37,21 +47,29 @@ This file documents the new columns added by the preprocessing and analysis scri
   - Description: A parsed copy of `episodes_participated` from the input CSV (if present). Kept separate so the script can operate on raw inputs that already include an episodes column.
   - Notes: This value is integer or NaN.
 
+- `avg_agg_score`
+  - Description: The contestant's mean aggregated weekly score across the season (mean of `agg_week_{n}` for that row, ignoring NaNs).
+
+- `avg_week_variance`
+  - Description: The mean of per-week variances (`var_week_{n}`) for the contestant's season (same as `season_mean_week_variance` unless var_week columns are absent).
+
+- `season_mean_week_variance`
+  - Description: Same as in preprocessing — included in the controversial output and summary for convenience.
+
 - `rank_difference`
   - Description: Numeric difference `avg_weekly_rank - final_rank_parsed`.
   - Interpretation: Positive -> contestant's average weekly rank is worse (higher number) than their final placement (i.e., they finished higher than expected by judges). Negative -> contestant finished lower than their judges' weekly average suggested.
 
-## Output files (examples created during processing)
+## Behavior changes
 
-- `2026_MCM_Problem_C_Data_with_ranks.csv` — earlier run that contained aggregated weeks and rank columns.
-- `2026_MCM_Problem_C_Data_preprocessed.csv` — produced by `preprocessing.py`, includes `agg_week_*`, `rank_of_week_*`, and `episodes_participated`.
-- `2026_MCM_Problem_C_Data_with_controversial.csv` — produced by `compute_controversial.py`, includes `avg_weekly_rank`, `final_rank_parsed`, `episodes_participated_parsed`, and `rank_difference`.
+- `compute_controversial.py` now sorts candidates by `season` (ascending numeric) and then by controversy magnitude (absolute `rank_difference`, descending), before selecting top-N or thresholded items. That makes sure the output is grouped by season and highlights the largest controversies within each season.
 
 ## Important parsing & aggregation assumptions
 
-- Columns are detected by patterns like `week{n}_judge{m}_score` (case-insensitive). If your actual column names differ, update the regex in `_group_judge_columns_by_week` in `preprocessing.py`.
+- Week columns are detected by patterns like `week{n}_judge{m}_score` (case-insensitive). If your actual column names differ, update the regex in `_group_judge_columns_by_week` in `preprocessing.py`.
 - Scores <= 0 are treated as missing when aggregating judges because the dataset uses `0` to indicate "no score / absent" in many cells.
-- Final ranking is parsed by extracting the first integer found in `placement` or `results` strings.
-- Ranks are computed per-season; ensure the `season` column is present and correctly parsed.
+- If all judges for a given contestant-week are missing, `agg_week_{n}` is recorded as NaN and that week is not counted toward `episodes_participated`.
+- `var_week_{n}` is computed per season using only contestants who have an `agg_week_{n}` value for that season and week.
+- `season_mean_week_variance` is the mean of the season's `var_week_{n}` columns and is recorded per row for convenience.
 
-If you want this documentation extended (e.g., include exact week numbers found in your file, sample rows, or a CSV schema), tell me which format you prefer and I will add it.
+If you want this documentation expanded (e.g., include exact week numbers detected in your file, sample rows, or a machine-readable schema), tell me which format you prefer and I will add it.

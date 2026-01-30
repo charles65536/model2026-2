@@ -109,7 +109,14 @@ def add_rank_of_week(input_csv: str, output_csv: Optional[str] = None) -> pd.Dat
             out[rank_col] = np.nan
             continue
         stacked = pd.concat(judges_numeric, axis=1)
-        out[agg_col] = stacked.mean(axis=1, skipna=True)
+        # Aggregate by SUM of judges for the week (user requested sum instead of mean)
+        # skipna=True ensures that if some judges are missing, we sum the present scores
+        sums = stacked.sum(axis=1, skipna=True)
+        # If all judges are missing for this row/week, stacked.sum returns 0.0 by default;
+        # detect rows where no judge data is present and set aggregated value to NaN.
+        has_any_judge = stacked.notna().any(axis=1)
+        sums = sums.where(has_any_judge, np.nan)
+        out[agg_col] = sums
         out[rank_col] = np.nan
         for season in seasons:
             mask = out[season_col].astype(str) == str(season)
@@ -126,6 +133,36 @@ def add_rank_of_week(input_csv: str, output_csv: Optional[str] = None) -> pd.Dat
         out["episodes_participated"] = out[agg_cols].notna().sum(axis=1).astype(int)
     else:
         out["episodes_participated"] = 0
+
+    # Compute per-week variance across all participants for each agg_week column
+    # and add as var_week_{n} (same scalar repeated for each row)
+    var_cols: List[str] = []
+    # For each week, compute variance per-season among contestants who have an agg value for that week.
+    for agg_col in agg_cols:
+        var_col = agg_col.replace("agg_", "var_")
+        var_cols.append(var_col)
+        out[var_col] = np.nan
+        # compute season-specific variances and write them into the var_col for rows of that season
+        for season in seasons:
+            season_mask = out[season_col].astype(str) == str(season)
+            # among this season, consider only participants who have an aggregated score for the week
+            nums = pd.to_numeric(out.loc[season_mask, agg_col], errors="coerce")
+            nums = nums.dropna()
+            if nums.size > 1:
+                var_val = float(nums.var(ddof=0))
+            else:
+                var_val = float("nan")
+            out.loc[season_mask, var_col] = var_val
+
+    # Compute seasonal mean of the per-week variances (season_mean_week_variance)
+    if var_cols:
+        out["season_mean_week_variance"] = out[var_cols].apply(pd.to_numeric, errors="coerce").mean(axis=1, skipna=True)
+    else:
+        out["season_mean_week_variance"] = np.nan
+
+    # Add season_flag column: True if season <= 27, False otherwise
+    season_nums = pd.to_numeric(out[season_col], errors="coerce")
+    out["season_flag"] = (season_nums <= 27).fillna(False)
 
     if output_csv:
         out.to_csv(output_csv, index=False)
@@ -145,3 +182,4 @@ def main(argv: List[str]) -> None:
 
 if __name__ == "__main__":
     main(sys.argv[1:])
+
