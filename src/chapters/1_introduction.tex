@@ -1,0 +1,31 @@
+
+Elevator group control in high-rise and mixed-use buildings must maintain acceptable service quality under demand that is strongly
+time-varying and regime-dependent (e.g., morning up-peak, lunch inter-floor, and evening down-peak).%
+\cite{cibse2020guided,strakosch2010vertical,barney2015elevatortraffic}
+When mechanical capacity is fixed, a practical lever is \emph{software-level} supervision: in particular, proactively repositioning
+\emph{idle} cars can reduce response distance and stabilize waiting times during regime shifts.
+
+This report designs a deployable supervisory policy using \emph{only} the provided operational logs. We build a closed-loop pipeline that
+(i) forecasts short-horizon hall-call demand, (ii) identifies the current traffic mode from real-time features, and (iii) applies
+mode-aware dynamic parking for idle cars. The core parking decision is posed as a one-dimensional, demand-weighted facility-location problem
+(1D $k$-median), yielding parking floors that minimize expected response distance to near-future calls. The final deliverables include both
+a technical solution and a management memo describing implementation and operational safeguards.
+
+To balance performance with deployability, we implement two complementary routes:
+\textbf{Route A} (data-driven) combines learned forecasting and unsupervised mode discovery with optimization-based parking, targeting best
+service performance; \textbf{Route B} (interpretable) provides a transparent baseline and a conservative fallback policy for benchmarking and
+deployment risk control. Throughout, our policy is \emph{non-intrusive}: it acts only on idle cars and can sit on top of standard dispatch rules.
+In particular, Route B instantiates a rule-based mode classifier and a state-aware zone parking allocator (Lobby/Mid/Upper) that generates a minimal reposition plan under simple rate limits, making it suitable both as a benchmark and as a rollback controller.
+
+Our main contributions are:
+\begin{itemize}
+  \item A reproducible modeling pipeline that maps logs to a real-time traffic representation and a mode-aware parking decision.
+  \item A lightweight 1D $k$-median parking formulation that is interpretable, fast, and compatible with supervisory deployment.
+  \item A dual-route design (performance + fallback) and an evaluation protocol that emphasizes peak periods and regime transitions where
+        proactive parking matters most.
+\end{itemize}
+
+The remainder of the paper is organized as follows. Section~\ref{sec:problem} formalizes the tasks and assumptions.
+Section~\ref{sec:data} describes data processing and feature construction. Section~\ref{sec:modeling} presents the forecasting-mode
+identification-parking pipeline. Section~\ref{sec:results} reports performance and robustness analyses, and Section~\ref{sec:memo}
+summarizes deployment guidance in a management memo.

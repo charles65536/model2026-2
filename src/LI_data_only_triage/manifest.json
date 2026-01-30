@@ -1,0 +1,9 @@
+{
+  "entrypoint": "src/p0_triage_build_weekly_panel.py",
+  "outputs": {
+    "tab_baseline_consistency": "output/table/tab_baseline_consistency.tex",
+    "intermediate_weekly_panel": "output/table/intermediate_weekly_panel.csv",
+    "intermediate_baseline_preds": "output/table/intermediate_baseline_preds.csv",
+    "fig_fliprate_by_season": "output/figure/fig_fliprate_by_season.pdf"
+  }
+}

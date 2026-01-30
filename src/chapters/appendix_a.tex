@@ -1,0 +1,156 @@
+
+% -------------------------
+\subsection{Appendix A. Data Dictionary and Preprocessing Details}\label{app:data}
+This appendix documents the cleaned datasets used by our pipeline. Our preprocessing removes records lacking essential spatial metadata (e.g., missing origin floor) and aggregates event streams into 5-minute slices for consistent modeling and control.
+
+\begin{table}[htbp]
+\centering
+\caption{Cleaned datasets and key fields used by our pipeline. (All files are saved under \texttt{data\_cleaning/} in UTF-8.)}
+\label{tab:data-dict}
+\begin{tabular}{{p{4.8cm}p{4.3cm}p{7cm}}}
+\toprule
+File & Key fields & Notes \\
+\midrule
+\texttt{hall\_calls\_clean.csv} &
+\texttt{Time}, \texttt{Floor}, \texttt{Direction} &
+Hall-call events; multi-floor entries (e.g., ``4,5'') are expanded into multiple rows; invalid/missing floors removed. \\
+\texttt{car\_stops\_clean.csv} &
+\texttt{Time}, \texttt{Elevator ID}, \texttt{Floor}, \texttt{Direction} &
+Car stop events; stop reasons are retained when available (Hall/Car/Idle). \\
+\texttt{car\_departures\_clean.csv} &
+\texttt{Time}, \texttt{Elevator ID}, \texttt{Floor} &
+Car departure events (if provided in the raw data). \\
+\texttt{load\_changes\_clean.csv} &
+\texttt{Time}, \texttt{Car ID}, \texttt{Floor}, \texttt{Load In}, \texttt{Load Out} &
+Load in/out per stop; extreme values filtered to remove corrupt records. \\
+\texttt{maintenance\_mode\_clean.csv} &
+\texttt{Time}, \texttt{Elevator ID}, \texttt{Maintenance Mode} &
+Maintenance status per elevator over time; duplicates removed and records time-sorted. \\
+\texttt{car\_calls\_clean.csv} &
+\texttt{Time}, \texttt{Car ID}, \texttt{Floor}, \texttt{Action} &
+Car-call register/cancel events; other actions are filtered out. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent\textbf{Aggregation.} We align all streams on 5-minute slice boundaries using floor/ceil operations and compute rolling-window features (see Appendix~\ref{app:features}).
+
+% -------------------------
+\subsection{Appendix B. Feature Engineering (Task 1 \& Task 2)}\label{app:features}
+\noindent\textbf{Task 1 (Forecasting) features.} We predict next-slice hall-call volume using:
+(i) temporal encodings (hour-of-day, day-of-week, cyclic sin/cos),
+(ii) lagged demand ($y_{t}, y_{t-1}, \ldots$),
+(iii) rolling statistics (mean/variance over recent windows),
+and (iv) optional exogenous indicators (maintenance, load).
+
+\noindent\textbf{Task 2 (Mode discovery) features.} For each 5-minute slice, we compute a compact feature vector capturing:
+\begin{itemize}[leftmargin=*]
+\item \textit{Intensity:} call volume (and rolling-smoothed intensity).
+\item \textit{Directionality:} up/down ratio or imbalance.
+\item \textit{Dispersion:} entropy-like spread across floors (if used).
+\item \textit{Inter-floor tendency:} proxy for non-lobby traffic (if used).
+\item \textit{Service pressure:} stop counts, departure counts, load-change activity.
+\end{itemize}
+These features are standardized before clustering.
+
+% -------------------------
+\subsection{Appendix C. Mode Clustering Configuration and Naming}\label{app:clustering}
+We apply $k$-means clustering to standardized slice-level features and select $K=6$ as a practical trade-off between interpretability and stability. The resulting silhouette score is moderate, which is expected because real building traffic modes overlap in time and characteristics.
+
+\noindent\textbf{Labeling rule.} We map each cluster to an interpretable mode label (e.g., Up-Peak, Down-Peak, Idle/Low, Inter-floor, Mixed/Dispersed) using cluster-average thresholds on intensity and directionality (Table~\ref{tab:task2-cluster-profile} in the main text provides the supporting statistics).
+
+% -------------------------
+\subsection{Appendix D. Weighted 1D $k$-Median Solution Sketch}\label{app:kmedian}
+Given mode-conditioned floor weights $\{w_f(m)\}$, we place $k$ idle elevators to minimize expected repositioning distance:
+\[
+\min_{s_1,\dots,s_k}\sum_{f} w_f(m)\min_{j\in\{1,\dots,k\}}|f-s_j|.
+\]
+On a 1D ordered set of floors, the cost of serving an interval $[i, j]$ by one car is minimized at the (weighted) median floor. Let $\text{cost}(i,j)$ be that minimum interval cost.
+
+Define DP:
+\[
+dp[j][p] = \min_{i\le j}\left(dp[i-1][p-1]+\text{cost}(i,j)\right),
+\]
+with base case $dp[j][1]=\text{cost}(1,j)$. This yields $O(kF^2)$ time with $F$ floors, which is inexpensive for typical building sizes.
+
+% -------------------------
+\subsection{Appendix E. Simulation Assumptions and Parameters}\label{app:sim}
+Our simulator is designed primarily as a \textit{comparative evaluator} among strategies. Therefore, we report performance in simulation time units and emphasize relative improvements. Absolute values can be re-calibrated to a specific building by setting travel/door parameters.
+
+\begin{table}[htbp]
+\centering
+\caption{Simulation parameters used in our lightweight evaluator. We report results in simulation seconds and emphasize relative comparisons across strategies.}
+\label{tab:sim-params}
+\begin{tabular}{lll}
+\toprule
+Parameter & Value & Meaning \\
+\midrule
+$\Delta t$ & 5 min & parking decision interval \\
+$v$ & 1.5 s/floor & travel time per floor (simulation seconds) \\
+$\tau_d$ & 8.0 s & door open/close service time (simulation seconds) \\
+$T_{\text{long}}$ & 60 s & long-wait threshold (simulation seconds) \\
+$K$ & 6 & number of traffic modes (clusters) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent\textbf{Dispatch heuristic.} Hall calls are assigned by an estimated-time-to-serve rule (earliest arrival / least additional delay), subject to car capacity and maintenance availability (if modeled).
+
+% -------------------------
+\subsection{Appendix F. Additional Results (Stress Tests)}\label{app:extra}
+To assess robustness beyond the nominal setting, we perform three stress tests: (i) demand scaling ($\times 1.2$ and $\times 1.5$), (ii) a mode-shift shock that injects a short burst of concentrated lobby calls during an otherwise low-demand period, and (iii) a parameter perturbation that increases both per-floor travel time and door time by $20\%$. We report tail-aware metrics (AWT, P95, and long-wait rate) to quantify both typical performance and worst-case risk.
+
+% \input{project/outputs/tab/appendixF_stress.tex}
+
+\vspace{-0.25em}
+\noindent\textit{Interpretation: the dynamic policy should retain its advantage or degrade gracefully under stress; if rankings flip, this indicates sensitivity that must be addressed before deployment.}
+
+
+% -------------------------
+% -------------------------
+\subsection{Appendix G. Reproducibility Checklist}\label{app:repro}
+From the project root directory:
+\begin{enumerate}[leftmargin=*]
+\item Run \texttt{data\_processing\_code.ipynb} to generate cleaned CSV files under \texttt{data\_cleaning/}.
+\item Run \texttt{modeling\_code\_patched\_v2\_route\_a.ipynb} to export modeling artifacts under \texttt{outputs/data/}.
+\item Run \texttt{python scripts/make\_all\_materials.py} to generate \texttt{outputs/fig/} and \texttt{outputs/tab/}.
+\item Compile \texttt{problem\_b\_report.tex} (from the project root) to obtain the final PDF.
+\end{enumerate}
+We keep all figures and tables as generated artifacts to ensure the manuscript is fully reproducible.
+
+
+\subsection{Appendix H. Interpretable Baseline and Fallback Policy (Route B)}\label{app:routeb}
+Route B provides transparent benchmarks and a conservative fallback. All Route B tables in this appendix are generated from the same
+baseline evaluation pipeline and are included for comparison and deployment risk control, not as the primary results.
+\paragraph{Task 1: baseline + regime $AR(1)$ predictor.}
+We estimate a time-of-day baseline $\mu(\tau)$ from historical averages over 5-minute slices. Let $e_t=y_t-\mu(\tau(t))$ be the residual.
+We fit separate $AR(1)$ coefficients $\phi_{\text{wd}}$ and $\phi_{\text{we}}$ for weekday/weekend:
+\[
+e_{t+1}=\phi_{r(t)}e_t+\eta_t,\qquad r(t)\in\{\text{weekday},\text{weekend}\},
+\]
+yielding $\hat y_{t+1}=\mu(\tau(t+1))+\phi_{r(t)}(y_t-\mu(\tau(t)))$. This provides a fast, interpretable forecast that can be computed online. (Please refer to table~\ref{tab:task1-benchmark-routeb} \& \ref{tab:task1-benchmark-by-state})
+
+\paragraph{Task 2: rule-based traffic state classifier with robust thresholds.}
+The classifier uses slice-level features $(C_t,C_t^{\uparrow},C_t^{\downarrow},r_t,p_{1,t},H_t)$ and assigns states via threshold rules.
+Thresholds are set from empirical quantiles but made robust to sparsity: if a low quantile returns $\theta=0$ (common in night-time data),
+we instead use a nonzero-quantile or apply a minimum floor $\theta\leftarrow\max(\theta,\theta_{\min})$. We also use inclusive comparisons
+(e.g., $C_t\le\theta_1$) to ensure \emph{Idle/Night} states remain reachable.
+
+\paragraph{Task 3: zone-based parking allocation.}
+Floors are partitioned into $L=\{\text{Lobby},\text{Mid},\text{Upper}\}$. Given state $s_t$ and forecast $\hat y_{t+1}$, the policy chooses
+how many idle elevators to hold in each zone and triggers repositioning only when (i) a car is idle, (ii) the target-zone count is not met,
+and (iii) a rate-limit timer permits movement. This rule is simple to audit and provides a safe fallback when data-driven models are uncertain. Please refer to \ref{tab:task3-strategy} \& \ref{tab:task3-windows}
+% \input{project/outputs/latex_table_task3.tex}
+
+\subsection{Validation}
+% --- Task 1 Benchmark by State (Appendix) ---
+% \input{project/outputs/latex_table_task1_by_state.tex}
+
+\noindent
+Windowed evaluation isolates operationally critical conditions---peak periods, regime-transition windows,
+and high-load intervals. Compared to aggregated metrics, these windows more clearly reveal the benefit of proactive
+parking while also exposing its repositioning cost (empty travel), which is reported alongside waiting-time statistics.
+
+% % --- Task 3 Windows Table (Appendix) ---
+% \input{project/outputs/latex_table_task3_windows.tex}
+Under our parking-only evaluator (without full dispatch), last\_stop reduces to a no-reposition baseline and coincides with the lobby-initialized configuration.

@@ -1,0 +1,336 @@
+season,week,n_active,true_k,true_elims,pred_elim_percent,pred_elim_rank,match_percent,match_rank,flip,eligible,era
+1,1,6,0,,,,,,,False,rank-era
+2,1,10,1,Kenny Mayne,Master P,Master P,False,False,False,True,rank-era
+3,1,11,1,Tucker Carlson,Tucker Carlson,Tucker Carlson,True,True,False,True,percent-era
+4,1,11,0,,,,,,,False,percent-era
+5,1,12,1,Josie Maran,Josie Maran,Josie Maran,True,True,False,True,percent-era
+6,1,12,0,,,,,,,False,percent-era
+7,1,13,2,Ted McGinley;Jeffrey Ross,Jeffrey Ross;Cloris Leachman,Jeffrey Ross;Cloris Leachman,False,False,False,True,percent-era
+8,1,13,0,,,,,,,False,percent-era
+9,1,16,2,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,True,True,False,True,percent-era
+10,1,11,0,,,,,,,False,percent-era
+11,1,12,1,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,True,False,True,percent-era
+12,1,11,0,,,,,,,False,percent-era
+13,1,12,1,Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),True,True,False,True,percent-era
+14,1,12,0,,,,,,,False,percent-era
+15,1,13,1,Pamela Anderson,Pamela Anderson,Pamela Anderson,True,True,False,True,percent-era
+16,1,12,0,,,,,,,False,percent-era
+17,1,12,0,,,,,,,False,percent-era
+18,1,12,0,,,,,,,False,percent-era
+19,1,13,1,Lolo Jones,Betsey Johnson,Betsey Johnson,False,False,False,True,percent-era
+20,1,12,0,,,,,,,False,percent-era
+21,1,13,0,,,,,,,False,percent-era
+22,1,12,0,,,,,,,False,percent-era
+23,1,13,0,,,,,,,False,percent-era
+24,1,12,0,,,,,,,False,percent-era
+25,1,13,0,,,,,,,False,percent-era
+26,1,10,2,Jamie Anderson;Johnny Damon,Kareem Abdul-Jabbar;Johnny Damon,Kareem Abdul-Jabbar;Johnny Damon,False,False,False,True,percent-era
+27,1,13,1,Nikki Glaser,Joe Amabile,Joe Amabile,False,False,False,True,percent-era
+28,1,12,0,,,,,,,False,rank-era
+29,1,15,0,,,,,,,False,rank-era
+30,1,15,0,,,,,,,False,rank-era
+31,1,16,1,Jason Lewis,Vinny Guadagnino,Vinny Guadagnino,False,False,False,True,rank-era
+32,1,14,1,Matt Walsh,Matt Walsh,Tyson Beckford,True,False,True,True,rank-era
+33,1,13,0,,,,,,,False,rank-era
+34,1,14,0,,,,,,,False,rank-era
+1,2,6,1,Trista Sutter,Evander Holyfield,Evander Holyfield,False,False,False,True,rank-era
+2,2,9,1,Tatum O'Neal,Master P,Master P,False,False,False,True,rank-era
+3,2,10,1,Shanna Moakler,Jerry Springer,Jerry Springer,False,False,False,True,percent-era
+4,2,11,1,Paulina Porizkova,Clyde Drexler,Clyde Drexler,False,False,False,True,percent-era
+5,2,11,1,Albert Reed,Wayne Newton,Wayne Newton,False,False,False,True,percent-era
+6,2,12,2,Monica Seles;Penn Jillette,Monica Seles;Steve Guttenberg,Monica Seles;Steve Guttenberg,False,False,False,True,percent-era
+7,2,11,1,Kim Kardashian,Cloris Leachman,Cloris Leachman,False,False,False,True,percent-era
+8,2,13,1,Belinda Carlisle,Steve-O,Steve-O,False,False,False,True,percent-era
+9,2,14,1,Kathy Ireland,Kathy Ireland,Kathy Ireland,True,True,False,True,percent-era
+10,2,11,1,Shannen Doherty,Buzz Aldrin,Buzz Aldrin,False,False,False,True,percent-era
+11,2,11,1,Michael Bolton,Michael Bolton,Michael Bolton,True,True,False,True,percent-era
+12,2,11,1,Mike Catherwood,Sugar Ray Leonard,Wendy Williams,False,False,True,True,percent-era
+13,2,11,1,Elisabetta Canalis,Chaz Bono,Chaz Bono,False,False,False,True,percent-era
+14,2,12,1,Martina Navratilova,Martina Navratilova,Martina Navratilova,True,True,False,True,percent-era
+15,2,12,1,Joey Fatone,Bristol Palin,Bristol Palin,False,False,False,True,percent-era
+16,2,12,0,,,,,,,False,percent-era
+17,2,12,1,Keyshawn Johnson,Bill Nye,Bill Nye,False,False,False,True,percent-era
+18,2,12,2,Sean Avery;Diana Nyad,Diana Nyad;Billy Dee Williams,Diana Nyad;Billy Dee Williams,False,False,False,True,percent-era
+19,2,12,1,Tavis Smiley,Michael Waltrip,Michael Waltrip,False,False,False,True,percent-era
+20,2,12,1,Redfoo,Chris Soules,Chris Soules,False,False,False,True,percent-era
+21,2,13,2,Victor Espinoza;Chaka Khan,Chaka Khan;Gary Busey,Chaka Khan;Gary Busey,False,False,False,True,percent-era
+22,2,12,1,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,True,True,False,True,percent-era
+23,2,13,1,Jake T. Austin,Rick Perry,Rick Perry,False,False,False,True,percent-era
+24,2,12,1,Chris Kattan,Mr. T,Mr. T,False,False,False,True,percent-era
+25,2,13,2,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Derek Fisher,Barbara Corcoran;Nick Lachey,False,False,True,True,percent-era
+26,2,8,2,Kareem Abdul-Jabbar;Arike Ogunbowale,Kareem Abdul-Jabbar;Jennie Finch Daigle,Kareem Abdul-Jabbar;Jennie Finch Daigle,False,False,False,True,percent-era
+27,2,12,1,Danelle Umstead,Joe Amabile,Joe Amabile,False,False,False,True,percent-era
+28,2,12,1,Mary Wilson,Lamar Odom,Lamar Odom,False,False,False,True,rank-era
+29,2,15,1,Charles Oakley,Skai Jackson,Skai Jackson,False,False,False,True,rank-era
+30,2,15,1,Martin Kove,Martin Kove,Martin Kove,True,True,False,True,rank-era
+31,2,15,1,Teresa Giudice,Cheryl Ladd,Cheryl Ladd,False,False,False,True,rank-era
+32,2,13,1,Jamie Lynn Spears,Mauricio Umansky,Mauricio Umansky,False,False,False,True,rank-era
+33,2,13,2,Tori Spelling;Anna Delvey,Eric Roberts;Reginald VelJohnson,Eric Roberts;Reginald VelJohnson,False,False,False,True,rank-era
+34,2,14,2,Corey Feldman;Baron Davis,Corey Feldman;Andy Richter,Corey Feldman;Andy Richter,False,False,False,True,rank-era
+1,3,5,1,Evander Holyfield,Evander Holyfield,Evander Holyfield,True,True,False,True,rank-era
+2,3,8,1,Giselle Fernandez,Master P,Master P,False,False,False,True,rank-era
+3,3,9,1,Harry Hamlin,Emmitt Smith,Emmitt Smith,False,False,False,True,percent-era
+4,3,10,1,Shandi Finnessey,Clyde Drexler,Clyde Drexler,False,False,False,True,percent-era
+5,3,10,1,Wayne Newton,Wayne Newton,Wayne Newton,True,True,False,True,percent-era
+6,3,10,1,Steve Guttenberg,Marissa Jaret Winokur,Marissa Jaret Winokur,False,False,False,True,percent-era
+7,3,9,0,,,,,,,False,percent-era
+8,3,12,1,Denise Richards,Steve Wozniak,Steve Wozniak,False,False,False,True,percent-era
+9,3,13,1,Debi Mazar,Michael Irvin,Michael Irvin,False,False,False,True,percent-era
+10,3,10,1,Buzz Aldrin,Buzz Aldrin,Buzz Aldrin,True,True,False,True,percent-era
+11,3,10,1,Margaret Cho,Margaret Cho,Margaret Cho,True,True,False,True,percent-era
+12,3,10,1,Wendy Williams,Wendy Williams,Wendy Williams,True,True,False,True,percent-era
+13,3,10,1,Kristin Cavallari,Chaz Bono,Chaz Bono,False,False,False,True,percent-era
+14,3,11,1,Jack Wagner,Jack Wagner,Jack Wagner,True,True,False,True,percent-era
+15,3,11,2,Helio Castroneves;Drew Lachey,Bristol Palin;Kirstie Alley,Bristol Palin;Drew Lachey,False,False,True,True,percent-era
+16,3,11,1,Wynonna Judd,Wynonna Judd,Wynonna Judd,True,True,False,True,percent-era
+17,3,11,1,Bill Nye,Valerie Harper,Valerie Harper,False,False,False,True,percent-era
+18,3,9,0,,,,,,,False,percent-era
+19,3,11,1,Randy Couture,Randy Couture,Randy Couture,True,True,False,True,percent-era
+20,3,11,1,Charlotte McKinney,Charlotte McKinney,Patti LaBelle,True,False,True,True,percent-era
+21,3,10,0,,,,,,,False,percent-era
+22,3,11,1,Mischa Barton,Mischa Barton,Mischa Barton,True,True,False,True,percent-era
+23,3,12,1,Rick Perry,Rick Perry,Vanilla Ice,True,False,True,True,percent-era
+24,3,11,1,Charo,Charo,Charo,True,True,False,True,percent-era
+25,3,11,0,,,,,,,False,percent-era
+26,3,6,3,Jennie Finch Daigle;Chris Mazdzer;Mirai Nagasu,Jennie Finch Daigle;Chris Mazdzer;Mirai Nagasu,Jennie Finch Daigle;Chris Mazdzer;Mirai Nagasu,True,True,False,True,percent-era
+27,3,11,1,Nancy McKeon,Joe Amabile,Joe Amabile,False,False,False,True,percent-era
+28,3,10,0,,,,,,,False,rank-era
+29,3,14,1,Carole Baskin,Carole Baskin,Carole Baskin,True,True,False,True,rank-era
+30,3,14,1,Christine Chiu,Cody Rigsby,Cody Rigsby,False,False,False,True,rank-era
+31,3,14,1,Cheryl Ladd,Vinny Guadagnino,Vinny Guadagnino,False,False,False,True,rank-era
+32,3,12,1,Tyson Beckford,Tyson Beckford,Tyson Beckford,True,True,False,True,rank-era
+33,3,11,2,Eric Roberts;Reginald VelJohnson,Reginald VelJohnson;Eric Roberts,Reginald VelJohnson;Eric Roberts,True,True,False,True,rank-era
+34,3,12,1,Lauren Jauregui,Andy Richter,Andy Richter,False,False,False,True,rank-era
+1,4,4,1,Rachel Hunter,Joey McIntyre,Joey McIntyre,False,False,False,True,rank-era
+2,4,7,1,Master P,Master P,Master P,True,True,False,True,rank-era
+3,4,8,1,Vivica A. Fox,Sara Evans,Sara Evans,False,False,False,True,percent-era
+4,4,9,1,Leeza Gibbons,Clyde Drexler,Clyde Drexler,False,False,False,True,percent-era
+5,4,9,1,Floyd Mayweather Jr. ,Mark Cuban,Mark Cuban,False,False,False,True,percent-era
+6,4,9,1,Adam Carolla,Adam Carolla,Adam Carolla,True,True,False,True,percent-era
+7,4,9,1,Rocco DiSpirito,Rocco DiSpirito,Rocco DiSpirito,True,True,False,True,percent-era
+8,4,11,2,Steve Wozniak;Holly Madison,Steve Wozniak;Steve-O,Steve Wozniak;Steve-O,False,False,False,True,percent-era
+9,4,11,1,Chuck Liddell,Louie Vito,Louie Vito,False,False,False,True,percent-era
+10,4,9,1,Aiden Turner,Kate Gosselin,Kate Gosselin,False,False,False,True,percent-era
+11,4,9,1,The Situation,The Situation,The Situation,True,True,False,True,percent-era
+12,4,9,1,Sugar Ray Leonard,Kendra Wilkinson,Kendra Wilkinson,False,False,False,True,percent-era
+13,4,9,1,Chynna Phillips,Carson Kressley,Carson Kressley,False,False,False,True,percent-era
+14,4,10,1,Sherri Sheperd,Gladys Knight,Gladys Knight,False,False,False,True,percent-era
+15,4,9,1,Bristol Palin,Kirstie Alley,Kirstie Alley,False,False,False,True,percent-era
+16,4,10,1,Lisa Vanderpump,Victor Ortiz,Lisa Vanderpump,False,True,True,True,percent-era
+17,4,10,1,Valerie Harper,Valerie Harper,Valerie Harper,True,True,False,True,percent-era
+18,4,9,0,,,,,,,False,percent-era
+19,4,10,1,Betsey Johnson,Jonathan Bennett,Jonathan Bennett,False,False,False,True,percent-era
+20,4,10,1,Michael Sam,Chris Soules,Chris Soules,False,False,False,True,percent-era
+21,4,10,1,Gary Busey,Gary Busey,Gary Busey,True,True,False,True,percent-era
+22,4,10,1,Marla Maples,Doug Flutie,Doug Flutie,False,False,False,True,percent-era
+23,4,11,2,Babyface;Vanilla Ice,Babyface;Marilu Henner,Babyface;Marilu Henner,False,False,False,True,percent-era
+24,4,10,1,Mr. T,Mr. T,Mr. T,True,True,False,True,percent-era
+25,4,11,1,Derek Fisher,Nick Lachey,Nick Lachey,False,False,False,True,percent-era
+26,4,3,0,,,,,,,False,percent-era
+27,4,10,1,Tinashe,Joe Amabile,Joe Amabile,False,False,False,True,percent-era
+28,4,10,1,Lamar Odom,Lamar Odom,Lamar Odom,True,True,False,True,rank-era
+29,4,13,1,Anne Heche,Anne Heche,Anne Heche,True,True,False,True,rank-era
+30,4,13,2,Brian Austin Green;Matt James,Brian Austin Green;Matt James,Brian Austin Green;Matt James,True,True,False,True,rank-era
+31,4,13,1,Sam Champion,Sam Champion,Sam Champion,True,True,False,True,rank-era
+32,4,11,1,Adrian Peterson,Barry Williams,Barry Williams,False,False,False,True,rank-era
+33,4,9,1,Brooks Nader,Dwight Howard ,Dwight Howard ,False,False,False,True,rank-era
+34,4,11,1,Hilaria Baldwin,Andy Richter,Andy Richter,False,False,False,True,rank-era
+1,5,3,0,,,,,,,False,rank-era
+2,5,6,1,Tia Carrere,Tia Carrere,Tia Carrere,True,True,False,True,rank-era
+3,5,7,1,Willa Ford,Sara Evans,Jerry Springer,False,False,True,True,percent-era
+4,5,8,1,Clyde Drexler,Clyde Drexler,Clyde Drexler,True,True,False,True,percent-era
+5,5,8,1,Mark Cuban,Marie Osmond,Marie Osmond,False,False,False,True,percent-era
+6,5,8,1,Priscilla Presley,Priscilla Presley,Priscilla Presley,True,True,False,True,percent-era
+7,5,8,1,Toni Braxton,Cloris Leachman,Cloris Leachman,False,False,False,True,percent-era
+8,5,9,1,David Alan Grier,Steve-O,Steve-O,False,False,False,True,percent-era
+9,5,10,1,Natalie Coughlin,Michael Irvin,Michael Irvin,False,False,False,True,percent-era
+10,5,8,1,Kate Gosselin,Kate Gosselin,Kate Gosselin,True,True,False,True,percent-era
+11,5,8,1,Florence Henderson,Bristol Palin,Bristol Palin,False,False,False,True,percent-era
+12,5,8,1,Petra Nemcova,Ralph Macchio,Ralph Macchio,False,False,False,True,percent-era
+13,5,8,1,Carson Kressley,Carson Kressley,Carson Kressley,True,True,False,True,percent-era
+14,5,9,1,Gavin DeGraw,Gavin DeGraw,Gavin DeGraw,True,True,False,True,percent-era
+15,5,8,0,,,,,,,False,percent-era
+16,5,9,1,D. L. Hughley,D. L. Hughley,Andy Dick,True,False,True,True,percent-era
+17,5,9,1,Christina Milian,Leah Remini,Leah Remini,False,False,False,True,percent-era
+18,5,9,1,Cody Simpson,Drew Carey,Drew Carey,False,False,False,True,percent-era
+19,5,9,0,,,,,,,False,percent-era
+20,5,9,1,Suzanne Somers,Robert Herjavec,Robert Herjavec,False,False,False,True,percent-era
+21,5,9,0,,,,,,,False,percent-era
+22,5,9,0,,,,,,,False,percent-era
+23,5,9,0,,,,,,,False,percent-era
+24,5,9,1,Erika Jayne,David Ross,David Ross,False,False,False,True,percent-era
+25,5,10,1,Sasha Pieterse,Nick Lachey,Nick Lachey,False,False,False,True,percent-era
+27,5,9,0,,,,,,,False,percent-era
+28,5,9,0,,,,,,,False,rank-era
+29,5,12,1,Jesse Metcalfe,Jesse Metcalfe,Jesse Metcalfe,True,True,False,True,rank-era
+30,5,11,1,Melanie C,Iman Shumpert,Iman Shumpert,False,False,False,True,rank-era
+31,5,12,1,Joseph Baena,Vinny Guadagnino,Vinny Guadagnino,False,False,False,True,rank-era
+32,5,10,1,Mira Sorvino,Harry Jowsey,Harry Jowsey,False,False,False,True,rank-era
+33,5,8,1,Phaedra Parks,Dwight Howard ,Dwight Howard ,False,False,False,True,rank-era
+34,5,10,0,,,,,,,False,rank-era
+1,6,2,0,,,,,,,False,rank-era
+2,6,5,1,George Hamilton,George Hamilton,George Hamilton,True,True,False,True,rank-era
+3,6,5,0,,,,,,,False,percent-era
+4,6,7,1,Heather Mills,John Ratzenberger,John Ratzenberger,False,False,False,True,percent-era
+5,6,7,1,Sabrina Bryan,Jane Seymour,Jane Seymour,False,False,False,True,percent-era
+6,6,7,1,Marlee Matlin,Marlee Matlin,Marlee Matlin,True,True,False,True,percent-era
+7,6,7,1,Cloris Leachman,Cloris Leachman,Cloris Leachman,True,True,False,True,percent-era
+8,6,8,1,Steve-O,Steve-O,Steve-O,True,True,False,True,percent-era
+9,6,9,2,Melissa Joan Hart;Louie Vito,Michael Irvin;Melissa Joan Hart,Michael Irvin;Melissa Joan Hart,False,False,False,True,percent-era
+10,6,7,1,Jake Pavelka,Jake Pavelka,Jake Pavelka,True,True,False,True,percent-era
+11,6,7,1,Audrina Patridge,Kurt Warner,Kurt Warner,False,False,False,True,percent-era
+12,6,7,1,Chris Jericho,Chris Jericho,Chris Jericho,True,True,False,True,percent-era
+13,6,7,1,Chaz Bono,Chaz Bono,Chaz Bono,True,True,False,True,percent-era
+14,6,8,1,Gladys Knight,Gladys Knight,Gladys Knight,True,True,False,True,percent-era
+15,6,8,1,Sabrina Bryan,Emmitt Smith,Emmitt Smith,False,False,False,True,percent-era
+16,6,8,1,Victor Ortiz,Victor Ortiz,Victor Ortiz,True,True,False,True,percent-era
+17,6,8,0,,,,,,,False,percent-era
+18,6,8,1,Drew Carey,Candace Cameron Bure,Candace Cameron Bure,False,False,False,True,percent-era
+19,6,9,1,Jonathan Bennett,Antonio Sabato Jr.,Antonio Sabato Jr.,False,False,False,True,percent-era
+20,6,8,1,Patti LaBelle,Robert Herjavec,Robert Herjavec,False,False,False,True,percent-era
+21,6,9,1,Paula Deen,Paula Deen,Paula Deen,True,True,False,True,percent-era
+22,6,9,1,Doug Flutie,Doug Flutie,Doug Flutie,True,True,False,True,percent-era
+23,6,9,1,Amber Rose,Amber Rose,Amber Rose,True,True,False,True,percent-era
+24,6,8,1,Heather Morris,Nick Viall,Nick Viall,False,False,False,True,percent-era
+25,6,9,1,Nick Lachey,Nick Lachey,Nick Lachey,True,True,False,True,percent-era
+27,6,9,1,Mary Lou Retton,John Schneider,John Schneider,False,False,False,True,percent-era
+28,6,9,1,Sailor Brinkley-Cook,Sean Spicer,Sean Spicer,False,False,False,True,rank-era
+29,6,11,1,Veron Davis,Skai Jackson,Skai Jackson,False,False,False,True,rank-era
+30,6,10,1,Kenya Moore,Kenya Moore,Kenya Moore,True,True,False,True,rank-era
+31,6,10,1,Jessie James Decker,Vinny Guadagnino,Vinny Guadagnino,False,False,False,True,rank-era
+32,6,9,1,Mauricio Umansky,Harry Jowsey,Harry Jowsey,False,False,False,True,rank-era
+33,6,7,1,Jenn Tran,Ilona Maher,Ilona Maher,False,False,False,True,rank-era
+34,6,10,1,Scott Hoying,Andy Richter,Andy Richter,False,False,False,True,rank-era
+2,7,4,1,Lisa Rinna,Jerry Rice,Jerry Rice,False,False,False,True,rank-era
+3,7,5,1,Jerry Springer,Jerry Springer,Jerry Springer,True,True,False,True,percent-era
+4,7,6,1,John Ratzenberger,Billy Ray Cyrus,Billy Ray Cyrus,False,False,False,True,percent-era
+5,7,6,1,Jane Seymour,Jane Seymour,Jane Seymour,True,True,False,True,percent-era
+6,7,6,1,Shannon Elizabeth,Cristian de la Fuente,Cristian de la Fuente,False,False,False,True,percent-era
+7,7,6,1,Susan Lucci,Warren Sapp,Warren Sapp,False,False,False,True,percent-era
+8,7,7,1,Lawrence Taylor,Lawrence Taylor,Lawrence Taylor,True,True,False,True,percent-era
+9,7,7,2,Mark Dacascos;Michael Irvin,Mark Dacascos;Michael Irvin,Mark Dacascos;Michael Irvin,True,True,False,True,percent-era
+10,7,6,1,Pamela Anderson,Niecy Nash,Niecy Nash,False,False,False,True,percent-era
+11,7,6,1,Rick Fox,Bristol Palin,Bristol Palin,False,False,False,True,percent-era
+12,7,6,1,Kendra Wilkinson,Kirstie Alley,Romeo,False,False,True,True,percent-era
+13,7,6,1,David Arquette,Nancy Grace,Nancy Grace,False,False,False,True,percent-era
+14,7,7,1,Jaleel White,Melissa Gilbert,Melissa Gilbert,False,False,False,True,percent-era
+15,7,7,0,,,,,,,False,percent-era
+16,7,7,1,Andy Dick,Andy Dick,Andy Dick,True,True,False,True,percent-era
+17,7,8,1,"Nicole ""Snooki"" Polizzi",Bill Engvall,Bill Engvall,False,False,False,True,percent-era
+18,7,7,1,NeNe Leakes,NeNe Leakes,NeNe Leakes,True,True,False,True,percent-era
+19,7,8,1,Antonio Sabato Jr.,Michael Waltrip,Michael Waltrip,False,False,False,True,percent-era
+20,7,7,1,Willow Shields,Robert Herjavec,Robert Herjavec,False,False,False,True,percent-era
+21,7,8,1,Hayes Grier,Alek Skarlatos,Alek Skarlatos,False,False,False,True,percent-era
+22,7,8,2,Kim Fields;Von Miller,Jodie Sweetin;Kim Fields,Jodie Sweetin;Kim Fields,False,False,False,True,percent-era
+23,7,8,1,Maureen McCormick,Marilu Henner,Marilu Henner,False,False,False,True,percent-era
+24,7,7,2,Nancy Kerrigan;Nick Viall,Bonner Bolton;David Ross,Bonner Bolton;David Ross,False,False,False,True,percent-era
+25,7,8,2,Nikki Bella;Vanessa Lachey,Nikki Bella;Terrell Owens,Nikki Bella;Terrell Owens,False,False,False,True,percent-era
+27,7,8,2,John Schneider;DeMarcus Ware,Joe Amabile;DeMarcus Ware,Joe Amabile;DeMarcus Ware,False,False,False,True,percent-era
+28,7,8,1,Karamo Brown,Sean Spicer,Sean Spicer,False,False,False,True,rank-era
+29,7,10,1,Monica Aldama,Monica Aldama,Monica Aldama,True,True,False,True,rank-era
+30,7,9,1,"Mike ""The Miz"" Mizanin","Mike ""The Miz"" Mizanin","Mike ""The Miz"" Mizanin",True,True,False,True,rank-era
+31,7,9,1,Jordin Sparks,Vinny Guadagnino,Vinny Guadagnino,False,False,False,True,rank-era
+32,7,8,1,Lele Pons,Harry Jowsey,Harry Jowsey,False,False,False,True,rank-era
+33,7,6,1,Dwight Howard ,Dwight Howard ,Dwight Howard ,True,True,False,True,rank-era
+34,7,9,1,Jen Affleck,Andy Richter,Andy Richter,False,False,False,True,rank-era
+2,8,3,0,,,,,,,False,rank-era
+3,8,4,1,Monique Coleman,Monique Coleman,Monique Coleman,True,True,False,True,percent-era
+4,8,5,1,Billy Ray Cyrus,Billy Ray Cyrus,Billy Ray Cyrus,True,True,False,True,percent-era
+5,8,5,1,Cameron Mathison,Marie Osmond,Marie Osmond,False,False,False,True,percent-era
+6,8,5,1,Mario,Marissa Jaret Winokur,Marissa Jaret Winokur,False,False,False,True,percent-era
+7,8,5,1,Maurice Greene,Cody Linley,Cody Linley,False,False,False,True,percent-era
+8,8,6,1,Chuck Wicks,Melissa Rycroft,Melissa Rycroft,False,False,False,True,percent-era
+9,8,5,1,Aaron Carter,Aaron Carter,Aaron Carter,True,True,False,True,percent-era
+10,8,5,1,Niecy Nash,Niecy Nash,Niecy Nash,True,True,False,True,percent-era
+11,8,5,1,Kurt Warner,Bristol Palin,Bristol Palin,False,False,False,True,percent-era
+12,8,5,1,Romeo,Ralph Macchio,Ralph Macchio,False,False,False,True,percent-era
+13,8,5,1,Nancy Grace,Nancy Grace,Nancy Grace,True,True,False,True,percent-era
+14,8,6,2,Roshon Fegan;Melissa Gilbert,Melissa Gilbert;Maria Menounos,Melissa Gilbert;Maria Menounos,False,False,False,True,percent-era
+15,8,7,2,Gilles Marini;Kirstie Alley,Kirstie Alley;Shawn Johnson,Kirstie Alley;Shawn Johnson,False,False,False,True,percent-era
+16,8,6,1,Sean Lowe,Sean Lowe,Sean Lowe,True,True,False,True,percent-era
+17,8,7,1,Brant Daugherty,Bill Engvall,Bill Engvall,False,False,False,True,percent-era
+18,8,6,1,Danica McKellar,James Maslow,James Maslow,False,False,False,True,percent-era
+19,8,7,1,Michael Waltrip,Michael Waltrip,Michael Waltrip,True,True,False,True,percent-era
+20,8,6,2,Robert Herjavec;Chris Soules,Robert Herjavec;Noah Galloway,Robert Herjavec;Noah Galloway,False,False,False,True,percent-era
+21,8,7,1,Andy Grammer,Andy Grammer,Andy Grammer,True,True,False,True,percent-era
+22,8,6,1,Jodie Sweetin,Wanya Morris,Wanya Morris,False,False,False,True,percent-era
+23,8,7,1,Ryan Lochte,Marilu Henner,Marilu Henner,False,False,False,True,percent-era
+24,8,5,1,Bonner Bolton,Bonner Bolton,Bonner Bolton,True,True,False,True,percent-era
+25,8,6,1,Terrell Owens,Drew Scott,Drew Scott,False,False,False,True,percent-era
+27,8,6,2,Juan Pablo Di Pace;Joe Amabile,Bobby Bones;Joe Amabile,Bobby Bones;Joe Amabile,False,False,False,True,percent-era
+28,8,7,1,Kate Flannery,Sean Spicer,Sean Spicer,False,False,False,True,rank-era
+29,8,8,1,Chrishell Stause,Nelly,Nelly,False,False,False,True,rank-era
+30,8,8,2,Jimmie Allen;Olivia Jade,Jimmie Allen;Iman Shumpert,Jimmie Allen;Iman Shumpert,False,False,False,True,rank-era
+31,8,8,2,Heidi D'Amelio;Vinny Guadagnino,Vinny Guadagnino;Heidi D'Amelio,Vinny Guadagnino;Heidi D'Amelio,True,True,False,True,rank-era
+32,8,7,1,Barry Williams,Harry Jowsey,Harry Jowsey,False,False,False,True,rank-era
+33,8,5,0,,,,,,,False,rank-era
+34,8,8,1,Danielle Fishel,Andy Richter,Andy Richter,False,False,False,True,rank-era
+3,9,3,0,,,,,,,False,percent-era
+4,9,4,1,Ian Ziering,Ian Ziering,Ian Ziering,True,True,False,True,percent-era
+5,9,4,1,Jennie Garth,Marie Osmond,Marie Osmond,False,False,False,True,percent-era
+6,9,4,1,Marissa Jaret Winokur,Marissa Jaret Winokur,Marissa Jaret Winokur,True,True,False,True,percent-era
+7,9,4,1,Cody Linley,Cody Linley,Cody Linley,True,True,False,True,percent-era
+8,9,5,1,Lil' Kim,Ty Murray,Ty Murray,False,False,False,True,percent-era
+9,9,4,1,Joanna Krupa,Donny Osmond,Donny Osmond,False,False,False,True,percent-era
+10,9,4,1,Chad Ochocinco,Chad Ochocinco,Chad Ochocinco,True,True,False,True,percent-era
+11,9,4,1,Brandy,Bristol Palin,Bristol Palin,False,False,False,True,percent-era
+12,9,4,1,Ralph Macchio,Ralph Macchio,Ralph Macchio,True,True,False,True,percent-era
+13,9,4,1,Hope Solo,Hope Solo,Hope Solo,True,True,False,True,percent-era
+14,9,4,1,Maria Menounos,Katherine Jenkins,Katherine Jenkins,False,False,False,True,percent-era
+15,9,5,2,Apolo Anton Ohno;Emmitt Smith,Emmitt Smith;Kelly Monaco,Emmitt Smith;Kelly Monaco,False,False,False,True,percent-era
+16,9,5,1,Ingo Rademacher,Ingo Rademacher,Ingo Rademacher,True,True,False,True,percent-era
+17,9,6,1,Elizabeth Berkley Lauren,Bill Engvall,Bill Engvall,False,False,False,True,percent-era
+18,9,5,1,Charlie White,Candace Cameron Bure,Candace Cameron Bure,False,False,False,True,percent-era
+19,9,6,1,Lea Thompson,Tommy Chong,Tommy Chong,False,False,False,True,percent-era
+20,9,4,1,Nastia Liukin,Noah Galloway,Noah Galloway,False,False,False,True,percent-era
+21,9,6,1,Alexa PenaVega,Tamar Braxton,Tamar Braxton,False,False,False,True,percent-era
+22,9,5,2,Antonio Brown;Wanya Morris,Antonio Brown;Ginger Zee,Antonio Brown;Ginger Zee,False,False,False,True,percent-era
+23,9,6,1,Marilu Henner,Marilu Henner,Marilu Henner,True,True,False,True,percent-era
+24,9,4,1,Simone Biles,David Ross,David Ross,False,False,False,True,percent-era
+25,9,5,1,Victoria Arlen,Drew Scott,Drew Scott,False,False,False,True,percent-era
+27,9,4,0,,,,,,,False,percent-era
+28,9,6,1,Sean Spicer,Sean Spicer,Sean Spicer,True,True,False,True,rank-era
+29,9,7,1,AJ McLean,Nelly,Nelly,False,False,False,True,rank-era
+30,9,6,2,Melora Hardin;Suni Lee,Cody Rigsby;Melora Hardin,Cody Rigsby;Melora Hardin,False,False,False,True,rank-era
+31,9,6,2,Trevor Donovan;Daniel Durant,Trevor Donovan;Daniel Durant,Trevor Donovan;Daniel Durant,True,True,False,True,rank-era
+32,9,6,1,Harry Jowsey,Harry Jowsey,Harry Jowsey,True,True,False,True,rank-era
+33,9,5,0,,,,,,,False,rank-era
+34,9,7,1,Andy Richter,Andy Richter,Andy Richter,True,True,False,True,rank-era
+3,10,2,0,,,,,,,False,percent-era
+4,10,3,0,,,,,,,False,percent-era
+5,10,3,0,,,,,,,False,percent-era
+6,10,3,0,,,,,,,False,percent-era
+7,10,3,0,,,,,,,False,percent-era
+8,10,4,1,Ty Murray,Ty Murray,Ty Murray,True,True,False,True,percent-era
+9,10,3,0,,,,,,,False,percent-era
+10,10,3,0,,,,,,,False,percent-era
+11,10,3,0,,,,,,,False,percent-era
+12,10,3,0,,,,,,,False,percent-era
+13,10,3,0,,,,,,,False,percent-era
+14,10,3,0,,,,,,,False,percent-era
+15,10,3,0,,,,,,,False,percent-era
+16,10,4,1,Alexandra Raisman,Jacoby Jones,Jacoby Jones,False,False,False,True,percent-era
+17,10,5,1,Leah Remini,Bill Engvall,Bill Engvall,False,False,False,True,percent-era
+18,10,4,1,James Maslow,Candace Cameron Bure,Candace Cameron Bure,False,False,False,True,percent-era
+19,10,5,1,Tommy Chong,Tommy Chong,Tommy Chong,True,True,False,True,percent-era
+20,10,3,0,,,,,,,False,percent-era
+21,10,4,0,,,,,,,False,percent-era
+22,10,3,0,,,,,,,False,percent-era
+23,10,5,1,Terra Jole,Calvin Johnson Jr.,Calvin Johnson Jr.,False,False,False,True,percent-era
+24,10,3,0,,,,,,,False,percent-era
+25,10,4,1,Drew Scott,Drew Scott,Drew Scott,True,True,False,True,percent-era
+28,10,5,1,James Van Der Beek,James Van Der Beek,James Van Der Beek,True,True,False,True,rank-era
+29,10,6,2,Skai Jackson;Johnny Weir,Nelly;Skai Jackson,Nelly;Skai Jackson,False,False,False,True,rank-era
+30,10,4,0,,,,,,,False,rank-era
+31,10,4,0,,,,,,,False,rank-era
+32,10,5,0,,,,,,,False,rank-era
+34,10,6,1,Whitney Leavitt,Dylan Efron,Dylan Efron,False,False,False,True,rank-era
+8,11,3,0,,,,,,,False,percent-era
+17,11,4,1,Bill Engvall,Bill Engvall,Bill Engvall,True,True,False,True,percent-era
+19,11,4,1,Bethany Mota,Bethany Mota,Bethany Mota,True,True,False,True,percent-era
+21,11,4,1,Carlos PenaVega,Alek Skarlatos,Alek Skarlatos,False,False,False,True,percent-era
+23,11,4,1,Jana Kramer,Jana Kramer,Jana Kramer,True,True,False,True,percent-era
+28,11,4,0,,,,,,,False,rank-era
+29,11,4,0,,,,,,,False,rank-era
+32,11,5,0,,,,,,,False,rank-era
+34,11,5,0,,,,,,,False,rank-era
