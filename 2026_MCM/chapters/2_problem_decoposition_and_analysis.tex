@@ -1,0 +1,61 @@
+
+\subsection{Objective and decision scope}\label{subsec:objective}
+The operational goal is to improve passenger service quality under stochastic, regime-dependent demand using only the provided logs.
+We focus on \emph{supervisory} control: at discrete decision epochs, the system may reposition \emph{idle} elevator cars to selected parking floors.
+This preserves compatibility with any existing in-service dispatch rule and avoids intrusive mid-trip interventions.
+
+We evaluate policies with service-oriented and tail-risk metrics: average waiting time (AWT), upper-tail quantiles (e.g., P95/P99 of waiting time),
+and the long-wait rate (fraction of calls exceeding a specified threshold). When reporting long-wait rate, we state the thresholding rule explicitly and
+use it consistently in all tables (including windowed analyses).
+
+\subsection{Data-driven closed loop: three tasks}\label{subsec:three-tasks}
+The problem naturally decomposes into a closed-loop pipeline operating on 5-minute intervals:
+\begin{enumerate}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
+  \item \textbf{Task 1: Short-horizon demand forecasting.}
+  Aggregate hall calls into 5-minute slices. Let $y_t$ denote the total number of hall calls in interval $t$.
+  Given recent history and time features, predict $\hat{y}_{t+1}$.
+  \item \textbf{Task 2: Traffic regime identification.}
+  From real-time interval features (call intensity, directionality, spatial dispersion, and inter-floor tendency),
+  infer a discrete traffic mode $s_t \in \mathcal{S}$ (e.g., up-peak, down-peak, mixed/inter-floor, idle/low).
+  \item \textbf{Task 3: Mode-aware dynamic parking for idle cars.}
+  Given $(\hat{y}_{t+1}, s_t)$, compute a set of parking floors $\mathcal{P}_t=\{p_{t,1},\dots,p_{t,K}\}$ for $K$ elevator cars when they are idle,
+  and apply repositioning subject to non-interference constraints.
+\end{enumerate}
+
+This decomposition is motivated by two realities of elevator operations: (i) demand is strongly nonstationary and exhibits recurring regimes,
+and (ii) parking decisions are most valuable when \emph{anticipating} near-future calls rather than reacting after queues build.
+
+\subsection{Key modeling assumptions (made explicit)}\label{subsec:assumptions}
+Because only log data are provided, several operational details are abstracted. We adopt assumptions that are standard in elevator-traffic analysis
+and compatible with supervisory deployment:
+\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
+  \item \textbf{Discrete decision epochs.} The policy updates every 5 minutes; within an epoch, dispatch is handled by the existing controller.
+  \item \textbf{Idle-only repositioning.} Reposition commands apply only to idle cars, preventing service disruption.
+  \item \textbf{Distance-proxy service model.} Waiting time is monotonically related to response distance between a call floor and the nearest available car.
+        We therefore optimize and evaluate parking using distance-based proxies consistent with the available logs.
+  \item \textbf{Cost awareness.} Repositioning may increase empty travel; we track an explicit empty-travel metric to expose the service-cost tradeoff.
+  \item \textbf{Comparability of evaluation.} Simulation parameters (travel/door time) affect absolute seconds, so we interpret results primarily through
+        \emph{relative} comparisons across strategies under the same parameter setting and call stream.
+\end{itemize}
+
+These assumptions yield a robust and implementable framework without requiring a full physics-accurate elevator simulator.
+
+\subsection{Outputs and validation plan}\label{subsec:validation-plan}
+Each task produces an output that can be validated independently and jointly:
+\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
+  \item Task 1 output: $\hat{y}_{t+1}$ with forecast error metrics (MAE/RMSE) on held-out intervals.
+  \item Task 2 output: $s_t$ with qualitative validation against time-of-day patterns and cluster interpretability,
+        and quantitative stability via transition frequency and feature separation.
+  \item Task 3 output: $\mathcal{P}_t$ and reposition actions, evaluated by AWT, tail quantiles, long-wait rate, and empty travel.
+\end{itemize}
+
+To reflect operational importance, we additionally report \emph{windowed} performance during peak periods, regime-transition windows,
+and high-load intervals, where proactive parking has the largest impact.
+
+\subsection{Two-route design: performance vs.\ interpretability}\label{subsec:two-routes}
+We implement two complementary routes to balance accuracy and deployability:
+\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
+  \item \textbf{Route A (data-driven).} Learned forecasting and mode discovery are coupled with optimization-based parking to maximize service performance.
+  \item \textbf{Route B (interpretable).} A transparent baseline forecaster and a zone-based parking policy serve as a benchmark and a conservative fallback.
+\end{itemize}
+Route B is included to (i) establish a trustworthy baseline, (ii) support deployment under uncertainty, and (iii) prevent overfitting to one log period.

@@ -1,0 +1,191 @@
+This section describes the data cleaning procedures and presents key empirical observations derived from the processed datasets with exploratory visualization. With validation of data reliability, we extract evidence-based insights that directly inform subsequent problem decomposition and model design.
+\subsection{Data Cleaning Principles and Validation}
+\subsubsection{Cleaning Principles}
+Given that the raw datasets, though extensive, contain missing data and potentially inconsistencies, that would severely compromise the generality and extensibility of the models. Furthermore, the properties and practical significance of certain indicators in the dataset will also undermine the accuracy of data statistics. Therefore, to prepare the elevator datasets for robust mathematical modeling, we implemented a systematic cleaning process that ensures data integrity, consistency, and alignment with the problem's requirements for traffic prediction, mode classification, and dynamic parking strategies. Operations were executed in Python using Pandas, with code available in the appendices for reproducibility. This step mitigates potential biases from raw data artifacts, such as sensor errors or incomplete logs, enabling accurate time-series analysis. 
+
+The cleaning process follows several domain-specific principles:
+\begin{itemize}
+    \item \textbf{Integrity over completeness:} Only records violating physical or logical constraints were removed, resulting in retention rates exceeding 85\% for all major datasets.
+    \item \textbf{No artificial imputation for structural variables:} Discrete and semantically critical variables, such as floor numbers, were never imputed to avoid introducing spatial bias.
+    \item \textbf{Preservation of congestion signals:} Records with long waiting times or heavy passenger loads were retained, as they represent genuine system stress rather than noise.
+    \item \textbf{Domain consistency and standardization:} Time stamps were converted to datetime format, floors to integers, and physical constraints (e.g., passenger loads in [0, 2100] kg) were enforced.
+\end{itemize}
+These principles ensure that the cleaned data exhibit integrity, accuracy, domain consistency, validity, and operability, thereby providing directly support the problem's emphasis on adaptive models, as clean data reduces noise in predictions and optimizations.
+
+\subsubsection{Data Cleaning Operations}\label{subsubsec:cleaning_operations}
+As detailed in \textbf{Cleaning Principles}, all datasets were cleaned under four core principles. Table~\ref{tab:data-cleaning} summarizes retention rates and usage scope. Each dataset was processed according to its role in our modeling pipeline, with cleaning operations explicitly justified by domain constraints and task requirements:
+\begin{itemize}
+    \item Facing \textbf{missing or unparseable floor values} (e.g., \texttt{NaN} or strings like ``4,5'') in \texttt{hall\_calls.csv}, we removed records with no valid origin floor and split composite floor requests into individual calls; this ensures that every retained hall call can be unambiguously mapped to a physical floor, which is essential for constructing spatially resolved demand forecasts—the foundation of our short-term prediction and parking strategy.
+
+    \item Facing \textbf{inconsistent floor representations} (e.g., ``G'', ``B1'') and missing directions in \texttt{car\_stops.csv}, we converted floors to integers and inferred direction from sequential stop patterns; this yields a clean trajectory log that accurately reflects real elevator movements, enabling reliable validation of our simulated traffic modes against ground-truth stop behavior.
+
+    \item Facing \textbf{physically implausible load readings} (e.g., negative or >2100 kg) and \textbf{unordered timestamps} in \texttt{load\_changes.csv}, we filtered loads to the valid range [0, 2100] kg and sorted records by (\texttt{Car ID}, \texttt{Time}); this preserves temporal coherence of passenger flow and eliminates sensor artifacts, allowing us to estimate realistic boarding/alighting volumes for time-series simulation of elevator occupancy.
+
+    \item Facing \textbf{duplicate or out-of-order entries} in \texttt{maintenance\_mode.csv}, we deduplicated and chronologically sorted the maintenance logs; this provides a precise mask of non-operational periods, ensuring that all downstream analyses exclude times when elevators were offline—thus avoiding artificial underestimation of system demand.
+
+    \item Facing \textbf{raw timestamp and floor fields without standardization} in \texttt{car\_calls.csv} and \texttt{car\_departure-\\s.csv}, we applied consistent datetime and integer formatting; while these datasets are not used in our core predictive model, this minimal cleaning prepares them as auxiliary signals for future extensions (e.g., destination-aware dispatching), maintaining data readiness without over-processing.
+\end{itemize}
+This section details the data cleaning process for the elevator datasets, ensuring high-quality input for mathematical modeling in traffic prediction, operational mode classification, and dynamic parking strategies. Cleaning was performed using Python with Pandas, focusing on integrity, standardization, and domain-specific validations. Operations prioritize retaining representative data while removing invalid entries without bias. 
+
+\subsubsection{Data Cleaning outcomes and Validation}\label{subsubsec:cleaning_validation}
+Cleaned files can be found in the \textbf{Appendix}.
+\begin{table}[htbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt} % 稍微压缩列间距
+    \begin{tabular}{l p{8cm} r}
+        \hline
+        \textbf{File} & \textbf{Operations} & \textbf{Retained (\%)} \\
+        \hline
+        \texttt{hall\_calls.csv} 
+            & Standardized time/direction; expanded multi-floor calls; removed NaN floors.
+            & 223,339 (86\%) \\
+            
+        \texttt{car\_stops.csv} 
+            & Standardized time/floors; inferred direction; removed invalid stops.
+            & 214,263 (98\%) \\
+            
+        \texttt{load\_changes.csv} 
+            & Standardized time/floors; filtered loads to [0, 2100] kg; sorted by car/time. 
+            & 216,884 (99\%) \\
+            
+        \texttt{maintenance\_mode.csv} 
+            & Standardized time; deduplicated and sorted. 
+            & 161 (100\%) \\
+            
+        \texttt{car\_calls.csv} 
+            & Standardized time/floors; filtered valid actions.  
+            & 255,971 (99\%) \\
+            
+        \texttt{car\_departures.csv} 
+            & Standardized time and floor fields. 
+            & 218,491 (100\%) \\
+        \hline
+    \end{tabular}
+    \caption{Summary of data cleaning operations, rationale, and retention rates.}\label{tab:data-cleaning}
+\end{table}
+
+We validate our cleaning process along three criteria inspired by Xiong et al.~\cite{1583581}: (i) adherence to physical and operational constraints, (ii) preservation of task-relevant signals—particularly congestion and peak behavior—and (iii) retention of representative temporal patterns across weekdays, weekends, and traffic regimes. These criteria are especially critical in elevator modeling, where spatial accuracy, load realism, and timing fidelity directly affect prediction and control performance.
+
+All datasets satisfy these standards. The \texttt{hall\_calls.csv} file provides the most detailed illustration due to its central role in demand forecasting. It originally contains 259{,}013 records, of which 34{,}724 (13.4\%) lack a valid origin floor. Because floor numbers are discrete and semantically non-interpolable, we removed—but never imputed—these entries to avoid spatial bias. No records were filtered based on waiting time or call frequency; long waits during morning/evening peaks are retained as genuine indicators of system stress. The removed records show no clustering by hour or day of week, suggesting missingness is random (likely from transient sensor or transmission errors) rather than systematic underreporting. After cleaning, 224{,}289 calls remain (86.6\%), preserving demand heterogeneity across all operational conditions.
+
+The remaining files undergo analogous validation. In \texttt{car\_stops.csv} and \texttt{car\_calls.csv}, floor values are converted to consistent integers and invalid stops or actions discarded, ensuring trajectory integrity for mode inference. \texttt{load\_changes.csv} enforces the physical load bound [0, 2100] kg while retaining high-load events that reflect real passenger volumes. \texttt{maintenance\_mode.csv} is deduplicated to provide an accurate mask of offline periods, and \texttt{car\_departures.csv} is chronologically sorted to support precise departure tracking. Across all six files, retention rates range from 86.6\% to 100\%, confirming that cleaning targets only structurally invalid entries—not extreme but valid operational states.
+
+Collectively, the cleaned datasets are physically plausible, temporally coherent, and faithful to real-world elevator dynamics. Every cleaning decision is documented, deterministic, and grounded in domain knowledge—ensuring reproducibility and alignment with our modeling objectives~\cite{1583581}.
+% =========================================
+
+\subsection{Data Visualization}
+We conducted a comprehensive exploratory data analysis (EDA) to uncover temporal, directional, and spatial patterns in elevator usage. Seven key visualizations were generated, designed to answer: \textit{When, where, in which direction, and how intensely is the elevator service requested?}.
+
+% \begin{figure}[htbp]
+%     \centering
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{figures/response_time_distribution.pdf}
+%         \caption{Response time distribution}\label{fig:resp_dist}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{figures/hourly_calls.pdf}
+%         \caption{Hourly hall call volume}\label{fig:hourly_calls}
+%     \end{subfigure}
+%     \caption{System responsiveness and overall temporal demand pattern.}\label{fig:temporal_overview}
+% \end{figure}
+
+% \begin{figure}[htbp]
+%     \centering
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{figures/hourly_up_down.pdf}
+%         \caption{Up vs. down calls by hour}\label{fig:up_down}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{figures/elevator_usage_by_hour.pdf}
+%         \caption{Average passenger weight entering per hour}\label{fig:usage_weight}
+%     \end{subfigure}
+%     \caption{Directional traffic modes and load intensity validation.}\label{fig:directional_load}
+% \end{figure}
+
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=\linewidth]{figures/hourly_calls_weekday_vs_weekend.pdf}
+%     \caption{Weekday versus weekend call volume, showing structured office traffic on weekdays.}\label{fig:weekday_weekend}
+% \end{figure}
+
+% \begin{figure}[htbp]
+%     \centering
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{figures/hall_calls_heatmap_weekday.pdf}
+%         \caption{Weekday spatial-temporal heatmap}\label{fig:heatmap_weekday}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{figures/hall_calls_heatmap_weekend.pdf}
+%         \caption{Weekend spatial-temporal heatmap}\label{fig:heatmap_weekend}
+%     \end{subfigure}
+%     \caption{Spatial distribution of hall calls across floors and hours.}\label{fig:spatial_heatmaps}
+% \end{figure}
+The heatmaps (Figures~\ref{fig:heatmap_weekday} and~\ref{fig:heatmap_weekend}) expose spatial heterogeneity. On weekdays, intense activity concentrates between Floors 1--3 (main lobby and exits) and Floors 10--14 (likely office zones), especially during 8--10 AM and 5--7 PM.. In contrast, weekends show diffuse, low-intensity usage across all floors, confirming minimal structured traffic.
+
+
+
+\subsection{Empirical Findings from EDA}\label{subsec:eda}
+Using the cleaned datasets, we conducted exploratory analysis along five dimensions: time, direction, weekday cycle, spatial distribution,
+and passenger-load proxies. The conclusions below are supported by Figures~\ref{fig:temporal_overview}--\ref{fig:spatial_heatmaps} and directly
+motivate our modeling choices in Tasks~1--3.
+
+\textbf{(F1) Service is generally adequate but degrades under predictable surges.}
+The response-time distribution (Figure~\ref{fig:resp_dist}) indicates that most calls are served within a short time under normal operation,
+suggesting that the primary challenge is not mechanical insufficiency but \emph{anticipating and managing demand surges}.
+\emph{Note:} this response-time statistic is computed from the provided operational logs (observed service), whereas Task~3 evaluates alternative
+parking policies with a distance-based proxy under fixed parameters; the latter is used for \emph{relative} strategy comparison.
+
+\textbf{(F1b) Demand is strongly time-dependent with recurring daily peaks.}
+Hourly hall-call volume (Figure~\ref{fig:hourly_calls}) exhibits a bimodal pattern with consistent peaks around midday and early evening.
+This supports time-of-day features and short-horizon forecasting (Task~1).
+
+\textbf{(F2a) Directional asymmetry confirms distinct traffic regimes.}
+Figure~\ref{fig:up_down} shows a classic morning up-peak and an evening down-peak.
+Thus, regime identification (Task~2) must incorporate directionality rather than relying solely on total volume.
+
+\textbf{(F2b) Peaks correspond to real loading intensity.}
+Average incoming passenger weight (Figure~\ref{fig:usage_weight}) rises during the same periods as call-volume peaks, validating that peaks reflect
+genuine congestion rather than spurious button presses.
+
+\textbf{(F3 \& 4) Weekday-weekend differences and floor heterogeneity are substantial.}
+Weekday demand is structured and significantly higher than weekend demand (Figure~\ref{fig:weekday_weekend}).
+Spatial-temporal heatmaps (Figure~\ref{fig:spatial_heatmaps}) show that weekday calls concentrate at lower lobby floors (1--3) and mid-to-upper
+office floors (approximately 10--14) during peaks, while weekend usage is sparse and diffuse.
+These patterns require floor-aware strategies in both prediction and parking.
+
+\subsection{Feature Engineering}\label{subsec:features}
+We construct interval-level features on 5-minute bins to support forecasting (Task~1) and traffic regime identification (Task~2), and to parameterize
+mode-conditioned parking demand (Task~3). Features are designed to be minimal, interpretable, and computable in real time from logs.
+
+\textbf{Temporal and calendar features.}
+Hour-of-day, day-of-week, and weekday/weekend flags capture recurring human-activity patterns (F2, F5).
+
+\textbf{Call intensity and directionality.}
+Let $C_t$ be the total number of hall calls in interval $t$, and $C_t^{\uparrow}, C_t^{\downarrow}$ the up/down counts. Define the directional ratio
+\[r_t = \frac{C_t^{\uparrow}}{\max(1, C_t)}\] which separates up-peak from down-peak regimes (F3).
+
+\textbf{Spatial concentration and dominant-floor indicators.}
+Let $p_{1,t}$ denote the share of calls originating from the busiest floor in interval $t$ (dominance), and let a dispersion statistic (e.g., the
+entropy of floor distribution) measure whether demand is concentrated (lobby/office peaks) or diffuse (F5).
+
+\textbf{Inter-floor tendency and load proxies.}
+When available, aggregated load-change magnitude within each interval provides a continuous proxy for passenger intensity (F4). We also compute
+the fraction of non-lobby calls (or a similar index) to distinguish inter-floor movement from commute-like traffic.
+
+These features jointly encode \emph{when} demand occurs, \emph{where} it concentrates, and \emph{in which direction} it flows---the three axes needed
+for short-horizon prediction, regime classification, and floor-aware parking.
+
+\subsection{Synthesis of Findings}\label{subsec:findings}
+The EDA yields five actionable insights that directly map to our modeling components:
+\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
+    \item Demand is highly time-dependent and non-stationary (supports Task~1 forecasting).
+    \item Traffic exhibits distinct, regime-specific directional patterns (supports Task~2 mode identification).
+    \item High call volume aligns with high loading intensity, confirming that peaks represent genuine congestion.
+    \item Weekday and weekend dynamics differ substantially and should be treated separately in modeling.
+    \item Demand varies significantly by floor, motivating spatially resolved parking strategies (Task~3).
+\end{itemize}
+Collectively, these findings motivate time-adaptive forecasting, real-time mode classification, and floor-aware dynamic parking in the subsequent sections.

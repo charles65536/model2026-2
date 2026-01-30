@@ -1,0 +1,41 @@
+
+\begin{quote}
+\noindent
+\textbf{To:} Building Management Team and Elevator Maintenance Contractor \\
+\textbf{From:} Team M2026232 \\
+\textbf{Date:} January 19, 2026 \\
+\textbf{Subject:} Deployable Mode-Aware Parking Policy to Improve Elevator Service Consistency
+
+\vspace{0.8em}
+\textbf{Executive recommendation.}
+We recommend deploying a \emph{mode-aware idle-elevator parking policy} that uses only existing control logs to (i) forecast near-term demand, (ii) infer the current traffic regime, and (iii) proactively reposition \emph{idle} elevators to floors that minimize demand-weighted response distance. The policy is designed as a supervisory layer and does not interrupt elevators currently serving passengers.
+
+\vspace{0.6em}
+\textbf{Why change the current rule.}
+Static parking rules (e.g., always returning idle cars to the lobby) are reliable but systematically mismatched to non-lobby demand (inter-floor traffic) and regime transitions. Our model identifies recurring regimes and learns where calls typically originate in each regime; parking is then optimized accordingly.
+
+\vspace{0.6em}
+\textbf{Implementation plan (low risk).}
+\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
+  \item \textbf{Week 1 (offline calibration):} Calibrate travel/door timing parameters from logs; validate that the simulator reproduces observed response distributions at a coarse level.
+  \item \textbf{Week 2 (shadow mode):} Run the policy in ``advisory'' mode (no actuation) to log suggested parking targets and estimate expected improvements.
+  \item \textbf{Week 3 (pilot actuation):} Enable actuation for idle cars only during selected hours (e.g., morning and evening peaks); keep a one-click rollback to the current static rule.
+  \item \textbf{Week 4 (scale-out):} Expand to full-day operation if KPIs improve and operational constraints are met.
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{KPIs and monitoring.}
+Track two service KPIs on a daily dashboard: (i) average waiting time and (ii) long-wait frequency (e.g., waits exceeding a management-defined threshold). We emphasize \emph{relative} improvements across policies; absolute magnitudes depend on calibrated timing parameters. Also monitor \emph{empty travel} (repositioning distance) to control wear-and-tear.
+
+\vspace{0.6em}
+\textbf{Operational safeguards.}
+\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
+  \item \textbf{Non-interference:} only idle elevators are repositioned.
+  \item \textbf{Rate limiting:} enforce a minimum interval between reposition commands per car.
+  \item \textbf{Fail-safe:} if mode classification becomes uncertain (e.g., missing data), fall back to the current static rule.
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{Rollback.}
+Rollback is immediate: disable the parking module and return to the baseline rule. No hardware changes are required.
+\end{quote}

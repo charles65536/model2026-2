@@ -1,0 +1,226 @@
+
+We propose a deployable, data-driven elevator control pipeline that links forecasting, traffic-mode recognition, and proactive parking. The key design principle is to keep each module both operationally interpretable and computationally light enough for real-time use in legacy group control systems.
+
+
+\subsection{Overview and Modeling Philosophy}
+
+The problem requires a proactive elevator control policy that can (i) forecast near-term demand, (ii) recognize the current traffic regime, and (iii) reposition idle elevators to reduce passenger waiting. To satisfy these requirements with a transparent and deployable pipeline, we build a three-stage framework:
+\begin{enumerate}[label = (\roman*)]
+    \item \textbf{Task 1: Short-term demand forecasting} to predict the number of hall calls in the next 5-minute slice;
+    \item \textbf{Task 2: Traffic-mode discovery and online classification} to identify the current building usage regime (e.g., up-peak, down-peak, inter-floor);
+    \item \textbf{Task 3: Mode-aware dynamic parking} to choose parking floors for idle elevators by solving a weighted 1D $k$-median problem using the mode-conditioned floor-demand distribution.
+\end{enumerate}
+The outputs form a closed loop: the forecast and recognized mode determine the proactive parking targets, and the resulting performance is validated via a lightweight simulation against standard baselines.
+
+
+\subsection{Model 1: Short-Term Passenger Arrival Forecasting (Task 1)}
+
+\subsubsection{Target and Time Discretization}
+We discretize time into uniform slices of length $\Delta=5$ minutes. Let $y_t$ denote the total number of passenger arrivals in slice $t$. Consistent with the available logs, we use the number of \emph{hall calls} in each slice as a demand proxy; this variable is directly observable and closely aligned with perceived service quality (waiting time).
+
+The forecasting task is a one-step-ahead regression:
+\begin{equation}
+\hat{y}_{t+1} = f_{\theta}(x_t),
+\end{equation}
+where $x_t$ is a feature vector constructed from historical demand and temporal context.
+
+\subsubsection{Feature Engineering}
+To capture both periodic regularity and short-term dependence, we design $x_t$ with four groups of real-time features:
+\begin{enumerate}[label = (\alph*)]
+    \item \textbf{Cyclical time features:} daily and weekly periodicity are encoded using sine/cosine transforms (e.g.,
+    $\sin(2\pi \cdot \text{minute\_of\_day}/1440)$ and $\cos(2\pi \cdot \text{minute\_of\_day}/1440)$), and similarly for the minute-of-week.
+    \item \textbf{Calendar indicators:} hour, minute, and a weekend flag.
+    \item \textbf{Lagged demand:} $\{y_{t-\ell}\}$ for several lags $\ell$ (e.g., 5--60 minutes) to capture short-term autocorrelation.
+    \item \textbf{Rolling statistics and trend:} rolling mean/standard deviation of recent slices and a 1-hour trend term $y_{t}-y_{t-12}$.
+\end{enumerate}
+All features are constructed without future information, ensuring the model can operate online.
+
+\subsubsection{Model Choice and Validation Protocol}
+We adopt a gradient-boosted decision tree regressor (GBDT) due to its ability to model nonlinear interactions among mixed feature types, while remaining robust to noise and irregular demand spikes\cite{gbdt_chen,friedman2001gbm}. The dataset is split \emph{chronologically} to avoid temporal leakage: the first portion is used for training and the remaining portion for testing. We report mean absolute error (MAE) and root mean squared error (RMSE) for interpretability and sensitivity to extreme deviations.
+
+\noindent\textbf{Benchmark (Route B).}
+To provide a transparent and deployable baseline, we implement a time-of-day baseline and a regime $AR(1)$ correction.
+Table~\ref{tab:task1-benchmark-routeb} reports that the $AR(1)$-corrected predictor improves one-step 5-minute demand forecasting
+over the pure time-of-day baseline in both MAE and RMSE.
+
+% \input{project/outputs/latex_table_task1.tex}
+
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.75\linewidth]{project/outputs/fig/task1_pred_vs_true.pdf}
+%     \caption{Observed vs.\ predicted 5-minute demand for a representative window.}\label{fig:task1-pred}
+% \end{figure}
+
+% \input{project/outputs/tab/task1_metrics.tex}
+
+\subsubsection{Output to Downstream Control}
+The one-step-ahead demand forecast provides a quantitative early warning signal. While Task 3 primarily depends on the mode-conditioned floor distribution, the forecast helps determine whether aggressive repositioning is warranted (e.g., during predicted surge periods versus idle periods).
+
+\subsection{Model 2: Traffic Mode Discovery and Online Classification (Task 2)}
+
+\subsubsection{Mode Features with Operational Meaning}
+Passenger traffic regimes in buildings typically exhibit distinct signatures in intensity, directionality, and spatial concentration. We construct a feature vector for each 5-minute slice that is both informative and interpretable, including:
+\begin{itemize}
+    \item \textbf{Intensity:} hall-call count in the slice.
+    \item \textbf{Directionality:} up/down ratio from hall calls.
+    \item \textbf{Spatial dispersion:} floor entropy (higher entropy indicates dispersed origins).
+    \item \textbf{Inter-floor tendency:} proportion of car calls not involving the lobby (proxying inter-floor movement).
+    \item \textbf{Service pressure:} number of stops and departures.
+    \item \textbf{Load dynamics and maintenance:} net load change and maintenance ratio (if available).
+\end{itemize}
+To emulate real-time sensing, we smooth selected features using a short rolling window (e.g., 15 minutes), producing stable online signals for clustering and classification.
+
+\subsubsection{Unsupervised Clustering and Interpretability}
+Since no ground-truth labels for ``traffic modes'' are provided, we use KMeans clustering on standardized features,  a method widely adopted for traffic state classification in intelligent transportation systems\cite{ZHAO201992}. KMeans solves:
+\begin{equation}
+\min_{\{\mu_k\}} \sum_{t} \|x_t - \mu_{c(t)}\|^2,
+\end{equation}
+where $c(t)$ assigns slice $t$ to its nearest centroid. We choose a small number of clusters (e.g., $K=6$) to balance granularity and interpretability; cluster quality can be sanity-checked with a silhouette score and validated via downstream performance stability~\cite{rousseeuw1987silhouette}. In our implementation, we set $K=6$ to capture common micro-regimes while maintaining interpretability; the resulting silhouette score (approximately 0.34) indicates moderate separation, which is expected because traffic regimes overlap in practice.
+
+\subsubsection{Cluster-to-Mode Naming}
+To satisfy MCM's requirement of explainable managerial recommendations, we convert numerical clusters into operational mode labels by inspecting each cluster's feature profile (mean intensity, up/down ratio, entropy, and inter-floor ratio). For example, a high-intensity cluster with dominant up direction is labeled as \emph{Up-Peak}, while a low-intensity cluster is labeled as \emph{Idle/Low}. This hybrid approach is data-driven in discovery yet transparent in interpretation. The mode timeline is aligned with the typical up-peak and down-peak periods.
+
+% \input{project/outputs/tab/task2_cluster_profile.tex}
+
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.75\linewidth]{project/outputs/fig/task2_mode_heatmap.pdf}
+%     \caption{Mode frequency by hour-of-day, highlighting daily regime shifts.}\label{fig:task2-heatmap}
+% \end{figure}
+
+\subsubsection{Online Mode Classification}
+In deployment, each new 5-minute slice is mapped to a feature vector, standardized using the training scaler, and assigned to the nearest KMeans centroid. The output mode $m_t$ is then passed to the dynamic parking optimizer in Task 3. 
+
+
+\subsection{Model 3: Mode-Aware Dynamic Parking via Weighted $k$-Median (Task 3)}
+
+\subsubsection{Mode-Conditioned Floor Demand Distribution}
+Let $F$ be the set of floors. For each traffic mode $m$, we estimate a mode-conditioned floor demand distribution from historical hall calls:
+\begin{equation}
+w_f(m) \propto \mathbb{E}[\text{\# hall calls from floor } f \mid \text{mode}=m], \quad f \in F,
+\end{equation}
+followed by normalization so that $\sum_{f \in F} w_f(m)=1$. This distribution acts as a probabilistic prior indicating where future calls are most likely to originate under the current regime.
+
+\subsubsection{Optimization Formulation (Weighted 1D $k$-Median)}
+At each decision epoch, suppose there are $k$ idle elevators available for repositioning. We choose a set of parking floors $P=\{p_1,\dots,p_k\}$ to minimize the demand-weighted distance from each floor to its nearest parked elevator:
+\begin{equation}
+\min_{P,\ |P|=k} \sum_{f \in F} w_f(m_t) \min_{p \in P} |f-p|.
+\label{eq:kmedian}
+\end{equation}
+Because floors lie on a 1D line and $|f-p|$ captures the dominant travel component, this objective directly targets reduced expected response distance (and thus waiting time), consistent with the weighted facility location approach for elevator group control\cite{hakimi1964median}. Please refer to table~\ref{tab:task1-benchmark-by-state} for detailed statistics
+
+\subsubsection{Solution and Assignment}
+For typical buildings (tens of floors), the weighted 1D $k$-median can be solved efficiently via dynamic programming in $O(k|F|^2)$ per decision epoch. After computing target parking floors, we assign each idle elevator to a target floor based on proximity (a greedy nearest assignment suffices in our setting to reduce empty travel).
+
+\subsubsection{Execution Policy}
+We implement the policy with two practical constraints:
+\begin{itemize}
+    \item \textbf{Periodic decisions:} recompute parking targets every 5 minutes.
+    \item \textbf{Non-interference:} only \emph{idle} elevators are repositioned; elevators in service are not disrupted.
+\end{itemize}
+This makes the strategy deployable as a software-layer enhancement to standard group control.
+
+\begin{algorithm}[htbp]
+\caption{Mode-Aware Dynamic Parking Policy}
+\label{alg:dynamic-parking}
+\begin{algorithmic}[1]
+\Require Current time slice $t$, recognized mode $m_t$, idle elevator set $\mathcal{E}_{\text{idle}}$ with $k=|\mathcal{E}_{\text{idle}}|$, floor weights $\{w_f(m_t)\}_{f\in F}$
+\Ensure Target floor for each idle elevator
+\State Solve weighted 1D $k$-median in Eq.~\eqref{eq:kmedian} to obtain parking floors $P=\{p_1,\dots,p_k\}$
+\State Assign each $e\in \mathcal{E}_{\text{idle}}$ to a floor in $P$ by nearest-distance matching
+\State Command each idle elevator to reposition to its assigned floor (if not already there)
+\end{algorithmic}
+\end{algorithm}
+
+
+\subsection{Interpretable Baseline and Fallback Policy (Route B)}\label{subsec:baseline-fallback}
+To strengthen deployability and provide a transparent benchmarking reference, we also implement an \emph{interpretable baseline}
+pipeline that mirrors Tasks 1--3 with minimal training and explicit logic. This Route B policy, an interpretable, training-light baseline with transparent rules and a zone-based parking allocator, serves two roles: (i) a strong
+sanity-check baseline for ablation and robustness discussions, and (ii) a deployment \emph{fail-safe} fallback when learned models
+become uncertain (e.g., missing data or out-of-distribution periods). 
+
+\subsubsection{Task 1: time-of-day baseline + regime $AR(1)$.}\label{subsubsec:routebtask1}
+Let $y_t$ denote hall-call volume in slice $t$ and let $\tau(t)$ denote the time-of-day index. We estimate a baseline profile
+$\mu(\tau)$ from historical averages. Residual dynamics are modeled by a regime-specific $AR(1)$ on $e_t = y_t-\mu(\tau(t))$:
+\[
+\hat y_{t+1}=\mu(\tau(t+1)) + \phi_{r(t)}\,\bigl(y_t-\mu(\tau(t))\bigr),
+\]
+where $r(t)\in\{\text{weekday},\text{weekend}\}$ and $\phi_{r}$ is estimated separately for each regime. This model is fast,
+interpretable, and provides a conservative early-warning signal. State-wise error breakdown for the Route B benchmark is reported in Appendix~\ref{app:routeb}.
+
+
+\subsubsection{Task 2: Rule-based real-time traffic state classification Model.}\label{subsubsec:routebtask2}
+We implement a rule-based classifier that assigns each 5-minute interval to one of six operational states:
+\{\textit{Night Idle, Morning Up-Peak, Lunch Down-Peak, Afternoon Mixed, Evening Down-Peak, Weekend Low-Demand}\}.
+The classifier uses simple interval features derived from hall-call logs,
+so we compute a compact set of online features per slice, including total calls $C_t$, directional imbalance $r_t$, \[r_t=(C^{\uparrow}_t-C^{\downarrow}_t)/(C_t+\epsilon)\]
+lobby dominance $p_{1,t}$ (share of calls originating at the lobby), and a dispersion proxy $H_t$ (entropy-like spread over floors).
+Traffic states $s_t$ are then assigned by transparent threshold rules (e.g., \emph{Up-Peak} if $C_t$ is high and $r_t$ is strongly positive).Thresholds $\theta_1,\theta_2,\theta_3$ are estimated from historical quantiles. 
+Because 5-minute call counts can be zero-inflated, we note that $\theta_1$ may degenerate to 0; to preserve the semantic meaning of ``idle'', we recommend enforcing a small positive floor (e.g., $\theta_1 \ge 1$) and using an inclusive low-activity check when needed.
+To avoid degenerate thresholds in sparse periods (e.g., a quantile yielding $\theta_1=0$), robust nonzero quantiles and a minimum threshold floor can also be employed.
+
+\subsubsection{Task 3: zone-based state-aware parking rule.}\label{subsubsec:routebtask3}
+Instead of solving an optimization problem, Route B uses a zone-based allocator. We partition floors into three operational zones
+\[L=\{\text{Lobby},\text{Mid},\text{Upper}\}\] guided by the EDA heatmaps. Given the current state $s_t$ and the predicted next-interval
+demand intensity $\hat y_{t+1}$, we compute a desired integer allocation of idle elevators across zones,
+\[\mathbf{n}^{*}(s_t,\hat y_{t+1})=(n^{*}_{L},n^{*}_{M},n^{*}_{U})\] with \[n^{*}_{L}+n^{*}_{M}+n^{*}_{U}=N\]. The allocation follows
+interpretable state templates (e.g., more cars in \text{Lobby} during \emph{Up-Peak}, more coverage in \text{Upper} during \emph{Down-Peak}),
+with simple rate-limited reposition triggers to avoid excessive oscillations. We then generate a minimal reposition plan by moving elevators
+from surplus zones to deficit zones greedily until the desired allocation is reached. While less optimal than the weighted $k$-median planner,
+this baseline is easy to audit, efficient to execute, and well-suited as a deployable fallback controller.
+
+% --- Task 3 Strategy Comparison ---
+
+\noindent\textbf{Simulation-based evaluation (Task 3).}
+Using a unified evaluator and identical call streams, we compare static parking rules
+(last-stop and lobby), an interpretable zone-based baseline (Route~B),
+and our mode-aware dynamic strategy.
+Table~\ref{tab:task3-strategy} reports overall performance across all calls.
+To highlight operationally critical conditions, we further analyze peak hours,
+regime-transition windows, and high-load periods (Tips: windowed performance of the interpretable Route B parking baselines and table~\ref{tab:task3-strategy} is summarized in \ref{app:routeb}).
+
+\subsubsection{Deployment Fallback: When to Switch from Route A to Route B}\label{subsubsec:switching}
+
+To improve deployment safety, we treat Route~B as a \emph{rollback controller} and introduce a simple switching rule that detects
+low-confidence operating conditions for Route~A. At each 5-minute epoch, we compute a lightweight health check based on readily available
+signals: (i) \emph{feature plausibility} (whether key real-time features such as call intensity and directional ratio fall outside historical
+bounds), and (ii) \emph{mode stability} (whether the inferred traffic label oscillates abnormally across consecutive epochs). If either check
+fails, the supervisor temporarily switches to Route~B's zone-based policy; otherwise, it uses Route~A's mode-aware $k$-median parking.
+
+This fail-safe design does not require modifying the underlying dispatch logic, and it ensures graceful degradation under distribution shift,
+sensor glitches, or atypical events. In all cases, repositioning remains \emph{idle-only}.
+
+
+\subsection{Simulation-Based Evaluation (Baselines and Metrics)}
+
+\subsubsection{Baselines}
+To quantify the benefit of proactive parking, we compare:
+\begin{itemize}
+    \item \textbf{Last-stop:} idle elevators remain at their current floors.
+    \item \textbf{Lobby-return:} all idle elevators are sent to the lobby floor.
+    \item \textbf{Dynamic (ours):} Algorithm~\ref{alg:dynamic-parking} using mode-aware weighted $k$-median.
+\end{itemize}
+
+\subsubsection{Metrics}
+We report (i) average waiting time (AWT), defined as the elapsed time from a hall call until the first elevator arrival, and
+(ii) the fraction of ``long waits'' exceeding a threshold (default 60). Because our evaluation is simulation-based, reported times are
+\emph{simulated time} under the assumed travel and door parameters. We therefore interpret AWT and long-wait rates primarily in a
+\emph{comparative} sense across strategies; the absolute values should be treated as scenario-dependent and recalibrated when the
+building's true kinematics are known.
+To capture both typical service quality and tail risk, we report the average waiting time (AWT), the 95th-percentile waiting time (P95), and the long-wait rate for each parking policy.
+
+Table~\ref{tab:task3-strategy1} reports the primary (Route A) simulation comparison of parking strategies under a fixed parameter setting.
+% \input{project/outputs/tab/task3_strategy_comparison.tex}
+We further report robustness under stress scenarios in Appendix~\ref{app:extra}.
+
+
+
+\vspace{-0.5em}
+
+\noindent\textit{Note: In Table~\ref{tab:task3-strategy}, AWT and the 95th-percentile waiting time (P95) are reported in simulation time units (seconds under our parameterization). ``Long wait'' is defined relative to a configurable threshold; we report it primarily to compare tail risk across strategies. Absolute values should be re-calibrated when building-specific kinematics are known\cite{cibse2020guided,barney2015elevatortraffic}.}
+
+\subsubsection{Discussion}
+Across baselines, the dynamic mode-aware policy reduces both AWT and long-wait events by proactively placing idle elevators near likely call origins, especially during transitional periods where static parking rules are suboptimal.
+
+\subsection{Robustness and Sensitivity (Brief)}
+We test stability with respect to (i) the number of clusters $K$ (mode granularity), and (ii) decision frequency (e.g., 5 vs.\ 10 minutes). The relative advantage of the dynamic strategy remains consistent, indicating that performance gains arise from the core structure (mode conditioning + demand-weighted facility location), rather than fragile parameter tuning.
