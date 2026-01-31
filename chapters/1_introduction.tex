@@ -1,31 +1,21 @@
+\textit{Dancing With The Stars} (DWTS) combines judges' scores with audience voting to eliminate contestants weekly, yet the audience vote totals remain confidential.\cite{comap2026_problemC_pdf}
+This creates a recurring tension between ``technical merit'' and ``popular support,'' amplified by format changes across seasons (percent-based versus rank-based aggregation, and the later bottom-two judges' save).
+The dataset \cite{comap2026_problemC_data} spans 34 seasons with contestant attributes, weekly judges' scores, and realized eliminations, but it does not reveal audience votes---turning the central signal of fan preference into a latent variable.
 
-Elevator group control in high-rise and mixed-use buildings must maintain acceptable service quality under demand that is strongly
-time-varying and regime-dependent (e.g., morning up-peak, lunch inter-floor, and evening down-peak).%
-\cite{cibse2020guided,strakosch2010vertical,barney2015elevatortraffic}
-When mechanical capacity is fixed, a practical lever is \emph{software-level} supervision: in particular, proactively repositioning
-\emph{idle} cars can reduce response distance and stabilize waiting times during regime shifts.
+\textbf{Our key methodological idea is to treat DWTS as a replayable inverse problem.}
+We first construct a canonical season--week--contestant panel with an explicit active set (excluding post-exit zero-score records and flagging special episodes).
+We then infer weekly fan vote \emph{shares} by solving a constrained optimization problem: elimination-consistency constraints encode the show's rule mechanics, slack variables absorb exceptional weeks, and a temporal smoothness prior selects a stable solution among many feasible explanations.
+With inferred fan support in hand, we implement a rule replay engine that simulates eliminations week-by-week under alternative aggregation schemes (rank-based vs.\ percent-based, with optional judges' save), enabling direct counterfactual comparisons.
+The inference module outputs not only point estimates $\hat{p}_{i,t}$ but also uncertainty summaries (e.g., feasible ranges and sensitivity margins).
+These outputs become direct inputs to the replay engine, closing the loop from latent-vote inference to counterfactual elimination paths and to quantitative evidence for rule comparison and new-system validation.
 
-This report designs a deployable supervisory policy using \emph{only} the provided operational logs. We build a closed-loop pipeline that
-(i) forecasts short-horizon hall-call demand, (ii) identifies the current traffic mode from real-time features, and (iii) applies
-mode-aware dynamic parking for idle cars. The core parking decision is posed as a one-dimensional, demand-weighted facility-location problem
-(1D $k$-median), yielding parking floors that minimize expected response distance to near-future calls. The final deliverables include both
-a technical solution and a management memo describing implementation and operational safeguards.
 
-To balance performance with deployability, we implement two complementary routes:
-\textbf{Route A} (data-driven) combines learned forecasting and unsupervised mode discovery with optimization-based parking, targeting best
-service performance; \textbf{Route B} (interpretable) provides a transparent baseline and a conservative fallback policy for benchmarking and
-deployment risk control. Throughout, our policy is \emph{non-intrusive}: it acts only on idle cars and can sit on top of standard dispatch rules.
-In particular, Route B instantiates a rule-based mode classifier and a state-aware zone parking allocator (Lobby/Mid/Upper) that generates a minimal reposition plan under simple rate limits, making it suitable both as a benchmark and as a rollback controller.
+\textbf{We evaluate models and voting rules using replay-based metrics that align with the show's decisions.}
+For vote inference, we report elimination-consistency rates, feasible-range widths (as an identifiability proxy), and sensitivity to regularization strength.
+For rule comparisons and new-system design, we quantify outcome divergence (who would be eliminated when), shifts in finalist composition, and robustness under stress tests that vary vote weights and the assumed rule-switch season.
 
-Our main contributions are:
-\begin{itemize}
-  \item A reproducible modeling pipeline that maps logs to a real-time traffic representation and a mode-aware parking decision.
-  \item A lightweight 1D $k$-median parking formulation that is interpretable, fast, and compatible with supervisory deployment.
-  \item A dual-route design (performance + fallback) and an evaluation protocol that emphasizes peak periods and regime transitions where
-        proactive parking matters most.
-\end{itemize}
+\textbf{To ensure interpretability, we benchmark against simple baselines}
+(e.g., judges-only elimination and naive fan-share models) and require that any added complexity yields measurable improvements in replay fidelity and stability.
+Building on inferred votes, we fit mixed-effects models to separately explain judges' scoring and fan preference, isolating professional-dancer effects and celebrity attributes, and we use these insights to design a parameterized voting system that balances fairness, suspense, and robustness.
 
-The remainder of the paper is organized as follows. Section~\ref{sec:problem} formalizes the tasks and assumptions.
-Section~\ref{sec:data} describes data processing and feature construction. Section~\ref{sec:modeling} presents the forecasting-mode
-identification-parking pipeline. Section~\ref{sec:results} reports performance and robustness analyses, and Section~\ref{sec:memo}
-summarizes deployment guidance in a management memo.
+The remainder of the paper is organized as follows: Section 2 formalizes tasks, assumptions, and notation; Section 3 describes data processing and feature construction; Sections 4--7 present vote inference, rule replay, mechanism analysis, and the proposed voting system with robustness tests; Section 8 concludes; and Section 9 provides a memo to management.

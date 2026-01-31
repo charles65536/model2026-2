@@ -44,7 +44,7 @@
 
 
 % =========计算机相关论文可以加==========
-\usepackage{algorithm}      % 提供 algorithm 环境，给算法加编号、标题
+\usepackage{algorithm}      % 提供 algorithm 环境，给算法加编号、标题 
 \usepackage{algpseudocode}  % 提供 algorithmic 环境，支持伪代码的标准语法（If/For/While/Return 等），美赛中展示算法逻辑必备。
 % 定义伪代码自定义关键词（解决 \Initialize 未定义）
 \algnewcommand{\Initialize}{\State\textbf{Initialize:} } % 初始化关键词
@@ -248,28 +248,33 @@
 
 % ===========================正文内容=============================
 % 这里是正文内容的开始
-\section{Introduction}
+\section{Introduction}\label{sec:intro}
 \input{chapters/1_introduction.tex}
 
-\section{Problem Decomposition and Analysis}\label{sec:problem}
+\section{Problem Decomposition and Analysis}\label{sec:problem_decomposition_and_analysis}
 \input{chapters/2_problem_decoposition_and_analysis.tex}
 
 
 \section{Data Processing and Analysis}\label{sec:data}
 \input{chapters/3_data_processing_and_analysis.tex}
 
-\section{Modeling}\label{sec:modeling}
-\input{chapters/4_modeling.tex}
+\section{Task A: Fan Vote Inference Model}\label{sec:A}
+\input{chapters/4_task_a_fan_vote_inference_model.tex}
 
-\section{Result Analysis and Robustness Testing}\label{sec:results}
-\input{chapters/5_results.tex}
+\section{Task B \& C: Rule Reply, Volting System, and Counterfactuals}\label{sec:B_and_C}
+\input{chapters/5_rule_reply_volting_system_and_counterfactuials.tex}
 
+\section{Task D-1: Impact Analysis: Pro Dancers \& Celebrity Attributes}\label{sec:D1}
+\input{chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex}
+
+\section{Task D-2: New Rule Design and Stress Testing}\label{sec:D2}
+\input{chapters/7_task_d2_new_rule_design_and_stress_testing.tex}
+
+\section{Conclusion}\label{sec:conclusion}
+\input{chapters/8_conclusion.tex}
 
 \section{Memo to Management}\label{sec:memo}
-\input{chapters/6_memo.tex}
-
-\section{Conclusion}
-\input{chapters/7_conclusion.tex}
+\input{chapters/9_memo.tex}
 
 
 % =======================引用=========================
@@ -283,7 +288,7 @@
 \input{chapters/appendix_a.tex}
 
 \section{Complete Files for Problem B}
-Please refer to \href{https://github.com/charles65536/model2026}{SZETO} and \href{https://github.com/Jincan-LI-HUB/2026_MCM_Simulation_Problem_B/tree/main}{LI} for complete instructions and codes.
+See \href{https://github.com/charles65536/model2026-2}{2625838} for repository tree and executiomn steps.
 \clearpage
 
 

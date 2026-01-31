@@ -1,123 +1,242 @@
-@ARTICLE{1583581,
-  author={Xiong, H. and Gaurav Pandey and Steinbach, M. and Vipin Kumar},
-  journal={IEEE Transactions on Knowledge and Data Engineering}, 
-  title={Enhancing data analysis with noise removal}, 
-  year={2006},
-  volume={18},
-  number={3},
-  pages={304-319},
-  keywords={Data analysis;Cleaning;Proteins;Noise level;Object detection;Computer Society;Computer errors;Text analysis;Error analysis;Index Terms- Data cleaning;very noisy data;hyperclique pattern discovery;local outlier factor (LOF);noise removal.},
-  doi={10.1109/TKDE.2006.46}}
+% =========================
+% MCM/ICM 2026 Problem C – References (auto-generated)
+% Date: 2026-01-31
+% =========================
 
-@inproceedings{gbdt_chen,
-author = {Chen, Tianqi and Guestrin, Carlos},
-title = {XGBoost: A Scalable Tree Boosting System},
-year = {2016},
-isbn = {9781450342322},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/2939672.2939785},
-doi = {10.1145/2939672.2939785},
-abstract = {Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable end-to-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems.},
-booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
-pages = {785--794},
-numpages = {10},
-keywords = {large-scale machine learning},
-location = {San Francisco, California, USA},
-series = {KDD '16}
+@misc{comap2026_problemC_pdf,
+  author       = {{COMAP}},
+  title        = {2026 {MCM} Problem {C}: Data With The Stars (Problem Statement PDF)},
+  year         = {2026},
+  howpublished = {MCM/ICM official contest materials},
+  url          = {https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/problems/2026_MCM_Problem_C.pdf},
+  note         = {Accessed: 2026-01-31}
 }
 
-@article{ZHAO201992,
-title = {DSRC-based rear-end collision warning system -- An error-component safety distance model and field test},
-journal = {Transportation Research Part C: Emerging Technologies},
-volume = {107},
-pages = {92-104},
-year = {2019},
-issn = {0968-090X},
-doi = {https://doi.org/10.1016/j.trc.2019.08.002},
-url = {https://www.sciencedirect.com/science/article/pii/S0968090X19311192},
-author = {Xiangmo Zhao and Shoucai Jing and Fei Hui and Ronghui Liu and Asad J. Khattak},
-keywords = {Dedicated short-range communication (DSRC), Rear-end collision warning, Transmission delay, Safety distance model, Warning strategy, V2V},
-abstract = {Dedicated short-range communication (DSRC) technology can provide drivers with information about other vehicles that are beyond the normal range of vision and enables the development of driving support systems such as the rear-end collision warning system (ReCWS). However, technology constraints such as communication delays and GPS error affect the accuracy of a DSRC-based ReCWS. This paper proposes a ReCWS design that explicitly represents functional specifications of DSRC technology, including transmission delay specifications that describe the information transmission process and an error-component safety distance specification used to represent the effect of GPS error and the information propagation delay. We propose three collision warning strategies each with different deceleration requirements. The system is assembled with off-the-shelf DSRC and mobile technology that can be readily installed into test vehicles. To test the effectiveness of the proposed ReCWS, we ran a variety of controlled scenarios on a test track. The results show a high degree of warning accuracy. These field test results also provide calibrated system parameter values for future studies and designs of DSRC-based ReCWSs.}
+@misc{comap2026_problemC_data,
+  author       = {{COMAP}},
+  title        = {2026 {MCM} Problem {C} Dataset (Problem\_C\_Data.csv)},
+  year         = {2026},
+  howpublished = {MCM/ICM official contest materials},
+  url          = {https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/problems/2026_MCM_Problem_C_Data.csv},
+  note         = {Accessed: 2026-01-31}
 }
 
-% References for MCM 2026 Training Problem B (Elevator Pitch)
 
-@book{cibse2020guided,
-  author    = {{Chartered Institution of Building Services Engineers (CIBSE)}},
-  title     = {Guide D: Transportation Systems in Buildings},
-  year      = {2020},
-  month     = sep,
-  publisher = {CIBSE},
-  address   = {London, UK},
-  isbn      = {9781912034703},
-  note      = {Active standard; provides guidance on vertical transportation systems and service measures.}
+1. COMAP 2026 MCM Problem C（官方题面 PDF）
+怎么用：
+作为你们所有“规则回放（rank vs percent）”“N/A / 0 分编码”“赛季分段（era slice）”的唯一权威锚点。
+报告里写“数据编码/规则定义完全遵循题面”时必须引用它。
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/problems/2026_MCM_Problem_C.pdf
+
+
+@book{boyd2004convex,
+  author    = {Boyd, Stephen and Vandenberghe, Lieven},
+  title     = {Convex Optimization},
+  publisher = {Cambridge University Press},
+  year      = {2004},
+  isbn      = {9780521833783},
+  doi       = {10.1017/CBO9780511804441},
+  url       = {https://web.stanford.edu/~boyd/cvxbook/}
 }
 
-@book{strakosch2010vertical,
-  editor    = {Strakosch, George R. and Caporale, Robert S.},
-  title     = {The Vertical Transportation Handbook},
-  edition   = {4},
-  year      = {2010},
-  month     = oct,
-  publisher = {John Wiley \& Sons},
-  address   = {Hoboken, NJ, USA},
-  isbn      = {9780470404133}
+2. Stephen Boyd & Lieven Vandenberghe, Convex Optimization（2004）
+怎么用：
+用于你们把“未知 fan votes / weights”写成**带约束的优化问题（QP/凸优化）**时的权威背书：可行域、KKT、松弛、稳定性等。
+https://stanford.edu/~boyd/cvxbook/
+
+@article{boyd2011admm,
+  author  = {Boyd, Stephen and Parikh, Neal and Chu, Eric and Peleato, Borja and Eckstein, Jonathan},
+  title   = {Distributed Optimization and Statistical Learning via the Alternating Direction Method of Multipliers},
+  journal = {Foundations and Trends in Machine Learning},
+  year    = {2011},
+  volume  = {3},
+  number  = {1},
+  pages   = {1--122},
+  doi     = {10.1561/2200000016},
+  url     = {https://web.stanford.edu/~boyd/papers/admm_distr_stats.html}
 }
 
-@book{barney2015elevatortraffic,
-  author    = {Barney, Gina and Al-Sharif, Lutfi},
-  title     = {Elevator Traffic Handbook: Theory and Practice},
-  edition   = {2},
+4. Boyd et al., “Distributed Optimization and Statistical Learning via ADMM”（Foundations and Trends in ML, 2011）
+
+怎么用：
+如果你们的实现里出现“分块变量、交替更新、带惩罚项的可复现求解流程”，用 ADMM 综述来背书“工程可落地、可扩展求解”。
+https://stanford.edu/~boyd/papers/admm_distr_stats.html
+
+@article{bubeck2015convex,
+  author  = {Bubeck, S{\'e}bastien},
+  title   = {Convex Optimization: Algorithms and Complexity},
+  journal = {Foundations and Trends in Machine Learning},
+  year    = {2015},
+  volume  = {8},
+  number  = {3-4},
+  pages   = {231--357},
+  doi     = {10.1561/2200000050},
+  url     = {https://www.nowpublishers.com/article/Details/MAL-050}
+}
+
+3. Sébastien Bubeck, Convex Optimization: Algorithms and Complexity（Foundations and Trends in ML, 2015）
+怎么用：
+当你们需要说明“我们用的优化求解/复杂度/收敛性属于现代可扩展凸优化范式”时，用这本比只引 2004 更“靠近今天且仍权威”。
+https://sbubeck.com/Bubeck15.pdf
+
+@book{benning2018regularization,
+  author    = {Benning, Martin and Burger, Martin},
+  title     = {Modern Regularization Methods for Inverse Problems},
+  publisher = {Springer},
+  year      = {2018},
+  isbn      = {9783319939780},
+  doi       = {10.1007/978-3-319-93978-0},
+  url       = {https://link.springer.com/book/10.1007/978-3-319-93978-0}
+}
+
+5. Benning & Burger, “Modern Regularization Methods for Inverse Problems”（Acta Numerica, 2018）
+怎么用：
+你们“用淘汰/名次这种弱信号去反推不可观测 fan 投票”本质是不适定反问题；用这篇权威综述证明“正则化/先验/稳健性检查”是标准做法，而不是拍脑袋。
+
+@book{kaipio2005statistical,
+  author    = {Kaipio, Jari and Somersalo, Erkki},
+  title     = {Statistical and Computational Inverse Problems},
+  publisher = {Springer},
+  year      = {2005},
+  isbn      = {9780387220732},
+  doi       = {10.1007/b138659},
+  url       = {https://link.springer.com/book/10.1007/b138659}
+}
+
+6. Kaipio & Somersalo, Statistical and Computational Inverse Problems（Springer, 2005/2006）
+怎么用：
+用于你们写“可识别性不是唯一解，而是可行集合/区间；以及不确定性如何传播到结论（KPI2 叙事）”的统计反问题权威参考。
+
+@book{aitchison1986compositional,
+  author    = {Aitchison, John},
+  title     = {The Statistical Analysis of Compositional Data},
+  publisher = {Chapman and Hall},
+  year      = {1986},
+  isbn      = {9780412280604}
+}
+
+@book{pawlowsky2015compositional,
+  editor    = {Pawlowsky-Glahn, Vera and Buccianti, Antonella},
+  title     = {Compositional Data Analysis: Theory and Applications},
+  publisher = {Wiley},
+  year      = {2011},
+  isbn      = {9780470710314},
+  doi       = {10.1002/9781119976462},
+  url       = {https://onlinelibrary.wiley.com/doi/book/10.1002/9781119976462}
+}
+
+@incollection{filzmoser2018compositional,
+  author    = {Filzmoser, Peter and Hron, Karel and Reimann, Clemens},
+  title     = {Compositional Data Analysis in Practice},
+  booktitle = {Statistical Analysis of Compositional Data in the Geosciences},
+  publisher = {Springer},
+  year      = {2018},
+  doi       = {10.1007/978-3-319-96427-0_2},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-319-96427-0_2}
+}
+
+@book{brandt2016comsoc,
+  editor    = {Brandt, Felix and Conitzer, Vincent and Endriss, Ulle and Lang, J{\'e}r{\^o}me and Procaccia, Ariel D.},
+  title     = {Handbook of Computational Social Choice},
+  publisher = {Cambridge University Press},
+  year      = {2016},
+  isbn      = {9781107060432},
+  url       = {https://www.cambridge.org/core/books/handbook-of-computational-social-choice/}
+}
+
+8. Brandt et al. (eds.), Handbook of Computational Social Choice（Cambridge, 2016）
+怎么用：
+用于支撑“不同投票/聚合规则会导致不同社会选择结果（翻转、争议、非直觉结果）”，把你们的“规则回放对照”写成计算社会选择的标准范式。
+
+@book{saari2001decisions,
+  author    = {Saari, Donald G.},
+  title     = {Decisions and Elections: Explaining the Unexpected},
+  publisher = {Cambridge University Press},
+  year      = {2001},
+  isbn      = {9780521791939},
+  url       = {https://www.cambridge.org/core/books/decisions-and-elections/}
+}
+
+@article{gibbard1973manipulation,
+  author  = {Gibbard, Allan},
+  title   = {Manipulation of Voting Schemes: A General Result},
+  journal = {Econometrica},
+  year    = {1973},
+  volume  = {41},
+  number  = {4},
+  pages   = {587--601},
+  doi     = {10.2307/1914083},
+  url     = {https://www.jstor.org/stable/1914083}
+}
+
+@article{satterthwaite1975strategy,
+  author  = {Satterthwaite, Mark A.},
+  title   = {Strategy-proofness and Arrow's Conditions: Existence and Correspondence Theorems for Voting Procedures and Social Welfare Functions},
+  journal = {Journal of Economic Theory},
+  year    = {1975},
+  volume  = {10},
+  number  = {2},
+  pages   = {187--217},
+  doi     = {10.1016/0022-0531(75)90050-2},
+  url     = {https://www.sciencedirect.com/science/article/pii/0022053175900502}
+}
+
+@book{arrow1951socialchoice,
+  author    = {Arrow, Kenneth J.},
+  title     = {Social Choice and Individual Values},
+  publisher = {Wiley},
+  year      = {1951},
+  note      = {2nd ed. 1963}
+}
+
+@article{bradley1952paired,
+  author  = {Bradley, Ralph Allan and Terry, Milton E.},
+  title   = {Rank Analysis of Incomplete Block Designs: I. The Method of Paired Comparisons},
+  journal = {Biometrika},
+  year    = {1952},
+  volume  = {39},
+  number  = {3-4},
+  pages   = {324--345},
+  doi     = {10.1093/biomet/39.3-4.324},
+  url     = {https://academic.oup.com/biomet/article/39/3-4/324/241380}
+}
+
+@book{luce1959choice,
+  author    = {Luce, R. Duncan},
+  title     = {Individual Choice Behavior: A Theoretical Analysis},
+  publisher = {Wiley},
+  year      = {1959}
+}
+
+@article{plackett1975permutations,
+  author  = {Plackett, R. L.},
+  title   = {The Analysis of Permutations},
+  journal = {Journal of the Royal Statistical Society. Series C (Applied Statistics)},
+  year    = {1975},
+  volume  = {24},
+  number  = {2},
+  pages   = {193--202},
+  doi     = {10.2307/2346567},
+  url     = {https://www.jstor.org/stable/2346567}
+}
+
+@article{bates2015lme4,
+  author  = {Bates, Douglas and M{\"a}chler, Martin and Bolker, Ben and Walker, Steve},
+  title   = {Fitting Linear Mixed-Effects Models Using lme4},
+  journal = {Journal of Statistical Software},
+  year    = {2015},
+  volume  = {67},
+  number  = {1},
+  pages   = {1--48},
+  doi     = {10.18637/jss.v067.i01},
+  url     = {https://www.jstatsoft.org/article/view/v067i01}
+}
+
+@book{law2015simulation,
+  author    = {Law, Averill M.},
+  title     = {Simulation Modeling and Analysis},
+  publisher = {McGraw-Hill Education},
   year      = {2015},
-  publisher = {Routledge},
-  address   = {London, UK},
-  isbn      = {9781317528456},
-  doi       = {10.4324/9781315723600},
-  url       = {https://doi.org/10.4324/9781315723600}
-}
-
-@article{friedman2001gbm,
-  author  = {Friedman, Jerome H.},
-  title   = {Greedy Function Approximation: A Gradient Boosting Machine},
-  journal = {The Annals of Statistics},
-  year    = {2001},
-  volume  = {29},
-  number  = {5},
-  pages   = {1189--1232},
-  doi     = {10.1214/aos/1013203451}
-}
-
-@article{rousseeuw1987silhouette,
-  author  = {Rousseeuw, Peter J.},
-  title   = {Silhouettes: A Graphical Aid to the Interpretation and Validation of Cluster Analysis},
-  journal = {Journal of Computational and Applied Mathematics},
-  year    = {1987},
-  volume  = {20},
-  pages   = {53--65},
-  doi     = {10.1016/0377-0427(87)90125-7}
-}
-
-@incollection{macqueen1967kmeans,
-  author    = {MacQueen, J.},
-  title     = {Some Methods for Classification and Analysis of Multivariate Observations},
-  booktitle = {Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability, Volume 1: Statistics},
-  year      = {1967},
-  pages     = {281--297},
-  publisher = {University of California Press},
-  address   = {Berkeley, CA, USA},
-  url={https://api.semanticscholar.org/CorpusID:6278891}
-}
-
-
-@article{hakimi1964median,
-  author  = {Hakimi, S. Louis},
-  title   = {Optimum Locations of Switching Centers and the Absolute Centers and Medians of a Graph},
-  journal = {Operations Research},
-  year    = {1964},
-  volume  = {12},
-  number  = {3},
-  pages   = {450--459},
-  doi     = {10.1287/opre.12.3.450},
-  url     = {https://doi.org/10.1287/opre.12.3.450}
+  edition   = {5},
+  isbn      = {9780073401324}
 }

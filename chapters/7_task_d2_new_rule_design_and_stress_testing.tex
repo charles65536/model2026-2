@@ -1,0 +1,151 @@
+% Chapter 7 structure is fixed by our writing plan:
+% 7.1 Design Goals and Principles
+% 7.2 Proposed aggregation rule
+% 7.3 Stress Testing and Simulation (Evidence via replay)
+% See context pack for the required split. 
+
+\subsection{Design Goals and Principles}
+\label{subsec:d2_design_goals}
+
+Our replay analysis shows that outcome sensitivity concentrates in weeks where judges' evaluations and
+audience preferences diverge, and that purely rank-based aggregation can amplify small ordering
+differences into large outcome changes. A redesigned system should therefore:
+(i) preserve audience agency while (ii) preventing extreme popularity from overwhelming technical performance,
+(iii) remain interpretable to viewers, (iv) use few tunable parameters, and (v) be robust to vote-estimation
+uncertainty and minor format variations. We operationalize these goals with measurable criteria:
+high replay fidelity on eligible weeks (KPI1), reduced instability under perturbations (stability under uncertainty),
+and transparent parameterization for management control.
+
+\subsection{Proposed aggregation rule: Judge Safeguard + Smoothed Rank (JS-SR)}
+\label{subsec:d2_js_sr}
+
+We propose an implementable rule that balances technical merit and audience agency by introducing a
+\emph{Safeguard Zone}. Pure percent blending can allow extreme popularity to dominate, while pure rank aggregation
+can discard meaningful score margins. JS-SR protects top technical performers while letting fan preference decide outcomes
+within the remaining ``battleground'' set.
+
+\paragraph{Step 1: Safeguard threshold.}
+For each week $t$ with active set $A_{s,t}$, let $\tau\in(0,1)$ be a management-controlled percentile (e.g., $\tau=0.30$
+meaning ``top 30\% by judges'').
+Define the week-specific threshold on raw total judges' scores $J_{i,t}$:
+\begin{equation}
+\text{Threshold}_{s,t} = \text{Percentile}\big(\{J_{i,t}\}_{i\in A_{s,t}},\, 1-\tau\big).
+\end{equation}
+The safeguarded set is
+\begin{equation}
+\text{SafeSet}_{s,t}=\{i\in A_{s,t}\mid J_{i,t}\ge \text{Threshold}_{s,t}\}.
+\end{equation}
+Contestants in $\text{SafeSet}_{s,t}$ are immune from elimination in week $t$.
+
+\paragraph{Step 2: Battleground scoring and elimination.}
+Let $D_{s,t}=A_{s,t}\setminus \text{SafeSet}_{s,t}$ be the battleground set.
+For $i\in D_{s,t}$, define the combined score using judges' share $q^J_{i,t}$ and inferred fan share $p_{i,t}$:
+\begin{equation}
+S^{(JS)}_{i,t}=w_J\, q^J_{i,t} + (1-w_J)\, p_{i,t}, \qquad w_J\in[0,1].
+\end{equation}
+We eliminate the $m_{s,t}$ contestants with the smallest $S^{(JS)}_{i,t}$ among $D_{s,t}$ (deterministic tie-handling).
+
+
+\begin{algorithm}[H]
+\caption{Algorithm 3: JS-SR replay under $(\tau, w_J)$}
+\label{alg:js_sr_replay}
+\small
+\begin{algorithmic}[1]  % [1] 显示行号，algpseudocode 必须保留
+    % ---- 输入定义（首字母大写，参数分行排版避免溢出）----
+    \Require 
+        Weekly active sets $A_{s,t}$, raw judges totals $J_{i,t}$, judges shares $q^J_{i,t}$, inferred fan shares $p_{i,t}$,
+        elimination counts $m_{s,t}$, parameters $(\tau, w_J)$.
+    % ---- 输出定义（首字母大写）----
+    \Ensure 
+        Eliminated sets $\tilde E^{(JS)}_{s,t}$ and final placements under JS-SR.
+
+    % ---- 核心算法逻辑（适配 algpseudocode 关键字）----
+    \For{$t=1$ to $T_s$}
+        \State Restrict to active set $A_{s,t}$.
+        \If{$m_{s,t}=0$}
+            \State $\tilde E^{(JS)}_{s,t}\leftarrow \varnothing$; continue to next week.
+        \EndIf
+        % 计算阈值（优化变量排版，用 \mathrm 统一格式）
+        \State Compute $\mathrm{Threshold}_{s,t}$ as the $(1-\tau)$ percentile of $\{J_{i,t}\}_{i\in A_{s,t}}$.
+        % 定义安全集和待淘汰池（拆分行提升可读性）
+        \State Form safe set: 
+        \[
+        \mathrm{SafeSet}_{s,t} = \{i\in A_{s,t}: J_{i,t}\ge \mathrm{Threshold}_{s,t}\}
+        \]
+        \State Form elimination candidate pool: $D_{s,t} = A_{s,t}\setminus \mathrm{SafeSet}_{s,t}$.
+        \State For each $i\in D_{s,t}$, compute combined score:
+        \[
+        S^{(JS)}_{i,t} = w_J q^J_{i,t} + (1-w_J)p_{i,t}
+        \]
+        \State Eliminate the $m_{s,t}$ contestants with smallest $S^{(JS)}_{i,t}$ within $D_{s,t}$ (deterministic tie-handling applied).
+        \State Update next week's active set: $A_{s,t+1}\leftarrow A_{s,t}\setminus \tilde E^{(JS)}_{s,t}$.
+    \EndFor
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\subsection{Stress Testing and Simulation Evidence via Replay}
+\label{subsec:d2_stress_testing}
+
+We evaluate the proposed rule using a season--week replay protocol identical to Chapters~4--5, ensuring fair
+comparisons across rule variants. Stress tests sweep $(\tau ,w_J)$ over a predefined grid and propagate vote
+uncertainty by sampling plausible vote scenarios within Task~A uncertainty bands (or bootstrap reconstructions).
+For each configuration, we report KPI1 on eligible weeks, divergence relative to historical rules, and stability
+metrics quantifying how often small parameter or vote perturbations change (i) the eliminated set and (ii) final placements.
+Recommended parameters are selected by multi-metric trade-off analysis, prioritizing robust performance rather than tuning
+to any single season.
+
+% ======================================================================
+% Chapter 7 Figures/Tables Placeholders (to be filled after simulation runs)
+% Place this block at the END of:
+%   7_task_d2_new_rule_design_and_stress_testing.tex
+% ======================================================================
+
+% % ---------------- FIG 7.1: Parameter grid trade-off (KPI1 vs stability) ----------------
+% % Purpose (MCM): show the Pareto-style trade-off and justify recommended (alpha*, kappa*).
+% % Inputs: simulation sweep results over (alpha, kappa).
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.92\linewidth]{figures/fig7_1_tradeoff_heatmap.pdf}
+%     \fbox{\parbox{0.92\linewidth}{\centering Placeholder: Fig 7.1 Trade-off heatmap over $(\alpha,\kappa)$}}
+%     \caption{Trade-off surface over $(\alpha,\kappa)$: replay fidelity (KPI1 on eligible weeks) versus stability under uncertainty.}
+%     \label{fig:tradeoff_heatmap_alpha_kappa}
+% \end{figure}
+
+% % ---------------- FIG 7.2: Stability under vote uncertainty (flip probability) ----------------
+% % Purpose: quantify robustness to Task A vote uncertainty; supports "stable under perturbations" claims.
+% % Inputs: vote-uncertainty sampling (bootstrap or KPI2 interval sampling) + replays.
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.85\linewidth]{figures/fig7_2_uncertainty_stability.pdf}
+%     \fbox{\parbox{0.85\linewidth}{\centering Placeholder: Fig 7.2 Stability under vote uncertainty}}
+%     \caption{Stability of eliminations and final placements under vote-estimation uncertainty across rule variants.}
+%     \label{fig:uncertainty_stability}
+% \end{figure}
+
+% % ---------------- TAB 7.1: Rule variants summary (simplicity + knobs) ----------------
+% % Purpose (MCM/Memo): compare implementability across variants (few knobs, transparent).
+% \begin{table}[H]
+%     \centering
+%     %\input{tables/tab7_1_rule_variant_summary.tex}
+%     \caption{Summary of rule variants and tunable parameters (interpretability and implementability comparison).}
+%     \label{tab:rule_variant_summary}
+% \end{table}
+
+% % ---------------- TAB 7.2: Season-level outcome changes (finalists/champion) ----------------
+% % Purpose: evidence via replay; report how often finalists/champion change under new rule vs baseline.
+% \begin{table}[H]
+%     \centering
+%     %\input{tables/tab7_2_outcome_changes.tex}
+%     \caption{Season-level outcome changes under the proposed rule relative to baseline rules (finalists and champion).}
+%     \label{tab:season_outcome_changes}
+% \end{table}
+
+% % Notes for team:
+% % Required artifacts to generate:
+% % - figures/fig7_1_tradeoff_heatmap.pdf
+% % - figures/fig7_2_uncertainty_stability.pdf
+% % - tables/tab7_1_rule_variant_summary.tex
+% % - tables/tab7_2_outcome_changes.tex
+% % ======================================================================

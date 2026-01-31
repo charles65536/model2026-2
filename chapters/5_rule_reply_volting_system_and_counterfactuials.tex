@@ -1,0 +1,221 @@
+% =========================
+% Chapter 5: Rule Replay, Voting System, and Counterfactuals
+% File: 5_rule_reply_volting_system_and_counterfactuials.tex
+% =========================
+
+% ---- Chapter opening positioning paragraph (results-focused, protocol explicit)
+Following the official rule definitions, we perform season--week counterfactual replays under
+(i) rank-based aggregation and (ii) percent-based aggregation, using the same weekly active set
+and deterministic eligibility labels to ensure a fair comparison.
+As a reproducible sanity-check baseline (BL-0), we use judge-only information with a uniform fan proxy
+and report elimination hit-rate (KPI1) and the rule divergence rate (KPI3/FlipRate).
+This chapter summarizes cross-season differences (Section~5.1), explains divergences via controversial case studies (Section~5.2),
+evaluates the incremental impact of bottom-two and judges' save (Section~5.3), and synthesizes implications (Section~5.4).
+
+\subsection{Rank vs. Percent Across Seasons}\label{subsec:rank_vs_percent_across_seasons}
+Results in this section are first reported under BL-0 as a reproducible sanity check; Task A inferred votes are used in subsequent replays.
+\subsubsection{Replay protocol and eligibility}\label{subsubsec:replay_protocol_and_eligibility}
+% 这里放：active set 口径、single-elim eligibility、special exits、tie-handling、以及“同一输入不同规则”的对比原则。
+% 目标：评审只看这一段就不会质疑你们分母与口径。
+% 可引用：intermediate_weekly_panel + baseline table artifacts.
+\textbf{Goal.} This section quantifies how much the season outcomes depend on the aggregation rule by replaying each season under (i) percent-based aggregation and (ii) rank-based aggregation while holding inputs constant.
+For every season--week, we restrict attention to the \emph{active set} $A_{s,t}$ and use judges' information (e.g., total judges' score or its normalized share) together with the inferred fan vote shares $\hat p_{i,t}$ from Task~A.
+Given an elimination count $m_{s,t}$ (including $m_{s,t}=0$ for non-elimination weeks and $m_{s,t}>1$ for multi-elimination weeks), the replay engine deterministically selects the bottom $m_{s,t}$ contestants under the chosen rule and updates the active set for the next week.
+
+\textbf{Percent rule.} Under percent-based aggregation, the combined score is
+\[
+S^{(P)}_{i,t}(\alpha)=\alpha q^{J}_{i,t}+(1-\alpha)\hat p_{i,t},
+\]
+and the replay eliminates the $m_{s,t}$ contestants with the smallest $S^{(P)}_{i,t}$.
+
+\textbf{Rank rule.} Under rank-based aggregation, we compute judges' rank $R^J_{i,t}$ from total judges' score $J_{i,t}$ (descending), and vote rank $R^V_{i,t}$ from $\hat p_{i,t}$ (descending). The combined rank is
+\[
+R^{(R)}_{i,t}=R^J_{i,t}+R^V_{i,t},
+\]
+and the replay eliminates the $m_{s,t}$ contestants with the largest $R^{(R)}_{i,t}$ (worst combined ranks).
+
+\textbf{Tie-handling.} To keep comparisons reproducible, ties at the elimination cutoff are resolved deterministically.
+For percent scores, ties are broken by higher judges' share $q^J$ (survives), and if still tied by a stable identifier order.
+For rank scores, we use standard competition ranking for tied values and apply the same deterministic tie-breaker when selecting the bottom $m_{s,t}$.
+All ties are resolved deterministically (details in Appendix X) to ensure replay reproducibility.
+
+\subsubsection{Cross-season summary metrics}\label{subsubsec:cross_season_summary_metrics}
+% 这里放：KPI1 (rank/percent) 与 KPI3 FlipRate 的总体与分 era 结果；
+% 可以直接插入你们 tab_baseline_consistency.tex 以及 fig_fliprate_by_season.pdf 的文字解释。
+We compute KPI1/KPI3 over eligible (season, week) pairs, excluding weeks with no elimination or irregular/multi-elimination formats per our slice definitions.
+\textbf{KPI1 (elimination hit-rate)} measures whether a replayed rule correctly identifies the observed eliminated set in eligible weeks.
+\textbf{KPI3 (FlipRate)} measures how often the predicted eliminated set differs between percent-based and rank-based replays under the same inputs.
+Interpreting these metrics together separates \emph{fidelity} (does a rule reproduce observed eliminations) from \emph{rule sensitivity} (does changing the rule change who leaves).
+
+In addition to season-level aggregates, we report an era-sliced view aligned with the show's documented format changes.
+This prevents Simpson's-paradox-style conclusions where one rule appears ``better'' simply because it is evaluated disproportionately in seasons that used it.
+
+
+\subsubsection{Era cutoff assumption and stress-test plan}\label{subsubsec:era_cutoff_assumption_and_stress_test_plan}
+% 这里放：Season-28 切换不确定 -> 27/28/29 stress-test 的闭环说明（轻描淡写但必须出现）。
+Because the exact season boundary of the return to rank-based aggregation may affect interpretation, we treat the era cutoff as an explicit assumption and stress-test adjacent cutoffs (e.g., shifting the boundary by $\pm 1$ season).
+Conclusions that remain stable under this perturbation are reported as robust, while boundary-sensitive findings are explicitly qualified.
+
+\subsection{Controversial Contestants: Case Studies}\label{subsec:controversial_contestants_case_studies}
+% 这里放：挑选“争议”的 operational criteria（例如 FlipRate 高的赛季/周、judge 总分接近的周），
+% 然后做 2-3 个案例叙事：规则一变淘汰对象就变，解释原因（rank vs percent 的非线性、名次挤压效应等）。
+We select cases from seasons with high FlipRate and large judge-fan discordance, ensuring that each case demonstrates a distinct mechanism.
+
+\textbf{Purpose.} Aggregate FlipRate identifies \emph{where} rules diverge; case studies explain \emph{why} the divergence occurs and how it translates into public controversy.
+We analyze a small set of representative contestants (e.g. Jerry Rice and Bobby Bones) whose outcomes are commonly discussed in the context of judge-fan disagreement.
+For each case, we follow a fixed protocol:
+
+\begin{itemize}
+    \item \textbf{Observed trajectory:} week-by-week judges' rank, survival, and final placement.
+    \item \textbf{Counterfactual replays:} percent vs.\ rank under the same inferred $\hat p_{i,t}$, and (when applicable) with/without a judges' save module.
+    \item \textbf{Mechanism attribution:} identify the minimal driver of outcome change (e.g., persistent advantage in vote rank that dominates under rank aggregation, or ``rank compression'' effects when many contestants cluster in judges' scores).
+    \item \textbf{Uncertainty qualification:} if the week-level vote interval is wide (KPI2) or replay margins are small, we report the case as sensitive and avoid over-claiming.
+\end{itemize}
+
+This structure ensures that each narrative claim is backed by a reproducible replay trace rather than anecdotal reasoning.
+
+\subsection{Bottom-two and Judges' Save Mechanism}\label{subsec:bottom_two_and_judges_save}
+
+Some later seasons introduce a two-stage mechanism: (i) identify a bottom subset using the vote aggregation rule, then (ii) select the eliminated contestant from that subset via judges' save.
+To isolate the incremental effect of this change, we implement a modular judges' save layer that can be toggled on top of either percent-based or rank-based aggregation.
+
+\textbf{Module definition.} In a week with a bottom-two format, the replay first forms a bottom-two set $B_{s,t}$ using the chosen aggregation rule.
+The saved contestant is the one with higher judges' score $J_{i,t}$ (equivalently higher $q^J_{i,t}$), and the other is eliminated.
+This construction cleanly separates \emph{how the bottom set is formed} from \emph{how the final elimination is chosen}, enabling controlled counterfactual comparisons.
+
+\textbf{Evaluation questions.} We quantify (a) how often the judges' save reverses the elimination implied by votes alone, (b) whether the save disproportionately protects contestants with strong judges' scores but weak fan support, and (c) how the mechanism affects overall rule divergence and late-season stability.
+These results connect directly to management decisions about perceived fairness versus entertainment value.
+
+% ==========================规则概述与反事实分析=============================
+\subsection{Synthesis of Findings from Rules}\label{subsec:synthesis_of_findings_from_rules}
+
+We synthesize the rule replay evidence into four actionable takeaways.
+
+\textbf{(1) Rule choice matters most when judges and fans disagree.}
+Weeks with large judge--fan rank discordance concentrate a disproportionate share of rule flips; in such weeks, percent-based aggregation tends to preserve score magnitude information, while rank-based aggregation amplifies relative ordering.
+
+\textbf{(2) Divergence is not uniform across the season.}
+Rule sensitivity often increases in late-season weeks when the field is smaller and elimination margins narrow; this motivates reporting uncertainty and replay margins alongside any counterfactual claim.
+
+\textbf{(3) Judges' save changes the source of authority.}
+A bottom-two + judges' save mechanism shifts the final elimination decision toward judges, reducing the ability of extreme popularity alone to determine outcomes in the bottom set—at the cost of potentially weakening audience agency.
+
+\textbf{(4) Implication for redesign.}
+These patterns motivate a new aggregation system (Task D2) that preserves interpretability and replay stability while explicitly controlling how much popularity can overwhelm technical performance.
+The next chapters use the same replay engine to evaluate proposed parameters under robustness and stress tests.
+% ---------------- OPTIONAL: Summary box (if you want a visual takeaway) ----------------
+% Consider a small boxed summary here for Memo-ready bullets.
+% -------------------------------------------------------------------------------
+
+
+
+
+% =========================下面是我们粘图片的位置注释=================
+
+% % ---------------- FIG 5.1: FlipRate by season (eligible weeks only) ----------------
+% % 插入点 A：在 Cross-season summary metrics (KPI1 & KPI3) 第一段之后
+% % 用途：先给读者“全局敏感度”直观印象
+% % Fig 5.1 fig_fliprate_by_season.pdf（FlipRate by season，eligible only）
+% -------------------------------------------------------------------------------
+% % Insert here to support KPI3/FlipRate cross-season comparison.
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.95\linewidth]{figures/fig_fliprate_by_season.pdf}
+%     \fbox{\parbox{0.95\linewidth}{\centering Placeholder: Fig 5.1 FlipRate by Season}}
+%     \caption{FlipRate by season under comparable (eligible) weeks.}
+%     \label{fig:fliprate_by_season}
+% \end{figure}
+% % -------------------------------------------------------------------------------
+
+% % ---------------- TAB 5.1: KPI1 hit-rate (rank vs percent) with era slices ----------------
+% 用途：给出 KPI1（hit-rate）对照表，体现“fidelity vs sensitivity”
+% Tab 5.1 tab_baseline_consistency.tex（Overall + era slices + #eligible weeks）
+% -------------------------------------------------------------------------------
+% % Insert here to report BL-0 sanity-check baseline consistency (eligible weeks only).
+% \begin{table}[H]
+%     \centering
+%     %\input{tables/tab_baseline_consistency.tex}
+%     \caption{Elimination hit-rate (KPI1) for rank-based vs.\ percent-based replays (eligible weeks only), including era slices.}
+%     \label{tab:kpi1_hitrate_era}
+% \end{table}
+% % -------------------------------------------------------------------------------
+
+% % ---------------- FIG 5.2: Era cutoff stress test (27/28/29) ----------------
+% 插入点 C：在 Era cutoff assumption and stress-test plan 段落之后
+% 用途：一眼让评审看到“cutoff 变动对结论影响多大”，避免被质疑
+% Fig 5.2 fig_cutoff_stress_test.pdf（cutoff=27/28/29 下的 FlipRate 或 hit-rate）
+% -------------------------------------------------------------------------------
+% % Insert here to show robustness of KPI1/KPI3 to era boundary assumption.
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.80\linewidth]{figures/fig_cutoff_stress_test.pdf}
+%     \fbox{\parbox{0.80\linewidth}{\centering Placeholder: Fig 5.2 Era Cutoff Stress Test}}
+%     \caption{Sensitivity of replay metrics to the assumed era cutoff (e.g., 27/28/29). Error bars denote bootstrap uncertainty over weeks.}
+%     \label{fig:cutoff_stress_test}
+% \end{figure}
+% % -------------------------------------------------------------------------------
+
+% % ---------------- FIG 5.3: FlipRate by season phase (early/mid/late) ----------------
+% （P1 可选）插入点 D：如果你们写了“late-season 更敏感”的句子，就在那句之后插
+% ---------------·------------------------------------------------
+% % Only include if the text claims phase dependence (late-season sensitivity).
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.80\linewidth]{figures/fig_fliprate_by_phase.pdf}
+%     \fbox{\parbox{0.80\linewidth}{\centering Placeholder: Fig 5.3 FlipRate by Phase}}
+%     \caption{FlipRate by normalized season phase (eligible weeks only).}
+%     \label{fig:fliprate_by_phase}
+% \end{figure}
+% % -------------------------------------------------------------------------------
+
+% % ---------------- FIG 5.4x: Case timeline (judges vs fan) ----------------
+% % 5.2 Controversial contestants case studies — 插图/表注释占位
+% % 每个案例块建议插两张图（你们先留空位，等跑出来填）
+% % 插入点 E：案例叙事中“Observed trajectory”之后
+% % Fig 5.4a / 5.4b fig_case_<name>_timeline.pdf（judges rank、fan rank、淘汰标记）
+% % -------------------------------------------------------------------------------
+% % Insert inside each case study after "Observed trajectory".
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.90\linewidth]{figures/fig_case_JerryRice_timeline.pdf}
+%     \fbox{\parbox{0.90\linewidth}{\centering Placeholder: Fig 5.4x Case Timeline}}
+%     \caption{Case timeline example: week-by-week judges rank and inferred fan rank, with elimination markers.}
+%     \label{fig:case_timeline_placeholder}
+% \end{figure}
+% % -------------------------------------------------------------------------------
+
+
+% % ---------------- TAB 5.2x: Case counterfactual summary table ----------------
+% % 插入点 F：在“Counterfactual replays”段落之后
+% % Tab 5.2（小表） tab_case_<name>_counterfactual.tex：列出“真实淘汰 vs percent replay vs rank replay（含 save/不含 save）”
+% % -------------------------------------------------------------------------------
+% % Insert after "Counterfactual replays" to make the narrative audit-able.
+% \begin{table}[H]
+%     \centering
+%     %\input{tables/tab_case_JerryRice_counterfactual.tex}
+%     \caption{Case counterfactual summary: observed vs.\ percent vs.\ rank (and save variants if applicable).}
+%     \label{tab:case_counterfactual_placeholder}
+% \end{table}
+% % -------------------------------------------------------------------------------
+
+
+% % ---------------- FIG 5.5: Judges' save effect (elimination changed rate) ----------------
+% % 5.3 Bottom-two and Judges' Save Mechanism — 插图注释占位
+% % 插入点 G：在 “Evaluation questions” 段落之后
+% % Fig 5.5 fig_save_fliprate.pdf：save 导致淘汰改变的比例（按 season 或按 week）
+% % ------------------------------------------------------------------------------
+% % Insert here to quantify how often judges' save changes the eliminated contestant.
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.85\linewidth]{figures/fig_save_fliprate.pdf}
+%     \fbox{\parbox{0.85\linewidth}{\centering Placeholder: Fig 5.5 Judges' Save Effect}}
+%     \caption{Impact of judges' save: rate at which the eliminated contestant changes relative to vote-only elimination.}
+%     \label{fig:judges_save_effect}
+% \end{figure}
+% % -------------------------------------------------------------------------------
+
+
+% % ------------------------FIG 5.6 fig_save_protection_profile.pdf------------------------
+% （P1 可选）如果你们要支撑“save 更偏向保护技术高的人”：再加
+% Fig 5.6 fig_save_protection_profile.pdf：被 save 的人通常 judges rank 更高但 fan rank 更低的比例（箱线/散点）
+% ------------------------------------------------------------------------------
