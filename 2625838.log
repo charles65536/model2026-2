@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  26 JAN 2026 13:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  31 JAN 2026 21:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1406,114 +1406,101 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 10.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 11.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 14.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 20.
+(Font)              scaled to size 10.95pt on input line 11.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 15.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 15.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 17.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 20.
+(Font)              scaled to size 10.95pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 28.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 22.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.1pt on input line 22.
+(Font)              scaled to size 6.1pt on input line 28.
 )
 
 [1
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
-
-[2]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 244.
  (./2625838.toc
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.60 ...edian Solution Sketch}{19}{subsection.A.4}
-                                                  % [1
-
-])
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+)
 \tf@toc=\write6
 \openout6 = `2625838.toc'.
 
@@ -1527,16 +1514,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.246 \clearpage
-                 [2] (./chapters/1_introduction.tex) (./chapters/2_problem_decoposition_and_analysis.tex
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 2.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 2.
+                 [1
 
+] (./chapters/1_introduction.tex) (./chapters/2_problem_decoposition_and_analysis.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1545,7 +1529,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3
+[2
 
 ]
 
@@ -1556,17 +1540,51 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4]) (./chapters/3_data_processing_and_analysis.tex
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 18.
+[3]
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 90.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 18.
+(Font)              scaled to size 10.95pt on input line 90.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ntxtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 94.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 94.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4]) (./chapters/3_data_processing_and_analysis.tex
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 29.
+ (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <10.95> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 29.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `txtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (15.70105pt too wide) in paragraph at lines 48--53
+[]\T1/ntxtlf/b/n/10.95 (-20) Wide-to-long re-shap-ing. \T1/ntxtlf/m/n/10.95 (-20) We re-shape \T1/ntxtt/m/n/10.95 weekX_judgeY_score \T1/ntxtlf/m/n/10.95 (-20) into one row per $\LMS/ntxsy/m/n/10.95 ¹\OML/ntxmi/m/it/10.95 season; week; celebrity\LMS/ntxsy/m/n/10.95 º$\T1/ntxtlf/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (11.12433pt too wide) in paragraph at lines 48--53
+\T1/ntxtlf/m/n/10.95 (-20) and com-pute \T1/ntxtt/m/n/10.95 all_judges_nan \T1/ntxtlf/m/n/10.95 (-20) and \T1/ntxtt/m/n/10.95 total_judge_score = sum(judge_scores, skipna={True})
+ []
+
 
 
 
@@ -1577,8 +1595,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Overfull \hbox (19.83734pt too wide) in paragraph at lines 26--27
-[]\T1/ntxtlf/m/n/10.95 (-20) Facing \T1/ntxtlf/b/n/10.95 (-20) raw times-tamp and floor fields with-out stan-dard-iza-tion \T1/ntxtlf/m/n/10.95 (-20) in \T1/ntxtt/m/n/10.95 car_calls.csv \T1/ntxtlf/m/n/10.95 (-20) and \T1/ntxtt/m/n/10.95 car_departure- 
+Overfull \hbox (18.40976pt too wide) in paragraph at lines 75--80
+\T1/ntxtlf/m/n/10.95 (-20) (\T1/ntxtt/m/n/10.95 output/table/intermediate_weekly_panel.csv\T1/ntxtlf/m/n/10.95 (-20) ) that con-tains el-i-gi-bil-i-ty/exit la-bels (\T1/ntxtt/m/n/10.95 active\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 exit_type\T1/ntxtlf/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (116.29341pt too wide) in paragraph at lines 81--85
+[]\T1/ntxtlf/m/n/10.95 (-20) In ad-di-tion, we gen-er-ate au-dit/de-bug ar-ti-facts: (i) a week-level pre-dic-tion ta-ble (\T1/ntxtt/m/n/10.95 output/table/intermediate_baseline_preds.csv\T1/ntxtlf/m/n/10.95 (-20) )
  []
 
 
@@ -1591,37 +1614,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
+Overfull \hbox (7.18495pt too wide) in paragraph at lines 177--180
+\T1/ntxtt/m/n/10.95 ballroom_partner \T1/ntxtlf/m/n/10.95 (-20) (pro dancer iden-tity), \T1/ntxtt/m/n/10.95 celebrity_age_during_season\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 celebrity_industry\T1/ntxtlf/m/n/10.95 (-20) ,
+ []
 
-LaTeX Warning: Reference `fig:heatmap_weekday' on page 7 undefined on input line 127.
-
-
-LaTeX Warning: Reference `fig:heatmap_weekend' on page 7 undefined on input line 127.
-
-
-LaTeX Warning: Reference `fig:temporal_overview' on page 7 undefined on input line 133.
-
-
-LaTeX Warning: Reference `fig:spatial_heatmaps' on page 7 undefined on input line 133.
-
-
-LaTeX Warning: Reference `fig:resp_dist' on page 7 undefined on input line 137.
-
-
-LaTeX Warning: Reference `fig:hourly_calls' on page 7 undefined on input line 143.
-
-
-LaTeX Warning: Reference `fig:up_down' on page 7 undefined on input line 147.
-
-
-LaTeX Warning: Reference `fig:usage_weight' on page 7 undefined on input line 151.
-
-
-LaTeX Warning: Reference `fig:weekday_weekend' on page 7 undefined on input line 155.
-
-
-LaTeX Warning: Reference `fig:spatial_heatmaps' on page 7 undefined on input line 156.
-
-
+) (./chapters/4_task_a_fan_vote_inference_model.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1630,7 +1627,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]) (./chapters/4_modeling.tex
+[7]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 47.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 58.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1640,15 +1641,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 31.
-
-
-LaTeX Warning: Reference `tab:task1-benchmark-routeb' on page 9 undefined on input line 43.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1658,88 +1650,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 14.4pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 10.5pt on input line 95.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 7.9pt on input line 95.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1750,25 +1660,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 104.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 104.
-
-
-LaTeX Warning: Reference `tab:task1-benchmark-by-state' on page 11 undefined on input line 110.
-
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 124.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 127.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 127.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 129.
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1776,16 +1667,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
-
-
+[11]) (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1796,19 +1678,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 
-LaTeX Warning: Reference `tab:task3-strategy' on page 13 undefined on input line 178.
-
-
-LaTeX Warning: Reference `tab:task3-strategy' on page 13 undefined on input line 180.
-
-
-LaTeX Warning: Reference `tab:task3-strategy1' on page 13 undefined on input line 212.
-
-
-LaTeX Warning: Reference `tab:task3-strategy' on page 13 undefined on input line 220.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1816,23 +1685,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]) (./chapters/5_results.tex
-
-LaTeX Warning: Reference `fig:task1-pred' on page 14 undefined on input line 23.
-
-
-LaTeX Warning: Reference `tab:task1-metrics' on page 14 undefined on input line 24.
-
-
-LaTeX Warning: Reference `tab:task2-cluster-profile' on page 14 undefined on input line 27.
-
-
-LaTeX Warning: Reference `fig:task2-heatmap' on page 14 undefined on input line 28.
-
-
-LaTeX Warning: Reference `fig:task2-heatmap' on page 14 undefined on input line 30.
-
-
+[13]) (./chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1843,9 +1696,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14]
 
-LaTeX Warning: Reference `tab:task3-strategy' on page 15 undefined on input line 34.
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[15]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1854,7 +1712,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15]) (./chapters/6_memo.tex) (./chapters/7_conclusion.tex
+[16]) (./chapters/8_conclusion.tex) (./chapters/9_memo.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1863,69 +1721,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]) (./2625838.bbl
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]) (./chapters/appendix_a.tex
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 8.
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--15
-[]|\T1/ntxtt/m/n/12 Time\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Floor\T1/ntxtlf/m/n/12 (+20) ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
-[]|\T1/ntxtt/m/n/12 Time\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Elevator ID\T1/ntxtlf/m/n/12 (+20) ,
- []
-
-
-Overfull \hbox (14.6264pt too wide) in paragraph at lines 20--20
-[]|\T1/ntxtt/m/n/12 car_departures_clean.csv| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[]|\T1/ntxtt/m/n/12 Time\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Elevator ID\T1/ntxtlf/m/n/12 (+20) ,
- []
-
-
-Overfull \hbox (2.02643pt too wide) in paragraph at lines 23--23
-[]|\T1/ntxtt/m/n/12 load_changes_clean.csv| 
- []
-
-
-Underfull \hbox (badness 1803) in paragraph at lines 24--24
-[]|\T1/ntxtt/m/n/12 Time\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Car ID\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Floor\T1/ntxtlf/m/n/12 (+20) ,
- []
-
-
-Overfull \hbox (27.22638pt too wide) in paragraph at lines 26--26
-[]|\T1/ntxtt/m/n/12 maintenance_mode_clean.csv| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]|\T1/ntxtt/m/n/12 Time\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Elevator ID\T1/ntxtlf/m/n/12 (+20) ,
- []
-
-
-Underfull \hbox (badness 1803) in paragraph at lines 30--30
-[]|\T1/ntxtt/m/n/12 Time\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Car ID\T1/ntxtlf/m/n/12 (+20) , \T1/ntxtt/m/n/12 Floor\T1/ntxtlf/m/n/12 (+20) ,
- []
-
-
-Overfull \hbox (23.05412pt too wide) in paragraph at lines 10--34
- [][] 
- []
-
-
+[17]) (./2625838.bbl) (./chapters/appendix_a.tex)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1935,65 +1731,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-
-LaTeX Warning: Reference `tab:task2-cluster-profile' on page 19 undefined on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 63.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19]
-Overfull \hbox (1.3351pt too wide) in paragraph at lines 115--116
-[]\T1/ntxtlf/m/n/10.95 (-20) Run \T1/ntxtt/m/n/10.95 modeling_code_patched_v2_route_a.ipynb \T1/ntxtlf/m/n/10.95 (-20) to ex-port mod-el-ing ar-ti-facts un-der \T1/ntxtt/m/n/10.95 outputs/data/\T1/ntxtlf/m/n/10.95 (-20) . 
- []
-
-
-LaTeX Warning: Reference `tab:task1-benchmark-routeb' on page 20 undefined on input line 131.
-
-
-LaTeX Warning: Reference `tab:task1-benchmark-by-state' on page 20 undefined on input line 131.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[20]
-
-LaTeX Warning: Reference `tab:task3-strategy' on page 21 undefined on input line 142.
-
-
-LaTeX Warning: Reference `tab:task3-windows' on page 21 undefined on input line 142.
-
-)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[21]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 298.
+(Font)              scaled to size 9.0pt on input line 303.
  (./chapters/report_on_use_ai.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 1.
@@ -2089,32 +1828,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.303 \end{document}
+l.308 \end{document}
                      [2] (./2625838.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `2625838.out' has not changed.
-(rerunfilecheck)             Checksum: 79A097CD53A38820FC99FA50A4C190E7;14563.
+(rerunfilecheck)             Checksum: 8921056E56C34B73EE8ED88E4C0060AE;9981.
  ) 
 Here is how much of TeX's memory you used:
- 52474 strings out of 475118
- 1176118 string characters out of 5765021
- 1748834 words of memory out of 5000000
- 74237 multiletter control sequences out of 15000+600000
- 718771 words of font info for 392 fonts, out of 8000000 for 9000
+ 52378 strings out of 475118
+ 1174836 string characters out of 5765021
+ 1747577 words of memory out of 5000000
+ 74153 multiletter control sequences out of 15000+600000
+ 688900 words of font info for 331 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,13n,117p,1048b,1242s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsym.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on 2625838.pdf (25 pages, 294155 bytes).
+ 84i,16n,117p,1048b,1241s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexas.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on 2625838.pdf (21 pages, 290349 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 555 compressed objects within 6 object streams
- 136 named destinations out of 1000 (max. 500000)
- 53741 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 46437 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -1,61 +1,118 @@
+\textbf{This section formalizes DWTS as a replayable inverse problem and specifies the modeling objects that close our pipeline.}
+We define the weekly active set, the observable judges' score signal, and the realized elimination outcomes, then introduce the latent fan vote share $p_{i,t}$ as the primary unknown.
+Our inference module outputs point estimates $\hat p_{i,t}$ together with uncertainty summaries, which feed a unified rule replay engine; this engine generates counterfactual elimination paths used for rule comparison, case-based attribution, and the validation of a proposed new voting system.
 
-\subsection{Objective and decision scope}\label{subsec:objective}
-The operational goal is to improve passenger service quality under stochastic, regime-dependent demand using only the provided logs.
-We focus on \emph{supervisory} control: at discrete decision epochs, the system may reposition \emph{idle} elevator cars to selected parking floors.
-This preserves compatibility with any existing in-service dispatch rule and avoids intrusive mid-trip interventions.
+% ===========================问题分解与分析=============================
+\subsection{Problem Decomposition}\label{sec:problem_decomposition}
 
-We evaluate policies with service-oriented and tail-risk metrics: average waiting time (AWT), upper-tail quantiles (e.g., P95/P99 of waiting time),
-and the long-wait rate (fraction of calls exceeding a specified threshold). When reporting long-wait rate, we state the thresholding rule explicitly and
-use it consistently in all tables (including windowed analyses).
+\textbf{We decompose the prompt into four linked tasks with shared inputs and a common replay-based evaluation layer.}
+\begin{itemize}
+    \item \textbf{Task A: Fan vote inference with uncertainty.}
+    \textbf{Input:} weekly judges' scores and the realized eliminated set;
+    \textbf{Output:} weekly fan vote shares $p_{i,t}$ (and uncertainty bands) over the active set;
+    \textbf{Validation:} elimination-consistency under the assumed rule, plus identifiability diagnostics (feasible-range widths and margin-based sensitivity).
 
-\subsection{Data-driven closed loop: three tasks}\label{subsec:three-tasks}
-The problem naturally decomposes into a closed-loop pipeline operating on 5-minute intervals:
-\begin{enumerate}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
-  \item \textbf{Task 1: Short-horizon demand forecasting.}
-  Aggregate hall calls into 5-minute slices. Let $y_t$ denote the total number of hall calls in interval $t$.
-  Given recent history and time features, predict $\hat{y}_{t+1}$.
-  \item \textbf{Task 2: Traffic regime identification.}
-  From real-time interval features (call intensity, directionality, spatial dispersion, and inter-floor tendency),
-  infer a discrete traffic mode $s_t \in \mathcal{S}$ (e.g., up-peak, down-peak, mixed/inter-floor, idle/low).
-  \item \textbf{Task 3: Mode-aware dynamic parking for idle cars.}
-  Given $(\hat{y}_{t+1}, s_t)$, compute a set of parking floors $\mathcal{P}_t=\{p_{t,1},\dots,p_{t,K}\}$ for $K$ elevator cars when they are idle,
-  and apply repositioning subject to non-interference constraints.
+    \item \textbf{Task B: Voting-rule comparison via replay.}
+    \textbf{Input:} judges' scores and inferred $p_{i,t}$;
+    \textbf{Output:} counterfactual week-by-week eliminations under percent-based vs.\ rank-based aggregation (and variants);
+    \textbf{Validation:} season-level and week-level outcome divergence measures and ``fan bias'' indicators.
+
+    \item \textbf{Task C: Controversial contestants and judges' save attribution.}
+    \textbf{Input:} inferred $p_{i,t}$ and replay engine;
+    \textbf{Output:} case-study narratives supported by counterfactual trajectories with/without bottom-two judges' save;
+    \textbf{Validation:} whether the mechanism explains observed controversies and how sensitive conclusions are to vote uncertainty.
+
+    \item \textbf{Task D: Mechanism analysis and new system design.}
+    \textbf{Input:} panel features (celebrity attributes, professional dancer identifiers) and inferred votes;
+    \textbf{Output:} mixed-effects estimates for drivers of judges' scoring versus fan preference, and a parameterized voting rule;
+    \textbf{Validation:} historical replay, robustness checks, and sensitivity analysis over hyperparameters and rule-switch assumptions.
+\end{itemize}
+
+
+% ==========================关键假设=============================
+\subsection{Key Assumptions}\label{subsec:assumptions}
+
+We adopt a small, testable assumption budget to make the inverse problem well-posed while keeping conclusions falsifiable.
+\begin{enumerate}
+    \item \textbf{Share normalization.} Fan votes are modeled as within-week shares over the active set.
+    \item \textbf{Rule-governed elimination.} Eliminations follow the documented aggregation rule (percent-based or rank-based), optionally augmented by bottom-two judges' save where applicable.
+    \item \textbf{Active-set definition and special episodes.} Post-exit ``zeros'' represent inactivity and are excluded from the active set; special episodes are explicitly flagged and may be accommodated via slack rather than forced exact compliance.
+    \item \textbf{Judges as observed signal.} Judges' scores provide an observed performance signal taken as exogenous to the voting mechanism.
+    \item \textbf{Temporal smoothness.} Fan preference evolves smoothly week-to-week, motivating temporal regularization.
 \end{enumerate}
+The season at which the show returns to rank-based aggregation is treated as an explicit assumption and is stress-tested using adjacent cutoffs.
 
-This decomposition is motivated by two realities of elevator operations: (i) demand is strongly nonstationary and exhibits recurring regimes,
-and (ii) parking decisions are most valuable when \emph{anticipating} near-future calls rather than reacting after queues build.
+% =========================记号=============================
+\subsection{Key Notations}\label{subsec:notations}
+Table~\ref{tab:notations} summarizes indices, sets, observed quantities, latent fan vote shares, and rule-dependent combined scores used throughout the inference and replay pipeline.
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+Symbol & Definition \\
+\midrule
+$s$ & Season index, $s=1,\dots,34$ \\
+$t$ & Week index within season $s$ \\
+$i$ & Contestant (celebrity--pro pair) index \\
+$A_{s,t}$ & Active contestants in season $s$, week $t$ \\
+$E_{s,t}$ & Eliminated set at end of week $t$; $m_{s,t}=|E_{s,t}|$ \\
+$j_{i,t,k}$ & Score given by judge $k$ to contestant $i$ in week $t$ \\
+$J_{i,t}$ & Total judges' score: $J_{i,t}=\sum_{k} j_{i,t,k}$ (skip missing) \\
+$q^{J}_{i,t}$ & Judges' share: $q^{J}_{i,t}=J_{i,t}\big/\sum_{r\in A_{s,t}}J_{r,t}$ \\
+$p_{i,t}$ & Fan vote share (latent), $\sum_{i\in A_{s,t}}p_{i,t}=1$ \\
+$\alpha$ & Weight on judges under percent rule (default $\alpha=0.5$; stress-tested) \\
+$S^{(P)}_{i,t}$ & Percent combined score: $S^{(P)}_{i,t}=\alpha q^{J}_{i,t}+(1-\alpha)p_{i,t}$ \\
+$R^{J}_{i,t},R^{V}_{i,t}$ & Judges rank and fan rank (descending) \\
+$R^{(R)}_{i,t}$ & Rank combined score: $R^{(R)}_{i,t}=R^{J}_{i,t}+R^{V}_{i,t}$ \\
+$\xi_t$ & Slack for elimination-consistency; penalized in vote inference \\
+$\lambda$ & Penalty weight on slacks in vote inference objective \\
+\bottomrule
+\end{tabular}
+\caption{Core notations used throughout the paper.}
+\label{tab:notations}
+\end{table}
 
-\subsection{Key modeling assumptions (made explicit)}\label{subsec:assumptions}
-Because only log data are provided, several operational details are abstracted. We adopt assumptions that are standard in elevator-traffic analysis
-and compatible with supervisory deployment:
-\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
-  \item \textbf{Discrete decision epochs.} The policy updates every 5 minutes; within an epoch, dispatch is handled by the existing controller.
-  \item \textbf{Idle-only repositioning.} Reposition commands apply only to idle cars, preventing service disruption.
-  \item \textbf{Distance-proxy service model.} Waiting time is monotonically related to response distance between a call floor and the nearest available car.
-        We therefore optimize and evaluate parking using distance-based proxies consistent with the available logs.
-  \item \textbf{Cost awareness.} Repositioning may increase empty travel; we track an explicit empty-travel metric to expose the service-cost tradeoff.
-  \item \textbf{Comparability of evaluation.} Simulation parameters (travel/door time) affect absolute seconds, so we interpret results primarily through
-        \emph{relative} comparisons across strategies under the same parameter setting and call stream.
-\end{itemize}
+\subsection{Tasks and Evaluation KPIs}\label{subsec:tasks_and_kpis}
 
-These assumptions yield a robust and implementable framework without requiring a full physics-accurate elevator simulator.
+Our workflow consists of four tightly coupled tasks. \textbf{Task A} reconstructs latent weekly fan vote shares $p_{i,t}$
+for each active contestant by solving a season-level constrained optimization problem that enforces elimination consistency
+(with slack) under the documented mechanics. \textbf{Tasks B/C} use these inferred votes to replay each season under
+alternative aggregation rules (rank-based vs.\ percent-based, optionally with a bottom-two judges' save), producing
+counterfactual eliminations and placements. \textbf{Task D1} fits mixed-effects models to contrast the drivers of judges'
+evaluations versus audience support (celebrity attributes and professional partners). \textbf{Task D2} proposes an
+implementable voting rule and selects parameters via replay-based stress tests.
 
-\subsection{Outputs and validation plan}\label{subsec:validation-plan}
-Each task produces an output that can be validated independently and jointly:
-\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
-  \item Task 1 output: $\hat{y}_{t+1}$ with forecast error metrics (MAE/RMSE) on held-out intervals.
-  \item Task 2 output: $s_t$ with qualitative validation against time-of-day patterns and cluster interpretability,
-        and quantitative stability via transition frequency and feature separation.
-  \item Task 3 output: $\mathcal{P}_t$ and reposition actions, evaluated by AWT, tail quantiles, long-wait rate, and empty travel.
-\end{itemize}
+To evaluate models and rule variants consistently, we use the following KPIs and slices.
 
-To reflect operational importance, we additionally report \emph{windowed} performance during peak periods, regime-transition windows,
-and high-load intervals, where proactive parking has the largest impact.
+\paragraph{KPI1: Elimination Hit-Rate.}
+On each \emph{eligible} $(s,t)$ (season--week), we compute the predicted eliminated set $\widehat{E}_{s,t}$ under a specified
+aggregation scheme and compare it to the true eliminated-at-end-of-week set $E_{s,t}$ parsed from \texttt{results}.
+For multi-elimination weeks with $k_{s,t}>1$, we evaluate via bottom-$k$ set match:
+$\mathbf{1}\{\widehat{E}_{s,t}=E_{s,t}\}$.
+Weeks with no elimination are excluded from single-elimination denominators. We report KPI1 separately for rank-combination
+and percent-combination, and aggregate by the registry-defined eras: Rank-era seasons $\{1,2,28\text{--}34\}$ and
+Percent-era seasons $\{3\text{--}27\}$. Because the Season-28 switch is an assumption, we stress-test alternative cutoffs (27/28/29).
 
-\subsection{Two-route design: performance vs.\ interpretability}\label{subsec:two-routes}
-We implement two complementary routes to balance accuracy and deployability:
-\begin{itemize}[leftmargin=1.2em,itemsep=0.25em,topsep=0.25em]
-  \item \textbf{Route A (data-driven).} Learned forecasting and mode discovery are coupled with optimization-based parking to maximize service performance.
-  \item \textbf{Route B (interpretable).} A transparent baseline forecaster and a zone-based parking policy serve as a benchmark and a conservative fallback.
-\end{itemize}
-Route B is included to (i) establish a trustworthy baseline, (ii) support deployment under uncertainty, and (iii) prevent overfitting to one log period.
+\paragraph{KPI3: Rule Divergence Rate (Rank vs.\ Percent).}
+Holding the same vote input (e.g., BL-0 proxy or inferred votes), KPI3 measures how often two aggregation schemes disagree
+on eliminations:
+\begin{equation}
+\text{KPI3}=\frac{\sum_{(s,t)\in\Omega}\mathbf{1}\{\widehat{E}^{\text{rank}}_{s,t}\neq \widehat{E}^{\text{percent}}_{s,t}\}}{|\Omega|},
+\end{equation}
+where $\Omega$ denotes eligible $(s,t)$. KPI3 is reported descriptively as ``impact magnitude,'' not as an optimization objective.
+
+\paragraph{KPI2: Vote Identifiability (interval tightness).}
+Because votes are unobserved, vote inference is not always identifiable. For each $(s,t,i)$, we compute a feasible interval
+$[p^{\min}_{i,t},p^{\max}_{i,t}]$ over fan vote shares consistent with elimination constraints (and with a near-optimal shell
+around the Task~A objective). We define an identifiability score as
+\begin{equation}
+ID_{i,t}=\frac{1}{p^{\max}_{i,t}-p^{\min}_{i,t}+\varepsilon},
+\end{equation}
+and summarize by quantiles across contestants, weeks, and seasons. KPI2 flags weeks and contestants where multiple vote
+allocations explain the observed elimination equally well.
+
+\paragraph{Reproducible baseline (BL-0).}
+Before introducing inferred votes, we report KPI1/KPI3 under BL-0 as an audit baseline. In BL-0, the rank scheme reduces to
+judges' ranks only (uniform fan ranks add a constant), and the percent scheme uses judges' percent plus a uniform fan share
+$1/n_{\text{active}}$. BL-0 validates denominator handling and replay mechanics, but it is not used to claim audience preference estimates.

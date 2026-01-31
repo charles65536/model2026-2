@@ -1,0 +1,22 @@
+\textbf{To: Show Management}\\
+\textbf{Subject: Recommendation for a More Stable and Transparent Voting System}
+
+Our analyses indicate that controversy risk concentrates in weeks where judges' evaluations and audience preferences diverge.
+To preserve audience agency while preventing extreme popularity from overwhelming technical performance, we recommend piloting
+\emph{Judge Safeguard + Smoothed Rank (JS-SR)}.
+
+Under JS-SR, each week designates a \emph{Safeguard Zone}: contestants above a judges-score percentile threshold (top $\tau$)
+are immune from elimination. The remaining contestants compete in a ``battleground'' where elimination is determined by a
+transparent weighted blend of judges' share and fan share:
+\[
+S^{(JS)}_{i,t}=w_J\, q^J_{i,t} + (1-w_J)\, p_{i,t}.
+\]
+Management controls two intuitive knobs: $\tau$ (how many top technical performers are protected) and $w_J$ (judge--fan balance within
+the battleground). We recommend selecting $(\tau,w_J)$ from a robust region identified by historical replays and uncertainty stress tests,
+then deploying JS-SR in a one-season ``shadow mode'' computed in parallel with the broadcast rule to quantify differences in eliminations,
+finalists, and winner outcomes before adoption.
+
+Operationally, we recommend a one-season \emph{shadow deployment} in which the proposed rule is computed in parallel with the broadcast rule
+to quantify differences in eliminations, finalists, and winner outcomes, accompanied by a clear public explanation of tie-handling and the role
+of any judges' save mechanism. This provides a controlled, auditable path to improving fairness perception and reducing outcome volatility
+without sacrificing interpretability.

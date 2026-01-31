@@ -1,0 +1,191 @@
+\subsection{Outcome definitions}
+\label{subsec:outcome_definitions_d1}
+
+To disentangle how outcomes are shaped by professional partners versus celebrity attributes, we model
+judges' evaluations and inferred fan preferences as two distinct but related outcomes.
+For comparability across seasons and weeks, we work with \emph{shares} rather than raw scores.
+Let $A_{s,t}$ denote the active set in season $s$, week $t$.
+
+\paragraph{Judges' outcome.}
+Define the judges' score share
+\begin{equation}
+q^{J}_{i,t}=\frac{J_{i,t}}{\sum_{r\in A_{s,t}}J_{r,t}},
+\end{equation}
+and use a logit transform with a small $\epsilon$ to avoid boundary issues:
+\begin{equation}
+y^{J}_{i,t}=\log\frac{q^{J}_{i,t}+\epsilon}{1-q^{J}_{i,t}+\epsilon}.
+\end{equation}
+
+\paragraph{Fans' outcome.}
+Let Task~A provide the inferred vote share $p_{i,t}$ (denoted $q^{V}_{i,t}$). We similarly define
+\begin{equation}
+y^{V}_{i,t}=\log\frac{p_{i,t}+\epsilon}{1-p_{i,t}+\epsilon}.
+\end{equation}
+We adopt share + logit for cross-season comparability and interpret coefficients on the log-odds scale.
+% Source justification: first_stage_modeling outcome definitions and logit motivation.:contentReference[oaicite:12]{index=12}
+
+\subsection{Modeling results: separating ``who judges reward'' vs.\ ``who fans support''}
+\label{subsec:modeling_results_d1}
+
+We fit two mixed-effects models on the season--week panel to attribute variation to
+(i) celebrity covariates and (ii) professional dancer partners.
+
+\paragraph{Model 1: Judge Model.}
+\begin{equation}
+y^{J}_{i,t}=\beta_{0}+\beta_X^{\top}X_{i}+\beta_T f(t)+FE_s+u_i+v_{d(i)}+\epsilon_{i,t},
+\end{equation}
+where $X_i$ collects time-invariant celebrity attributes (e.g., age, occupation indicators),
+$f(t)$ captures week trend, $FE_s$ is a season fixed effect, $u_i\sim\mathcal N(0,\sigma_u^2)$ is a celebrity random effect,
+and $v_{d(i)}\sim\mathcal N(0,\sigma_v^2)$ is a professional-dancer random effect.
+A key hypothesis test is $H_0:\sigma_v^2=0$ (no pro-dancer effect on judges). %:contentReference[oaicite:13]{index=13}
+
+\paragraph{Model 2: Vote Model.}
+To model inferred fan support while allowing mediation through judges' performance, we include $y^{J}_{i,t}$:
+\begin{equation}
+y^{V}_{i,t}=\gamma_{0}+\gamma_J y^{J}_{i,t}+\gamma_X^{\top}X_{i}+\gamma_T f(t)+FE_s+a_i+b_{d(i)}+\eta_{i,t},
+\end{equation}
+with $a_i\sim\mathcal N(0,\sigma_a^2)$ and $b_{d(i)}\sim\mathcal N(0,\sigma_b^2)$ capturing celebrity and pro-dancer random effects
+on fan preferences, respectively. The coefficient $\gamma_J$ measures the transmission strength from judges to fans. %:contentReference[oaicite:14]{index=14}
+
+\paragraph{Comparing judges vs.\ fans.}
+For each shared attribute $k$, define the preference gap
+\begin{equation}
+\Delta_k=\gamma_k-\beta_k.
+\end{equation}
+$\Delta_k>0$ indicates fans prefer the attribute more than judges do; $\Delta_k<0$ indicates the opposite.
+We report $\Delta_k$ with uncertainty bands (via bootstrap) whenever vote inference uncertainty is non-negligible. %:contentReference[oaicite:15]{index=15}
+
+\paragraph{Quantifying professional-dancer impact (magnitude, not just significance).}
+We quantify the fraction of outcome variance attributable to professional dancers using ICC-style ratios:
+\begin{equation}
+ICC^{J}_{pro}=\frac{\sigma_v^{2}}{\sigma_v^{2}+\sigma_u^{2}+\sigma^{2}},\qquad
+ICC^{V}_{pro}=\frac{\sigma_b^{2}}{\sigma_b^{2}+\sigma_a^{2}+\sigma_\eta^{2}}.
+\end{equation}
+We treat BLUP rankings as descriptive summaries of the fitted random effects rather than causal estimates to compare whether the
+same pros are ``good for judges'' and ``good for fans.''
+%:contentReference[oaicite:16]{index=16}
+
+\paragraph{Uncertainty propagation.}
+Because fan votes are inferred, we propagate uncertainty either by (i) bootstrap re-estimation of votes and refitting the Vote Model, or (ii) weighted regression using the interval width from Task A as an uncertainty proxy; we report confidence intervals accordingly.
+%:contentReference[oaicite:17]{index=17}
+
+% ---------------- Figure/Table placeholders (insert later) ----------------
+% Fig 6.1 Coefficient comparison (beta vs gamma) for key attributes.
+% Fig 6.2 Preference gaps Delta_k with CI (bootstrap).
+% Tab 6.1 ICC^{J}_{pro} and ICC^{V}_{pro} (overall + by era if desired).
+% Tab 6.2 Top/bottom 5 pros by BLUP for judges and fans (side-by-side).
+% ------------------------------------------------------------------------
+
+% ======================================================================
+% Chapter 6 Figures/Tables Placeholders (to be filled after model runs)
+% Place this block at the END of:
+%   6_impact_analysis_task_d1_pro_dancer_and_attributes.tex
+% ======================================================================
+
+% -----------------------------
+% What MUST be backed by outputs (writing guardrails)
+% -----------------------------
+% Any claim of the form:
+%   - "fans prefer X more than judges" / "judges reward X more"
+%   - "gamma_J is significant/strong/weak"
+%   - "pro dancer effect is large/non-negligible"
+%   - "top/bottom pro dancer rankings"
+% MUST be supported by the corresponding figure/table below.
+% Otherwise hedge language: "we quantify / we evaluate / we report".
+
+% % ======================================================================
+% % FIGURE 6.1  Coefficient comparison (Judges vs Fans): beta_k vs gamma_k
+% % ======================================================================
+% % Purpose (MCM): show, at a glance, whether each attribute pushes judges and fans
+% % in the same direction and with similar magnitude.
+% % Inputs: model6_judge_coeffs.csv (beta, CI); model6_vote_coeffs.csv (gamma, CI)
+% % Recommended: horizontal dot/interval plot, one row per feature, two series.
+% % Insert in text: after the paragraph introducing the two models (Section 6.2).
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.95\linewidth]{figures/fig6_1_coef_compare.pdf}
+%     \fbox{\parbox{0.95\linewidth}{\centering Placeholder: Fig 6.1 Coefficient comparison ($\beta_k$ vs $\gamma_k$)}}
+%     \caption{Attribute effects in the Judge Model ($\beta_k$) versus the Vote Model ($\gamma_k$) on the log-odds scale (with 95\% confidence intervals).}
+%     \label{fig:coef_compare_beta_gamma}
+% \end{figure}
+
+% % ======================================================================
+% % FIGURE 6.2  Preference gap: Delta_k = gamma_k - beta_k (with uncertainty)
+% % ======================================================================
+% % Purpose (MCM): directly answers "who values what more" and supports any
+% % narrative about preference differences.
+% % Inputs: computed Delta_k table with CI from bootstrap or uncertainty propagation.
+% % Insert in text: immediately after Fig 6.1 and the definition of Delta_k.
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.90\linewidth]{figures/fig6_2_delta_ci.pdf}
+%     \fbox{\parbox{0.90\linewidth}{\centering Placeholder: Fig 6.2 Preference gaps ($\Delta_k$) with CI}}
+%     \caption{Preference gaps $\Delta_k=\gamma_k-\beta_k$ for shared attributes. Positive values indicate stronger fan preference than judges; negative values indicate stronger judge preference (95\% confidence intervals via uncertainty propagation).}
+%     \label{fig:delta_k_ci}
+% \end{figure}
+
+% % ======================================================================
+% % TABLE 6.1  Variance components and ICC for pro-dancer effects
+% % ======================================================================
+% % Purpose (MCM): quantify magnitude (not just significance) of pro-dancer impact
+% % on judges and fans. Supports statements like "pro accounts for X% variance".
+% % Inputs: model6_variance_components.csv; compute ICC^J_pro and ICC^V_pro.
+% % Insert in text: in Section 6.2 paragraph "Quantifying pro-dancer impact".
+% \begin{table}[H]
+%     \centering
+%     %\input{tables/tab6_1_icc.tex}
+%     \caption{Variance components and ICC-style ratios quantifying professional-dancer influence on judges' scores and inferred fan votes.}
+%     \label{tab:icc_pro_effect}
+% \end{table}
+
+% % ======================================================================
+% % TABLE 6.2  Pro-dancer BLUP rankings (Judges vs Fans), Top/Bottom 5
+% % ======================================================================
+% % Purpose (MCM): interpretable ranking of pros; supports case narratives and memo.
+% % Inputs: BLUP random effects from Judge Model (v_pro) and Vote Model (b_pro).
+% % Insert in text: after discussing BLUP interpretation and ICC results.
+% \begin{table}[H]
+%     \centering
+%     %\input{tables/tab6_2_blup_top_bottom.tex}
+%     \caption{Top and bottom professional dancers by fitted random effects (BLUPs), shown separately for judges' scores and inferred fan votes. Rankings are descriptive summaries of the fitted models.}
+%     \label{tab:blup_pro_rankings}
+% \end{table}
+
+% % ======================================================================
+% % OPTIONAL FIGURE 6.3  Transmission strength gamma_J (robustness / bootstrap)
+% % ======================================================================
+% % Purpose (MCM): make the "judges -> fans" transmission interpretable and robust.
+% % Inputs: bootstrap_gamma_summary.csv (distribution of gamma_J across bootstrap runs)
+% % Insert in text: after interpreting gamma_J in Vote Model.
+% \begin{figure}[H]
+%     \centering
+%     %\includegraphics[width=0.75\linewidth]{figures/fig6_3_gammaJ_bootstrap.pdf}
+%     \fbox{\parbox{0.75\linewidth}{\centering Optional: Fig 6.3 Bootstrap distribution of $\gamma_J$}}
+%     \caption{Bootstrap distribution of the transmission coefficient $\gamma_J$ linking judges' evaluations to inferred fan votes.}
+%     \label{fig:gammaJ_bootstrap}
+% \end{figure}
+
+% % ======================================================================
+% % OPTIONAL TABLE 6.3  Model specification checklist (for reproducibility)
+% % ======================================================================
+% % Purpose (MCM): a compact audit table (FE, RE, trend, uncertainty method).
+% % Insert in appendix if page-limited; keep here as optional.
+% \begin{table}[H]
+%     \centering
+%     %\input{tables/tab6_3_model_spec_checklist.tex}
+%     \caption{(Optional) Specification checklist for the Judge Model and Vote Model (fixed effects, random effects, week trend, season FE, and uncertainty propagation choice).}
+%     \label{tab:model_spec_checklist}
+% \end{table}
+
+% % ======================================================================
+% % Notes for the team (implementation mapping)
+% % ======================================================================
+% % Required artifacts to generate:
+% % - figures/fig6_1_coef_compare.pdf  (beta vs gamma with CI)
+% % - figures/fig6_2_delta_ci.pdf      (Delta_k with CI)
+% % - tables/tab6_1_icc.tex            (variance components + ICC)
+% % - tables/tab6_2_blup_top_bottom.tex (BLUP top/bottom 5)
+% % Optional:
+% % - figures/fig6_3_gammaJ_bootstrap.pdf
+% % - tables/tab6_3_model_spec_checklist.tex
+% % ======================================================================

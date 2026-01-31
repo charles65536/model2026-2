@@ -1,73 +1,71 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {section}{\numberline {2}Problem Decomposition and Analysis}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Objective and decision scope}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Data-driven closed loop: three tasks}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Key modeling assumptions (made explicit)}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Outputs and validation plan}{4}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Two-route design: performance vs.\ interpretability}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Problem Decomposition and Analysis}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problem Decomposition}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Key Assumptions}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Key Notations}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Tasks and Evaluation KPIs}{4}{subsection.2.4}%
+\contentsline {paragraph}{KPI1: Elimination Hit-Rate.}{4}{paragraph*.2}%
+\contentsline {paragraph}{KPI3: Rule Divergence Rate (Rank vs.\ Percent).}{4}{paragraph*.3}%
+\contentsline {paragraph}{KPI2: Vote Identifiability (interval tightness).}{5}{paragraph*.4}%
+\contentsline {paragraph}{Reproducible baseline (BL-0).}{5}{paragraph*.5}%
 \contentsline {section}{\numberline {3}Data Processing and Analysis}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Data Cleaning Principles and Validation}{5}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Cleaning Principles}{5}{subsubsection.3.1.1}%
+\contentsline {paragraph}{Principle A --- Respect official encodings (0 scores, N/A, irregular season length).}{5}{paragraph*.6}%
+\contentsline {paragraph}{Principle B --- Eligibility controls denominators (active-set construction).}{5}{paragraph*.7}%
+\contentsline {paragraph}{Principle C --- Within-week aggregation only; no judge identity tracking.}{5}{paragraph*.8}%
+\contentsline {paragraph}{Principle D --- Non-single-elimination weeks are handled explicitly.}{5}{paragraph*.9}%
 \contentsline {subsubsection}{\numberline {3.1.2}Data Cleaning Operations}{5}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Data Cleaning outcomes and Validation}{6}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}Data Visualization}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Empirical Findings from EDA}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Feature Engineering}{8}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Synthesis of Findings}{8}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Modeling}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Overview and Modeling Philosophy}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Model 1: Short-Term Passenger Arrival Forecasting (Task 1)}{9}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Target and Time Discretization}{9}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Feature Engineering}{9}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Model Choice and Validation Protocol}{9}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Output to Downstream Control}{10}{subsubsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.3}Model 2: Traffic Mode Discovery and Online Classification (Task 2)}{10}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Mode Features with Operational Meaning}{10}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Unsupervised Clustering and Interpretability}{10}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Cluster-to-Mode Naming}{10}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Online Mode Classification}{10}{subsubsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.4}Model 3: Mode-Aware Dynamic Parking via Weighted $k$-Median (Task 3)}{11}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Mode-Conditioned Floor Demand Distribution}{11}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Optimization Formulation (Weighted 1D $k$-Median)}{11}{subsubsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Solution and Assignment}{11}{subsubsection.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Execution Policy}{11}{subsubsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.5}Interpretable Baseline and Fallback Policy (Route B)}{12}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Task 1: time-of-day baseline + regime $AR(1)$.}{12}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Task 2: Rule-based real-time traffic state classification Model.}{12}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Task 3: zone-based state-aware parking rule.}{12}{subsubsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Deployment Fallback: When to Switch from Route A to Route B}{13}{subsubsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.6}Simulation-Based Evaluation (Baselines and Metrics)}{13}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Baselines}{13}{subsubsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.2}Metrics}{13}{subsubsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.3}Discussion}{14}{subsubsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.7}Robustness and Sensitivity (Brief)}{14}{subsection.4.7}%
-\contentsline {section}{\numberline {5}Result Analysis and Robustness Testing}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Performance Evaluation}{14}{subsection.5.1}%
-\contentsline {paragraph}{Important note on units.}{14}{paragraph*.2}%
-\contentsline {paragraph}{Simulator consistency and calibration.}{14}{paragraph*.3}%
-\contentsline {paragraph}{Task 1 (Forecasting).}{14}{paragraph*.4}%
-\contentsline {paragraph}{Task 2 (Mode discovery and online classification).}{14}{paragraph*.5}%
-\contentsline {paragraph}{Task 3 (Mode-aware dynamic parking).}{15}{paragraph*.6}%
-\contentsline {paragraph}{Interpretable baseline benchmark and deployment fallback.}{15}{paragraph*.7}%
-\contentsline {subsection}{\numberline {5.2}Stress Tests and Robustness}{15}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Robustness and Sensitivity}{15}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Memo to Management}{16}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{17}{section.7}%
+\contentsline {subsubsection}{\numberline {3.1.3}Data Cleaning Outcomes and Validation}{6}{subsubsection.3.1.3}%
+\contentsline {paragraph}{Outcomes (artifacts and interfaces).}{6}{paragraph*.10}%
+\contentsline {paragraph}{Validation (what we check, and why it is sufficient for P0).}{6}{paragraph*.11}%
+\contentsline {subsection}{\numberline {3.2}Panel Construction}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Empirical Findings from EDA (only what feeds models)}{7}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Data Visualization}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Key Empirical Findings}{7}{subsubsection.3.3.2}%
+\contentsline {paragraph}{Finding 1 --- A reproducible BL-0 baseline exists and is non-trivial.}{7}{paragraph*.12}%
+\contentsline {paragraph}{Finding 2 --- Rule comparisons must be stress-tested around the season-28 cutoff.}{7}{paragraph*.13}%
+\contentsline {paragraph}{Finding 3 --- Non-standard weeks materially affect denominators.}{7}{paragraph*.14}%
+\contentsline {subsection}{\numberline {3.4}Feature Engineering}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Synthesis of Findings}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Task A: Fan Vote Inference Model}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Overview and Modeling Philosophy}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Main Inference Model}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Uncertainty Quantification and Sensitivity Analysis}{9}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}KPI2: Vote Identifiability (interval tightness)}{9}{subsubsection.4.3.1}%
+\contentsline {paragraph}{Profile optimization formulation.}{10}{paragraph*.15}%
+\contentsline {paragraph}{Objective with judge-anchor prior.}{10}{paragraph*.16}%
+\contentsline {subsection}{\numberline {4.4}Hyperparameters, tuning, and implementation details}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Outputs and sanity checks}{12}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Task B \& C: Rule Reply, Volting System, and Counterfactuals}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Rank vs. Percent Across Seasons}{12}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Replay protocol and eligibility}{12}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Cross-season summary metrics}{13}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Era cutoff assumption and stress-test plan}{13}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Controversial Contestants: Case Studies}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Bottom-two and Judges' Save Mechanism}{14}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Synthesis of Findings from Rules}{14}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Task D-1: Impact Analysis: Pro Dancers \& Celebrity Attributes}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Outcome definitions}{14}{subsection.6.1}%
+\contentsline {paragraph}{Judges' outcome.}{15}{paragraph*.17}%
+\contentsline {paragraph}{Fans' outcome.}{15}{paragraph*.18}%
+\contentsline {subsection}{\numberline {6.2}Modeling results: separating ``who judges reward'' vs.\ ``who fans support''}{15}{subsection.6.2}%
+\contentsline {paragraph}{Model 1: Judge Model.}{15}{paragraph*.19}%
+\contentsline {paragraph}{Model 2: Vote Model.}{15}{paragraph*.20}%
+\contentsline {paragraph}{Comparing judges vs.\ fans.}{15}{paragraph*.21}%
+\contentsline {paragraph}{Quantifying professional-dancer impact (magnitude, not just significance).}{15}{paragraph*.22}%
+\contentsline {paragraph}{Uncertainty propagation.}{16}{paragraph*.23}%
+\contentsline {section}{\numberline {7}Task D-2: New Rule Design and Stress Testing}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Design Goals and Principles}{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Proposed aggregation rule: Judge Safeguard + Smoothed Rank (JS-SR)}{16}{subsection.7.2}%
+\contentsline {paragraph}{Step 1: Safeguard threshold.}{16}{paragraph*.24}%
+\contentsline {paragraph}{Step 2: Battleground scoring and elimination.}{16}{paragraph*.25}%
+\contentsline {subsection}{\numberline {7.3}Stress Testing and Simulation Evidence via Replay}{17}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Conclusion}{17}{section.8}%
+\contentsline {section}{\numberline {9}Memo to Management}{18}{section.9}%
 \contentsline {section}{\numberline {A}Appendix: Data, Algorithms, and Reproducibility}{18}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Appendix A. Data Dictionary and Preprocessing Details}{18}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Appendix B. Feature Engineering (Task 1 \& Task 2)}{19}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Appendix C. Mode Clustering Configuration and Naming}{19}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Appendix D. Weighted 1D $k$-Median Solution Sketch}{19}{subsection.A.4}%
-\contentsline {subsection}{\numberline {A.5}Appendix E. Simulation Assumptions and Parameters}{19}{subsection.A.5}%
-\contentsline {subsection}{\numberline {A.6}Appendix F. Additional Results (Stress Tests)}{20}{subsection.A.6}%
-\contentsline {subsection}{\numberline {A.7}Appendix G. Reproducibility Checklist}{20}{subsection.A.7}%
-\contentsline {subsection}{\numberline {A.8}Appendix H. Interpretable Baseline and Fallback Policy (Route B)}{20}{subsection.A.8}%
-\contentsline {paragraph}{Task 1: baseline + regime $AR(1)$ predictor.}{20}{paragraph*.10}%
-\contentsline {paragraph}{Task 2: rule-based traffic state classifier with robust thresholds.}{20}{paragraph*.11}%
-\contentsline {paragraph}{Task 3: zone-based parking allocation.}{21}{paragraph*.12}%
-\contentsline {subsection}{\numberline {A.9}Validation}{21}{subsection.A.9}%
-\contentsline {section}{\numberline {B}Complete Files for Problem B}{21}{appendix.B}%
-\contentsline {paragraph}{Language and Writing Support}{}{paragraph*.14}%
-\contentsline {paragraph}{Code Drafting Assistance}{}{paragraph*.15}%
-\contentsline {paragraph}{Explicitly Excluded Uses of AI}{}{paragraph*.16}%
-\contentsline {paragraph}{Verification and Responsibility}{}{paragraph*.17}%
+\contentsline {section}{\numberline {B}Complete Files for Problem B}{18}{appendix.B}%
+\contentsline {paragraph}{Language and Writing Support}{}{paragraph*.27}%
+\contentsline {paragraph}{Code Drafting Assistance}{}{paragraph*.28}%
+\contentsline {paragraph}{Explicitly Excluded Uses of AI}{}{paragraph*.29}%
+\contentsline {paragraph}{Verification and Responsibility}{}{paragraph*.30}%
