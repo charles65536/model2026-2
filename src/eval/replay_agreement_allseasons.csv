@@ -1,0 +1,671 @@
+season,method,week,m_actual,m_pred,exact_match,intersection_size,actual_list,pred_list
+1,percent,1,0,1,0,0,,nan
+1,percent,2,1,1,0,0,Trista Sutter,Evander Holyfield
+1,percent,3,1,1,0,0,Evander Holyfield,Trista Sutter
+1,percent,4,1,1,0,0,Rachel Hunter,Joey McIntyre
+1,percent,5,0,1,0,0,,nan
+1,percent,6,0,1,0,0,,nan
+1,rank,1,0,1,0,0,,nan
+1,rank,2,1,1,0,0,Trista Sutter,Evander Holyfield
+1,rank,3,1,1,0,0,Evander Holyfield,Trista Sutter
+1,rank,4,1,1,0,0,Rachel Hunter,Joey McIntyre
+1,rank,5,0,1,0,0,,nan
+1,rank,6,0,1,0,0,,nan
+2,percent,1,1,1,1,1,Kenny Mayne,Kenny Mayne
+2,percent,2,1,1,0,0,Tatum O'Neal,Master P
+2,percent,3,1,1,0,0,Giselle Fernandez,Tatum O'Neal
+2,percent,4,1,1,0,0,Master P,Giselle Fernandez
+2,percent,5,1,1,1,1,Tia Carrere,Tia Carrere
+2,percent,6,1,1,1,1,George Hamilton,George Hamilton
+2,percent,7,1,1,1,1,Lisa Rinna,Lisa Rinna
+2,percent,8,0,1,0,0,,nan
+2,rank,1,1,1,0,0,Kenny Mayne,Master P
+2,rank,2,1,1,0,0,Tatum O'Neal,Kenny Mayne
+2,rank,3,1,1,0,0,Giselle Fernandez,Tatum O'Neal
+2,rank,4,1,1,0,0,Master P,Giselle Fernandez
+2,rank,5,1,1,1,1,Tia Carrere,Tia Carrere
+2,rank,6,1,1,1,1,George Hamilton,George Hamilton
+2,rank,7,1,1,0,0,Lisa Rinna,Jerry Rice
+2,rank,8,0,1,0,0,,nan
+3,percent,1,1,1,1,1,Tucker Carlson,Tucker Carlson
+3,percent,2,1,1,0,0,Shanna Moakler,Jerry Springer
+3,percent,3,1,1,0,0,Harry Hamlin,Shanna Moakler
+3,percent,4,1,1,0,0,Vivica A. Fox,Harry Hamlin
+3,percent,5,1,1,0,0,Willa Ford,Vivica A. Fox
+3,percent,6,0,1,0,0,,nan
+3,percent,7,1,1,0,0,Jerry Springer,Sara Evans
+3,percent,8,1,1,0,0,Monique Coleman,Willa Ford
+3,percent,9,0,1,0,0,,nan
+3,percent,10,0,1,0,0,,nan
+3,rank,1,1,1,1,1,Tucker Carlson,Tucker Carlson
+3,rank,2,1,1,0,0,Shanna Moakler,Jerry Springer
+3,rank,3,1,1,0,0,Harry Hamlin,Shanna Moakler
+3,rank,4,1,1,0,0,Vivica A. Fox,Harry Hamlin
+3,rank,5,1,1,0,0,Willa Ford,Vivica A. Fox
+3,rank,6,0,1,0,0,,nan
+3,rank,7,1,1,0,0,Jerry Springer,Sara Evans
+3,rank,8,1,1,0,0,Monique Coleman,Willa Ford
+3,rank,9,0,1,0,0,,nan
+3,rank,10,0,1,0,0,,nan
+4,percent,1,0,1,0,0,,nan
+4,percent,2,1,1,0,0,Paulina Porizkova,Clyde Drexler
+4,percent,3,1,1,0,0,Shandi Finnessey,Paulina Porizkova
+4,percent,4,1,1,0,0,Leeza Gibbons,Shandi Finnessey
+4,percent,5,1,1,0,0,Clyde Drexler,Leeza Gibbons
+4,percent,6,1,1,0,0,Heather Mills,John Ratzenberger
+4,percent,7,1,1,0,0,John Ratzenberger,Heather Mills
+4,percent,8,1,1,1,1,Billy Ray Cyrus,Billy Ray Cyrus
+4,percent,9,1,1,1,1,Ian Ziering,Ian Ziering
+4,percent,10,0,1,0,0,,nan
+4,rank,1,0,1,0,0,,nan
+4,rank,2,1,1,0,0,Paulina Porizkova,Clyde Drexler
+4,rank,3,1,1,0,0,Shandi Finnessey,Paulina Porizkova
+4,rank,4,1,1,0,0,Leeza Gibbons,Shandi Finnessey
+4,rank,5,1,1,0,0,Clyde Drexler,Leeza Gibbons
+4,rank,6,1,1,0,0,Heather Mills,John Ratzenberger
+4,rank,7,1,1,0,0,John Ratzenberger,Heather Mills
+4,rank,8,1,1,1,1,Billy Ray Cyrus,Billy Ray Cyrus
+4,rank,9,1,1,1,1,Ian Ziering,Ian Ziering
+4,rank,10,0,1,0,0,,nan
+5,percent,1,1,1,1,1,Josie Maran,Josie Maran
+5,percent,2,1,1,0,0,Albert Reed,Wayne Newton
+5,percent,3,1,1,0,0,Wayne Newton,Albert Reed
+5,percent,4,1,1,0,0,Floyd Mayweather Jr. ,Mark Cuban
+5,percent,5,1,1,0,0,Mark Cuban,Floyd Mayweather Jr. 
+5,percent,6,1,1,0,0,Sabrina Bryan,Jane Seymour
+5,percent,7,1,1,0,0,Jane Seymour,Sabrina Bryan
+5,percent,8,1,1,1,1,Cameron Mathison,Cameron Mathison
+5,percent,9,1,1,1,1,Jennie Garth,Jennie Garth
+5,percent,10,0,1,0,0,,nan
+5,rank,1,1,1,1,1,Josie Maran,Josie Maran
+5,rank,2,1,1,0,0,Albert Reed,Wayne Newton
+5,rank,3,1,1,0,0,Wayne Newton,Albert Reed
+5,rank,4,1,1,0,0,Floyd Mayweather Jr. ,Mark Cuban
+5,rank,5,1,1,0,0,Mark Cuban,Floyd Mayweather Jr. 
+5,rank,6,1,1,0,0,Sabrina Bryan,Jane Seymour
+5,rank,7,1,1,0,0,Jane Seymour,Sabrina Bryan
+5,rank,8,1,1,0,0,Cameron Mathison,Marie Osmond
+5,rank,9,1,1,0,0,Jennie Garth,Cameron Mathison
+5,rank,10,0,1,0,0,,nan
+6,percent,1,0,1,0,0,,nan
+6,percent,2,2,2,1,2,Monica Seles;Penn Jillette,Monica Seles;Penn Jillette
+6,percent,3,1,1,1,1,Steve Guttenberg,Steve Guttenberg
+6,percent,4,1,1,1,1,Adam Carolla,Adam Carolla
+6,percent,5,1,1,1,1,Priscilla Presley,Priscilla Presley
+6,percent,6,1,1,1,1,Marlee Matlin,Marlee Matlin
+6,percent,7,1,1,1,1,Shannon Elizabeth,Shannon Elizabeth
+6,percent,8,1,1,1,1,Mario,Mario
+6,percent,9,1,1,1,1,Marissa Jaret Winokur,Marissa Jaret Winokur
+6,percent,10,0,1,0,0,,nan
+6,rank,1,0,1,0,0,,nan
+6,rank,2,2,2,0,1,Monica Seles;Penn Jillette,Monica Seles;Steve Guttenberg
+6,rank,3,1,1,0,0,Steve Guttenberg,Penn Jillette
+6,rank,4,1,1,1,1,Adam Carolla,Adam Carolla
+6,rank,5,1,1,1,1,Priscilla Presley,Priscilla Presley
+6,rank,6,1,1,1,1,Marlee Matlin,Marlee Matlin
+6,rank,7,1,1,1,1,Shannon Elizabeth,Shannon Elizabeth
+6,rank,8,1,1,0,0,Mario,Marissa Jaret Winokur
+6,rank,9,1,1,0,0,Marissa Jaret Winokur,Mario
+6,rank,10,0,1,0,0,,nan
+7,percent,1,2,2,1,2,Jeffrey Ross;Ted McGinley,Jeffrey Ross;Ted McGinley
+7,percent,2,1,1,1,1,Kim Kardashian,Kim Kardashian
+7,percent,3,0,1,0,0,,nan
+7,percent,4,1,1,0,0,Rocco DiSpirito,Misty May-Treanor
+7,percent,5,1,1,0,0,Toni Braxton,Rocco DiSpirito
+7,percent,6,1,1,0,0,Cloris Leachman,Toni Braxton
+7,percent,7,1,1,0,0,Susan Lucci,Cloris Leachman
+7,percent,8,1,1,0,0,Maurice Greene,Susan Lucci
+7,percent,9,1,1,0,0,Cody Linley,Maurice Greene
+7,percent,10,0,1,0,0,,nan
+7,rank,1,2,2,0,1,Jeffrey Ross;Ted McGinley,Cloris Leachman;Jeffrey Ross
+7,rank,2,1,1,0,0,Kim Kardashian,Ted McGinley
+7,rank,3,0,1,0,0,,nan
+7,rank,4,1,1,0,0,Rocco DiSpirito,Kim Kardashian
+7,rank,5,1,1,0,0,Toni Braxton,Misty May-Treanor
+7,rank,6,1,1,0,0,Cloris Leachman,Rocco DiSpirito
+7,rank,7,1,1,0,0,Susan Lucci,Toni Braxton
+7,rank,8,1,1,0,0,Maurice Greene,Susan Lucci
+7,rank,9,1,1,0,0,Cody Linley,Maurice Greene
+7,rank,10,0,1,0,0,,nan
+8,percent,1,0,1,0,0,,nan
+8,percent,2,1,1,0,0,Belinda Carlisle,Steve-O
+8,percent,3,1,1,0,0,Denise Richards,Belinda Carlisle
+8,percent,4,2,2,0,1,Holly Madison;Steve Wozniak,Denise Richards;Steve Wozniak
+8,percent,5,1,1,0,0,David Alan Grier,Holly Madison
+8,percent,6,1,1,0,0,Steve-O,David Alan Grier
+8,percent,7,1,1,1,1,Lawrence Taylor,Lawrence Taylor
+8,percent,8,1,1,1,1,Chuck Wicks,Chuck Wicks
+8,percent,9,1,1,0,0,Lil' Kim,Ty Murray
+8,percent,10,1,1,0,0,Ty Murray,Lil' Kim
+8,percent,11,0,1,0,0,,nan
+8,rank,1,0,1,0,0,,nan
+8,rank,2,1,1,0,0,Belinda Carlisle,Steve Wozniak
+8,rank,3,1,1,0,0,Denise Richards,Belinda Carlisle
+8,rank,4,2,2,0,0,Holly Madison;Steve Wozniak,Denise Richards;Steve-O
+8,rank,5,1,1,0,0,David Alan Grier,Holly Madison
+8,rank,6,1,1,0,0,Steve-O,David Alan Grier
+8,rank,7,1,1,1,1,Lawrence Taylor,Lawrence Taylor
+8,rank,8,1,1,1,1,Chuck Wicks,Chuck Wicks
+8,rank,9,1,1,0,0,Lil' Kim,Ty Murray
+8,rank,10,1,1,0,0,Ty Murray,Lil' Kim
+8,rank,11,0,1,0,0,,nan
+9,percent,1,2,2,1,2,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray
+9,percent,2,1,1,1,1,Kathy Ireland,Kathy Ireland
+9,percent,3,1,1,0,0,Debi Mazar,Tom DeLay
+9,percent,4,1,1,0,0,Chuck Liddell,Debi Mazar
+9,percent,5,1,1,0,0,Natalie Coughlin,Chuck Liddell
+9,percent,6,2,2,0,1,Louie Vito;Melissa Joan Hart,Louie Vito;Natalie Coughlin
+9,percent,7,2,2,0,1,Mark Dacascos;Michael Irvin,Mark Dacascos;Melissa Joan Hart
+9,percent,8,1,1,0,0,Aaron Carter,Michael Irvin
+9,percent,9,1,1,0,0,Joanna Krupa,Aaron Carter
+9,percent,10,0,1,0,0,,nan
+9,rank,1,2,2,1,2,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray
+9,rank,2,1,1,1,1,Kathy Ireland,Kathy Ireland
+9,rank,3,1,1,0,0,Debi Mazar,Tom DeLay
+9,rank,4,1,1,0,0,Chuck Liddell,Debi Mazar
+9,rank,5,1,1,0,0,Natalie Coughlin,Chuck Liddell
+9,rank,6,2,2,0,0,Louie Vito;Melissa Joan Hart,Michael Irvin;Natalie Coughlin
+9,rank,7,2,2,0,0,Mark Dacascos;Michael Irvin,Louie Vito;Melissa Joan Hart
+9,rank,8,1,1,0,0,Aaron Carter,Mark Dacascos
+9,rank,9,1,1,0,0,Joanna Krupa,Aaron Carter
+9,rank,10,0,1,0,0,,nan
+10,percent,1,0,1,0,0,,nan
+10,percent,2,1,1,0,0,Shannen Doherty,Buzz Aldrin
+10,percent,3,1,1,0,0,Buzz Aldrin,Shannen Doherty
+10,percent,4,1,1,1,1,Aiden Turner,Aiden Turner
+10,percent,5,1,1,1,1,Kate Gosselin,Kate Gosselin
+10,percent,6,1,1,1,1,Jake Pavelka,Jake Pavelka
+10,percent,7,1,1,1,1,Pamela Anderson,Pamela Anderson
+10,percent,8,1,1,1,1,Niecy Nash,Niecy Nash
+10,percent,9,1,1,1,1,Chad Ochocinco,Chad Ochocinco
+10,percent,10,0,1,0,0,,nan
+10,rank,1,0,1,0,0,,nan
+10,rank,2,1,1,0,0,Shannen Doherty,Buzz Aldrin
+10,rank,3,1,1,0,0,Buzz Aldrin,Shannen Doherty
+10,rank,4,1,1,0,0,Aiden Turner,Kate Gosselin
+10,rank,5,1,1,0,0,Kate Gosselin,Aiden Turner
+10,rank,6,1,1,1,1,Jake Pavelka,Jake Pavelka
+10,rank,7,1,1,0,0,Pamela Anderson,Niecy Nash
+10,rank,8,1,1,0,0,Niecy Nash,Pamela Anderson
+10,rank,9,1,1,1,1,Chad Ochocinco,Chad Ochocinco
+10,rank,10,0,1,0,0,,nan
+11,percent,1,1,1,1,1,David Hasselhoff,David Hasselhoff
+11,percent,2,1,1,1,1,Michael Bolton,Michael Bolton
+11,percent,3,1,1,1,1,Margaret Cho,Margaret Cho
+11,percent,4,1,1,1,1,The Situation,The Situation
+11,percent,5,1,1,1,1,Florence Henderson,Florence Henderson
+11,percent,6,1,1,0,0,Audrina Patridge,Kurt Warner
+11,percent,7,1,1,0,0,Rick Fox,Audrina Patridge
+11,percent,8,1,1,0,0,Kurt Warner,Rick Fox
+11,percent,9,1,1,1,1,Brandy,Brandy
+11,percent,10,0,1,0,0,,nan
+11,rank,1,1,1,1,1,David Hasselhoff,David Hasselhoff
+11,rank,2,1,1,1,1,Michael Bolton,Michael Bolton
+11,rank,3,1,1,1,1,Margaret Cho,Margaret Cho
+11,rank,4,1,1,1,1,The Situation,The Situation
+11,rank,5,1,1,1,1,Florence Henderson,Florence Henderson
+11,rank,6,1,1,0,0,Audrina Patridge,Kurt Warner
+11,rank,7,1,1,0,0,Rick Fox,Audrina Patridge
+11,rank,8,1,1,0,0,Kurt Warner,Rick Fox
+11,rank,9,1,1,0,0,Brandy,Bristol Palin
+11,rank,10,0,1,0,0,,nan
+12,percent,1,0,1,0,0,,nan
+12,percent,2,1,1,1,1,Mike Catherwood,Mike Catherwood
+12,percent,3,1,1,1,1,Wendy Williams,Wendy Williams
+12,percent,4,1,1,0,0,Sugar Ray Leonard,Kendra Wilkinson
+12,percent,5,1,1,0,0,Petra Nemcova,Sugar Ray Leonard
+12,percent,6,1,1,0,0,Chris Jericho,Petra Nemcova
+12,percent,7,1,1,0,0,Kendra Wilkinson,Chris Jericho
+12,percent,8,1,1,0,0,Romeo,Ralph Macchio
+12,percent,9,1,1,0,0,Ralph Macchio,Romeo
+12,percent,10,0,1,0,0,,nan
+12,rank,1,0,1,0,0,,nan
+12,rank,2,1,1,1,1,Mike Catherwood,Mike Catherwood
+12,rank,3,1,1,1,1,Wendy Williams,Wendy Williams
+12,rank,4,1,1,1,1,Sugar Ray Leonard,Sugar Ray Leonard
+12,rank,5,1,1,1,1,Petra Nemcova,Petra Nemcova
+12,rank,6,1,1,1,1,Chris Jericho,Chris Jericho
+12,rank,7,1,1,0,0,Kendra Wilkinson,Romeo
+12,rank,8,1,1,0,0,Romeo,Kendra Wilkinson
+12,rank,9,1,1,1,1,Ralph Macchio,Ralph Macchio
+12,rank,10,0,1,0,0,,nan
+13,percent,1,1,1,1,1,Metta World Peace (Ron),Metta World Peace (Ron)
+13,percent,2,1,1,0,0,Elisabetta Canalis,Chaz Bono
+13,percent,3,1,1,0,0,Kristin Cavallari,Elisabetta Canalis
+13,percent,4,1,1,0,0,Chynna Phillips,Kristin Cavallari
+13,percent,5,1,1,0,0,Carson Kressley,Chynna Phillips
+13,percent,6,1,1,0,0,Chaz Bono,Carson Kressley
+13,percent,7,1,1,0,0,David Arquette,Nancy Grace
+13,percent,8,1,1,0,0,Nancy Grace,David Arquette
+13,percent,9,1,1,1,1,Hope Solo,Hope Solo
+13,percent,10,0,1,0,0,,nan
+13,rank,1,1,1,1,1,Metta World Peace (Ron),Metta World Peace (Ron)
+13,rank,2,1,1,0,0,Elisabetta Canalis,Chaz Bono
+13,rank,3,1,1,0,0,Kristin Cavallari,Elisabetta Canalis
+13,rank,4,1,1,0,0,Chynna Phillips,Kristin Cavallari
+13,rank,5,1,1,0,0,Carson Kressley,Chynna Phillips
+13,rank,6,1,1,0,0,Chaz Bono,Carson Kressley
+13,rank,7,1,1,0,0,David Arquette,Nancy Grace
+13,rank,8,1,1,0,0,Nancy Grace,David Arquette
+13,rank,9,1,1,1,1,Hope Solo,Hope Solo
+13,rank,10,0,1,0,0,,nan
+14,percent,1,0,1,0,0,,nan
+14,percent,2,1,1,1,1,Martina Navratilova,Martina Navratilova
+14,percent,3,1,1,1,1,Jack Wagner,Jack Wagner
+14,percent,4,1,1,1,1,Sherri Sheperd,Sherri Sheperd
+14,percent,5,1,1,1,1,Gavin DeGraw,Gavin DeGraw
+14,percent,6,1,1,1,1,Gladys Knight,Gladys Knight
+14,percent,7,1,1,0,0,Jaleel White,Melissa Gilbert
+14,percent,8,2,2,0,1,Melissa Gilbert;Roshon Fegan,Jaleel White;Roshon Fegan
+14,percent,9,1,1,1,1,Maria Menounos,Maria Menounos
+14,percent,10,0,1,0,0,,nan
+14,rank,1,0,1,0,0,,nan
+14,rank,2,1,1,1,1,Martina Navratilova,Martina Navratilova
+14,rank,3,1,1,1,1,Jack Wagner,Jack Wagner
+14,rank,4,1,1,1,1,Sherri Sheperd,Sherri Sheperd
+14,rank,5,1,1,1,1,Gavin DeGraw,Gavin DeGraw
+14,rank,6,1,1,1,1,Gladys Knight,Gladys Knight
+14,rank,7,1,1,0,0,Jaleel White,Melissa Gilbert
+14,rank,8,2,2,0,0,Melissa Gilbert;Roshon Fegan,Jaleel White;Maria Menounos
+14,rank,9,1,1,0,0,Maria Menounos,Roshon Fegan
+14,rank,10,0,1,0,0,,nan
+15,percent,1,1,1,1,1,Pamela Anderson,Pamela Anderson
+15,percent,2,1,1,0,0,Joey Fatone,Bristol Palin
+15,percent,3,2,2,0,1,Drew Lachey;Helio Castroneves,Drew Lachey;Joey Fatone
+15,percent,4,1,1,0,0,Bristol Palin,Helio Castroneves
+15,percent,5,0,1,0,0,,nan
+15,percent,6,1,1,0,0,Sabrina Bryan,Kirstie Alley
+15,percent,7,0,1,0,0,,nan
+15,percent,8,2,2,0,1,Gilles Marini;Kirstie Alley,Gilles Marini;Sabrina Bryan
+15,percent,9,2,2,1,2,Apolo Anton Ohno;Emmitt Smith,Apolo Anton Ohno;Emmitt Smith
+15,percent,10,0,1,0,0,,nan
+15,rank,1,1,1,1,1,Pamela Anderson,Pamela Anderson
+15,rank,2,1,1,0,0,Joey Fatone,Bristol Palin
+15,rank,3,2,2,0,1,Drew Lachey;Helio Castroneves,Drew Lachey;Joey Fatone
+15,rank,4,1,1,0,0,Bristol Palin,Helio Castroneves
+15,rank,5,0,1,0,0,,nan
+15,rank,6,1,1,0,0,Sabrina Bryan,Emmitt Smith
+15,rank,7,0,1,0,0,,nan
+15,rank,8,2,2,0,1,Gilles Marini;Kirstie Alley,Kirstie Alley;Sabrina Bryan
+15,rank,9,2,2,0,0,Apolo Anton Ohno;Emmitt Smith,Gilles Marini;Kelly Monaco
+15,rank,10,0,1,0,0,,nan
+16,percent,1,0,1,0,0,,nan
+16,percent,2,0,1,0,0,,nan
+16,percent,3,1,1,0,0,Wynonna Judd,Dorothy Hamill
+16,percent,4,1,1,0,0,Lisa Vanderpump,Wynonna Judd
+16,percent,5,1,1,0,0,D. L. Hughley,Lisa Vanderpump
+16,percent,6,1,1,0,0,Victor Ortiz,D. L. Hughley
+16,percent,7,1,1,0,0,Andy Dick,Victor Ortiz
+16,percent,8,1,1,0,0,Sean Lowe,Andy Dick
+16,percent,9,1,1,0,0,Ingo Rademacher,Sean Lowe
+16,percent,10,1,1,0,0,Alexandra Raisman,Ingo Rademacher
+16,rank,1,0,1,0,0,,nan
+16,rank,2,0,1,0,0,,nan
+16,rank,3,1,1,0,0,Wynonna Judd,Dorothy Hamill
+16,rank,4,1,1,0,0,Lisa Vanderpump,Wynonna Judd
+16,rank,5,1,1,0,0,D. L. Hughley,Lisa Vanderpump
+16,rank,6,1,1,0,0,Victor Ortiz,D. L. Hughley
+16,rank,7,1,1,0,0,Andy Dick,Victor Ortiz
+16,rank,8,1,1,0,0,Sean Lowe,Andy Dick
+16,rank,9,1,1,0,0,Ingo Rademacher,Sean Lowe
+16,rank,10,1,1,0,0,Alexandra Raisman,Ingo Rademacher
+17,percent,1,0,1,0,0,,nan
+17,percent,2,1,1,0,0,Keyshawn Johnson,Bill Nye
+17,percent,3,1,1,0,0,Bill Nye,Keyshawn Johnson
+17,percent,4,1,1,1,1,Valerie Harper,Valerie Harper
+17,percent,5,1,1,0,0,Christina Milian,Leah Remini
+17,percent,6,0,1,0,0,,nan
+17,percent,7,1,1,0,0,"Nicole ""Snooki"" Polizzi",Christina Milian
+17,percent,8,1,1,0,0,Brant Daugherty,"Nicole ""Snooki"" Polizzi"
+17,percent,9,1,1,0,0,Elizabeth Berkley Lauren,Brant Daugherty
+17,percent,10,1,1,0,0,Leah Remini,Elizabeth Berkley Lauren
+17,percent,11,1,1,1,1,Bill Engvall,Bill Engvall
+17,rank,1,0,1,0,0,,nan
+17,rank,2,1,1,0,0,Keyshawn Johnson,Bill Nye
+17,rank,3,1,1,0,0,Bill Nye,Keyshawn Johnson
+17,rank,4,1,1,1,1,Valerie Harper,Valerie Harper
+17,rank,5,1,1,0,0,Christina Milian,Leah Remini
+17,rank,6,0,1,0,0,,nan
+17,rank,7,1,1,0,0,"Nicole ""Snooki"" Polizzi",Christina Milian
+17,rank,8,1,1,0,0,Brant Daugherty,"Nicole ""Snooki"" Polizzi"
+17,rank,9,1,1,0,0,Elizabeth Berkley Lauren,Brant Daugherty
+17,rank,10,1,1,0,0,Leah Remini,Elizabeth Berkley Lauren
+17,rank,11,1,1,1,1,Bill Engvall,Bill Engvall
+18,percent,1,0,1,0,0,,nan
+18,percent,2,2,2,0,1,Diana Nyad;Sean Avery,Billy Dee Williams;Diana Nyad
+18,percent,3,0,1,0,0,,nan
+18,percent,4,0,1,0,0,,nan
+18,percent,5,1,1,0,0,Cody Simpson,Sean Avery
+18,percent,6,1,1,0,0,Drew Carey,Cody Simpson
+18,percent,7,1,1,0,0,NeNe Leakes,Drew Carey
+18,percent,8,1,1,0,0,Danica McKellar,NeNe Leakes
+18,percent,9,1,1,0,0,Charlie White,Danica McKellar
+18,percent,10,1,1,0,0,James Maslow,Charlie White
+18,rank,1,0,1,0,0,,nan
+18,rank,2,2,2,0,1,Diana Nyad;Sean Avery,Billy Dee Williams;Diana Nyad
+18,rank,3,0,1,0,0,,nan
+18,rank,4,0,1,0,0,,nan
+18,rank,5,1,1,0,0,Cody Simpson,Sean Avery
+18,rank,6,1,1,0,0,Drew Carey,Cody Simpson
+18,rank,7,1,1,0,0,NeNe Leakes,Drew Carey
+18,rank,8,1,1,0,0,Danica McKellar,NeNe Leakes
+18,rank,9,1,1,0,0,Charlie White,Danica McKellar
+18,rank,10,1,1,0,0,James Maslow,Charlie White
+19,percent,1,1,1,1,1,Lolo Jones,Lolo Jones
+19,percent,2,1,1,0,0,Tavis Smiley,Michael Waltrip
+19,percent,3,1,1,0,0,Randy Couture,Tavis Smiley
+19,percent,4,1,1,0,0,Betsey Johnson,Randy Couture
+19,percent,5,0,1,0,0,,nan
+19,percent,6,1,1,0,0,Jonathan Bennett,Betsey Johnson
+19,percent,7,1,1,0,0,Antonio Sabato Jr.,Jonathan Bennett
+19,percent,8,1,1,0,0,Michael Waltrip,Antonio Sabato Jr.
+19,percent,9,1,1,0,0,Lea Thompson,Tommy Chong
+19,percent,10,1,1,0,0,Tommy Chong,Lea Thompson
+19,percent,11,1,1,1,1,Bethany Mota,Bethany Mota
+19,rank,1,1,1,1,1,Lolo Jones,Lolo Jones
+19,rank,2,1,1,0,0,Tavis Smiley,Michael Waltrip
+19,rank,3,1,1,0,0,Randy Couture,Tavis Smiley
+19,rank,4,1,1,0,0,Betsey Johnson,Randy Couture
+19,rank,5,0,1,0,0,,nan
+19,rank,6,1,1,0,0,Jonathan Bennett,Betsey Johnson
+19,rank,7,1,1,0,0,Antonio Sabato Jr.,Jonathan Bennett
+19,rank,8,1,1,0,0,Michael Waltrip,Antonio Sabato Jr.
+19,rank,9,1,1,0,0,Lea Thompson,Tommy Chong
+19,rank,10,1,1,0,0,Tommy Chong,Lea Thompson
+19,rank,11,1,1,1,1,Bethany Mota,Bethany Mota
+20,percent,1,0,1,0,0,,nan
+20,percent,2,1,1,0,0,Redfoo,Chris Soules
+20,percent,3,1,1,0,0,Charlotte McKinney,Redfoo
+20,percent,4,1,1,0,0,Michael Sam,Charlotte McKinney
+20,percent,5,1,1,0,0,Suzanne Somers,Michael Sam
+20,percent,6,1,1,0,0,Patti LaBelle,Suzanne Somers
+20,percent,7,1,1,0,0,Willow Shields,Patti LaBelle
+20,percent,8,2,2,0,1,Chris Soules;Robert Herjavec,Robert Herjavec;Willow Shields
+20,percent,9,1,1,1,1,Nastia Liukin,Nastia Liukin
+20,percent,10,0,1,0,0,,nan
+20,rank,1,0,1,0,0,,nan
+20,rank,2,1,1,0,0,Redfoo,Charlotte McKinney
+20,rank,3,1,1,0,0,Charlotte McKinney,Redfoo
+20,rank,4,1,1,0,0,Michael Sam,Suzanne Somers
+20,rank,5,1,1,0,0,Suzanne Somers,Michael Sam
+20,rank,6,1,1,0,0,Patti LaBelle,Robert Herjavec
+20,rank,7,1,1,0,0,Willow Shields,Patti LaBelle
+20,rank,8,2,2,0,1,Chris Soules;Robert Herjavec,Chris Soules;Willow Shields
+20,rank,9,1,1,0,0,Nastia Liukin,Noah Galloway
+20,rank,10,0,1,0,0,,nan
+21,percent,1,0,1,0,0,,nan
+21,percent,2,2,2,0,1,Chaka Khan;Victor Espinoza,Chaka Khan;Kim Zolciak-Biermann
+21,percent,3,0,1,0,0,,nan
+21,percent,4,1,1,0,0,Gary Busey,Victor Espinoza
+21,percent,5,0,1,0,0,,nan
+21,percent,6,1,1,0,0,Paula Deen,Gary Busey
+21,percent,7,1,1,0,0,Hayes Grier,Paula Deen
+21,percent,8,1,1,0,0,Andy Grammer,Hayes Grier
+21,percent,9,1,1,0,0,Alexa PenaVega,Andy Grammer
+21,percent,10,0,1,0,0,,nan
+21,percent,11,1,1,0,0,Carlos PenaVega,Alexa PenaVega
+21,rank,1,0,1,0,0,,nan
+21,rank,2,2,2,0,1,Chaka Khan;Victor Espinoza,Chaka Khan;Gary Busey
+21,rank,3,0,1,0,0,,nan
+21,rank,4,1,1,0,0,Gary Busey,Kim Zolciak-Biermann
+21,rank,5,0,1,0,0,,nan
+21,rank,6,1,1,0,0,Paula Deen,Victor Espinoza
+21,rank,7,1,1,0,0,Hayes Grier,Paula Deen
+21,rank,8,1,1,0,0,Andy Grammer,Hayes Grier
+21,rank,9,1,1,0,0,Alexa PenaVega,Andy Grammer
+21,rank,10,0,1,0,0,,nan
+21,rank,11,1,1,0,0,Carlos PenaVega,Alexa PenaVega
+22,percent,1,0,1,0,0,,nan
+22,percent,2,1,1,1,1,Geraldo Rivera,Geraldo Rivera
+22,percent,3,1,1,1,1,Mischa Barton,Mischa Barton
+22,percent,4,1,1,0,0,Marla Maples,Doug Flutie
+22,percent,5,0,1,0,0,,nan
+22,percent,6,1,1,0,0,Doug Flutie,Marla Maples
+22,percent,7,2,2,1,2,Kim Fields;Von Miller,Kim Fields;Von Miller
+22,percent,8,1,1,0,0,Jodie Sweetin,Wanya Morris
+22,percent,9,2,2,0,1,Antonio Brown;Wanya Morris,Antonio Brown;Jodie Sweetin
+22,percent,10,0,1,0,0,,nan
+22,rank,1,0,1,0,0,,nan
+22,rank,2,1,1,1,1,Geraldo Rivera,Geraldo Rivera
+22,rank,3,1,1,1,1,Mischa Barton,Mischa Barton
+22,rank,4,1,1,0,0,Marla Maples,Doug Flutie
+22,rank,5,0,1,0,0,,nan
+22,rank,6,1,1,0,0,Doug Flutie,Marla Maples
+22,rank,7,2,2,0,1,Kim Fields;Von Miller,Jodie Sweetin;Kim Fields
+22,rank,8,1,1,0,0,Jodie Sweetin,Von Miller
+22,rank,9,2,2,0,1,Antonio Brown;Wanya Morris,Antonio Brown;Ginger Zee
+22,rank,10,0,1,0,0,,nan
+23,percent,1,0,1,0,0,,nan
+23,percent,2,1,1,0,0,Jake T. Austin,Rick Perry
+23,percent,3,1,1,0,0,Rick Perry,Jake T. Austin
+23,percent,4,2,2,1,2,Babyface;Vanilla Ice,Babyface;Vanilla Ice
+23,percent,5,0,1,0,0,,nan
+23,percent,6,1,1,1,1,Amber Rose,Amber Rose
+23,percent,7,1,1,1,1,Maureen McCormick,Maureen McCormick
+23,percent,8,1,1,0,0,Ryan Lochte,Marilu Henner
+23,percent,9,1,1,0,0,Marilu Henner,Ryan Lochte
+23,percent,10,1,1,1,1,Terra Jole,Terra Jole
+23,percent,11,1,1,1,1,Jana Kramer,Jana Kramer
+23,rank,1,0,1,0,0,,nan
+23,rank,2,1,1,0,0,Jake T. Austin,Rick Perry
+23,rank,3,1,1,0,0,Rick Perry,Jake T. Austin
+23,rank,4,2,2,0,1,Babyface;Vanilla Ice,Babyface;Ryan Lochte
+23,rank,5,0,1,0,0,,nan
+23,rank,6,1,1,0,0,Amber Rose,Vanilla Ice
+23,rank,7,1,1,0,0,Maureen McCormick,Amber Rose
+23,rank,8,1,1,0,0,Ryan Lochte,Maureen McCormick
+23,rank,9,1,1,1,1,Marilu Henner,Marilu Henner
+23,rank,10,1,1,0,0,Terra Jole,Calvin Johnson Jr.
+23,rank,11,1,1,0,0,Jana Kramer,Terra Jole
+24,percent,1,0,1,0,0,,nan
+24,percent,2,1,1,1,1,Chris Kattan,Chris Kattan
+24,percent,3,1,1,1,1,Charo,Charo
+24,percent,4,1,1,1,1,Mr. T,Mr. T
+24,percent,5,1,1,1,1,Erika Jayne,Erika Jayne
+24,percent,6,1,1,0,0,Heather Morris,Nick Viall
+24,percent,7,2,2,0,1,Nancy Kerrigan;Nick Viall,Heather Morris;Nancy Kerrigan
+24,percent,8,1,1,1,1,Bonner Bolton,Bonner Bolton
+24,percent,9,1,1,1,1,Simone Biles,Simone Biles
+24,percent,10,0,1,0,0,,nan
+24,rank,1,0,1,0,0,,nan
+24,rank,2,1,1,1,1,Chris Kattan,Chris Kattan
+24,rank,3,1,1,1,1,Charo,Charo
+24,rank,4,1,1,1,1,Mr. T,Mr. T
+24,rank,5,1,1,1,1,Erika Jayne,Erika Jayne
+24,rank,6,1,1,0,0,Heather Morris,Nick Viall
+24,rank,7,2,2,0,0,Nancy Kerrigan;Nick Viall,Bonner Bolton;Heather Morris
+24,rank,8,1,1,0,0,Bonner Bolton,Nancy Kerrigan
+24,rank,9,1,1,0,0,Simone Biles,David Ross
+24,rank,10,0,1,0,0,,nan
+25,percent,1,0,1,0,0,,nan
+25,percent,2,2,2,1,2,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Debbie Gibson
+25,percent,3,0,1,0,0,,nan
+25,percent,4,1,1,1,1,Derek Fisher,Derek Fisher
+25,percent,5,1,1,0,0,Sasha Pieterse,Nick Lachey
+25,percent,6,1,1,0,0,Nick Lachey,Sasha Pieterse
+25,percent,7,2,2,1,2,Nikki Bella;Vanessa Lachey,Nikki Bella;Vanessa Lachey
+25,percent,8,1,1,1,1,Terrell Owens,Terrell Owens
+25,percent,9,1,1,1,1,Victoria Arlen,Victoria Arlen
+25,percent,10,1,1,1,1,Drew Scott,Drew Scott
+25,rank,1,0,1,0,0,,nan
+25,rank,2,2,2,0,1,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Derek Fisher
+25,rank,3,0,1,0,0,,nan
+25,rank,4,1,1,0,0,Derek Fisher,Debbie Gibson
+25,rank,5,1,1,0,0,Sasha Pieterse,Nick Lachey
+25,rank,6,1,1,0,0,Nick Lachey,Sasha Pieterse
+25,rank,7,2,2,0,1,Nikki Bella;Vanessa Lachey,Nikki Bella;Terrell Owens
+25,rank,8,1,1,0,0,Terrell Owens,Vanessa Lachey
+25,rank,9,1,1,0,0,Victoria Arlen,Drew Scott
+25,rank,10,1,1,0,0,Drew Scott,Victoria Arlen
+26,percent,1,2,2,1,2,Jamie Anderson;Johnny Damon,Jamie Anderson;Johnny Damon
+26,percent,2,2,2,0,1,Arike Ogunbowale;Kareem Abdul-Jabbar,Jennie Finch Daigle;Kareem Abdul-Jabbar
+26,percent,3,3,3,0,2,Chris Mazdzer;Jennie Finch Daigle;Mirai Nagasu,Arike Ogunbowale;Chris Mazdzer;Mirai Nagasu
+26,percent,4,0,1,0,0,,nan
+26,rank,1,2,2,0,1,Jamie Anderson;Johnny Damon,Johnny Damon;Kareem Abdul-Jabbar
+26,rank,2,2,2,0,0,Arike Ogunbowale;Kareem Abdul-Jabbar,Jamie Anderson;Jennie Finch Daigle
+26,rank,3,3,3,0,2,Chris Mazdzer;Jennie Finch Daigle;Mirai Nagasu,Arike Ogunbowale;Chris Mazdzer;Mirai Nagasu
+26,rank,4,0,1,0,0,,nan
+27,percent,1,1,1,0,0,Nikki Glaser,Joe Amabile
+27,percent,2,1,1,0,0,Danelle Umstead,Nikki Glaser
+27,percent,3,1,1,0,0,Nancy McKeon,Danelle Umstead
+27,percent,4,1,1,0,0,Tinashe,Nancy McKeon
+27,percent,5,0,1,0,0,,nan
+27,percent,6,1,1,0,0,Mary Lou Retton,Tinashe
+27,percent,7,2,2,0,1,DeMarcus Ware;John Schneider,DeMarcus Ware;Mary Lou Retton
+27,percent,8,2,2,0,1,Joe Amabile;Juan Pablo Di Pace,John Schneider;Juan Pablo Di Pace
+27,percent,9,0,1,0,0,,nan
+27,rank,1,1,1,1,1,Nikki Glaser,Nikki Glaser
+27,rank,2,1,1,1,1,Danelle Umstead,Danelle Umstead
+27,rank,3,1,1,0,0,Nancy McKeon,Joe Amabile
+27,rank,4,1,1,0,0,Tinashe,Nancy McKeon
+27,rank,5,0,1,0,0,,nan
+27,rank,6,1,1,0,0,Mary Lou Retton,Tinashe
+27,rank,7,2,2,0,1,DeMarcus Ware;John Schneider,DeMarcus Ware;Mary Lou Retton
+27,rank,8,2,2,0,0,Joe Amabile;Juan Pablo Di Pace,Bobby Bones;John Schneider
+27,rank,9,0,1,0,0,,nan
+28,percent,1,0,1,0,0,,nan
+28,percent,2,1,1,0,0,Mary Wilson,Lamar Odom
+28,percent,3,0,1,0,0,,nan
+28,percent,4,1,1,0,0,Lamar Odom,Mary Wilson
+28,percent,5,0,1,0,0,,nan
+28,percent,6,1,1,0,0,Sailor Brinkley-Cook,Ray Lewis
+28,percent,7,1,1,0,0,Karamo Brown,Sailor Brinkley-Cook
+28,percent,8,1,1,0,0,Kate Flannery,Karamo Brown
+28,percent,9,1,1,0,0,Sean Spicer,Kate Flannery
+28,percent,10,1,1,0,0,James Van Der Beek,Sean Spicer
+28,percent,11,0,1,0,0,,nan
+28,rank,1,0,1,0,0,,nan
+28,rank,2,1,1,0,0,Mary Wilson,Lamar Odom
+28,rank,3,0,1,0,0,,nan
+28,rank,4,1,1,0,0,Lamar Odom,Mary Wilson
+28,rank,5,0,1,0,0,,nan
+28,rank,6,1,1,0,0,Sailor Brinkley-Cook,Ray Lewis
+28,rank,7,1,1,0,0,Karamo Brown,Sailor Brinkley-Cook
+28,rank,8,1,1,0,0,Kate Flannery,Karamo Brown
+28,rank,9,1,1,0,0,Sean Spicer,Kate Flannery
+28,rank,10,1,1,0,0,James Van Der Beek,Sean Spicer
+28,rank,11,0,1,0,0,,nan
+29,percent,1,0,1,0,0,,nan
+29,percent,2,1,1,1,1,Charles Oakley,Charles Oakley
+29,percent,3,1,1,1,1,Carole Baskin,Carole Baskin
+29,percent,4,1,1,1,1,Anne Heche,Anne Heche
+29,percent,5,1,1,1,1,Jesse Metcalfe,Jesse Metcalfe
+29,percent,6,1,1,0,0,Veron Davis,Skai Jackson
+29,percent,7,1,1,0,0,Monica Aldama,Veron Davis
+29,percent,8,1,1,0,0,Chrishell Stause,Jeannie Mai
+29,percent,9,1,1,0,0,AJ McLean,Chrishell Stause
+29,percent,10,2,2,0,0,Johnny Weir;Skai Jackson,AJ McLean;Monica Aldama
+29,percent,11,0,1,0,0,,nan
+29,rank,1,0,1,0,0,,nan
+29,rank,2,1,1,1,1,Charles Oakley,Charles Oakley
+29,rank,3,1,1,1,1,Carole Baskin,Carole Baskin
+29,rank,4,1,1,1,1,Anne Heche,Anne Heche
+29,rank,5,1,1,1,1,Jesse Metcalfe,Jesse Metcalfe
+29,rank,6,1,1,1,1,Veron Davis,Veron Davis
+29,rank,7,1,1,1,1,Monica Aldama,Monica Aldama
+29,rank,8,1,1,0,0,Chrishell Stause,Jeannie Mai
+29,rank,9,1,1,0,0,AJ McLean,Chrishell Stause
+29,rank,10,2,2,0,0,Johnny Weir;Skai Jackson,AJ McLean;Nelly
+29,rank,11,0,1,0,0,,nan
+30,percent,1,0,1,0,0,,nan
+30,percent,2,1,1,1,1,Martin Kove,Martin Kove
+30,percent,3,1,1,0,0,Christine Chiu,Brian Austin Green
+30,percent,4,2,2,0,1,Brian Austin Green;Matt James,Christine Chiu;Matt James
+30,percent,5,1,1,0,0,Melanie C,Iman Shumpert
+30,percent,6,1,1,0,0,Kenya Moore,Melanie C
+30,percent,7,1,1,0,0,"Mike ""The Miz"" Mizanin",Kenya Moore
+30,percent,8,2,2,0,1,Jimmie Allen;Olivia Jade,"Jimmie Allen;Mike ""The Miz"" Mizanin"
+30,percent,9,2,2,0,1,Melora Hardin;Suni Lee,Melora Hardin;Olivia Jade
+30,percent,10,0,1,0,0,,nan
+30,rank,1,0,1,0,0,,nan
+30,rank,2,1,1,1,1,Martin Kove,Martin Kove
+30,rank,3,1,1,0,0,Christine Chiu,Brian Austin Green
+30,rank,4,2,2,0,1,Brian Austin Green;Matt James,Christine Chiu;Matt James
+30,rank,5,1,1,0,0,Melanie C,"Mike ""The Miz"" Mizanin"
+30,rank,6,1,1,0,0,Kenya Moore,Melanie C
+30,rank,7,1,1,0,0,"Mike ""The Miz"" Mizanin",Kenya Moore
+30,rank,8,2,2,1,2,Jimmie Allen;Olivia Jade,Jimmie Allen;Olivia Jade
+30,rank,9,2,2,0,1,Melora Hardin;Suni Lee,Cody Rigsby;Melora Hardin
+30,rank,10,0,1,0,0,,nan
+31,percent,1,1,1,1,1,Jason Lewis,Jason Lewis
+31,percent,2,1,1,0,0,Teresa Giudice,Cheryl Ladd
+31,percent,3,1,1,0,0,Cheryl Ladd,Teresa Giudice
+31,percent,4,1,1,1,1,Sam Champion,Sam Champion
+31,percent,5,1,1,0,0,Joseph Baena,Vinny Guadagnino
+31,percent,6,1,1,0,0,Jessie James Decker,Joseph Baena
+31,percent,7,1,1,0,0,Jordin Sparks,Jessie James Decker
+31,percent,8,2,2,0,0,Heidi D'Amelio;Vinny Guadagnino,Jordin Sparks;Selma Blair
+31,percent,9,2,2,0,1,Daniel Durant;Trevor Donovan,Heidi D'Amelio;Trevor Donovan
+31,percent,10,0,1,0,0,,nan
+31,rank,1,1,1,1,1,Jason Lewis,Jason Lewis
+31,rank,2,1,1,0,0,Teresa Giudice,Cheryl Ladd
+31,rank,3,1,1,0,0,Cheryl Ladd,Teresa Giudice
+31,rank,4,1,1,1,1,Sam Champion,Sam Champion
+31,rank,5,1,1,1,1,Joseph Baena,Joseph Baena
+31,rank,6,1,1,0,0,Jessie James Decker,Selma Blair
+31,rank,7,1,1,0,0,Jordin Sparks,Jessie James Decker
+31,rank,8,2,2,0,1,Heidi D'Amelio;Vinny Guadagnino,Jordin Sparks;Vinny Guadagnino
+31,rank,9,2,2,0,1,Daniel Durant;Trevor Donovan,Heidi D'Amelio;Trevor Donovan
+31,rank,10,0,1,0,0,,nan
+32,percent,1,1,1,1,1,Matt Walsh,Matt Walsh
+32,percent,2,1,1,0,0,Jamie Lynn Spears,Mauricio Umansky
+32,percent,3,1,1,0,0,Tyson Beckford,Jamie Lynn Spears
+32,percent,4,1,1,0,0,Adrian Peterson,Tyson Beckford
+32,percent,5,1,1,0,0,Mira Sorvino,Adrian Peterson
+32,percent,6,1,1,0,0,Mauricio Umansky,Mira Sorvino
+32,percent,7,1,1,0,0,Lele Pons,Harry Jowsey
+32,percent,8,1,1,0,0,Barry Williams,Lele Pons
+32,percent,9,1,1,0,0,Harry Jowsey,Barry Williams
+32,percent,10,0,1,0,0,,nan
+32,percent,11,0,1,0,0,,nan
+32,rank,1,1,1,1,1,Matt Walsh,Matt Walsh
+32,rank,2,1,1,0,0,Jamie Lynn Spears,Mauricio Umansky
+32,rank,3,1,1,0,0,Tyson Beckford,Jamie Lynn Spears
+32,rank,4,1,1,0,0,Adrian Peterson,Tyson Beckford
+32,rank,5,1,1,0,0,Mira Sorvino,Adrian Peterson
+32,rank,6,1,1,0,0,Mauricio Umansky,Mira Sorvino
+32,rank,7,1,1,0,0,Lele Pons,Harry Jowsey
+32,rank,8,1,1,0,0,Barry Williams,Lele Pons
+32,rank,9,1,1,0,0,Harry Jowsey,Barry Williams
+32,rank,10,0,1,0,0,,nan
+32,rank,11,0,1,0,0,,nan
+33,percent,1,0,1,0,0,,nan
+33,percent,2,2,2,0,0,Anna Delvey;Tori Spelling,Eric Roberts;Reginald VelJohnson
+33,percent,3,2,2,0,0,Eric Roberts;Reginald VelJohnson,Anna Delvey;Tori Spelling
+33,percent,4,1,1,0,0,Brooks Nader,Dwight Howard 
+33,percent,5,1,1,0,0,Phaedra Parks,Brooks Nader
+33,percent,6,1,1,0,0,Jenn Tran,Phaedra Parks
+33,percent,7,1,1,0,0,Dwight Howard ,Jenn Tran
+33,percent,8,0,1,0,0,,nan
+33,percent,9,0,1,0,0,,nan
+33,rank,1,0,1,0,0,,nan
+33,rank,2,2,2,0,1,Anna Delvey;Tori Spelling,Anna Delvey;Reginald VelJohnson
+33,rank,3,2,2,0,1,Eric Roberts;Reginald VelJohnson,Eric Roberts;Tori Spelling
+33,rank,4,1,1,0,0,Brooks Nader,Dwight Howard 
+33,rank,5,1,1,0,0,Phaedra Parks,Brooks Nader
+33,rank,6,1,1,0,0,Jenn Tran,Phaedra Parks
+33,rank,7,1,1,0,0,Dwight Howard ,Jenn Tran
+33,rank,8,0,1,0,0,,nan
+33,rank,9,0,1,0,0,,nan
+34,percent,1,0,1,0,0,,nan
+34,percent,2,2,2,1,2,Baron Davis;Corey Feldman,Baron Davis;Corey Feldman
+34,percent,3,1,1,1,1,Lauren Jauregui,Lauren Jauregui
+34,percent,4,1,1,0,0,Hilaria Baldwin,Andy Richter
+34,percent,5,0,1,0,0,,nan
+34,percent,6,1,1,0,0,Scott Hoying,Hilaria Baldwin
+34,percent,7,1,1,0,0,Jen Affleck,Scott Hoying
+34,percent,8,1,1,0,0,Danielle Fishel,Jen Affleck
+34,percent,9,1,1,0,0,Andy Richter,Danielle Fishel
+34,percent,10,1,1,1,1,Whitney Leavitt,Whitney Leavitt
+34,percent,11,0,1,0,0,,nan
+34,rank,1,0,1,0,0,,nan
+34,rank,2,2,2,0,1,Baron Davis;Corey Feldman,Andy Richter;Corey Feldman
+34,rank,3,1,1,0,0,Lauren Jauregui,Baron Davis
+34,rank,4,1,1,0,0,Hilaria Baldwin,Lauren Jauregui
+34,rank,5,0,1,0,0,,nan
+34,rank,6,1,1,0,0,Scott Hoying,Hilaria Baldwin
+34,rank,7,1,1,0,0,Jen Affleck,Scott Hoying
+34,rank,8,1,1,0,0,Danielle Fishel,Jen Affleck
+34,rank,9,1,1,0,0,Andy Richter,Danielle Fishel
+34,rank,10,1,1,0,0,Whitney Leavitt,Dylan Efron
+34,rank,11,0,1,0,0,,nan
