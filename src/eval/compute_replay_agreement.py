@@ -62,3 +62,4 @@ summary['exact_rate'] = summary['exact_matches'] / summary['total_weeks']
 print('\nAgreement summary by method:')
 print(summary.reset_index().to_string(index=False))
 print(f"\nWrote {OUT_CSV}")
+
