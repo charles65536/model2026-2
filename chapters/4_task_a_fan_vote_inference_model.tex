@@ -1,5 +1,4 @@
-
-We propose a deployable, data-driven fan vote inference model. The key design principle is to \textbf{model the voting process as a probabilistic inference problem, leveraging historical voting data and demographic information to predict future voting behavior.}
+We propose a deployable, data-driven fan vote inference model. The key design principle is to \textbf{treat audience votes as a latent signal and infer vote shares from observed judges' scores and elimination outcomes under explicit rule constraints.}
 
 \subsection{Overview and Modeling Philosophy}\label{subsec:model_philosophy}
 
@@ -30,18 +29,28 @@ We introduce a nonnegative slack $\xi_t\ge 0$ and impose
 \begin{equation}
 S^{(P)}_{e,t}\le S^{(P)}_{i,t}+\xi_t,\quad \forall e\in E_{s,t},\ \forall i\in A_{s,t}\setminus E_{s,t}.
 \end{equation}
-When the assumed rule and data are perfectly compatible, the minimum feasible $\xi_t$ is zero; otherwise $\xi_t>0$ quantifies the smallest violation needed to reconcile the observed outcome.
 
-\textbf{Regularized objective (season-wise QP).}
-Because the feasible set can be large, we select a stable vote trajectory by penalizing week-to-week changes in vote shares among contestants who remain active across consecutive weeks.
-For each season $s$, we solve:
-\begin{equation}
-\min_{\{p_{i,t},\xi_t\}}\ 
-\sum_{t=2}^{T_s}\sum_{i\in A_{s,t}\cap A_{s,t-1}}\left(p_{i,t}-p_{i,t-1}\right)^2
-+\lambda\sum_{t=1}^{T_s}\xi_t^2,
-\end{equation}
-subject to (i) share constraints $p_{i,t}\ge 0$, $\sum_{i\in A_{s,t}}p_{i,t}=1$, and (ii) elimination-consistency inequalities above.
-The hyperparameter $\lambda>0$ trades off temporal smoothness against elimination matching, and is tuned via replay-based diagnostics defined in our KPI registry.
+When the assumed rule and data are perfectly compatible, the minimum feasible $\xi_t$ is zero; otherwise $\xi_t>0$ quantifies the smallest violation needed to reconcile the observed outcome.
+\paragraph{Objective with judge-anchor prior.}
+To avoid degenerate ``nearly-uniform'' vote reconstructions, we add a judge-anchor prior that pulls fan vote shares toward
+judges' score shares in the absence of strong contradictory evidence. For each season $s$, we solve:
+\begin{align}
+\min_{\{p_{i,t}\},\{\xi_t\}} \quad
+& \underbrace{\sum_{t=2}^{T_s}\sum_{i\in A_{s,t}\cap A_{s,t-1}}(p_{i,t}-p_{i,t-1})^2}_{\text{Temporal smoothness}}
++ \lambda_1 \underbrace{\sum_{t=1}^{T_s}\sum_{i\in A_{s,t}}(p_{i,t}-q^J_{i,t})^2}_{\text{Judge anchor prior}}
++ \lambda_2 \underbrace{\sum_{t=1}^{T_s}\xi_t^2}_{\text{Violation penalty}} \label{eq:taskA_obj_anchor}\\
+\text{s.t.}\quad
+& \sum_{i\in A_{s,t}} p_{i,t}=1,\ \ p_{i,t}\ge 0,\ \ \xi_t\ge 0, \qquad \forall t, \nonumber\\
+& S^{(P)}_{e,t} \le S^{(P)}_{k,t} + \xi_t,\quad \forall t,\ \forall e\in E_{s,t},\ \forall k\in A_{s,t}\setminus E_{s,t}. \nonumber
+\end{align}
+
+
+
+
+\textbf{Remark (objective form).}
+Equation~\eqref{eq:taskA_obj_anchor} is a convex quadratic program (QP) solved independently for each season.
+The smoothness term is computed only for contestants active in consecutive weeks ($A_{s,t}\cap A_{s,t-1}$), while the anchor and slack penalties
+apply to all active contestants and weeks. Hyperparameters $(\lambda_1,\lambda_2)$ are selected by replay-based diagnostics (Section~\ref{subsec:a_hyper_impl}).
 
 \begin{algorithm}[H]
 \caption{Season-wise fan vote inference via constrained QP}
@@ -50,7 +59,7 @@ The hyperparameter $\lambda>0$ trades off temporal smoothness against eliminatio
 \begin{algorithmic}[1]  % [1] 表示显示行号，algpseudocode必须加
     % ---- 输入输出定义（algpseudocode标准写法）----
     \Require 
-        Weekly panel for season $s$: active sets $A_{s,t}$, judges' totals $J_{i,t}$, eliminated sets $E_{s,t}$; hyperparameters $\alpha,\lambda$.
+        Weekly panel for season $s$: active sets $A_{s,t}$, judges' totals $J_{i,t}$, eliminated sets $E_{s,t}$; hyperparameters $\alpha,\lambda_1,\lambda_2$.
     \Ensure 
         Point estimates $\hat p_{i,t}$ and slack diagnostics $\hat \xi_t$ for all eligible weeks.
 
@@ -73,7 +82,7 @@ The hyperparameter $\lambda>0$ trades off temporal smoothness against eliminatio
     \]
     \State Solve the quadratic program (QP) to minimize the objective function:
     \[
-    \mathcal{L} = \sum_{t=2}^{T_s}\sum_{i\in A_{s,t}\cap A_{s,t-1}} (p_{i,t}-p_{i,t-1})^2 + \lambda\sum_{t=1}^{T_s}\xi_t^2
+    \mathcal{L} = \sum_{t=2}^{T_s}\sum_{i\in A_{s,t}\cap A_{s,t-1}} (p_{i,t}-p_{i,t-1})^2 + \lambda_1\sum_{t=1}^{T_s}\sum_{i\in A_{s,t}}(p_{i,t}-q^J_{i,t})^2 + \lambda_2\sum_{t=1}^{T_s}\xi_t^2
     \]
     \State Output $\hat p_{i,t}$ (inferred vote shares) and $\hat \xi_t$ (slack diagnostics); flag weeks with large $\hat \xi_t$ as potential special-episode mismatches.
 \end{algorithmic}
@@ -84,7 +93,7 @@ The hyperparameter $\lambda>0$ trades off temporal smoothness against eliminatio
 We report three complementary uncertainty summaries:
 (i) \textbf{Feasible intervals:} for each $(i,t)$, compute the minimum and maximum $p_{i,t}$ attainable under the same constraints (yielding an interval width as an identifiability proxy, KPI2);
 (ii) \textbf{Elimination margin:} quantify how much perturbation to $\hat p_{i,t}$ is required to flip the predicted eliminated set under the replay engine, providing a week-level stability score; and
-(iii) \textbf{Slack diagnostics:} $\xi_t$ indicates weeks where observed outcomes cannot be matched under the assumed mechanics without violation; these weeks are flagged for special-episode handling and for sensitivity analysis over the rule-switch season and $\alpha,\lambda$.
+(iii) \textbf{Slack diagnostics:} $\xi_t$ indicates weeks where observed outcomes cannot be matched under the assumed mechanics without violation; these weeks are flagged for special-episode handling and for sensitivity analysis over the rule-switch season and $\alpha,\lambda_1,\lambda_2$.
 
 
 \subsubsection{KPI2: Vote Identifiability (interval tightness)}\label{subsubsec:kpi2_identifiability}
@@ -100,7 +109,7 @@ subject to the original probability and elimination-consistency constraints, plu
 \[
 \mathcal{L}(p,\xi)\le (1+\delta_{\mathrm{obj}})\mathrm{OPT}_s,\qquad \xi_\tau \le \hat\xi_\tau+\delta_\xi \ \ (\forall \tau),
 \]
-where $\mathcal{L}(p,\xi)$ is the Task-A objective (smoothness + $\lambda\sum_t \xi_t^2$).
+where $\mathcal{L}(p,\xi)$ is the Task-A objective (smoothness + judge-anchor + slack penalty).
 The interval width $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ is mapped to an identifiability score
 \[
 \mathrm{ID}_{i,t}=\frac{1}{w_{i,t}+\varepsilon}.
@@ -121,29 +130,21 @@ For each week $\tau$, the percent-rule combined score is
 S^{(P)}_{j,\tau}=\alpha q^J_{j,\tau}+(1-\alpha)p_{j,\tau}.
 \]
 
-\paragraph{Objective with judge-anchor prior.}
-To avoid degenerate ``nearly-uniform'' vote reconstructions, we add a judge-anchor prior that pulls fan vote shares toward
-judges' score shares in the absence of strong contradictory evidence. For each season, we solve:
+\textbf{Base constraints.}
+We impose simplex constraints for each week:
 \begin{align}
-\min_{\{p_{i,t}\},\{\xi_t\}} \quad
-& \sum_{t=1}^{T_s}\Bigg(
-\underbrace{\sum_{i\in A_{s,t}}(p_{i,t}-p_{i,t-1})^2}_{\text{Temporal smoothness}}
-+ \lambda_1 \underbrace{\sum_{i\in A_{s,t}}(p_{i,t}-q^J_{i,t})^2}_{\text{Judge anchor prior}}
-+ \lambda_2 \underbrace{\xi_t^2}_{\text{Violation penalty}}
-\Bigg) \\
-\text{s.t.}\quad
-& \sum_{i\in A_{s,t}} p_{i,t}=1,\ \ p_{i,t}\ge 0,\ \ \xi_t\ge 0, \\
-& S_{e,t} \le S_{k,t} + \xi_t,\quad \forall e\in E_{s,t},\ \forall k\in A_{s,t}\setminus E_{s,t}, \\
-& S_{i,t}=\alpha q^J_{i,t} + (1-\alpha)p_{i,t}.
+& p_{j,\tau}\ge 0,\quad \forall j\in A_{s,\tau}, \forall \tau, \label{eq:kpi2_nonneg}\\
+& \sum_{j\in A_{s,\tau}}p_{j,\tau}=1,\quad \forall \tau. \label{eq:kpi2_simplex}
 \end{align}
-
-
-\textbf{Common feasibility constraints (all profile problems).}
-\begin{align}
-& p_{j,\tau}\ge 0,\quad \sum_{j\in A_{s,\tau}} p_{j,\tau}=1,\qquad \forall \tau, \label{eq:kpi2_simplex}\\
-& S^{(P)}_{e,\tau}\le S^{(P)}_{u,\tau}+\xi_\tau,\qquad \forall \tau,\ \forall e\in E_{s,\tau},\ \forall u\in A_{s,\tau}\setminus E_{s,\tau}, \label{eq:kpi2_elim}\\
-& \xi_\tau\ge 0,\qquad \forall \tau. \label{eq:kpi2_slack_nonneg}
-\end{align}
+Slacks are nonnegative:
+\begin{equation}
+\xi_\tau\ge 0,\qquad \forall \tau. \label{eq:kpi2_slack_nonneg}
+\end{equation}
+Elimination-consistency constraints (same as Task~A) are
+\begin{equation}
+S^{(P)}_{e,\tau}\le S^{(P)}_{k,\tau}+\xi_\tau,\quad \forall \tau,\ \forall e\in E_{s,\tau},\ \forall k\in A_{s,\tau}\setminus E_{s,\tau}.
+\label{eq:kpi2_elim}
+\end{equation}
 
 \textbf{Near-optimal shell (to prevent uninformative, overly wide intervals).}
 Let the Task-A objective be
@@ -151,8 +152,8 @@ Let the Task-A objective be
 \mathcal{L}(\mathbf{p},\boldsymbol{\xi})
 =
 \sum_{\tau=2}^{T_s}\sum_{j\in A_{s,\tau}\cap A_{s,\tau-1}}(p_{j,\tau}-p_{j,\tau-1})^2
-+
-\lambda\sum_{\tau=1}^{T_s}\xi_\tau^2.
++\lambda_1\sum_{\tau=1}^{T_s}\sum_{j\in A_{s,\tau}}(p_{j,\tau}-q^J_{j,\tau})^2
++\lambda_2\sum_{\tau=1}^{T_s}\xi_\tau^2.
 \label{eq:kpi2_L_def}
 \end{equation}
 After solving the main inference QP, we obtain $(\hat{\mathbf{p}},\hat{\boldsymbol{\xi}})$ and $\mathrm{OPT}_s=\mathcal{L}(\hat{\mathbf{p}},\hat{\boldsymbol{\xi}})$.
@@ -166,7 +167,8 @@ In implementation, \eqref{eq:kpi2_shell_quad} can be written as a convex SOC con
 \left\|
 \begin{bmatrix}
 \{p_{j,\tau}-p_{j,\tau-1}\}_{\tau=2..T_s,\ j\in A_{s,\tau}\cap A_{s,\tau-1}}\\[2pt]
-\{\sqrt{\lambda}\,\xi_\tau\}_{\tau=1..T_s}
+\{\sqrt{\lambda_1}\,(p_{j,\tau}-q^J_{j,\tau})\}_{\tau=1..T_s,\ j\in A_{s,\tau}}\\[2pt]
+\{\sqrt{\lambda_2}\,\xi_\tau\}_{\tau=1..T_s}
 \end{bmatrix}
 \right\|_2
 \le
@@ -177,15 +179,15 @@ This SOC form is directly supported by standard convex solvers (e.g., via CVX fr
 \textbf{Profile-min and profile-max.}
 For each active pair $(i,t)$ with $i\in A_{s,t}$, define:
 \begin{align}
-p^{\min}_{i,t} \;=\;& \min_{\mathbf{p},\boldsymbol{\xi}}\ \ p_{i,t}
-\quad \text{s.t.}\quad
-\eqref{eq:kpi2_simplex}--\eqref{eq:kpi2_slack_cap}, \label{eq:kpi2_profile_min}\\
-p^{\max}_{i,t} \;=\;& \max_{\mathbf{p},\boldsymbol{\xi}}\ \ p_{i,t}
-\quad \text{s.t.}\quad
-\eqref{eq:kpi2_simplex}--\eqref{eq:kpi2_slack_cap}. \label{eq:kpi2_profile_max}
+p^{\min}_{i,t} \;=\;& \min_{\mathbf{p},\boldsymbol{\xi}}\ \ p_{i,t} \label{eq:kpi2_profile_min}\\
+\text{s.t.}\ \;& \eqref{eq:kpi2_nonneg}--\eqref{eq:kpi2_elim},\ \eqref{eq:kpi2_shell_quad}--\eqref{eq:kpi2_slack_cap}, \nonumber
 \end{align}
-The KPI2 interval width is $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ and the identifiability score is
-$\mathrm{ID}_{i,t}=1/(w_{i,t}+\varepsilon)$.
+and
+\begin{align}
+p^{\max}_{i,t} \;=\;& \max_{\mathbf{p},\boldsymbol{\xi}}\ \ p_{i,t} \label{eq:kpi2_profile_max}\\
+\text{s.t.}\ \;& \eqref{eq:kpi2_nonneg}--\eqref{eq:kpi2_elim},\ \eqref{eq:kpi2_shell_quad}--\eqref{eq:kpi2_slack_cap}. \nonumber
+\end{align}
+We then set the interval width $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ and identifiability score $\mathrm{ID}_{i,t}=1/(w_{i,t}+\varepsilon)$.
 
 \begin{algorithm}[H]
 \caption{KPI2 computation via profile optimization (per season)}
@@ -195,7 +197,7 @@ $\mathrm{ID}_{i,t}=1/(w_{i,t}+\varepsilon)$.
     % ---- 输入输出（algpseudocode 标准首字母大写）----
     \Require 
         Season $s$ weekly panel: active sets $A_{s,t}$, eliminated sets $E_{s,t}$, judges' shares $q^J_{i,t}$; 
-        main-model hyperparameters $\alpha,\lambda$; 
+        main-model hyperparameters $\alpha,\lambda_1,\lambda_2$; 
         KPI2 params $\varepsilon,\delta_{\mathrm{obj}},\delta_\xi$; 
         a slice selector $\mathcal{S}$ (set of $(i,t)$ pairs to evaluate).
     \Ensure 
@@ -223,10 +225,15 @@ $\mathrm{ID}_{i,t}=1/(w_{i,t}+\varepsilon)$.
 \label{subsec:a_hyper_impl}
 
 \textbf{Hyperparameters and defaults.}
-Task~A uses $\alpha$ (judge weight in the percent rule), $\lambda$ (smoothness--consistency trade-off), and the KPI2 parameters $\varepsilon,\delta_{\mathrm{obj}},\delta_\xi$.
+Task~A uses $\alpha$ (judge weight in the percent rule), $\lambda_1$ (strength of the judge-anchor prior),
+$\lambda_2$ (penalty on constraint violations via $\xi_t$), and the KPI2 parameters $\varepsilon,\delta_{\mathrm{obj}},\delta_\xi$.
 Unless otherwise stated, we set $\alpha=0.5$ as the nominal DWTS percent weighting and treat $\alpha$ as a sensitivity knob in later stress tests.
-We select $\lambda$ by replay-based diagnostics: increasing $\lambda$ enforces stricter elimination-consistency (smaller $\xi_t$) at the cost of noisier week-to-week vote trajectories, while decreasing $\lambda$ yields smoother votes but may underfit eliminations.
-Practically, we tune $\lambda$ on a season-by-season basis by balancing
+
+We tune $(\lambda_1,\lambda_2)$ by replay-based diagnostics. Increasing $\lambda_2$ enforces stricter elimination-consistency
+(smaller $\xi_t$) at the cost of reduced feasibility for irregular-format weeks; decreasing $\lambda_2$ allows the model to absorb
+format mismatches but may underfit eliminations. Increasing $\lambda_1$ pulls inferred votes toward judges' score shares and helps
+avoid near-uniform solutions, while excessively large $\lambda_1$ may suppress genuine judge--fan disagreements that are evidenced by
+the observed eliminations. Practically, we tune $(\lambda_1,\lambda_2)$ on a season-by-season basis by balancing
 (i) the frequency and magnitude of nonzero slacks $\hat\xi_t$,
 (ii) the stability of inferred top-$k$ vote shares across adjacent weeks, and
 (iii) downstream replay fidelity in Task~B.
@@ -241,20 +248,5 @@ The main inference problem is a convex QP and can be solved season-wise using st
 The KPI2 shell can be implemented either directly as a quadratic constraint or in SOC form; the latter is solver-friendly in CVX frameworks.
 To avoid numerical issues, we recommend
 (i) normalizing judges' scores into shares $q^J$ (already done),
-(ii) using consistent active-set construction so that each week's simplex constraints are well-defined, and
-(iii) caching season-wise constraint matrices so that KPI2 profile problems reuse the same structure.
-
-\subsection{Outputs and sanity checks}
-\label{subsec:a_outputs_checks}
-
-\textbf{Outputs for downstream tasks.}
-Task~A produces (i) $\hat p_{i,t}$ for each active contestant-week, (ii) $\hat\xi_t$ per week as a diagnostic for rule mismatch or special episodes, (iii) optional KPI2 interval bounds $[p^{\min}_{i,t},p^{\max}_{i,t}]$ on selected slices, and (iv) derived combined scores $\hat S^{(P)}_{i,t}$ for replay.
-These outputs become direct inputs to the replay engine in Task~B/C and to the mechanism analysis in Task~D.
-
-\textbf{Required sanity checks.}
-For each season and week, we verify:
-(1) simplex validity $\sum_{i\in A_{s,t}}\hat p_{i,t}=1$ and $\hat p_{i,t}\ge 0$;
-(2) slack nonnegativity $\hat\xi_t\ge 0$ and identification of outlier weeks with unusually large $\hat\xi_t$;
-(3) elimination ordering consistency by checking that eliminated contestants tend to occupy the bottom of $\hat S^{(P)}$ up to the fitted slack; and for KPI2,
-(4) containment $\hat p_{i,t}\in[p^{\min}_{i,t},p^{\max}_{i,t}]$.
-Failures of these checks almost always indicate an active-set or outcome-label mismatch and are resolved before any replay-based conclusions are reported.
+(ii) using $\varepsilon=10^{-6}$ for identifiability scoring,
+and (iii) keeping $\delta_{\mathrm{obj}}$ small (e.g., 1--5\%) so profile intervals remain comparable to the fitted explanation.
