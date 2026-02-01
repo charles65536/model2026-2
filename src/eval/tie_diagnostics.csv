@@ -1,0 +1,529 @@
+season,method,week,m,active_count,actual_elim,pred_elim,top_curr,top_alt1,top_alt2,ties_detected,tie_groups
+7,rank,1,2,13,Jeffrey Ross;Ted McGinley,Jeffrey Ross;Ted McGinley,Jeffrey Ross;Cloris Leachman,Jeffrey Ross;Ted McGinley,Jeffrey Ross;Ted McGinley,True,15.0:Misty May-Treanor;Susan Lucci;20.0:Cloris Leachman;Rocco DiSpirito;Ted McGinley
+7,rank,2,1,13,Kim Kardashian,Kim Kardashian,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,19.0:Cloris Leachman;Rocco DiSpirito;24.0:Jeffrey Ross;Ted McGinley
+7,rank,4,1,13,Rocco DiSpirito,Misty May-Treanor,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,8.0:Cody Linley;Warren Sapp;13.0:Maurice Greene;Toni Braxton;20.0:Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Ted McGinley
+7,rank,5,1,13,Toni Braxton,Rocco DiSpirito,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,6.0:Cody Linley;Warren Sapp;18.0:Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Ted McGinley
+7,rank,6,1,13,Cloris Leachman,Toni Braxton,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,3.0:Brooke Burke;Lance Bass;16.0:Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Ted McGinley;Toni Braxton
+7,rank,7,1,13,Susan Lucci,Cloris Leachman,Cloris Leachman,Cloris Leachman,Cloris Leachman,True,9.0:Cody Linley;Warren Sapp;14.0:Cloris Leachman;Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Ted McGinley;Toni Braxton
+7,rank,8,1,13,Maurice Greene,Susan Lucci,Cloris Leachman,Cloris Leachman,Cloris Leachman,True,5.0:Lance Bass;Warren Sapp;12.0:Cloris Leachman;Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Susan Lucci;Ted McGinley;Toni Braxton
+7,rank,9,1,13,Cody Linley,Maurice Greene,Cloris Leachman,Cloris Leachman,Cloris Leachman,True,3.0:Brooke Burke;Lance Bass;10.0:Cloris Leachman;Jeffrey Ross;Kim Kardashian;Maurice Greene;Misty May-Treanor;Rocco DiSpirito;Susan Lucci;Ted McGinley;Toni Braxton
+6,rank,2,2,12,Monica Seles;Penn Jillette,Monica Seles;Penn Jillette,Monica Seles;Steve Guttenberg,Monica Seles;Penn Jillette,Monica Seles;Penn Jillette,True,21.0:Penn Jillette;Steve Guttenberg
+6,rank,3,1,12,Steve Guttenberg,Marissa Jaret Winokur,Monica Seles,Monica Seles,Monica Seles,True,10.0:Mario;Priscilla Presley;16.0:Marissa Jaret Winokur;Steve Guttenberg;22.0:Monica Seles;Penn Jillette
+6,rank,4,1,12,Adam Carolla,Steve Guttenberg,Monica Seles,Monica Seles,Monica Seles,True,9.0:Mario;Shannon Elizabeth;20.0:Monica Seles;Penn Jillette;Steve Guttenberg
+6,rank,5,1,12,Priscilla Presley,Adam Carolla,Adam Carolla,Adam Carolla,Adam Carolla,True,8.0:Cristian de la Fuente;Marissa Jaret Winokur;18.0:Adam Carolla;Monica Seles;Penn Jillette;Steve Guttenberg
+6,rank,6,1,12,Marlee Matlin,Priscilla Presley,Adam Carolla,Adam Carolla,Adam Carolla,True,7.0:Jason Taylor;Mario;16.0:Adam Carolla;Monica Seles;Penn Jillette;Priscilla Presley;Steve Guttenberg
+6,rank,7,1,12,Shannon Elizabeth,Marlee Matlin,Adam Carolla,Adam Carolla,Adam Carolla,True,3.0:Jason Taylor;Kristi Yamaguchi;9.0:Cristian de la Fuente;Mario;14.0:Adam Carolla;Marlee Matlin;Monica Seles;Penn Jillette;Priscilla Presley;Steve Guttenberg
+6,rank,8,1,12,Mario,Shannon Elizabeth,Adam Carolla,Adam Carolla,Adam Carolla,True,12.0:Adam Carolla;Marlee Matlin;Monica Seles;Penn Jillette;Priscilla Presley;Shannon Elizabeth;Steve Guttenberg
+6,rank,9,1,12,Marissa Jaret Winokur,Mario,Adam Carolla,Adam Carolla,Adam Carolla,True,5.0:Cristian de la Fuente;Jason Taylor;10.0:Adam Carolla;Mario;Marlee Matlin;Monica Seles;Penn Jillette;Priscilla Presley;Shannon Elizabeth;Steve Guttenberg
+4,rank,2,1,11,Paulina Porizkova,Shandi Finnessey,Clyde Drexler,Shandi Finnessey,Shandi Finnessey,True,11.0:Apolo Anton Ohno;John Ratzenberger;18.0:Clyde Drexler;Shandi Finnessey
+4,rank,3,1,11,Shandi Finnessey,Paulina Porizkova,Paulina Porizkova,Paulina Porizkova,Paulina Porizkova,True,8.0:Laila Ali;Leeza Gibbons
+4,rank,4,1,11,Leeza Gibbons,Leeza Gibbons,Paulina Porizkova,Paulina Porizkova,Paulina Porizkova,True,6.0:Apolo Anton Ohno;Ian Ziering;10.0:Billy Ray Cyrus;Heather Mills;20.0:Paulina Porizkova;Shandi Finnessey
+4,rank,5,1,11,Clyde Drexler,Clyde Drexler,Leeza Gibbons,Leeza Gibbons,Leeza Gibbons,True,4.0:Joey Fatone;Laila Ali;12.0:Billy Ray Cyrus;Heather Mills;John Ratzenberger;18.0:Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,rank,6,1,11,Heather Mills,John Ratzenberger,Clyde Drexler,Clyde Drexler,Clyde Drexler,True,16.0:Clyde Drexler;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,rank,7,1,11,John Ratzenberger,Heather Mills,Clyde Drexler,Clyde Drexler,Clyde Drexler,True,10.0:Billy Ray Cyrus;John Ratzenberger;14.0:Clyde Drexler;Heather Mills;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,rank,8,1,11,Billy Ray Cyrus,Billy Ray Cyrus,Clyde Drexler,Clyde Drexler,Clyde Drexler,True,12.0:Clyde Drexler;Heather Mills;John Ratzenberger;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,rank,9,1,11,Ian Ziering,Ian Ziering,Billy Ray Cyrus,Billy Ray Cyrus,Billy Ray Cyrus,True,7.0:Apolo Anton Ohno;Ian Ziering;10.0:Billy Ray Cyrus;Clyde Drexler;Heather Mills;John Ratzenberger;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+5,rank,1,1,12,Josie Maran,Josie Maran,Josie Maran,Josie Maran,Josie Maran,True,11.0:Mark Cuban;Sabrina Bryan;18.0:Floyd Mayweather Jr. ;Wayne Newton
+5,rank,2,1,12,Albert Reed,Wayne Newton,Josie Maran,Josie Maran,Josie Maran,True,5.0:Marie Osmond;Mel B;10.0:Cameron Mathison;Sabrina Bryan;12.0:Floyd Mayweather Jr. ;Helio Castroneves
+5,rank,3,1,12,Wayne Newton,Albert Reed,Albert Reed,Albert Reed,Albert Reed,True,15.0:Floyd Mayweather Jr. ;Mark Cuban;22.0:Albert Reed;Josie Maran
+5,rank,4,1,12,Floyd Mayweather Jr. ,Floyd Mayweather Jr.,Albert Reed,Albert Reed,Albert Reed,True,6.0:Jennie Garth;Mel B;8.0:Marie Osmond;Sabrina Bryan;17.0:Floyd Mayweather Jr. ;Mark Cuban;20.0:Albert Reed;Josie Maran;Wayne Newton
+5,rank,5,1,12,Mark Cuban,Mark Cuban,Albert Reed,Albert Reed,Albert Reed,True,8.0:Cameron Mathison;Helio Castroneves;9.0:Jane Seymour;Jennie Garth;Sabrina Bryan;18.0:Albert Reed;Floyd Mayweather Jr. ;Josie Maran;Wayne Newton
+5,rank,6,1,12,Sabrina Bryan,Jane Seymour,Albert Reed,Albert Reed,Albert Reed,True,9.0:Cameron Mathison;Marie Osmond;16.0:Albert Reed;Floyd Mayweather Jr. ;Josie Maran;Mark Cuban;Wayne Newton
+5,rank,7,1,12,Jane Seymour,Sabrina Bryan,Albert Reed,Albert Reed,Albert Reed,True,6.0:Jennie Garth;Marie Osmond;14.0:Albert Reed;Floyd Mayweather Jr. ;Josie Maran;Mark Cuban;Sabrina Bryan;Wayne Newton
+5,rank,8,1,12,Cameron Mathison,Jennie Garth,Albert Reed,Albert Reed,Albert Reed,True,3.0:Helio Castroneves;Mel B;8.0:Cameron Mathison;Jennie Garth;Marie Osmond;12.0:Albert Reed;Floyd Mayweather Jr. ;Jane Seymour;Josie Maran;Mark Cuban;Sabrina Bryan;Wayne Newton
+5,rank,9,1,12,Jennie Garth,Cameron Mathison,Albert Reed,Albert Reed,Albert Reed,True,7.0:Jennie Garth;Marie Osmond;10.0:Albert Reed;Cameron Mathison;Floyd Mayweather Jr. ;Jane Seymour;Josie Maran;Mark Cuban;Sabrina Bryan;Wayne Newton
+1,rank,2,1,6,Trista Sutter,Evander Holyfield,Kelly Monaco,Kelly Monaco,Kelly Monaco,True,5.0:Joey McIntyre;Rachel Hunter
+1,rank,3,1,6,Evander Holyfield,Trista Sutter,Trista Sutter,Trista Sutter,Trista Sutter,True,9.0:Evander Holyfield;Kelly Monaco
+1,rank,4,1,6,Rachel Hunter,Joey McIntyre,Evander Holyfield,Evander Holyfield,Evander Holyfield,True,5.0:Kelly Monaco;Rachel Hunter;10.0:Evander Holyfield;Trista Sutter
+2,rank,1,1,10,Kenny Mayne,Kenny Mayne,Master P,Kenny Mayne,Kenny Mayne,True,10.0:Lisa Rinna;Tia Carrere;18.0:Kenny Mayne;Master P
+2,rank,2,1,10,Tatum O'Neal,Tatum O'Neal,Kenny Mayne,Kenny Mayne,Kenny Mayne,True,9.0:Giselle Fernandez;Tia Carrere;10.0:George Hamilton;Lisa Rinna;16.0:Master P;Tatum O'Neal
+2,rank,3,1,10,Giselle Fernandez,Master P,Kenny Mayne,Kenny Mayne,Kenny Mayne,True,9.0:Drew Lachey;George Hamilton;Jerry Rice;18.0:Kenny Mayne;Tatum O'Neal
+2,rank,4,1,10,Master P,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,True,16.0:Giselle Fernandez;Kenny Mayne;Tatum O'Neal
+2,rank,5,1,10,Tia Carrere,Tia Carrere,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,True,14.0:Giselle Fernandez;Kenny Mayne;Master P;Tatum O'Neal
+2,rank,6,1,10,George Hamilton,George Hamilton,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,True,7.0:Jerry Rice;Lisa Rinna;12.0:Giselle Fernandez;Kenny Mayne;Master P;Tatum O'Neal;Tia Carrere
+2,rank,7,1,10,Lisa Rinna,Jerry Rice,George Hamilton,George Hamilton,George Hamilton,True,7.0:Jerry Rice;Lisa Rinna;10.0:George Hamilton;Giselle Fernandez;Kenny Mayne;Master P;Tatum O'Neal;Tia Carrere
+8,percent,2,1,13,Belinda Carlisle,David Alan Grier,Steve-O,Steve-O,Steve-O,False,
+8,percent,3,1,13,Denise Richards,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,False,
+8,percent,4,2,13,Holly Madison;Steve Wozniak,Denise Richards;Holly Madison,Belinda Carlisle;Denise Richards,Belinda Carlisle;Denise Richards,Belinda Carlisle;Denise Richards,True,0.0:Belinda Carlisle;Denise Richards
+8,percent,5,1,13,David Alan Grier,Steve Wozniak,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,0.0:Belinda Carlisle;Denise Richards;Holly Madison;Steve Wozniak
+8,percent,6,1,13,Steve-O,Steve-O,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,0.0:Belinda Carlisle;David Alan Grier;Denise Richards;Holly Madison;Steve Wozniak
+8,percent,7,1,13,Lawrence Taylor,Lawrence Taylor,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,0.0:Belinda Carlisle;David Alan Grier;Denise Richards;Holly Madison;Steve Wozniak;Steve-O
+8,percent,8,1,13,Chuck Wicks,Chuck Wicks,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,0.0:Belinda Carlisle;David Alan Grier;Denise Richards;Holly Madison;Lawrence Taylor;Steve Wozniak;Steve-O
+8,percent,9,1,13,Lil' Kim,Ty Murray,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,0.0:Belinda Carlisle;Chuck Wicks;David Alan Grier;Denise Richards;Holly Madison;Lawrence Taylor;Steve Wozniak;Steve-O
+8,percent,10,1,13,Ty Murray,Lil' Kim,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,0.0:Belinda Carlisle;Chuck Wicks;David Alan Grier;Denise Richards;Holly Madison;Lawrence Taylor;Lil' Kim;Steve Wozniak;Steve-O
+9,percent,1,2,16,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,True,0.050282510249:Ashley Hamiliton;Macy Gray
+9,percent,2,1,16,Kathy Ireland,Kathy Ireland,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,0.0:Ashley Hamiliton;Macy Gray
+9,percent,3,1,16,Debi Mazar,Michael Irvin,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,0.0:Ashley Hamiliton;Kathy Ireland;Macy Gray
+9,percent,4,1,16,Chuck Liddell,Debi Mazar,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,0.0:Ashley Hamiliton;Debi Mazar;Kathy Ireland;Macy Gray;Tom DeLay
+9,percent,5,1,16,Natalie Coughlin,Chuck Liddell,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,0.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Macy Gray;Tom DeLay
+9,percent,6,2,16,Louie Vito;Melissa Joan Hart,Natalie Coughlin;Tom DeLay,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,True,0.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Macy Gray;Natalie Coughlin;Tom DeLay
+9,percent,7,2,16,Mark Dacascos;Michael Irvin,Louie Vito;Melissa Joan Hart,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,True,0.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Louie Vito;Macy Gray;Melissa Joan Hart;Natalie Coughlin;Tom DeLay
+9,percent,8,1,16,Aaron Carter,Mark Dacascos,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,0.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Louie Vito;Macy Gray;Mark Dacascos;Melissa Joan Hart;Michael Irvin;Natalie Coughlin;Tom DeLay
+9,percent,9,1,16,Joanna Krupa,Aaron Carter,Aaron Carter,Aaron Carter,Aaron Carter,True,0.0:Aaron Carter;Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Louie Vito;Macy Gray;Mark Dacascos;Melissa Joan Hart;Michael Irvin;Natalie Coughlin;Tom DeLay
+3,rank,1,1,11,Tucker Carlson,Tucker Carlson,Tucker Carlson,Tucker Carlson,Tucker Carlson,True,7.0:Joey Lawrence;Vivica A. Fox;16.0:Harry Hamlin;Shanna Moakler
+3,rank,2,1,11,Shanna Moakler,Shanna Moakler,Tucker Carlson,Tucker Carlson,Tucker Carlson,True,15.0:Harry Hamlin;Jerry Springer;Shanna Moakler
+3,rank,3,1,11,Harry Hamlin,Jerry Springer,Shanna Moakler,Shanna Moakler,Shanna Moakler,True,6.0:Joey Lawrence;Vivica A. Fox;10.0:Sara Evans;Willa Ford;12.0:Harry Hamlin;Jerry Springer;20.0:Shanna Moakler;Tucker Carlson
+3,rank,4,1,11,Vivica A. Fox,Harry Hamlin,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,7.0:Monique Coleman;Willa Ford;11.0:Emmitt Smith;Jerry Springer;18.0:Harry Hamlin;Shanna Moakler;Tucker Carlson
+3,rank,5,1,11,Willa Ford,Vivica A. Fox,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,7.0:Joey Lawrence;Willa Ford;16.0:Harry Hamlin;Shanna Moakler;Tucker Carlson;Vivica A. Fox
+3,rank,7,1,11,Jerry Springer,Sara Evans,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,12.0:Harry Hamlin;Sara Evans;Shanna Moakler;Tucker Carlson;Vivica A. Fox;Willa Ford
+3,rank,8,1,11,Monique Coleman,Willa Ford,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,10.0:Harry Hamlin;Jerry Springer;Sara Evans;Shanna Moakler;Tucker Carlson;Vivica A. Fox;Willa Ford
+20,rank,2,1,12,Redfoo,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,4.0:Nastia Liukin;Riker Lynch
+20,rank,3,1,12,Charlotte McKinney,Redfoo,Redfoo,Redfoo,Redfoo,True,9.0:Noah Galloway;Willow Shields
+20,rank,4,1,12,Michael Sam,Suzanne Somers,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,6.0:Riker Lynch;Willow Shields;10.0:Noah Galloway;Robert Herjavec;17.0:Chris Soules;Michael Sam;22.0:Charlotte McKinney;Redfoo
+20,rank,5,1,12,Suzanne Somers,Michael Sam,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,20.0:Charlotte McKinney;Michael Sam;Redfoo
+20,rank,6,1,12,Patti LaBelle,Robert Herjavec,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,6.0:Nastia Liukin;Rumer Willis;18.0:Charlotte McKinney;Michael Sam;Redfoo;Suzanne Somers
+20,rank,7,1,12,Willow Shields,Patti LaBelle,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,5.0:Nastia Liukin;Riker Lynch;6.0:Noah Galloway;Rumer Willis;16.0:Charlotte McKinney;Michael Sam;Patti LaBelle;Redfoo;Suzanne Somers
+20,rank,8,2,12,Chris Soules;Robert Herjavec,Willow Shields;Noah Galloway,Charlotte McKinney;Michael Sam,Charlotte McKinney;Michael Sam,Charlotte McKinney;Michael Sam,True,3.0:Riker Lynch;Rumer Willis;14.0:Charlotte McKinney;Michael Sam;Patti LaBelle;Redfoo;Suzanne Somers;Willow Shields
+20,rank,9,1,12,Nastia Liukin,Chris Soules,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,5.0:Nastia Liukin;Rumer Willis;10.0:Charlotte McKinney;Chris Soules;Michael Sam;Patti LaBelle;Redfoo;Robert Herjavec;Suzanne Somers;Willow Shields
+34,rank,2,2,14,Baron Davis;Corey Feldman,Corey Feldman;Baron Davis,Corey Feldman;Andy Richter,Corey Feldman;Baron Davis,Corey Feldman;Baron Davis,True,8.0:Alix Earle;Jen Affleck;24.0:Andy Richter;Baron Davis
+34,rank,3,1,14,Lauren Jauregui,Lauren Jauregui,Baron Davis,Baron Davis,Baron Davis,True,14.0:Elaine Hendrix;Scott Hoying;26.0:Baron Davis;Corey Feldman
+34,rank,4,1,14,Hilaria Baldwin,Andy Richter,Baron Davis,Baron Davis,Baron Davis,True,16.0:Danielle Fishel;Hilaria Baldwin;24.0:Baron Davis;Corey Feldman;Lauren Jauregui
+34,rank,6,1,14,Scott Hoying,Hilaria Baldwin,Baron Davis,Baron Davis,Baron Davis,True,6.0:Robert Irwin;Whitney Leavitt;22.0:Baron Davis;Corey Feldman;Hilaria Baldwin;Lauren Jauregui
+34,rank,7,1,14,Jen Affleck,Scott Hoying,Baron Davis,Baron Davis,Baron Davis,True,8.0:Dylan Efron;Whitney Leavitt;13.0:Danielle Fishel;Elaine Hendrix;20.0:Baron Davis;Corey Feldman;Hilaria Baldwin;Lauren Jauregui;Scott Hoying
+34,rank,8,1,14,Danielle Fishel,Jen Affleck,Baron Davis,Baron Davis,Baron Davis,True,5.0:Alix Earle;Jordan Chiles;Robert Irwin;15.0:Andy Richter;Danielle Fishel;18.0:Baron Davis;Corey Feldman;Hilaria Baldwin;Jen Affleck;Lauren Jauregui;Scott Hoying
+34,rank,9,1,14,Andy Richter,Danielle Fishel,Baron Davis,Baron Davis,Baron Davis,True,16.0:Baron Davis;Corey Feldman;Danielle Fishel;Hilaria Baldwin;Jen Affleck;Lauren Jauregui;Scott Hoying
+34,rank,10,1,14,Whitney Leavitt,Dylan Efron,Andy Richter,Andy Richter,Andy Richter,True,14.0:Andy Richter;Baron Davis;Corey Feldman;Danielle Fishel;Hilaria Baldwin;Jen Affleck;Lauren Jauregui;Scott Hoying
+11,percent,1,1,12,David Hasselhoff,David Hasselhoff,David Hasselhoff,David Hasselhoff,David Hasselhoff,False,
+11,percent,2,1,12,Michael Bolton,Michael Bolton,David Hasselhoff,David Hasselhoff,David Hasselhoff,False,
+11,percent,3,1,12,Margaret Cho,Margaret Cho,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,0.0:David Hasselhoff;Michael Bolton
+11,percent,4,1,12,The Situation,The Situation,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,0.0:David Hasselhoff;Margaret Cho;Michael Bolton
+11,percent,5,1,12,Florence Henderson,Florence Henderson,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,0.0:David Hasselhoff;Margaret Cho;Michael Bolton;The Situation
+11,percent,6,1,12,Audrina Patridge,Kurt Warner,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,0.0:David Hasselhoff;Florence Henderson;Margaret Cho;Michael Bolton;The Situation
+11,percent,7,1,12,Rick Fox,Audrina Patridge,Audrina Patridge,Audrina Patridge,Audrina Patridge,True,0.0:Audrina Patridge;David Hasselhoff;Florence Henderson;Margaret Cho;Michael Bolton;The Situation
+11,percent,8,1,12,Kurt Warner,Rick Fox,Audrina Patridge,Audrina Patridge,Audrina Patridge,True,0.0:Audrina Patridge;David Hasselhoff;Florence Henderson;Margaret Cho;Michael Bolton;Rick Fox;The Situation
+11,percent,9,1,12,Brandy,Brandy,Audrina Patridge,Audrina Patridge,Audrina Patridge,True,0.0:Audrina Patridge;David Hasselhoff;Florence Henderson;Kurt Warner;Margaret Cho;Michael Bolton;Rick Fox;The Situation
+10,percent,2,1,11,Shannen Doherty,Chad Ochocinco,Buzz Aldrin,Buzz Aldrin,Buzz Aldrin,False,
+10,percent,3,1,11,Buzz Aldrin,Shannen Doherty,Shannen Doherty,Shannen Doherty,Shannen Doherty,False,
+10,percent,4,1,11,Aiden Turner,Buzz Aldrin,Buzz Aldrin,Buzz Aldrin,Buzz Aldrin,True,0.0:Buzz Aldrin;Shannen Doherty
+10,percent,5,1,11,Kate Gosselin,Aiden Turner,Aiden Turner,Aiden Turner,Aiden Turner,True,0.0:Aiden Turner;Buzz Aldrin;Shannen Doherty
+10,percent,6,1,11,Jake Pavelka,Kate Gosselin,Aiden Turner,Aiden Turner,Aiden Turner,True,0.0:Aiden Turner;Buzz Aldrin;Kate Gosselin;Shannen Doherty
+10,percent,7,1,11,Pamela Anderson,Jake Pavelka,Aiden Turner,Aiden Turner,Aiden Turner,True,0.0:Aiden Turner;Buzz Aldrin;Jake Pavelka;Kate Gosselin;Shannen Doherty
+10,percent,8,1,11,Niecy Nash,Pamela Anderson,Aiden Turner,Aiden Turner,Aiden Turner,True,0.0:Aiden Turner;Buzz Aldrin;Jake Pavelka;Kate Gosselin;Pamela Anderson;Shannen Doherty
+10,percent,9,1,11,Chad Ochocinco,Niecy Nash,Aiden Turner,Aiden Turner,Aiden Turner,True,0.0:Aiden Turner;Buzz Aldrin;Jake Pavelka;Kate Gosselin;Niecy Nash;Pamela Anderson;Shannen Doherty
+21,rank,2,2,13,Chaka Khan;Victor Espinoza,Chaka Khan;Victor Espinoza,Chaka Khan;Gary Busey,Chaka Khan;Gary Busey,Chaka Khan;Gary Busey,True,8.0:Alexa PenaVega;Carlos PenaVega
+21,rank,4,1,13,Gary Busey,Kim Zolciak-Biermann,Chaka Khan,Chaka Khan,Chaka Khan,True,10.0:Alek Skarlatos;Hayes Grier;14.0:Alexa PenaVega;Andy Grammer;22.0:Chaka Khan;Kim Zolciak-Biermann;Victor Espinoza
+21,rank,6,1,13,Paula Deen,Gary Busey,Chaka Khan,Chaka Khan,Chaka Khan,True,6.0:Andy Grammer;Nick Carter;14.0:Alexa PenaVega;Hayes Grier;20.0:Chaka Khan;Gary Busey;Kim Zolciak-Biermann;Victor Espinoza
+21,rank,7,1,13,Hayes Grier,Paula Deen,Chaka Khan,Chaka Khan,Chaka Khan,True,18.0:Chaka Khan;Gary Busey;Kim Zolciak-Biermann;Paula Deen;Victor Espinoza
+21,rank,8,1,13,Andy Grammer,Hayes Grier,Chaka Khan,Chaka Khan,Chaka Khan,True,10.0:Alek Skarlatos;Alexa PenaVega;Tamar Braxton;16.0:Chaka Khan;Gary Busey;Hayes Grier;Kim Zolciak-Biermann;Paula Deen;Victor Espinoza
+21,rank,9,1,13,Alexa PenaVega,Andy Grammer,Andy Grammer,Andy Grammer,Andy Grammer,True,6.0:Alexa PenaVega;Carlos PenaVega;Nick Carter;14.0:Andy Grammer;Chaka Khan;Gary Busey;Hayes Grier;Kim Zolciak-Biermann;Paula Deen;Victor Espinoza
+21,rank,11,1,13,Carlos PenaVega,Alexa PenaVega,Alexa PenaVega,Alexa PenaVega,Alexa PenaVega,True,10.0:Alexa PenaVega;Andy Grammer;Chaka Khan;Gary Busey;Hayes Grier;Kim Zolciak-Biermann;Paula Deen;Tamar Braxton;Victor Espinoza
+12,percent,2,1,11,Mike Catherwood,Mike Catherwood,Mike Catherwood,Mike Catherwood,Mike Catherwood,False,
+12,percent,3,1,11,Wendy Williams,Wendy Williams,Mike Catherwood,Mike Catherwood,Mike Catherwood,False,
+12,percent,4,1,11,Sugar Ray Leonard,Kendra Wilkinson,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,0.0:Mike Catherwood;Wendy Williams
+12,percent,5,1,11,Petra Nemcova,Sugar Ray Leonard,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,0.0:Mike Catherwood;Sugar Ray Leonard;Wendy Williams
+12,percent,6,1,11,Chris Jericho,Petra Nemcova,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,0.0:Mike Catherwood;Petra Nemcova;Sugar Ray Leonard;Wendy Williams
+12,percent,7,1,11,Kendra Wilkinson,Chris Jericho,Chris Jericho,Chris Jericho,Chris Jericho,True,0.0:Chris Jericho;Mike Catherwood;Petra Nemcova;Sugar Ray Leonard;Wendy Williams
+12,percent,8,1,11,Romeo,Ralph Macchio,Chris Jericho,Chris Jericho,Chris Jericho,True,0.0:Chris Jericho;Kendra Wilkinson;Mike Catherwood;Petra Nemcova;Sugar Ray Leonard;Wendy Williams
+12,percent,9,1,11,Ralph Macchio,Romeo,Chris Jericho,Chris Jericho,Chris Jericho,True,0.0:Chris Jericho;Kendra Wilkinson;Mike Catherwood;Petra Nemcova;Romeo;Sugar Ray Leonard;Wendy Williams
+23,rank,2,1,13,Jake T. Austin,Amber Rose,Rick Perry,Rick Perry,Rick Perry,True,13.0:Babyface;Marilu Henner;19.0:Amber Rose;Vanilla Ice
+23,rank,3,1,13,Rick Perry,Jake T. Austin,Jake T. Austin,Jake T. Austin,Jake T. Austin,True,12.0:Jana Kramer;Maureen McCormick
+23,rank,4,2,13,Babyface;Vanilla Ice,Rick Perry;Babyface,Jake T. Austin;Rick Perry,Jake T. Austin;Rick Perry,Jake T. Austin;Rick Perry,True,16.0:Marilu Henner;Vanilla Ice;24.0:Jake T. Austin;Rick Perry
+23,rank,6,1,13,Amber Rose,Vanilla Ice,Babyface,Babyface,Babyface,True,14.0:Maureen McCormick;Ryan Lochte;20.0:Babyface;Jake T. Austin;Rick Perry;Vanilla Ice
+23,rank,7,1,13,Maureen McCormick,Maureen McCormick,Amber Rose,Amber Rose,Amber Rose,True,14.0:Marilu Henner;Maureen McCormick;18.0:Amber Rose;Babyface;Jake T. Austin;Rick Perry;Vanilla Ice
+23,rank,8,1,13,Ryan Lochte,Marilu Henner,Amber Rose,Amber Rose,Amber Rose,True,16.0:Amber Rose;Babyface;Jake T. Austin;Maureen McCormick;Rick Perry;Vanilla Ice
+23,rank,9,1,13,Marilu Henner,Ryan Lochte,Amber Rose,Amber Rose,Amber Rose,True,8.0:Calvin Johnson Jr.;Terra Jole;14.0:Amber Rose;Babyface;Jake T. Austin;Maureen McCormick;Rick Perry;Ryan Lochte;Vanilla Ice
+23,rank,10,1,13,Terra Jole,Calvin Johnson Jr.,Amber Rose,Amber Rose,Amber Rose,True,8.0:Calvin Johnson Jr.;Jana Kramer;12.0:Amber Rose;Babyface;Jake T. Austin;Marilu Henner;Maureen McCormick;Rick Perry;Ryan Lochte;Vanilla Ice
+23,rank,11,1,13,Jana Kramer,Terra Jole,Amber Rose,Amber Rose,Amber Rose,True,10.0:Amber Rose;Babyface;Jake T. Austin;Marilu Henner;Maureen McCormick;Rick Perry;Ryan Lochte;Terra Jole;Vanilla Ice
+22,rank,2,1,12,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,True,8.0:Jodie Sweetin;Nyle DiMarco;15.0:Antonio Brown;Marla Maples
+22,rank,3,1,12,Mischa Barton,Mischa Barton,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,True,16.0:Marla Maples;Von Miller
+22,rank,4,1,12,Marla Maples,Doug Flutie,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,True,22.0:Geraldo Rivera;Mischa Barton
+22,rank,6,1,12,Doug Flutie,Marla Maples,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,True,9.0:Antonio Brown;Ginger Zee;Jodie Sweetin;20.0:Geraldo Rivera;Marla Maples;Mischa Barton
+22,rank,7,2,12,Kim Fields;Von Miller,Jodie Sweetin;Kim Fields,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,True,3.0:Nyle DiMarco;Paige VanZant;12.0:Jodie Sweetin;Von Miller;18.0:Doug Flutie;Geraldo Rivera;Marla Maples;Mischa Barton
+22,rank,8,1,12,Jodie Sweetin,Von Miller,Doug Flutie,Doug Flutie,Doug Flutie,True,5.0:Jodie Sweetin;Nyle DiMarco;Paige VanZant;11.0:Antonio Brown;Wanya Morris;14.0:Doug Flutie;Geraldo Rivera;Kim Fields;Marla Maples;Mischa Barton;Von Miller
+22,rank,9,2,12,Antonio Brown;Wanya Morris,Antonio Brown;Ginger Zee,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,True,5.0:Nyle DiMarco;Wanya Morris;12.0:Doug Flutie;Geraldo Rivera;Jodie Sweetin;Kim Fields;Marla Maples;Mischa Barton;Von Miller
+13,percent,1,1,12,Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),False,
+13,percent,2,1,12,Elisabetta Canalis,Carson Kressley,Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),False,
+13,percent,3,1,12,Kristin Cavallari,Elisabetta Canalis,Elisabetta Canalis,Elisabetta Canalis,Elisabetta Canalis,True,0.0:Elisabetta Canalis;Metta World Peace (Ron)
+13,percent,4,1,12,Chynna Phillips,Kristin Cavallari,Elisabetta Canalis,Elisabetta Canalis,Elisabetta Canalis,True,0.0:Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,percent,5,1,12,Carson Kressley,Chynna Phillips,Chynna Phillips,Chynna Phillips,Chynna Phillips,True,0.0:Chynna Phillips;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,percent,6,1,12,Chaz Bono,Chaz Bono,Carson Kressley,Carson Kressley,Carson Kressley,True,0.0:Carson Kressley;Chynna Phillips;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,percent,7,1,12,David Arquette,David Arquette,Carson Kressley,Carson Kressley,Carson Kressley,True,0.0:Carson Kressley;Chaz Bono;Chynna Phillips;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,percent,8,1,12,Nancy Grace,Nancy Grace,Carson Kressley,Carson Kressley,Carson Kressley,True,0.0:Carson Kressley;Chaz Bono;Chynna Phillips;David Arquette;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,percent,9,1,12,Hope Solo,Hope Solo,Carson Kressley,Carson Kressley,Carson Kressley,True,0.0:Carson Kressley;Chaz Bono;Chynna Phillips;David Arquette;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron);Nancy Grace
+32,rank,1,1,14,Matt Walsh,Matt Walsh,Matt Walsh,Matt Walsh,Matt Walsh,True,3.0:Charity Lawson;Jason Mraz;9.0:Lele Pons;Xochitl Gomez;13.0:Adrian Peterson;Mira Sorvino
+32,rank,2,1,14,Jamie Lynn Spears,Jamie Lynn Spears,Matt Walsh,Matt Walsh,Matt Walsh,True,19.0:Harry Jowsey;Tyson Beckford
+32,rank,3,1,14,Tyson Beckford,Tyson Beckford,Jamie Lynn Spears,Jamie Lynn Spears,Jamie Lynn Spears,True,14.0:Alyson Hannigan;Barry Williams;26.0:Jamie Lynn Spears;Matt Walsh
+32,rank,4,1,14,Adrian Peterson,Barry Williams,Jamie Lynn Spears,Jamie Lynn Spears,Jamie Lynn Spears,True,5.0:Ariana Madix;Jason Mraz;16.0:Alyson Hannigan;Mira Sorvino;17.0:Adrian Peterson;Barry Williams;24.0:Jamie Lynn Spears;Matt Walsh;Tyson Beckford
+32,rank,5,1,14,Mira Sorvino,Adrian Peterson,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,18.0:Harry Jowsey;Mira Sorvino;22.0:Adrian Peterson;Jamie Lynn Spears;Matt Walsh;Tyson Beckford
+32,rank,6,1,14,Mauricio Umansky,Mira Sorvino,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,7.0:Charity Lawson;Jason Mraz;13.0:Alyson Hannigan;Barry Williams;Lele Pons;20.0:Adrian Peterson;Jamie Lynn Spears;Matt Walsh;Mira Sorvino;Tyson Beckford
+32,rank,7,1,14,Lele Pons,Mauricio Umansky,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,11.0:Alyson Hannigan;Lele Pons;14.0:Barry Williams;Harry Jowsey;18.0:Adrian Peterson;Jamie Lynn Spears;Matt Walsh;Mauricio Umansky;Mira Sorvino;Tyson Beckford
+32,rank,8,1,14,Barry Williams,Lele Pons,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,3.0:Ariana Madix;Xochitl Gomez;16.0:Adrian Peterson;Jamie Lynn Spears;Lele Pons;Matt Walsh;Mauricio Umansky;Mira Sorvino;Tyson Beckford
+32,rank,9,1,14,Harry Jowsey,Harry Jowsey,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,3.0:Jason Mraz;Xochitl Gomez;7.0:Ariana Madix;Charity Lawson;14.0:Adrian Peterson;Barry Williams;Jamie Lynn Spears;Lele Pons;Matt Walsh;Mauricio Umansky;Mira Sorvino;Tyson Beckford
+17,percent,2,1,12,Keyshawn Johnson,Bill Nye,Bill Nye,Bill Nye,Bill Nye,False,
+17,percent,3,1,12,Bill Nye,Keyshawn Johnson,Keyshawn Johnson,Keyshawn Johnson,Keyshawn Johnson,False,
+17,percent,4,1,12,Valerie Harper,Valerie Harper,Bill Nye,Bill Nye,Bill Nye,True,0.0:Bill Nye;Keyshawn Johnson
+17,percent,5,1,12,Christina Milian,Elizabeth Berkley Lauren,Bill Nye,Bill Nye,Bill Nye,True,0.0:Bill Nye;Keyshawn Johnson;Valerie Harper
+17,percent,7,1,12,"Nicole ""Snooki"" Polizzi",Christina Milian,Bill Nye,Bill Nye,Bill Nye,True,0.0:Bill Nye;Christina Milian;Keyshawn Johnson;Valerie Harper
+17,percent,8,1,12,Brant Daugherty,"Nicole ""Snooki"" Polizzi",Bill Nye,Bill Nye,Bill Nye,True,"0.0:Bill Nye;Christina Milian;Keyshawn Johnson;Nicole ""Snooki"" Polizzi;Valerie Harper"
+17,percent,9,1,12,Elizabeth Berkley Lauren,Brant Daugherty,Bill Nye,Bill Nye,Bill Nye,True,"0.0:Bill Nye;Brant Daugherty;Christina Milian;Keyshawn Johnson;Nicole ""Snooki"" Polizzi;Valerie Harper"
+17,percent,10,1,12,Leah Remini,Leah Remini,Bill Nye,Bill Nye,Bill Nye,True,"0.0:Bill Nye;Brant Daugherty;Christina Milian;Elizabeth Berkley Lauren;Keyshawn Johnson;Nicole ""Snooki"" Polizzi;Valerie Harper"
+17,percent,11,1,12,Bill Engvall,Bill Engvall,Bill Nye,Bill Nye,Bill Nye,True,"0.0:Bill Nye;Brant Daugherty;Christina Milian;Elizabeth Berkley Lauren;Keyshawn Johnson;Leah Remini;Nicole ""Snooki"" Polizzi;Valerie Harper"
+26,rank,1,2,10,Jamie Anderson;Johnny Damon,Johnny Damon;Jamie Anderson,Johnny Damon;Kareem Abdul-Jabbar,Johnny Damon;Kareem Abdul-Jabbar,Johnny Damon;Kareem Abdul-Jabbar,False,
+26,rank,2,2,10,Arike Ogunbowale;Kareem Abdul-Jabbar,Kareem Abdul-Jabbar;Jennie Finch Daigle,Jamie Anderson;Johnny Damon,Jamie Anderson;Johnny Damon,Jamie Anderson;Johnny Damon,True,18.0:Jamie Anderson;Johnny Damon
+26,rank,3,3,10,Chris Mazdzer;Jennie Finch Daigle;Mirai Nagasu,Arike Ogunbowale;Chris Mazdzer;Mirai Nagasu,Arike Ogunbowale;Jamie Anderson;Johnny Damon,Arike Ogunbowale;Jamie Anderson;Johnny Damon,Arike Ogunbowale;Jamie Anderson;Johnny Damon,True,14.0:Arike Ogunbowale;Jamie Anderson;Johnny Damon;Kareem Abdul-Jabbar
+27,rank,1,1,13,Nikki Glaser,Nikki Glaser,Nikki Glaser,Nikki Glaser,Nikki Glaser,True,5.0:DeMarcus Ware;Juan Pablo Di Pace;18.0:John Schneider;Nancy McKeon
+27,rank,2,1,13,Danelle Umstead,Danelle Umstead,Nikki Glaser,Nikki Glaser,Nikki Glaser,False,
+27,rank,3,1,13,Nancy McKeon,Nancy McKeon,Danelle Umstead,Danelle Umstead,Danelle Umstead,True,5.0:Evanna Lynch;Juan Pablo Di Pace;24.0:Danelle Umstead;Nikki Glaser
+27,rank,4,1,13,Tinashe,Joe Amabile,Danelle Umstead,Danelle Umstead,Danelle Umstead,True,8.0:Evanna Lynch;Mary Lou Retton;14.0:Bobby Bones;DeMarcus Ware;22.0:Danelle Umstead;Nancy McKeon;Nikki Glaser
+27,rank,6,1,13,Mary Lou Retton,Tinashe,Danelle Umstead,Danelle Umstead,Danelle Umstead,True,20.0:Danelle Umstead;Nancy McKeon;Nikki Glaser;Tinashe
+27,rank,7,2,13,DeMarcus Ware;John Schneider,Mary Lou Retton;DeMarcus Ware,Danelle Umstead;Mary Lou Retton,Danelle Umstead;Mary Lou Retton,Danelle Umstead;Mary Lou Retton,True,13.0:DeMarcus Ware;John Schneider;18.0:Danelle Umstead;Mary Lou Retton;Nancy McKeon;Nikki Glaser;Tinashe
+27,rank,8,2,13,Joe Amabile;Juan Pablo Di Pace,John Schneider;Bobby Bones,Danelle Umstead;DeMarcus Ware,Danelle Umstead;DeMarcus Ware,Danelle Umstead;DeMarcus Ware,True,6.0:Juan Pablo Di Pace;Milo Manheim;14.0:Danelle Umstead;DeMarcus Ware;John Schneider;Mary Lou Retton;Nancy McKeon;Nikki Glaser;Tinashe
+16,percent,3,1,12,Wynonna Judd,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,False,
+16,percent,4,1,12,Lisa Vanderpump,Wynonna Judd,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,True,0.0:Dorothy Hamill;Wynonna Judd
+16,percent,5,1,12,D. L. Hughley,Lisa Vanderpump,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,True,0.0:Dorothy Hamill;Lisa Vanderpump;Wynonna Judd
+16,percent,6,1,12,Victor Ortiz,D. L. Hughley,D. L. Hughley,D. L. Hughley,D. L. Hughley,True,0.0:D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Wynonna Judd
+16,percent,7,1,12,Andy Dick,Victor Ortiz,D. L. Hughley,D. L. Hughley,D. L. Hughley,True,0.0:D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Victor Ortiz;Wynonna Judd
+16,percent,8,1,12,Sean Lowe,Andy Dick,Andy Dick,Andy Dick,Andy Dick,True,0.0:Andy Dick;D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Victor Ortiz;Wynonna Judd
+16,percent,9,1,12,Ingo Rademacher,Sean Lowe,Andy Dick,Andy Dick,Andy Dick,True,0.0:Andy Dick;D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Sean Lowe;Victor Ortiz;Wynonna Judd
+16,percent,10,1,12,Alexandra Raisman,Ingo Rademacher,Andy Dick,Andy Dick,Andy Dick,True,0.0:Andy Dick;D. L. Hughley;Dorothy Hamill;Ingo Rademacher;Lisa Vanderpump;Sean Lowe;Victor Ortiz;Wynonna Judd
+33,rank,2,2,13,Anna Delvey;Tori Spelling,Anna Delvey;Jenn Tran,Anna Delvey;Reginald VelJohnson,Anna Delvey;Reginald VelJohnson,Anna Delvey;Reginald VelJohnson,False,
+33,rank,3,2,13,Eric Roberts;Reginald VelJohnson,Tori Spelling;Reginald VelJohnson,Anna Delvey;Tori Spelling,Anna Delvey;Tori Spelling,Anna Delvey;Tori Spelling,True,3.0:Chandler Kinney;Joey Graziadei;9.0:Danny Amendola;Jenn Tran;24.0:Anna Delvey;Tori Spelling
+33,rank,4,1,13,Brooks Nader,Eric Roberts,Anna Delvey,Anna Delvey,Anna Delvey,True,20.0:Anna Delvey;Eric Roberts;Reginald VelJohnson;Tori Spelling
+33,rank,5,1,13,Phaedra Parks,Brooks Nader,Anna Delvey,Anna Delvey,Anna Delvey,True,7.0:Danny Amendola;Ilona Maher;18.0:Anna Delvey;Brooks Nader;Eric Roberts;Reginald VelJohnson;Tori Spelling
+33,rank,6,1,13,Jenn Tran,Phaedra Parks,Anna Delvey,Anna Delvey,Anna Delvey,True,9.0:Danny Amendola;Dwight Howard ;16.0:Anna Delvey;Brooks Nader;Eric Roberts;Phaedra Parks;Reginald VelJohnson;Tori Spelling
+33,rank,7,1,13,Dwight Howard ,Dwight Howard,Anna Delvey,Anna Delvey,Anna Delvey,True,9.0:Danny Amendola;Ilona Maher;14.0:Anna Delvey;Brooks Nader;Eric Roberts;Jenn Tran;Phaedra Parks;Reginald VelJohnson;Tori Spelling
+25,rank,2,2,13,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Derek Fisher,Barbara Corcoran;Derek Fisher,Barbara Corcoran;Derek Fisher,Barbara Corcoran;Derek Fisher,True,13.0:Drew Scott;Sasha Pieterse
+25,rank,4,1,13,Derek Fisher,Debbie Gibson,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,7.0:Frankie Muniz;Victoria Arlen;24.0:Barbara Corcoran;Debbie Gibson
+25,rank,5,1,13,Sasha Pieterse,Sasha Pieterse,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,5.0:Frankie Muniz;Lindsey Stirling;22.0:Barbara Corcoran;Debbie Gibson;Derek Fisher
+25,rank,6,1,13,Nick Lachey,Nick Lachey,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,3.0:Jordan Fisher;Lindsey Stirling;9.0:Frankie Muniz;Terrell Owens;11.0:Vanessa Lachey;Victoria Arlen;12.0:Drew Scott;Nikki Bella;20.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Sasha Pieterse
+25,rank,7,2,13,Nikki Bella;Vanessa Lachey,Nikki Bella;Terrell Owens,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Debbie Gibson,True,18.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Sasha Pieterse
+25,rank,8,1,13,Terrell Owens,Vanessa Lachey,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,10.0:Drew Scott;Terrell Owens;Victoria Arlen;14.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Nikki Bella;Sasha Pieterse;Vanessa Lachey
+25,rank,9,1,13,Victoria Arlen,Frankie Muniz,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,12.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Nikki Bella;Sasha Pieterse;Terrell Owens;Vanessa Lachey
+25,rank,10,1,13,Drew Scott,Victoria Arlen,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,10.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Nikki Bella;Sasha Pieterse;Terrell Owens;Vanessa Lachey;Victoria Arlen
+31,rank,1,1,16,Jason Lewis,Jason Lewis,Jason Lewis,Jason Lewis,Jason Lewis,True,19.0:Joseph Baena;Trevor Donovan;24.0:Cheryl Ladd;Sam Champion
+31,rank,2,1,16,Teresa Giudice,Joseph Baena,Jason Lewis,Jason Lewis,Jason Lewis,True,10.0:Daniel Durant;Shangela;12.0:Heidi D'Amelio;Trevor Donovan;29.0:Cheryl Ladd;Teresa Giudice
+31,rank,3,1,16,Cheryl Ladd,Teresa Giudice,Jason Lewis,Jason Lewis,Jason Lewis,True,20.0:Jessie James Decker;Selma Blair;30.0:Jason Lewis;Teresa Giudice
+31,rank,4,1,16,Sam Champion,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,10.0:Jordin Sparks;Shangela;17.0:Jessie James Decker;Selma Blair;19.0:Trevor Donovan;Vinny Guadagnino;28.0:Cheryl Ladd;Jason Lewis;Teresa Giudice
+31,rank,5,1,16,Joseph Baena,Sam Champion,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,12.0:Heidi D'Amelio;Trevor Donovan;17.0:Daniel Durant;Jessie James Decker;Jordin Sparks;26.0:Cheryl Ladd;Jason Lewis;Sam Champion;Teresa Giudice
+31,rank,6,1,16,Jessie James Decker,Selma Blair,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,10.0:Heidi D'Amelio;Trevor Donovan;19.0:Jessie James Decker;Vinny Guadagnino;22.0:Cheryl Ladd;Jason Lewis;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice
+31,rank,7,1,16,Jordin Sparks,Jessie James Decker,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,20.0:Cheryl Ladd;Jason Lewis;Jessie James Decker;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice
+31,rank,8,2,16,Heidi D'Amelio;Vinny Guadagnino,Jordin Sparks;Heidi D'Amelio,Cheryl Ladd;Jason Lewis,Cheryl Ladd;Jason Lewis,Cheryl Ladd;Jason Lewis,True,7.0:Gabby Windey;Shangela;18.0:Cheryl Ladd;Jason Lewis;Jessie James Decker;Jordin Sparks;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice
+31,rank,9,2,16,Daniel Durant;Trevor Donovan,Vinny Guadagnino;Trevor Donovan,Cheryl Ladd;Heidi D'Amelio,Cheryl Ladd;Heidi D'Amelio,Cheryl Ladd;Heidi D'Amelio,True,14.0:Cheryl Ladd;Heidi D'Amelio;Jason Lewis;Jessie James Decker;Jordin Sparks;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice;Vinny Guadagnino
+14,percent,2,1,12,Martina Navratilova,Martina Navratilova,Martina Navratilova,Martina Navratilova,Martina Navratilova,False,
+14,percent,3,1,12,Jack Wagner,Jack Wagner,Martina Navratilova,Martina Navratilova,Martina Navratilova,False,
+14,percent,4,1,12,Sherri Sheperd,Sherri Sheperd,Jack Wagner,Jack Wagner,Jack Wagner,True,0.0:Jack Wagner;Martina Navratilova
+14,percent,5,1,12,Gavin DeGraw,Gavin DeGraw,Jack Wagner,Jack Wagner,Jack Wagner,True,0.0:Jack Wagner;Martina Navratilova;Sherri Sheperd
+14,percent,6,1,12,Gladys Knight,Gladys Knight,Gavin DeGraw,Gavin DeGraw,Gavin DeGraw,True,0.0:Gavin DeGraw;Jack Wagner;Martina Navratilova;Sherri Sheperd
+14,percent,7,1,12,Jaleel White,Melissa Gilbert,Gavin DeGraw,Gavin DeGraw,Gavin DeGraw,True,0.0:Gavin DeGraw;Gladys Knight;Jack Wagner;Martina Navratilova;Sherri Sheperd
+14,percent,8,2,12,Melissa Gilbert;Roshon Fegan,Jaleel White;Maria Menounos,Gavin DeGraw;Gladys Knight,Gavin DeGraw;Gladys Knight,Gavin DeGraw;Gladys Knight,True,0.0:Gavin DeGraw;Gladys Knight;Jack Wagner;Jaleel White;Martina Navratilova;Sherri Sheperd
+14,percent,9,1,12,Maria Menounos,Roshon Fegan,Gavin DeGraw,Gavin DeGraw,Gavin DeGraw,True,0.0:Gavin DeGraw;Gladys Knight;Jack Wagner;Jaleel White;Martina Navratilova;Melissa Gilbert;Roshon Fegan;Sherri Sheperd
+19,rank,1,1,13,Lolo Jones,Lolo Jones,Lolo Jones,Lolo Jones,Lolo Jones,True,5.0:Bethany Mota;Sadie Robertson;12.0:Janel Parrish;Jonathan Bennett;19.0:Michael Waltrip;Tavis Smiley
+19,rank,2,1,13,Tavis Smiley,Tavis Smiley,Lolo Jones,Lolo Jones,Lolo Jones,True,4.0:Bethany Mota;Janel Parrish;14.0:Jonathan Bennett;Tommy Chong
+19,rank,3,1,13,Randy Couture,Randy Couture,Lolo Jones,Lolo Jones,Lolo Jones,True,12.0:Jonathan Bennett;Lea Thompson;24.0:Lolo Jones;Tavis Smiley
+19,rank,4,1,13,Betsey Johnson,Jonathan Bennett,Lolo Jones,Lolo Jones,Lolo Jones,True,6.0:Janel Parrish;Sadie Robertson;22.0:Lolo Jones;Randy Couture;Tavis Smiley
+19,rank,6,1,13,Jonathan Bennett,Betsey Johnson,Betsey Johnson,Betsey Johnson,Betsey Johnson,True,7.0:Janel Parrish;Sadie Robertson;14.0:Jonathan Bennett;Michael Waltrip;Tommy Chong;20.0:Betsey Johnson;Lolo Jones;Randy Couture;Tavis Smiley
+19,rank,7,1,13,Antonio Sabato Jr.,Michael Waltrip,Betsey Johnson,Betsey Johnson,Betsey Johnson,True,7.0:Janel Parrish;Lea Thompson;15.0:Antonio Sabato Jr.;Michael Waltrip;18.0:Betsey Johnson;Jonathan Bennett;Lolo Jones;Randy Couture;Tavis Smiley
+19,rank,8,1,13,Michael Waltrip,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,11.0:Lea Thompson;Tommy Chong;16.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lolo Jones;Randy Couture;Tavis Smiley
+19,rank,9,1,13,Lea Thompson,Tommy Chong,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,11.0:Lea Thompson;Tommy Chong;14.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lolo Jones;Michael Waltrip;Randy Couture;Tavis Smiley
+19,rank,10,1,13,Tommy Chong,Lea Thompson,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,5.0:Alfonso Ribeiro;Bethany Mota;12.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lea Thompson;Lolo Jones;Michael Waltrip;Randy Couture;Tavis Smiley
+19,rank,11,1,13,Bethany Mota,Bethany Mota,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,5.0:Janel Parrish;Sadie Robertson;10.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lea Thompson;Lolo Jones;Michael Waltrip;Randy Couture;Tavis Smiley;Tommy Chong
+28,percent,2,1,12,Mary Wilson,Lamar Odom,Lamar Odom,Lamar Odom,Lamar Odom,False,
+28,percent,4,1,12,Lamar Odom,Mary Wilson,Mary Wilson,Mary Wilson,Mary Wilson,True,0.0:Mary Wilson;Ray Lewis
+28,percent,6,1,12,Sailor Brinkley-Cook,Ray Lewis,Lamar Odom,Lamar Odom,Lamar Odom,True,0.0:Lamar Odom;Mary Wilson;Ray Lewis
+28,percent,7,1,12,Karamo Brown,Sailor Brinkley-Cook,Lamar Odom,Lamar Odom,Lamar Odom,True,0.0:Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook
+28,percent,8,1,12,Kate Flannery,Karamo Brown,Karamo Brown,Karamo Brown,Karamo Brown,True,0.0:Karamo Brown;Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook
+28,percent,9,1,12,Sean Spicer,Kate Flannery,Karamo Brown,Karamo Brown,Karamo Brown,True,0.0:Karamo Brown;Kate Flannery;Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook
+28,percent,10,1,12,James Van Der Beek,Sean Spicer,Karamo Brown,Karamo Brown,Karamo Brown,True,0.0:Karamo Brown;Kate Flannery;Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook;Sean Spicer
+29,percent,2,1,15,Charles Oakley,Charles Oakley,Charles Oakley,Charles Oakley,Charles Oakley,False,
+29,percent,3,1,15,Carole Baskin,Carole Baskin,Charles Oakley,Charles Oakley,Charles Oakley,False,
+29,percent,4,1,15,Anne Heche,Jesse Metcalfe,Carole Baskin,Carole Baskin,Carole Baskin,True,0.0:Carole Baskin;Charles Oakley
+29,percent,5,1,15,Jesse Metcalfe,Anne Heche,Anne Heche,Anne Heche,Anne Heche,True,0.0:Anne Heche;Carole Baskin;Charles Oakley
+29,percent,6,1,15,Veron Davis,Skai Jackson,Anne Heche,Anne Heche,Anne Heche,True,0.0:Anne Heche;Carole Baskin;Charles Oakley;Jesse Metcalfe
+29,percent,7,1,15,Monica Aldama,Veron Davis,Anne Heche,Anne Heche,Anne Heche,True,0.0:Anne Heche;Carole Baskin;Charles Oakley;Jesse Metcalfe;Veron Davis
+29,percent,8,1,15,Chrishell Stause,Jeannie Mai,Anne Heche,Anne Heche,Anne Heche,True,0.0:Anne Heche;Carole Baskin;Charles Oakley;Jeannie Mai;Jesse Metcalfe;Monica Aldama;Veron Davis
+29,percent,9,1,15,AJ McLean,Chrishell Stause,Anne Heche,Anne Heche,Anne Heche,True,0.0:Anne Heche;Carole Baskin;Charles Oakley;Chrishell Stause;Jeannie Mai;Jesse Metcalfe;Monica Aldama;Veron Davis
+29,percent,10,2,15,Johnny Weir;Skai Jackson,AJ McLean;Monica Aldama,AJ McLean;Anne Heche,AJ McLean;Anne Heche,AJ McLean;Anne Heche,True,0.0:AJ McLean;Anne Heche;Carole Baskin;Charles Oakley;Chrishell Stause;Jeannie Mai;Jesse Metcalfe;Monica Aldama;Veron Davis
+18,rank,2,2,12,Diana Nyad;Sean Avery,Diana Nyad;Sean Avery,Diana Nyad;Billy Dee Williams,Diana Nyad;Billy Dee Williams,Diana Nyad;Billy Dee Williams,True,14.0:Cody Simpson;NeNe Leakes
+18,rank,5,1,12,Cody Simpson,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,8.0:Charlie White;Danica McKellar;17.0:Cody Simpson;Drew Carey;20.0:Billy Dee Williams;Diana Nyad;Sean Avery
+18,rank,6,1,12,Drew Carey,Cody Simpson,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,8.0:Charlie White;James Maslow;18.0:Billy Dee Williams;Cody Simpson;Diana Nyad;Sean Avery
+18,rank,7,1,12,NeNe Leakes,Drew Carey,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,10.0:Charlie White;Danica McKellar;16.0:Billy Dee Williams;Cody Simpson;Diana Nyad;Drew Carey;Sean Avery
+18,rank,8,1,12,Danica McKellar,NeNe Leakes,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,6.0:Charlie White;Meryl Davis;14.0:Billy Dee Williams;Cody Simpson;Diana Nyad;Drew Carey;NeNe Leakes;Sean Avery
+18,rank,9,1,12,Charlie White,Danica McKellar,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,12.0:Billy Dee Williams;Cody Simpson;Danica McKellar;Diana Nyad;Drew Carey;NeNe Leakes;Sean Avery
+18,rank,10,1,12,James Maslow,Charlie White,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,10.0:Billy Dee Williams;Charlie White;Cody Simpson;Danica McKellar;Diana Nyad;Drew Carey;NeNe Leakes;Sean Avery
+15,percent,1,1,13,Pamela Anderson,Pamela Anderson,Pamela Anderson,Pamela Anderson,Pamela Anderson,False,
+15,percent,2,1,13,Joey Fatone,Bristol Palin,Pamela Anderson,Pamela Anderson,Pamela Anderson,False,
+15,percent,3,2,13,Drew Lachey;Helio Castroneves,Joey Fatone;Drew Lachey,Pamela Anderson;Joey Fatone,Pamela Anderson;Joey Fatone,Pamela Anderson;Joey Fatone,False,
+15,percent,4,1,13,Bristol Palin,Helio Castroneves,Pamela Anderson,Pamela Anderson,Pamela Anderson,False,
+15,percent,6,1,13,Sabrina Bryan,Gilles Marini,Pamela Anderson,Pamela Anderson,Pamela Anderson,False,
+15,percent,8,2,13,Gilles Marini;Kirstie Alley,Sabrina Bryan;Kirstie Alley,Pamela Anderson;Sabrina Bryan,Pamela Anderson;Sabrina Bryan,Pamela Anderson;Sabrina Bryan,True,0.0:Pamela Anderson;Sabrina Bryan
+15,percent,9,2,13,Apolo Anton Ohno;Emmitt Smith,Emmitt Smith;Apolo Anton Ohno,Drew Lachey;Pamela Anderson,Drew Lachey;Pamela Anderson,Drew Lachey;Pamela Anderson,True,0.0:Drew Lachey;Pamela Anderson;Sabrina Bryan
+30,rank,2,1,15,Martin Kove,Martin Kove,Martin Kove,Martin Kove,Martin Kove,True,3.0:Amanda Kloots;JoJo Siwa;9.0:Melanie C;Melora Hardin;27.0:Brian Austin Green;Matt James
+30,rank,3,1,15,Christine Chiu,Christine Chiu,Martin Kove,Martin Kove,Martin Kove,True,"12.0:Mike ""The Miz"" Mizanin;Suni Lee;18.0:Iman Shumpert;Kenya Moore;22.0:Cody Rigsby;Matt James"
+30,rank,4,2,15,Brian Austin Green;Matt James,Matt James;Kenya Moore,Christine Chiu;Martin Kove,Christine Chiu;Martin Kove,Christine Chiu;Martin Kove,True,"16.0:Cody Rigsby;Mike ""The Miz"" Mizanin;28.0:Christine Chiu;Martin Kove"
+30,rank,5,1,15,Melanie C,Brian Austin Green,Brian Austin Green,Brian Austin Green,Brian Austin Green,True,24.0:Brian Austin Green;Christine Chiu;Martin Kove;Matt James
+30,rank,6,1,15,Kenya Moore,Melanie C,Brian Austin Green,Brian Austin Green,Brian Austin Green,True,11.0:Jimmie Allen;Suni Lee;22.0:Brian Austin Green;Christine Chiu;Martin Kove;Matt James;Melanie C
+30,rank,7,1,15,"Mike ""The Miz"" Mizanin","Mike ""The Miz"" Mizanin",Brian Austin Green,Brian Austin Green,Brian Austin Green,True,8.0:Amanda Kloots;Cody Rigsby;Melora Hardin;Olivia Jade;20.0:Brian Austin Green;Christine Chiu;Kenya Moore;Martin Kove;Matt James;Melanie C
+30,rank,8,2,15,Jimmie Allen;Olivia Jade,Olivia Jade;Jimmie Allen,Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,True,"18.0:Brian Austin Green;Christine Chiu;Kenya Moore;Martin Kove;Matt James;Melanie C;Mike ""The Miz"" Mizanin"
+30,rank,9,2,15,Melora Hardin;Suni Lee,Melora Hardin;Cody Rigsby,Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,True,"14.0:Brian Austin Green;Christine Chiu;Jimmie Allen;Kenya Moore;Martin Kove;Matt James;Melanie C;Mike ""The Miz"" Mizanin;Olivia Jade"
+24,rank,2,1,12,Chris Kattan,Chris Kattan,Chris Kattan,Chris Kattan,Chris Kattan,True,12.0:Bonner Bolton;David Ross
+24,rank,3,1,12,Charo,Charo,Chris Kattan,Chris Kattan,Chris Kattan,True,7.0:Heather Morris;Simone Biles;8.0:Nancy Kerrigan;Rashad Jennings;16.0:Bonner Bolton;Erika Jayne
+24,rank,4,1,12,Mr. T,Mr. T,Charo,Charo,Charo,True,11.0:Bonner Bolton;David Ross;Nancy Kerrigan;22.0:Charo;Chris Kattan
+24,rank,5,1,12,Erika Jayne,Erika Jayne,Charo,Charo,Charo,True,10.0:Heather Morris;Nancy Kerrigan;12.0:David Ross;Nick Viall;20.0:Charo;Chris Kattan;Mr. T
+24,rank,6,1,12,Heather Morris,Nick Viall,Charo,Charo,Charo,True,18.0:Charo;Chris Kattan;Erika Jayne;Mr. T
+24,rank,7,2,12,Nancy Kerrigan;Nick Viall,Heather Morris;Bonner Bolton,Charo;Chris Kattan,Charo;Chris Kattan,Charo;Chris Kattan,True,12.0:Bonner Bolton;Nick Viall;16.0:Charo;Chris Kattan;Erika Jayne;Heather Morris;Mr. T
+24,rank,8,1,12,Bonner Bolton,Nancy Kerrigan,Charo,Charo,Charo,True,7.0:David Ross;Simone Biles;12.0:Charo;Chris Kattan;Erika Jayne;Heather Morris;Mr. T;Nancy Kerrigan;Nick Viall
+24,rank,9,1,12,Simone Biles,David Ross,Bonner Bolton,Bonner Bolton,Bonner Bolton,True,4.0:Normani;Rashad Jennings;10.0:Bonner Bolton;Charo;Chris Kattan;Erika Jayne;Heather Morris;Mr. T;Nancy Kerrigan;Nick Viall
+18,percent,2,2,12,Diana Nyad;Sean Avery,Diana Nyad;Billy Dee Williams,Diana Nyad;Billy Dee Williams,Diana Nyad;Billy Dee Williams,Diana Nyad;Billy Dee Williams,False,
+18,percent,5,1,12,Cody Simpson,Sean Avery,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,0.0:Billy Dee Williams;Diana Nyad;Sean Avery
+18,percent,6,1,12,Drew Carey,Cody Simpson,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,0.0:Billy Dee Williams;Cody Simpson;Diana Nyad;Sean Avery
+18,percent,7,1,12,NeNe Leakes,Drew Carey,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,0.0:Billy Dee Williams;Cody Simpson;Diana Nyad;Drew Carey;Sean Avery
+18,percent,8,1,12,Danica McKellar,NeNe Leakes,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,0.0:Billy Dee Williams;Cody Simpson;Diana Nyad;Drew Carey;NeNe Leakes;Sean Avery
+18,percent,9,1,12,Charlie White,Danica McKellar,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,0.0:Billy Dee Williams;Cody Simpson;Danica McKellar;Diana Nyad;Drew Carey;NeNe Leakes;Sean Avery
+18,percent,10,1,12,James Maslow,Charlie White,Billy Dee Williams,Billy Dee Williams,Billy Dee Williams,True,0.0:Billy Dee Williams;Charlie White;Cody Simpson;Danica McKellar;Diana Nyad;Drew Carey;NeNe Leakes;Sean Avery
+29,rank,2,1,15,Charles Oakley,Charles Oakley,Charles Oakley,Charles Oakley,Charles Oakley,True,10.0:AJ McLean;Johnny Weir;12.0:Jeannie Mai;Jesse Metcalfe
+29,rank,3,1,15,Carole Baskin,Anne Heche,Charles Oakley,Charles Oakley,Charles Oakley,True,12.0:AJ McLean;Jeannie Mai;21.0:Jesse Metcalfe;Nelly
+29,rank,4,1,15,Anne Heche,Carole Baskin,Carole Baskin,Carole Baskin,Carole Baskin,True,6.0:Justina Machado;Skai Jackson;28.0:Carole Baskin;Charles Oakley
+29,rank,5,1,15,Jesse Metcalfe,Chrishell Stause,Anne Heche,Anne Heche,Anne Heche,True,12.0:Monica Aldama;Skai Jackson;26.0:Anne Heche;Carole Baskin;Charles Oakley
+29,rank,6,1,15,Veron Davis,Jesse Metcalfe,Anne Heche,Anne Heche,Anne Heche,True,6.0:AJ McLean;Nev Schulman;15.0:Chrishell Stause;Johnny Weir;24.0:Anne Heche;Carole Baskin;Charles Oakley;Jesse Metcalfe
+29,rank,7,1,15,Monica Aldama,Veron Davis,Anne Heche,Anne Heche,Anne Heche,True,7.0:Johnny Weir;Justina Machado;22.0:Anne Heche;Carole Baskin;Charles Oakley;Jesse Metcalfe;Veron Davis
+29,rank,8,1,15,Chrishell Stause,Jeannie Mai,Anne Heche,Anne Heche,Anne Heche,True,6.0:Johnny Weir;Justina Machado;Kaitlyn Bristowe;18.0:Anne Heche;Carole Baskin;Charles Oakley;Jeannie Mai;Jesse Metcalfe;Monica Aldama;Veron Davis
+29,rank,9,1,15,AJ McLean,Monica Aldama,Anne Heche,Anne Heche,Anne Heche,True,16.0:Anne Heche;Carole Baskin;Charles Oakley;Chrishell Stause;Jeannie Mai;Jesse Metcalfe;Monica Aldama;Veron Davis
+29,rank,10,2,15,Johnny Weir;Skai Jackson,AJ McLean;Johnny Weir,AJ McLean;Anne Heche,AJ McLean;Anne Heche,AJ McLean;Anne Heche,True,10.0:Nelly;Skai Jackson;14.0:AJ McLean;Anne Heche;Carole Baskin;Charles Oakley;Chrishell Stause;Jeannie Mai;Jesse Metcalfe;Monica Aldama;Veron Davis
+24,percent,2,1,12,Chris Kattan,Chris Kattan,Chris Kattan,Chris Kattan,Chris Kattan,False,
+24,percent,3,1,12,Charo,Charo,Chris Kattan,Chris Kattan,Chris Kattan,False,
+24,percent,4,1,12,Mr. T,Mr. T,Charo,Charo,Charo,True,0.0:Charo;Chris Kattan
+24,percent,5,1,12,Erika Jayne,Erika Jayne,Charo,Charo,Charo,True,0.0:Charo;Chris Kattan;Mr. T
+24,percent,6,1,12,Heather Morris,Nancy Kerrigan,Charo,Charo,Charo,True,0.0:Charo;Chris Kattan;Erika Jayne;Mr. T
+24,percent,7,2,12,Nancy Kerrigan;Nick Viall,Heather Morris;Bonner Bolton,Charo;Chris Kattan,Charo;Chris Kattan,Charo;Chris Kattan,True,0.0:Charo;Chris Kattan;Erika Jayne;Heather Morris;Mr. T
+24,percent,8,1,12,Bonner Bolton,Nick Viall,Charo,Charo,Charo,True,0.0:Charo;Chris Kattan;Erika Jayne;Heather Morris;Mr. T;Nancy Kerrigan;Nick Viall
+24,percent,9,1,12,Simone Biles,Simone Biles,Bonner Bolton,Bonner Bolton,Bonner Bolton,True,0.0:Bonner Bolton;Charo;Chris Kattan;Erika Jayne;Heather Morris;Mr. T;Nancy Kerrigan;Nick Viall
+15,rank,1,1,13,Pamela Anderson,Pamela Anderson,Pamela Anderson,Pamela Anderson,Pamela Anderson,True,4.0:Emmitt Smith;Gilles Marini;11.0:Apolo Anton Ohno;Kelly Monaco;20.0:Bristol Palin;Kirstie Alley
+15,rank,2,1,13,Joey Fatone,Joey Fatone,Bristol Palin,Bristol Palin,Bristol Palin,True,8.0:Melissa Rycroft;Sabrina Bryan;15.0:Emmitt Smith;Kelly Monaco;20.0:Joey Fatone;Kirstie Alley
+15,rank,3,2,13,Drew Lachey;Helio Castroneves,Drew Lachey;Bristol Palin,Bristol Palin;Drew Lachey,Drew Lachey;Bristol Palin,Drew Lachey;Bristol Palin,True,6.0:Kelly Monaco;Shawn Johnson;13.0:Joey Fatone;Sabrina Bryan;16.0:Emmitt Smith;Helio Castroneves;22.0:Bristol Palin;Drew Lachey
+15,rank,4,1,13,Bristol Palin,Helio Castroneves,Kirstie Alley,Bristol Palin,Bristol Palin,True,9.0:Gilles Marini;Kelly Monaco;Melissa Rycroft;17.0:Pamela Anderson;Sabrina Bryan;21.0:Bristol Palin;Kirstie Alley
+15,rank,6,1,13,Sabrina Bryan,Emmitt Smith,Emmitt Smith,Emmitt Smith,Emmitt Smith,True,10.0:Apolo Anton Ohno;Drew Lachey;Shawn Johnson;14.0:Kelly Monaco;Sabrina Bryan;17.0:Kirstie Alley;Pamela Anderson
+15,rank,8,2,13,Gilles Marini;Kirstie Alley,Sabrina Bryan;Kirstie Alley,Pamela Anderson;Sabrina Bryan,Pamela Anderson;Sabrina Bryan,Pamela Anderson;Sabrina Bryan,True,10.0:Apolo Anton Ohno;Joey Fatone;12.0:Bristol Palin;Gilles Marini;Kelly Monaco;Shawn Johnson;20.0:Pamela Anderson;Sabrina Bryan
+15,rank,9,2,13,Apolo Anton Ohno;Emmitt Smith,Gilles Marini;Kelly Monaco,Drew Lachey;Pamela Anderson,Drew Lachey;Pamela Anderson,Drew Lachey;Pamela Anderson,True,7.0:Helio Castroneves;Melissa Rycroft;Shawn Johnson;17.0:Drew Lachey;Pamela Anderson;Sabrina Bryan
+30,percent,2,1,15,Martin Kove,Martin Kove,Martin Kove,Martin Kove,Martin Kove,False,
+30,percent,3,1,15,Christine Chiu,Matt James,Martin Kove,Martin Kove,Martin Kove,False,
+30,percent,4,2,15,Brian Austin Green;Matt James,Christine Chiu;Brian Austin Green,Christine Chiu;Martin Kove,Christine Chiu;Martin Kove,Christine Chiu;Martin Kove,True,0.0:Christine Chiu;Martin Kove
+30,percent,5,1,15,Melanie C,Jimmie Allen,Brian Austin Green,Brian Austin Green,Brian Austin Green,True,0.0:Brian Austin Green;Christine Chiu;Martin Kove;Matt James
+30,percent,6,1,15,Kenya Moore,Melanie C,Brian Austin Green,Brian Austin Green,Brian Austin Green,True,0.0:Brian Austin Green;Christine Chiu;Martin Kove;Matt James;Melanie C
+30,percent,7,1,15,"Mike ""The Miz"" Mizanin",Kenya Moore,Brian Austin Green,Brian Austin Green,Brian Austin Green,True,0.0:Brian Austin Green;Christine Chiu;Kenya Moore;Martin Kove;Matt James;Melanie C
+30,percent,8,2,15,Jimmie Allen;Olivia Jade,"Mike ""The Miz"" Mizanin;Olivia Jade",Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,True,"0.0:Brian Austin Green;Christine Chiu;Kenya Moore;Martin Kove;Matt James;Melanie C;Mike ""The Miz"" Mizanin"
+30,percent,9,2,15,Melora Hardin;Suni Lee,Melora Hardin;Suni Lee,Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,Brian Austin Green;Christine Chiu,True,"0.0:Brian Austin Green;Christine Chiu;Jimmie Allen;Kenya Moore;Martin Kove;Matt James;Melanie C;Mike ""The Miz"" Mizanin;Olivia Jade"
+31,percent,1,1,16,Jason Lewis,Jason Lewis,Jason Lewis,Jason Lewis,Jason Lewis,False,
+31,percent,2,1,16,Teresa Giudice,Cheryl Ladd,Jason Lewis,Jason Lewis,Jason Lewis,False,
+31,percent,3,1,16,Cheryl Ladd,Teresa Giudice,Jason Lewis,Jason Lewis,Jason Lewis,True,0.0:Jason Lewis;Teresa Giudice
+31,percent,4,1,16,Sam Champion,Sam Champion,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,0.0:Cheryl Ladd;Jason Lewis;Teresa Giudice
+31,percent,5,1,16,Joseph Baena,Daniel Durant,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,0.0:Cheryl Ladd;Jason Lewis;Sam Champion;Teresa Giudice
+31,percent,6,1,16,Jessie James Decker,Joseph Baena,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,0.0:Cheryl Ladd;Jason Lewis;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice
+31,percent,7,1,16,Jordin Sparks,Jessie James Decker,Cheryl Ladd,Cheryl Ladd,Cheryl Ladd,True,0.0:Cheryl Ladd;Jason Lewis;Jessie James Decker;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice
+31,percent,8,2,16,Heidi D'Amelio;Vinny Guadagnino,Jordin Sparks;Selma Blair,Cheryl Ladd;Jason Lewis,Cheryl Ladd;Jason Lewis,Cheryl Ladd;Jason Lewis,True,0.0:Cheryl Ladd;Jason Lewis;Jessie James Decker;Jordin Sparks;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice
+31,percent,9,2,16,Daniel Durant;Trevor Donovan,Heidi D'Amelio;Vinny Guadagnino,Cheryl Ladd;Heidi D'Amelio,Cheryl Ladd;Heidi D'Amelio,Cheryl Ladd;Heidi D'Amelio,True,0.0:Cheryl Ladd;Heidi D'Amelio;Jason Lewis;Jessie James Decker;Jordin Sparks;Joseph Baena;Sam Champion;Selma Blair;Teresa Giudice;Vinny Guadagnino
+14,rank,2,1,12,Martina Navratilova,Jack Wagner,Martina Navratilova,Martina Navratilova,Martina Navratilova,True,19.0:Gladys Knight;Jack Wagner
+14,rank,3,1,12,Jack Wagner,Martina Navratilova,Martina Navratilova,Martina Navratilova,Martina Navratilova,True,7.0:Donald Driver;Maria Menounos
+14,rank,4,1,12,Sherri Sheperd,Sherri Sheperd,Jack Wagner,Jack Wagner,Jack Wagner,True,22.0:Jack Wagner;Martina Navratilova
+14,rank,5,1,12,Gavin DeGraw,Gavin DeGraw,Jack Wagner,Jack Wagner,Jack Wagner,True,11.0:Jaleel White;Roshon Fegan;15.0:Gladys Knight;Melissa Gilbert;20.0:Jack Wagner;Martina Navratilova;Sherri Sheperd
+14,rank,6,1,12,Gladys Knight,Gladys Knight,Gavin DeGraw,Gavin DeGraw,Gavin DeGraw,True,7.0:Donald Driver;Jaleel White;18.0:Gavin DeGraw;Jack Wagner;Martina Navratilova;Sherri Sheperd
+14,rank,7,1,12,Jaleel White,Jaleel White,Gavin DeGraw,Gavin DeGraw,Gavin DeGraw,True,5.0:Maria Menounos;William Levy;11.0:Jaleel White;Roshon Fegan;16.0:Gavin DeGraw;Gladys Knight;Jack Wagner;Martina Navratilova;Sherri Sheperd
+14,rank,8,2,12,Melissa Gilbert;Roshon Fegan,Melissa Gilbert;Maria Menounos,Gavin DeGraw;Gladys Knight,Gavin DeGraw;Gladys Knight,Gavin DeGraw;Gladys Knight,True,14.0:Gavin DeGraw;Gladys Knight;Jack Wagner;Jaleel White;Martina Navratilova;Sherri Sheperd
+14,rank,9,1,12,Maria Menounos,Roshon Fegan,Gavin DeGraw,Gavin DeGraw,Gavin DeGraw,True,6.0:Donald Driver;Katherine Jenkins;10.0:Gavin DeGraw;Gladys Knight;Jack Wagner;Jaleel White;Martina Navratilova;Melissa Gilbert;Roshon Fegan;Sherri Sheperd
+25,percent,2,2,13,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Derek Fisher,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Debbie Gibson,False,
+25,percent,4,1,13,Derek Fisher,Debbie Gibson,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,0.0:Barbara Corcoran;Debbie Gibson
+25,percent,5,1,13,Sasha Pieterse,Nick Lachey,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,0.0:Barbara Corcoran;Debbie Gibson;Derek Fisher
+25,percent,6,1,13,Nick Lachey,Sasha Pieterse,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,0.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Sasha Pieterse
+25,percent,7,2,13,Nikki Bella;Vanessa Lachey,Nikki Bella;Terrell Owens,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Debbie Gibson,Barbara Corcoran;Debbie Gibson,True,0.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Sasha Pieterse
+25,percent,8,1,13,Terrell Owens,Vanessa Lachey,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,0.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Nikki Bella;Sasha Pieterse;Vanessa Lachey
+25,percent,9,1,13,Victoria Arlen,Victoria Arlen,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,0.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Nikki Bella;Sasha Pieterse;Terrell Owens;Vanessa Lachey
+25,percent,10,1,13,Drew Scott,Drew Scott,Barbara Corcoran,Barbara Corcoran,Barbara Corcoran,True,0.0:Barbara Corcoran;Debbie Gibson;Derek Fisher;Nick Lachey;Nikki Bella;Sasha Pieterse;Terrell Owens;Vanessa Lachey;Victoria Arlen
+28,rank,2,1,12,Mary Wilson,Ray Lewis,Lamar Odom,Ray Lewis,Ray Lewis,True,22.0:Lamar Odom;Ray Lewis
+28,rank,4,1,12,Lamar Odom,Mary Wilson,Mary Wilson,Mary Wilson,Mary Wilson,True,14.0:Karamo Brown;Kate Flannery;22.0:Mary Wilson;Ray Lewis
+28,rank,6,1,12,Sailor Brinkley-Cook,Lamar Odom,Lamar Odom,Lamar Odom,Lamar Odom,True,6.0:James Van Der Beek;Kel Mitchell;7.0:Ally Brooke;Kate Flannery;20.0:Lamar Odom;Mary Wilson;Ray Lewis
+28,rank,7,1,12,Karamo Brown,Sailor Brinkley-Cook,Lamar Odom,Lamar Odom,Lamar Odom,True,7.0:Hannah Brown;Kel Mitchell;18.0:Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook
+28,rank,8,1,12,Kate Flannery,Karamo Brown,Karamo Brown,Karamo Brown,Karamo Brown,True,6.0:James Van Der Beek;Kel Mitchell;16.0:Karamo Brown;Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook
+28,rank,9,1,12,Sean Spicer,Kate Flannery,Karamo Brown,Karamo Brown,Karamo Brown,True,14.0:Karamo Brown;Kate Flannery;Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook
+28,rank,10,1,12,James Van Der Beek,Sean Spicer,Karamo Brown,Karamo Brown,Karamo Brown,True,12.0:Karamo Brown;Kate Flannery;Lamar Odom;Mary Wilson;Ray Lewis;Sailor Brinkley-Cook;Sean Spicer
+19,percent,1,1,13,Lolo Jones,Betsey Johnson,Lolo Jones,Lolo Jones,Lolo Jones,False,
+19,percent,2,1,13,Tavis Smiley,Lolo Jones,Lolo Jones,Lolo Jones,Lolo Jones,False,
+19,percent,3,1,13,Randy Couture,Tavis Smiley,Lolo Jones,Lolo Jones,Lolo Jones,True,0.0:Lolo Jones;Tavis Smiley
+19,percent,4,1,13,Betsey Johnson,Randy Couture,Lolo Jones,Lolo Jones,Lolo Jones,True,0.0:Lolo Jones;Randy Couture;Tavis Smiley
+19,percent,6,1,13,Jonathan Bennett,Jonathan Bennett,Betsey Johnson,Betsey Johnson,Betsey Johnson,True,0.0:Betsey Johnson;Lolo Jones;Randy Couture;Tavis Smiley
+19,percent,7,1,13,Antonio Sabato Jr.,Michael Waltrip,Betsey Johnson,Betsey Johnson,Betsey Johnson,True,0.0:Betsey Johnson;Jonathan Bennett;Lolo Jones;Randy Couture;Tavis Smiley
+19,percent,8,1,13,Michael Waltrip,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,0.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lolo Jones;Randy Couture;Tavis Smiley
+19,percent,9,1,13,Lea Thompson,Tommy Chong,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,0.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lolo Jones;Michael Waltrip;Randy Couture;Tavis Smiley
+19,percent,10,1,13,Tommy Chong,Lea Thompson,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,0.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lea Thompson;Lolo Jones;Michael Waltrip;Randy Couture;Tavis Smiley
+19,percent,11,1,13,Bethany Mota,Bethany Mota,Antonio Sabato Jr.,Antonio Sabato Jr.,Antonio Sabato Jr.,True,0.0:Antonio Sabato Jr.;Betsey Johnson;Jonathan Bennett;Lea Thompson;Lolo Jones;Michael Waltrip;Randy Couture;Tavis Smiley;Tommy Chong
+16,rank,3,1,12,Wynonna Judd,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,True,5.0:Jacoby Jones;Kellie Pickler;11.0:Ingo Rademacher;Victor Ortiz
+16,rank,4,1,12,Lisa Vanderpump,Wynonna Judd,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,True,4.0:Alexandra Raisman;Kellie Pickler;22.0:Dorothy Hamill;Wynonna Judd
+16,rank,5,1,12,D. L. Hughley,Lisa Vanderpump,Dorothy Hamill,Dorothy Hamill,Dorothy Hamill,True,7.0:Alexandra Raisman;Jacoby Jones;11.0:Ingo Rademacher;Sean Lowe;20.0:Dorothy Hamill;Lisa Vanderpump;Wynonna Judd
+16,rank,6,1,12,Victor Ortiz,D. L. Hughley,D. L. Hughley,D. L. Hughley,D. L. Hughley,True,10.0:Jacoby Jones;Sean Lowe;18.0:D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Wynonna Judd
+16,rank,7,1,12,Andy Dick,Victor Ortiz,D. L. Hughley,D. L. Hughley,D. L. Hughley,True,16.0:D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Victor Ortiz;Wynonna Judd
+16,rank,8,1,12,Sean Lowe,Andy Dick,Andy Dick,Andy Dick,Andy Dick,True,3.0:Alexandra Raisman;Zendaya;14.0:Andy Dick;D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Victor Ortiz;Wynonna Judd
+16,rank,9,1,12,Ingo Rademacher,Sean Lowe,Andy Dick,Andy Dick,Andy Dick,True,5.0:Jacoby Jones;Kellie Pickler;12.0:Andy Dick;D. L. Hughley;Dorothy Hamill;Lisa Vanderpump;Sean Lowe;Victor Ortiz;Wynonna Judd
+16,rank,10,1,12,Alexandra Raisman,Ingo Rademacher,Andy Dick,Andy Dick,Andy Dick,True,10.0:Andy Dick;D. L. Hughley;Dorothy Hamill;Ingo Rademacher;Lisa Vanderpump;Sean Lowe;Victor Ortiz;Wynonna Judd
+33,percent,2,2,13,Anna Delvey;Tori Spelling,Anna Delvey;Eric Roberts,Reginald VelJohnson;Eric Roberts,Reginald VelJohnson;Eric Roberts,Reginald VelJohnson;Eric Roberts,False,
+33,percent,3,2,13,Eric Roberts;Reginald VelJohnson,Tori Spelling;Reginald VelJohnson,Anna Delvey;Tori Spelling,Anna Delvey;Tori Spelling,Anna Delvey;Tori Spelling,True,0.0:Anna Delvey;Tori Spelling
+33,percent,4,1,13,Brooks Nader,Brooks Nader,Anna Delvey,Anna Delvey,Anna Delvey,True,0.0:Anna Delvey;Eric Roberts;Reginald VelJohnson;Tori Spelling
+33,percent,5,1,13,Phaedra Parks,Phaedra Parks,Anna Delvey,Anna Delvey,Anna Delvey,True,0.0:Anna Delvey;Brooks Nader;Eric Roberts;Reginald VelJohnson;Tori Spelling
+33,percent,6,1,13,Jenn Tran,Jenn Tran,Anna Delvey,Anna Delvey,Anna Delvey,True,0.0:Anna Delvey;Brooks Nader;Eric Roberts;Phaedra Parks;Reginald VelJohnson;Tori Spelling
+33,percent,7,1,13,Dwight Howard ,Dwight Howard,Anna Delvey,Anna Delvey,Anna Delvey,True,0.0:Anna Delvey;Brooks Nader;Eric Roberts;Jenn Tran;Phaedra Parks;Reginald VelJohnson;Tori Spelling
+27,percent,1,1,13,Nikki Glaser,Nikki Glaser,Joe Amabile,Joe Amabile,Joe Amabile,False,
+27,percent,2,1,13,Danelle Umstead,Danelle Umstead,Nikki Glaser,Nikki Glaser,Nikki Glaser,False,
+27,percent,3,1,13,Nancy McKeon,Nancy McKeon,Danelle Umstead,Danelle Umstead,Danelle Umstead,True,0.0:Danelle Umstead;Nikki Glaser
+27,percent,4,1,13,Tinashe,Joe Amabile,Danelle Umstead,Danelle Umstead,Danelle Umstead,True,0.0:Danelle Umstead;Nancy McKeon;Nikki Glaser
+27,percent,6,1,13,Mary Lou Retton,Tinashe,Danelle Umstead,Danelle Umstead,Danelle Umstead,True,0.0:Danelle Umstead;Nancy McKeon;Nikki Glaser;Tinashe
+27,percent,7,2,13,DeMarcus Ware;John Schneider,Mary Lou Retton;DeMarcus Ware,Danelle Umstead;Mary Lou Retton,Danelle Umstead;Mary Lou Retton,Danelle Umstead;Mary Lou Retton,True,0.0:Danelle Umstead;Mary Lou Retton;Nancy McKeon;Nikki Glaser;Tinashe
+27,percent,8,2,13,Joe Amabile;Juan Pablo Di Pace,John Schneider;Juan Pablo Di Pace,Danelle Umstead;DeMarcus Ware,Danelle Umstead;DeMarcus Ware,Danelle Umstead;DeMarcus Ware,True,0.0:Danelle Umstead;DeMarcus Ware;John Schneider;Mary Lou Retton;Nancy McKeon;Nikki Glaser;Tinashe
+26,percent,1,2,10,Jamie Anderson;Johnny Damon,Johnny Damon;Kareem Abdul-Jabbar,Johnny Damon;Jamie Anderson,Johnny Damon;Jamie Anderson,Johnny Damon;Jamie Anderson,False,
+26,percent,2,2,10,Arike Ogunbowale;Kareem Abdul-Jabbar,Jamie Anderson;Jennie Finch Daigle,Jamie Anderson;Johnny Damon,Jamie Anderson;Johnny Damon,Jamie Anderson;Johnny Damon,True,0.0:Jamie Anderson;Johnny Damon
+26,percent,3,3,10,Chris Mazdzer;Jennie Finch Daigle;Mirai Nagasu,Arike Ogunbowale;Chris Mazdzer;Mirai Nagasu,Arike Ogunbowale;Jamie Anderson;Johnny Damon,Arike Ogunbowale;Jamie Anderson;Johnny Damon,Arike Ogunbowale;Jamie Anderson;Johnny Damon,True,0.0:Arike Ogunbowale;Jamie Anderson;Johnny Damon;Kareem Abdul-Jabbar
+32,percent,1,1,14,Matt Walsh,Matt Walsh,Matt Walsh,Matt Walsh,Matt Walsh,False,
+32,percent,2,1,14,Jamie Lynn Spears,Mauricio Umansky,Matt Walsh,Matt Walsh,Matt Walsh,False,
+32,percent,3,1,14,Tyson Beckford,Jamie Lynn Spears,Jamie Lynn Spears,Jamie Lynn Spears,Jamie Lynn Spears,True,0.0:Jamie Lynn Spears;Matt Walsh
+32,percent,4,1,14,Adrian Peterson,Tyson Beckford,Jamie Lynn Spears,Jamie Lynn Spears,Jamie Lynn Spears,True,0.0:Jamie Lynn Spears;Matt Walsh;Tyson Beckford
+32,percent,5,1,14,Mira Sorvino,Adrian Peterson,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,0.0:Adrian Peterson;Jamie Lynn Spears;Matt Walsh;Tyson Beckford
+32,percent,6,1,14,Mauricio Umansky,Mira Sorvino,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,0.0:Adrian Peterson;Jamie Lynn Spears;Matt Walsh;Mira Sorvino;Tyson Beckford
+32,percent,7,1,14,Lele Pons,Barry Williams,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,0.0:Adrian Peterson;Jamie Lynn Spears;Matt Walsh;Mauricio Umansky;Mira Sorvino;Tyson Beckford
+32,percent,8,1,14,Barry Williams,Lele Pons,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,0.0:Adrian Peterson;Jamie Lynn Spears;Lele Pons;Matt Walsh;Mauricio Umansky;Mira Sorvino;Tyson Beckford
+32,percent,9,1,14,Harry Jowsey,Harry Jowsey,Adrian Peterson,Adrian Peterson,Adrian Peterson,True,0.0:Adrian Peterson;Barry Williams;Jamie Lynn Spears;Lele Pons;Matt Walsh;Mauricio Umansky;Mira Sorvino;Tyson Beckford
+17,rank,2,1,12,Keyshawn Johnson,Keyshawn Johnson,Bill Nye,Keyshawn Johnson,Keyshawn Johnson,True,"9.0:Christina Milian;Leah Remini;17.0:Bill Engvall;Nicole ""Snooki"" Polizzi;23.0:Bill Nye;Keyshawn Johnson"
+17,rank,3,1,12,Bill Nye,Bill Nye,Keyshawn Johnson,Keyshawn Johnson,Keyshawn Johnson,True,"11.0:Christina Milian;Nicole ""Snooki"" Polizzi"
+17,rank,4,1,12,Valerie Harper,Valerie Harper,Bill Nye,Bill Nye,Bill Nye,True,22.0:Bill Nye;Keyshawn Johnson
+17,rank,5,1,12,Christina Milian,Leah Remini,Bill Nye,Bill Nye,Bill Nye,True,10.0:Christina Milian;Elizabeth Berkley Lauren;20.0:Bill Nye;Keyshawn Johnson;Valerie Harper
+17,rank,7,1,12,"Nicole ""Snooki"" Polizzi",Christina Milian,Bill Nye,Bill Nye,Bill Nye,True,12.0:Bill Engvall;Leah Remini;18.0:Bill Nye;Christina Milian;Keyshawn Johnson;Valerie Harper
+17,rank,8,1,12,Brant Daugherty,"Nicole ""Snooki"" Polizzi",Bill Nye,Bill Nye,Bill Nye,True,"12.0:Brant Daugherty;Elizabeth Berkley Lauren;16.0:Bill Nye;Christina Milian;Keyshawn Johnson;Nicole ""Snooki"" Polizzi;Valerie Harper"
+17,rank,9,1,12,Elizabeth Berkley Lauren,Brant Daugherty,Bill Nye,Bill Nye,Bill Nye,True,"8.0:Elizabeth Berkley Lauren;Leah Remini;14.0:Bill Nye;Brant Daugherty;Christina Milian;Keyshawn Johnson;Nicole ""Snooki"" Polizzi;Valerie Harper"
+17,rank,10,1,12,Leah Remini,Elizabeth Berkley Lauren,Bill Nye,Bill Nye,Bill Nye,True,"9.0:Bill Engvall;Leah Remini;12.0:Bill Nye;Brant Daugherty;Christina Milian;Elizabeth Berkley Lauren;Keyshawn Johnson;Nicole ""Snooki"" Polizzi;Valerie Harper"
+17,rank,11,1,12,Bill Engvall,Bill Engvall,Bill Nye,Bill Nye,Bill Nye,True,"10.0:Bill Nye;Brant Daugherty;Christina Milian;Elizabeth Berkley Lauren;Keyshawn Johnson;Leah Remini;Nicole ""Snooki"" Polizzi;Valerie Harper"
+13,rank,1,1,12,Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),True,6.0:Hope Solo;Ricki Lake;14.0:Kristin Cavallari;Rob Kardashian
+13,rank,2,1,12,Elisabetta Canalis,Hope Solo,Metta World Peace (Ron),Metta World Peace (Ron),Metta World Peace (Ron),True,12.0:Hope Solo;Kristin Cavallari;15.0:David Arquette;Elisabetta Canalis
+13,rank,3,1,12,Kristin Cavallari,Elisabetta Canalis,Elisabetta Canalis,Elisabetta Canalis,Elisabetta Canalis,True,22.0:Elisabetta Canalis;Metta World Peace (Ron)
+13,rank,4,1,12,Chynna Phillips,Kristin Cavallari,Elisabetta Canalis,Elisabetta Canalis,Elisabetta Canalis,True,20.0:Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,rank,5,1,12,Carson Kressley,Chynna Phillips,Chynna Phillips,Chynna Phillips,Chynna Phillips,True,8.0:David Arquette;Hope Solo;18.0:Chynna Phillips;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,rank,6,1,12,Chaz Bono,Carson Kressley,Carson Kressley,Carson Kressley,Carson Kressley,True,8.0:Nancy Grace;Rob Kardashian;10.0:David Arquette;Hope Solo;16.0:Carson Kressley;Chynna Phillips;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,rank,7,1,12,David Arquette,Chaz Bono,Carson Kressley,Carson Kressley,Carson Kressley,True,11.0:David Arquette;Nancy Grace;14.0:Carson Kressley;Chaz Bono;Chynna Phillips;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,rank,8,1,12,Nancy Grace,David Arquette,Carson Kressley,Carson Kressley,Carson Kressley,True,3.0:J.R. Martinez;Ricki Lake;12.0:Carson Kressley;Chaz Bono;Chynna Phillips;David Arquette;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron)
+13,rank,9,1,12,Hope Solo,Nancy Grace,Carson Kressley,Carson Kressley,Carson Kressley,True,10.0:Carson Kressley;Chaz Bono;Chynna Phillips;David Arquette;Elisabetta Canalis;Kristin Cavallari;Metta World Peace (Ron);Nancy Grace
+22,percent,2,1,12,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,False,
+22,percent,3,1,12,Mischa Barton,Mischa Barton,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,False,
+22,percent,4,1,12,Marla Maples,Doug Flutie,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,True,0.0:Geraldo Rivera;Mischa Barton
+22,percent,6,1,12,Doug Flutie,Marla Maples,Geraldo Rivera,Geraldo Rivera,Geraldo Rivera,True,0.0:Geraldo Rivera;Marla Maples;Mischa Barton
+22,percent,7,2,12,Kim Fields;Von Miller,Jodie Sweetin;Kim Fields,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,True,0.0:Doug Flutie;Geraldo Rivera;Marla Maples;Mischa Barton
+22,percent,8,1,12,Jodie Sweetin,Von Miller,Doug Flutie,Doug Flutie,Doug Flutie,True,0.0:Doug Flutie;Geraldo Rivera;Kim Fields;Marla Maples;Mischa Barton;Von Miller
+22,percent,9,2,12,Antonio Brown;Wanya Morris,Antonio Brown;Wanya Morris,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,Doug Flutie;Geraldo Rivera,True,0.0:Doug Flutie;Geraldo Rivera;Jodie Sweetin;Kim Fields;Marla Maples;Mischa Barton;Von Miller
+23,percent,2,1,13,Jake T. Austin,Rick Perry,Rick Perry,Rick Perry,Rick Perry,False,
+23,percent,3,1,13,Rick Perry,Jake T. Austin,Jake T. Austin,Jake T. Austin,Jake T. Austin,False,
+23,percent,4,2,13,Babyface;Vanilla Ice,Babyface;Ryan Lochte,Jake T. Austin;Rick Perry,Jake T. Austin;Rick Perry,Jake T. Austin;Rick Perry,True,0.0:Jake T. Austin;Rick Perry
+23,percent,6,1,13,Amber Rose,Vanilla Ice,Babyface,Babyface,Babyface,True,0.0:Babyface;Jake T. Austin;Rick Perry;Vanilla Ice
+23,percent,7,1,13,Maureen McCormick,Amber Rose,Amber Rose,Amber Rose,Amber Rose,True,0.0:Amber Rose;Babyface;Jake T. Austin;Rick Perry;Vanilla Ice
+23,percent,8,1,13,Ryan Lochte,Maureen McCormick,Amber Rose,Amber Rose,Amber Rose,True,0.0:Amber Rose;Babyface;Jake T. Austin;Maureen McCormick;Rick Perry;Vanilla Ice
+23,percent,9,1,13,Marilu Henner,Marilu Henner,Amber Rose,Amber Rose,Amber Rose,True,0.0:Amber Rose;Babyface;Jake T. Austin;Maureen McCormick;Rick Perry;Ryan Lochte;Vanilla Ice
+23,percent,10,1,13,Terra Jole,Terra Jole,Amber Rose,Amber Rose,Amber Rose,True,0.0:Amber Rose;Babyface;Jake T. Austin;Marilu Henner;Maureen McCormick;Rick Perry;Ryan Lochte;Vanilla Ice
+23,percent,11,1,13,Jana Kramer,Jana Kramer,Amber Rose,Amber Rose,Amber Rose,True,0.0:Amber Rose;Babyface;Jake T. Austin;Marilu Henner;Maureen McCormick;Rick Perry;Ryan Lochte;Terra Jole;Vanilla Ice
+12,rank,2,1,11,Mike Catherwood,Mike Catherwood,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,6.0:Chris Jericho;Ralph Macchio
+12,rank,3,1,11,Wendy Williams,Wendy Williams,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,8.0:Petra Nemcova;Ralph Macchio
+12,rank,4,1,11,Sugar Ray Leonard,Sugar Ray Leonard,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,3.0:Chelsea Kane;Hines Ward;20.0:Mike Catherwood;Wendy Williams
+12,rank,5,1,11,Petra Nemcova,Petra Nemcova,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,3.0:Chelsea Kane;Hines Ward;11.0:Kendra Wilkinson;Kirstie Alley;18.0:Mike Catherwood;Sugar Ray Leonard;Wendy Williams
+12,rank,6,1,11,Chris Jericho,Chris Jericho,Mike Catherwood,Mike Catherwood,Mike Catherwood,True,5.0:Hines Ward;Romeo;16.0:Mike Catherwood;Petra Nemcova;Sugar Ray Leonard;Wendy Williams
+12,rank,7,1,11,Kendra Wilkinson,Romeo,Chris Jericho,Chris Jericho,Chris Jericho,True,4.0:Chelsea Kane;Ralph Macchio;9.0:Kendra Wilkinson;Romeo;14.0:Chris Jericho;Mike Catherwood;Petra Nemcova;Sugar Ray Leonard;Wendy Williams
+12,rank,8,1,11,Romeo,Kendra Wilkinson,Chris Jericho,Chris Jericho,Chris Jericho,True,8.0:Kirstie Alley;Ralph Macchio;Romeo;12.0:Chris Jericho;Kendra Wilkinson;Mike Catherwood;Petra Nemcova;Sugar Ray Leonard;Wendy Williams
+12,rank,9,1,11,Ralph Macchio,Ralph Macchio,Chris Jericho,Chris Jericho,Chris Jericho,True,10.0:Chris Jericho;Kendra Wilkinson;Mike Catherwood;Petra Nemcova;Romeo;Sugar Ray Leonard;Wendy Williams
+21,percent,2,2,13,Chaka Khan;Victor Espinoza,Chaka Khan;Gary Busey,Chaka Khan;Kim Zolciak-Biermann,Chaka Khan;Kim Zolciak-Biermann,Chaka Khan;Kim Zolciak-Biermann,False,
+21,percent,4,1,13,Gary Busey,Kim Zolciak-Biermann,Chaka Khan,Chaka Khan,Chaka Khan,True,0.0:Chaka Khan;Kim Zolciak-Biermann;Victor Espinoza
+21,percent,6,1,13,Paula Deen,Victor Espinoza,Chaka Khan,Chaka Khan,Chaka Khan,True,0.0:Chaka Khan;Gary Busey;Kim Zolciak-Biermann;Victor Espinoza
+21,percent,7,1,13,Hayes Grier,Paula Deen,Chaka Khan,Chaka Khan,Chaka Khan,True,0.0:Chaka Khan;Gary Busey;Kim Zolciak-Biermann;Paula Deen;Victor Espinoza
+21,percent,8,1,13,Andy Grammer,Hayes Grier,Chaka Khan,Chaka Khan,Chaka Khan,True,0.0:Chaka Khan;Gary Busey;Hayes Grier;Kim Zolciak-Biermann;Paula Deen;Victor Espinoza
+21,percent,9,1,13,Alexa PenaVega,Andy Grammer,Andy Grammer,Andy Grammer,Andy Grammer,True,0.0:Andy Grammer;Chaka Khan;Gary Busey;Hayes Grier;Kim Zolciak-Biermann;Paula Deen;Victor Espinoza
+21,percent,11,1,13,Carlos PenaVega,Alexa PenaVega,Alexa PenaVega,Alexa PenaVega,Alexa PenaVega,True,0.0:Alexa PenaVega;Andy Grammer;Chaka Khan;Gary Busey;Hayes Grier;Kim Zolciak-Biermann;Paula Deen;Tamar Braxton;Victor Espinoza
+10,rank,2,1,11,Shannen Doherty,Shannen Doherty,Buzz Aldrin,Buzz Aldrin,Buzz Aldrin,True,16.0:Aiden Turner;Chad Ochocinco;Shannen Doherty
+10,rank,3,1,11,Buzz Aldrin,Buzz Aldrin,Shannen Doherty,Shannen Doherty,Shannen Doherty,True,3.0:Evan Lysacek;Nicole Scherzinger
+10,rank,4,1,11,Aiden Turner,Aiden Turner,Buzz Aldrin,Buzz Aldrin,Buzz Aldrin,True,3.0:Evan Lysacek;Nicole Scherzinger;8.0:Chad Ochocinco;Erin Andrews;Pamela Anderson;13.0:Jake Pavelka;Niecy Nash;17.0:Aiden Turner;Kate Gosselin;20.0:Buzz Aldrin;Shannen Doherty
+10,rank,5,1,11,Kate Gosselin,Pamela Anderson,Aiden Turner,Aiden Turner,Aiden Turner,True,10.0:Chad Ochocinco;Jake Pavelka;Pamela Anderson;18.0:Aiden Turner;Buzz Aldrin;Shannen Doherty
+10,rank,6,1,11,Jake Pavelka,Kate Gosselin,Aiden Turner,Aiden Turner,Aiden Turner,True,7.0:Chad Ochocinco;Evan Lysacek;16.0:Aiden Turner;Buzz Aldrin;Kate Gosselin;Shannen Doherty
+10,rank,7,1,11,Pamela Anderson,Jake Pavelka,Aiden Turner,Aiden Turner,Aiden Turner,True,7.0:Chad Ochocinco;Erin Andrews;14.0:Aiden Turner;Buzz Aldrin;Jake Pavelka;Kate Gosselin;Shannen Doherty
+10,rank,8,1,11,Niecy Nash,Niecy Nash,Aiden Turner,Aiden Turner,Aiden Turner,True,12.0:Aiden Turner;Buzz Aldrin;Jake Pavelka;Kate Gosselin;Pamela Anderson;Shannen Doherty
+10,rank,9,1,11,Chad Ochocinco,Chad Ochocinco,Aiden Turner,Aiden Turner,Aiden Turner,True,10.0:Aiden Turner;Buzz Aldrin;Jake Pavelka;Kate Gosselin;Niecy Nash;Pamela Anderson;Shannen Doherty
+34,percent,2,2,14,Baron Davis;Corey Feldman,Corey Feldman;Baron Davis,Corey Feldman;Baron Davis,Corey Feldman;Baron Davis,Corey Feldman;Baron Davis,False,
+34,percent,3,1,14,Lauren Jauregui,Lauren Jauregui,Baron Davis,Baron Davis,Baron Davis,True,0.0:Baron Davis;Corey Feldman
+34,percent,4,1,14,Hilaria Baldwin,Danielle Fishel,Baron Davis,Baron Davis,Baron Davis,True,0.0:Baron Davis;Corey Feldman;Lauren Jauregui
+34,percent,6,1,14,Scott Hoying,Hilaria Baldwin,Baron Davis,Baron Davis,Baron Davis,True,0.0:Baron Davis;Corey Feldman;Hilaria Baldwin;Lauren Jauregui
+34,percent,7,1,14,Jen Affleck,Scott Hoying,Baron Davis,Baron Davis,Baron Davis,True,0.0:Baron Davis;Corey Feldman;Hilaria Baldwin;Lauren Jauregui;Scott Hoying
+34,percent,8,1,14,Danielle Fishel,Jen Affleck,Baron Davis,Baron Davis,Baron Davis,True,0.0:Baron Davis;Corey Feldman;Hilaria Baldwin;Jen Affleck;Lauren Jauregui;Scott Hoying
+34,percent,9,1,14,Andy Richter,Andy Richter,Baron Davis,Baron Davis,Baron Davis,True,0.0:Baron Davis;Corey Feldman;Danielle Fishel;Hilaria Baldwin;Jen Affleck;Lauren Jauregui;Scott Hoying
+34,percent,10,1,14,Whitney Leavitt,Whitney Leavitt,Andy Richter,Andy Richter,Andy Richter,True,0.0:Andy Richter;Baron Davis;Corey Feldman;Danielle Fishel;Hilaria Baldwin;Jen Affleck;Lauren Jauregui;Scott Hoying
+11,rank,1,1,12,David Hasselhoff,David Hasselhoff,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,18.0:Bristol Palin;The Situation;19.0:Margaret Cho;Michael Bolton
+11,rank,2,1,12,Michael Bolton,Michael Bolton,David Hasselhoff,David Hasselhoff,David Hasselhoff,False,
+11,rank,3,1,12,Margaret Cho,Margaret Cho,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,19.0:Bristol Palin;Margaret Cho;22.0:David Hasselhoff;Michael Bolton
+11,rank,4,1,12,The Situation,The Situation,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,13.0:Florence Henderson;Kurt Warner;20.0:David Hasselhoff;Margaret Cho;Michael Bolton
+11,rank,5,1,12,Florence Henderson,Florence Henderson,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,9.0:Kyle Massey;Rick Fox;12.0:Audrina Patridge;Bristol Palin;18.0:David Hasselhoff;Margaret Cho;Michael Bolton;The Situation
+11,rank,6,1,12,Audrina Patridge,Kurt Warner,David Hasselhoff,David Hasselhoff,David Hasselhoff,True,6.0:Jennifer Grey;Kyle Massey;9.0:Audrina Patridge;Bristol Palin;Rick Fox;16.0:David Hasselhoff;Florence Henderson;Margaret Cho;Michael Bolton;The Situation
+11,rank,7,1,12,Rick Fox,Audrina Patridge,Audrina Patridge,Audrina Patridge,Audrina Patridge,True,14.0:Audrina Patridge;David Hasselhoff;Florence Henderson;Margaret Cho;Michael Bolton;The Situation
+11,rank,8,1,12,Kurt Warner,Rick Fox,Audrina Patridge,Audrina Patridge,Audrina Patridge,True,5.0:Brandy;Kyle Massey;12.0:Audrina Patridge;David Hasselhoff;Florence Henderson;Margaret Cho;Michael Bolton;Rick Fox;The Situation
+11,rank,9,1,12,Brandy,Brandy,Audrina Patridge,Audrina Patridge,Audrina Patridge,True,7.0:Brandy;Bristol Palin;10.0:Audrina Patridge;David Hasselhoff;Florence Henderson;Kurt Warner;Margaret Cho;Michael Bolton;Rick Fox;The Situation
+20,percent,2,1,12,Redfoo,Chris Soules,Chris Soules,Chris Soules,Chris Soules,False,
+20,percent,3,1,12,Charlotte McKinney,Redfoo,Redfoo,Redfoo,Redfoo,False,
+20,percent,4,1,12,Michael Sam,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,0.0:Charlotte McKinney;Redfoo
+20,percent,5,1,12,Suzanne Somers,Michael Sam,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,0.0:Charlotte McKinney;Michael Sam;Redfoo
+20,percent,6,1,12,Patti LaBelle,Suzanne Somers,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,0.0:Charlotte McKinney;Michael Sam;Redfoo;Suzanne Somers
+20,percent,7,1,12,Willow Shields,Patti LaBelle,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,0.0:Charlotte McKinney;Michael Sam;Patti LaBelle;Redfoo;Suzanne Somers
+20,percent,8,2,12,Chris Soules;Robert Herjavec,Willow Shields;Robert Herjavec,Charlotte McKinney;Michael Sam,Charlotte McKinney;Michael Sam,Charlotte McKinney;Michael Sam,True,0.0:Charlotte McKinney;Michael Sam;Patti LaBelle;Redfoo;Suzanne Somers;Willow Shields
+20,percent,9,1,12,Nastia Liukin,Nastia Liukin,Charlotte McKinney,Charlotte McKinney,Charlotte McKinney,True,0.0:Charlotte McKinney;Chris Soules;Michael Sam;Patti LaBelle;Redfoo;Robert Herjavec;Suzanne Somers;Willow Shields
+4,percent,2,1,11,Paulina Porizkova,Shandi Finnessey,Clyde Drexler,Clyde Drexler,Clyde Drexler,False,
+4,percent,3,1,11,Shandi Finnessey,Paulina Porizkova,Paulina Porizkova,Paulina Porizkova,Paulina Porizkova,False,
+4,percent,4,1,11,Leeza Gibbons,Leeza Gibbons,Paulina Porizkova,Paulina Porizkova,Paulina Porizkova,True,0.0:Paulina Porizkova;Shandi Finnessey
+4,percent,5,1,11,Clyde Drexler,Clyde Drexler,Leeza Gibbons,Leeza Gibbons,Leeza Gibbons,True,0.0:Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,percent,6,1,11,Heather Mills,John Ratzenberger,Clyde Drexler,Clyde Drexler,Clyde Drexler,True,0.0:Clyde Drexler;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,percent,7,1,11,John Ratzenberger,Heather Mills,Clyde Drexler,Clyde Drexler,Clyde Drexler,True,0.0:Clyde Drexler;Heather Mills;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,percent,8,1,11,Billy Ray Cyrus,Billy Ray Cyrus,Clyde Drexler,Clyde Drexler,Clyde Drexler,True,0.0:Clyde Drexler;Heather Mills;John Ratzenberger;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+4,percent,9,1,11,Ian Ziering,Ian Ziering,Billy Ray Cyrus,Billy Ray Cyrus,Billy Ray Cyrus,True,0.0:Billy Ray Cyrus;Clyde Drexler;Heather Mills;John Ratzenberger;Leeza Gibbons;Paulina Porizkova;Shandi Finnessey
+5,percent,1,1,12,Josie Maran,Josie Maran,Josie Maran,Josie Maran,Josie Maran,False,
+5,percent,2,1,12,Albert Reed,Wayne Newton,Josie Maran,Josie Maran,Josie Maran,False,
+5,percent,3,1,12,Wayne Newton,Albert Reed,Albert Reed,Albert Reed,Albert Reed,True,0.0:Albert Reed;Josie Maran
+5,percent,4,1,12,Floyd Mayweather Jr. ,Floyd Mayweather Jr.,Albert Reed,Albert Reed,Albert Reed,True,0.0:Albert Reed;Josie Maran;Wayne Newton
+5,percent,5,1,12,Mark Cuban,Mark Cuban,Albert Reed,Albert Reed,Albert Reed,True,0.0:Albert Reed;Floyd Mayweather Jr. ;Josie Maran;Wayne Newton
+5,percent,6,1,12,Sabrina Bryan,Jane Seymour,Albert Reed,Albert Reed,Albert Reed,True,0.0:Albert Reed;Floyd Mayweather Jr. ;Josie Maran;Mark Cuban;Wayne Newton
+5,percent,7,1,12,Jane Seymour,Sabrina Bryan,Albert Reed,Albert Reed,Albert Reed,True,0.0:Albert Reed;Floyd Mayweather Jr. ;Josie Maran;Mark Cuban;Sabrina Bryan;Wayne Newton
+5,percent,8,1,12,Cameron Mathison,Jennie Garth,Albert Reed,Albert Reed,Albert Reed,True,0.0:Albert Reed;Floyd Mayweather Jr. ;Jane Seymour;Josie Maran;Mark Cuban;Sabrina Bryan;Wayne Newton
+5,percent,9,1,12,Jennie Garth,Cameron Mathison,Albert Reed,Albert Reed,Albert Reed,True,0.0:Albert Reed;Cameron Mathison;Floyd Mayweather Jr. ;Jane Seymour;Josie Maran;Mark Cuban;Sabrina Bryan;Wayne Newton
+7,percent,1,2,13,Jeffrey Ross;Ted McGinley,Jeffrey Ross;Cloris Leachman,Jeffrey Ross;Ted McGinley,Jeffrey Ross;Ted McGinley,Jeffrey Ross;Ted McGinley,False,
+7,percent,2,1,13,Kim Kardashian,Ted McGinley,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,0.0:Jeffrey Ross;Ted McGinley
+7,percent,4,1,13,Rocco DiSpirito,Kim Kardashian,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,0.0:Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Ted McGinley
+7,percent,5,1,13,Toni Braxton,Misty May-Treanor,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,0.0:Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Ted McGinley
+7,percent,6,1,13,Cloris Leachman,Rocco DiSpirito,Jeffrey Ross,Jeffrey Ross,Jeffrey Ross,True,0.0:Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Ted McGinley;Toni Braxton
+7,percent,7,1,13,Susan Lucci,Toni Braxton,Cloris Leachman,Cloris Leachman,Cloris Leachman,True,0.0:Cloris Leachman;Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Ted McGinley;Toni Braxton
+7,percent,8,1,13,Maurice Greene,Susan Lucci,Cloris Leachman,Cloris Leachman,Cloris Leachman,True,0.0:Cloris Leachman;Jeffrey Ross;Kim Kardashian;Misty May-Treanor;Rocco DiSpirito;Susan Lucci;Ted McGinley;Toni Braxton
+7,percent,9,1,13,Cody Linley,Maurice Greene,Cloris Leachman,Cloris Leachman,Cloris Leachman,True,0.0:Cloris Leachman;Jeffrey Ross;Kim Kardashian;Maurice Greene;Misty May-Treanor;Rocco DiSpirito;Susan Lucci;Ted McGinley;Toni Braxton
+6,percent,2,2,12,Monica Seles;Penn Jillette,Monica Seles;Steve Guttenberg,Monica Seles;Penn Jillette,Monica Seles;Penn Jillette,Monica Seles;Penn Jillette,False,
+6,percent,3,1,12,Steve Guttenberg,Penn Jillette,Monica Seles,Monica Seles,Monica Seles,True,0.0:Monica Seles;Penn Jillette
+6,percent,4,1,12,Adam Carolla,Adam Carolla,Monica Seles,Monica Seles,Monica Seles,True,0.0:Monica Seles;Penn Jillette;Steve Guttenberg
+6,percent,5,1,12,Priscilla Presley,Priscilla Presley,Adam Carolla,Adam Carolla,Adam Carolla,True,0.0:Adam Carolla;Monica Seles;Penn Jillette;Steve Guttenberg
+6,percent,6,1,12,Marlee Matlin,Marlee Matlin,Adam Carolla,Adam Carolla,Adam Carolla,True,0.0:Adam Carolla;Monica Seles;Penn Jillette;Priscilla Presley;Steve Guttenberg
+6,percent,7,1,12,Shannon Elizabeth,Mario,Adam Carolla,Adam Carolla,Adam Carolla,True,0.0:Adam Carolla;Marlee Matlin;Monica Seles;Penn Jillette;Priscilla Presley;Steve Guttenberg
+6,percent,8,1,12,Mario,Shannon Elizabeth,Adam Carolla,Adam Carolla,Adam Carolla,True,0.0:Adam Carolla;Marlee Matlin;Monica Seles;Penn Jillette;Priscilla Presley;Shannon Elizabeth;Steve Guttenberg
+6,percent,9,1,12,Marissa Jaret Winokur,Marissa Jaret Winokur,Adam Carolla,Adam Carolla,Adam Carolla,True,0.0:Adam Carolla;Mario;Marlee Matlin;Monica Seles;Penn Jillette;Priscilla Presley;Shannon Elizabeth;Steve Guttenberg
+8,rank,2,1,13,Belinda Carlisle,Holly Madison,Steve Wozniak,Steve Wozniak,Steve Wozniak,True,4.0:Gilles Marini;Melissa Rycroft;Shawn Johnson;22.0:Belinda Carlisle;Steve-O
+8,rank,3,1,13,Denise Richards,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,False,
+8,rank,4,2,13,Holly Madison;Steve Wozniak,Denise Richards;David Alan Grier,Belinda Carlisle;Denise Richards,Belinda Carlisle;Denise Richards,Belinda Carlisle;Denise Richards,True,4.0:Gilles Marini;Melissa Rycroft;19.0:Holly Madison;Steve-O;24.0:Belinda Carlisle;Denise Richards
+8,rank,5,1,13,David Alan Grier,Steve Wozniak,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,4.0:Gilles Marini;Shawn Johnson;15.0:David Alan Grier;Lawrence Taylor;20.0:Belinda Carlisle;Denise Richards;Holly Madison;Steve Wozniak
+8,rank,6,1,13,Steve-O,Steve-O,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,18.0:Belinda Carlisle;David Alan Grier;Denise Richards;Holly Madison;Steve Wozniak
+8,rank,7,1,13,Lawrence Taylor,Lawrence Taylor,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,8.0:Chuck Wicks;Lil' Kim;16.0:Belinda Carlisle;David Alan Grier;Denise Richards;Holly Madison;Steve Wozniak;Steve-O
+8,rank,8,1,13,Chuck Wicks,Chuck Wicks,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,5.0:Lil' Kim;Shawn Johnson;14.0:Belinda Carlisle;David Alan Grier;Denise Richards;Holly Madison;Lawrence Taylor;Steve Wozniak;Steve-O
+8,rank,9,1,13,Lil' Kim,Ty Murray,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,9.0:Lil' Kim;Ty Murray;12.0:Belinda Carlisle;Chuck Wicks;David Alan Grier;Denise Richards;Holly Madison;Lawrence Taylor;Steve Wozniak;Steve-O
+8,rank,10,1,13,Ty Murray,Lil' Kim,Belinda Carlisle,Belinda Carlisle,Belinda Carlisle,True,4.0:Gilles Marini;Melissa Rycroft;Shawn Johnson;10.0:Belinda Carlisle;Chuck Wicks;David Alan Grier;Denise Richards;Holly Madison;Lawrence Taylor;Lil' Kim;Steve Wozniak;Steve-O
+2,percent,1,1,10,Kenny Mayne,Kenny Mayne,Kenny Mayne,Kenny Mayne,Kenny Mayne,False,
+2,percent,2,1,10,Tatum O'Neal,Tatum O'Neal,Kenny Mayne,Kenny Mayne,Kenny Mayne,False,
+2,percent,3,1,10,Giselle Fernandez,Master P,Kenny Mayne,Kenny Mayne,Kenny Mayne,True,0.0:Kenny Mayne;Tatum O'Neal
+2,percent,4,1,10,Master P,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,True,0.0:Giselle Fernandez;Kenny Mayne;Tatum O'Neal
+2,percent,5,1,10,Tia Carrere,Tia Carrere,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,True,0.0:Giselle Fernandez;Kenny Mayne;Master P;Tatum O'Neal
+2,percent,6,1,10,George Hamilton,George Hamilton,Giselle Fernandez,Giselle Fernandez,Giselle Fernandez,True,0.0:Giselle Fernandez;Kenny Mayne;Master P;Tatum O'Neal;Tia Carrere
+2,percent,7,1,10,Lisa Rinna,Lisa Rinna,George Hamilton,George Hamilton,George Hamilton,True,0.0:George Hamilton;Giselle Fernandez;Kenny Mayne;Master P;Tatum O'Neal;Tia Carrere
+3,percent,1,1,11,Tucker Carlson,Tucker Carlson,Tucker Carlson,Tucker Carlson,Tucker Carlson,False,
+3,percent,2,1,11,Shanna Moakler,Harry Hamlin,Tucker Carlson,Tucker Carlson,Tucker Carlson,False,
+3,percent,3,1,11,Harry Hamlin,Shanna Moakler,Shanna Moakler,Shanna Moakler,Shanna Moakler,True,0.0:Shanna Moakler;Tucker Carlson
+3,percent,4,1,11,Vivica A. Fox,Sara Evans,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,0.0:Harry Hamlin;Shanna Moakler;Tucker Carlson
+3,percent,5,1,11,Willa Ford,Vivica A. Fox,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,0.0:Harry Hamlin;Shanna Moakler;Tucker Carlson;Vivica A. Fox
+3,percent,7,1,11,Jerry Springer,Willa Ford,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,0.0:Harry Hamlin;Sara Evans;Shanna Moakler;Tucker Carlson;Vivica A. Fox;Willa Ford
+3,percent,8,1,11,Monique Coleman,Jerry Springer,Harry Hamlin,Harry Hamlin,Harry Hamlin,True,0.0:Harry Hamlin;Jerry Springer;Sara Evans;Shanna Moakler;Tucker Carlson;Vivica A. Fox;Willa Ford
+9,rank,1,2,16,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,Ashley Hamiliton;Macy Gray,True,25.0:Michael Irvin;Tom DeLay
+9,rank,2,1,16,Kathy Ireland,Kathy Ireland,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,11.0:Joanna Krupa;Mark Dacascos;17.0:Melissa Joan Hart;Michael Irvin;30.0:Ashley Hamiliton;Macy Gray
+9,rank,3,1,16,Debi Mazar,Chuck Liddell,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,6.0:Donny Osmond;Joanna Krupa;16.0:Mark Dacascos;Melissa Joan Hart;28.0:Ashley Hamiliton;Kathy Ireland;Macy Gray
+9,rank,4,1,16,Chuck Liddell,Debi Mazar,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,13.0:Aaron Carter;Mark Dacascos;20.0:Chuck Liddell;Louie Vito;24.0:Ashley Hamiliton;Debi Mazar;Kathy Ireland;Macy Gray;Tom DeLay
+9,rank,5,1,16,Natalie Coughlin,Tom DeLay,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,3.0:Donny Osmond;Mya;9.0:Aaron Carter;Mark Dacascos;17.0:Michael Irvin;Natalie Coughlin;22.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Macy Gray;Tom DeLay
+9,rank,6,2,16,Louie Vito;Melissa Joan Hart,Natalie Coughlin;Melissa Joan Hart,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,True,16.0:Louie Vito;Melissa Joan Hart;Michael Irvin;20.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Macy Gray;Natalie Coughlin;Tom DeLay
+9,rank,7,2,16,Mark Dacascos;Michael Irvin,Louie Vito;Mark Dacascos,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,Ashley Hamiliton;Chuck Liddell,True,5.0:Donny Osmond;Joanna Krupa;6.0:Kelly Osbourne;Mya;13.0:Mark Dacascos;Michael Irvin;16.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Louie Vito;Macy Gray;Melissa Joan Hart;Natalie Coughlin;Tom DeLay
+9,rank,8,1,16,Aaron Carter,Michael Irvin,Ashley Hamiliton,Ashley Hamiliton,Ashley Hamiliton,True,6.0:Donny Osmond;Joanna Krupa;Kelly Osbourne;12.0:Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Louie Vito;Macy Gray;Mark Dacascos;Melissa Joan Hart;Michael Irvin;Natalie Coughlin;Tom DeLay
+9,rank,9,1,16,Joanna Krupa,Aaron Carter,Aaron Carter,Aaron Carter,Aaron Carter,True,6.0:Donny Osmond;Joanna Krupa;Kelly Osbourne;10.0:Aaron Carter;Ashley Hamiliton;Chuck Liddell;Debi Mazar;Kathy Ireland;Louie Vito;Macy Gray;Mark Dacascos;Melissa Joan Hart;Michael Irvin;Natalie Coughlin;Tom DeLay
+1,percent,2,1,6,Trista Sutter,Evander Holyfield,Kelly Monaco,Kelly Monaco,Kelly Monaco,False,
+1,percent,3,1,6,Evander Holyfield,Trista Sutter,Trista Sutter,Trista Sutter,Trista Sutter,False,
+1,percent,4,1,6,Rachel Hunter,Joey McIntyre,Evander Holyfield,Evander Holyfield,Evander Holyfield,True,0.0:Evander Holyfield;Trista Sutter

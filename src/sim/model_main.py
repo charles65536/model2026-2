@@ -48,7 +48,9 @@ def solve_season_qp(panel_season: pd.DataFrame,
                     popularity_reg: float = 0.0,
                     verbose: bool = False,
                     maxiter: int = 1000,
-                    hard_consistency: bool = False) -> Tuple[pd.DataFrame, pd.DataFrame]:
+                    hard_consistency: bool = False,
+                    margin: float = 0.0,
+                    margin_penalty: float = 0.0) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """Solve the QP for a single season using the panel as-is.
 
     Parameters:
@@ -189,6 +191,20 @@ def solve_season_qp(panel_season: pd.DataFrame,
             s += float(popularity_reg) * float(np.sum((p - qj_vec) ** 2))
         # regularization on xi
         s += float(lambda_reg) * float(np.sum(xi * xi))
+        # margin (overshoot) penalty: encourage S_i - S_e + xi >= margin
+        if margin_penalty and margin and margin_penalty > 0.0 and margin > 0.0:
+            # for each recorded pair (idx_e, idx_i, xi_idx_or_None, const_term)
+            for idx_e, idx_i, xi_idx_or_none, const_term in margin_pairs:
+                # compute val = (1-alpha)*(p_i - p_e) + const_term + xi(if present)
+                val = (1.0 - alpha) * (p[idx_i] - p[idx_e]) + float(const_term)
+                if xi_idx_or_none is not None:
+                    # xi index is relative to x array
+                    xi_local = x[xi_idx_or_none]
+                    val += xi_local
+                # violation if val < margin
+                viol = margin - val
+                if viol > 0:
+                    s += float(margin_penalty) * float(viol * viol)
         return float(s)
 
     # Equality constraints: per-week simplex
@@ -206,6 +222,8 @@ def solve_season_qp(panel_season: pd.DataFrame,
 
     # Inequality constraints: elimination consistency using provided elim_col (if any)
     ineq_constraints = []
+    # collect elimination pair indices for margin penalty (ie, idx_e, idx_i, xi_idx_or_None, const_term)
+    margin_pairs: List[Tuple[int, int, Optional[int], float]] = []
     for w in weeks:
         E = E_t.get(w, [])
         others = [name for name in A_t[w] if name not in set(E)]
@@ -228,6 +246,8 @@ def solve_season_qp(panel_season: pd.DataFrame,
 
                     const_term = alpha * (qJ_i - qJ_e)
                     ineq_constraints.append(make_ineq_no_xi(idx_e, idx_i, const_term))
+                    # record margin pair (no xi)
+                    margin_pairs.append((idx_e, idx_i, None, const_term))
         else:
             xi_idx = n_p + week_to_xi_idx[w]
             for e in E:
@@ -245,6 +265,8 @@ def solve_season_qp(panel_season: pd.DataFrame,
 
                     const_term = alpha * (qJ_i - qJ_e)
                     ineq_constraints.append(make_ineq(idx_e, idx_i, xi_idx, const_term))
+                    # record margin pair (with xi)
+                    margin_pairs.append((idx_e, idx_i, xi_idx, const_term))
 
     constraints = eq_constraints + ineq_constraints
 
@@ -283,7 +305,8 @@ def solve_season_qp(panel_season: pd.DataFrame,
 def solve_panel(panel_csv: str, output_p_csv: str, output_xi_csv: str,
                 name_col: str = 'celebrity_name', score_col: str = 'total_judge_score',
                 week_col: str = 'week', active_col: Optional[str] = None, elim_col: Optional[str] = None,
-                alpha: float = 0.5, lambda_reg: float = 1000.0, entropy_reg: float = 0.0, popularity_reg: float = 0.0, verbose: bool = False, hard_consistency: bool = False):
+                alpha: float = 0.5, lambda_reg: float = 1000.0, entropy_reg: float = 0.0, popularity_reg: float = 0.0, verbose: bool = False, hard_consistency: bool = False,
+                margin: float = 0.0, margin_penalty: float = 0.0):
     panel = pd.read_csv(panel_csv)
 
     # Validate minimum schema presence
@@ -303,7 +326,8 @@ def solve_panel(panel_csv: str, output_p_csv: str, output_xi_csv: str,
             continue
         p_df, xi_df = solve_season_qp(sub, name_col=name_col, score_col=score_col, week_col=week_col,
                                       active_col=active_col, elim_col=elim_col, alpha=alpha, lambda_reg=lambda_reg,
-                                      entropy_reg=entropy_reg, popularity_reg=popularity_reg, verbose=verbose, hard_consistency=hard_consistency)
+                                      entropy_reg=entropy_reg, popularity_reg=popularity_reg, verbose=verbose, hard_consistency=hard_consistency,
+                                      margin=margin, margin_penalty=margin_penalty)
         p_df['season'] = s
         xi_df['season'] = s
         all_p.append(p_df)
@@ -336,12 +360,15 @@ def main(argv: List[str]) -> None:
     p.add_argument('--elim-col', default=None, help='Optional column name indicating elimination rows (bool-like)')
     p.add_argument('--hard-consistency', action='store_true', help='Enforce elimination consistency as a hard constraint (no slack xi allowed). May cause infeasibility if data cannot be explained under the model).')
     p.add_argument('--verbose', action='store_true')
+    p.add_argument('--margin', type=float, default=0.0, help='Margin (delta) to encourage between eliminated and non-eliminated contestants (soft).')
+    p.add_argument('--margin-penalty', type=float, default=0.0, help='Penalty weight for squared hinge when margin is violated. Larger values push p_est to respect margin more.')
     args = p.parse_args(argv)
 
     solve_panel(args.panel, args.out_p, args.out_xi,
                 name_col=args.name_col, score_col=args.score_col, week_col=args.week_col,
                 active_col=args.active_col, elim_col=args.elim_col,
-                alpha=args.alpha, lambda_reg=args.lambda_reg, entropy_reg=args.entropy_reg, popularity_reg=args.popularity_reg, verbose=args.verbose, hard_consistency=args.hard_consistency)
+                alpha=args.alpha, lambda_reg=args.lambda_reg, entropy_reg=args.entropy_reg, popularity_reg=args.popularity_reg, verbose=args.verbose, hard_consistency=args.hard_consistency,
+                margin=args.margin, margin_penalty=args.margin_penalty)
 
 
 if __name__ == '__main__':
