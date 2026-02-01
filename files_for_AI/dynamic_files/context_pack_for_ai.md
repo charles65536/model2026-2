@@ -147,9 +147,44 @@ We reshape the official weekly judge-score columns into a season–week–contes
 
 # 6 关键模型 
 
+详情请见first_stage_modeling.md (这个是第一版本) 以及model_2.md (这个是经过队友修改后的版本，如有冲突，使用改后的这个版本)
+
 # 7 Notation Chart(记号说明)
+``` latex
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+Symbol & Definition \\
+\midrule
+$s$ & Season index, $s=1,\dots,34$ \\
+$t$ & Week index within season $s$ \\
+$i$ & Contestant (celebrity--pro pair) index \\
+$A_{s,t}$ & Active contestants in season $s$, week $t$ \\
+$E_{s,t}$ & Eliminated set at end of week $t$; $m_{s,t}=|E_{s,t}|$ \\
+$j_{i,t,k}$ & Score given by judge $k$ to contestant $i$ in week $t$ \\
+$J_{i,t}$ & Total judges' score: $J_{i,t}=\sum_{k} j_{i,t,k}$ (skip missing) \\
+$q^{J}_{i,t}$ & Judges' share: $q^{J}_{i,t}=J_{i,t}\big/\sum_{r\in A_{s,t}}J_{r,t}$ \\
+$p_{i,t}$ & Fan vote share (latent), $\sum_{i\in A_{s,t}}p_{i,t}=1$ \\
+$\alpha$ & Weight on judges under percent rule (default $\alpha=0.5$; stress-tested) \\
+$S^{(P)}_{i,t}$ & Percent combined score: $S^{(P)}_{i,t}=\alpha q^{J}_{i,t}+(1-\alpha)p_{i,t}$ \\
+$R^{J}_{i,t},R^{V}_{i,t}$ & Judges rank and fan rank (descending) \\
+$R^{(R)}_{i,t}$ & Rank combined score: $R^{(R)}_{i,t}=R^{J}_{i,t}+R^{V}_{i,t}$ \\
+$\xi_t$ & Slack for elimination-consistency; penalized in vote inference \\
+$\lambda$ & Penalty weight on slacks in vote inference objective \\
+\bottomrule
+\end{tabular}
+\caption{Core notations used throughout the paper.}
+\label{tab:notations}
+\end{table}
+```
 
 # 8 Work-in-progress outputs (pre-contest can be empty)
+
+1.30
+
+---
 
 - Expected figure set (L0/L1/L2): see `fig_manifest.md`(todo)
 
@@ -160,11 +195,19 @@ We reshape the official weekly judge-score columns into a season–week–contes
 | `output/table/intermediate_baseline_preds.csv` | season–week baseline predictions + eligibility flags (true_k, true_elims, pred sets, match flags, flip) | Debug / audit trail; enables exact reproduction of tab_baseline_consistency |
 | `output/figure/fig_fliprate_by_season.pdf` | FlipRate by season under BL-0 | L1 evidence for “rule divergence varies by season” (descriptive KPI3) |
 
+---
 
+2.1
+
+---
+
+- 写作手已完成report的文章主体段落的撰写，同时给出了在2_1_LI_list.md中未完成的部分。
+
+- 建模手已经完成建模基础部分，代码手已经完成了模型的代码化部分，二人正在着手进行模型的检验以及对文章图表的生成工作。
 
 # 9 风险与回滚
 
-暂无
+风险1_对于写作手：详见chapters/bugs_and_needs.md
 
 # 10 鲁棒性清单
 
@@ -172,7 +215,7 @@ We reshape the official weekly judge-score columns into a season–week–contes
 
 # 11 文献清单
 
-下面给你一份**“按你们题目 & 模型模块对齐”的权威文献列表**：每条都包含**怎么用（写进哪一段/支撑哪类口径与论证）**，并附**可直接点开的链接**（我把 URL 放在代码块里，便于你们复制到参考文献管理器或 BibTeX 备注里）。
+包含**怎么用（写进哪一段/支撑哪类口径与论证）**，并附**可直接点开的链接**（我把 URL 放在代码块里，便于你们复制到参考文献管理器或 BibTeX 备注里）。
 
 ---
 
@@ -545,7 +588,16 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
 
 ```
 2026_MCM\
-   snapshots\
+    .idea\
+        inspectionProfiles\
+            profiles_settings.xml
+        .gitignore
+        copilot.data.migration.ask2agent.xml
+        misc.xml
+        model2026-2.iml
+        modules.xml
+        vcs.xml
+    .snapshots\
     chapters\(这个文件夹用以装我们文章各个章节的内容以避免主内容的拥挤)
     0_summary_sheet.tex
     1_introduction.tex
@@ -558,20 +610,25 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
     8_conclusion.tex 
     9_memo.tex
     appendix_a.tex
-    myref.bib
-    report_on_use_of_ai.tex
+    myref.bib 
+    report_on_use_of_ai.tex 
+    bugs_and_needs.md (这个文件是对于我们目前的report存在的一些论证逻辑上的漏洞和图表支持内容的缺失的清单)
+    structure _explaination.md (给队友看的核心建模段的中文brief)
     files_for_ai\                           (与AI的交接文档)
+        first_stage_modeling.md             (建模第一阶段)
+        model_2.md                          (建模第二阶段，现在正在使用)
         group_discussion_files\             (这是对内交流文档)
-            first_stage_modeling.md         (建模第一阶段)
             kaichangbai.md                  (这是使用AI时的开场白)
             log_A_d_t.md                    (这是队友之间交付的文档)
             prism_operation_hand_book.md    (prism的操作手册)
         dynamic_files\
-            fig_tabel_manifest.md           (图、表的清单，用于与AI对其颗粒度)
-            desicion_log.md                 (重大方向变化，由prism和Jincan LI共同完成)
+            2_1_LI_list.md                  (2.1 Jincan LI 的任务清单)
+            fig_tabel_manifest.md           (图、表的清单，用于与AI对其颗粒度，暂时未填写)
+            desicion_log.md                 (重大方向变化)
             context_packed_for_ai.md        (与AI对其颗粒度的核心文件)
             kpi_registery.md                (记录核心KPI)
             data_agent_triage_ticket.md     (data Agent的工单)
+            data_agent_feedback.md          (记录data Agent对triage阶段的数据分析的方法与结果，作为给writing Agent的交付素材)
         constans_files\
             framing_spec_playbook.md        (playbook for Framing/spec GPT)
             data_playbook.md                (playbook for data GPT & Visualization/Evidence GPT)
@@ -594,11 +651,154 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
             preprocessing.py
             run.py
             workflow.py                
-        eval\                               (评估)
+        eval\                               (评估，😔同样也是不知道如何用)
+            .gitkeep 
+            compute_replay_agreement.py 
+            compute_survival_jaccard.py
+            jaccard_details_percent.csv
+            jaccard_details_rank.csv
+            jaccard_per_season.csv
+            jaccard_summary_allseasons.csv
+            logged_replay_season1.py
+            make_jaccard_per_season.py
+            replay_agreement_allseasons.csv
+            replay_percent_season1.csv
+            replay_percent_season2.csv
+            replay_percent_season3.csv
+            replay_percent_season4.csv
+            replay_percent_season5.csv
+            replay_percent_season6.csv
+            replay_percent_season7.csv
+            replay_percent_season8.csv
+            replay_percent_season9.csv
+            replay_percent_season10.csv
+            replay_percent_season11.csv
+            replay_percent_season12.csv
+            replay_percent_season13.csv
+            replay_percent_season14.csv
+            replay_percent_season15.csv 
+            replay_percent_season16.csv 
+            replay_percent_season17.csv
+            replay_percent_season18.csv
+            replay_percent_season19.csv
+            replay_percent_season20.csv
+            replay_percent_season21.csv
+            replay_percent_season22.csv
+            replay_percent_season23.csv
+            replay_percent_season24.csv
+            replay_percent_season25.csv
+            replay_percent_season26.csv
+            replay_percent_season27.csv
+            replay_percent_season28.csv
+            replay_percent_season29.csv 
+            replay_percent_season30.csv 
+            replay_percent_season31.csv
+            replay_percent_season32.csv
+            replay_percent_season33.csv
+            replay_percent_season34.csv 
+            replay_rank_season1.csv 
+            replay_rank_season2.csv 
+            replay_rank_season3.csv 
+            replay_rank_season4.csv 
+            replay_rank_season5.csv 
+            replay_rank_season6.csv 
+            replay_rank_season7.csv
+            replay_rank_season8.csv 
+            replay_rank_season9.csv 
+            replay_rank_season10.csv 
+            replay_rank_season11.csv 
+            replay_rank_season12.csv 
+            replay_rank_season13.csv 
+            replay_rank_season14.csv 
+            replay_rank_season15.csv 
+            replay_rank_season16.csv 
+            replay_rank_season17.csv 
+            replay_rank_season18.csv 
+            replay_rank_season19.csv 
+            replay_rank_season20.csv 
+            replay_rank_season21.csv 
+            replay_rank_season22.csv 
+            replay_rank_season23.csv 
+            replay_rank_season24.csv 
+            replay_rank_season25.csv 
+            replay_rank_season26.csv 
+            replay_rank_season27.csv 
+            replay_rank_season28.csv 
+            replay_rank_season29.csv 
+            replay_rank_season30.csv 
+            replay_rank_season31.csv 
+            replay_rank_season32.csv 
+            replay_rank_season33.csv 
+            replay_rank_season34.csv 
+            replay_simulator.py
         model\                              (模型)
-        sim\                                (仿真)
+        sim\                                (仿真，但是本论文手暂时还没有看懂代码手在做什么事，因而也不知道如何用😔)
+            .gitkeep 
+            compute_all_feasible_intervals.py 
+            compute_feasible_intervals.py 
+            debug_replay_inspect.py 
+            diagnose_uniformity.py 
+            fan_shares_popularity_0_1.csv 
+            fan_shares_refined.csv 
+            feasible_intervals_sample.csv 
+            feasible_intervals_season1_demo.csv 
+            grid_sensitivity_report.csv 
+            grid_sensitivity.py 
+            model_main.py 
+            popularity_tuning_report.csv 
+            profile_1_Rachel_Hunter_2.csv 
+            profile_p_target.py
+            README.md                               (这个文档或许能告诉我们他到底在做一件什么事)
+            replay_percent_season1.csv 
+            replay_rank_season1.csv 
+            replay_simulator.py
+            report_entropy_0.0.csv 
+            report_entropy_0.1.csv 
+            report_entropy_1.0.csv 
+            report_entropy_10.0.csv 
+            test_fan_p.csv 
+            test_xi.csv 
+            tune_popularity.py 
+            xi_entropy_0.0.csv 
+            xi_entropy_0.1.csv 
+            xi_entropy_1.0.csv 
+            xi_entropy_10.0.csv
+            xi_entropy.csv 
+            xi_grid_lambda100_entropy0_0.csv 
+            xi_grid_lambda100_entropy0_1.csv 
+            xi_grid_lambda100_entropy1_0.csv 
+            xi_grid_lambda100_entropy10_0.csv 
+            xi_grid_lambda1000_entropy0_0.csv 
+            xi_grid_lambda1000_entropy0_1.csv 
+            xi_grid_lambda1000_entropy1_0.csv 
+            xi_grid_lambda1000_entropy10_0.csv 
+            xi_grid_lambda10000_entropy0_0.csv 
+            xi_grid_lambda10000_entropy0_1.csv 
+            xi_grid_lambda10000_entropy1_0.csv 
+            xi_grid_lambda10000_entropy10_0.csv 
+            xi_pop_0_0.csv 
+            xi_pop_0_1.csv 
+            xi_pop_0_01.csv 
+            xi_pop_1_0.csv 
+            xi_pop_10_0.csv 
+            xi_pop_100_0.csv 
+            xi_pop_baseline.csv 
+            xi_popularity_0_1.csv 
+            xi_refined.csv
         viz\                                (可视化)
         src_handbook.md     
+    sccript\
+        run_solver_popularity_0_1.ps1
+        eval_files_list.txt
+        run_compute_jaccard.ps1
+        run_inspect_season1.ps1
+        run_logged_replay_season1.ps1
+        run_make_jaccard_per_season.ps1
+        run_replay_all_seasons.ps1
+        run_replay_eval_allseasons.ps1
+        run_replay_eval_season1.ps1
+        run_replay_season1_with_elim.ps1
+        run_replay_season1.ps1
     data_raw\
         2026_MCM_Problem_C_Data.csv
     outputs\
@@ -619,7 +819,6 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
     2625838.tex
     2625838.toc
 ```
-## 1.2 文件说明
 
 # 3 report的结构与引用规范
 日志：在v0.1版本中，我们沿用的是上此比赛时的文章先作为基础框架，具体内容与此次比赛无关，同时在基于本次内容得到具体实施的框架后会标注相关的章节引用标准。
@@ -633,7 +832,7 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
 * 2.1 Problem Decompositions \label{sec:problem_decomposition}
 * 2.2 Key Assumptions \label{subsec:assumptions}
 * 2.3 Key Notations \label{subsec:notations}
-* 2.4 Tasks & Evaluation KPIs（这里强烈建议补：一致性指标、bottom-k set-match、多淘汰/无淘汰周口径、置信度定义） \label{subsec:tasks_and_kpis}
+* 2.4 Tasks & Evaluation KPIs \label{subsec:tasks_and_kpis}
 
 **3 Data Processing and EDA (model-driven)**\label{sec:data}
 
@@ -683,7 +882,7 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
 
 **9 Memo to Management**\label{sec:memo}
 
-**References + Appendix(\label{app:all}) + AI Use Report**（AI use 不计页数，但要放最后）
+**References + Appendix(\label{app:all}) + Report on Use of AI**（AI use 不计页数，但要放最后）
 
 ```
 

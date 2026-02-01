@@ -31,41 +31,36 @@
 \contentsline {section}{\numberline {4}Task A: Fan Vote Inference Model}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Overview and Modeling Philosophy}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Main Inference Model}{8}{subsection.4.2}%
+\contentsline {paragraph}{Objective with judge-anchor prior.}{8}{paragraph*.15}%
 \contentsline {subsection}{\numberline {4.3}Uncertainty Quantification and Sensitivity Analysis}{9}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}KPI2: Vote Identifiability (interval tightness)}{9}{subsubsection.4.3.1}%
-\contentsline {paragraph}{Profile optimization formulation.}{10}{paragraph*.15}%
-\contentsline {paragraph}{Objective with judge-anchor prior.}{10}{paragraph*.16}%
+\contentsline {paragraph}{Profile optimization formulation.}{10}{paragraph*.16}%
 \contentsline {subsection}{\numberline {4.4}Hyperparameters, tuning, and implementation details}{11}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Outputs and sanity checks}{12}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Task B \& C: Rule Reply, Volting System, and Counterfactuals}{12}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Rank vs. Percent Across Seasons}{12}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Replay protocol and eligibility}{12}{subsubsection.5.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.2}Cross-season summary metrics}{13}{subsubsection.5.1.2}%
 \contentsline {subsubsection}{\numberline {5.1.3}Era cutoff assumption and stress-test plan}{13}{subsubsection.5.1.3}%
 \contentsline {subsection}{\numberline {5.2}Controversial Contestants: Case Studies}{13}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Bottom-two and Judges' Save Mechanism}{14}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Bottom-two and Judges' Save Mechanism}{13}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Synthesis of Findings from Rules}{14}{subsection.5.4}%
 \contentsline {section}{\numberline {6}Task D-1: Impact Analysis: Pro Dancers \& Celebrity Attributes}{14}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Outcome definitions}{14}{subsection.6.1}%
-\contentsline {paragraph}{Judges' outcome.}{15}{paragraph*.17}%
-\contentsline {paragraph}{Fans' outcome.}{15}{paragraph*.18}%
+\contentsline {paragraph}{Judges' outcome.}{14}{paragraph*.17}%
+\contentsline {paragraph}{Fans' outcome.}{14}{paragraph*.18}%
 \contentsline {subsection}{\numberline {6.2}Modeling results: separating ``who judges reward'' vs.\ ``who fans support''}{15}{subsection.6.2}%
 \contentsline {paragraph}{Model 1: Judge Model.}{15}{paragraph*.19}%
 \contentsline {paragraph}{Model 2: Vote Model.}{15}{paragraph*.20}%
 \contentsline {paragraph}{Comparing judges vs.\ fans.}{15}{paragraph*.21}%
 \contentsline {paragraph}{Quantifying professional-dancer impact (magnitude, not just significance).}{15}{paragraph*.22}%
-\contentsline {paragraph}{Uncertainty propagation.}{16}{paragraph*.23}%
-\contentsline {section}{\numberline {7}Task D-2: New Rule Design and Stress Testing}{16}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Design Goals and Principles}{16}{subsection.7.1}%
+\contentsline {paragraph}{Uncertainty propagation.}{15}{paragraph*.23}%
+\contentsline {section}{\numberline {7}Task D-2: New Rule Design and Stress Testing}{15}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Design Goals and Principles}{15}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Proposed aggregation rule: Judge Safeguard + Smoothed Rank (JS-SR)}{16}{subsection.7.2}%
 \contentsline {paragraph}{Step 1: Safeguard threshold.}{16}{paragraph*.24}%
 \contentsline {paragraph}{Step 2: Battleground scoring and elimination.}{16}{paragraph*.25}%
 \contentsline {subsection}{\numberline {7.3}Stress Testing and Simulation Evidence via Replay}{17}{subsection.7.3}%
 \contentsline {section}{\numberline {8}Conclusion}{17}{section.8}%
-\contentsline {section}{\numberline {9}Memo to Management}{18}{section.9}%
+\contentsline {section}{\numberline {9}Memo to Management}{17}{section.9}%
 \contentsline {section}{\numberline {A}Appendix: Data, Algorithms, and Reproducibility}{18}{appendix.A}%
 \contentsline {section}{\numberline {B}Complete Files for Problem B}{18}{appendix.B}%
-\contentsline {paragraph}{Language and Writing Support}{}{paragraph*.27}%
-\contentsline {paragraph}{Code Drafting Assistance}{}{paragraph*.28}%
-\contentsline {paragraph}{Explicitly Excluded Uses of AI}{}{paragraph*.29}%
-\contentsline {paragraph}{Verification and Responsibility}{}{paragraph*.30}%
