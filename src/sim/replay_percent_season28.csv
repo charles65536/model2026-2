@@ -1,12 +1,12 @@
 season,method,week,m,active_count,elim_pred
 28,percent,1,0,12,
-28,percent,2,1,12,Lamar Odom
+28,percent,2,2,12,Lamar Odom;Ray Lewis
 28,percent,3,0,11,
 28,percent,4,1,11,Mary Wilson
 28,percent,5,0,10,
-28,percent,6,1,10,Ray Lewis
-28,percent,7,1,9,Sailor Brinkley-Cook
-28,percent,8,1,8,Karamo Brown
-28,percent,9,1,7,Kate Flannery
-28,percent,10,1,6,Sean Spicer
-28,percent,11,0,5,
+28,percent,6,1,10,Lamar Odom
+28,percent,7,1,9,Sean Spicer
+28,percent,8,1,9,Sean Spicer
+28,percent,9,1,9,Sailor Brinkley-Cook
+28,percent,10,1,8,Karamo Brown
+28,percent,11,0,7,

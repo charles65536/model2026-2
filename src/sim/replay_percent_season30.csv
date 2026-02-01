@@ -1,11 +1,11 @@
 season,method,week,m,active_count,elim_pred
 30,percent,1,0,15,
 30,percent,2,1,15,Martin Kove
-30,percent,3,1,14,Matt James
-30,percent,4,2,13,Christine Chiu;Brian Austin Green
-30,percent,5,1,11,"Mike ""The Miz"" Mizanin"
-30,percent,6,1,10,Melanie C
-30,percent,7,1,9,Kenya Moore
-30,percent,8,2,8,Jimmie Allen;Olivia Jade
-30,percent,9,2,6,Melora Hardin;Suni Lee
-30,percent,10,0,4,
+30,percent,3,1,14,Cody Rigsby
+30,percent,4,2,14,Brian Austin Green;Christine Chiu
+30,percent,5,1,12,Matt James
+30,percent,6,1,11,Melanie C
+30,percent,7,1,10,Kenya Moore
+30,percent,8,2,9,"Mike ""The Miz"" Mizanin;Jimmie Allen"
+30,percent,9,2,7,Olivia Jade;Melora Hardin
+30,percent,10,0,5,

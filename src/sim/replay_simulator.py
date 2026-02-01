@@ -1,5 +1,5 @@
 """
-Replay simulator for Percent and Rank rules.
+Replay simulator for Percent, Rank, and JS-SR (Judge-Safeguard Smoothed-Rank) rules.
 
 Produces per-week predicted elimination lists and final ranking by simulating eliminations sequentially.
 
@@ -10,10 +10,14 @@ Outputs:
  - src/sim/replay_percent_season{S}.csv
  - src/sim/replay_rank_season{S}.csv
  - src/sim/replay_summary_season{S}.csv (combined)
+ - src/sim/replay_js_sr_season{S}.csv
 
 Notes:
  - Tie-breaks: for Percent rule (lower S worse) tie broken by lower judge score, lower p_est, then name.
  - For Rank rule: rank_J and rank_V (descending) summed; higher sum worse; ties broken by lower judge score, lower p_est, then name.
+ - For JS-SR: construct a judge-safe set (top ~33% by judge score) and eliminate from the battleground
+     using the same smoothed-percent score S = alpha*qJ + (1-alpha)*p_est; if battleground is too small,
+     fall back to eliminating the worst from the safe set.
  - The simulator constructs an initial active set from the earliest week in the panel for the season and removes predicted eliminated contestants sequentially.
 """
 from __future__ import annotations
@@ -40,6 +44,13 @@ def choose_default_pest():
 
 def build_week_participants(panel_s: pd.DataFrame) -> Dict[int, List[str]]:
     panel_s = panel_s.copy()
+    # If the panel contains an `active` column, prefer only rows marked active
+    if 'active' in panel_s.columns:
+        try:
+            panel_s = panel_s[panel_s['active'].astype(bool)]
+        except Exception:
+            # fall back to original if casting fails
+            panel_s = panel_s[panel_s['active'] == True]
     # If the panel is already weekly (multiple rows per week), use that directly.
     panel_s['week'] = pd.to_numeric(panel_s['week'], errors='coerce')
     weeks = sorted(panel_s['week'].dropna().unique())
@@ -158,6 +169,10 @@ def simulate_season(panel_s: pd.DataFrame, pest_s: pd.DataFrame, alpha: float = 
 
     # initial active set: participants in first week
     active_set = list(A_t[weeks[0]])
+    # imputed rows for counterfactual survivors: dict keyed by (name, week) -> {'total_judge_score':..., 'p_est':...}
+    imputed: Dict[Tuple[str,int], Dict[str, float]] = {}
+    # track last known p_est for each contestant (carry-forward for imputation)
+    last_p: Dict[str, float] = {}
     history = []
 
     for w in weeks:
@@ -175,9 +190,42 @@ def simulate_season(panel_s: pd.DataFrame, pest_s: pd.DataFrame, alpha: float = 
                     active_set = [a for a in active_set if a in A_t[next_week] or a in active_set]
             continue
 
-        # get qJ and p for current active set and week
-        qJ = compute_qJ_for_week(panel_s, w, active_set)
-        pmap = get_p_for_week(pest_s, w, active_set)
+        # get qJ and p for current active set and week — incorporate imputed rows when contestants are not present in panel
+        # Build effective judge scores for this week: take panel rows for this week plus any imputed rows
+        eff_rows = []
+        panel_week = panel_s[panel_s['week'] == w]
+        for _, r in panel_week.iterrows():
+            eff_rows.append({'celebrity_name': str(r['celebrity_name']), 'total_judge_score': float(r.get('total_judge_score', 0.0))})
+        # add imputed rows for this week
+        for (iname, iw), rec in imputed.items():
+            if iw == w:
+                eff_rows.append({'celebrity_name': iname, 'total_judge_score': float(rec.get('total_judge_score', 0.0))})
+        # compute qJ among active_set using eff_rows
+        qJ = {}
+        name_to_score = {r['celebrity_name']: r['total_judge_score'] for r in eff_rows}
+        denom = sum([name_to_score.get(n, 0.0) for n in active_set])
+        if denom <= 0:
+            for name in active_set:
+                qJ[name] = 1.0 / max(1, len(active_set))
+        else:
+            for name in active_set:
+                qJ[name] = float(name_to_score.get(name, 0.0)) / float(denom)
+
+        # compute pmap: prefer pest_s entries for week; otherwise, fall back to last_p or uniform
+        pmap = {name: 0.0 for name in active_set}
+        pest_week = pest_s[pest_s['week'] == w]
+        for _, r in pest_week.iterrows():
+            pname = str(r['celebrity_name'])
+            if pname in pmap:
+                pmap[pname] = float(r.get('p_est', 0.0))
+                last_p[pname] = pmap[pname]
+        # for active names missing in pest_week, use last_p if available, else uniform small share
+        for name in active_set:
+            if pmap.get(name, 0.0) == 0.0:
+                if name in last_p:
+                    pmap[name] = last_p[name]
+                else:
+                    pmap[name] = 1.0 / max(1, len(active_set))
 
         # build DataFrame for sorting
         rows = []
@@ -188,6 +236,34 @@ def simulate_season(panel_s: pd.DataFrame, pest_s: pd.DataFrame, alpha: float = 
             df['S'] = alpha * df['qJ'] + (1.0 - alpha) * df['p_est']
             df_sorted = tie_break_sort_percent(df)
             elim = df_sorted.head(m)['celebrity_name'].tolist()
+        elif method == 'js_sr':
+            # JS-SR: Judge-Safeguard + Smoothed Rank (conservative)
+            # Build a safe set by judge score (top fraction) and eliminate from the battleground
+            # Using a default safe fraction of 1/3 (top 33% by judge score are protected)
+            safe_frac = 1.0 / 3.0
+            scores = df['total_judge_score'].astype(float).values
+            if len(scores) == 0:
+                elim = []
+            else:
+                thresh = float(np.percentile(scores, 100.0 * (1.0 - safe_frac)))
+                safe_set = set(df.loc[df['total_judge_score'] >= thresh, 'celebrity_name'].tolist())
+                battleground = [n for n in df['celebrity_name'].tolist() if n not in safe_set]
+                # if battleground empty, treat everyone as battleground
+                if len(battleground) == 0:
+                    battleground = df['celebrity_name'].tolist()
+                # construct battleground df and compute S score like percent rule
+                bdf = df[df['celebrity_name'].isin(battleground)].copy()
+                bdf['S'] = alpha * bdf['qJ'] + (1.0 - alpha) * bdf['p_est']
+                bdf_sorted = tie_break_sort_percent(bdf)
+                elim = bdf_sorted.head(m)['celebrity_name'].tolist()
+                # if battleground had fewer than m, take remaining from the safe set by worst S
+                if len(elim) < m:
+                    remaining = m - len(elim)
+                    s_df = df[df['celebrity_name'].isin(safe_set)].copy()
+                    s_df['S'] = alpha * s_df['qJ'] + (1.0 - alpha) * s_df['p_est']
+                    s_sorted = tie_break_sort_percent(s_df)
+                    more = s_sorted.head(remaining)['celebrity_name'].tolist()
+                    elim = elim + more
         else:
             # rank rule
             # rank_J: higher judge score -> rank 1
@@ -201,12 +277,27 @@ def simulate_season(panel_s: pd.DataFrame, pest_s: pd.DataFrame, alpha: float = 
         history.append({'week': w, 'm': m, 'elim_pred': elim.copy(), 'active_count': len(active_set)})
         # remove eliminated from active set for next iterations
         active_set = [a for a in active_set if a not in set(elim)]
-        # optionally intersect with next week's panel participants to avoid reintroducing absent contestants
+        # advance to next week: if a surviving contestant does not appear in the panel's next-week rows,
+        # we will impute their next-week judge score and carry-forward p_est (zombie logic), and keep them in active_set
         next_idx = weeks.index(w) + 1
         if next_idx < len(weeks):
             next_week = weeks[next_idx]
-            # remove any who do not appear in next week's panel unless they were kept
-            active_set = [a for a in active_set if a in A_t.get(next_week, [])]
+            next_participants = set(A_t.get(next_week, []))
+            # for survivors missing in panel next week, impute and keep them
+            missing_survivors = [a for a in active_set if a not in next_participants]
+            for name in missing_survivors:
+                # compute historical mean judge score up to week w for this contestant
+                mask = (panel_s['celebrity_name'].astype(str) == name) & (panel_s['week'] <= w)
+                hist = panel_s.loc[mask, 'total_judge_score'].astype(float)
+                j_mean = float(hist.mean()) if len(hist.dropna()) > 0 else 0.0
+                # p carry-forward
+                p_cf = float(last_p.get(name, 1.0 / max(1, len(active_set))))
+                # register imputed entry for next_week
+                imputed[(name, next_week)] = {'total_judge_score': j_mean, 'p_est': p_cf}
+                # also update last_p for future weeks
+                last_p[name] = p_cf
+            # combine next week's panel participants with kept survivors
+            active_set = list(sorted(set(active_set) | next_participants))
 
     return history
 
@@ -240,20 +331,41 @@ def main(argv: List[str]):
         seasons = [s for s in seasons if str(s) == str(args.season)]
 
     methods = [m.strip() for m in args.methods.split(',') if m.strip()]
+    # Helper: canonical mapping by season
+    def canon_method_for_season(s: int) -> str:
+        if s in (1, 2):
+            return 'rank'
+        if 3 <= s <= 27:
+            return 'percent'
+        return 'percent_last_two'
+
     for s in seasons:
         panel_s = panel[panel['season'].astype(str) == str(s)].copy()
         pest_s = pest[pest['season'].astype(str) == str(s)].copy()
-        # compute m_map from elim_col if provided
+
+        # compute m_map: prefer explicit elim_col if provided, else use 'true_elim_flag' column if present
         m_map = None
-        if args.elim_col and args.elim_col in panel_s.columns:
-            m_map = infer_elim_counts_from_col(panel_s, args.elim_col)
+        elim_col_to_use = args.elim_col
+        if elim_col_to_use is None and 'true_elim_flag' in panel_s.columns:
+            elim_col_to_use = 'true_elim_flag'
+        if elim_col_to_use and elim_col_to_use in panel_s.columns:
+            m_map = infer_elim_counts_from_col(panel_s, elim_col_to_use)
             if args.verbose:
-                print(f'Using elim_col {args.elim_col} to infer elimination counts: {m_map}')
+                print(f'Using elim_col {elim_col_to_use} to infer elimination counts: {m_map}')
+
         for method in methods:
-            history = simulate_season(panel_s, pest_s, alpha=args.alpha, method=method, m_map=m_map, verbose=args.verbose)
-            out_p = f'src/sim/replay_{method}_season{str(s)}.csv'
-            write_history_csv(history, out_p, s, method)
-            print('Wrote', out_p)
+            if method == 'canon':
+                # apply canonical method per season and write file named by the underlying method
+                underlying = canon_method_for_season(int(float(s)))
+                history = simulate_season(panel_s, pest_s, alpha=args.alpha, method=underlying, m_map=m_map, verbose=args.verbose)
+                out_p = f'src/sim/replay_{underlying}_season{str(s)}.csv'
+                write_history_csv(history, out_p, s, underlying)
+                print('Wrote', out_p)
+            else:
+                history = simulate_season(panel_s, pest_s, alpha=args.alpha, method=method, m_map=m_map, verbose=args.verbose)
+                out_p = f'src/sim/replay_{method}_season{str(s)}.csv'
+                write_history_csv(history, out_p, s, method)
+                print('Wrote', out_p)
 
 
 if __name__ == '__main__':
