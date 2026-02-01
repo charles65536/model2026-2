@@ -77,7 +77,7 @@ $\lambda$ & Penalty weight on slacks in vote inference objective \\
 
 Our workflow consists of four tightly coupled tasks. \textbf{Task A} reconstructs latent weekly fan vote shares $p_{i,t}$
 for each active contestant by solving a season-level constrained optimization problem that enforces elimination consistency
-(with slack) under the documented mechanics. \textbf{Tasks B/C} use these inferred votes to replay each season under
+(with slack) under the documented mechanics\cite{bubeck2015convex,boyd2004convex}. \textbf{Tasks B/C} use these inferred votes to replay each season under
 alternative aggregation rules (rank-based vs.\ percent-based, optionally with a bottom-two judges' save), producing
 counterfactual eliminations and placements. \textbf{Task D1} fits mixed-effects models to contrast the drivers of judges'
 evaluations versus audience support (celebrity attributes and professional partners). \textbf{Task D2} proposes an
@@ -103,7 +103,7 @@ on eliminations:
 where $\Omega$ denotes eligible $(s,t)$. KPI3 is reported descriptively as ``impact magnitude,'' not as an optimization objective.
 
 \paragraph{KPI2: Vote Identifiability (interval tightness).}
-Because votes are unobserved, vote inference is not always identifiable. For each $(s,t,i)$, we compute a feasible interval
+Because votes are unobserved, vote inference is not always identifiable.\cite{benning2018regularization,kaipio2005statistical,} For each $(s,t,i)$, we compute a feasible interval
 $[p^{\min}_{i,t},p^{\max}_{i,t}]$ over fan vote shares consistent with elimination constraints (and with a near-optimal shell
 around the Task~A objective). We define an identifiability score as
 \begin{equation}

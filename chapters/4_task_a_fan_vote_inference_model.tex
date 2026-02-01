@@ -7,7 +7,7 @@ In DWTS, eliminations depend on a combination of judges' scores and audience vot
 We therefore model weekly audience support as a latent vote-share vector over the active set.
 Because many vote configurations can be consistent with the same elimination outcome, the inference problem is generally underdetermined; our approach resolves this by
 (i) enforcing elimination-consistency constraints implied by the show's rule mechanics and
-(ii) selecting a stable solution via temporal smoothness regularization.
+(ii) selecting a stable solution via temporal smoothness regularization.\cite{benning2018regularization,kaipio2005statistical}
 Special episodes (e.g., no-elimination or irregular-format weeks) are handled explicitly through slack variables rather than forcing exact compliance, and these slacks become a diagnostic for identifiability and model mismatch.
 
 \subsection{Main Inference Model}\label{subsec:inference_model}
@@ -30,7 +30,7 @@ We introduce a nonnegative slack $\xi_t\ge 0$ and impose
 S^{(P)}_{e,t}\le S^{(P)}_{i,t}+\xi_t,\quad \forall e\in E_{s,t},\ \forall i\in A_{s,t}\setminus E_{s,t}.
 \end{equation}
 
-When the assumed rule and data are perfectly compatible, the minimum feasible $\xi_t$ is zero; otherwise $\xi_t>0$ quantifies the smallest violation needed to reconcile the observed outcome.
+When the assumed rule and data are perfectly compatible, the minimum feasible $\xi_t$ is zero; otherwise $\xi_t>0$ quantifies the smallest violation needed to reconcile the observed outcome.\cite{aitchison1986compositional}
 \paragraph{Objective with judge-anchor prior.}
 To avoid degenerate ``nearly-uniform'' vote reconstructions, we add a judge-anchor prior that pulls fan vote shares toward
 judges' score shares in the absence of strong contradictory evidence. For each season $s$, we solve:
@@ -50,7 +50,7 @@ judges' score shares in the absence of strong contradictory evidence. For each s
 \textbf{Remark (objective form).}
 Equation~\eqref{eq:taskA_obj_anchor} is a convex quadratic program (QP) solved independently for each season.
 The smoothness term is computed only for contestants active in consecutive weeks ($A_{s,t}\cap A_{s,t-1}$), while the anchor and slack penalties
-apply to all active contestants and weeks. Hyperparameters $(\lambda_1,\lambda_2)$ are selected by replay-based diagnostics (Section~\ref{subsec:a_hyper_impl}).
+apply to all active contestants and weeks. Hyperparameters $(\lambda_1,\lambda_2)$ are selected by replay-based diagnostics (Section~\ref{subsec:a_hyper_impl}).\cite{boyd2004convex,bubeck2015convex}
 
 \begin{algorithm}[H]
 \caption{Season-wise fan vote inference via constrained QP}
@@ -131,7 +131,7 @@ S^{(P)}_{j,\tau}=\alpha q^J_{j,\tau}+(1-\alpha)p_{j,\tau}.
 \]
 
 \textbf{Base constraints.}
-We impose simplex constraints for each week:
+We impose simplex constraints for each week:\cite{aitchison1986compositional,pawlowsky2015compositional,filzmoser2018compositional}
 \begin{align}
 & p_{j,\tau}\ge 0,\quad \forall j\in A_{s,\tau}, \forall \tau, \label{eq:kpi2_nonneg}\\
 & \sum_{j\in A_{s,\tau}}p_{j,\tau}=1,\quad \forall \tau. \label{eq:kpi2_simplex}
@@ -174,7 +174,7 @@ In implementation, \eqref{eq:kpi2_shell_quad} can be written as a convex SOC con
 \le
 \sqrt{(1+\delta_{\mathrm{obj}})\,\mathrm{OPT}_s}.
 \]
-This SOC form is directly supported by standard convex solvers (e.g., via CVX frameworks).
+This SOC form is directly supported by standard convex solvers (e.g., via CVX frameworks).\cite{boyd2011admm}
 
 \textbf{Profile-min and profile-max.}
 For each active pair $(i,t)$ with $i\in A_{s,t}$, define:
