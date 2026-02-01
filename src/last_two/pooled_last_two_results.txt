@@ -1,0 +1,30 @@
+==== MODE: strict
+Tie mode: strict
+early: n=19, saves_higher=10, frac=0.5263157894736842
+late:  n=1, saves_higher=0, frac=0.0
+
+Two-proportion z-test (early vs late):
+{'p1': 0.5263157894736842, 'p2': 0.0, 'z': 1.0259783520851542, 'pval': np.float64(0.3049017881787881)}
+
+Delta (saved_score - elim_score) summary:
+early mean=0.0019778546087830897, n=19
+late  mean=-0.002617801047120401, n=1
+
+Two-sample t-test (delta): TtestResult(statistic=np.float64(nan), pvalue=np.float64(nan), df=np.float64(1.0))
+Mann-Whitney U (delta): MannwhitneyuResult(statistic=np.float64(10.0), pvalue=np.float64(0.9999999999999999))
+
+==== MODE: deterministic
+Tie mode: deterministic
+early: n=23, saves_higher=12, frac=0.5217391304347826
+late:  n=4, saves_higher=1, frac=0.25
+
+Two-proportion z-test (early vs late):
+{'p1': 0.5217391304347826, 'p2': 0.25, 'z': 1.003904227524264, 'pval': np.float64(0.3154247786860376)}
+
+Delta (saved_score - elim_score) summary:
+early mean=0.0021807762573513, n=23
+late  mean=-0.0006544502617801002, n=4
+
+Two-sample t-test (delta): TtestResult(statistic=np.float64(0.4788243351827467), pvalue=np.float64(0.654433206587703), df=np.float64(4.495895445443412))
+Mann-Whitney U (delta): MannwhitneyuResult(statistic=np.float64(49.5), pvalue=np.float64(0.8377374909746926))
+

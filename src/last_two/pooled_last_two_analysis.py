@@ -25,6 +25,7 @@ import math
 import pandas as pd
 import numpy as np
 from typing import List, Dict, Tuple
+import argparse
 import scipy.stats as stats
 
 HERE = os.path.dirname(__file__)
@@ -205,11 +206,27 @@ def run_analysis(df: pd.DataFrame, tie_mode: str = 'deterministic'):
 
 
 def main():
-    panel = pd.read_csv(PANEL)
-    # run both modes
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--early-start', type=int, default=2)
+    parser.add_argument('--early-end', type=int, default=26)
+    parser.add_argument('--late-min', type=int, default=29)
+    parser.add_argument('--tie-mode', choices=['strict', 'deterministic', 'both'], default='both')
+    args = parser.parse_args()
+
+    if not os.path.exists(PANEL):
+        alt = os.path.join(os.getcwd(), 'output', 'data_cleaned', 'intermediate_weekly_panel.csv')
+        if os.path.exists(alt):
+            panel_path = alt
+        else:
+            raise SystemExit(f'Panel file not found at {PANEL}')
+    else:
+        panel_path = PANEL
+    panel = pd.read_csv(panel_path)
+
+    modes = ('strict', 'deterministic') if args.tie_mode == 'both' else (args.tie_mode,)
     dfs = {}
-    for tie_mode in ('strict', 'deterministic'):
-        df = gather_data(panel, early_range=(2, 26), late_min=29, tie_mode=tie_mode)
+    for tie_mode in modes:
+        df = gather_data(panel, early_range=(args.early_start, args.early_end), late_min=args.late_min, tie_mode=tie_mode)
         dfs[tie_mode] = df
 
     # run analyses and write outputs
@@ -218,8 +235,11 @@ def main():
             f.write('==== MODE: ' + tie_mode + '\n')
             txt, prop = run_analysis(df, tie_mode=tie_mode)
             f.write(txt + '\n\n')
-    # save pooled data for inspection (use deterministic mode by default)
-    dfs['deterministic'].to_csv(OUT_CSV, index=False)
+    # save pooled data for inspection (use deterministic mode by default if present)
+    if 'deterministic' in dfs:
+        dfs['deterministic'].to_csv(OUT_CSV, index=False)
+    else:
+        next(iter(dfs.values())).to_csv(OUT_CSV, index=False)
     print('Wrote', OUT_TXT)
     print('Wrote', OUT_CSV)
 
