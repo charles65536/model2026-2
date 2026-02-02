@@ -1,0 +1,133 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+17,1,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,7.0,7.0,7.0,,21.0,8.5,0.08203125,True,0,eliminated,4.0,False
+17,1,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,7.0,8.0,7.0,,22.0,6.5,0.0859375,True,0,eliminated,8.0,False
+17,1,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,8.0,8.0,8.0,,24.0,2.5,0.09375,True,0,eliminated,9.0,False
+17,1,Leah Remini,Tony Dovolani,Eliminated Week 10,5,7.0,7.0,7.0,,21.0,8.5,0.08203125,True,0,eliminated,10.0,False
+17,1,Corbin Bleu,Karina Smirnoff,2nd Place,2,8.0,8.0,8.0,,24.0,2.5,0.09375,True,0,finished,11.0,False
+17,1,Amber Riley,Derek Hough,1st Place,1,9.0,9.0,9.0,,27.0,1.0,0.10546875,True,0,finished,11.0,False
+17,1,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,6.0,5.0,6.0,,17.0,11.0,0.06640625,True,0,eliminated,2.0,False
+17,1,Bill Engvall,Emma Slater,Eliminated Week 11,4,6.0,6.0,6.0,,18.0,10.0,0.0703125,True,0,eliminated,11.0,False
+17,1,Christina Milian,Mark Ballas,Eliminated Week 5,9,7.0,7.0,8.0,,22.0,6.5,0.0859375,True,0,eliminated,5.0,False
+17,1,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,8.0,8.0,7.0,,23.0,4.5,0.08984375,True,0,eliminated,7.0,False
+17,1,Jack Osbourne,Cheryl Burke,3rd Place,3,8.0,8.0,7.0,,23.0,4.5,0.08984375,True,0,finished,11.0,False
+17,1,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,5.0,4.0,5.0,,14.0,12.0,0.0546875,True,0,eliminated,3.0,False
+17,2,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,6.0,6.0,7.0,,19.0,10.0,0.0714285714285714,True,0,eliminated,4.0,False
+17,2,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,8.0,7.0,8.0,,23.0,7.0,0.0864661654135338,True,0,eliminated,8.0,False
+17,2,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,8.0,9.0,8.0,,25.0,2.5,0.093984962406015,True,0,eliminated,9.0,False
+17,2,Leah Remini,Tony Dovolani,Eliminated Week 10,5,8.0,8.0,8.0,,24.0,5.0,0.0902255639097744,True,0,eliminated,10.0,False
+17,2,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.0,8.0,9.0,,26.0,1.0,0.0977443609022556,True,0,finished,11.0,False
+17,2,Amber Riley,Derek Hough,1st Place,1,8.0,8.0,8.0,,24.0,5.0,0.0902255639097744,True,0,finished,11.0,False
+17,2,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,6.0,6.0,6.0,,18.0,11.0,0.0676691729323308,True,1,eliminated,2.0,False
+17,2,Bill Engvall,Emma Slater,Eliminated Week 11,4,7.0,7.0,7.0,,21.0,8.0,0.0789473684210526,True,0,eliminated,11.0,False
+17,2,Christina Milian,Mark Ballas,Eliminated Week 5,9,9.0,8.0,8.0,,25.0,2.5,0.093984962406015,True,0,eliminated,5.0,False
+17,2,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,6.0,7.0,7.0,,20.0,9.0,0.075187969924812,True,0,eliminated,7.0,False
+17,2,Jack Osbourne,Cheryl Burke,3rd Place,3,8.0,8.0,8.0,,24.0,5.0,0.0902255639097744,True,0,finished,11.0,False
+17,2,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,6.0,5.0,6.0,,17.0,12.0,0.0639097744360902,True,0,eliminated,3.0,False
+17,3,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,6.0,5.0,5.0,,16.0,10.5,0.0627450980392156,True,0,eliminated,4.0,False
+17,3,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,9.0,9.0,9.0,,27.0,1.0,0.1058823529411764,True,0,eliminated,8.0,False
+17,3,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,8.0,9.0,8.0,,25.0,4.5,0.0980392156862745,True,0,eliminated,9.0,False
+17,3,Leah Remini,Tony Dovolani,Eliminated Week 10,5,8.0,8.0,8.0,,24.0,7.0,0.0941176470588235,True,0,eliminated,10.0,False
+17,3,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.0,8.0,9.0,,26.0,2.5,0.1019607843137254,True,0,finished,11.0,False
+17,3,Amber Riley,Derek Hough,1st Place,1,8.0,8.0,8.0,,24.0,7.0,0.0941176470588235,True,0,finished,11.0,False
+17,3,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,3,Bill Engvall,Emma Slater,Eliminated Week 11,4,8.0,8.0,8.0,,24.0,7.0,0.0941176470588235,True,0,eliminated,11.0,False
+17,3,Christina Milian,Mark Ballas,Eliminated Week 5,9,9.0,8.0,9.0,,26.0,2.5,0.1019607843137254,True,0,eliminated,5.0,False
+17,3,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,9.0,8.0,8.0,,25.0,4.5,0.0980392156862745,True,0,eliminated,7.0,False
+17,3,Jack Osbourne,Cheryl Burke,3rd Place,3,7.0,7.0,8.0,,22.0,9.0,0.0862745098039215,True,0,finished,11.0,False
+17,3,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,6.0,5.0,5.0,,16.0,10.5,0.0627450980392156,True,1,eliminated,3.0,False
+17,4,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,6.0,6.0,6.0,,18.0,10.0,0.0759493670886076,True,1,eliminated,4.0,False
+17,4,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,7.0,7.0,7.0,,21.0,8.5,0.0886075949367088,True,0,eliminated,8.0,False
+17,4,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,9.0,9.0,9.0,,27.0,2.0,0.1139240506329113,True,0,eliminated,9.0,False
+17,4,Leah Remini,Tony Dovolani,Eliminated Week 10,5,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,0,eliminated,10.0,False
+17,4,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.0,9.0,9.0,,27.0,2.0,0.1139240506329113,True,0,finished,11.0,False
+17,4,Amber Riley,Derek Hough,1st Place,1,9.0,9.0,9.0,,27.0,2.0,0.1139240506329113,True,0,finished,11.0,False
+17,4,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,4,Bill Engvall,Emma Slater,Eliminated Week 11,4,7.0,7.0,7.0,,21.0,8.5,0.0886075949367088,True,0,eliminated,11.0,False
+17,4,Christina Milian,Mark Ballas,Eliminated Week 5,9,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,0,eliminated,5.0,False
+17,4,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,0,eliminated,7.0,False
+17,4,Jack Osbourne,Cheryl Burke,3rd Place,3,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,0,finished,11.0,False
+17,4,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+17,5,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+17,5,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,9.0,9.0,9.0,,27.0,4.0,0.1148936170212766,True,0,eliminated,8.0,False
+17,5,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,8.0,9.0,9.0,,26.0,6.5,0.1106382978723404,True,0,eliminated,9.0,False
+17,5,Leah Remini,Tony Dovolani,Eliminated Week 10,5,7.0,7.0,8.0,,22.0,9.0,0.0936170212765957,True,0,eliminated,10.0,False
+17,5,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.0,9.0,10.0,,28.0,1.5,0.1191489361702127,True,0,finished,11.0,False
+17,5,Amber Riley,Derek Hough,1st Place,1,9.0,7.0,10.0,,26.0,6.5,0.1106382978723404,True,0,finished,11.0,False
+17,5,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,5,Bill Engvall,Emma Slater,Eliminated Week 11,4,8.0,8.0,8.0,,24.0,8.0,0.102127659574468,True,0,eliminated,11.0,False
+17,5,Christina Milian,Mark Ballas,Eliminated Week 5,9,9.0,10.0,9.0,,28.0,1.5,0.1191489361702127,True,1,eliminated,5.0,False
+17,5,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,9.0,9.0,9.0,,27.0,4.0,0.1148936170212766,True,0,eliminated,7.0,False
+17,5,Jack Osbourne,Cheryl Burke,3rd Place,3,9.0,9.0,9.0,,27.0,4.0,0.1148936170212766,True,0,finished,11.0,False
+17,5,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+17,6,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+17,6,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,10.0,11.0,10.0,,31.0,3.0,0.13419959895965,True,0,eliminated,8.0,False
+17,6,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,10.6666,10.6666,10.6666,,31.9998,2.0,0.1385277524770648,True,0,eliminated,9.0,False
+17,6,Leah Remini,Tony Dovolani,Eliminated Week 10,5,9.3333,9.3333,9.3333,,27.999899999999997,5.0,0.1212121080938808,True,0,eliminated,10.0,False
+17,6,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.3333,8.3333,9.3333,,26.999899999999997,6.0,0.1168830887726018,True,0,finished,11.0,False
+17,6,Amber Riley,Derek Hough,1st Place,1,11.3333,9.3333,11.3333,,31.999899999999997,1.0,0.138528185378997,True,0,finished,11.0,False
+17,6,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,6,Bill Engvall,Emma Slater,Eliminated Week 11,4,8.3333,8.3333,7.3333,,23.9999,8.0,0.1038960308087647,True,0,eliminated,11.0,False
+17,6,Christina Milian,Mark Ballas,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+17,6,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,10.0,10.0,10.0,,30.0,4.0,0.129870579638371,True,0,eliminated,7.0,False
+17,6,Jack Osbourne,Cheryl Burke,3rd Place,3,8.6666,9.6666,8.6666,,26.9998,7.0,0.1168826558706696,True,0,finished,11.0,False
+17,6,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+17,7,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+17,7,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,9.5,9.5,9.5,,28.5,3.5,0.128668171557562,True,0,eliminated,8.0,False
+17,7,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,9.0,9.0,9.0,,27.0,5.5,0.1218961625282167,True,0,eliminated,9.0,False
+17,7,Leah Remini,Tony Dovolani,Eliminated Week 10,5,9.0,8.5,9.0,,26.5,7.0,0.1196388261851015,True,0,eliminated,10.0,False
+17,7,Corbin Bleu,Karina Smirnoff,2nd Place,2,10.0,9.5,10.0,,29.5,1.5,0.1331828442437923,True,0,finished,11.0,False
+17,7,Amber Riley,Derek Hough,1st Place,1,10.0,10.0,9.5,,29.5,1.5,0.1331828442437923,True,0,finished,11.0,False
+17,7,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,7,Bill Engvall,Emma Slater,Eliminated Week 11,4,8.5,8.0,8.5,,25.0,8.0,0.1128668171557562,True,0,eliminated,11.0,False
+17,7,Christina Milian,Mark Ballas,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+17,7,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,9.0,9.0,9.0,,27.0,5.5,0.1218961625282167,True,1,eliminated,7.0,False
+17,7,Jack Osbourne,Cheryl Burke,3rd Place,3,10.0,9.0,9.5,,28.5,3.5,0.128668171557562,True,0,finished,11.0,False
+17,7,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+17,8,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+17,8,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,9.0,9.0,9.0,,27.0,5.0,0.140625,True,1,eliminated,8.0,False
+17,8,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,8.0,9.0,8.0,,25.0,6.0,0.1302083333333333,True,0,eliminated,9.0,False
+17,8,Leah Remini,Tony Dovolani,Eliminated Week 10,5,9.0,10.0,9.0,,28.0,3.5,0.1458333333333333,True,0,eliminated,10.0,False
+17,8,Corbin Bleu,Karina Smirnoff,2nd Place,2,10.0,10.0,10.0,,30.0,1.5,0.15625,True,0,finished,11.0,False
+17,8,Amber Riley,Derek Hough,1st Place,1,9.0,9.0,10.0,,28.0,3.5,0.1458333333333333,True,0,finished,11.0,False
+17,8,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,8,Bill Engvall,Emma Slater,Eliminated Week 11,4,8.0,8.0,8.0,,24.0,7.0,0.125,True,0,eliminated,11.0,False
+17,8,Christina Milian,Mark Ballas,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+17,8,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+17,8,Jack Osbourne,Cheryl Burke,3rd Place,3,10.0,10.0,10.0,,30.0,1.5,0.15625,True,0,finished,11.0,False
+17,8,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+17,9,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+17,9,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+17,9,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,9.5,9.0,9.5,,28.0,2.0,0.1777777777777777,True,1,eliminated,9.0,False
+17,9,Leah Remini,Tony Dovolani,Eliminated Week 10,5,9.0,9.0,9.0,,27.0,3.5,0.1714285714285714,True,0,eliminated,10.0,False
+17,9,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.5,9.5,10.0,,29.0,1.0,0.1841269841269841,True,0,finished,11.0,False
+17,9,Amber Riley,Derek Hough,1st Place,1,8.5,8.5,8.5,,25.5,5.0,0.1619047619047619,True,0,finished,11.0,False
+17,9,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,9,Bill Engvall,Emma Slater,Eliminated Week 11,4,7.0,7.0,7.0,,21.0,6.0,0.1333333333333333,True,0,eliminated,11.0,False
+17,9,Christina Milian,Mark Ballas,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+17,9,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+17,9,Jack Osbourne,Cheryl Burke,3rd Place,3,9.0,9.0,9.0,,27.0,3.5,0.1714285714285714,True,0,finished,11.0,False
+17,9,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+17,10,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+17,10,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,8.0,True
+17,10,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,9.0,True
+17,10,Leah Remini,Tony Dovolani,Eliminated Week 10,5,8.0,8.0,8.0,8.5,32.5,4.0,0.1857142857142857,True,1,eliminated,10.0,False
+17,10,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.5,9.0,9.5,9.5,37.5,2.0,0.2142857142857142,True,0,finished,11.0,False
+17,10,Amber Riley,Derek Hough,1st Place,1,10.0,10.0,9.5,10.0,39.5,1.0,0.2257142857142857,True,0,finished,11.0,False
+17,10,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+17,10,Bill Engvall,Emma Slater,Eliminated Week 11,4,7.5,7.5,7.5,7.5,30.0,5.0,0.1714285714285714,True,0,eliminated,11.0,False
+17,10,Christina Milian,Mark Ballas,Eliminated Week 5,9,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,5.0,True
+17,10,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,7.0,True
+17,10,Jack Osbourne,Cheryl Burke,3rd Place,3,9.0,8.5,9.0,9.0,35.5,3.0,0.2028571428571428,True,0,finished,11.0,False
+17,10,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,3.0,True
+17,11,Valerie Harper,Tristan MacManus,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+17,11,Brant Daugherty,Peta Murgatroyd,Eliminated Week 8,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+17,11,Elizabeth Berkley Lauren,Valentin Chmerkovskiy,Eliminated Week 9,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+17,11,Leah Remini,Tony Dovolani,Eliminated Week 10,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,10.0,True
+17,11,Corbin Bleu,Karina Smirnoff,2nd Place,2,9.8888,9.8888,9.8888,,29.6664,2.0,0.2590965542177513,True,0,finished,11.0,False
+17,11,Amber Riley,Derek Hough,1st Place,1,10.4444,10.4444,10.4444,,31.3332,1.0,0.2736538357406239,True,0,finished,11.0,False
+17,11,Keyshawn Johnson,Sharna Burgess,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+17,11,Bill Engvall,Emma Slater,Eliminated Week 11,4,8.3333,8.8333,8.3333,,25.499899999999997,4.0,0.2227077172456798,True,1,eliminated,11.0,False
+17,11,Christina Milian,Mark Ballas,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+17,11,"Nicole ""Snooki"" Polizzi",Sasha Farber,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+17,11,Jack Osbourne,Cheryl Burke,3rd Place,3,9.3333,9.3333,9.3333,,27.999899999999997,3.0,0.2445418927959447,True,0,finished,11.0,False
+17,11,Bill Nye,Tyne Stecklein,Eliminated Week 3,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True

@@ -1,0 +1,81 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+2,1,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,7.0,8.0,8.0,,23.0,2.5,0.1179487179487179,True,0,eliminated,2.0,False
+2,1,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,6.0,7.0,7.0,,20.0,6.0,0.1025641025641025,True,0,eliminated,5.0,False
+2,1,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,7.0,5.0,6.0,,18.0,8.0,0.0923076923076923,True,0,eliminated,6.0,False
+2,1,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,5.0,7.0,7.0,,19.0,7.0,0.0974358974358974,True,0,eliminated,7.0,False
+2,1,Stacy Keibler,Tony Dovolani,3rd Place,3,8.0,6.0,8.0,,22.0,4.0,0.1128205128205128,True,0,finished,8.0,False
+2,1,Jerry Rice,Anna Trebunskaya,2nd Place,2,7.0,7.0,7.0,,21.0,5.0,0.1076923076923077,True,0,finished,8.0,False
+2,1,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,7.0,8.0,8.0,,23.0,2.5,0.1179487179487179,True,0,eliminated,3.0,False
+2,1,Master P,Ashly DelGrosso,Eliminated Week 4,7,4.0,4.0,4.0,,12.0,10.0,0.0615384615384615,True,0,eliminated,4.0,False
+2,1,Drew Lachey,Cheryl Burke,1st Place,1,8.0,8.0,8.0,,24.0,1.0,0.123076923076923,True,0,finished,8.0,False
+2,1,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,4.0,5.0,4.0,,13.0,9.0,0.0666666666666666,True,1,eliminated,1.0,False
+2,2,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,5.0,6.0,6.0,,17.0,8.0,0.085,True,1,eliminated,2.0,False
+2,2,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,7.0,8.0,7.0,,22.0,5.5,0.11,True,0,eliminated,5.0,False
+2,2,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,8.0,7.0,7.0,,22.0,5.5,0.11,True,0,eliminated,6.0,False
+2,2,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,6.0,7.0,7.0,,20.0,7.0,0.1,True,0,eliminated,7.0,False
+2,2,Stacy Keibler,Tony Dovolani,3rd Place,3,9.0,10.0,10.0,,29.0,1.0,0.145,True,0,finished,8.0,False
+2,2,Jerry Rice,Anna Trebunskaya,2nd Place,2,7.0,8.0,8.0,,23.0,4.0,0.115,True,0,finished,8.0,False
+2,2,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,8.0,8.0,8.0,,24.0,3.0,0.12,True,0,eliminated,3.0,False
+2,2,Master P,Ashly DelGrosso,Eliminated Week 4,7,6.0,5.0,5.0,,16.0,9.0,0.08,True,0,eliminated,4.0,False
+2,2,Drew Lachey,Cheryl Burke,1st Place,1,9.0,9.0,9.0,,27.0,2.0,0.135,True,0,finished,8.0,False
+2,2,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+2,3,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+2,3,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,9.0,8.0,9.0,,26.0,3.0,0.1428571428571428,True,0,eliminated,5.0,False
+2,3,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,7.0,7.0,8.0,,22.0,5.5,0.1208791208791208,True,0,eliminated,6.0,False
+2,3,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,8.0,8.0,9.0,,25.0,4.0,0.1373626373626373,True,0,eliminated,7.0,False
+2,3,Stacy Keibler,Tony Dovolani,3rd Place,3,9.0,9.0,9.0,,27.0,1.5,0.1483516483516483,True,0,finished,8.0,False
+2,3,Jerry Rice,Anna Trebunskaya,2nd Place,2,7.0,6.0,6.0,,19.0,7.0,0.1043956043956044,True,0,finished,8.0,False
+2,3,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,7.0,8.0,7.0,,22.0,5.5,0.1208791208791208,True,1,eliminated,3.0,False
+2,3,Master P,Ashly DelGrosso,Eliminated Week 4,7,6.0,4.0,4.0,,14.0,8.0,0.0769230769230769,True,0,eliminated,4.0,False
+2,3,Drew Lachey,Cheryl Burke,1st Place,1,9.0,9.0,9.0,,27.0,1.5,0.1483516483516483,True,0,finished,8.0,False
+2,3,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+2,4,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+2,4,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,9.0,8.0,8.0,,25.0,4.0,0.1582278481012658,True,0,eliminated,5.0,False
+2,4,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,7.0,7.0,7.0,,21.0,6.0,0.1329113924050632,True,0,eliminated,6.0,False
+2,4,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,9.0,9.0,8.0,,26.0,2.5,0.1645569620253164,True,0,eliminated,7.0,False
+2,4,Stacy Keibler,Tony Dovolani,3rd Place,3,8.0,9.0,9.0,,26.0,2.5,0.1645569620253164,True,0,finished,8.0,False
+2,4,Jerry Rice,Anna Trebunskaya,2nd Place,2,8.0,8.0,8.0,,24.0,5.0,0.1518987341772152,True,0,finished,8.0,False
+2,4,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+2,4,Master P,Ashly DelGrosso,Eliminated Week 4,7,4.0,2.0,2.0,,8.0,7.0,0.050632911392405,True,1,eliminated,4.0,False
+2,4,Drew Lachey,Cheryl Burke,1st Place,1,9.0,9.0,10.0,,28.0,1.0,0.1772151898734177,True,0,finished,8.0,False
+2,4,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+2,5,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+2,5,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,7.0,7.0,8.0,,22.0,6.0,0.1456953642384106,True,1,eliminated,5.0,False
+2,5,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,8.0,8.0,8.0,,24.0,4.0,0.1589403973509933,True,0,eliminated,6.0,False
+2,5,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,7.0,9.0,9.0,,25.0,3.0,0.1655629139072847,True,0,eliminated,7.0,False
+2,5,Stacy Keibler,Tony Dovolani,3rd Place,3,10.0,10.0,10.0,,30.0,1.0,0.1986754966887417,True,0,finished,8.0,False
+2,5,Jerry Rice,Anna Trebunskaya,2nd Place,2,7.0,8.0,8.0,,23.0,5.0,0.152317880794702,True,0,finished,8.0,False
+2,5,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+2,5,Master P,Ashly DelGrosso,Eliminated Week 4,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+2,5,Drew Lachey,Cheryl Burke,1st Place,1,9.0,9.0,9.0,,27.0,2.0,0.1788079470198675,True,0,finished,8.0,False
+2,5,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+2,6,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+2,6,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+2,6,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,8.0,7.0,8.0,,23.0,4.5,0.1729323308270676,True,1,eliminated,6.0,False
+2,6,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,9.0,9.0,9.0,,27.0,3.0,0.2030075187969924,True,0,eliminated,7.0,False
+2,6,Stacy Keibler,Tony Dovolani,3rd Place,3,10.0,10.0,10.0,,30.0,1.5,0.225563909774436,True,0,finished,8.0,False
+2,6,Jerry Rice,Anna Trebunskaya,2nd Place,2,8.0,7.0,8.0,,23.0,4.5,0.1729323308270676,True,0,finished,8.0,False
+2,6,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+2,6,Master P,Ashly DelGrosso,Eliminated Week 4,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+2,6,Drew Lachey,Cheryl Burke,1st Place,1,10.0,10.0,10.0,,30.0,1.5,0.225563909774436,True,0,finished,8.0,False
+2,6,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+2,7,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+2,7,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+2,7,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+2,7,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,8.5,9.0,9.0,,26.5,3.0,0.2598039215686274,True,1,eliminated,7.0,False
+2,7,Stacy Keibler,Tony Dovolani,3rd Place,3,9.0,9.0,9.5,,27.5,1.5,0.2696078431372549,True,0,finished,8.0,False
+2,7,Jerry Rice,Anna Trebunskaya,2nd Place,2,7.0,7.0,6.5,,20.5,4.0,0.2009803921568627,True,0,finished,8.0,False
+2,7,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+2,7,Master P,Ashly DelGrosso,Eliminated Week 4,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+2,7,Drew Lachey,Cheryl Burke,1st Place,1,9.5,9.0,9.0,,27.5,1.5,0.2696078431372549,True,0,finished,8.0,False
+2,7,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+2,8,Tatum O'Neal,Nick Kosovich,Eliminated Week 2,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+2,8,Tia Carrere,Maksim Chmerkoskiy,Eliminated Week 5,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+2,8,George Hamilton,Edyta Sliwinska,Eliminated Week 6,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+2,8,Lisa Rinna,Louis van Amstel,Eliminated Week 7,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+2,8,Stacy Keibler,Tony Dovolani,3rd Place,3,9.3333,9.6666,9.6666,,28.6665,2.0,0.339920718960216,True,0,finished,8.0,False
+2,8,Jerry Rice,Anna Trebunskaya,2nd Place,2,9.0,9.0,8.6666,,26.666600000000003,3.0,0.3162063678588072,True,0,finished,8.0,False
+2,8,Giselle Fernandez,Jonathan Roberts,Eliminated Week 3,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+2,8,Master P,Ashly DelGrosso,Eliminated Week 4,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+2,8,Drew Lachey,Cheryl Burke,1st Place,1,9.6666,9.6666,9.6666,,28.9998,1.0,0.3438729131809768,True,0,finished,8.0,False
+2,8,Kenny Mayne,Andrea Hale,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True

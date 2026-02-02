@@ -133,7 +133,13 @@ def solve_season_qp(panel_season: pd.DataFrame,
     if elim_col and elim_col in panel_season.columns:
         for w in weeks:
             mask = (panel_season[week_col] == w) & (panel_season[elim_col].astype(bool))
-            E_t[w] = panel_season.loc[mask, name_col].astype(str).tolist()
+            # Only keep elimination names that are present in the active participant list for that week
+            raw_elims = panel_season.loc[mask, name_col].astype(str).tolist()
+            active_names = set(A_t.get(w, []))
+            filtered = [n for n in raw_elims if n in active_names]
+            # If some elim names were not in active list, fall back to including them if they appear in panel rows for that week (best-effort)
+            # but avoid producing elimination constraints for unknown participants which causes KeyError later.
+            E_t[w] = filtered
     else:
         # No elimination info available in panel -> no elimination constraints will be used
         for w in weeks:

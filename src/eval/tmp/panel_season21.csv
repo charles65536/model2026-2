@@ -1,0 +1,144 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+21,1,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,5.0,5.0,5.0,,15.0,10.0,0.06,True,0,eliminated,4.0,False
+21,1,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,7.0,7.0,8.0,,22.0,5.5,0.088,True,0,eliminated,9.0,False
+21,1,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,8.0,8.0,7.0,,23.0,3.5,0.092,True,0,eliminated,11.0,False
+21,1,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,5.0,5.0,5.0,,15.0,10.0,0.06,True,0,eliminated,2.0,False
+21,1,Alek Skarlatos,Lindsay Arnold,3rd Place,3,8.0,7.0,7.0,,22.0,5.5,0.088,True,0,finished,11.0,False
+21,1,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,5.0,4.0,4.0,,13.0,12.0,0.052,True,0,eliminated,2.0,False
+21,1,Andy Grammer,Allison Holker,Eliminated Week 8,7,7.0,7.0,7.0,,21.0,7.5,0.084,True,0,eliminated,8.0,False
+21,1,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,8.0,7.0,8.0,,23.0,3.5,0.092,True,0,withdrew,9.0,False
+21,1,Nick Carter,Sharna Burgess,2nd Place,2,8.0,8.0,8.0,,24.0,1.5,0.096,True,0,finished,11.0,False
+21,1,Hayes Grier,Emma Slater,Eliminated Week 7,8,7.0,7.0,7.0,,21.0,7.5,0.084,True,0,eliminated,7.0,False
+21,1,Bindi Irwin,Derek Hough,1st Place,1,8.0,8.0,8.0,,24.0,1.5,0.096,True,0,finished,11.0,False
+21,1,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,4.0,4.0,4.0,,12.0,13.0,0.048,True,0,withdrew,2.0,False
+21,1,Paula Deen,Louis van Amstel,Eliminated Week 6,9,5.0,5.0,5.0,,15.0,10.0,0.06,True,0,eliminated,6.0,False
+21,2,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,5.5,5.5,5.5,,16.5,12.0,0.0609981515711645,True,0,eliminated,4.0,False
+21,2,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,7.5,7.5,8.0,,23.0,3.0,0.0850277264325323,True,0,eliminated,9.0,False
+21,2,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,7.5,7.5,7.5,,22.5,5.5,0.0831792975970425,True,0,eliminated,11.0,False
+21,2,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,6.5,5.5,6.5,,18.5,10.0,0.0683918669131238,True,1,eliminated,2.0,False
+21,2,Alek Skarlatos,Lindsay Arnold,3rd Place,3,7.5,7.0,8.0,,22.5,5.5,0.0831792975970425,True,0,finished,11.0,False
+21,2,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,5.0,5.0,5.0,,15.0,13.0,0.055452865064695,True,1,eliminated,2.0,False
+21,2,Andy Grammer,Allison Holker,Eliminated Week 8,7,7.5,7.5,7.0,,22.0,8.0,0.0813308687615526,True,0,eliminated,8.0,False
+21,2,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,8.0,8.0,8.5,,24.5,1.0,0.0905730129390018,True,0,withdrew,9.0,False
+21,2,Nick Carter,Sharna Burgess,2nd Place,2,7.5,7.5,7.5,,22.5,5.5,0.0831792975970425,True,0,finished,11.0,False
+21,2,Hayes Grier,Emma Slater,Eliminated Week 7,8,8.0,7.0,7.5,,22.5,5.5,0.0831792975970425,True,0,eliminated,7.0,False
+21,2,Bindi Irwin,Derek Hough,1st Place,1,8.0,8.0,8.0,,24.0,2.0,0.088724584103512,True,0,finished,11.0,False
+21,2,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,6.5,6.0,6.0,,18.5,10.0,0.0683918669131238,True,0,withdrew,2.0,False
+21,2,Paula Deen,Louis van Amstel,Eliminated Week 6,9,6.5,6.0,6.0,,18.5,10.0,0.0683918669131238,True,0,eliminated,6.0,False
+21,3,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,6.0,7.0,6.0,6.0,25.0,9.0,0.081967213114754,True,0,eliminated,4.0,False
+21,3,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,9.0,9.0,9.0,9.0,36.0,1.5,0.1180327868852459,True,0,eliminated,9.0,False
+21,3,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,7.0,8.0,8.0,8.0,31.0,6.0,0.101639344262295,True,0,eliminated,11.0,False
+21,3,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+21,3,Alek Skarlatos,Lindsay Arnold,3rd Place,3,8.0,8.0,9.0,8.0,33.0,3.5,0.1081967213114754,True,0,finished,11.0,False
+21,3,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+21,3,Andy Grammer,Allison Holker,Eliminated Week 8,7,7.0,7.0,8.0,7.0,29.0,8.0,0.0950819672131147,True,0,eliminated,8.0,False
+21,3,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,8.0,9.0,8.0,8.0,33.0,3.5,0.1081967213114754,True,0,withdrew,9.0,False
+21,3,Nick Carter,Sharna Burgess,2nd Place,2,9.0,9.0,9.0,9.0,36.0,1.5,0.1180327868852459,True,0,finished,11.0,False
+21,3,Hayes Grier,Emma Slater,Eliminated Week 7,8,7.0,8.0,7.0,8.0,30.0,7.0,0.0983606557377049,True,0,eliminated,7.0,False
+21,3,Bindi Irwin,Derek Hough,1st Place,1,8.0,8.0,8.0,8.0,32.0,5.0,0.1049180327868852,True,0,finished,11.0,False
+21,3,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,0.0,0.0,,,False,0,withdrew,2.0,True
+21,3,Paula Deen,Louis van Amstel,Eliminated Week 6,9,5.0,5.0,5.0,5.0,20.0,10.0,0.0655737704918032,True,0,eliminated,6.0,False
+21,4,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,5.0,6.0,5.0,,16.0,10.0,0.0677966101694915,True,1,eliminated,4.0,False
+21,4,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,7.0,7.0,7.0,,21.0,8.0,0.0889830508474576,True,0,eliminated,9.0,False
+21,4,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,9.0,8.0,8.0,,25.0,5.0,0.1059322033898305,True,0,eliminated,11.0,False
+21,4,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,4,Alek Skarlatos,Lindsay Arnold,3rd Place,3,8.0,8.0,8.0,,24.0,6.0,0.1016949152542373,True,0,finished,11.0,False
+21,4,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,4,Andy Grammer,Allison Holker,Eliminated Week 8,7,7.0,8.0,8.0,,23.0,7.0,0.097457627118644,True,0,eliminated,8.0,False
+21,4,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,9.0,9.0,9.0,,27.0,3.0,0.1144067796610169,True,0,withdrew,9.0,False
+21,4,Nick Carter,Sharna Burgess,2nd Place,2,9.0,9.0,9.0,,27.0,3.0,0.1144067796610169,True,0,finished,11.0,False
+21,4,Hayes Grier,Emma Slater,Eliminated Week 7,8,9.0,9.0,9.0,,27.0,3.0,0.1144067796610169,True,0,eliminated,7.0,False
+21,4,Bindi Irwin,Derek Hough,1st Place,1,9.0,9.0,10.0,,28.0,1.0,0.1186440677966101,True,0,finished,11.0,False
+21,4,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+21,4,Paula Deen,Louis van Amstel,Eliminated Week 6,9,6.0,6.0,6.0,,18.0,9.0,0.0762711864406779,True,0,eliminated,6.0,False
+21,5,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+21,5,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,10.0,10.0,10.0,10.0,40.0,1.0,0.132890365448505,True,0,eliminated,9.0,False
+21,5,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,10.0,10.0,9.0,10.0,39.0,2.0,0.1295681063122923,True,0,eliminated,11.0,False
+21,5,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+21,5,Alek Skarlatos,Lindsay Arnold,3rd Place,3,8.0,7.0,7.0,7.0,29.0,7.5,0.0963455149501661,True,0,finished,11.0,False
+21,5,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+21,5,Andy Grammer,Allison Holker,Eliminated Week 8,7,9.0,9.0,9.0,9.0,36.0,4.0,0.1196013289036544,True,0,eliminated,8.0,False
+21,5,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,7.0,7.0,8.0,7.0,29.0,7.5,0.0963455149501661,True,0,withdrew,9.0,False
+21,5,Nick Carter,Sharna Burgess,2nd Place,2,9.0,9.0,8.0,9.0,35.0,5.0,0.1162790697674418,True,0,finished,11.0,False
+21,5,Hayes Grier,Emma Slater,Eliminated Week 7,8,8.0,8.0,7.0,7.0,30.0,6.0,0.0996677740863787,True,0,eliminated,7.0,False
+21,5,Bindi Irwin,Derek Hough,1st Place,1,9.0,9.0,10.0,9.0,37.0,3.0,0.1229235880398671,True,0,finished,11.0,False
+21,5,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,0.0,0.0,,,False,0,withdrew,2.0,True
+21,5,Paula Deen,Louis van Amstel,Eliminated Week 6,9,7.0,7.0,6.0,6.0,26.0,9.0,0.0863787375415282,True,0,eliminated,6.0,False
+21,6,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+21,6,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,8.0,7.0,7.0,8.0,30.0,7.5,0.0958466453674121,True,0,eliminated,9.0,False
+21,6,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,10.0,9.0,9.0,10.0,38.0,5.0,0.121405750798722,True,0,eliminated,11.0,False
+21,6,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+21,6,Alek Skarlatos,Lindsay Arnold,3rd Place,3,8.0,8.0,7.0,7.0,30.0,7.5,0.0958466453674121,True,0,finished,11.0,False
+21,6,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+21,6,Andy Grammer,Allison Holker,Eliminated Week 8,7,10.0,10.0,10.0,10.0,40.0,2.0,0.1277955271565495,True,0,eliminated,8.0,False
+21,6,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,10.0,10.0,10.0,10.0,40.0,2.0,0.1277955271565495,True,0,withdrew,9.0,False
+21,6,Nick Carter,Sharna Burgess,2nd Place,2,9.0,10.0,10.0,10.0,39.0,4.0,0.1246006389776357,True,0,finished,11.0,False
+21,6,Hayes Grier,Emma Slater,Eliminated Week 7,8,8.0,8.0,8.0,8.0,32.0,6.0,0.1022364217252396,True,0,eliminated,7.0,False
+21,6,Bindi Irwin,Derek Hough,1st Place,1,10.0,10.0,10.0,10.0,40.0,2.0,0.1277955271565495,True,0,finished,11.0,False
+21,6,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,0.0,0.0,,,False,0,withdrew,2.0,True
+21,6,Paula Deen,Louis van Amstel,Eliminated Week 6,9,6.0,6.0,6.0,6.0,24.0,9.0,0.0766773162939297,True,1,eliminated,6.0,False
+21,7,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+21,7,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,9.0,9.5,9.0,,27.5,5.0,0.1244343891402715,True,0,eliminated,9.0,False
+21,7,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,9.0,10.0,9.0,,28.0,3.0,0.1266968325791855,True,0,eliminated,11.0,False
+21,7,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,7,Alek Skarlatos,Lindsay Arnold,3rd Place,3,9.0,9.0,8.5,,26.5,8.0,0.1199095022624434,True,0,finished,11.0,False
+21,7,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,7,Andy Grammer,Allison Holker,Eliminated Week 8,7,9.5,9.5,9.0,,28.0,3.0,0.1266968325791855,True,0,eliminated,8.0,False
+21,7,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,9.0,9.0,9.0,,27.0,6.5,0.1221719457013574,True,0,withdrew,9.0,False
+21,7,Nick Carter,Sharna Burgess,2nd Place,2,9.0,9.0,9.0,,27.0,6.5,0.1221719457013574,True,0,finished,11.0,False
+21,7,Hayes Grier,Emma Slater,Eliminated Week 7,8,9.0,9.5,9.5,,28.0,3.0,0.1266968325791855,True,1,eliminated,7.0,False
+21,7,Bindi Irwin,Derek Hough,1st Place,1,9.5,10.0,9.5,,29.0,1.0,0.1312217194570135,True,0,finished,11.0,False
+21,7,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+21,7,Paula Deen,Louis van Amstel,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+21,8,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+21,8,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,9.6666,8.6666,8.6666,,26.9998,5.0,0.1391746572412079,True,0,eliminated,9.0,False
+21,8,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,9.6666,9.6666,9.6666,,28.9998,2.0,0.149483967476188,True,0,eliminated,11.0,False
+21,8,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,8,Alek Skarlatos,Lindsay Arnold,3rd Place,3,9.0,8.0,8.0,,25.0,6.0,0.1288663779372513,True,0,finished,11.0,False
+21,8,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,8,Andy Grammer,Allison Holker,Eliminated Week 8,7,8.6666,7.6666,7.6666,,23.9998,7.0,0.1237106918887378,True,1,eliminated,8.0,False
+21,8,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,9.0,9.0,10.0,,28.0,3.5,0.1443303432897215,True,0,withdrew,9.0,False
+21,8,Nick Carter,Sharna Burgess,2nd Place,2,11.0,11.0,11.0,,33.0,1.0,0.1701036188771717,True,0,finished,11.0,False
+21,8,Hayes Grier,Emma Slater,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+21,8,Bindi Irwin,Derek Hough,1st Place,1,10.0,9.0,9.0,,28.0,3.5,0.1443303432897215,True,0,finished,11.0,False
+21,8,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+21,8,Paula Deen,Louis van Amstel,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+21,9,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+21,9,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,10.0,10.0,10.0,,30.0,1.5,0.182370820668693,True,1,eliminated,9.0,False
+21,9,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,9.0,9.0,9.0,,27.0,4.0,0.1641337386018237,True,0,eliminated,11.0,False
+21,9,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,9,Alek Skarlatos,Lindsay Arnold,3rd Place,3,8.5,8.5,8.5,,25.5,5.0,0.155015197568389,True,0,finished,11.0,False
+21,9,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,9,Andy Grammer,Allison Holker,Eliminated Week 8,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+21,9,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,8.5,8.0,8.0,,24.5,6.0,0.1489361702127659,True,0,withdrew,9.0,False
+21,9,Nick Carter,Sharna Burgess,2nd Place,2,9.0,9.0,9.5,,27.5,3.0,0.1671732522796352,True,0,finished,11.0,False
+21,9,Hayes Grier,Emma Slater,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+21,9,Bindi Irwin,Derek Hough,1st Place,1,10.0,10.0,10.0,,30.0,1.5,0.182370820668693,True,0,finished,11.0,False
+21,9,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+21,9,Paula Deen,Louis van Amstel,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+21,10,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+21,10,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+21,10,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,10.0,10.5,11.0,,31.5,1.5,0.2658227848101265,True,0,eliminated,11.0,False
+21,10,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,10,Alek Skarlatos,Lindsay Arnold,3rd Place,3,9.5,9.5,9.5,,28.5,3.0,0.240506329113924,True,0,finished,11.0,False
+21,10,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,10,Andy Grammer,Allison Holker,Eliminated Week 8,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+21,10,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,0.0,0.0,0.0,,0.0,,,False,0,withdrew,9.0,True
+21,10,Nick Carter,Sharna Burgess,2nd Place,2,9.0,9.0,9.0,,27.0,4.0,0.2278481012658227,True,0,finished,11.0,False
+21,10,Hayes Grier,Emma Slater,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+21,10,Bindi Irwin,Derek Hough,1st Place,1,10.5,10.5,10.5,,31.5,1.5,0.2658227848101265,True,0,finished,11.0,False
+21,10,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+21,10,Paula Deen,Louis van Amstel,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+21,11,Gary Busey,Anna Trebunskaya,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+21,11,Alexa PenaVega,Mark Ballas,Eliminated Week 9,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+21,11,Carlos PenaVega,Witney Carson,Eliminated Week 11,4,10.0,10.0,10.0,,30.0,2.0,0.2542375035911047,True,1,eliminated,11.0,False
+21,11,Victor Espinoza,Karina Smirnoff,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,11,Alek Skarlatos,Lindsay Arnold,3rd Place,3,9.3333,9.3333,9.3333,,27.999899999999997,4.0,0.2372874892266857,True,0,finished,11.0,False
+21,11,Chaka Khan,Keo Motsepe,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+21,11,Andy Grammer,Allison Holker,Eliminated Week 8,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+21,11,Tamar Braxton,Valentin Chmerkovskiy,Withdrew,5,0.0,0.0,0.0,,0.0,,,False,0,withdrew,9.0,True
+21,11,Nick Carter,Sharna Burgess,2nd Place,2,10.0,10.0,10.0,,30.0,2.0,0.2542375035911047,True,0,finished,11.0,False
+21,11,Hayes Grier,Emma Slater,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+21,11,Bindi Irwin,Derek Hough,1st Place,1,10.0,10.0,10.0,,30.0,2.0,0.2542375035911047,True,0,finished,11.0,False
+21,11,Kim Zolciak-Biermann,Tony Dovolani,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+21,11,Paula Deen,Louis van Amstel,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True

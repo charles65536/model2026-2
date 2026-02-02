@@ -1,0 +1,144 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+8,1,Gilles Marini,Cheryl Burke,2nd Place,2,8.0,8.0,8.0,,24.0,1.0,0.0987654320987654,True,0,finished,11.0,False
+8,1,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,6.0,6.0,6.0,,18.0,7.5,0.074074074074074,True,0,eliminated,3.0,False
+8,1,David Alan Grier,Kym Johnson,Eliminated Week 5,9,6.0,7.0,6.0,,19.0,6.0,0.0781893004115226,True,0,eliminated,5.0,False
+8,1,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,6.0,5.0,5.0,,16.0,11.0,0.0658436213991769,True,0,eliminated,7.0,False
+8,1,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,5.0,4.0,5.0,,14.0,12.0,0.0576131687242798,True,0,eliminated,10.0,False
+8,1,Shawn Johnson,Mark Ballas,1st Place,1,8.0,8.0,7.0,,23.0,2.5,0.0946502057613168,True,0,finished,11.0,False
+8,1,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,5.0,4.0,4.0,,13.0,13.0,0.0534979423868312,True,0,eliminated,4.0,False
+8,1,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,6.0,6.0,5.0,,17.0,9.5,0.0699588477366255,True,0,eliminated,2.0,False
+8,1,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,6.0,7.0,7.0,,20.0,5.0,0.0823045267489712,True,0,eliminated,8.0,False
+8,1,Lil' Kim,Derek Hough,Eliminated Week 9,5,7.0,7.0,7.0,,21.0,4.0,0.0864197530864197,True,0,eliminated,9.0,False
+8,1,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,6.0,5.0,6.0,,17.0,9.5,0.0699588477366255,True,0,eliminated,6.0,False
+8,1,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,6.0,6.0,6.0,,18.0,7.5,0.074074074074074,True,0,eliminated,4.0,False
+8,1,Melissa Rycroft,Tony Dovolani,3rd Place,3,8.0,7.0,8.0,,23.0,2.5,0.0946502057613168,True,0,finished,11.0,False
+8,2,Gilles Marini,Cheryl Burke,2nd Place,2,9.0,9.0,9.0,,27.0,1.0,0.1018867924528302,True,0,finished,11.0,False
+8,2,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,7.0,7.0,7.0,,21.0,5.0,0.0792452830188679,True,0,eliminated,3.0,False
+8,2,David Alan Grier,Kym Johnson,Eliminated Week 5,9,6.0,5.0,6.0,,17.0,11.5,0.0641509433962264,True,0,eliminated,5.0,False
+8,2,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,7.0,6.0,7.0,,20.0,7.0,0.0754716981132075,True,0,eliminated,7.0,False
+8,2,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,7.0,6.0,7.0,,20.0,7.0,0.0754716981132075,True,0,eliminated,10.0,False
+8,2,Shawn Johnson,Mark Ballas,1st Place,1,8.0,8.0,8.0,,24.0,3.0,0.090566037735849,True,0,finished,11.0,False
+8,2,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,6.0,5.0,6.0,,17.0,11.5,0.0641509433962264,True,0,eliminated,4.0,False
+8,2,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,6.0,6.0,6.0,,18.0,9.5,0.0679245283018867,True,1,eliminated,2.0,False
+8,2,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,6.0,7.0,7.0,,20.0,7.0,0.0754716981132075,True,0,eliminated,8.0,False
+8,2,Lil' Kim,Derek Hough,Eliminated Week 9,5,8.0,7.0,8.0,,23.0,4.0,0.0867924528301886,True,0,eliminated,9.0,False
+8,2,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,5.0,4.0,5.0,,14.0,13.0,0.0528301886792452,True,0,eliminated,6.0,False
+8,2,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,6.0,6.0,6.0,,18.0,9.5,0.0679245283018867,True,0,eliminated,4.0,False
+8,2,Melissa Rycroft,Tony Dovolani,3rd Place,3,9.0,8.0,9.0,,26.0,2.0,0.0981132075471698,True,0,finished,11.0,False
+8,3,Gilles Marini,Cheryl Burke,2nd Place,2,9.0,9.0,9.0,,27.0,2.0,0.1062992125984252,True,0,finished,11.0,False
+8,3,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,5.0,6.0,5.0,,16.0,10.0,0.0629921259842519,True,1,eliminated,3.0,False
+8,3,David Alan Grier,Kym Johnson,Eliminated Week 5,9,8.0,8.0,8.0,,24.0,5.0,0.0944881889763779,True,0,eliminated,5.0,False
+8,3,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,7.0,6.0,7.0,,20.0,8.0,0.0787401574803149,True,0,eliminated,7.0,False
+8,3,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,8.0,8.0,7.0,,23.0,6.5,0.0905511811023622,True,0,eliminated,10.0,False
+8,3,Shawn Johnson,Mark Ballas,1st Place,1,9.0,9.0,9.0,,27.0,2.0,0.1062992125984252,True,0,finished,11.0,False
+8,3,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,4.0,3.0,3.0,,10.0,12.0,0.0393700787401574,True,0,eliminated,4.0,False
+8,3,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,3,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,8.0,7.0,8.0,,23.0,6.5,0.0905511811023622,True,0,eliminated,8.0,False
+8,3,Lil' Kim,Derek Hough,Eliminated Week 9,5,8.0,8.0,9.0,,25.0,4.0,0.0984251968503937,True,0,eliminated,9.0,False
+8,3,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,5.0,5.0,5.0,,15.0,11.0,0.0590551181102362,True,0,eliminated,6.0,False
+8,3,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,5.0,6.0,6.0,,17.0,9.0,0.0669291338582677,True,0,eliminated,4.0,False
+8,3,Melissa Rycroft,Tony Dovolani,3rd Place,3,9.0,9.0,9.0,,27.0,2.0,0.1062992125984252,True,0,finished,11.0,False
+8,4,Gilles Marini,Cheryl Burke,2nd Place,2,10.0,10.0,10.0,,30.0,1.0,0.1239669421487603,True,0,finished,11.0,False
+8,4,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,4,David Alan Grier,Kym Johnson,Eliminated Week 5,9,8.0,7.0,7.0,,22.0,6.5,0.0909090909090909,True,0,eliminated,5.0,False
+8,4,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,7.0,5.0,7.0,,19.0,8.0,0.0785123966942148,True,0,eliminated,7.0,False
+8,4,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,9.0,8.0,8.0,,25.0,4.5,0.1033057851239669,True,0,eliminated,10.0,False
+8,4,Shawn Johnson,Mark Ballas,1st Place,1,8.0,8.0,9.0,,25.0,4.5,0.1033057851239669,True,0,finished,11.0,False
+8,4,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,4.0,4.0,4.0,,12.0,11.0,0.0495867768595041,True,1,eliminated,4.0,False
+8,4,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,4,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,8.0,7.0,7.0,,22.0,6.5,0.0909090909090909,True,0,eliminated,8.0,False
+8,4,Lil' Kim,Derek Hough,Eliminated Week 9,5,9.0,8.0,10.0,,27.0,3.0,0.1115702479338843,True,0,eliminated,9.0,False
+8,4,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,5.0,5.0,5.0,,15.0,10.0,0.0619834710743801,True,0,eliminated,6.0,False
+8,4,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,5.0,6.0,5.0,,16.0,9.0,0.0661157024793388,True,1,eliminated,4.0,False
+8,4,Melissa Rycroft,Tony Dovolani,3rd Place,3,10.0,9.0,10.0,,29.0,2.0,0.1198347107438016,True,0,finished,11.0,False
+8,5,Gilles Marini,Cheryl Burke,2nd Place,2,10.0,9.0,10.0,,29.0,1.0,0.1380952380952381,True,0,finished,11.0,False
+8,5,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,5,David Alan Grier,Kym Johnson,Eliminated Week 5,9,7.0,8.0,7.0,,22.0,6.0,0.1047619047619047,True,1,eliminated,5.0,False
+8,5,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,6.0,7.0,7.0,,20.0,8.0,0.0952380952380952,True,0,eliminated,7.0,False
+8,5,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,7.0,7.0,7.0,,21.0,7.0,0.1,True,0,eliminated,10.0,False
+8,5,Shawn Johnson,Mark Ballas,1st Place,1,9.0,8.0,9.0,,26.0,2.5,0.1238095238095238,True,0,finished,11.0,False
+8,5,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,5,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,5,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,7.0,8.0,8.0,,23.0,5.0,0.1095238095238095,True,0,eliminated,8.0,False
+8,5,Lil' Kim,Derek Hough,Eliminated Week 9,5,9.0,8.0,9.0,,26.0,2.5,0.1238095238095238,True,0,eliminated,9.0,False
+8,5,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,6.0,6.0,6.0,,18.0,9.0,0.0857142857142857,True,0,eliminated,6.0,False
+8,5,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,5,Melissa Rycroft,Tony Dovolani,3rd Place,3,8.0,8.0,9.0,,25.0,4.0,0.119047619047619,True,0,finished,11.0,False
+8,6,Gilles Marini,Cheryl Burke,2nd Place,2,9.0,8.0,9.0,,26.0,3.5,0.1397849462365591,True,0,finished,11.0,False
+8,6,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,6,David Alan Grier,Kym Johnson,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+8,6,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,7.0,7.0,8.0,,22.0,6.0,0.1182795698924731,True,0,eliminated,7.0,False
+8,6,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,6.0,6.0,6.0,,18.0,7.0,0.0967741935483871,True,0,eliminated,10.0,False
+8,6,Shawn Johnson,Mark Ballas,1st Place,1,8.0,9.0,9.0,,26.0,3.5,0.1397849462365591,True,0,finished,11.0,False
+8,6,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,6,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,6,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,8.0,7.0,8.0,,23.0,5.0,0.1236559139784946,True,0,eliminated,8.0,False
+8,6,Lil' Kim,Derek Hough,Eliminated Week 9,5,10.0,8.0,10.0,,28.0,1.0,0.1505376344086021,True,0,eliminated,9.0,False
+8,6,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,7.0,4.0,5.0,,16.0,8.0,0.086021505376344,True,1,eliminated,6.0,False
+8,6,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,6,Melissa Rycroft,Tony Dovolani,3rd Place,3,9.0,9.0,9.0,,27.0,2.0,0.1451612903225806,True,0,finished,11.0,False
+8,7,Gilles Marini,Cheryl Burke,2nd Place,2,9.0,9.0,9.0,,27.0,3.5,0.1483516483516483,True,0,finished,11.0,False
+8,7,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,7,David Alan Grier,Kym Johnson,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+8,7,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,7.0,7.0,7.0,,21.0,7.0,0.1153846153846153,True,1,eliminated,7.0,False
+8,7,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,8.0,8.0,8.0,,24.0,6.0,0.1318681318681318,True,0,eliminated,10.0,False
+8,7,Shawn Johnson,Mark Ballas,1st Place,1,9.0,9.0,10.0,,28.0,2.0,0.1538461538461538,True,0,finished,11.0,False
+8,7,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,7,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,7,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,9.0,9.0,9.0,,27.0,3.5,0.1483516483516483,True,0,eliminated,8.0,False
+8,7,Lil' Kim,Derek Hough,Eliminated Week 9,5,9.0,8.0,9.0,,26.0,5.0,0.1428571428571428,True,0,eliminated,9.0,False
+8,7,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+8,7,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,7,Melissa Rycroft,Tony Dovolani,3rd Place,3,10.0,9.0,10.0,,29.0,1.0,0.1593406593406593,True,0,finished,11.0,False
+8,8,Gilles Marini,Cheryl Burke,2nd Place,2,9.0,9.0,9.5,,27.5,2.0,0.1762820512820513,True,0,finished,11.0,False
+8,8,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,8,David Alan Grier,Kym Johnson,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+8,8,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+8,8,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,9.0,8.0,9.0,,26.0,3.5,0.1666666666666666,True,0,eliminated,10.0,False
+8,8,Shawn Johnson,Mark Ballas,1st Place,1,9.0,8.0,9.0,,26.0,3.5,0.1666666666666666,True,0,finished,11.0,False
+8,8,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,8,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,8,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,8.5,8.5,8.5,,25.5,5.0,0.1634615384615384,True,1,eliminated,8.0,False
+8,8,Lil' Kim,Derek Hough,Eliminated Week 9,5,9.0,9.0,10.0,,28.0,1.0,0.1794871794871795,True,0,eliminated,9.0,False
+8,8,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+8,8,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,8,Melissa Rycroft,Tony Dovolani,3rd Place,3,7.5,7.5,8.0,,23.0,6.0,0.1474358974358974,True,0,finished,11.0,False
+8,9,Gilles Marini,Cheryl Burke,2nd Place,2,9.5,9.0,9.5,,28.0,2.5,0.2097378277153558,True,0,finished,11.0,False
+8,9,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,9,David Alan Grier,Kym Johnson,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+8,9,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+8,9,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,7.5,8.0,7.5,,23.0,5.0,0.1722846441947565,True,0,eliminated,10.0,False
+8,9,Shawn Johnson,Mark Ballas,1st Place,1,9.5,9.0,9.5,,28.0,2.5,0.2097378277153558,True,0,finished,11.0,False
+8,9,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,9,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,9,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+8,9,Lil' Kim,Derek Hough,Eliminated Week 9,5,8.5,9.0,8.5,,26.0,4.0,0.1947565543071161,True,1,eliminated,9.0,False
+8,9,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+8,9,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,9,Melissa Rycroft,Tony Dovolani,3rd Place,3,9.5,9.5,9.5,,28.5,1.0,0.2134831460674157,True,0,finished,11.0,False
+8,10,Gilles Marini,Cheryl Burke,2nd Place,2,10.0,10.0,10.0,,30.0,1.0,0.273972602739726,True,0,finished,11.0,False
+8,10,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,10,David Alan Grier,Kym Johnson,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+8,10,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+8,10,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,8.0,8.0,8.0,,24.0,4.0,0.2191780821917808,True,1,eliminated,10.0,False
+8,10,Shawn Johnson,Mark Ballas,1st Place,1,9.5,9.0,9.5,,28.0,2.0,0.2557077625570776,True,0,finished,11.0,False
+8,10,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,10,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,10,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+8,10,Lil' Kim,Derek Hough,Eliminated Week 9,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+8,10,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+8,10,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,10,Melissa Rycroft,Tony Dovolani,3rd Place,3,9.0,9.5,9.0,,27.5,3.0,0.2511415525114155,True,0,finished,11.0,False
+8,11,Gilles Marini,Cheryl Burke,2nd Place,2,9.5,10.0,9.5,,29.0,2.0,0.3314285714285714,True,0,finished,11.0,False
+8,11,Denise Richards,Maksim Chmerkoskiy,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+8,11,David Alan Grier,Kym Johnson,Eliminated Week 5,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+8,11,Lawrence Taylor,Edyta Sliwinska,Eliminated Week 7,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+8,11,Ty Murray,Chelsie Hightower,Eliminated Week 10,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,10.0,True
+8,11,Shawn Johnson,Mark Ballas,1st Place,1,10.0,10.0,10.0,,30.0,1.0,0.3428571428571428,True,0,finished,11.0,False
+8,11,Steve Wozniak,Karina Smirnoff,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,11,Belinda Carlisle,Jonathan Roberts,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+8,11,Chuck Wicks,Julianne Hough,Eliminated Week 8,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+8,11,Lil' Kim,Derek Hough,Eliminated Week 9,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+8,11,Steve-O,Lacey Schwimmer,Eliminated Week 6,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+8,11,Holly Madison,Dmitry Chaplin,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+8,11,Melissa Rycroft,Tony Dovolani,3rd Place,3,9.5,9.5,9.5,,28.5,3.0,0.3257142857142857,True,0,finished,11.0,False

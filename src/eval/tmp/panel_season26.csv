@@ -1,0 +1,41 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+26,1,Jamie Anderson,Artem Chigvintsev,Eliminated Week 1,10,6.0,7.0,6.0,,19.0,8.0,0.0904761904761904,True,1,eliminated,1.0,False
+26,1,Johnny Damon,Emma Slater,Eliminated Week 1,9,6.0,6.0,6.0,,18.0,9.0,0.0857142857142857,True,1,eliminated,1.0,False
+26,1,Kareem Abdul-Jabbar,Lindsay Arnold,Eliminated Week 2,8,6.0,5.0,6.0,,17.0,10.0,0.0809523809523809,True,0,eliminated,2.0,False
+26,1,Arike Ogunbowale,Gleb Savchenko,Eliminated Week 2,7,7.0,6.0,7.0,,20.0,7.0,0.0952380952380952,True,0,eliminated,2.0,False
+26,1,Jennie Finch Daigle,Keo Motsepe,Eliminated Week 3,6,7.0,7.0,7.0,,21.0,5.5,0.1,True,0,eliminated,3.0,False
+26,1,Chris Mazdzer,Witney Carson,Eliminated Week 3,5,7.0,7.0,7.0,,21.0,5.5,0.1,True,0,eliminated,3.0,False
+26,1,Mirai Nagasu,Alan Bersten,Eliminated Week 3,4,7.0,8.0,8.0,,23.0,3.5,0.1095238095238095,True,0,eliminated,3.0,False
+26,1,Tonya Harding,Sasha Farber,3rd Place,3,8.0,8.0,7.0,,23.0,3.5,0.1095238095238095,True,0,finished,4.0,False
+26,1,Josh Norman,Sharna Burgess,2nd Place,2,8.0,8.0,8.0,,24.0,1.5,0.1142857142857142,True,0,finished,4.0,False
+26,1,Adam Rippon,Jenna Johnson,1st Place,1,8.0,8.0,8.0,,24.0,1.5,0.1142857142857142,True,0,finished,4.0,False
+26,2,Jamie Anderson,Artem Chigvintsev,Eliminated Week 1,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,1.0,True
+26,2,Johnny Damon,Emma Slater,Eliminated Week 1,9,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,1.0,True
+26,2,Kareem Abdul-Jabbar,Lindsay Arnold,Eliminated Week 2,8,7.5,8.0,7.0,7.0,29.5,8.0,0.1102803738317757,True,1,eliminated,2.0,False
+26,2,Arike Ogunbowale,Gleb Savchenko,Eliminated Week 2,7,8.5,9.5,8.5,8.5,35.0,3.0,0.1308411214953271,True,1,eliminated,2.0,False
+26,2,Jennie Finch Daigle,Keo Motsepe,Eliminated Week 3,6,7.5,8.5,8.0,7.5,31.5,6.5,0.1177570093457943,True,0,eliminated,3.0,False
+26,2,Chris Mazdzer,Witney Carson,Eliminated Week 3,5,8.5,8.5,8.0,8.0,33.0,4.5,0.1233644859813084,True,0,eliminated,3.0,False
+26,2,Mirai Nagasu,Alan Bersten,Eliminated Week 3,4,9.0,10.0,9.0,9.0,37.0,1.5,0.1383177570093458,True,0,eliminated,3.0,False
+26,2,Tonya Harding,Sasha Farber,3rd Place,3,8.0,9.0,8.0,8.0,33.0,4.5,0.1233644859813084,True,0,finished,4.0,False
+26,2,Josh Norman,Sharna Burgess,2nd Place,2,7.5,8.0,8.0,8.0,31.5,6.5,0.1177570093457943,True,0,finished,4.0,False
+26,2,Adam Rippon,Jenna Johnson,1st Place,1,9.0,9.5,9.0,9.5,37.0,1.5,0.1383177570093458,True,0,finished,4.0,False
+26,3,Jamie Anderson,Artem Chigvintsev,Eliminated Week 1,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,1.0,True
+26,3,Johnny Damon,Emma Slater,Eliminated Week 1,9,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,1.0,True
+26,3,Kareem Abdul-Jabbar,Lindsay Arnold,Eliminated Week 2,8,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+26,3,Arike Ogunbowale,Gleb Savchenko,Eliminated Week 2,7,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+26,3,Jennie Finch Daigle,Keo Motsepe,Eliminated Week 3,6,7.0,8.0,7.0,7.0,29.0,6.0,0.1374407582938388,True,1,eliminated,3.0,False
+26,3,Chris Mazdzer,Witney Carson,Eliminated Week 3,5,8.0,9.0,7.0,9.0,33.0,5.0,0.1563981042654028,True,1,eliminated,3.0,False
+26,3,Mirai Nagasu,Alan Bersten,Eliminated Week 3,4,9.0,9.0,8.0,9.0,35.0,3.5,0.1658767772511848,True,1,eliminated,3.0,False
+26,3,Tonya Harding,Sasha Farber,3rd Place,3,8.5,9.5,8.5,8.5,35.0,3.5,0.1658767772511848,True,0,finished,4.0,False
+26,3,Josh Norman,Sharna Burgess,2nd Place,2,9.5,9.5,9.5,9.5,38.0,2.0,0.1800947867298578,True,0,finished,4.0,False
+26,3,Adam Rippon,Jenna Johnson,1st Place,1,10.5,10.5,9.5,10.5,41.0,1.0,0.1943127962085308,True,0,finished,4.0,False
+26,4,Jamie Anderson,Artem Chigvintsev,Eliminated Week 1,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+26,4,Johnny Damon,Emma Slater,Eliminated Week 1,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+26,4,Kareem Abdul-Jabbar,Lindsay Arnold,Eliminated Week 2,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+26,4,Arike Ogunbowale,Gleb Savchenko,Eliminated Week 2,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+26,4,Jennie Finch Daigle,Keo Motsepe,Eliminated Week 3,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+26,4,Chris Mazdzer,Witney Carson,Eliminated Week 3,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+26,4,Mirai Nagasu,Alan Bersten,Eliminated Week 3,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+26,4,Tonya Harding,Sasha Farber,3rd Place,3,9.0,9.5,9.5,,28.0,3.0,0.327485380116959,True,0,finished,4.0,False
+26,4,Josh Norman,Sharna Burgess,2nd Place,2,9.5,9.5,9.5,,28.5,2.0,0.3333333333333333,True,0,finished,4.0,False
+26,4,Adam Rippon,Jenna Johnson,1st Place,1,9.5,9.5,10.0,,29.0,1.0,0.3391812865497076,True,0,finished,4.0,False

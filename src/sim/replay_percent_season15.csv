@@ -1,11 +1,11 @@
 season,method,week,m,active_count,elim_pred
 15,percent,1,1,13,Pamela Anderson
 15,percent,2,1,12,Bristol Palin
-15,percent,3,2,12,Joey Fatone;Bristol Palin
-15,percent,4,1,11,Drew Lachey
-15,percent,5,0,10,
-15,percent,6,1,10,Helio Castroneves
-15,percent,7,0,9,
-15,percent,8,2,9,Bristol Palin;Sabrina Bryan
-15,percent,9,2,7,Kirstie Alley;Gilles Marini
-15,percent,10,0,5,
+15,percent,3,2,12,Joey Fatone;Drew Lachey
+15,percent,4,1,10,Helio Castroneves
+15,percent,5,0,9,
+15,percent,6,1,9,Bristol Palin
+15,percent,7,0,8,
+15,percent,8,2,8,Sabrina Bryan;Kirstie Alley
+15,percent,9,2,6,Emmitt Smith;Apolo Anton Ohno
+15,percent,10,0,4,

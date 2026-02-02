@@ -1,0 +1,131 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+7,1,Ted McGinley,Inna Brayer,Eliminated Week 1,12,6.0,6.0,6.5,,18.5,9.0,0.0734126984126984,True,1,eliminated,1.0,False
+7,1,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,6.0,5.0,5.0,,16.0,12.0,0.0634920634920634,True,0,eliminated,6.0,False
+7,1,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,6.0,6.0,6.5,,18.5,9.0,0.0734126984126984,True,0,eliminated,7.0,False
+7,1,Cody Linley,Julianne Hough,Eliminated Week 9,4,7.0,6.5,7.0,,20.5,6.0,0.0813492063492063,True,0,eliminated,9.0,False
+7,1,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,6.5,7.5,7.0,,21.0,5.0,0.0833333333333333,True,0,withdrew,2.0,False
+7,1,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,6.5,6.5,6.5,,19.5,7.0,0.0773809523809523,True,0,eliminated,8.0,False
+7,1,Warren Sapp,Kym Johnson,2nd Place,2,7.0,7.0,7.5,,21.5,3.5,0.0853174603174603,True,0,finished,10.0,False
+7,1,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,4.0,4.0,4.0,,12.0,13.0,0.0476190476190476,True,1,eliminated,1.0,False
+7,1,Toni Braxton,Alec Mazo,Eliminated Week 5,8,7.5,7.0,8.0,,22.5,2.0,0.0892857142857142,True,0,eliminated,5.0,False
+7,1,Lance Bass,Lacey Schwimmer,3rd Place,3,7.5,6.0,8.0,,21.5,3.5,0.0853174603174603,True,0,finished,10.0,False
+7,1,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,6.0,6.5,6.0,,18.5,9.0,0.0734126984126984,True,0,eliminated,2.0,False
+7,1,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,6.0,5.5,6.0,,17.5,11.0,0.0694444444444444,True,0,eliminated,4.0,False
+7,1,Brooke Burke,Derek Hough,1st Place,1,8.0,8.0,8.5,,24.5,1.0,0.0972222222222222,True,0,finished,10.0,False
+7,2,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,2,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,5.0,5.0,5.0,,15.0,11.0,0.0678733031674208,True,0,eliminated,6.0,False
+7,2,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,7.0,7.0,7.0,,21.0,5.0,0.0950226244343891,True,0,eliminated,7.0,False
+7,2,Cody Linley,Julianne Hough,Eliminated Week 9,4,7.0,7.0,7.0,,21.0,5.0,0.0950226244343891,True,0,eliminated,9.0,False
+7,2,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,7.0,7.0,7.0,,21.0,5.0,0.0950226244343891,True,0,withdrew,2.0,False
+7,2,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,7.0,6.0,6.0,,19.0,8.0,0.085972850678733,True,0,eliminated,8.0,False
+7,2,Warren Sapp,Kym Johnson,2nd Place,2,8.0,8.0,8.0,,24.0,1.5,0.1085972850678733,True,0,finished,10.0,False
+7,2,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,2,Toni Braxton,Alec Mazo,Eliminated Week 5,8,7.0,8.0,8.0,,23.0,3.0,0.1040723981900452,True,0,eliminated,5.0,False
+7,2,Lance Bass,Lacey Schwimmer,3rd Place,3,7.0,6.0,7.0,,20.0,7.0,0.090497737556561,True,0,finished,10.0,False
+7,2,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,6.0,6.0,5.0,,17.0,9.0,0.0769230769230769,True,1,eliminated,2.0,False
+7,2,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,5.0,6.0,5.0,,16.0,10.0,0.0723981900452488,True,0,eliminated,4.0,False
+7,2,Brooke Burke,Derek Hough,1st Place,1,8.0,8.0,8.0,,24.0,1.5,0.1085972850678733,True,0,finished,10.0,False
+7,3,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,3,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,6.0,5.0,5.0,,16.0,9.0,0.0804020100502512,True,0,eliminated,6.0,False
+7,3,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,7.0,7.0,7.0,,21.0,6.5,0.1055276381909547,True,0,eliminated,7.0,False
+7,3,Cody Linley,Julianne Hough,Eliminated Week 9,4,7.0,7.0,7.0,,21.0,6.5,0.1055276381909547,True,0,eliminated,9.0,False
+7,3,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,3,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,8.0,8.0,8.0,,24.0,3.0,0.1206030150753768,True,0,eliminated,8.0,False
+7,3,Warren Sapp,Kym Johnson,2nd Place,2,9.0,8.0,8.0,,25.0,2.0,0.1256281407035175,True,0,finished,10.0,False
+7,3,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,3,Toni Braxton,Alec Mazo,Eliminated Week 5,8,8.0,7.0,7.0,,22.0,4.5,0.1105527638190954,True,0,eliminated,5.0,False
+7,3,Lance Bass,Lacey Schwimmer,3rd Place,3,8.0,7.0,7.0,,22.0,4.5,0.1105527638190954,True,0,finished,10.0,False
+7,3,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,3,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,7.0,7.0,6.0,,20.0,8.0,0.100502512562814,True,0,eliminated,4.0,False
+7,3,Brooke Burke,Derek Hough,1st Place,1,9.0,10.0,9.0,,28.0,1.0,0.1407035175879397,True,0,finished,10.0,False
+7,4,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,4,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,8.0,7.0,7.0,,22.0,6.0,0.1083743842364532,True,0,eliminated,6.0,False
+7,4,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,8.0,8.0,8.0,,24.0,3.0,0.1182266009852216,True,0,eliminated,7.0,False
+7,4,Cody Linley,Julianne Hough,Eliminated Week 9,4,7.0,8.0,8.0,,23.0,4.0,0.1133004926108374,True,0,eliminated,9.0,False
+7,4,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,4,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,6.0,7.0,7.0,,20.0,8.0,0.0985221674876847,True,0,eliminated,8.0,False
+7,4,Warren Sapp,Kym Johnson,2nd Place,2,8.0,7.0,7.0,,22.0,6.0,0.1083743842364532,True,0,finished,10.0,False
+7,4,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,4,Toni Braxton,Alec Mazo,Eliminated Week 5,8,7.0,7.0,8.0,,22.0,6.0,0.1083743842364532,True,0,eliminated,5.0,False
+7,4,Lance Bass,Lacey Schwimmer,3rd Place,3,9.0,8.0,9.0,,26.0,1.5,0.1280788177339901,True,0,finished,10.0,False
+7,4,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,4,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,6.0,6.0,6.0,,18.0,9.0,0.0886699507389162,True,1,eliminated,4.0,False
+7,4,Brooke Burke,Derek Hough,1st Place,1,9.0,8.0,9.0,,26.0,1.5,0.1280788177339901,True,0,finished,10.0,False
+7,5,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,5,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,7.0,7.0,7.0,,21.0,7.5,0.1076923076923077,True,0,eliminated,6.0,False
+7,5,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,7.0,7.0,8.0,,22.0,5.5,0.1128205128205128,True,0,eliminated,7.0,False
+7,5,Cody Linley,Julianne Hough,Eliminated Week 9,4,10.0,9.0,9.0,,28.0,2.0,0.1435897435897435,True,0,eliminated,9.0,False
+7,5,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,5,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,9.0,9.0,9.0,,27.0,3.0,0.1384615384615384,True,0,eliminated,8.0,False
+7,5,Warren Sapp,Kym Johnson,2nd Place,2,8.0,8.0,9.0,,25.0,4.0,0.1282051282051282,True,0,finished,10.0,False
+7,5,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,5,Toni Braxton,Alec Mazo,Eliminated Week 5,8,7.0,7.0,8.0,,22.0,5.5,0.1128205128205128,True,1,eliminated,5.0,False
+7,5,Lance Bass,Lacey Schwimmer,3rd Place,3,7.0,7.0,7.0,,21.0,7.5,0.1076923076923077,True,0,finished,10.0,False
+7,5,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,5,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+7,5,Brooke Burke,Derek Hough,1st Place,1,10.0,9.0,10.0,,29.0,1.0,0.1487179487179487,True,0,finished,10.0,False
+7,6,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,6,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,5.0,5.0,5.0,,15.0,7.0,0.09375,True,1,eliminated,6.0,False
+7,6,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,8.0,8.0,7.0,,23.0,4.5,0.14375,True,0,eliminated,7.0,False
+7,6,Cody Linley,Julianne Hough,Eliminated Week 9,4,8.0,8.0,7.0,,23.0,4.5,0.14375,True,0,eliminated,9.0,False
+7,6,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,6,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,7.0,7.0,7.0,,21.0,6.0,0.13125,True,0,eliminated,8.0,False
+7,6,Warren Sapp,Kym Johnson,2nd Place,2,8.0,9.0,8.0,,25.0,3.0,0.15625,True,0,finished,10.0,False
+7,6,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,6,Toni Braxton,Alec Mazo,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+7,6,Lance Bass,Lacey Schwimmer,3rd Place,3,9.0,9.0,9.0,,27.0,1.0,0.16875,True,0,finished,10.0,False
+7,6,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,6,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+7,6,Brooke Burke,Derek Hough,1st Place,1,8.0,10.0,8.0,,26.0,2.0,0.1625,True,0,finished,10.0,False
+7,7,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,7,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+7,7,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,8.0,8.0,8.0,,24.0,4.0,0.1632653061224489,True,1,eliminated,7.0,False
+7,7,Cody Linley,Julianne Hough,Eliminated Week 9,4,8.0,7.0,7.0,,22.0,5.0,0.1496598639455782,True,0,eliminated,9.0,False
+7,7,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,7,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,8.0,9.0,8.0,,25.0,2.5,0.1700680272108843,True,0,eliminated,8.0,False
+7,7,Warren Sapp,Kym Johnson,2nd Place,2,7.0,7.0,7.0,,21.0,6.0,0.1428571428571428,True,0,finished,10.0,False
+7,7,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,7,Toni Braxton,Alec Mazo,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+7,7,Lance Bass,Lacey Schwimmer,3rd Place,3,9.0,7.0,9.0,,25.0,2.5,0.1700680272108843,True,0,finished,10.0,False
+7,7,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,7,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+7,7,Brooke Burke,Derek Hough,1st Place,1,10.0,10.0,10.0,,30.0,1.0,0.2040816326530612,True,0,finished,10.0,False
+7,8,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,8,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+7,8,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+7,8,Cody Linley,Julianne Hough,Eliminated Week 9,4,8.0,8.0,8.0,,24.0,4.5,0.188235294117647,True,0,eliminated,9.0,False
+7,8,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,8,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,8.0,8.0,8.0,,24.0,4.5,0.188235294117647,True,1,eliminated,8.0,False
+7,8,Warren Sapp,Kym Johnson,2nd Place,2,9.5,8.5,9.0,,27.0,2.0,0.2117647058823529,True,0,finished,10.0,False
+7,8,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,8,Toni Braxton,Alec Mazo,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+7,8,Lance Bass,Lacey Schwimmer,3rd Place,3,8.5,7.5,9.0,,25.0,3.0,0.196078431372549,True,0,finished,10.0,False
+7,8,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,8,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+7,8,Brooke Burke,Derek Hough,1st Place,1,9.5,8.5,9.5,,27.5,1.0,0.2156862745098039,True,0,finished,10.0,False
+7,9,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,9,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+7,9,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+7,9,Cody Linley,Julianne Hough,Eliminated Week 9,4,8.0,7.5,7.5,,23.0,4.0,0.2288557213930348,True,1,eliminated,9.0,False
+7,9,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,9,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+7,9,Warren Sapp,Kym Johnson,2nd Place,2,8.5,8.0,8.0,,24.5,2.5,0.2437810945273631,True,0,finished,10.0,False
+7,9,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,9,Toni Braxton,Alec Mazo,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+7,9,Lance Bass,Lacey Schwimmer,3rd Place,3,10.0,9.0,9.5,,28.5,1.0,0.2835820895522388,True,0,finished,10.0,False
+7,9,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,9,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+7,9,Brooke Burke,Derek Hough,1st Place,1,8.0,8.5,8.0,,24.5,2.5,0.2437810945273631,True,0,finished,10.0,False
+7,10,Ted McGinley,Inna Brayer,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,10,Cloris Leachman,Corky Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+7,10,Susan Lucci,Tony Dovolani,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+7,10,Cody Linley,Julianne Hough,Eliminated Week 9,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+7,10,Misty May-Treanor,Maksim Chmerkoskiy,Withdrew,10,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+7,10,Maurice Greene,Cheryl Burke,Eliminated Week 8,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+7,10,Warren Sapp,Kym Johnson,2nd Place,2,9.0,9.5,9.0,,27.5,2.5,0.3235294117647059,True,0,finished,10.0,False
+7,10,Jeffrey Ross,Edyta Sliwinska,Eliminated Week 1,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+7,10,Toni Braxton,Alec Mazo,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+7,10,Lance Bass,Lacey Schwimmer,3rd Place,3,9.0,9.0,9.5,,27.5,2.5,0.3235294117647059,True,0,finished,10.0,False
+7,10,Kim Kardashian,Mark Ballas,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+7,10,Rocco DiSpirito,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+7,10,Brooke Burke,Derek Hough,1st Place,1,10.0,10.0,10.0,,30.0,1.0,0.3529411764705882,True,0,finished,10.0,False

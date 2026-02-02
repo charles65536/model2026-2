@@ -1,0 +1,166 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+29,1,Anne Heche,Keo Motsepe,Eliminated Week 4,13,6.0,6.0,6.0,,18.0,8.0,0.0692307692307692,True,0,eliminated,4.0,False
+29,1,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,6.0,6.0,6.0,,18.0,8.0,0.0692307692307692,True,0,eliminated,5.0,False
+29,1,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,4.0,5.0,4.0,,13.0,13.0,0.05,True,0,eliminated,8.0,False
+29,1,Skai Jackson,Alan Bersten,Eliminated Week 10,5,7.0,7.0,7.0,,21.0,1.5,0.0807692307692307,True,0,eliminated,10.0,False
+29,1,Justina Machado,Sasha Farber,4th Place,4,7.0,7.0,7.0,,21.0,1.5,0.0807692307692307,True,0,finished,11.0,False
+29,1,Charles Oakley,Emma Slater,Eliminated Week 2,15,4.0,4.0,4.0,,12.0,14.0,0.0461538461538461,True,0,eliminated,2.0,False
+29,1,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,5.0,6.0,6.0,,17.0,11.0,0.0653846153846153,True,0,eliminated,6.0,False
+29,1,Johnny Weir,Britt Stewart,Eliminated Week 10,6,6.0,6.0,6.0,,18.0,8.0,0.0692307692307692,True,0,eliminated,10.0,False
+29,1,Nev Schulman,Jenna Johnson,2nd Place,2,7.0,7.0,6.0,,20.0,3.5,0.0769230769230769,True,0,finished,11.0,False
+29,1,AJ McLean,Cheryl Burke,Eliminated Week 9,7,6.0,6.0,6.0,,18.0,8.0,0.0692307692307692,True,0,eliminated,9.0,False
+29,1,Nelly,Daniella Karagach,3rd Place,3,5.0,5.0,6.0,,16.0,12.0,0.0615384615384615,True,0,finished,11.0,False
+29,1,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,6.0,7.0,7.0,,20.0,3.5,0.0769230769230769,True,0,finished,11.0,False
+29,1,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,4.0,4.0,3.0,,11.0,15.0,0.0423076923076923,True,0,eliminated,3.0,False
+29,1,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,6.0,7.0,6.0,,19.0,5.0,0.073076923076923,True,0,eliminated,7.0,False
+29,1,Jeannie Mai,Brandon Armstrong,Withdrew,9,6.0,6.0,6.0,,18.0,8.0,0.0692307692307692,True,0,withdrew,7.0,False
+29,2,Anne Heche,Keo Motsepe,Eliminated Week 4,13,6.0,6.0,6.0,,18.0,8.5,0.0659340659340659,True,0,eliminated,4.0,False
+29,2,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,7.0,7.0,6.0,,20.0,4.0,0.0732600732600732,True,0,eliminated,5.0,False
+29,2,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,6.0,6.0,6.0,,18.0,8.5,0.0659340659340659,True,0,eliminated,8.0,False
+29,2,Skai Jackson,Alan Bersten,Eliminated Week 10,5,5.0,5.0,5.0,,15.0,14.5,0.0549450549450549,True,0,eliminated,10.0,False
+29,2,Justina Machado,Sasha Farber,4th Place,4,7.0,7.0,7.0,,21.0,2.5,0.0769230769230769,True,0,finished,11.0,False
+29,2,Charles Oakley,Emma Slater,Eliminated Week 2,15,5.0,5.0,5.0,,15.0,14.5,0.0549450549450549,True,1,eliminated,2.0,False
+29,2,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,6.0,6.0,6.0,,18.0,8.5,0.0659340659340659,True,0,eliminated,6.0,False
+29,2,Johnny Weir,Britt Stewart,Eliminated Week 10,6,6.0,6.0,6.0,,18.0,8.5,0.0659340659340659,True,0,eliminated,10.0,False
+29,2,Nev Schulman,Jenna Johnson,2nd Place,2,7.0,7.0,7.0,,21.0,2.5,0.0769230769230769,True,0,finished,11.0,False
+29,2,AJ McLean,Cheryl Burke,Eliminated Week 9,7,7.0,6.0,6.0,,19.0,5.0,0.0695970695970696,True,0,eliminated,9.0,False
+29,2,Nelly,Daniella Karagach,3rd Place,3,6.0,6.0,6.0,,18.0,8.5,0.0659340659340659,True,0,finished,11.0,False
+29,2,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,7.0,8.0,7.0,,22.0,1.0,0.0805860805860805,True,0,finished,11.0,False
+29,2,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,6.0,5.0,5.0,,16.0,12.5,0.0586080586080586,True,0,eliminated,3.0,False
+29,2,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,5.0,6.0,5.0,,16.0,12.5,0.0586080586080586,True,0,eliminated,7.0,False
+29,2,Jeannie Mai,Brandon Armstrong,Withdrew,9,6.0,6.0,6.0,,18.0,8.5,0.0659340659340659,True,0,withdrew,7.0,False
+29,3,Anne Heche,Keo Motsepe,Eliminated Week 4,13,5.0,5.0,5.0,,15.0,13.0,0.0533807829181494,True,0,eliminated,4.0,False
+29,3,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,7.0,6.0,7.0,,20.0,9.0,0.0711743772241993,True,0,eliminated,5.0,False
+29,3,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,7.0,7.0,8.0,,22.0,5.0,0.0782918149466192,True,0,eliminated,8.0,False
+29,3,Skai Jackson,Alan Bersten,Eliminated Week 10,5,6.0,6.0,6.0,,18.0,11.5,0.0640569395017793,True,0,eliminated,10.0,False
+29,3,Justina Machado,Sasha Farber,4th Place,4,7.0,6.0,6.0,,19.0,10.0,0.0676156583629893,True,0,finished,11.0,False
+29,3,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,3,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,8.0,7.0,7.0,,22.0,5.0,0.0782918149466192,True,0,eliminated,6.0,False
+29,3,Johnny Weir,Britt Stewart,Eliminated Week 10,6,8.0,8.0,8.0,,24.0,1.5,0.0854092526690391,True,0,eliminated,10.0,False
+29,3,Nev Schulman,Jenna Johnson,2nd Place,2,8.0,8.0,8.0,,24.0,1.5,0.0854092526690391,True,0,finished,11.0,False
+29,3,AJ McLean,Cheryl Burke,Eliminated Week 9,7,7.0,7.0,7.0,,21.0,7.5,0.0747330960854092,True,0,eliminated,9.0,False
+29,3,Nelly,Daniella Karagach,3rd Place,3,6.0,6.0,6.0,,18.0,11.5,0.0640569395017793,True,0,finished,11.0,False
+29,3,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,8.0,7.0,8.0,,23.0,3.0,0.0818505338078291,True,0,finished,11.0,False
+29,3,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,5.0,4.0,3.0,,12.0,14.0,0.0427046263345195,True,1,eliminated,3.0,False
+29,3,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,7.0,7.0,7.0,,21.0,7.5,0.0747330960854092,True,0,eliminated,7.0,False
+29,3,Jeannie Mai,Brandon Armstrong,Withdrew,9,7.0,7.0,8.0,,22.0,5.0,0.0782918149466192,True,0,withdrew,7.0,False
+29,4,Anne Heche,Keo Motsepe,Eliminated Week 4,13,7.0,7.0,7.0,,21.0,11.5,0.0697674418604651,True,1,eliminated,4.0,False
+29,4,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,7.0,7.0,7.0,,21.0,11.5,0.0697674418604651,True,0,eliminated,5.0,False
+29,4,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,7.0,8.0,7.0,,22.0,8.5,0.0730897009966777,True,0,eliminated,8.0,False
+29,4,Skai Jackson,Alan Bersten,Eliminated Week 10,5,10.0,9.0,9.0,,28.0,1.0,0.0930232558139534,True,0,eliminated,10.0,False
+29,4,Justina Machado,Sasha Farber,4th Place,4,8.0,8.0,8.0,,24.0,5.0,0.0797342192691029,True,0,finished,11.0,False
+29,4,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,4,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,8.0,7.0,7.0,,22.0,8.5,0.0730897009966777,True,0,eliminated,6.0,False
+29,4,Johnny Weir,Britt Stewart,Eliminated Week 10,6,8.0,8.0,8.0,,24.0,5.0,0.0797342192691029,True,0,eliminated,10.0,False
+29,4,Nev Schulman,Jenna Johnson,2nd Place,2,8.0,8.0,8.0,,24.0,5.0,0.0797342192691029,True,0,finished,11.0,False
+29,4,AJ McLean,Cheryl Burke,Eliminated Week 9,7,8.0,8.0,8.0,,24.0,5.0,0.0797342192691029,True,0,eliminated,9.0,False
+29,4,Nelly,Daniella Karagach,3rd Place,3,7.0,7.0,7.0,,21.0,11.5,0.0697674418604651,True,0,finished,11.0,False
+29,4,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,9.0,8.0,8.0,,25.0,2.0,0.0830564784053156,True,0,finished,11.0,False
+29,4,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,4,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,8.0,8.0,8.0,,24.0,5.0,0.0797342192691029,True,0,eliminated,7.0,False
+29,4,Jeannie Mai,Brandon Armstrong,Withdrew,9,7.0,7.0,7.0,,21.0,11.5,0.0697674418604651,True,0,withdrew,7.0,False
+29,5,Anne Heche,Keo Motsepe,Eliminated Week 4,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+29,5,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,7.0,6.0,6.0,,19.0,11.5,0.0662020905923344,True,1,eliminated,5.0,False
+29,5,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,6.0,6.0,7.0,,19.0,11.5,0.0662020905923344,True,0,eliminated,8.0,False
+29,5,Skai Jackson,Alan Bersten,Eliminated Week 10,5,8.0,8.0,8.0,,24.0,7.0,0.0836236933797909,True,0,eliminated,10.0,False
+29,5,Justina Machado,Sasha Farber,4th Place,4,8.0,8.0,8.0,,24.0,7.0,0.0836236933797909,True,0,finished,11.0,False
+29,5,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,5,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,7.0,7.0,7.0,,21.0,10.0,0.073170731707317,True,0,eliminated,6.0,False
+29,5,Johnny Weir,Britt Stewart,Eliminated Week 10,6,10.0,10.0,9.0,,29.0,1.0,0.1010452961672473,True,0,eliminated,10.0,False
+29,5,Nev Schulman,Jenna Johnson,2nd Place,2,8.0,9.0,9.0,,26.0,3.5,0.0905923344947735,True,0,finished,11.0,False
+29,5,AJ McLean,Cheryl Burke,Eliminated Week 9,7,8.0,8.0,8.0,,24.0,7.0,0.0836236933797909,True,0,eliminated,9.0,False
+29,5,Nelly,Daniella Karagach,3rd Place,3,8.0,8.0,8.0,,24.0,7.0,0.0836236933797909,True,0,finished,11.0,False
+29,5,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,9.0,9.0,9.0,,27.0,2.0,0.0940766550522648,True,0,finished,11.0,False
+29,5,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,5,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,9.0,9.0,8.0,,26.0,3.5,0.0905923344947735,True,0,eliminated,7.0,False
+29,5,Jeannie Mai,Brandon Armstrong,Withdrew,9,8.0,8.0,8.0,,24.0,7.0,0.0836236933797909,True,0,withdrew,7.0,False
+29,6,Anne Heche,Keo Motsepe,Eliminated Week 4,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+29,6,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+29,6,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,8.0,8.0,8.0,,24.0,7.5,0.0895522388059701,True,0,eliminated,8.0,False
+29,6,Skai Jackson,Alan Bersten,Eliminated Week 10,5,6.0,6.0,6.0,,18.0,11.0,0.0671641791044776,True,0,eliminated,10.0,False
+29,6,Justina Machado,Sasha Farber,4th Place,4,9.0,9.0,9.0,,27.0,2.5,0.1007462686567164,True,0,finished,11.0,False
+29,6,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,6,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,7.0,7.0,7.0,,21.0,10.0,0.0783582089552238,True,1,eliminated,6.0,False
+29,6,Johnny Weir,Britt Stewart,Eliminated Week 10,6,7.0,8.0,7.0,,22.0,9.0,0.0820895522388059,True,0,eliminated,10.0,False
+29,6,Nev Schulman,Jenna Johnson,2nd Place,2,9.0,9.0,8.0,,26.0,5.0,0.0970149253731343,True,0,finished,11.0,False
+29,6,AJ McLean,Cheryl Burke,Eliminated Week 9,7,9.0,9.0,9.0,,27.0,2.5,0.1007462686567164,True,0,eliminated,9.0,False
+29,6,Nelly,Daniella Karagach,3rd Place,3,8.0,8.0,8.0,,24.0,7.5,0.0895522388059701,True,0,finished,11.0,False
+29,6,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,9.0,9.0,9.0,,27.0,2.5,0.1007462686567164,True,0,finished,11.0,False
+29,6,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,6,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,9.0,9.0,9.0,,27.0,2.5,0.1007462686567164,True,0,eliminated,7.0,False
+29,6,Jeannie Mai,Brandon Armstrong,Withdrew,9,8.0,8.0,9.0,,25.0,6.0,0.0932835820895522,True,0,withdrew,7.0,False
+29,7,Anne Heche,Keo Motsepe,Eliminated Week 4,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+29,7,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+29,7,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,9.0,9.0,8.0,,26.0,6.0,0.1,True,0,eliminated,8.0,False
+29,7,Skai Jackson,Alan Bersten,Eliminated Week 10,5,9.0,9.0,9.0,,27.0,3.0,0.1038461538461538,True,0,eliminated,10.0,False
+29,7,Justina Machado,Sasha Farber,4th Place,4,9.0,9.0,8.0,,26.0,6.0,0.1,True,0,finished,11.0,False
+29,7,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,7,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+29,7,Johnny Weir,Britt Stewart,Eliminated Week 10,6,9.0,9.0,9.0,,27.0,3.0,0.1038461538461538,True,0,eliminated,10.0,False
+29,7,Nev Schulman,Jenna Johnson,2nd Place,2,10.0,10.0,10.0,,30.0,1.0,0.1153846153846153,True,0,finished,11.0,False
+29,7,AJ McLean,Cheryl Burke,Eliminated Week 9,7,9.0,8.0,9.0,,26.0,6.0,0.1,True,0,eliminated,9.0,False
+29,7,Nelly,Daniella Karagach,3rd Place,3,9.0,9.0,9.0,,27.0,3.0,0.1038461538461538,True,0,finished,11.0,False
+29,7,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,7.0,9.0,8.0,,24.0,9.0,0.0923076923076923,True,0,finished,11.0,False
+29,7,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,7,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,7.0,8.0,7.0,,22.0,10.0,0.0846153846153846,True,1,eliminated,7.0,False
+29,7,Jeannie Mai,Brandon Armstrong,Withdrew,9,8.0,9.0,8.0,,25.0,8.0,0.0961538461538461,True,0,withdrew,7.0,False
+29,8,Anne Heche,Keo Motsepe,Eliminated Week 4,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+29,8,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+29,8,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,9.0,9.0,9.0,,27.0,5.5,0.1216218407600734,True,1,eliminated,8.0,False
+29,8,Skai Jackson,Alan Bersten,Eliminated Week 10,5,8.6666,9.6666,8.6666,,26.9998,7.0,0.1216209398575493,True,0,eliminated,10.0,False
+29,8,Justina Machado,Sasha Farber,4th Place,4,9.6666,9.6666,9.6666,,28.9998,3.0,0.1306299650990362,True,0,finished,11.0,False
+29,8,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,8,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+29,8,Johnny Weir,Britt Stewart,Eliminated Week 10,6,10.0,10.0,10.0,,30.0,1.5,0.1351353786223038,True,0,eliminated,10.0,False
+29,8,Nev Schulman,Jenna Johnson,2nd Place,2,10.0,10.0,10.0,,30.0,1.5,0.1351353786223038,True,0,finished,11.0,False
+29,8,AJ McLean,Cheryl Burke,Eliminated Week 9,7,9.0,9.0,9.0,,27.0,5.5,0.1216218407600734,True,0,eliminated,9.0,False
+29,8,Nelly,Daniella Karagach,3rd Place,3,8.0,8.0,8.0,,24.0,8.0,0.108108302897843,True,0,finished,11.0,False
+29,8,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,9.0,10.0,9.0,,28.0,4.0,0.1261263533808169,True,0,finished,11.0,False
+29,8,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,8,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+29,8,Jeannie Mai,Brandon Armstrong,Withdrew,9,0.0,0.0,0.0,,0.0,,,False,0,withdrew,7.0,True
+29,9,Anne Heche,Keo Motsepe,Eliminated Week 4,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+29,9,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+29,9,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+29,9,Skai Jackson,Alan Bersten,Eliminated Week 10,5,9.6666,9.6666,9.6666,,28.9998,3.5,0.1502586539218815,True,0,eliminated,10.0,False
+29,9,Justina Machado,Sasha Farber,4th Place,4,8.6666,8.6666,8.6666,,25.9998,5.0,0.1347145480395773,True,0,finished,11.0,False
+29,9,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,9,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+29,9,Johnny Weir,Britt Stewart,Eliminated Week 10,6,10.0,10.0,10.0,,30.0,1.5,0.1554410588230417,True,0,eliminated,10.0,False
+29,9,Nev Schulman,Jenna Johnson,2nd Place,2,9.6666,9.6666,9.6666,,28.9998,3.5,0.1502586539218815,True,0,finished,11.0,False
+29,9,AJ McLean,Cheryl Burke,Eliminated Week 9,7,7.6666,8.6666,8.6666,,24.9998,6.0,0.1295331794121426,True,1,eliminated,9.0,False
+29,9,Nelly,Daniella Karagach,3rd Place,3,8.0,8.0,8.0,,24.0,7.0,0.1243528470584334,True,0,finished,11.0,False
+29,9,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,10.0,10.0,10.0,,30.0,1.5,0.1554410588230417,True,0,finished,11.0,False
+29,9,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,9,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+29,9,Jeannie Mai,Brandon Armstrong,Withdrew,9,0.0,0.0,0.0,,0.0,,,False,0,withdrew,7.0,True
+29,10,Anne Heche,Keo Motsepe,Eliminated Week 4,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+29,10,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+29,10,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+29,10,Skai Jackson,Alan Bersten,Eliminated Week 10,5,9.5,9.5,9.5,,28.5,4.5,0.1637931034482758,True,1,eliminated,10.0,False
+29,10,Justina Machado,Sasha Farber,4th Place,4,9.5,10.0,9.5,,29.0,3.0,0.1666666666666666,True,0,finished,11.0,False
+29,10,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,10,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+29,10,Johnny Weir,Britt Stewart,Eliminated Week 10,6,9.5,9.5,9.5,,28.5,4.5,0.1637931034482758,True,1,eliminated,10.0,False
+29,10,Nev Schulman,Jenna Johnson,2nd Place,2,10.0,10.0,10.0,,30.0,1.5,0.1724137931034483,True,0,finished,11.0,False
+29,10,AJ McLean,Cheryl Burke,Eliminated Week 9,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+29,10,Nelly,Daniella Karagach,3rd Place,3,9.5,9.0,9.5,,28.0,6.0,0.160919540229885,True,0,finished,11.0,False
+29,10,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,10.0,10.0,10.0,,30.0,1.5,0.1724137931034483,True,0,finished,11.0,False
+29,10,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,10,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+29,10,Jeannie Mai,Brandon Armstrong,Withdrew,9,0.0,0.0,0.0,,0.0,,,False,0,withdrew,7.0,True
+29,11,Anne Heche,Keo Motsepe,Eliminated Week 4,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+29,11,Jesse Metcalfe,Sharna Burgess,Eliminated Week 5,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+29,11,Chrishell Stause,Gleb Savchenko,Eliminated Week 8,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+29,11,Skai Jackson,Alan Bersten,Eliminated Week 10,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,10.0,True
+29,11,Justina Machado,Sasha Farber,4th Place,4,10.0,10.0,10.0,,30.0,2.0,0.2531645569620253,True,0,finished,11.0,False
+29,11,Charles Oakley,Emma Slater,Eliminated Week 2,15,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+29,11,Veron Davis,Peta Murgatroyd,Eliminated Week 6,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+29,11,Johnny Weir,Britt Stewart,Eliminated Week 10,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,10.0,True
+29,11,Nev Schulman,Jenna Johnson,2nd Place,2,10.0,10.0,10.0,,30.0,2.0,0.2531645569620253,True,0,finished,11.0,False
+29,11,AJ McLean,Cheryl Burke,Eliminated Week 9,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+29,11,Nelly,Daniella Karagach,3rd Place,3,9.5,9.5,9.5,,28.5,4.0,0.240506329113924,True,0,finished,11.0,False
+29,11,Kaitlyn Bristowe,Artem Chigvintsev,1st Place,1,10.0,10.0,10.0,,30.0,2.0,0.2531645569620253,True,0,finished,11.0,False
+29,11,Carole Baskin,Pasha Pashkov,Eliminated Week 3,14,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+29,11,Monica Aldama,Valentin Chmerkovskiy,Eliminated Week 7,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+29,11,Jeannie Mai,Brandon Armstrong,Withdrew,9,0.0,0.0,0.0,,0.0,,,False,0,withdrew,7.0,True

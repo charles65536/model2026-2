@@ -1,0 +1,121 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+5,1,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,7.0,7.0,7.0,,21.0,7.0,0.0817120622568093,True,0,eliminated,8.0,False
+5,1,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,8.0,8.0,8.0,,24.0,3.5,0.0933852140077821,True,0,eliminated,7.0,False
+5,1,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,9.0,8.0,9.0,,26.0,1.0,0.1011673151750972,True,0,eliminated,6.0,False
+5,1,Jennie Garth,Derek Hough,Eliminated Week 9,4,7.0,7.0,7.0,,21.0,7.0,0.0817120622568093,True,0,eliminated,9.0,False
+5,1,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,6.0,6.0,6.0,,18.0,11.0,0.0700389105058365,True,0,eliminated,4.0,False
+5,1,Josie Maran,Alec Mazo,Eliminated Week 1,12,6.0,5.0,5.0,,16.0,12.0,0.0622568093385214,True,1,eliminated,1.0,False
+5,1,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,7.0,7.0,7.0,,21.0,7.0,0.0817120622568093,True,0,eliminated,2.0,False
+5,1,Helio Castroneves,Julianne Hough,1st Place,1,8.0,9.0,8.0,,25.0,2.0,0.0972762645914396,True,0,finished,10.0,False
+5,1,Mel B,Maksim Chmerkoskiy,2nd Place,2,8.0,8.0,8.0,,24.0,3.5,0.0933852140077821,True,0,finished,10.0,False
+5,1,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,6.0,7.0,6.0,,19.0,10.0,0.0739299610894941,True,0,eliminated,3.0,False
+5,1,Marie Osmond,Jonathan Roberts,3rd Place,3,7.0,7.0,7.0,,21.0,7.0,0.0817120622568093,True,0,finished,10.0,False
+5,1,Mark Cuban,Kym Johnson,Eliminated Week 5,8,7.0,7.0,7.0,,21.0,7.0,0.0817120622568093,True,0,eliminated,5.0,False
+5,2,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,7.0,7.0,7.0,,21.0,7.0,0.088235294117647,True,0,eliminated,8.0,False
+5,2,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,7.0,7.0,7.0,,21.0,7.0,0.088235294117647,True,0,eliminated,7.0,False
+5,2,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,9.0,8.0,9.0,,26.0,2.0,0.1092436974789916,True,0,eliminated,6.0,False
+5,2,Jennie Garth,Derek Hough,Eliminated Week 9,4,7.0,7.0,7.0,,21.0,7.0,0.088235294117647,True,0,eliminated,9.0,False
+5,2,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,7.0,7.0,7.0,,21.0,7.0,0.088235294117647,True,0,eliminated,4.0,False
+5,2,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,2,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,7.0,7.0,7.0,,21.0,7.0,0.088235294117647,True,1,eliminated,2.0,False
+5,2,Helio Castroneves,Julianne Hough,1st Place,1,9.0,9.0,9.0,,27.0,1.0,0.1134453781512605,True,0,finished,10.0,False
+5,2,Mel B,Maksim Chmerkoskiy,2nd Place,2,7.0,8.0,8.0,,23.0,4.0,0.0966386554621848,True,0,finished,10.0,False
+5,2,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,5.0,5.0,5.0,,15.0,11.0,0.0630252100840336,True,0,eliminated,3.0,False
+5,2,Marie Osmond,Jonathan Roberts,3rd Place,3,8.0,8.0,8.0,,24.0,3.0,0.1008403361344537,True,0,finished,10.0,False
+5,2,Mark Cuban,Kym Johnson,Eliminated Week 5,8,6.0,6.0,6.0,,18.0,10.0,0.0756302521008403,True,0,eliminated,5.0,False
+5,3,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,8.0,7.0,8.0,,23.0,7.0,0.0962343096234309,True,0,eliminated,8.0,False
+5,3,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,9.0,9.0,9.0,,27.0,2.0,0.1129707112970711,True,0,eliminated,7.0,False
+5,3,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,9.0,9.0,9.0,,27.0,2.0,0.1129707112970711,True,0,eliminated,6.0,False
+5,3,Jennie Garth,Derek Hough,Eliminated Week 9,4,9.0,8.0,9.0,,26.0,4.5,0.1087866108786611,True,0,eliminated,9.0,False
+5,3,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,7.0,7.0,7.0,,21.0,8.0,0.0878661087866108,True,0,eliminated,4.0,False
+5,3,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,3,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,3,Helio Castroneves,Julianne Hough,1st Place,1,8.0,8.0,8.0,,24.0,6.0,0.100418410041841,True,0,finished,10.0,False
+5,3,Mel B,Maksim Chmerkoskiy,2nd Place,2,9.0,9.0,9.0,,27.0,2.0,0.1129707112970711,True,0,finished,10.0,False
+5,3,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,6.0,6.0,6.0,,18.0,10.0,0.0753138075313807,True,1,eliminated,3.0,False
+5,3,Marie Osmond,Jonathan Roberts,3rd Place,3,9.0,8.0,9.0,,26.0,4.5,0.1087866108786611,True,0,finished,10.0,False
+5,3,Mark Cuban,Kym Johnson,Eliminated Week 5,8,6.0,7.0,7.0,,20.0,9.0,0.0836820083682008,True,0,eliminated,5.0,False
+5,4,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,9.0,9.0,9.0,,27.0,3.0,0.1153846153846153,True,0,eliminated,8.0,False
+5,4,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,8.0,9.0,9.0,,26.0,6.0,0.1111111111111111,True,0,eliminated,7.0,False
+5,4,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,10.0,10.0,10.0,,30.0,1.0,0.1282051282051282,True,0,eliminated,6.0,False
+5,4,Jennie Garth,Derek Hough,Eliminated Week 9,4,8.0,10.0,9.0,,27.0,3.0,0.1153846153846153,True,0,eliminated,9.0,False
+5,4,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,7.0,8.0,8.0,,23.0,8.0,0.0982905982905982,True,1,eliminated,4.0,False
+5,4,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,4,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,4,Helio Castroneves,Julianne Hough,1st Place,1,9.0,9.0,9.0,,27.0,3.0,0.1153846153846153,True,0,finished,10.0,False
+5,4,Mel B,Maksim Chmerkoskiy,2nd Place,2,8.0,9.0,9.0,,26.0,6.0,0.1111111111111111,True,0,finished,10.0,False
+5,4,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+5,4,Marie Osmond,Jonathan Roberts,3rd Place,3,9.0,9.0,8.0,,26.0,6.0,0.1111111111111111,True,0,finished,10.0,False
+5,4,Mark Cuban,Kym Johnson,Eliminated Week 5,8,7.0,8.0,7.0,,22.0,9.0,0.094017094017094,True,0,eliminated,5.0,False
+5,5,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,8.0,9.0,9.0,,26.0,3.5,0.1306532663316583,True,0,eliminated,8.0,False
+5,5,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,8.0,9.0,9.0,,26.0,3.5,0.1306532663316583,True,0,eliminated,7.0,False
+5,5,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,9.0,9.0,10.0,,28.0,2.0,0.1407035175879397,True,0,eliminated,6.0,False
+5,5,Jennie Garth,Derek Hough,Eliminated Week 9,4,8.0,9.0,8.0,,25.0,5.0,0.1256281407035175,True,0,eliminated,9.0,False
+5,5,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+5,5,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,5,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,5,Helio Castroneves,Julianne Hough,1st Place,1,8.0,7.0,8.0,,23.0,6.0,0.1155778894472361,True,0,finished,10.0,False
+5,5,Mel B,Maksim Chmerkoskiy,2nd Place,2,10.0,9.0,10.0,,29.0,1.0,0.1457286432160804,True,0,finished,10.0,False
+5,5,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+5,5,Marie Osmond,Jonathan Roberts,3rd Place,3,7.0,7.0,7.0,,21.0,7.5,0.1055276381909547,True,0,finished,10.0,False
+5,5,Mark Cuban,Kym Johnson,Eliminated Week 5,8,7.0,7.0,7.0,,21.0,7.5,0.1055276381909547,True,1,eliminated,5.0,False
+5,6,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,9.0,8.0,8.0,,25.0,4.5,0.1388888888888889,True,0,eliminated,8.0,False
+5,6,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,8.0,7.0,7.0,,22.0,7.0,0.1222222222222222,True,0,eliminated,7.0,False
+5,6,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,9.0,8.0,8.0,,25.0,4.5,0.1388888888888889,True,1,eliminated,6.0,False
+5,6,Jennie Garth,Derek Hough,Eliminated Week 9,4,9.0,9.0,9.0,,27.0,3.0,0.15,True,0,eliminated,9.0,False
+5,6,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+5,6,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,6,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,6,Helio Castroneves,Julianne Hough,1st Place,1,9.0,10.0,9.0,,28.0,2.0,0.1555555555555555,True,0,finished,10.0,False
+5,6,Mel B,Maksim Chmerkoskiy,2nd Place,2,10.0,10.0,10.0,,30.0,1.0,0.1666666666666666,True,0,finished,10.0,False
+5,6,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+5,6,Marie Osmond,Jonathan Roberts,3rd Place,3,8.0,8.0,7.0,,23.0,6.0,0.1277777777777777,True,0,finished,10.0,False
+5,6,Mark Cuban,Kym Johnson,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+5,7,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,8.5,8.5,8.5,,25.5,5.0,0.1634615384615384,True,0,eliminated,8.0,False
+5,7,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,8.0,8.5,8.5,,25.0,6.0,0.1602564102564102,True,1,eliminated,7.0,False
+5,7,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+5,7,Jennie Garth,Derek Hough,Eliminated Week 9,4,8.5,8.5,9.5,,26.5,2.0,0.1698717948717948,True,0,eliminated,9.0,False
+5,7,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+5,7,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,7,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,7,Helio Castroneves,Julianne Hough,1st Place,1,9.0,8.5,8.5,,26.0,3.5,0.1666666666666666,True,0,finished,10.0,False
+5,7,Mel B,Maksim Chmerkoskiy,2nd Place,2,9.0,9.0,9.0,,27.0,1.0,0.173076923076923,True,0,finished,10.0,False
+5,7,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+5,7,Marie Osmond,Jonathan Roberts,3rd Place,3,9.0,8.5,8.5,,26.0,3.5,0.1666666666666666,True,0,finished,10.0,False
+5,7,Mark Cuban,Kym Johnson,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+5,8,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,8.5,8.5,8.5,,25.5,3.0,0.1939163498098859,True,1,eliminated,8.0,False
+5,8,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+5,8,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+5,8,Jennie Garth,Derek Hough,Eliminated Week 9,4,8.5,8.5,8.0,,25.0,4.0,0.1901140684410646,True,0,eliminated,9.0,False
+5,8,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+5,8,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,8,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,8,Helio Castroneves,Julianne Hough,1st Place,1,9.5,9.5,9.5,,28.5,1.0,0.2167300380228136,True,0,finished,10.0,False
+5,8,Mel B,Maksim Chmerkoskiy,2nd Place,2,9.0,9.5,9.5,,28.0,2.0,0.2129277566539923,True,0,finished,10.0,False
+5,8,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+5,8,Marie Osmond,Jonathan Roberts,3rd Place,3,8.0,8.5,8.0,,24.5,5.0,0.1863117870722433,True,0,finished,10.0,False
+5,8,Mark Cuban,Kym Johnson,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+5,9,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+5,9,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+5,9,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+5,9,Jennie Garth,Derek Hough,Eliminated Week 9,4,9.5,10.0,9.5,,29.0,3.0,0.2478632478632478,True,1,eliminated,9.0,False
+5,9,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+5,9,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,9,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,9,Helio Castroneves,Julianne Hough,1st Place,1,10.0,10.0,10.0,,30.0,1.5,0.2564102564102564,True,0,finished,10.0,False
+5,9,Mel B,Maksim Chmerkoskiy,2nd Place,2,10.0,10.0,10.0,,30.0,1.5,0.2564102564102564,True,0,finished,10.0,False
+5,9,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+5,9,Marie Osmond,Jonathan Roberts,3rd Place,3,9.5,9.5,9.0,,28.0,4.0,0.2393162393162393,True,0,finished,10.0,False
+5,9,Mark Cuban,Kym Johnson,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+5,10,Cameron Mathison,Edyta Sliwinska,Eliminated Week 8,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+5,10,Jane Seymour,Tony Dovolani,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+5,10,Sabrina Bryan,Mark Ballas,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+5,10,Jennie Garth,Derek Hough,Eliminated Week 9,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+5,10,Floyd Mayweather Jr. ,Karina Smirnoff,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+5,10,Josie Maran,Alec Mazo,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+5,10,Albert Reed,Anna Trebunskaya,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+5,10,Helio Castroneves,Julianne Hough,1st Place,1,9.0,9.3333,9.6666,,27.999900000000004,2.0,0.352940954028016,True,0,finished,10.0,False
+5,10,Mel B,Maksim Chmerkoskiy,2nd Place,2,9.3333,9.3333,9.6666,,28.3332,1.0,0.3571422268889025,True,0,finished,10.0,False
+5,10,Wayne Newton,Cheryl Burke,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+5,10,Marie Osmond,Jonathan Roberts,3rd Place,3,8.0,7.5,7.5,,23.0,3.0,0.2899168190830813,True,0,finished,10.0,False
+5,10,Mark Cuban,Kym Johnson,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
