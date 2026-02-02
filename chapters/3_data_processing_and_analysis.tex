@@ -126,28 +126,44 @@ including vote-share inference and counterfactual replay under alternative votin
 \subsubsection{Data Visualization}
 \label{subsubsec:eda_viz}
 
-We summarize baseline consistency and rule divergence using:
+We summarize data integrity checks and baseline consistency using:
 \begin{itemize}
-  \item \textbf{(L1 table)} outputs/tab/tab\_baseline\_consistency.tex: BL-0 baseline set agreement (KPI1: Jaccard similarity) under rank
-and percent schemes, and rule divergence (KPI3/FlipRate), with slices: Overall / Rank-era / Percent-era.
-  \item \textbf{(L2 figure, optional)} \texttt{outputs/fig/fig\_fliprate\_by\_season.pdf}:
-  season-level visualization of where the two schemes disagree.
+  \item \textbf{(L2 figures)} preprocessing diagnostics that directly affect eligibility and KPI denominators:
+  judges availability (\autoref{fig:judges_availability}), irregular weeks by season (\autoref{fig:irregular_weeks_by_season}),
+  and the presence of inactive placeholder rows (\autoref{fig:active_vs_placeholders}).
+  \item \textbf{(Optional)} a season-level FlipRate plot (\texttt{outputs/fig/fig\_fliprate\_by\_season.pdf}) that visualizes
+  where rank- and percent-based replays disagree under the same inputs.
 \end{itemize}
 
-% If you want to include the table/figure directly:
-% \begin{table}[t]
-%   \centering
-%   \input{outputs/tab/tab_baseline_consistency.tex}
-%   \caption{BL-0 baseline consistency and rule divergence across era slices.}
-%   \label{tab:baseline_consistency}
-% \end{table}
-%
-% \begin{figure}[t]
-%   \centering
-%   \includegraphics[width=\linewidth]{outputs/fig/fig_fliprate_by_season.pdf}
-%   \caption{Season-level flip rate between rank- and percent-based BL-0 predictions.}
-%   \label{fig:fliprate_by_season}
-% \end{figure}
+
+
+\begin{figure}[H]
+  \centering
+
+  \begin{subfigure}[t]{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{output/fig/fig3\_1\_judges\_availability.png}
+    \caption{Judges availability (\texttt{n\_judges\_obs} distribution).}
+    \label{fig:judges_availability}
+  \end{subfigure}\hfill
+  \begin{subfigure}[t]{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{output/fig/fig3\_3\_active\_vs\_placeholders.png}
+    \caption{Active vs placeholders (\texttt{active\_bool}).}
+    \label{fig:active_vs_placeholders}
+  \end{subfigure}
+
+  \caption{Panel integrity diagnostics used by the preprocessing pipeline.}
+  \label{fig:data_integrity_diagnostics}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.92\linewidth]{output/fig/fig3\_2\_irregular\_weeks\_by\_season.png}
+  \caption{Irregular weeks by season: proportion of weeks with zero eliminations ($k{=}0$) and multiple eliminations ($k{>}1$).}
+  \label{fig:irregular_weeks_by_season}
+\end{figure}
+
 
 
 \subsubsection{Key Empirical Findings}
@@ -164,6 +180,14 @@ the inferred vote shares and the counterfactual replay framework, not on BL-0.
 \paragraph{Finding 2 --- Rule comparisons must be stress-tested around the season-28 cutoff.}
 We adopt the era split for rule-comparison slicing (Rank-era vs.\ Percent-era), but treat the Season-28 switch as an explicit assumption
 and stress-test adjacent cutoffs (27/28/29).
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\linewidth]{output/fig/fig5_2_cutoff_28_fliprate.png}
+  \caption{Cutoff at Season-28.}
+  \label{fig:cutoff_28}
+\end{figure}
+
+
 
 \paragraph{Finding 3 --- Non-standard weeks materially affect set-based consistency metrics.}
 Because the dataset includes weeks with no elimination or multiple eliminations, KPI1 must handle these
