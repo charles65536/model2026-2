@@ -1,8 +1,8 @@
 Context Pack for AI 
 ---
 
-**version:** v0.1
-**updated:** 2026.1.30_8:00
+**version:** v3.1
+**updated:** 2026.2.1 22:00
 **owner:** Jincan LI
 **Rule:** If any earlier info conflicts, **this file wins**.
 
@@ -40,21 +40,13 @@ Context Pack for AI
 * We claim that 明星特征（年龄、行业等）与舞伴（职业舞者）会对**评委分数**与**粉丝投票**产生不同方向/强度的影响，从而改变淘汰风险（且这种差异可在跨季切片中稳定观察到）。 (todo)
 * We claim that 我们提出的新规则在历史回放下能在**公平性/观赏性/稳定性**之间取得更优权衡，并保持可解释性与低复杂度。 (todo)
 
-## 3.2 Assumption Budget (≤5，每条≤1句，可辩护)
-
-1. 同一赛季同一周的粉丝总投票量只影响**比例/排序**，我们把绝对规模当作可缩放常数处理（关注相对票）。 
-2. 评委给分数据视为观测到的“技术表现信号”，允许跨周/跨评委存在噪声但不系统造假。 
-3. 每周淘汰由题面规则产生：排名法或百分比法的“综合最低者淘汰”，以及（若启用）“综合底二后评委二选一”。 
-4. 选手在被淘汰后不再获得有效周得分（数据中的后续0分代表退出而非真实表演得分）。 
-5. 粉丝投票对同一选手在相邻周之间变化相对平滑（可用作正则/先验以提升可识别性）。
-
 ## 3.3 数据清洗
 
 - **P0 Data Triage 已跑通（可复现）**：已将原始 wide 格式 `weekX_judgeY_score` 展开为 **season–week–celebrity** 周面板，并按口径生成 **BL-0 baseline** 与一致性 KPI 表，形成后续“fan vote 估计模型”的可插拔输入接口。
 - **P0 sanity-check（可写入报告，但仅代表 BL-0）**：Overall（eligible weeks = 264）下，BL-0 的 Hit-Rate 为 **Rank 0.364 / Percent 0.375**，两种规则预测淘汰对象不一致的 FlipRate 为 **0.038**；分 era 切片后仍可复现（见 `tab_baseline_consistency.tex` 与 `fig_fliprate_by_season.pdf`）。
 - **重要风险标注（必须在报告轻描淡写但闭环）**：题面明确 season 28 的规则切换赛季“不确定但合理假设为 28”，因此 Rank-era/Percent-era 切片需做 27/28/29 的 stress test；同时数据存在结构性 N/A 周与淘汰后 0 分编码，需要在 active set 口径中显式处理。
 
-(English, report-ready) We have constructed a reproducible season–week–contestant panel and a BL-0 baseline pipeline that produces elimination-consistency metrics and rule-divergence summaries. Under BL-0, the overall hit-rate is 0.364 (rank) and 0.375 (percent) across 264 eligible weeks, with a flip rate of 0.038, serving as a sanity check rather than a final model result. Since the exact season of the return to rank-based aggregation is not confirmed, we explicitly treat the Season-28 switch as an assumption and will stress-test adjacent cutoffs (27/28/29).:contentReference[oaicite:4]{index=4}
+(English, report-ready) We have constructed a reproducible season–week–contestant panel and a BL-0 baseline pipeline that produces elimination-consistency metrics and rule-divergence summaries. Under BL-0, the overall hit-rate is 0.364 (rank) and 0.375 (percent) across 264 eligible weeks, with a flip rate of 0.038, serving as a sanity check rather than a final model result. Since the exact season of the return to rank-based aggregation is not confirmed, we explicitly treat the Season-28 switch as an assumption and will stress-test adjacent cutoffs (27/28/29).
 
 
 # 4 关键指标 (KPI)
@@ -72,82 +64,115 @@ Context Pack for AI
 
 # 5 数据处理：
 
-## 5.1 Data snapshot (only what affects conclusions) (v0.1 for Data Triage)
+## 5.1 当前启用的数据文件（Source of truth & Canonical interface）
 
+### 5.1.1 原始数据（Raw, 永不修改）
+- **原始数据集（官方）**：`problem_and_raw_data/2026_MCM_Problem_C_Data.csv`  
+  - 形态：宽表（wide format），例如 `weekX_judgeY_score` 多列
+  - 规则：**永不直接修改原始文件**（只读）
 
-- **Source of truth**: COMAP dataset `2026_MCM_Problem_C_Data.csv` (seasons 1–34; weekly judge scores + results/placement + basic contestant attributes).
+### 5.1.2 新启用的清洗/建表产物（Cleaned / Panel）
+本项目从原始宽表确定性构造“长表周面板”（long panel），并将其作为后续推断、回放与KPI的统一输入接口。
 
-**Key columns (official):**
+- **唯一 canonical 输入面板（推荐）**：`outputs/data_cleaned/canonical_replay_ready.csv`  
+  - 面板粒度：1 行 = 1 个 (season, week, contestant)
+  - 用途：所有 downstream 模块（Task A 推断 / Task B/C 回放 / KPI 复现）都应读这个文件，避免口径漂移
+  - 备注：当前版本与 `clean_long_data_replay_ready.csv` 内容完全一致（只是命名差异）
+
+- **Replay-ready alias（字段名对齐回放代码）**：`outputs/data_cleaned/clean_long_data_replay_ready.csv`  
+  - 与 canonical 相同面板，但明确包含回放常用字段名（见 5.1.3）
+
+- **工程友好的 clean long panel**：`outputs/data_cleaned/clean_long_data_new1.csv`  
+  - 同粒度同语义，但字段名更偏建表过程（例如 `J_total`, `J_pct`, `elim_week` 等）
+
 ```
-P0 必要字段（没有就做不了）
+### 5.1.3 字段语义（必须统一）
+以下为你们新面板中“最关键字段”的统一解释（字段名保留英文，语义中文说明）：
 
-* `season`（赛季编号） 
-* `celebrity_name`（选手唯一标识） 
-* `results` 或能推断淘汰周/最终名次的信息（用于周淘汰真值与赛季结局真值） 
-* `placement`（最终名次，用于冠军/决赛对比） 
-* 每周评委打分列 `weekX_judgeY_score`（用于构造每周评委总分/排名/百分比） 
+- 关键索引字段（P0 必要）
+  - `season`：赛季编号
+  - `week`：周次（赛季内）
+  - `contestant_id`：选手ID（若有）
+  - `celebrity_name`：明星姓名（选手标识）
 
-P1 重要字段（有则显著提升）
+- 评委聚合字段（P0 必要）
+  - `J_total`：当周评委总分（由 `weekX_judgeY_score` 按 `skipna` 求和）
+  - `J_sum_week`：当周 active 选手总分之和（作为分母）
+  - `J_pct`：当周评委得分占比（`J_total / J_sum_week`）
 
-* `ballroom_partner`（职业舞者，用于舞者效应分析与分层） 
-* `celebrity_age_during_season`、`celebrity_industry`（明星特征：解释粉丝/评委差异） 
-* `celebrity_homecountry/region`、`celebrity_homestate`（区域切片：潜在票仓/文化偏好代理） 
-```
+- 回放/资格字段（P0 必要）
+  - `active`：是否进入当周“有效集合”（active set）；用于所有 KPI 分母与回放资格
+  - `elim_week`：退出周（淘汰/退赛导致不再 active 的周）
+  - `eliminated`：是否为该周末被淘汰者（set-match / Jaccard 等评估依赖）
 
-- **Cleaning rules (≤5):**
-  1) Reshape wide `weekX_judgeY_score` into long panel: one row per (season, week, celebrity).
-  2) Compute `total_judge_score = sum(weekX_judgeY_score, skipna)`; do not impute missing judges.
-  3) Define `active` by excluding weeks with all-NaN scores and weeks after exit (Eliminated Week k / inferred withdraw week).
-  4) Treat post-exit zeros as encoding artifacts (kept in raw but excluded from active set and KPI denominators).
-  5) Handle weeks with 0 or >1 eliminations explicitly in KPI denominators (no-elim excluded; multi-elim via set-match).
-- Known caveats (≤3):
-  - Judge index `judgeY` is not a persistent identity across weeks/seasons; only within-week totals/ranks are used.
-  - The exact season of the return to rank-based aggregation is not confirmed; we assume Season 28 and will stress-test adjacent cutoffs.
-  - Fan votes are unobserved by design; current baselines use only reproducible proxies and keep a plug-in interface for vote estimates.
+- 回放代码对齐字段（仅命名别名，不引入新信息）
+  - `total_judge_score = J_total`
+  - `judge_percent = J_pct`
+  - `exit_week = elim_week`
 
+## 5.2 清洗原则（Principles）——写规则，不写结果
 
-- **Panel granularity**: season–week–celebrity (built by reshaping `weekX_judgeY_score` wide columns into long rows).
-- **P0 eligibility / active-set**: a contestant is active in (season, week) iff at least one judge score exists for that week and the week is not after the exit week; post-elimination scores recorded as zeros are treated as inactive encoding rather than new performances.:contentReference[oaicite:6]{index=6}
-- **Known caveats (must be reported)**:
-  1) The return-to-rank season is not known with certainty; we use Season-28 as an explicit assumption and will stress-test 27/28/29 cutoffs.:contentReference[oaicite:7]{index=7}
-  2) Judge4 may be N/A because some weeks have only 3 judges; we aggregate with `skipna` and do not track judge identity across weeks.:contentReference[oaicite:8]{index=8}
-  3) There exist weeks with no elimination and weeks with multiple eliminations; we handle them explicitly in KPI denominators to avoid inflated consistency claims.:contentReference[oaicite:9]{index=9}
+1) **尊重官方编码（0 分与 N/A）**  
+   - 淘汰后出现的 0 分属于“编码/占位”，不视为真实表演得分；通过 `active` 定义剔除其影响  
+   - `N/A` 表示当周不存在该评委（如只有3位评委），聚合时直接 `skipna`，不做补齐
 
+2) **以 active set 控制分母（active-set driven accounting）**  
+   - 所有占比、回放、KPI分母均以 `active=1` 的集合为准  
+   - 退出后周的记录即便存在，也不进入分母
 
+3) **不在“观测周”做激进插补（no within-week aggressive imputation）**  
+   - 清洗阶段不补评委缺失、不人为补分数，只做确定性的 reshape 与聚合
 
-## 5.2 最大的数据缺口/口径风险（≤3条）
+4) **特殊周显式处理（special episodes）**  
+   - 无淘汰周（0 eliminated）与多淘汰周（>1 eliminated）必须在 KPI 计算时显式处理  
+   - 不强行把特殊周“修”成普通周
 
-1. **规则切换季不确定**（题面说“合理假设第28季”但非确定），需要把“规则版本”作为敏感性场景而不是硬编码单点。 
-2. **“无淘汰/多淘汰/团队舞平均/加分”周**会改变分数可比性与淘汰约束形式，清洗时必须先标注这些周再建模。 
-3. **评委身份不固定且列名为 JudgeY**（跨周/跨季不可直接对齐同一评委），因此“评委偏好”只能做为“当周评委组”层面的随机效应或被忽略。 
+5) **可复现（deterministic, reproducible）**  
+   - 从 raw 到 canonical 的变换应是确定性的；同样输入应得到同样的 canonical 输出
 
-## 5.3 P0 triage outcome (reproducible baseline + interfaces)
+6)**Known caveats (must be reported)**:
+  1) The return-to-rank season is not known with certainty; we use Season-28 as an explicit assumption and will stress-test 27/28/29 cutoffs.
+  2) Judge4 may be N/A because some weeks have only 3 judges; we aggregate with `skipna`.
 
-**CN（团队同步/写作可用）**  
-我们已将官方 `weekX_judgeY_score` 从宽表展开为 season–week–celebrity 的周面板，并按 registry 的 active/退出口径构造了 `active / exit_type / exit_week / true_elim_flag` 等最小标签（后续模型与仿真只依赖该面板与规则函数，不依赖额外 EDA 结论）。在此基础上，我们实现了可复现的 BL-0（judge-only proxy）并产出一致性对照表：Rank-scheme 与 Percent-scheme 的淘汰命中率（KPI1）以及两规则预测淘汰集合不同的比例（KPI3, FlipRate）。注意：面板中保留了“结构性缺失周(all judges NaN)”以及“退出后 0 分延展”等编码痕迹，但它们均被标记为 `active=False`，不会进入 KPI 分母/计算；另存在极少数“淘汰当周总分=0”的边界样本，已记录为风险点，后续在敏感性分析中单独 stress-test。
+## 5.3 清洗操作（Operations）——从 raw 到 canonical 的步骤（可执行口径）
 
-**EN (report-ready)**  
-We reshape the official weekly judge-score columns into a season–week–contestant panel and construct deterministic eligibility/exit labels (`active`, `exit_type`, `exit_week`, `true_elim_flag`) as the canonical input to downstream vote-estimation and replay simulation. On top of this panel, we implement a fully reproducible BL-0 (judge-only proxy) and report baseline consistency metrics: elimination hit-rate under rank- and percent-combination (KPI1) and the rule divergence rate between the two schemes (KPI3, FlipRate). Structural missingness (all-judge-NaN weeks) and post-exit zero-score encodings are retained for auditability but excluded from denominators via `active=False`; rare edge cases (e.g., elimination-week scores recorded as zeros) are documented and will be stress-tested in the robustness stage.
+- Step 1：将 raw 宽表中的 `weekX_judgeY_score` reshape 为长表  
+  - 产出：season–week–contestant 粒度的记录
 
-**BL-0 baseline summary (from `output/table/tab_baseline_consistency.tex`)**
+- Step 2：计算当周评委总分与占比  
+  - `J_total = sum(weekX_judgeY_score, skipna=True)`  
+  - `J_sum_week = sum(J_total over active contestants)`  
+  - `J_pct = J_total / J_sum_week`
 
-| Slice | N_weeks (eligible) | Hit-Rate (Rank) | Hit-Rate (Percent) | FlipRate (Rank vs Percent) |
-|---|---:|---:|---:|---:|
-| Overall | 264 | 0.364 | 0.375 | 0.038 |
-| Rank-era (S1-2,28-34) | 66 | 0.348 | 0.364 | 0.015 |
-| Percent-era (S3-27) | 198 | 0.369 | 0.379 | 0.045 |
+- Step 3：构造回放所需的最小标签  
+  - `active`：当周至少存在有效评委分数且未超过退出周  
+  - `elim_week / exit_week`：基于结果字段推断/记录退出周  
+  - `eliminated`：该周末被淘汰者标记（支持 set-match 与多淘汰）
 
-**Canonical artifacts (for reproducibility & downstream agents)**  
-- `output/table/intermediate_weekly_panel.csv` (canonical weekly panel; plug-in input)  
-- `output/table/intermediate_baseline_preds.csv` (week-level predictions; audit/debug)  
-- `output/table/tab_baseline_consistency.tex` (LaTeX table for KPI1/KPI3, BL-0)  
-- `output/figure/fig_fliprate_by_season.pdf` (optional L2: where rules diverge by season; supports KPI3 narrative)
+- Step 4：字段名对齐（仅命名别名）  
+  - 生成 replay-ready 所需别名列（`total_judge_score, judge_percent, exit_week`）
 
+## 5.4 清洗结果（Outcomes）——你最终得到的“可用输入接口”
+- 你们最终得到一个统一的 canonical 输入：`canonical_replay_ready.csv`  
+- 下游所有模型与指标均只需要依赖这个长表接口，无需再去读 raw 的宽表结构  
+- 你们弃用了旧中间产物作为 canonical：`intermediate_baseline_preds.csv`, `intermediate_weekly_panel.csv`
+
+## 5.5 关于“插补（Imputation）”的统一声明（防误解）
+- “插补/补全”仅指：当进行**反事实回放（counterfactual replay）**时，若某选手在真实历史中已退出，则其退出后周的输入对反事实是未观测量。  
+- 我们只允许使用“保守、最小信息假设”去补齐回放所需输入以完成仿真闭环（close the replay）；  
+- **该补全不用于预测选手真实后续表现（not a performance forecast）**，也不输出任何“未来表现预测”的对外结论。
+
+## 5.6 Canonical artifacts（给后续 agent 的唯一输入索引）— vNext
+- `outputs/data_cleaned/canonical_replay_ready.csv`（**唯一 canonical 输入面板**）
+- `outputs/data_cleaned/clean_long_data_replay_ready.csv`（replay-ready alias；当前版本与 canonical 一致）
+- `outputs/data_cleaned/clean_long_data_new1.csv`（工程友好长表；同粒度同语义）
+- `problem_and_raw_data/2026_MCM_Problem_C_Data.csv`（raw source of truth；never edited）
 
 
 # 6 关键模型 
 
 详情请见first_stage_modeling.md (这个是第一版本) 以及model_2.md (这个是经过队友修改后的版本，如有冲突，使用改后的这个版本)
+最终选用model_3.md
 
 # 7 Notation Chart(记号说明)
 ``` latex
@@ -181,39 +206,28 @@ $\lambda$ & Penalty weight on slacks in vote inference objective \\
 ```
 
 # 8 Work-in-progress outputs (pre-contest can be empty)
-
-1.30
-
----
-
-- Expected figure set (L0/L1/L2): see `fig_manifest.md`(todo)
-
-| Artifact (engine path) | What it is | Used for (Claim/KPI/Slice) |
-|---|---|---|
-| `output/table/tab_baseline_consistency.tex` | L1 summary table of BL-0 elimination hit-rate and FlipRate across slices | KPI1 (Rank/Percent Hit-Rate), KPI3 (FlipRate); slices: Overall / Rank-era / Percent-era |
-| `output/table/intermediate_weekly_panel.csv` | season–week–celebrity weekly panel with active/exit labels and judge-based rank/percent features | Minimal input interface for fan vote estimation models; supports all downstream KPI recomputation |
-| `output/table/intermediate_baseline_preds.csv` | season–week baseline predictions + eligibility flags (true_k, true_elims, pred sets, match flags, flip) | Debug / audit trail; enables exact reproduction of tab_baseline_consistency |
-| `output/figure/fig_fliprate_by_season.pdf` | FlipRate by season under BL-0 | L1 evidence for “rule divergence varies by season” (descriptive KPI3) |
-
----
-
 2.1
-
----
 
 - 写作手已完成report的文章主体段落的撰写，同时给出了在2_1_LI_list.md中未完成的部分。
 
 - 建模手已经完成建模基础部分，代码手已经完成了模型的代码化部分，二人正在着手进行模型的检验以及对文章图表的生成工作。
 
+2.1 23:00 
+
+关于d2: 
+1) 取bottom 2 or 3 or 4
+2) 取bottom 2 但是由 取J更大的 变成F+J.
+
 # 9 风险与回滚
 
 风险1_对于写作手：详见chapters/bugs_and_needs.md
 
-# 10 鲁棒性清单
+- R1: Special weeks (no elimination / double elimination) distort KPI denominators → explicit handling, exclude from KPI1.
+- R2: Season-28 cutoff assumption wrong → stress-test adjacent cutoffs (27/28/29).
+- R3: Fan vote inference underdetermined → report uncertainty via xi and feasible intervals.
 
-暂无
 
-# 11 文献清单
+# 10 文献清单
 
 包含**怎么用（写进哪一段/支撑哪类口径与论证）**，并附**可直接点开的链接**（我把 URL 放在代码块里，便于你们复制到参考文献管理器或 BibTeX 备注里）。
 
@@ -578,7 +592,7 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
 
 # 12 重大决策记录
 
-暂无
+* 2.1 建模部分，添加model_3.md的内容
 
 
 
@@ -786,7 +800,15 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
             xi_popularity_0_1.csv 
             xi_refined.csv
         viz\                                (可视化)
-        src_handbook.md     
+        last_two\
+          infer_last_two.py 
+          last_two_details.csv 
+          last_two_summary.csv 
+          pooled_last_two_analysis.py 
+          pooled_last_two_data.csv 
+          pooled_last_two_results.txt 
+          README.md
+        src_handbook.md    
     sccript\
         run_solver_popularity_0_1.ps1
         eval_files_list.txt
@@ -803,8 +825,11 @@ All rule definitions, data encodings (e.g., N/A and post-exit zeros), and evalua
         2026_MCM_Problem_C_Data.csv
     outputs\
         data_cleaned\
-            intermediate_baseline_preds.csv
-            intermediate_weekly_panel.csv
+            intermediate_baseline_preds.csv         (现已弃用 2.1晚)
+            intermediate_weekly_panel.csv           (现已弃用 2.1晚)
+            canonical_replay_ready.csv              (现在使用的进行了插补的数据集)
+            clean_long_data_new1.csv                (先行使用的清洗后的数据集)
+            clean_long_data_replay_ready.csv        (先行使用的清洗后的数据集)
         fig\
             fig_fliprate_by_season.pdf
         tab\

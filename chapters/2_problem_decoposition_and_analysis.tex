@@ -36,7 +36,7 @@ We adopt a small, testable assumption budget to make the inverse problem well-po
 \begin{enumerate}
     \item \textbf{Share normalization.} Fan votes are modeled as within-week shares over the active set.
     \item \textbf{Rule-governed elimination.} Eliminations follow the documented aggregation rule (percent-based or rank-based), optionally augmented by bottom-two judges' save where applicable.
-    \item \textbf{Active-set definition and special episodes.} Post-exit ``zeros'' represent inactivity and are excluded from the active set; special episodes are explicitly flagged and may be accommodated via slack rather than forced exact compliance.
+    \item \textbf{Active-set definition and special episodes.} Post-exit ``zeros'' represent inactivity and are excluded from the active set; special episodes are explicitly flagged and may be accommodated via slack rather than forced exact compliance. When a counterfactual replay keeps an observed-exit contestant active, the required post-exit inputs are filled using a conservative, minimal-information imputation; this is used only to extend counterfactual trajectories and is not intended as a performance forecast.
     \item \textbf{Judges as observed signal.} Judges' scores provide an observed performance signal taken as exogenous to the voting mechanism.
     \item \textbf{Temporal smoothness.} Fan preference evolves smoothly week-to-week, motivating temporal regularization.
 \end{enumerate}
@@ -85,14 +85,16 @@ implementable voting rule and selects parameters via replay-based stress tests.
 
 To evaluate models and rule variants consistently, we use the following KPIs and slices.
 
-\paragraph{KPI1: Elimination Hit-Rate.}
-On each \emph{eligible} $(s,t)$ (season--week), we compute the predicted eliminated set $\widehat{E}_{s,t}$ under a specified
-aggregation scheme and compare it to the true eliminated-at-end-of-week set $E_{s,t}$ parsed from \texttt{results}.
-For multi-elimination weeks with $k_{s,t}>1$, we evaluate via bottom-$k$ set match:
-$\mathbf{1}\{\widehat{E}_{s,t}=E_{s,t}\}$.
-Weeks with no elimination are excluded from single-elimination denominators. We report KPI1 separately for rank-combination
-and percent-combination, and aggregate by the registry-defined eras: Rank-era seasons $\{1,2,28\text{--}34\}$ and
-Percent-era seasons $\{3\text{--}27\}$. Because the Season-28 switch is an assumption, we stress-test alternative cutoffs (27/28/29).
+\textbf{KPI1: Elimination Set Agreement (Jaccard Similarity).}
+On each season--week $(s,t)$, we compute the replayed eliminated set $\hat{E}_{s,t}$ under a specified rule
+and compare it to the observed eliminated-at-end-of-week set $E_{s,t}$ parsed from results. We measure
+set-level agreement by the Jaccard similarity
+\[
+J_{s,t}=\frac{|E_{s,t}\cap \hat{E}_{s,t}|}{|E_{s,t}\cup \hat{E}_{s,t}|}.
+\]
+KPI1 is reported as the week-level mean of $J_{s,t}$ over all counted season--week instances.
+Weeks with no elimination yield $E_{s,t}=\varnothing$ (and possibly $\hat{E}_{s,t}=\varnothing$); we adopt the
+convention $J_{s,t}=1$ when both sets are empty and include such weeks in the mean.
 
 \paragraph{KPI3: Rule Divergence Rate (Rank vs.\ Percent).}
 Holding the same vote input (e.g., BL-0 proxy or inferred votes), KPI3 measures how often two aggregation schemes disagree
@@ -103,7 +105,7 @@ on eliminations:
 where $\Omega$ denotes eligible $(s,t)$. KPI3 is reported descriptively as ``impact magnitude,'' not as an optimization objective.
 
 \paragraph{KPI2: Vote Identifiability (interval tightness).}
-Because votes are unobserved, vote inference is not always identifiable.\cite{benning2018regularization,kaipio2005statistical,} For each $(s,t,i)$, we compute a feasible interval
+Because votes are unobserved, vote inference is not always identifiable.\cite{benning2018regularization,kaipio2005statistical} For each $(s,t,i)$, we compute a feasible interval
 $[p^{\min}_{i,t},p^{\max}_{i,t}]$ over fan vote shares consistent with elimination constraints (and with a near-optimal shell
 around the Task~A objective). We define an identifiability score as
 \begin{equation}

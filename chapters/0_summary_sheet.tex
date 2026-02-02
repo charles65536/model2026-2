@@ -1,6 +1,6 @@
 \begin{center}
   \textbf{\LARGE Summary Sheet}\\[0.35em]
-  \textbf{Team \#M2026232}
+  \textbf{Team Control Number: \#M2625838}
 \end{center}
 
 \setlength{\parskip}{0.35em}
@@ -27,8 +27,11 @@ which drives eliminations under different aggregation rules.
 \subsection*{Sanity-check evidence (data integrity)}
 From the weekly panel we define \emph{eligible} season--weeks (including multi-elimination weeks evaluated by bottom-$k$ set match).
 Under a BL-0 baseline (judge-only with a uniform fan proxy), the elimination hit-rate is 0.364 (rank aggregation) and 0.375 (percent aggregation)
-across 264 eligible weeks, and the two schemes disagree on the predicted eliminated set in 3.8\% of eligible weeks (FlipRate $=0.038$).\cite{saari2001decisions}
-These metrics validate consistent labeling and replay mechanics and serve as a baseline---not the final inferred-vote results.
+across 264 eligible weeks, and the two schemes disagree on the predicted eliminated set in 3.8\% of eligible weeks (FlipRate $=0.038$).
+These rule divergences are consistent with classical observations in voting and aggregation theory.\cite{saari2001decisions}
+These metrics validate consistent labeling and replay mechanics and serve as a baseline---not the final inferred-vote results. When counterfactual replays require post-exit inputs, we use a conservative, minimal-information imputation
+only to complete the replay, and we do not interpret these imputed segments as forecasting contestant performance.
+
 
 \subsection*{Key deliverables for decision-making}
 \begin{itemize}

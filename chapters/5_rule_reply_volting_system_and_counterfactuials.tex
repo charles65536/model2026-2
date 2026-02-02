@@ -4,9 +4,7 @@
 % =========================
 
 % ---- Chapter opening positioning paragraph (results-focused, protocol explicit)
-Following the official rule definitions, we perform season--week counterfactual replays under
-(i) rank-based aggregation and (ii) percent-based aggregation, using the same weekly active set
-and deterministic eligibility labels to ensure a fair comparison.
+Following the official rule definitions, we perform season--week counterfactual replays under (i) rank-based aggregation and (ii) percent-based aggregation. We initialize each replay with the observed eligibility labels, but update the active set week-by-week according to the counterfactual eliminations under the chosen rule. When a counterfactual path keeps an observed-exit contestant active beyond the observed data horizon, we apply a conservative, minimal-information imputation solely to complete the replay (not to forecast future performance).
 As a reproducible sanity-check baseline (BL-0), we use judge-only information with a uniform fan proxy
 and report elimination hit-rate (KPI1) and the rule divergence rate (KPI3/FlipRate).
 This chapter summarizes cross-season differences (Section~5.1), explains divergences via controversial case studies (Section~5.2),
@@ -17,10 +15,22 @@ Results in this section are first reported under BL-0 as a reproducible sanity c
 \subsubsection{Replay protocol and eligibility}\label{subsubsec:replay_protocol_and_eligibility}
 % 这里放：active set 口径、single-elim eligibility、special exits、tie-handling、以及“同一输入不同规则”的对比原则。
 % 目标：评审只看这一段就不会质疑你们分母与口径。
-% 可引用：intermediate_weekly_panel + baseline table artifacts.
+% 可引用：canonical replay-ready panel + baseline audit artifacts (tab_baseline_consistency / fig_fliprate_by_season).
 \textbf{Goal.} This section quantifies how much the season outcomes depend on the aggregation rule by replaying each season under (i) percent-based aggregation and (ii) rank-based aggregation while holding inputs constant.
 For every season--week, we restrict attention to the \emph{active set} $A_{s,t}$ and use judges' information (e.g., total judges' score or its normalized share) together with the inferred fan vote shares $\hat p_{i,t}$ from Task~A.
 Given an elimination count $m_{s,t}$ (including $m_{s,t}=0$ for non-elimination weeks and $m_{s,t}>1$ for multi-elimination weeks), the replay engine deterministically selects the bottom $m_{s,t}$ contestants under the chosen rule and updates the active set for the next week.
+
+\paragraph{Conservative imputation for counterfactual survivors.}
+In counterfactual replays, a rule change may keep a contestant active after the week where they exited in the observed data; in that case, the contestant's subsequent-week inputs are unobserved. To complete the replay without injecting trend assumptions, we use a minimal-information imputation: (i) the next-week judges' total score is filled by the contestant's mean-to-date,
+\[
+\hat{J}_{i,t+1}=\frac{1}{t}\sum_{k=1}^{t}J_{i,k},
+\]
+and (ii) the next-week fan vote share is carried forward from the most recent inferred value,
+\[
+\hat{p}_{i,t+1}=\hat{p}_{i,t}.
+\]
+This imputation is used only to extend counterfactual trajectories and is not intended to forecast future performance; consequently, any rule-comparison statistics that depend on these imputed segments should be interpreted as conservative estimates of rule impact.
+
 
 \textbf{Percent rule.} Under percent-based aggregation, the combined score is
 \[
@@ -42,13 +52,11 @@ All ties are resolved deterministically (details in Appendix X) to ensure replay
 \subsubsection{Cross-season summary metrics}\label{subsubsec:cross_season_summary_metrics}
 % 这里放：KPI1 (rank/percent) 与 KPI3 FlipRate 的总体与分 era 结果；
 % 可以直接插入你们 tab_baseline_consistency.tex 以及 fig_fliprate_by_season.pdf 的文字解释。
-We compute KPI1/KPI3 over eligible (season, week) pairs, excluding weeks with no elimination or irregular/multi-elimination formats per our slice definitions.
-\textbf{KPI1 (elimination hit-rate)} measures whether a replayed rule correctly identifies the observed eliminated set in eligible weeks.
-\textbf{KPI3 (FlipRate)} measures how often the predicted eliminated set differs between percent-based and rank-based replays under the same inputs.
-Interpreting these metrics together separates \emph{fidelity} (does a rule reproduce observed eliminations) from \emph{rule sensitivity} (does changing the rule change who leaves).
-
-In addition to season-level aggregates, we report an era-sliced view aligned with the show's documented format changes.
-This prevents Simpson's-paradox-style conclusions where one rule appears ``better'' simply because it is evaluated disproportionately in seasons that used it.
+We compute KPI1/KPI3 over counted (season, week) instances under a unified replay convention.
+KPI1 (Jaccard set agreement) summarizes week-level agreement between the observed eliminated set and the
+replayed eliminated set, including no-elimination weeks via an explicit empty-set convention.
+KPI3 (FlipRate) measures how often the predicted eliminated set differs between percent-based and rank-based
+replays under the same inputs.
 
 
 \subsubsection{Era cutoff assumption and stress-test plan}\label{subsubsec:era_cutoff_assumption_and_stress_test_plan}

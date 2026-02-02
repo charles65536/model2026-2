@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  1 FEB 2026 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  2 FEB 2026 01:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1154,7 +1154,11 @@ File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 198.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 198.
- (./2625838.aux)
+ (./2625838.aux
+
+LaTeX Warning: Label `subsubsec:cleaning_principles' multiply defined.
+
+)
 \openout1 = `2625838.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 198.
@@ -1541,24 +1545,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 90.
- (c:/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-File: t1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 90.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ntxtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 94.
+(Font)              scaled to size 8.0pt on input line 103.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 94.
-
-
-Package natbib Warning: Citation `' on page 4 undefined on input line 106.
-
+(Font)              scaled to size 6.1pt on input line 103.
 
 
 
@@ -1569,26 +1559,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]) (./chapters/3_data_processing_and_analysis.tex
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 29.
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 23.
+ (c:/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.95pt on input line 23.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ntxtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 31.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <10.95> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 29.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 31.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `txtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (15.70105pt too wide) in paragraph at lines 48--53
-[]\T1/ntxtlf/b/n/10.95 (-20) Wide-to-long re-shap-ing. \T1/ntxtlf/m/n/10.95 (-20) We re-shape \T1/ntxtt/m/n/10.95 weekX_judgeY_score \T1/ntxtlf/m/n/10.95 (-20) into one row per $\LMS/ntxsy/m/n/10.95 ¹\OML/ntxmi/m/it/10.95 season; week; celebrity\LMS/ntxsy/m/n/10.95 º$\T1/ntxtlf/m/n/10.95 (-20) ,
- []
-
-
-Overfull \hbox (11.12433pt too wide) in paragraph at lines 48--53
-\T1/ntxtlf/m/n/10.95 (-20) and com-pute \T1/ntxtt/m/n/10.95 all_judges_nan \T1/ntxtlf/m/n/10.95 (-20) and \T1/ntxtt/m/n/10.95 total_judge_score = sum(judge_scores, skipna={True})
- []
-
 
 
 
@@ -1599,16 +1589,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Overfull \hbox (18.40976pt too wide) in paragraph at lines 75--80
-\T1/ntxtlf/m/n/10.95 (-20) (\T1/ntxtt/m/n/10.95 output/table/intermediate_weekly_panel.csv\T1/ntxtlf/m/n/10.95 (-20) ) that con-tains el-i-gi-bil-i-ty/exit la-bels (\T1/ntxtt/m/n/10.95 active\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 exit_type\T1/ntxtlf/m/n/10.95 (-20) ,
- []
-
-
-Overfull \hbox (116.29341pt too wide) in paragraph at lines 81--85
-[]\T1/ntxtlf/m/n/10.95 (-20) In ad-di-tion, we gen-er-ate au-dit/de-bug ar-ti-facts: (i) a week-level pre-dic-tion ta-ble (\T1/ntxtt/m/n/10.95 output/table/intermediate_baseline_preds.csv\T1/ntxtlf/m/n/10.95 (-20) )
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1618,11 +1598,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-Overfull \hbox (7.18495pt too wide) in paragraph at lines 177--180
-\T1/ntxtt/m/n/10.95 ballroom_partner \T1/ntxtlf/m/n/10.95 (-20) (pro dancer iden-tity), \T1/ntxtt/m/n/10.95 celebrity_age_during_season\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 celebrity_industry\T1/ntxtlf/m/n/10.95 (-20) ,
- []
-
-) (./chapters/4_task_a_fan_vote_inference_model.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1632,6 +1607,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
+Overfull \hbox (7.18495pt too wide) in paragraph at lines 203--206
+\T1/ntxtt/m/n/10.95 ballroom_partner \T1/ntxtlf/m/n/10.95 (-20) (pro dancer iden-tity), \T1/ntxtt/m/n/10.95 celebrity_age_during_season\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 celebrity_industry\T1/ntxtlf/m/n/10.95 (-20) ,
+ []
+
+) (./chapters/4_task_a_fan_vote_inference_model.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1671,7 +1651,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]) (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
+[11])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1680,7 +1660,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[12] (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1689,7 +1669,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]) (./chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
+[13]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1698,7 +1678,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
+[14]) (./chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1716,7 +1696,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]) (./chapters/8_conclusion.tex) (./chapters/9_memo.tex) (./2625838.bbl
+[16]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1725,7 +1718,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]) (./chapters/appendix_a.tex)
+[17]) (./chapters/8_conclusion.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1734,7 +1727,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]
+[18]) (./chapters/9_memo.tex) (./2625838.bbl
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]) (./chapters/appendix_a.tex)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 303.
  (./chapters/report_on_use_ai.tex
@@ -1846,12 +1857,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134 
+l.124 
        [2])
-
-Package natbib Warning: There were undefined citations.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1870,22 +1877,26 @@ l.307 \end{document}
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `2625838.out' has not changed.
-(rerunfilecheck)             Checksum: 78B3EE5AA1CB0DE2BED5B133BAAB425F;9789.
+(rerunfilecheck)             Checksum: BB8A3ECA1EE7C76BA3290868DA2222E4;10755.
  ) 
 Here is how much of TeX's memory you used:
- 52562 strings out of 475118
- 1178831 string characters out of 5765021
- 1747790 words of memory out of 5000000
- 74272 multiletter control sequences out of 15000+600000
- 692726 words of font info for 361 fonts, out of 8000000 for 9000
+ 52577 strings out of 475118
+ 1179118 string characters out of 5765021
+ 1746952 words of memory out of 5000000
+ 74266 multiletter control sequences out of 15000+600000
+ 691956 words of font info for 364 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,16n,117p,1048b,1245s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,117p,1048b,1265s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexas.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on 2625838.pdf (22 pages, 302195 bytes).
+Output written on 2625838.pdf (24 pages, 308614 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 531 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
- 47453 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 47469 words of extra memory for PDF output out of 51595 (max. 10000000)
 

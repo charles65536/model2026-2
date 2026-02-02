@@ -1,151 +1,101 @@
-% Chapter 7 structure is fixed by our writing plan:
-% 7.1 Design Goals and Principles
-% 7.2 Proposed aggregation rule
-% 7.3 Stress Testing and Simulation (Evidence via replay)
-% See context pack for the required split. 
+\subsection{Task D-2: New Rule Design and Stress Testing}
+\label{subsec:task_d2}
 
-\subsection{Design Goals and Principles}
-\label{subsec:d2_design_goals}
+\subsubsection{Design objective: professionalism-first, watchability as a constrained secondary goal}
+\label{subsubsec:d2_objective}
 
-Our replay analysis shows that outcome sensitivity concentrates in weeks where judges' evaluations and
-audience preferences diverge, and that purely rank-based aggregation can amplify small ordering
-differences into large outcome changes. A redesigned system should therefore:
-(i) preserve audience agency while (ii) preventing extreme popularity from overwhelming technical performance,
-(iii) remain interpretable to viewers, (iv) use few tunable parameters, and (v) be robust to vote-estimation
-uncertainty and minor format variations. We operationalize these goals with measurable criteria:
-high replay fidelity on eligible weeks (KPI1), reduced instability under perturbations (stability under uncertainty),
-and transparent parameterization for management control.
+Because DWTS is fundamentally a performance competition, we adopt a \emph{professionalism-first} rule design principle:
+eliminations should be predominantly driven by judges' performance signals. At the same time, DWTS is a televised product,
+so the system must preserve watchability by keeping a meaningful audience role and maintaining suspense.
+Importantly, any additional uncertainty must remain \emph{performance-grounded} (induced by explicit rule structure operating on low performers),
+rather than arbitrary randomness.
 
-\subsection{Proposed aggregation rule: Judge Safeguard + Smoothed Rank (JS-SR)}
-\label{subsec:d2_js_sr}
+\paragraph{Operational definitions.}
+We define \textbf{professionalism} as the extent to which eliminated contestants are concentrated in the lower tail of the weekly judges' ranking.
+We define \textbf{watchability} as a constrained secondary objective that requires (i) a non-trivial marginal effect of fan votes on survival
+(audience influence) and (ii) suspense that avoids overly deterministic outcomes, while remaining performance-grounded.
 
-We propose an implementable rule that balances technical merit and audience agency by introducing a
-\emph{Safeguard Zone}. Pure percent blending can allow extreme popularity to dominate, while pure rank aggregation
-can discard meaningful score margins. JS-SR protects top technical performers while letting fan preference decide outcomes
-within the remaining ``battleground'' set.
-
-\paragraph{Step 1: Safeguard threshold.}
-For each week $t$ with active set $A_{s,t}$, let $\tau\in(0,1)$ be a management-controlled percentile (e.g., $\tau=0.30$
-meaning ``top 30\% by judges'').
-Define the week-specific threshold on raw total judges' scores $J_{i,t}$:
-\begin{equation}
-\text{Threshold}_{s,t} = \text{Percentile}\big(\{J_{i,t}\}_{i\in A_{s,t}},\, 1-\tau\big).
-\end{equation}
-The safeguarded set is
-\begin{equation}
-\text{SafeSet}_{s,t}=\{i\in A_{s,t}\mid J_{i,t}\ge \text{Threshold}_{s,t}\}.
-\end{equation}
-Contestants in $\text{SafeSet}_{s,t}$ are immune from elimination in week $t$.
-
-\paragraph{Step 2: Battleground scoring and elimination.}
-Let $D_{s,t}=A_{s,t}\setminus \text{SafeSet}_{s,t}$ be the battleground set.
-For $i\in D_{s,t}$, define the combined score using judges' share $q^J_{i,t}$ and inferred fan share $p_{i,t}$:
-\begin{equation}
-S^{(JS)}_{i,t}=w_J\, q^J_{i,t} + (1-w_J)\, p_{i,t}, \qquad w_J\in[0,1].
-\end{equation}
-We eliminate the $m_{s,t}$ contestants with the smallest $S^{(JS)}_{i,t}$ among $D_{s,t}$ (deterministic tie-handling).
+\paragraph{Notation.}
+For each season--week $(s,t)$, let $q^J_{i,t}$ denote contestant $i$'s normalized judges' score share within the active set,
+and let $p_{i,t}$ denote the inferred/proxy fan vote share from Task~A.
+For a weight parameter $w_J\in[0,1]$, define a combined score
+\[
+S_{i,t}=w_J\,q^J_{i,t} + (1-w_J)\,p_{i,t}.
+\]
 
 
-\begin{algorithm}[H]
-\caption{Algorithm 3: JS-SR replay under $(\tau, w_J)$}
-\label{alg:js_sr_replay}
-\small
-\begin{algorithmic}[1]  % [1] 显示行号，algpseudocode 必须保留
-    % ---- 输入定义（首字母大写，参数分行排版避免溢出）----
-    \Require 
-        Weekly active sets $A_{s,t}$, raw judges totals $J_{i,t}$, judges shares $q^J_{i,t}$, inferred fan shares $p_{i,t}$,
-        elimination counts $m_{s,t}$, parameters $(\tau, w_J)$.
-    % ---- 输出定义（首字母大写）----
-    \Ensure 
-        Eliminated sets $\tilde E^{(JS)}_{s,t}$ and final placements under JS-SR.
+\subsubsection{Rule A (incumbent baseline): combined score determines elimination}
+\label{subsubsec:d2_ruleA}
 
-    % ---- 核心算法逻辑（适配 algpseudocode 关键字）----
-    \For{$t=1$ to $T_s$}
-        \State Restrict to active set $A_{s,t}$.
-        \If{$m_{s,t}=0$}
-            \State $\tilde E^{(JS)}_{s,t}\leftarrow \varnothing$; continue to next week.
-        \EndIf
-        % 计算阈值（优化变量排版，用 \mathrm 统一格式）
-        \State Compute $\mathrm{Threshold}_{s,t}$ as the $(1-\tau)$ percentile of $\{J_{i,t}\}_{i\in A_{s,t}}$.
-        % 定义安全集和待淘汰池（拆分行提升可读性）
-        \State Form safe set: 
-        \[
-        \mathrm{SafeSet}_{s,t} = \{i\in A_{s,t}: J_{i,t}\ge \mathrm{Threshold}_{s,t}\}
-        \]
-        \State Form elimination candidate pool: $D_{s,t} = A_{s,t}\setminus \mathrm{SafeSet}_{s,t}$.
-        \State For each $i\in D_{s,t}$, compute combined score:
-        \[
-        S^{(JS)}_{i,t} = w_J q^J_{i,t} + (1-w_J)p_{i,t}
-        \]
-        \State Eliminate the $m_{s,t}$ contestants with smallest $S^{(JS)}_{i,t}$ within $D_{s,t}$ (deterministic tie-handling applied).
-        \State Update next week's active set: $A_{s,t+1}\leftarrow A_{s,t}\setminus \tilde E^{(JS)}_{s,t}$.
-    \EndFor
-\end{algorithmic}
-\end{algorithm}
+Rule A represents the show's baseline mechanism, in which judges' scores and fan votes are combined into a single weekly
+decision score, and elimination is determined directly by that combined ordering:
+\begin{enumerate}
+  \item Compute $S_{i,t}$ for all active contestants.
+  \item Eliminate the contestant with the lowest $q^J_{i,t}$.
+\end{enumerate}
+This baseline can preserve audience influence when fan weights are large, but it also permits ``popularity-only'' survival:
+a contestant with weak judges' performance may avoid elimination if fan support is sufficiently strong, which can weaken professionalism.
 
 
+\subsubsection{Rule B (proposed): judges-only gating $\rightarrow$ fan-aware decision within the risk set}
+\label{subsubsec:d2_ruleB}
 
-\subsection{Stress Testing and Simulation Evidence via Replay}
-\label{subsec:d2_stress_testing}
+Our proposed institutional change is a \emph{two-stage gate-and-decide} mechanism that makes professionalism structural:
+judges alone define who is at risk, and fan influence is applied only within that performance-defined boundary.
 
-We evaluate the proposed rule using a season--week replay protocol identical to Chapters~4--5, ensuring fair
-comparisons across rule variants. Stress tests sweep $(\tau ,w_J)$ over a predefined grid and propagate vote
-uncertainty by sampling plausible vote scenarios within Task~A uncertainty bands (or bootstrap reconstructions).
-For each configuration, we report KPI1 on eligible weeks, divergence relative to historical rules, and stability
-metrics quantifying how often small parameter or vote perturbations change (i) the eliminated set and (ii) final placements.
-Recommended parameters are selected by multi-metric trade-off analysis, prioritizing robust performance rather than tuning
-to any single season.
+\begin{enumerate}
+  \item \textbf{Judges-only gate (risk set).} Rank contestants by judges' performance $q^J_{i,t}$ and let
+  $B^J_t$ be the Bottom-2 under judges (Judge Bottom-2).
+  \item \textbf{Fan-aware decision within the gate.} Within $B^J_t$, compute $S_{i,t}$ and eliminate the contestant with the lower combined score:
+  \[
+  \tilde{E}_{s,t}=\arg\min_{i\in B^J_t} \big(w_J\,q^J_{i,t} + (1-w_J)\,p_{i,t}\big).
+  \]
+\end{enumerate}
 
-% ======================================================================
-% Chapter 7 Figures/Tables Placeholders (to be filled after simulation runs)
-% Place this block at the END of:
-%   7_task_d2_new_rule_design_and_stress_testing.tex
-% ======================================================================
+\paragraph{Why Rule B improves professionalism.}
+By construction, elimination is always decided among the lowest-performing contestants according to judges.
+This prevents extreme popularity from overriding performance signals outside the judges-defined bottom tail,
+thereby strengthening professionalism, especially in early weeks when performance dispersion is largest.
 
-% % ---------------- FIG 7.1: Parameter grid trade-off (KPI1 vs stability) ----------------
-% % Purpose (MCM): show the Pareto-style trade-off and justify recommended (alpha*, kappa*).
-% % Inputs: simulation sweep results over (alpha, kappa).
-% \begin{figure}[H]
-%     \centering
-%     %\includegraphics[width=0.92\linewidth]{figures/fig7_1_tradeoff_heatmap.pdf}
-%     \fbox{\parbox{0.92\linewidth}{\centering Placeholder: Fig 7.1 Trade-off heatmap over $(\alpha,\kappa)$}}
-%     \caption{Trade-off surface over $(\alpha,\kappa)$: replay fidelity (KPI1 on eligible weeks) versus stability under uncertainty.}
-%     \label{fig:tradeoff_heatmap_alpha_kappa}
-% \end{figure}
+\paragraph{Maintaining watchability without randomness: phase-dependent structured suspense.}
+Because DWTS features celebrity participants, early-season skill gaps can be large and a strict professionalism-first gate may reduce
+perceived audience impact. We therefore treat watchability as a constrained secondary goal and introduce \emph{structured suspense} only in late stages,
+while maintaining performance grounding:
+\begin{itemize}
+  \item \textbf{Late-stage bottom-$k$ band (within judges' tail).}
+  When the field is small (e.g., remaining contestants $\le K$), expand the judges-defined risk set from Bottom-2 to Bottom-$k$,
+  and decide elimination within that band using $S_{i,t}$. This widens the decision boundary and increases suspense without leaving the low-performance region.
+  \item \textbf{Limited structured multi-elimination (optional).}
+  In a small number of late-stage weeks, allow multi-elimination, but restrict eliminations to the judges-defined bottom band.
+  This increases stakes while remaining performance-grounded.
+\end{itemize}
+The phase boundary ($K$ or a week threshold $t_0$) and the band size $k$ are interpretable management knobs.
 
-% % ---------------- FIG 7.2: Stability under vote uncertainty (flip probability) ----------------
-% % Purpose: quantify robustness to Task A vote uncertainty; supports "stable under perturbations" claims.
-% % Inputs: vote-uncertainty sampling (bootstrap or KPI2 interval sampling) + replays.
-% \begin{figure}[H]
-%     \centering
-%     %\includegraphics[width=0.85\linewidth]{figures/fig7_2_uncertainty_stability.pdf}
-%     \fbox{\parbox{0.85\linewidth}{\centering Placeholder: Fig 7.2 Stability under vote uncertainty}}
-%     \caption{Stability of eliminations and final placements under vote-estimation uncertainty across rule variants.}
-%     \label{fig:uncertainty_stability}
-% \end{figure}
 
-% % ---------------- TAB 7.1: Rule variants summary (simplicity + knobs) ----------------
-% % Purpose (MCM/Memo): compare implementability across variants (few knobs, transparent).
-% \begin{table}[H]
-%     \centering
-%     %\input{tables/tab7_1_rule_variant_summary.tex}
-%     \caption{Summary of rule variants and tunable parameters (interpretability and implementability comparison).}
-%     \label{tab:rule_variant_summary}
-% \end{table}
+\subsubsection{Stress testing via replay}
+\label{subsubsec:d2_stress}
 
-% % ---------------- TAB 7.2: Season-level outcome changes (finalists/champion) ----------------
-% % Purpose: evidence via replay; report how often finalists/champion change under new rule vs baseline.
-% \begin{table}[H]
-%     \centering
-%     %\input{tables/tab7_2_outcome_changes.tex}
-%     \caption{Season-level outcome changes under the proposed rule relative to baseline rules (finalists and champion).}
-%     \label{tab:season_outcome_changes}
-% \end{table}
+What kind of stress test we employed to evaluate Rule B and select parameters?
 
-% % Notes for team:
-% % Required artifacts to generate:
-% % - figures/fig7_1_tradeoff_heatmap.pdf
-% % - figures/fig7_2_uncertainty_stability.pdf
-% % - tables/tab7_1_rule_variant_summary.tex
-% % - tables/tab7_2_outcome_changes.tex
-% % ======================================================================
+\paragraph{Parameter sweep (control knobs).}
+
+
+\paragraph{Evaluation metrics (professionalism-first).}
+We report:
+\begin{itemize}
+  \item \textbf{Professionalism proxy: judges-tail alignment.}
+  The eliminated contestant's weekly judges' rank/quantile distribution (greater concentration in the lower tail indicates higher professionalism).
+  \item \textbf{Replay consistency (KPI1).}
+  Week-level elimination-set agreement between observed and replayed outcomes (Jaccard mean under our stated convention).
+  \item \textbf{Structured suspense proxy (KPI3 / FlipRate).}
+  The rate at which elimination outcomes change across rules/parameters, capturing how institutional design introduces suspense.
+  \item \textbf{Audience influence proxy.}
+  Sensitivity of elimination outcomes to perturbations of $p_{i,t}$ within the feasible uncertainty range from Task~A.
+\end{itemize}
+
+\paragraph{Robustness checks.}
+We conduct those robustness checks:
+
+
+\noindent In summary, Rule B makes professionalism a structural property through judges-only gating, while late-stage structured mechanisms
+preserve watchability without introducing randomness. Replay-based stress testing provides an interpretable policy region rather than a single tuned setting.

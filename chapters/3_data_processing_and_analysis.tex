@@ -2,7 +2,6 @@
 % Section 3: Data Processing and EDA (model-driven)
 % =========================
 
-
 \subsection{Data Cleaning Principles and Validation}
 \label{subsec:cleaning_principles_validation}
 
@@ -13,14 +12,17 @@ Our preprocessing is \emph{model-driven}: we only perform transformations requir
 (i) construct a reproducible season--week--contestant panel,
 (ii) define eligibility/denominator rules for KPI computation, and
 (iii) enable counterfactual replay under alternative voting schemes.
-We preserve the dataset's official encodings and remove their influence through an explicit
-\emph{active-set} definition rather than aggressive imputation \cite{comap2026_problemC_pdf}.
+We preserve the dataset's official encodings and control their impact through an explicit
+\emph{active-set} definition rather than imputing within-week missing records.
+A conservative, minimal-information \emph{imputation} is used \emph{only} when a counterfactual replay keeps an observed-exit
+contestant active beyond the observed data horizon, solely to close the replay loop
+(\emph{not} to predict future performance)~\cite{comap2026_problemC_pdf}.
 
 \paragraph{Principle A --- Respect official encodings (0 scores, N/A, irregular season length).}
 The official problem statement clarifies that (i) weeks with no elimination or multiple eliminations exist,
 (ii) \texttt{N/A} can mean either ``no 4th judge'' or ``weeks beyond a season's actual run'',
 and (iii) a score of 0 is recorded for celebrities after elimination (post-exit padding).
-We therefore treat these as \emph{structural encodings} rather than noise \cite{comap2026_problemC_pdf}.
+We therefore treat these as \emph{structural encodings} rather than noise~\cite{comap2026_problemC_pdf}.
 
 \paragraph{Principle B --- Eligibility controls denominators (active-set construction).}
 A contestant is considered active in $(s,t)$ if at least one judge score exists for that week and the week
@@ -30,41 +32,40 @@ withdraw week). Post-elimination zeros are retained for auditability but exclude
 
 \paragraph{Principle C --- Within-week aggregation only; no judge identity tracking.}
 Because judge indices are not persistent identities across weeks/seasons, we only use within-week aggregates
-(weekly total, rank, and percent) and avoid modeling judge-specific time series at the preprocessing stage
-\cite{comap2026_problemC_pdf}.
+(weekly total, rank, and percent) and avoid modeling judge-specific time series at the preprocessing stage~\cite{comap2026_problemC_pdf}.
 
-\paragraph{Principle D --- Non-single-elimination weeks are handled explicitly.}
-Weeks with zero eliminations are excluded from the single-elimination consistency denominator, while
-multi-elimination weeks are evaluated via bottom-$k$ set matching (set-match).
+\paragraph{Principle D --- Special episodes are handled explicitly.}
+Weeks with zero eliminations are represented by the empty eliminated set and included in KPI computation
+via an explicit empty-set convention for Jaccard similarity; multi-elimination weeks are evaluated by
+set-based agreement on the bottom-$k$ eliminated set.
 
 
-\subsubsection{Data Cleaning Operations}
-\label{subsubsec:cleaning_operations}
+\subsubsection{Cleaning Principles}
+\label{subsubsec:cleaning_principles}
 
-We implement a deterministic pipeline that reshapes the original wide-format judge-score columns into a long
-panel and then attaches minimal labels required for downstream inference and replay:
+Our preprocessing is \emph{model-driven}: we only perform transformations required to build a reproducible
+season--week--contestant panel and to support eligibility-aware KPI computation and rule replays.
+We adopt the following principles (write rules, not results):
 
 \begin{enumerate}
-  \item \textbf{Wide-to-long reshaping.}
-  We reshape \texttt{weekX\_judgeY\_score} into one row per $(season, week, celebrity)$, and compute
-  \texttt{all\_judges\_nan} and
-  \texttt{total\_judge\_score = sum(judge\_scores, skipna=\{True\})}
-  to respect varying judge counts.
+  \item \textbf{Respect official encodings (0 vs.\ N/A).}
+  Post-elimination zeros are treated as structural padding rather than new performances; their influence is removed via the \texttt{active} definition.
+  \texttt{N/A} indicates the absence of a judge in that week (e.g., only three judges) or out-of-range weeks; we aggregate with \texttt{skipna} and do not fill missing judges.
 
-  \item \textbf{Exit mapping and labels.}
-  We parse elimination week from \texttt{results} when available; otherwise, for withdrew/finished cases we infer
-  \texttt{exit\_week} as the last week with a positive total score, falling back to the last non-missing scored week.
-  We store \texttt{exit\_type} $\in \{\text{withdrew}, \text{eliminated}, \text{finished}\}$ and define
-  \texttt{true\_elim\_flag} only for elimination exits by default.
+  \item \textbf{Active-set driven accounting (denominator control).}
+  All within-week percentages, replay denominators, and KPI denominators are computed on the set \texttt{active=1}.
+  Records after a contestant exits are excluded from denominators even if they exist in the raw encoding.
 
-  \item \textbf{Active-set definition and anomaly flag.}
-  We define \texttt{active = (not all\_judges\_nan) \& (week $\le$ exit\_week)}.
-  Additionally, if \texttt{total\_judge\_score == 0} occurs outside the inferred exit week, we flag
-  \texttt{data\_anomaly\_zero\_score=1} and force \texttt{active=false} to prevent padded zeros from contaminating denominators.
+  \item \textbf{No aggressive within-week imputation.}
+  During cleaning we do not impute missing judge scores and do not ``invent'' performance values; we only apply deterministic reshaping and aggregation.
+  (Any ``imputation'' mentioned elsewhere is solely for closing counterfactual replays on unobserved post-exit segments, not for forecasting.)
 
-  \item \textbf{Within-week relative measures.}
-  For each $(season, week)$, among active contestants only, we compute \texttt{judge\_rank} (1 = best) and
-  \texttt{judge\_percent = score / sum(scores)} when the denominator is positive.
+  \item \textbf{Special weeks are handled explicitly.}
+  Weeks with zero eliminations and weeks with multiple eliminations are treated as first-class cases in KPI computation and replays;
+  we do not force them into a single-elimination template.
+
+  \item \textbf{Deterministic and reproducible.}
+  The transformation from raw wide-format inputs to the canonical replay-ready panel is deterministic; the same raw input yields the same canonical output.
 \end{enumerate}
 
 
@@ -72,23 +73,28 @@ panel and then attaches minimal labels required for downstream inference and rep
 \label{subsubsec:cleaning_outcomes_validation}
 
 \paragraph{Outcomes (artifacts and interfaces).}
-The output of preprocessing is a \emph{canonical weekly panel}
-(\texttt{output/table/intermediate\_weekly\_panel.csv}) that contains eligibility/exit labels
-(\texttt{active}, \texttt{exit\_type}, \texttt{exit\_week}, \texttt{true\_elim\_flag}) and judge-based within-week features
+The output of preprocessing is a \emph{canonical replay-ready weekly panel}
+(\texttt{outputs/data\_cleaned/canonical\_replay\_ready.csv}) that contains eligibility/exit labels
+(\texttt{active}, \texttt{exit\_type}, \texttt{exit\_week}, \texttt{true\_elim\_flag}) and judge-based within-week features\\
 (\texttt{total\_judge\_score}, \texttt{judge\_rank}, \texttt{judge\_percent}).
 This panel is the single input interface used for all downstream KPI recomputation, vote-share inference, and replay simulation.
 
-In addition, we generate audit/debug artifacts: (i) a week-level prediction table
-(\texttt{output/table/intermediate\_baseline\_preds.csv}) and (ii) a report-ready \LaTeX{} table
-(\texttt{output/table/tab\_baseline\_consistency.tex}) plus an optional figure
-(\texttt{output/figure/fig\_fliprate\_by\_season.pdf}).
+We also export two compatible variants for engineering convenience:\\
+\texttt{outputs/data\_cleaned/clean\_long\_data\_replay\_ready.csv} (replay-ready alias with aligned field names) and
+\texttt{outputs/data\_cleaned/clean\_long\_data\_new1.csv} (clean long panel with additional friendly fields such as
+\texttt{J\_total}, \texttt{J\_pct}, and \texttt{elim\_week}).
+
+In addition, we generate report-ready artifacts for baseline auditing:\\
+(i) a \LaTeX{} table \texttt{outputs/tab/tab\_baseline\_consistency.tex}\\
+(ii) an optional figure \texttt{outputs/fig/fig\_fliprate\_by\_season.pdf}.
+
 
 \paragraph{Validation (what we check, and why it is sufficient for P0).}
 We validate preprocessing through three audit layers:
 \begin{itemize}
   \item \textbf{(V1) Encoding-consistency checks.}
   We follow the official semantics for \texttt{N/A} and post-elimination zeros, preserving these encodings and excluding them
-  from denominators via \texttt{active} \cite{comap2026_problemC_pdf}.
+  from denominators via \texttt{active}~\cite{comap2026_problemC_pdf}.
 
   \item \textbf{(V2) Denominator/eligibility invariants.}
   \texttt{judge\_percent} is computed only among active contestants within each $(season, week)$; when total score is positive,
@@ -100,9 +106,6 @@ We validate preprocessing through three audit layers:
   This serves as a pipeline sanity check rather than a final model claim.
 \end{itemize}
 
-\noindent\textbf{BL-0 sanity-check summary (reportable, not a final claim).}
-Under BL-0, the overall elimination hit-rate is 0.364 (rank) and 0.375 (percent) across 264 eligible weeks,
-and the rank-vs-percent flip rate is 0.038.
 
 
 \subsection{Panel Construction}
@@ -112,8 +115,9 @@ Panel construction converts the wide-format score table into a long-format datas
 $(season, week, celebrity)$ unit. We reshape \texttt{weekX\_judgeY\_score} into such a long panel and compute weekly aggregates
 (\texttt{total\_judge\_score}) and within-week relative measures (\texttt{judge\_rank}, \texttt{judge\_percent}) among the active set.
 We then attach deterministic exit/eligibility labels (\texttt{exit\_type}, \texttt{exit\_week}, \texttt{true\_elim\_flag}, \texttt{active})
-derived from \texttt{results} and score availability. This panel is the canonical input shared by all subsequent modules, including
-vote-share inference and counterfactual replay under alternative voting schemes.
+derived from \texttt{results} and score availability.
+The resulting canonical panel (\texttt{outputs/data\_cleaned/canonical\_replay\_ready.csv}) is the shared input for all subsequent modules,
+including vote-share inference and counterfactual replay under alternative voting schemes.
 
 
 \subsection{Empirical Findings from EDA (only what feeds models)}
@@ -124,24 +128,23 @@ vote-share inference and counterfactual replay under alternative voting schemes.
 
 We summarize baseline consistency and rule divergence using:
 \begin{itemize}
-  \item \textbf{(L1 table)} \texttt{output/table/tab\_baseline\_consistency.tex}:
-  BL-0 elimination hit-rate under rank and percent schemes (KPI1) and rule divergence (KPI3/FlipRate), with slices:
-  Overall / Rank-era / Percent-era.
-  \item \textbf{(L2 figure, optional)} \texttt{output/figure/fig\_fliprate\_by\_season.pdf}:
+  \item \textbf{(L1 table)} outputs/tab/tab\_baseline\_consistency.tex: BL-0 baseline set agreement (KPI1: Jaccard similarity) under rank
+and percent schemes, and rule divergence (KPI3/FlipRate), with slices: Overall / Rank-era / Percent-era.
+  \item \textbf{(L2 figure, optional)} \texttt{outputs/fig/fig\_fliprate\_by\_season.pdf}:
   season-level visualization of where the two schemes disagree.
 \end{itemize}
 
 % If you want to include the table/figure directly:
 % \begin{table}[t]
 %   \centering
-%   \input{output/table/tab_baseline_consistency.tex}
+%   \input{outputs/tab/tab_baseline_consistency.tex}
 %   \caption{BL-0 baseline consistency and rule divergence across era slices.}
 %   \label{tab:baseline_consistency}
 % \end{table}
 %
 % \begin{figure}[t]
 %   \centering
-%   \includegraphics[width=\linewidth]{output/figure/fig_fliprate_by_season.pdf}
+%   \includegraphics[width=\linewidth]{outputs/fig/fig_fliprate_by_season.pdf}
 %   \caption{Season-level flip rate between rank- and percent-based BL-0 predictions.}
 %   \label{fig:fliprate_by_season}
 % \end{figure}
@@ -149,19 +152,42 @@ We summarize baseline consistency and rule divergence using:
 
 \subsubsection{Key Empirical Findings}
 \label{subsubsec:key_findings}
+We report only findings that directly inform the model design and evaluation:
 
 \paragraph{Finding 1 --- A reproducible BL-0 baseline exists and is non-trivial.}
-Using only judge-based information and a uniform fan proxy, BL-0 yields measurable elimination-consistency hit-rates under both
+Using only judge-based information and a uniform fan proxy, BL-0 yields measurable elimination-consistency KPI1 under both
 rank and percent aggregation, and a non-zero flip rate between the two schemes. These quantities are used strictly as a sanity check
-for the pipeline and as a reference point for later vote-inference models.
+for the pipeline and as a reference point for later vote-inference models; minor changes may occur if the canonical panel definition is updated, 
+but the purpose is to validate consistent eligibility labeling and replay mechanics. All substantive conclusions in later sections are based on 
+the inferred vote shares and the counterfactual replay framework, not on BL-0.
 
 \paragraph{Finding 2 --- Rule comparisons must be stress-tested around the season-28 cutoff.}
-We adopt the era split for rule-comparison slicing (Rank-era vs. Percent-era), but treat the season-28 switch as an assumption and
-stress-test adjacent cutoffs.
+We adopt the era split for rule-comparison slicing (Rank-era vs.\ Percent-era), but treat the Season-28 switch as an explicit assumption
+and stress-test adjacent cutoffs (27/28/29).
 
-\paragraph{Finding 3 --- Non-standard weeks materially affect denominators.}
-Because the dataset includes weeks with no elimination or multiple eliminations, KPI denominators must explicitly exclude no-elimination
-weeks and handle multi-elimination weeks via set matching; otherwise consistency metrics can be inflated.
+\paragraph{Finding 3 --- Non-standard weeks materially affect set-based consistency metrics.}
+Because the dataset includes weeks with no elimination or multiple eliminations, KPI1 must handle these
+episodes explicitly (e.g., empty-set convention for no-elimination weeks and set-based comparison for
+multi-elimination weeks). Such episodes can introduce non-uniform weighting under aggregation, so we
+interpret KPI1 primarily as a replay-pipeline consistency audit metric and emphasize relative comparisons
+under the same convention.
+
+
+\paragraph{Implementation note (KPI1: Jaccard similarity, week-level mean).}
+For each season--week $(s,t)$, let $E_{s,t}$ denote the observed eliminated set (possibly empty) and
+$\hat{E}_{s,t}$ the replayed eliminated set under a specified rule. We measure set-level agreement by
+the Jaccard similarity
+\[
+J_{s,t}=\frac{|E_{s,t}\cap \hat{E}_{s,t}|}{|E_{s,t}\cup \hat{E}_{s,t}|}.
+\]
+KPI1 is reported as the week-level mean of $J_{s,t}$ over all counted season--week instances.
+Weeks with no elimination yield $E_{s,t}=\varnothing$ (and possibly $\hat{E}_{s,t}=\varnothing$), for which
+the ratio becomes $0/0$; we adopt the convention $J_{s,t}=1$ when both sets are empty (full agreement on
+``no elimination'') and include such weeks in the mean.
+Due to aggregation details, some no-elimination weeks may be counted more than once, introducing an
+additional weighting effect that can shift the absolute level of KPI1. We therefore interpret KPI1 primarily as
+a replay-pipeline consistency audit metric, and emphasize relative comparisons across rules and stress tests
+under the same convention.
 
 
 \subsection{Feature Engineering}
@@ -187,5 +213,5 @@ In summary, our preprocessing produces a canonical season--week--contestant pane
 (i) respects the official encodings of \texttt{N/A} and post-elimination zeros,
 (ii) enforces denominator correctness through an explicit active-set definition, and
 (iii) enables reproducible baseline replay consistent with our KPI definitions.
-Key data caveats---non-standard elimination weeks, varying judge availability, and the uncertain season-28 era cutoff---are surfaced
-explicitly for robustness stress tests rather than hidden by aggressive cleaning \cite{comap2026_problemC_pdf}.
+Key data caveats---non-standard elimination weeks, varying judge availability, and the uncertain Season-28 era cutoff---are surfaced
+explicitly for robustness stress tests rather than hidden by aggressive cleaning~\cite{comap2026_problemC_pdf}.
