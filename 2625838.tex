@@ -127,16 +127,22 @@
 \usepackage{array}          % 更好看的表格列定义
 \usepackage{multirow}       % 跨行
 \usepackage{listings} % 代码块
+% \usepackage{verbatimbox} % 代码块盒子
+% \usepackage{verbatim}  
+\usepackage{mdframed} % 代码块边框
 \usepackage[numbers,sort&compress,square]{natbib} % 参考文献科技类文献引用格式[1]
 % ----------------------------------
 \lstset{
-    basicstyle=\ttfamily\footnotesize,
-    frame=single,
-    numbers=left,
-    numberstyle=\tiny,
-    tabsize=2,
-    breaklines=true,
-    showstringspaces=false
+    basicstyle=\small\ttfamily,  % 字号缩小，减少溢出（可改\footnotesize更小）
+    breaklines=true,             % 强制自动换行（关键！verbatim没有这个功能）
+    breakatwhitespace=false,     % 不局限于空格换行
+    backgroundcolor=\color{gray!5},  % 浅灰背景（和你要的效果一致）
+    frame=single,                % 边框（替代\fbox）
+    framesep=3pt,                % 边框内边距
+    xleftmargin=5pt,             % 左边距
+    xrightmargin=5pt,            % 右边距
+    lineskip=0.5pt,              % 行间距微调
+    showstringspaces=false       % 不显示空格符号，更美观
 }
 % hyperlink settings
 
@@ -170,7 +176,7 @@
 % ===============================================
 \usepackage{tcolorbox}
 \tcbuselibrary{breakable,skins}
-
+\usepackage{xcolor}
 \usepackage{hyperref} % 超链接
 \hypersetup{
     colorlinks=true,
@@ -185,12 +191,22 @@
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{definition}{Definition}
 
+% \lstdefinestyle{mdstyle}{
+%     language=Markdown,
+%     basicstyle=\small\ttfamily,
+%     breaklines=true,
+%     frame=single,
+%     backgroundcolor=\color{gray!5},
+%     % 关键：让listings忽略MD里的特殊符号，仅转义必要的
+%     escapeinside=||,  % 用|包裹需要LaTeX编译的内容（可选）
+%     literate={\$}{\$}1  % 保留$符号，不转义
+% }
 
 
 
 % =============页眉设置 - 更突出==============
 \newcommand{\Problem}{C}
-\newcommand{\Team}{\#M2625838}
+\newcommand{\Team}{\# 2625838}
 \lhead{Team \Team}
 \rhead{}
 \cfoot{}
@@ -222,7 +238,7 @@
 %\tableofcontents
 \newpage
 \setcounter{page}{1}
-\rhead{Page \thepage\ }
+\rhead{Page \thepage\ of 25}
 
 % 美赛的行间距设置：
 % 1. 移除列表（itemize/enumerate）的额外间距（美赛省空间）

@@ -1,22 +1,41 @@
 \textbf{To: Show Management}\\
-\textbf{Subject: Recommendation for a More Stable and Transparent Voting System}
+\textbf{Subject: Recommendation for a More Professional Yet Watchable Voting System}
 
 Our analyses indicate that controversy risk concentrates in weeks where judges' evaluations and audience preferences diverge.
-To preserve audience agency while preventing extreme popularity from overwhelming technical performance, we recommend piloting
-\emph{Judge Safeguard + Smoothed Rank (JS-SR)}.
+To prioritize technical merit while preserving an audience role, we recommend piloting a \emph{Judges-Gated Two-Stage} (JG-2S) voting policy,
+validated by historical replays and uncertainty stress tests.
 
-Under JS-SR, each week designates a \emph{Safeguard Zone}: contestants above a judges-score percentile threshold (top $\tau$)
-are immune from elimination. The remaining contestants compete in a ``battleground'' where elimination is determined by a
-transparent weighted blend of judges' share and fan share:
-\[
-S^{(JS)}_{i,t}=w_J\, q^J_{i,t} + (1-w_J)\, p_{i,t}.
-\]
-Management controls two intuitive knobs: $\tau$ (how many top technical performers are protected) and $w_J$ (judge--fan balance within
-the battleground). We recommend selecting $(\tau,w_J)$ from a robust region identified by historical replays and uncertainty stress tests,
-then deploying JS-SR in a one-season ``shadow mode'' computed in parallel with the broadcast rule to quantify differences in eliminations,
-finalists, and winner outcomes before adoption.
+\paragraph{Baseline reference (current mechanism).}
+The incumbent format can be summarized as ``combined Bottom-2 + judges' save'': contestants are first ranked by a combined
+judge--fan score, the Bottom-2 form an at-risk set, and judges decide which of the two is eliminated.
 
-Operationally, we recommend a one-season \emph{shadow deployment} in which the proposed rule is computed in parallel with the broadcast rule
-to quantify differences in eliminations, finalists, and winner outcomes, accompanied by a clear public explanation of tie-handling and the role
-of any judges' save mechanism. This provides a controlled, auditable path to improving fairness perception and reducing outcome volatility
-without sacrificing interpretability.
+\paragraph{Recommended policy (JG-2S): judges-only gate $\rightarrow$ fan-aware decision within the gate.}
+Under JG-2S, each week proceeds in two stages:
+\begin{enumerate}
+  \item \textbf{Judges-only gate (risk set).} Rank contestants by judges' performance share $q^J_{i,t}$ and designate the Bottom-2
+  (or Bottom-$k$ in late-stage variants) as the at-risk set.
+  \item \textbf{Fan-aware decision within the gate.} Within the at-risk set, eliminate the contestant with the lower transparent blended score
+  \[
+  S_{i,t}=w_J\, q^J_{i,t} + (1-w_J)\, p_{i,t},
+  \]
+  where $p_{i,t}$ denotes the inferred/proxy fan vote share.
+\end{enumerate}
+
+\paragraph{Why this improves professionalism.}
+Because elimination is always decided among the judges-defined bottom performers, extreme popularity cannot keep a weak performer
+out of the at-risk set. This makes professionalism a structural property of the system rather than a tunable side effect.
+
+\paragraph{How we preserve watchability (without randomness).}
+To maintain suspense while remaining performance-grounded, we recommend a phase-dependent schedule:
+early weeks use Bottom-2 gating to emphasize professionalism; late in the season (when remaining contestants are few and performance gaps narrow),
+management may enable structured suspense by expanding the gate to a Bottom-$k$ band and/or using a small number of structured multi-elimination weeks,
+with eliminations restricted to the judges-defined low-performance band.
+
+\paragraph{Management knobs and deployment.}
+JG-2S offers interpretable control knobs:
+(i) $w_J$ (judge--fan balance within the gate),
+(ii) the late-stage trigger (e.g., remaining contestants $\le K$ or week threshold $t_0$),
+and (iii) the late-stage gate size $k$ (and optional multi-elimination placement).
+We recommend selecting a robust parameter region identified by replay and vote-uncertainty stress tests, and deploying JG-2S in a one-season
+\emph{shadow mode} computed in parallel with the broadcast rule. This yields an auditable comparison of eliminations, finalists, and winner outcomes
+before any on-air adoption, supported by a clear public explanation of the two-stage logic and the role of audience influence.

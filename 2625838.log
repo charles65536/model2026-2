@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  2 FEB 2026 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  2 FEB 2026 22:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,12 +858,119 @@ File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
- (c:/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
+ (c:/texlive/2025/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (c:/texlive/2025/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count398
+Package zref Info: New property: abspage on input line 67.
+) (c:/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip97
+\c@mdf@globalstyle@cnt=\count399
+\mdf@skipabove@length=\skip98
+\mdf@skipbelow@length=\skip99
+\mdf@leftmargin@length=\skip100
+\mdf@rightmargin@length=\skip101
+\mdf@innerleftmargin@length=\skip102
+\mdf@innerrightmargin@length=\skip103
+\mdf@innertopmargin@length=\skip104
+\mdf@innerbottommargin@length=\skip105
+\mdf@splittopskip@length=\skip106
+\mdf@splitbottomskip@length=\skip107
+\mdf@outermargin@length=\skip108
+\mdf@innermargin@length=\skip109
+\mdf@linewidth@length=\skip110
+\mdf@innerlinewidth@length=\skip111
+\mdf@middlelinewidth@length=\skip112
+\mdf@outerlinewidth@length=\skip113
+\mdf@roundcorner@length=\skip114
+\mdf@footenotedistance@length=\skip115
+\mdf@userdefinedwidth@length=\skip116
+\mdf@needspace@length=\skip117
+\mdf@frametitleaboveskip@length=\skip118
+\mdf@frametitlebelowskip@length=\skip119
+\mdf@frametitlerulewidth@length=\skip120
+\mdf@frametitleleftmargin@length=\skip121
+\mdf@frametitlerightmargin@length=\skip122
+\mdf@shadowsize@length=\skip123
+\mdf@extratopheight@length=\skip124
+\mdf@subtitleabovelinewidth@length=\skip125
+\mdf@subtitlebelowlinewidth@length=\skip126
+\mdf@subtitleaboveskip@length=\skip127
+\mdf@subtitlebelowskip@length=\skip128
+\mdf@subtitleinneraboveskip@length=\skip129
+\mdf@subtitleinnerbelowskip@length=\skip130
+\mdf@subsubtitleabovelinewidth@length=\skip131
+\mdf@subsubtitlebelowlinewidth@length=\skip132
+\mdf@subsubtitleaboveskip@length=\skip133
+\mdf@subsubtitlebelowskip@length=\skip134
+\mdf@subsubtitleinneraboveskip@length=\skip135
+\mdf@subsubtitleinnerbelowskip@length=\skip136
+ (c:/texlive/2025/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box131
+\mdf@footnotebox=\box132
+\mdf@splitbox@one=\box133
+\mdf@splitbox@two=\box134
+\mdf@splitbox@save=\box135
+\mdfsplitboxwidth=\skip137
+\mdfsplitboxtotalwidth=\skip138
+\mdfsplitboxheight=\skip139
+\mdfsplitboxdepth=\skip140
+\mdfsplitboxtotalheight=\skip141
+\mdfframetitleboxwidth=\skip142
+\mdfframetitleboxtotalwidth=\skip143
+\mdfframetitleboxheight=\skip144
+\mdfframetitleboxdepth=\skip145
+\mdfframetitleboxtotalheight=\skip146
+\mdffootnoteboxwidth=\skip147
+\mdffootnoteboxtotalwidth=\skip148
+\mdffootnoteboxheight=\skip149
+\mdffootnoteboxdepth=\skip150
+\mdffootnoteboxtotalheight=\skip151
+\mdftotallinewidth=\skip152
+\mdfboundingboxwidth=\skip153
+\mdfboundingboxtotalwidth=\skip154
+\mdfboundingboxheight=\skip155
+\mdfboundingboxdepth=\skip156
+\mdfboundingboxtotalheight=\skip157
+\mdf@freevspace@length=\skip158
+\mdf@horizontalwidthofbox@length=\skip159
+\mdf@verticalmarginwhole@length=\skip160
+\mdf@horizontalspaceofbox=\skip161
+\mdfsubtitleheight=\skip162
+\mdfsubsubtitleheight=\skip163
+\c@mdfcountframes=\count400
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count401
+\c@mdf@env@i=\count402
+\c@mdf@env@ii=\count403
+\c@mdf@zref@counter=\count404
+Package zref Info: New property: mdf@pagevalue on input line 895.
+) (c:/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip97
-\bibsep=\skip98
+\bibhang=\skip164
+\bibsep=\skip165
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count398
+\c@NAT@ctr=\count405
 ) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
@@ -882,7 +989,7 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 \pgfutil@tempdima=\dimen311
 \pgfutil@tempdimb=\dimen312
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box131
+\pgfutil@abb=\box136
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
@@ -907,14 +1014,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen322
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count399
-\c@pgf@countb=\count400
-\c@pgf@countc=\count401
-\c@pgf@countd=\count402
+\c@pgf@counta=\count406
+\c@pgf@countb=\count407
+\c@pgf@countc=\count408
+\c@pgf@countd=\count409
 \t@pgf@toka=\toks54
 \t@pgf@tokb=\toks55
 \t@pgf@tokc=\toks56
-\pgf@sys@id@count=\count403
+\pgf@sys@id@count=\count410
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -925,21 +1032,21 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count404
-\pgfsyssoftpath@bigbuffer@items=\count405
+\pgfsyssoftpath@smallbuffer@items=\count411
+\pgfsyssoftpath@bigbuffer@items=\count412
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen323
-\pgfmath@count=\count406
-\pgfmath@box=\box132
+\pgfmath@count=\count413
+\pgfmath@box=\box137
 \pgfmath@toks=\toks57
 \pgfmath@stack@operand=\toks58
 \pgfmath@stack@operation=\toks59
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count407
+\c@pgfmathroundto@lastzeros=\count414
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen324
@@ -966,10 +1073,10 @@ File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@start@additional=\dimen341
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box133
-\pgf@hbox=\box134
-\pgf@layerbox@main=\box135
-\pgf@picture@serial@count=\count408
+\pgfpic=\box138
+\pgf@hbox=\box139
+\pgf@layerbox@main=\box140
+\pgf@picture@serial@count=\count415
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen342
@@ -990,13 +1097,13 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen347
-\pgf@sys@shading@range@num=\count409
-\pgf@shadingcount=\count410
+\pgf@sys@shading@range@num=\count416
+\pgf@shadingcount=\count417
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box136
+\pgfexternal@startupbox=\box141
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -1007,7 +1114,7 @@ File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box137
+\pgfnodeparttextbox=\box142
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
@@ -1026,7 +1133,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count411
+\pgf@plot@mark@count=\count418
 \pgfplotmarksize=\dimen352
 )
 \tikz@lastx=\dimen353
@@ -1037,21 +1144,21 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@lastmovetoy=\dimen358
 \tikzleveldistance=\dimen359
 \tikzsiblingdistance=\dimen360
-\tikz@figbox=\box138
-\tikz@figbox@bg=\box139
-\tikz@tempbox=\box140
-\tikz@tempbox@bg=\box141
-\tikztreelevel=\count412
-\tikznumberofchildren=\count413
-\tikznumberofcurrentchild=\count414
-\tikz@fig@count=\count415
+\tikz@figbox=\box143
+\tikz@figbox@bg=\box144
+\tikz@tempbox=\box145
+\tikz@tempbox@bg=\box146
+\tikztreelevel=\count419
+\tikznumberofchildren=\count420
+\tikznumberofcurrentchild=\count421
+\tikz@fig@count=\count422
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count416
-\pgfmatrixcurrentcolumn=\count417
-\pgf@matrix@numberofcolumns=\count418
+\pgfmatrixcurrentrow=\count423
+\pgfmatrixcurrentcolumn=\count424
+\pgf@matrix@numberofcolumns=\count425
 )
-\tikz@expandcount=\count419
+\tikz@expandcount=\count426
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -1061,33 +1168,33 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@tokb=\toks63
 \t@pgfplots@tokc=\toks64
 \pgfplots@tmpa=\dimen361
-\c@pgfplots@coordindex=\count420
-\c@pgfplots@scanlineindex=\count421
+\c@pgfplots@coordindex=\count427
+\c@pgfplots@scanlineindex=\count428
  (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks65
 \t@pgf@tokb=\toks66
 \t@pgf@tokc=\toks67
 (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count422
+\c@pgfplotsarray@tmp=\count429
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count423
+\c@pgfplotstable@counta=\count430
 \t@pgfplotstable@a=\toks68
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count424
+\c@pgfplotslibrarysurf@no=\count431
  (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen362
 \pgfdecoratedremainingdistance=\dimen363
 \pgfdecoratedinputsegmentcompleteddistance=\dimen364
 \pgfdecoratedinputsegmentremainingdistance=\dimen365
 \pgf@decorate@distancetomove=\dimen366
-\pgf@decorate@repeatstate=\count425
+\pgf@decorate@repeatstate=\count432
 \pgfdecorationsegmentamplitude=\dimen367
 \pgfdecorationsegmentlength=\dimen368
 )
-\tikz@lib@dec@box=\box142
+\tikz@lib@dec@box=\box147
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count426
+\pgfplots@numplots=\count433
 \pgfplots@xmin@reg=\dimen369
 \pgfplots@xmax@reg=\dimen370
 \pgfplots@ymin@reg=\dimen371
@@ -1110,28 +1217,28 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
  (c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box143
-\tcb@upperbox=\box144
-\tcb@lowerbox=\box145
-\tcb@phantombox=\box146
-\c@tcbbreakpart=\count427
-\c@tcblayer=\count428
-\c@tcolorbox@number=\count429
-\l__tcobox_tmpa_box=\box147
+\tcb@titlebox=\box148
+\tcb@upperbox=\box149
+\tcb@lowerbox=\box150
+\tcb@phantombox=\box151
+\c@tcbbreakpart=\count434
+\c@tcblayer=\count435
+\c@tcolorbox@number=\count436
+\l__tcobox_tmpa_box=\box152
 \l__tcobox_tmpa_dim=\dimen375
-\tcb@temp=\box148
-\tcb@temp=\box149
-\tcb@temp=\box150
-\tcb@temp=\box151
+\tcb@temp=\box153
+\tcb@temp=\box154
+\tcb@temp=\box155
+\tcb@temp=\box156
 ) (c:/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
 (c:/texlive/2025/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box152
-\tcb@totalupperbox=\box153
-\tcb@totallowerbox=\box154
+\tcb@testbox=\box157
+\tcb@totalupperbox=\box158
+\tcb@totallowerbox=\box159
 ) (c:/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
 (c:/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
@@ -1140,65 +1247,68 @@ Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 ) (c:/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box155
+\l__tikzfill_img_box=\box160
 )) (c:/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 181.
-\c@theorem=\count430
-\c@definition=\count431
-LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 198.
+Package hyperref Info: Option `colorlinks' set `true' on input line 187.
+\c@theorem=\count437
+\c@definition=\count438
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 214.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 198.
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 198.
+(Font)              scaled to size 12.0pt on input line 214.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 214.
  (./2625838.aux
 
 LaTeX Warning: Label `subsubsec:cleaning_principles' multiply defined.
 
+
+LaTeX Warning: Label `alg:kpi2' multiply defined.
+
 )
 \openout1 = `2625838.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 198.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 198.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 214.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 214.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 198.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 198.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 214.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 214.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 198.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 198.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 214.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 214.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 198.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 198.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 214.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 214.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1234,20 +1344,20 @@ LaTeX Font Info:    ... okay on input line 198.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 198.
-Package microtype Info: Applying patch `item' on input line 198.
-Package microtype Info: Applying patch `toc' on input line 198.
-Package microtype Info: Applying patch `eqnum' on input line 198.
-Package microtype Info: Applying patch `footnote' on input line 198.
-Package microtype Info: Applying patch `verbatim' on input line 198.
-LaTeX Info: Redefining \microtypesetup on input line 198.
+LaTeX Info: Redefining \microtypecontext on input line 214.
+Package microtype Info: Applying patch `item' on input line 214.
+Package microtype Info: Applying patch `toc' on input line 214.
+Package microtype Info: Applying patch `eqnum' on input line 214.
+Package microtype Info: Applying patch `footnote' on input line 214.
+Package microtype Info: Applying patch `verbatim' on input line 214.
+LaTeX Info: Redefining \microtypesetup on input line 214.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 198.
+LaTeX Info: Redefining \showhyphens on input line 214.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1255,16 +1365,16 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count432
+\scratchcounter=\count439
 \scratchdimen=\dimen376
-\scratchbox=\box156
-\nofMPsegments=\count433
-\nofMParguments=\count434
+\scratchbox=\box161
+\nofMPsegments=\count440
+\nofMParguments=\count441
 \everyMPshowfont=\toks71
-\MPscratchCnt=\count435
+\MPscratchCnt=\count442
 \MPscratchDim=\dimen377
-\MPnumerator=\count436
-\makeMPintoPDFobject=\count437
+\MPnumerator=\count443
+\makeMPintoPDFobject=\count444
 \everyMPtoPDFconversion=\toks72
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1272,139 +1382,139 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@mv@tabular=\count438
-\c@mv@boldtabular=\count439
-LaTeX Info: Command `\dddot' is already robust on input line 198.
-LaTeX Info: Command `\ddddot' is already robust on input line 198.
+\c@mv@tabular=\count445
+\c@mv@boldtabular=\count446
+LaTeX Info: Command `\dddot' is already robust on input line 214.
+LaTeX Info: Command `\ddddot' is already robust on input line 214.
  (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 198.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 214.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 198.
+Package hyperref Info: Link coloring ON on input line 214.
  (./2625838.out) (./2625838.out)
 \@outlinefile=\write5
 \openout5 = `2625838.out'.
 
-\c@lstlisting=\count440
+\c@lstlisting=\count447
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 210.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 226.
 (c:/texlive/2025/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `minntx' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 226.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 210.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 226.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 210.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 226.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 210.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 226.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 226.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.8pt on input line 210.
+(Font)              scaled to size 8.8pt on input line 226.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.6pt on input line 210.
-LaTeX Font Info:    Trying to load font information for U+esint on input line 210.
+(Font)              scaled to size 6.6pt on input line 226.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 226.
  (c:/texlive/2025/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 210.
+(Font)              scaled to size 17.28pt on input line 226.
  (./chapters/0_summary_sheet.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
@@ -1423,84 +1533,84 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
+(Font)              scaled to size 10.95pt on input line 23.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.1pt on input line 28.
+(Font)              scaled to size 6.1pt on input line 23.
 )
 
 [1
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 244.
+(Font)              scaled to size 17.28pt on input line 260.
  (./2625838.toc
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
@@ -1521,7 +1631,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.246 \clearpage
+l.262 \clearpage
                  [1
 
 ] (./chapters/1_introduction.tex) (./chapters/2_problem_decoposition_and_analysis.tex
@@ -1598,6 +1708,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
+<output/fig/fig3_1_judges_availability.png, id=333, 433.62pt x 289.08pt>
+File: output/fig/fig3_1_judges_availability.png Graphic file (type png)
+<use output/fig/fig3_1_judges_availability.png>
+Package pdftex.def Info: output/fig/fig3_1_judges_availability.png  used on input line 145.
+(pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
+<output/fig/fig3_3_active_vs_placeholders.png, id=335, 433.62pt x 289.08pt>
+File: output/fig/fig3_3_active_vs_placeholders.png Graphic file (type png)
+<use output/fig/fig3_3_active_vs_placeholders.png>
+Package pdftex.def Info: output/fig/fig3_3_active_vs_placeholders.png  used on input line 151.
+(pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
+<output/fig/fig3_2_irregular_weeks_by_season.png, id=336, 578.16pt x 289.08pt>
+File: output/fig/fig3_2_irregular_weeks_by_season.png Graphic file (type png)
+<use output/fig/fig3_2_irregular_weeks_by_season.png>
+Package pdftex.def Info: output/fig/fig3_2_irregular_weeks_by_season.png  used on input line 162.
+(pdftex.def)             Requested size: 433.35168pt x 216.67271pt.
+<output/fig/fig5_2_cutoff_28_fliprate.png, id=337, 361.35pt x 216.81pt>
+File: output/fig/fig5_2_cutoff_28_fliprate.png Graphic file (type png)
+<use output/fig/fig5_2_cutoff_28_fliprate.png>
+Package pdftex.def Info: output/fig/fig5_2_cutoff_28_fliprate.png  used on input line 185.
+(pdftex.def)             Requested size: 282.6241pt x 169.57426pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1606,8 +1737,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
-Overfull \hbox (7.18495pt too wide) in paragraph at lines 203--206
+[7 <./output/fig/fig3_1_judges_availability.png> <./output/fig/fig3_3_active_vs_placeholders.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8 <./output/fig/fig3_2_irregular_weeks_by_season.png> <./output/fig/fig5_2_cutoff_28_fliprate.png>]
+Overfull \hbox (7.18495pt too wide) in paragraph at lines 227--230
 \T1/ntxtt/m/n/10.95 ballroom_partner \T1/ntxtlf/m/n/10.95 (-20) (pro dancer iden-tity), \T1/ntxtt/m/n/10.95 celebrity_age_during_season\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 celebrity_industry\T1/ntxtlf/m/n/10.95 (-20) ,
  []
 
@@ -1620,20 +1760,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]
+[9]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 56.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 67.
+(Font)              scaled to size 10.0pt on input line 70.
 
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1651,7 +1782,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11])
+[11]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1660,16 +1791,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12] (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
+[12]
+<output/fig/p_sharpen_gap_boxplot.png, id=485, 722.7pt x 433.62pt>
+File: output/fig/p_sharpen_gap_boxplot.png Graphic file (type png)
+<use output/fig/p_sharpen_gap_boxplot.png>
+Package pdftex.def Info: output/fig/p_sharpen_gap_boxplot.png  used on input line 241.
+(pdftex.def)             Requested size: 447.48218pt x 268.49095pt.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1678,16 +1806,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14]) (./chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
+[13]) (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
+<output/fig/fig5_1_fliprate_by_season.png, id=492, 578.16pt x 289.08pt>
+File: output/fig/fig5_1_fliprate_by_season.png Graphic file (type png)
+<use output/fig/fig5_1_fliprate_by_season.png>
+Package pdftex.def Info: output/fig/fig5_1_fliprate_by_season.png  used on input line 26.
+(pdftex.def)             Requested size: 447.48218pt x 223.73914pt.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1696,18 +1821,87 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
+[14 <./output/fig/p_sharpen_gap_boxplot.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15 <./output/fig/fig5_1_fliprate_by_season.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+<output/fig/bias_by_season_alpha0p5.png, id=519, 867.24pt x 361.35pt>
+File: output/fig/bias_by_season_alpha0p5.png Graphic file (type png)
+<use output/fig/bias_by_season_alpha0p5.png>
+Package pdftex.def Info: output/fig/bias_by_season_alpha0p5.png  used on input line 130.
+(pdftex.def)             Requested size: 447.48218pt x 186.45296pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17]
+<output/fig/bias_mean_by_method_alpha0p5.png, id=531, 433.62pt x 289.08pt>
+File: output/fig/bias_mean_by_method_alpha0p5.png Graphic file (type png)
+<use output/fig/bias_mean_by_method_alpha0p5.png>
+Package pdftex.def Info: output/fig/bias_mean_by_method_alpha0p5.png  used on input line 137.
+(pdftex.def)             Requested size: 282.6241pt x 188.42467pt.
+) (./chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18 <./output/fig/bias_by_season_alpha0p5.png> <./output/fig/bias_mean_by_method_alpha0p5.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 27.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 40.
+(hyperref)                removing `math shift' on input line 27.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 40.
+(hyperref)                removing `\rightarrow' on input line 27.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 40.
+(hyperref)                removing `math shift' on input line 27.
 
 
 
@@ -1718,7 +1912,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]) (./chapters/8_conclusion.tex
+[21]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 51.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1727,7 +1934,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]) (./chapters/9_memo.tex) (./2625838.bbl
+[22]) (./chapters/8_conclusion.tex) (./chapters/9_memo.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1736,7 +1943,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]) (./chapters/appendix_a.tex)
+[23]) (./2625838.bbl
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1745,9 +1952,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
+[24]) (./chapters/appendix_a.tex
+<output/fig/fig5_2_cutoff_27_fliprate.png, id=620, 361.35pt x 216.81pt>
+File: output/fig/fig5_2_cutoff_27_fliprate.png Graphic file (type png)
+<use output/fig/fig5_2_cutoff_27_fliprate.png>
+Package pdftex.def Info: output/fig/fig5_2_cutoff_27_fliprate.png  used on input line 6.
+(pdftex.def)             Requested size: 230.80992pt x 138.48663pt.
+<output/fig/fig5_2_cutoff_29_fliprate.png, id=621, 361.35pt x 216.81pt>
+File: output/fig/fig5_2_cutoff_29_fliprate.png Graphic file (type png)
+<use output/fig/fig5_2_cutoff_29_fliprate.png>
+Package pdftex.def Info: output/fig/fig5_2_cutoff_29_fliprate.png  used on input line 13.
+(pdftex.def)             Requested size: 230.80992pt x 138.48663pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25 <./output/fig/fig5_2_cutoff_27_fliprate.png> <./output/fig/fig5_2_cutoff_29_fliprate.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 303.
+(Font)              scaled to size 9.0pt on input line 319.
  (./chapters/report_on_use_ai.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 1.
@@ -1758,18 +1994,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 34.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 43.
-(c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 43.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 43.
+<report_on_use_of_ai/pho/1_1.png, id=636, 1005.7575pt x 662.97687pt>
+File: report_on_use_of_ai/pho/1_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/1_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/1_1.png  used on input line 39.
+(pdftex.def)             Requested size: 423.92897pt x 279.43977pt.
+<report_on_use_of_ai/pho/1_2.png, id=637, 974.64125pt x 652.4375pt>
+File: report_on_use_of_ai/pho/1_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/1_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/1_2.png  used on input line 45.
+(pdftex.def)             Requested size: 423.92897pt x 283.77815pt.
 
 
 
@@ -1781,69 +2015,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 68.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 93.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 121.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 121.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 121.
+]
+<report_on_use_of_ai/pho/2_1.png, id=644, 1109.64563pt x 668.4975pt>
+File: report_on_use_of_ai/pho/2_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/2_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/2_1.png  used on input line 53.
+(pdftex.def)             Requested size: 423.92897pt x 255.38834pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
+
+ []
+
+<report_on_use_of_ai/pho/2_2.png, id=645, 1111.65312pt x 641.89813pt>
+File: report_on_use_of_ai/pho/2_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/2_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/2_2.png  used on input line 59.
+(pdftex.def)             Requested size: 423.92897pt x 244.78574pt.
 
 
 
@@ -1857,8 +2044,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 
-       [2])
+l.62 \end{figure}
+                  [2 <./report_on_use_of_ai/pho/1_1.png> <./report_on_use_of_ai/pho/1_2.png>]
+<report_on_use_of_ai/pho/3_1.png, id=654, 862.72313pt x 265.49188pt>
+File: report_on_use_of_ai/pho/3_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_1.png  used on input line 68.
+(pdftex.def)             Requested size: 423.92897pt x 130.45674pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1871,8 +2064,476 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.307 \end{document}
-                     [3] (./2625838.aux)
+l.72 \textbf{Output:}
+                      [3 <./report_on_use_of_ai/pho/2_1.png> <./report_on_use_of_ai/pho/2_2.png>]
+<report_on_use_of_ai/pho/3_2.png, id=662, 879.285pt x 649.42625pt>
+File: report_on_use_of_ai/pho/3_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_2.png  used on input line 75.
+(pdftex.def)             Requested size: 423.92897pt x 313.09846pt.
+<report_on_use_of_ai/pho/3_3.png, id=663, 961.09062pt x 580.1675pt>
+File: report_on_use_of_ai/pho/3_3.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_3.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_3.png  used on input line 81.
+(pdftex.def)             Requested size: 423.92897pt x 255.91187pt.
+<report_on_use_of_ai/pho/3_4.png, id=664, 771.38188pt x 426.59375pt>
+File: report_on_use_of_ai/pho/3_4.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_4.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_4.png  used on input line 87.
+(pdftex.def)             Requested size: 423.92897pt x 234.4385pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \end{figure}
+                  [4 <./report_on_use_of_ai/pho/3_1.png> <./report_on_use_of_ai/pho/3_2.png>]
+<report_on_use_of_ai/pho/4_1.png, id=674, 1000.23688pt x 658.46pt>
+File: report_on_use_of_ai/pho/4_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/4_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/4_1.png  used on input line 101.
+(pdftex.def)             Requested size: 423.92897pt x 279.07318pt.
+<report_on_use_of_ai/pho/4_2.png, id=675, 783.42688pt x 540.51938pt>
+File: report_on_use_of_ai/pho/4_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/4_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/4_2.png  used on input line 107.
+(pdftex.def)             Requested size: 423.92897pt x 292.48643pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 \end{figure}
+                   [5 <./report_on_use_of_ai/pho/3_3.png> <./report_on_use_of_ai/pho/3_4.png>]
+<report_on_use_of_ai/pho/5_1.png, id=684, 983.17313pt x 993.7125pt>
+File: report_on_use_of_ai/pho/5_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/5_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/5_1.png  used on input line 123.
+(pdftex.def)             Requested size: 423.92897pt x 428.47075pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 \end{figure}
+                   [6 <./report_on_use_of_ai/pho/4_1.png> <./report_on_use_of_ai/pho/4_2.png>]
+<report_on_use_of_ai/pho/5_2.png, id=692, 1187.93813pt x 682.04813pt>
+File: report_on_use_of_ai/pho/5_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/5_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/5_2.png  used on input line 129.
+(pdftex.def)             Requested size: 423.92897pt x 243.39325pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 
+       [7 <./report_on_use_of_ai/pho/5_1.png>]
+<report_on_use_of_ai/pho/6_1.png, id=699, 1726.19907pt x 996.72375pt>
+File: report_on_use_of_ai/pho/6_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_1.png  used on input line 139.
+(pdftex.def)             Requested size: 423.92897pt x 244.76979pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--142
+
+ []
+
+<report_on_use_of_ai/pho/6_2.png, id=700, 1714.15407pt x 1000.48781pt>
+File: report_on_use_of_ai/pho/6_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_2.png  used on input line 145.
+(pdftex.def)             Requested size: 423.92897pt x 247.43448pt.
+<report_on_use_of_ai/pho/6_3.png, id=701, 1690.81688pt x 998.22937pt>
+File: report_on_use_of_ai/pho/6_3.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_3.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_3.png  used on input line 151.
+(pdftex.def)             Requested size: 423.92897pt x 250.27261pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 \end{figure}
+                   [8 <./report_on_use_of_ai/pho/5_2.png> <./report_on_use_of_ai/pho/6_1.png>]
+<report_on_use_of_ai/pho/6_4.png, id=709, 1696.83937pt x 1014.79124pt>
+File: report_on_use_of_ai/pho/6_4.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_4.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_4.png  used on input line 157.
+(pdftex.def)             Requested size: 423.92897pt x 253.52686pt.
+<report_on_use_of_ai/pho/6_5.png, id=710, 1701.35625pt x 568.37344pt>
+File: report_on_use_of_ai/pho/6_5.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_5.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_5.png  used on input line 163.
+(pdftex.def)             Requested size: 423.92897pt x 141.61601pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 \end{figure}
+                   [9 <./report_on_use_of_ai/pho/6_2.png> <./report_on_use_of_ai/pho/6_3.png>]
+<report_on_use_of_ai/pho/7_1.png, id=719, 1672.74937pt x 984.67876pt>
+File: report_on_use_of_ai/pho/7_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/7_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/7_1.png  used on input line 175.
+(pdftex.def)             Requested size: 423.92897pt x 249.5497pt.
+<report_on_use_of_ai/pho/7_2.png, id=720, 1673.50218pt x 512.66531pt>
+File: report_on_use_of_ai/pho/7_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/7_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/7_2.png  used on input line 181.
+(pdftex.def)             Requested size: 423.92897pt x 129.86351pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.184 \end{figure}
+                   [10 <./report_on_use_of_ai/pho/6_4.png> <./report_on_use_of_ai/pho/6_5.png>]
+<report_on_use_of_ai/pho/81.png, id=730, 1641.13126pt x 968.11688pt>
+File: report_on_use_of_ai/pho/81.png Graphic file (type png)
+<use report_on_use_of_ai/pho/81.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/81.png  used on input line 194.
+(pdftex.def)             Requested size: 423.92897pt x 250.0795pt.
+<report_on_use_of_ai/pho/82.png, id=731, 1643.3897pt x 623.32875pt>
+File: report_on_use_of_ai/pho/82.png Graphic file (type png)
+<use report_on_use_of_ai/pho/82.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/82.png  used on input line 200.
+(pdftex.def)             Requested size: 423.92897pt x 160.78714pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.203 \end{figure}
+                   [11 <./report_on_use_of_ai/pho/7_1.png> <./report_on_use_of_ai/pho/7_2.png>]
+<report_on_use_of_ai/pho/91.png, id=741, 1621.55812pt x 829.59938pt>
+File: report_on_use_of_ai/pho/91.png Graphic file (type png)
+<use report_on_use_of_ai/pho/91.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/91.png  used on input line 211.
+(pdftex.def)             Requested size: 423.92897pt x 216.88066pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--214
+
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.215 
+       [12 <./report_on_use_of_ai/pho/81.png> <./report_on_use_of_ai/pho/82.png>]
+<report_on_use_of_ai/pho/92.png, id=749, 1642.63687pt x 956.82469pt>
+File: report_on_use_of_ai/pho/92.png Graphic file (type png)
+<use report_on_use_of_ai/pho/92.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/92.png  used on input line 219.
+(pdftex.def)             Requested size: 423.92897pt x 246.92896pt.
+<report_on_use_of_ai/pho/93.png, id=750, 1553.805pt x 847.66687pt>
+File: report_on_use_of_ai/pho/93.png Graphic file (type png)
+<use report_on_use_of_ai/pho/93.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/93.png  used on input line 225.
+(pdftex.def)             Requested size: 423.92897pt x 231.26596pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.229 
+       [13 <./report_on_use_of_ai/pho/91.png> <./report_on_use_of_ai/pho/92.png>]
+<report_on_use_of_ai/pho/101.png, id=759, 1615.53563pt x 331.2375pt>
+File: report_on_use_of_ai/pho/101.png Graphic file (type png)
+<use report_on_use_of_ai/pho/101.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/101.png  used on input line 236.
+(pdftex.def)             Requested size: 423.92897pt x 86.91829pt.
+<report_on_use_of_ai/pho/102.png, id=760, 1652.42343pt x 995.97093pt>
+File: report_on_use_of_ai/pho/102.png Graphic file (type png)
+<use report_on_use_of_ai/pho/102.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/102.png  used on input line 244.
+(pdftex.def)             Requested size: 423.92897pt x 255.51175pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 
+       [14 <./report_on_use_of_ai/pho/93.png> <./report_on_use_of_ai/pho/101.png>]
+<report_on_use_of_ai/pho/103.png, id=768, 1046.40938pt x 76.03406pt>
+File: report_on_use_of_ai/pho/103.png Graphic file (type png)
+<use report_on_use_of_ai/pho/103.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/103.png  used on input line 251.
+(pdftex.def)             Requested size: 423.92897pt x 30.80289pt.
+<report_on_use_of_ai/pho/111.png, id=770, 1550.79375pt x 911.65594pt>
+File: report_on_use_of_ai/pho/111.png Graphic file (type png)
+<use report_on_use_of_ai/pho/111.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/111.png  used on input line 262.
+(pdftex.def)             Requested size: 423.92897pt x 249.21075pt.
+<report_on_use_of_ai/pho/112.png, id=771, 1402.48969pt x 971.88094pt>
+File: report_on_use_of_ai/pho/112.png Graphic file (type png)
+<use report_on_use_of_ai/pho/112.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/112.png  used on input line 270.
+(pdftex.def)             Requested size: 423.92897pt x 293.76132pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.273 \end{figure}
+                   [15 <./report_on_use_of_ai/pho/102.png> <./report_on_use_of_ai/pho/103.png> <./report_on_use_of_ai/pho/111.png>]
+<report_on_use_of_ai/pho/113.png, id=781, 1274.51157pt x 986.9372pt>
+File: report_on_use_of_ai/pho/113.png Graphic file (type png)
+<use report_on_use_of_ai/pho/113.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/113.png  used on input line 276.
+(pdftex.def)             Requested size: 423.92897pt x 328.26544pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.280 
+       [16 <./report_on_use_of_ai/pho/112.png>]
+<report_on_use_of_ai/pho/121.png, id=789, 1250.42157pt x 977.15062pt>
+File: report_on_use_of_ai/pho/121.png Graphic file (type png)
+<use report_on_use_of_ai/pho/121.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/121.png  used on input line 288.
+(pdftex.def)             Requested size: 423.92897pt x 331.27257pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.292 
+       [17 <./report_on_use_of_ai/pho/113.png>]
+<report_on_use_of_ai/pho/122.png, id=795, 1611.77156pt x 803.25093pt>
+File: report_on_use_of_ai/pho/122.png Graphic file (type png)
+<use report_on_use_of_ai/pho/122.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/122.png  used on input line 296.
+(pdftex.def)             Requested size: 423.92897pt x 211.26712pt.
+<report_on_use_of_ai/pho/123.png, id=796, 1653.17625pt x 986.18437pt>
+File: report_on_use_of_ai/pho/123.png Graphic file (type png)
+<use report_on_use_of_ai/pho/123.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/123.png  used on input line 302.
+(pdftex.def)             Requested size: 423.92897pt x 252.88066pt.
+<report_on_use_of_ai/pho/124.png, id=797, 1616.28844pt x 798.73407pt>
+File: report_on_use_of_ai/pho/124.png Graphic file (type png)
+<use report_on_use_of_ai/pho/124.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/124.png  used on input line 308.
+(pdftex.def)             Requested size: 423.92897pt x 209.49411pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.311 \end{figure}
+                   [18 <./report_on_use_of_ai/pho/121.png> <./report_on_use_of_ai/pho/122.png>]
+<report_on_use_of_ai/pho/131.png, id=806, 1595.9625pt x 981.6675pt>
+File: report_on_use_of_ai/pho/131.png Graphic file (type png)
+<use report_on_use_of_ai/pho/131.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/131.png  used on input line 326.
+(pdftex.def)             Requested size: 423.92897pt x 260.75479pt.
+<report_on_use_of_ai/pho/132.png, id=807, 1168.365pt x 981.6675pt>
+File: report_on_use_of_ai/pho/132.png Graphic file (type png)
+<use report_on_use_of_ai/pho/132.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/132.png  used on input line 332.
+(pdftex.def)             Requested size: 423.92897pt x 356.18613pt.
+<report_on_use_of_ai/pho/133.png, id=808, 1571.8725pt x 926.71219pt>
+File: report_on_use_of_ai/pho/133.png Graphic file (type png)
+<use report_on_use_of_ai/pho/133.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/133.png  used on input line 338.
+(pdftex.def)             Requested size: 423.92897pt x 249.93283pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 
+       [19 <./report_on_use_of_ai/pho/123.png> <./report_on_use_of_ai/pho/124.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 
+       [20 <./report_on_use_of_ai/pho/131.png> <./report_on_use_of_ai/pho/132.png>]
+<report_on_use_of_ai/pho/141.png, id=824, 1605.74907pt x 965.85844pt>
+File: report_on_use_of_ai/pho/141.png Graphic file (type png)
+<use report_on_use_of_ai/pho/141.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/141.png  used on input line 361.
+(pdftex.def)             Requested size: 423.92897pt x 254.9933pt.
+<report_on_use_of_ai/pho/142.png, id=825, 1489.81593pt x 988.44281pt>
+File: report_on_use_of_ai/pho/142.png Graphic file (type png)
+<use report_on_use_of_ai/pho/142.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/142.png  used on input line 367.
+(pdftex.def)             Requested size: 423.92897pt x 281.25665pt.
+<report_on_use_of_ai/pho/143.png, id=826, 1541.00719pt x 558.58687pt>
+File: report_on_use_of_ai/pho/143.png Graphic file (type png)
+<use report_on_use_of_ai/pho/143.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/143.png  used on input line 373.
+(pdftex.def)             Requested size: 423.92897pt x 153.65874pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.376 \end{figure}
+                   [21 <./report_on_use_of_ai/pho/133.png> <./report_on_use_of_ai/pho/141.png>])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                     [22 <./report_on_use_of_ai/pho/142.png> <./report_on_use_of_ai/pho/143.png>] (./2625838.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1882,21 +2543,21 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `2625838.out' has not changed.
-(rerunfilecheck)             Checksum: BB8A3ECA1EE7C76BA3290868DA2222E4;10755.
+(rerunfilecheck)             Checksum: 28B781E39F30A123DAC132A3459BF592;11649.
  ) 
 Here is how much of TeX's memory you used:
- 52577 strings out of 475118
- 1179118 string characters out of 5765021
- 1746952 words of memory out of 5000000
- 74266 multiletter control sequences out of 15000+600000
- 691956 words of font info for 364 fonts, out of 8000000 for 9000
+ 53877 strings out of 475118
+ 1212995 string characters out of 5765021
+ 1784294 words of memory out of 5000000
+ 75496 multiletter control sequences out of 15000+600000
+ 705656 words of font info for 378 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,16n,117p,1048b,1265s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexas.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on 2625838.pdf (24 pages, 308614 bytes).
+ 84i,16n,117p,1048b,1232s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexas.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on 2625838.pdf (49 pages, 4893728 bytes).
 PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 153 named destinations out of 1000 (max. 500000)
- 47469 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 976 PDF objects out of 1000 (max. 8388607)
+ 725 compressed objects within 8 object streams
+ 230 named destinations out of 1000 (max. 500000)
+ 48767 words of extra memory for PDF output out of 51595 (max. 10000000)
 

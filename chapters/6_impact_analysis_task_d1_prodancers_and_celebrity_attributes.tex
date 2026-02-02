@@ -11,7 +11,7 @@ Define the judges' score share
 \begin{equation}
 q^{J}_{i,t}=\frac{J_{i,t}}{\sum_{r\in A_{s,t}}J_{r,t}},
 \end{equation}
-and use a logit transform with a small $\epsilon$ to avoid boundary issues:
+and use a logit transform with a small $\epsilon$ for stability:
 \begin{equation}
 y^{J}_{i,t}=\log\frac{q^{J}_{i,t}+\epsilon}{1-q^{J}_{i,t}+\epsilon}.
 \end{equation}
@@ -22,52 +22,110 @@ Let Task~A provide the inferred vote share $p_{i,t}$ (denoted $q^{V}_{i,t}$). We
 y^{V}_{i,t}=\log\frac{p_{i,t}+\epsilon}{1-p_{i,t}+\epsilon}.
 \end{equation}
 We adopt share + logit for cross-season comparability and interpret coefficients on the log-odds scale.
-% Source justification: first_stage_modeling outcome definitions and logit motivation.:contentReference[oaicite:12]{index=12}
+
+\noindent\textbf{Elimination outcome.}
+Define a weekly elimination indicator
+\[
+E_{i,t}=
+\begin{cases}
+1, & \text{if contestant $i$ is eliminated in week $t$,}\\
+0, & \text{otherwise.}
+\end{cases}
+\]
+This outcome links the two channels (judges' evaluations and inferred fan support) to realized competition survival.
+
 
 \subsection{Modeling results: separating ``who judges reward'' vs.\ ``who fans support''}
 \label{subsec:modeling_results_d1}
 
-We fit two mixed-effects models on the season--week panel to attribute variation to
-(i) celebrity covariates and (ii) professional dancer partners.\cite{law2015simulation}
+We fit two parallel mixed-effects models, one for judges and one for fans, with shared covariates but distinct
+random-effects structures. This allows us to quantify whether professional dancers act primarily as
+(i) performance amplifiers in the judges' channel, (ii) popularity amplifiers in the fans' channel, or both.
 
-\paragraph{Model 1: Judge Model.}
+\subsubsection{Model 1: Judges' evaluation model}
+\label{subsubsec:model1_judges}
+
+We model judges' logit-share as
 \begin{equation}
-y^{J}_{i,t}=\beta_{0}+\beta_X^{\top}X_{i}+\beta_T f(t)+FE_s+u_i+v_{d(i)}+\epsilon_{i,t},
+y^{J}_{i,t}=\beta_0 + X_i^\top\beta + f(t) + \mathrm{FE}_s + v_{d(i)} + u_{i} + \varepsilon^{J}_{i,t},
 \end{equation}
-where $X_i$ collects time-invariant celebrity attributes (e.g., age, occupation indicators),
-$f(t)$ captures week trend, $FE_s$ is a season fixed effect, $u_i\sim\mathcal N(0,\sigma_u^2)$ is a celebrity random effect,
-and $v_{d(i)}\sim\mathcal N(0,\sigma_v^2)$ is a professional-dancer random effect.
-A key hypothesis test is $H_0:\sigma_v^2=0$ (no pro-dancer effect on judges). %:contentReference[oaicite:13]{index=13}
+where $X_i$ are celebrity attributes (e.g., age, industry), $f(t)$ captures week effects,
+$\mathrm{FE}_s$ are season fixed effects, $v_{d(i)}$ is a random intercept for the professional dancer partnered with celebrity $i$,
+and $u_i$ is a contestant random effect capturing persistent idiosyncrasy.
+The variance component $\sigma_v^2$ represents the professional-dancer effect on judges' evaluations.
 
-\paragraph{Model 2: Vote Model.}
-To model inferred fan support while allowing mediation through judges' performance, we include $y^{J}_{i,t}$:
+\paragraph{Hypothesis test.}
+A key hypothesis test is $H_0:\sigma_v^2=0$ (no pro-dancer effect on judges).
+
+\subsubsection{Model 2: Fans' preference model}
+\label{subsubsec:model2_fans}
+
+We model fans' logit-share as
 \begin{equation}
-y^{V}_{i,t}=\gamma_{0}+\gamma_J y^{J}_{i,t}+\gamma_X^{\top}X_{i}+\gamma_T f(t)+FE_s+a_i+b_{d(i)}+\eta_{i,t},
+y^{V}_{i,t}=\gamma_0 + X_i^\top\gamma + f(t) + \mathrm{FE}_s + b_{d(i)} + u_i + \varepsilon^{V}_{i,t},
 \end{equation}
-with $a_i\sim\mathcal N(0,\sigma_a^2)$ and $b_{d(i)}\sim\mathcal N(0,\sigma_b^2)$ capturing celebrity and pro-dancer random effects
-on fan preferences, respectively. The coefficient $\gamma_J$ measures the transmission strength from judges to fans. %:contentReference[oaicite:14]{index=14}
+where $b_{d(i)}$ captures the professional-dancer effect on fan preferences.
+This is structurally parallel to Model 1, enabling a direct comparison of variance components and attribute coefficients.
 
-\paragraph{Comparing judges vs.\ fans.}
-For each shared attribute $k$, define the preference gap
+\paragraph{Bridging judges to fans.}
+To test whether judges' evaluations transmit to fan support, we also fit an augmented specification:
+\begin{equation}
+y^{V}_{i,t}=\gamma_0 + \gamma_J y^{J}_{i,t} + X_i^\top\gamma + f(t) + \mathrm{FE}_s + b_{d(i)} + u_i + \varepsilon^{V}_{i,t}.
+\end{equation}
+The coefficient $\gamma_J$ measures the transmission strength from judges to fans.
+
+\subsubsection{Attribute preference gaps: judges vs.\ fans}
+\label{subsubsec:attribute_gaps}
+
+To quantify whether fans and judges value celebrity attributes differently, we compare the attribute coefficients across the two channels.
+Let $\beta_k$ and $\gamma_k$ denote the coefficient on attribute $k$ in Models 1 and 2. Define the preference gap
 \begin{equation}
 \Delta_k=\gamma_k-\beta_k.
 \end{equation}
 $\Delta_k>0$ indicates fans prefer the attribute more than judges do; $\Delta_k<0$ indicates the opposite.
-We report $\Delta_k$ with uncertainty bands (via bootstrap) whenever vote inference uncertainty is non-negligible. %:contentReference[oaicite:15]{index=15}
+We report $\Delta_k$ with uncertainty bands (via bootstrap) whenever vote inference uncertainty is non-negligible.
+
+\paragraph{Model 3: Elimination risk (competition outcome).}
+To connect both channels to realized outcomes, we fit a discrete-time survival model for weekly elimination:
+\[
+\Pr(E_{i,t}=1)
+=
+\operatorname{logit}^{-1}\!\Big(
+\theta_0
++\theta_J y^J_{i,t}
++\theta_V y^V_{i,t}
++\theta^\top X_i
++f(t)
++\mathrm{FE}_s
++r_{d(i)}
+\Big),
+\]
+where $E_{i,t}$ is the elimination indicator from Section~\ref{subsec:outcome_definitions_d1}, and $r_{d(i)}$ captures professional-dancer heterogeneity in outcome risk.
+This model quantifies how judges' evaluations, inferred fan support, and observed attributes jointly translate into elimination probability.
+
 
 \paragraph{Quantifying professional-dancer impact (magnitude, not just significance).}
 We quantify the fraction of outcome variance attributable to professional dancers using ICC-style ratios:
 \begin{equation}
 ICC^{J}_{pro}=\frac{\sigma_v^{2}}{\sigma_v^{2}+\sigma_u^{2}+\sigma^{2}},\qquad
-ICC^{V}_{pro}=\frac{\sigma_b^{2}}{\sigma_b^{2}+\sigma_a^{2}+\sigma_\eta^{2}}.
+ICC^{V}_{pro}=\frac{\sigma_b^{2}}{\sigma_b^{2}+\sigma_u^{2}+\sigma^{2}},
 \end{equation}
-We treat BLUP rankings as descriptive summaries of the fitted random effects rather than causal estimates to compare whether the
-same pros are ``good for judges'' and ``good for fans.''
-%:contentReference[oaicite:16]{index=16}
+where $\sigma_v^2$ is the variance of $v_{d(i)}$, $\sigma_b^2$ is the variance of $b_{d(i)}$,
+$\sigma_u^2$ is the contestant-level variance, and $\sigma^2$ is the residual variance.
+These ratios provide an interpretable measure of how much professional partners matter relative to persistent celebrity idiosyncrasy.
 
-\paragraph{Uncertainty propagation.}
-Because fan votes are inferred, we propagate uncertainty either by (i) bootstrap re-estimation of votes and refitting the Vote Model, or (ii) weighted regression using the interval width from Task A as an uncertainty proxy; we report confidence intervals accordingly.
-%:contentReference[oaicite:17]{index=17}
+\subsubsection{Uncertainty propagation from vote inference}
+\label{subsubsec:uncertainty_propagation_d1}
+
+Because $p_{i,t}$ is inferred rather than observed, we propagate vote-inference uncertainty into downstream coefficients.
+We do so either by (i) bootstrap resampling of the inference stage and re-fitting Models 2--3, or (ii) weighted regression using the interval width from Task A as an uncertainty proxy; we report confidence intervals accordingly.
+In the weighted specification, let $w_{i,t}$ denote the feasible vote-interval width from Task A (KPI2).
+We set observation weights
+\[
+\omega_{i,t}=\frac{1}{w_{i,t}+\varepsilon},
+\]
+so that more identifiable (tighter-interval) weeks exert greater influence, while poorly identified weeks are down-weighted rather than discarded.
+
 
 % ---------------- Figure/Table placeholders (insert later) ----------------
 % Fig 6.1 Coefficient comparison (beta vs gamma) for key attributes.
