@@ -16,10 +16,11 @@ import subprocess
 import os
 import itertools
 import pandas as pd
+from src.tools.paths import REPLAYS_DIR, EVAL_DIR
 
 PANEL = 'output/data_cleaned/clean_long_data_replay_ready.csv'
-OUT_DIR_SIM = 'src/sim'
-OUT_DIR_EVAL = 'src/eval'
+OUT_DIR_SIM = REPLAYS_DIR
+OUT_DIR_EVAL = EVAL_DIR
 
 def run(cmd):
     print('RUN:', cmd)
@@ -55,7 +56,7 @@ def main():
         cmd3 = f'python3 src/eval/compare_three_strategies.py --panel {PANEL} --pest {pest_out} --alpha {A} --out-dir {OUT_DIR_SIM} --elim-col eliminated'
         run(cmd3)
 
-        # 4) copy replays to src/eval
+        # 4) copy replays to eval dir if needed (copy from canonical replays)
         run(f'cp -v {OUT_DIR_SIM}/replay_*_season*.csv {OUT_DIR_EVAL}/')
 
         # 5) run canonical-fidelity

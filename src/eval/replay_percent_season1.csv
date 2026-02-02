@@ -1,7 +1,7 @@
 season,method,week,m,active_count,elim_pred
 1,percent,1,0,6,
 1,percent,2,1,6,Evander Holyfield
-1,percent,3,1,6,Trista Sutter
-1,percent,4,1,6,Evander Holyfield
-1,percent,5,0,6,
-1,percent,6,0,6,
+1,percent,3,1,6,Evander Holyfield
+1,percent,4,1,5,Trista Sutter
+1,percent,5,1,4,Rachel Hunter
+1,percent,6,0,3,

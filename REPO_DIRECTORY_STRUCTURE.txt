@@ -1,0 +1,76 @@
+Repository directory listing for /Users/situjianfei/PycharmProjects/model2026-2
+Generated: 2026-02-02
+
+- .git/
+- .idea/
+- .snapshots/
+- 2625838.aux
+- 2625838.bbl
+- 2625838.log
+- 2625838.out
+- 2625838.pdf
+- 2625838.synctex.gz
+- 2625838.tex
+- 2625838.toc
+- README.md
+- requirements.txt
+
+- analysis/
+  - fig3_2_irregular_weeks.py
+  - fig3_3_active_placeholders.py
+  - fig5_1_fliprate_by_season.py
+  - plot_p0_figs.py
+  - tab5_1_kpi1_hitrate.py
+
+- chapters/
+  - 0_summary_sheet.tex
+  - 1_introduction.tex
+  - 2_problem_decoposition_and_analysis.tex
+  - 3_data_processing_and_analysis.tex
+  - 4_task_a_fan_vote_inference_model.tex
+  - 5_rule_reply_volting_system_and_counterfactuials.tex
+  - 6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
+  - 7_task_d2_new_rule_design_and_stress_testing.tex
+  - 8_conclusion.tex
+  - 9_memo.tex
+  - Task1_Uncertainty_Modeling.md
+  - Task3_Modeling.md
+
+- data_raw/
+  - 2026_MCM_Problem_C_Data.csv
+
+- files_for_AI/
+  - constant_files/
+  - dynamic_files/
+  - first_stage_modeling.md
+  - group_discussion_files/
+  - model_2.md
+  - model_3.md
+
+- output/
+  - data_cleaned/
+    - intermediate_weekly_panel.csv
+    - clean_long_data_with_p_est_alpha0p5.csv
+  - fig/
+    - (task3 figures & other pngs)
+
+- replays/
+  - replay_percent_season{1..34}.csv
+  - replay_rank_season{1..34}.csv
+  - replay_js_sr_season{1..34}.csv
+  - replay_percent_last_two_season{1..34}.csv
+  - replay_professional_bottom_two_season{1..34}.csv
+  - (some files have archived older copies with suffix `.older.<timestamp>`)
+
+- src/
+  - eval/
+    - many evaluation scripts (compute_bias_index.py, compute_strengths.py, compute_survival_jaccard.py, compute_fanvote_credibility.py, etc.)
+    - outputs and CSV summaries (jaccard_*.csv, bias_index_*.csv)
+  - sim/
+    - replay simulator and p_est files (fan_shares_alpha0p5.csv etc.)
+  - tools/
+    - paths and consolidation helpers
+
+Notes:
+- This file is a concise, high-level export of the repository layout intended for team distribution.
+- If you want a fully recursive listing of `replays/` or `src/` (every file), tell me which directory and I'll append it.

@@ -1,3 +1,6 @@
+from __future__ import annotations
+
+from src.tools.paths import REPLAYS_DIR
 """
 Compare three replay strategies per-week:
  - `percent` (S = alpha*qJ + (1-alpha)*p_est)
@@ -7,7 +10,6 @@ Compare three replay strategies per-week:
 Generates `src/sim/replay_percent_last_two_season{S}.csv` and writes pairwise Jaccard
 details + season summaries to `src/eval/`.
 """
-from __future__ import annotations
 import os
 import pandas as pd
 from typing import Dict, List, Set
@@ -167,7 +169,7 @@ def main(argv=None):
     p.add_argument('--pest', required=True)
     p.add_argument('--elim-col', default='eliminated')
     p.add_argument('--alpha', type=float, default=0.5)
-    p.add_argument('--out-dir', default='src/sim')
+    p.add_argument('--out-dir', default=str(REPLAYS_DIR))
     args = p.parse_args(argv)
 
     panel = pd.read_csv(args.panel)

@@ -8,8 +8,8 @@ import pandas as pd
 import os
 import argparse
 from typing import List, Dict, Set
+from src.tools.paths import REPLAYS_DIR, EVAL_DIR
 
-EVAL_DIR = 'src/eval'
 PANEL = 'output/data_cleaned/intermediate_weekly_panel.csv'
 
 
@@ -42,9 +42,12 @@ def logged_replay_for_method(method: str, season: str = '1') -> str:
         raise SystemExit('No weeks found for season in panel')
     init_participants = list(A_t[weeks[0]])
     # load replay predictions
-    replay_path = os.path.join(EVAL_DIR, f'replay_{method}_season{season}.csv')
+    # prefer canonical replays directory, fall back to eval dir for backwards compatibility
+    replay_path = os.path.join(REPLAYS_DIR, f'replay_{method}_season{season}.csv')
     if not os.path.exists(replay_path):
-        raise SystemExit(f'Replay file not found: {replay_path}')
+        replay_path = os.path.join(EVAL_DIR, f'replay_{method}_season{season}.csv')
+    if not os.path.exists(replay_path):
+        raise SystemExit(f'Replay file not found in {REPLAYS_DIR} or {EVAL_DIR} for method {method}')
     rep = pd.read_csv(replay_path)
     # reconstruct survivors
     curr = set(init_participants)

@@ -17,11 +17,12 @@ import glob
 import math
 from typing import Dict, List, Set, Tuple
 import pandas as pd
+from src.tools.paths import REPLAYS_DIR, DATA_CLEAN, EVAL_DIR
 
 HERE = os.path.dirname(__file__)
-PANEL = os.path.join(HERE, '..', 'output', 'data_cleaned', 'intermediate_weekly_panel.csv')
+PANEL = os.path.join(DATA_CLEAN, 'intermediate_weekly_panel.csv')
 if not os.path.exists(PANEL):
-    PANEL = os.path.join('output', 'data_cleaned', 'intermediate_weekly_panel.csv')
+    PANEL = os.path.join(HERE, '..', 'output', 'data_cleaned', 'intermediate_weekly_panel.csv')
 
 
 def build_week_participants(panel_s: pd.DataFrame) -> Dict[int, List[str]]:
@@ -108,9 +109,12 @@ def main():
         return
     panel = pd.read_csv(PANEL)
 
-    replay_files = glob.glob(os.path.join(HERE, 'replay_*_season*.csv'))
+    # prefer canonical replays dir, fall back to src/eval
+    replay_files = glob.glob(os.path.join(REPLAYS_DIR, 'replay_*_season*.csv'))
     if not replay_files:
-        print('No replay files found in src/eval/. Nothing to do.')
+        replay_files = glob.glob(os.path.join(HERE, 'replay_*_season*.csv'))
+    if not replay_files:
+        print('No replay files found in replays/ or src/eval/. Nothing to do.')
         return
 
     # pick a default p_est used by eval/replay (fall back to sim defaults)

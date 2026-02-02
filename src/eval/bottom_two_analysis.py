@@ -19,12 +19,11 @@ from typing import List, Dict
 
 # reuse helpers from the replay simulator
 from src.sim.replay_simulator import build_week_participants, compute_qJ_for_week, get_p_for_week, infer_elim_counts_from_col
+from src.tools.paths import DATA_CLEAN, SIM_DIR, EVAL_DIR, REPLAYS_DIR, ensure_dirs
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-PANEL = os.path.join(ROOT, 'output', 'data_cleaned', 'intermediate_weekly_panel.csv')
-SIM_DIR = os.path.join(ROOT, 'src', 'sim')
-EVAL_DIR = os.path.join(ROOT, 'src', 'eval')
-os.makedirs(EVAL_DIR, exist_ok=True)
+# canonical paths
+PANEL = os.path.join(DATA_CLEAN, 'intermediate_weekly_panel.csv')
+ensure_dirs([EVAL_DIR, REPLAYS_DIR])
 
 
 def run_bottom_two_for_season(season: int, panel_df: pd.DataFrame, pest_df: pd.DataFrame, alpha: float = 0.5, elim_col: str = 'true_elim_flag'):
@@ -179,7 +178,7 @@ def main(argv=None):
             continue
         pest_df = pd.read_csv(pest_file)
         history = run_bottom_two_for_season(s, panel_df, pest_df, alpha=args.alpha)
-        out_path = os.path.join(args.out_dir, f'replay_bottom_two_season{s}.csv')
+        out_path = os.path.join(REPLAYS_DIR, f'replay_bottom_two_season{s}.csv')
         write_history(history, out_path, s)
         print('Wrote', out_path)
         diffs = compare_with_actual(panel_df, history, s)
@@ -226,10 +225,10 @@ def main(argv=None):
                         actual_placement = None
                 per_contestant.append({'season': s, 'name': name, 'actual_placement': actual_placement, 'pred_placement_bottom_two': pred_place.get(name), 'pred_week_bottom_two': pred_week})
 
-    # write diffs and per-contestant summary
-    pd.DataFrame(all_diffs).to_csv(os.path.join(args.out_dir, 'bottom_two_diffs.csv'), index=False)
-    pd.DataFrame(per_contestant).to_csv(os.path.join(args.out_dir, 'bottom_two_contestant_summary.csv'), index=False)
-    print('Wrote summaries to', args.out_dir)
+    # write diffs and per-contestant summary to EVAL_DIR
+    pd.DataFrame(all_diffs).to_csv(os.path.join(EVAL_DIR, 'bottom_two_diffs.csv'), index=False)
+    pd.DataFrame(per_contestant).to_csv(os.path.join(EVAL_DIR, 'bottom_two_contestant_summary.csv'), index=False)
+    print('Wrote summaries to', EVAL_DIR)
     print('\nPer-contestant summary:')
     print(pd.DataFrame(per_contestant).to_string(index=False))
 

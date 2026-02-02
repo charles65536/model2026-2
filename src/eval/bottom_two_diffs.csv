@@ -7,32 +7,3 @@ season,week,predicted_elim,actual_elim,changed
 2,6,George Hamilton,George Hamilton,False
 2,7,Jerry Rice,Lisa Rinna,True
 2,8,,,False
-4,1,,,False
-4,2,Shandi Finnessey,Paulina Porizkova,True
-4,3,Paulina Porizkova,Shandi Finnessey,True
-4,4,Clyde Drexler,Leeza Gibbons,True
-4,5,Leeza Gibbons,Clyde Drexler,True
-4,6,John Ratzenberger,Heather Mills,True
-4,7,Heather Mills,John Ratzenberger,True
-4,8,Billy Ray Cyrus,Billy Ray Cyrus,False
-4,9,Ian Ziering,Ian Ziering,False
-4,10,,,False
-11,1,David Hasselhoff,David Hasselhoff,False
-11,2,Michael Bolton,Michael Bolton,False
-11,3,Margaret Cho,Margaret Cho,False
-11,4,The Situation,The Situation,False
-11,5,Florence Henderson,Florence Henderson,False
-11,6,Kurt Warner,Audrina Patridge,True
-11,7,Audrina Patridge,Rick Fox,True
-11,8,Rick Fox,Kurt Warner,True
-11,9,Bristol Palin,Brandy,True
-11,10,,,False
-27,1,Nikki Glaser,Nikki Glaser,False
-27,2,Danelle Umstead,Danelle Umstead,False
-27,3,Nancy McKeon,Nancy McKeon,False
-27,4,DeMarcus Ware,Tinashe,True
-27,5,,,False
-27,6,Tinashe,Mary Lou Retton,True
-27,7,Joe Amabile;Mary Lou Retton,DeMarcus Ware;John Schneider,True
-27,8,Bobby Bones;John Schneider,Joe Amabile;Juan Pablo Di Pace,True
-27,9,,,False
