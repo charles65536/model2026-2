@@ -26,6 +26,7 @@ import os
 from typing import Dict, List, Tuple
 import numpy as np
 import pandas as pd
+from src.tools.paths import REPLAYS_DIR
 
 
 def choose_default_pest():
@@ -359,13 +360,17 @@ def main(argv: List[str]):
                 underlying = canon_method_for_season(int(float(s)))
                 history = simulate_season(panel_s, pest_s, alpha=args.alpha, method=underlying, m_map=m_map, verbose=args.verbose)
                 out_p = f'src/sim/replay_{underlying}_season{str(s)}.csv'
+                out_p_replays = os.path.join(REPLAYS_DIR, f'replay_{underlying}_season{str(s)}.csv')
                 write_history_csv(history, out_p, s, underlying)
-                print('Wrote', out_p)
+                write_history_csv(history, out_p_replays, s, underlying)
+                print('Wrote', out_p, 'and', out_p_replays)
             else:
                 history = simulate_season(panel_s, pest_s, alpha=args.alpha, method=method, m_map=m_map, verbose=args.verbose)
                 out_p = f'src/sim/replay_{method}_season{str(s)}.csv'
+                out_p_replays = os.path.join(REPLAYS_DIR, f'replay_{method}_season{str(s)}.csv')
                 write_history_csv(history, out_p, s, method)
-                print('Wrote', out_p)
+                write_history_csv(history, out_p_replays, s, method)
+                print('Wrote', out_p, 'and', out_p_replays)
 
 
 if __name__ == '__main__':

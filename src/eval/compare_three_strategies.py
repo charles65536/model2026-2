@@ -1,3 +1,4 @@
+from src.tools.paths import REPLAYS_DIR
 """
 Compare three replay strategies per-week:
  - `percent` (S = alpha*qJ + (1-alpha)*p_est)
@@ -167,7 +168,7 @@ def main(argv=None):
     p.add_argument('--pest', required=True)
     p.add_argument('--elim-col', default='eliminated')
     p.add_argument('--alpha', type=float, default=0.5)
-    p.add_argument('--out-dir', default='src/sim')
+    p.add_argument('--out-dir', default=str(REPLAYS_DIR))
     args = p.parse_args(argv)
 
     panel = pd.read_csv(args.panel)
