@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from src.tools.paths import REPLAYS_DIR
 """
 Compare three replay strategies per-week:
@@ -8,7 +10,6 @@ Compare three replay strategies per-week:
 Generates `src/sim/replay_percent_last_two_season{S}.csv` and writes pairwise Jaccard
 details + season summaries to `src/eval/`.
 """
-from __future__ import annotations
 import os
 import pandas as pd
 from typing import Dict, List, Set
