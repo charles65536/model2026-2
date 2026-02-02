@@ -2,15 +2,15 @@
 \textbf{Subject: Recommendation for a More Professional Yet Watchable Voting System}
 
 Our analyses indicate that controversy risk concentrates in weeks where judges' evaluations and audience preferences diverge.
-To prioritize technical merit while preserving an audience role, we recommend piloting a \emph{Judges-Gated Two-Stage} (JG-2S) voting policy,
-validated by historical replays and uncertainty stress tests.
+To prioritize technical merit while preserving an audience role, we recommend piloting \textit{Professional Bottom-2} (\textit{PB2}), a judges-gated two-stage voting policy,
+validated by replay-based stress tests: (i) pairwise Jaccard similarity across Percent/Rank/B2/PB2, (ii) controversial-case replays, and (iii) a unified bias test.
 
 \paragraph{Baseline reference (current mechanism).}
 The incumbent format can be summarized as ``combined Bottom-2 + judges' save'': contestants are first ranked by a combined
 judge--fan score, the Bottom-2 form an at-risk set, and judges decide which of the two is eliminated.
 
-\paragraph{Recommended policy (JG-2S): judges-only gate $\rightarrow$ fan-aware decision within the gate.}
-Under JG-2S, each week proceeds in two stages:
+\paragraph{Recommended policy (PB2: \textit{Professional Bottom-2}): judges-only gate $\rightarrow$ fan-aware decision within the gate.}
+Under PB2, each week proceeds in two stages:
 \begin{enumerate}
   \item \textbf{Judges-only gate (risk set).} Rank contestants by judges' performance share $q^J_{i,t}$ and designate the Bottom-2
   (or Bottom-$k$ in late-stage variants) as the at-risk set.
@@ -32,10 +32,10 @@ management may enable structured suspense by expanding the gate to a Bottom-$k$ 
 with eliminations restricted to the judges-defined low-performance band.
 
 \paragraph{Management knobs and deployment.}
-JG-2S offers interpretable control knobs:
+PB2 offers interpretable control knobs:
 (i) $w_J$ (judge--fan balance within the gate),
 (ii) the late-stage trigger (e.g., remaining contestants $\le K$ or week threshold $t_0$),
 and (iii) the late-stage gate size $k$ (and optional multi-elimination placement).
-We recommend selecting a robust parameter region identified by replay and vote-uncertainty stress tests, and deploying JG-2S in a one-season
+We recommend selecting a robust operating point supported by replay-based stress tests (Jaccard similarity, controversial-case replays, and a unified bias test), and deploying PB2 in a one-season
 \emph{shadow mode} computed in parallel with the broadcast rule. This yields an auditable comparison of eliminations, finalists, and winner outcomes
 before any on-air adoption, supported by a clear public explanation of the two-stage logic and the role of audience influence.

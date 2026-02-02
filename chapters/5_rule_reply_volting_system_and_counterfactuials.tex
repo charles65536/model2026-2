@@ -53,8 +53,10 @@ including no-elimination weeks via an explicit empty-set convention.
 KPI3 (FlipRate) measures how often the predicted eliminated set differs between percent-based and rank-based replays under the same inputs.
 
 \paragraph{Interpretation.}
-High FlipRate indicates a season or era where the two aggregation paradigms can meaningfully change who is eliminated, which is a direct proxy
-for controversy risk when rules change. These metrics motivate the targeted case studies below, which explain \emph{why} divergences occur.
+We measure the bias to determine the degree of its inclination towards the audience, where a higher bias value indicates a greater tendency to favor the audience. 
+According to Figure~\ref{fig:bias_index_comparison_four_methods_alpha0p5} we find that the \textit{percentage} method is more inclined towards the audience, yet the actual difference between the two methods is negligible compared with the \textit{PB2} we designed in \ref{subsubsec:d2_ruleB}.
+
+
 
 \subsection{Controversial Contestants: Mechanism-driven Case Studies}\label{subsec:controversial_contestants_case_studies}
 
@@ -76,6 +78,25 @@ For each contestant we report: (i) their within-season judges trajectory (e.g., 
 through $\hat p_{i,t}$ (Task~A), and (iii) counterfactual replays under percent vs.\ rank aggregation with and without the judges' save module.
 The objective is not to ``explain away'' controversy, but to isolate the minimal mechanism that makes the outcome boundary-sensitive.
 
+\paragraph{Re-rank outcomes between \textit{percentage} and \textit{rank} rules for controversial contestants.} 
+When we re-rank Jerry Rice under the \textit{percentage} rule and re-rank Billy Ray Cyrus, Bristol Palin and Bobby Bones under the \textit{rank} rule, 
+we find that the final rankings of all four contestants drop significantly in the Tabel~\ref{}. This indicates a notable discrepancy in the tolerance for controversial 
+contestants after the rule adjustment, and we will analyze these characteristics in the subsequent sections.
+
+% \begin{table}[H]
+%   \center
+%     \begin{tabular}{lcc}
+%         \toprule
+%         Contestant & Original Ranking & Re-ranked Position \\
+%         \midrule
+%         Jerry Rice & 2nd & 7th \\
+%         Billy Ray Cyrus & 5th & 8th \\
+%         Bristol Palin & 3rd & 9th \\
+%         Bobby Bones & 1st & 8th \\
+%         \bottomrule
+%     \end{tabular}
+% \end{table}
+
 \paragraph{Case 1: Jerry Rice (Season~2) --- early-era aggregation sensitivity.}
 This case illustrates how early-season aggregation semantics can amplify judge--fan discordance: a contestant can remain viable when fan support offsets weak
 judges' scores, yet the elimination boundary becomes sensitive to whether scores are combined as ranks or as normalized shares.
@@ -96,6 +117,8 @@ This case highlights that the same observed trajectory can be interpreted differ
 Under the incumbent ``combined Bottom-2 + judges' save'' pipeline, fan support can strongly affect who enters the risk set;
 under a professionalism-first gate (Task~D2), the risk set is defined by judges alone, which changes whether fan support can ``rescue'' a weak performer.
 We use this case to motivate why stage-ordering (gate vs.\ final save) is a central institutional lever rather than a cosmetic change.
+
+
 
 \paragraph{Mechanisms synthesized across cases.}
 Across the four examples we observe three recurring mechanisms:
@@ -128,16 +151,11 @@ multi-elimination weeks (we apply eliminations sequentially when multiple elimin
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\linewidth]{output/fig/bias\_by\_season\_alpha0p5.png}
-    \caption{Average rank difference (bias) of eliminees vs. survivors across seasons by methods (percent/rank/Rule A~\ref{subsubsec:d2_ruleA}/Rule B~ \ref{subsubsec:d2_ruleB}) at $\alpha=0.5$.}
+    \caption{Average rank difference (bias) of eliminees vs. survivors across seasons by methods (percent/rank/Rule A~\ref{subsubsec:d2_ruleA}/Rule B~ \ref{subsubsec:d2_ruleB}) at $\alpha=0.5$. CHANGE TO }
     \label{fig:bias_by_season_alpha0p5}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\linewidth]{output/fig/bias\_mean\_by\_method\_alpha0p5.png}
-    \caption{Method-level average summary of bias}
-    \label{fig:bias_mean_by_method_alpha0p5}
-\end{figure}
+
 
 % ==========================规则概述与反事实分析=============================
 \subsection{Synthesis of Findings from Rules}\label{subsec:synthesis_of_findings_from_rules}

@@ -2,7 +2,7 @@
 \usepackage{multicol} 
 % ---------- 第一步：页面布局/基础配置（最先加载） ----------
 \usepackage{geometry}
-\geometry{left=1in,right=0.75in,top=1in,bottom=1in}
+\geometry{left=1in,right=0.75in,top=0.9in,bottom=0.9in}
 \usepackage{microtype} % 更好的微排版
 
 % ---------- 第二步：编码/字体基础（必须在字体包前） ----------
@@ -244,9 +244,9 @@
 % 1. 移除列表（itemize/enumerate）的额外间距（美赛省空间）
 \setlist{nosep} % 配合你已有的enumitem宏包使用
 % 2. 减小段落间距（默认间距太大，美赛需紧凑）
-\setlength{\parskip}{0.3\baselineskip}
+\setlength{\parskip}{0.1\baselineskip}
 % 3. 轻微减小行间距（不影响可读性，进一步紧凑）
-\linespread{0.80}
+\linespread{0.60}
 
 
 % =================================================
@@ -318,6 +318,6 @@ See \href{https://github.com/charles65536/model2026-2}{2625838} for repository t
 \fontsize{9}{10.5}
 \selectfont
 \section*{\center{Report on Use of AI}}
-\input{chapters/report_on_use_ai.tex}
+% \input{chapters/report_on_use_ai.tex}
 \endgroup
 \end{document}

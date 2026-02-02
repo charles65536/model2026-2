@@ -11,11 +11,10 @@ These outputs become direct inputs to the replay engine, closing the loop from l
 
 \textbf{We evaluate models and voting rules using replay-based metrics that align with the show's decisions.}
 For vote inference, we report elimination-consistency rates, feasible-range widths (as an identifiability proxy), and sensitivity to regularization strength.
-For rule comparisons and new-system design, we quantify outcome divergence (who would be eliminated when), shifts in finalist composition, and robustness under stress tests that vary vote weights and the assumed rule-switch season.
+For rule comparisons and new-system design, we quantify outcome divergence (who would be eliminated when), shifts in finalist composition, and validate PB2 via replay-based stress tests: (i) pairwise Jaccard similarity across Percent/Rank/B2/PB2, (ii) controversial-case replays, and (iii) a unified bias test.
 
 \textbf{To ensure interpretability, we benchmark against simple baselines}
 (e.g., judges-only elimination and naive fan-share models) and require that any added complexity yields measurable improvements in replay fidelity and stability.
 Building on inferred votes, we fit mixed-effects models to separately explain judges' scoring and fan preference, isolating professional-dancer effects and celebrity attributes.
-Finally, in \textbf{Task~D2} we propose a professionalism-first institutional redesign: judges alone define a small ``at-risk'' set (gate), and fan influence is applied only within that gate; late in the season we allow structured, performance-grounded suspense (e.g., bottom-$k$ bands or limited multi-elimination) and validate these mechanisms by replay and uncertainty stress testing.
-
+Finally, in \textbf{Task~D2} we propose \textit{Professional Bottom-2} (\textit{PB2}): judges alone define the Bottom-2 risk set (judge Bottom-2), and fan influence is applied only within that gate via a transparent blended score; late in the season we allow structured, performance-grounded suspense (e.g., bottom-$k$ bands or limited multi-elimination) and validate PB2 by replay-based stress tests (Jaccard similarity, controversial-case replays, and a unified bias test).
 The remainder of the paper is organized as follows: Section 2 formalizes tasks, assumptions, and notation; Section 3 describes data processing and feature construction; Sections 4--7 present vote inference, rule replay, mechanism analysis, and the proposed voting system with robustness tests; Section 8 concludes; and Section 9 provides a memo to management.

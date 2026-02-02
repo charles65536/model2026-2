@@ -184,38 +184,69 @@ p^{\max}_{i,t} \;=\;& \max_{\mathbf{p},\boldsymbol{\xi}}\ \ p_{i,t} \label{eq:kp
 \text{s.t.}\ \;& \eqref{eq:kpi2_nonneg}--\eqref{eq:kpi2_elim},\ \eqref{eq:kpi2_shell_quad}--\eqref{eq:kpi2_slack_cap}. \nonumber
 \end{align}
 We then set the interval width $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ and identifiability score $\mathrm{ID}_{i,t}=1/(w_{i,t}+\varepsilon)$.
-
 \begin{algorithm}[H]
-\caption{KPI2 computation via profile optimization (per season)}
-\label{alg:kpi2}
-\small
-\begin{algorithmic}[1]  % [1] 显示行号，algpseudocode 必须加
-    % ---- 输入输出（algpseudocode 标准首字母大写）----
+\caption{Season-wise fan vote inference via constrained QP}
+\label{alg:qp_inference}
+\small  % 字号缩小，避免公式溢出
+\begin{algorithmic}[1]  % [1] 表示显示行号，algpseudocode必须加
+    % ---- 输入输出定义（algpseudocode标准写法）----
     \Require 
-        Season $s$ weekly panel: active sets $A_{s,t}$, eliminated sets $E_{s,t}$, judges' shares $q^J_{i,t}$; 
-        main-model hyperparameters $\alpha,\lambda_1,\lambda_2$; 
-        KPI2 params $\varepsilon,\delta_{\mathrm{obj}},\delta_\xi$; 
-        a slice selector $\mathcal{S}$ (set of $(i,t)$ pairs to evaluate).
+        Weekly panel for season $s$: active sets $A_{s,t}$, judges' totals $J_{i,t}$, eliminated sets $E_{s,t}$; hyperparameters $\alpha,\lambda_1,\lambda_2$.
     \Ensure 
-        Interval bounds $\{p^{\min}_{i,t},p^{\max}_{i,t}\}$ and identifiability scores $\{\mathrm{ID}_{i,t}\}$ for $(i,t)\in\mathcal{S}$.
+        Point estimates $\hat p_{i,t}$ and slack diagnostics $\hat \xi_t$ for all eligible weeks.
 
-    % ---- 算法核心步骤 ----
-    \State \textbf{Solve main inference QP} for season $s$ to obtain $(\hat{\mathbf{p}},\hat{\boldsymbol{\xi}})$ and $\mathrm{OPT}_s=\mathcal{L}(\hat{\mathbf{p}},\hat{\boldsymbol{\xi}})$.
-    \State \textbf{Define common constraints}: simplex constraints \eqref{eq:kpi2_simplex}--\eqref{eq:kpi2_elim} and slack nonnegativity \eqref{eq:kpi2_slack_nonneg}.
-    \State \textbf{Add KPI2 shells}: objective shell \eqref{eq:kpi2_shell_quad} (or its SOC form) and slack cap \eqref{eq:kpi2_slack_cap}.
-    \State Choose evaluation slice $\mathcal{S}$ (e.g., late-phase weeks and/or controversial cases) to control computation.
-    
-    % 循环结构（algpseudocode 首字母大写）
-    \For{each $(i,t)\in\mathcal{S}$}
-        \State Solve profile-min optimization \eqref{eq:kpi2_profile_min} to get $p^{\min}_{i,t}$.
-        \State Solve profile-max optimization \eqref{eq:kpi2_profile_max} to get $p^{\max}_{i,t}$.
-        \State Compute width $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ and identifiability score $\mathrm{ID}_{i,t}=1/(w_{i,t}+\varepsilon)$.
-        \State Sanity check: verify $p^{\min}_{i,t}\le \hat p_{i,t}\le p^{\max}_{i,t}$; if violated, align constraints with the main QP.
-    \EndFor
-    
-    \State Aggregate $\mathrm{ID}_{i,t}$ by week/season/phase using medians and quantiles as defined in the KPI registry.
+    % ---- 算法步骤 ----
+    \State Compute judges' share for each week $t$: 
+    \[
+    q^J_{i,t} = \frac{J_{i,t}}{\sum_{r\in A_{s,t}} J_{r,t}}
+    \]
+    \State Define decision variables $\{p_{i,t}\}_{i\in A_{s,t}}$ with constraints:
+    \[
+    p_{i,t} \ge 0, \quad \sum_{i\in A_{s,t}} p_{i,t} = 1
+    \]
+    \State For each week $t$, define percent-based composite score $S^{(P)}_{i,t}$ and slack variable $\xi_t$:
+    \[
+    S^{(P)}_{i,t} = \alpha q^{J}_{i,t} + (1-\alpha)p_{i,t}, \quad \xi_t \ge 0
+    \]
+    \State Add elimination-consistency constraints:
+    \[
+    S^{(P)}_{e,t} \le S^{(P)}_{i,t} + \xi_t \quad \forall e\in E_{s,t}, \, i\in A_{s,t}\setminus E_{s,t}
+    \]
+    \State Solve the quadratic program (QP) to minimize the objective function:
+    \[
+    \mathcal{L} = \sum_{t=2}^{T_s}\sum_{i\in A_{s,t}\cap A_{s,t-1}} (p_{i,t}-p_{i,t-1})^2 + \lambda_1\sum_{t=1}^{T_s}\sum_{i\in A_{s,t}}(p_{i,t}-q^J_{i,t})^2 + \lambda_2\sum_{t=1}^{T_s}\xi_t^2
+    \]
+    \State Output $\hat p_{i,t}$ (inferred vote shares) and $\hat \xi_t$ (slack diagnostics); flag weeks with large $\hat \xi_t$ as potential special-episode mismatches.
 \end{algorithmic}
 \end{algorithm}
+
+
+
+\subsubsection{Jaccard Similarity and Estimation Accuracy Analysis}
+We define $\sigma$ as the standard deviation in the logistic space, which quantifies the intensity of random perturbations. We conducted uncertainty tests on $\sigma$ to evaluate the consistency between the model and the actual elimination results and the credibility of the derived estimates. Meanwhile, the definition of Jaccard Similarity is provided in \ref{eq:jaccard_similarity}.
+
+First, we performed a Jaccard similarity test between the constructed model and the elimination results in the original dataset, yielding a Jaccard Similarity value of 70\%. This indicates that our model achieves reasonably good consistency with the actual elimination outcomes.
+
+Subsequently, we iterated over $\sigma \in [0, 0.4]$ and found that the Jaccard Similarity value stably remained at approximately 0.7. This demonstrates that our model not only maintains strong consistency with the original dataset but also exhibits robust robustness against random perturbations.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Jaccard Similarity under Different $\sigma$ Values}
+    \label{tab:jaccard_sigma}
+    \footnotesize % 可选：缩小字体适配列宽（如需）
+    \begin{tabular}{ccccc} % 5列，均居中对齐（学术表格无竖线更规范）
+        \toprule % 顶部粗横线
+        $\sigma$ & $\text{mean\_jaccard\_mean\_across\_seasons}$ & $\text{std\_of\_mean\_jaccard}$ & $n_{\text{seasons}}$ & $B$ \\
+        \midrule % 中间细横线
+        0.0  & 0.7330532212885154 & 0.18415164228756015 & 34 & 50 \\
+        0.05 & 0.7399649859943979 & 0.15067238671286837 & 34 & 50 \\
+        0.1  & 0.7343221288515407 & 0.1441705435024821  & 34 & 50 \\
+        0.2  & 0.7242100840336134 & 0.13774434851446216 & 34 & 50 \\
+        0.4  & 0.7118557422969188 & 0.12970869448513736 & 34 & 50 \\
+        \bottomrule % 底部粗横线
+    \end{tabular}
+\end{table}
+
 
 \subsection{Hyperparameters, tuning, and implementation details}
 \label{subsec:a_hyper_impl}
@@ -224,7 +255,7 @@ We then set the interval width $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ and ident
 Task~A uses $\alpha$ (judge weight in the percent rule), $\lambda_1$ (strength of the judge-anchor prior),
 $\lambda_2$ (penalty on constraint violations via $\xi_t$), and the KPI2 parameters $\varepsilon,\delta_{\mathrm{obj}},\delta_\xi$.
 Given the particularity of this problem, we manually set the $\alpha \in [0.3, 0.7]$. In practice, we tested all possibel values within this range at an
-interval of 0.01. To simplify the model and enhance its robustness, we ultimately selected $\alpha = 0.5$ for all subsequent tests and analyses.
+interval of 0.01. Due to the minor difference between different $\alpha$ and to simplify the model, we ultimately selected $\alpha = 0.5$ for all subsequent tests and analyses. 
 Unless otherwise stated, we set $\alpha=0.5$ as the nominal DWTS percent weighting and treat $\alpha$ as a sensitivity knob in later stress tests.
 
 We tune $(\lambda_1,\lambda_2)$ by replay-based diagnostics. Increasing $\lambda_2$ enforces stricter elimination-consistency
@@ -257,3 +288,7 @@ To avoid numerical issues, we recommend
 (i) normalizing judges' scores into shares $q^J$ (already done),
 (ii) using $\varepsilon=10^{-6}$ for identifiability scoring,
 and (iii) keeping $\delta_{\mathrm{obj}}$ small (e.g., 1--5\%) so profile intervals remain comparable to the fitted explanation.
+
+
+
+
