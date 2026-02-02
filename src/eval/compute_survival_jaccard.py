@@ -12,6 +12,7 @@ from __future__ import annotations
 import pandas as pd
 import os
 import csv
+import glob
 from typing import Dict, List, Set
 
 PANEL = 'output/data_cleaned/intermediate_weekly_panel.csv'
@@ -45,7 +46,18 @@ if 'true_elim_flag' not in panel.columns:
     raise SystemExit('Panel missing true_elim_flag column; cannot compute actual elimination sequence')
 
 seasons = sorted(panel['season'].dropna().unique(), key=lambda x: float(x) if str(x).replace('.', '', 1).isdigit() else str(x))
-methods = ['percent', 'rank']
+# detect available replay methods by scanning replay files in the eval dir
+replay_files = glob.glob(os.path.join(EVAL_DIR, 'replay_*_season*.csv'))
+methods = set()
+for fp in replay_files:
+    fname = os.path.basename(fp)
+    parts = fname.split('_')
+    if len(parts) >= 3 and parts[0] == 'replay':
+        methods.add(parts[1])
+methods = sorted(list(methods))
+if not methods:
+    # fallback to default expected methods
+    methods = ['percent', 'rank']
 summary_rows = []
 for method in methods:
     details = []

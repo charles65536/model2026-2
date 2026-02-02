@@ -1,0 +1,133 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+28,1,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,5.0,5.0,5.0,,15.0,9.5,0.0761421319796954,True,0,eliminated,8.0,False
+28,1,James Van Der Beek,Emma Slater,Eliminated Week 10,5,7.0,7.0,7.0,,21.0,1.0,0.1065989847715736,True,0,eliminated,10.0,False
+28,1,Kel Mitchell,Witney Carson,2nd Place,2,6.0,5.0,5.0,,16.0,7.5,0.0812182741116751,True,0,finished,11.0,False
+28,1,Ray Lewis,Cheryl Burke,Withdrew,11,5.0,5.0,5.0,,15.0,9.5,0.0761421319796954,True,0,withdrew,2.0,False
+28,1,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,5.0,3.0,3.0,,11.0,12.0,0.0558375634517766,True,0,eliminated,4.0,False
+28,1,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,6.0,6.0,6.0,,18.0,4.0,0.0913705583756345,True,0,eliminated,6.0,False
+28,1,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,4.0,4.0,4.0,,12.0,11.0,0.0609137055837563,True,0,eliminated,9.0,False
+28,1,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,6.0,5.0,6.0,,17.0,5.5,0.0862944162436548,True,0,eliminated,2.0,False
+28,1,Lauren Alaina,Gleb Savchenko,4th Place,4,7.0,6.0,6.0,,19.0,3.0,0.0964467005076142,True,0,finished,11.0,False
+28,1,Ally Brooke,Sasha Farber,3rd Place,3,5.0,5.0,6.0,,16.0,7.5,0.0812182741116751,True,0,finished,11.0,False
+28,1,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,6.0,5.0,6.0,,17.0,5.5,0.0862944162436548,True,0,eliminated,7.0,False
+28,1,Hannah Brown,Alan Bersten,1st Place,1,7.0,7.0,6.0,,20.0,2.0,0.1015228426395939,True,0,finished,11.0,False
+28,2,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,7.0,7.0,7.0,,21.0,2.0,0.0958904109589041,True,0,eliminated,8.0,False
+28,2,James Van Der Beek,Emma Slater,Eliminated Week 10,5,7.0,6.0,7.0,,20.0,4.0,0.091324200913242,True,0,eliminated,10.0,False
+28,2,Kel Mitchell,Witney Carson,2nd Place,2,7.0,6.0,7.0,,20.0,4.0,0.091324200913242,True,0,finished,11.0,False
+28,2,Ray Lewis,Cheryl Burke,Withdrew,11,5.0,5.0,5.0,,15.0,10.5,0.0684931506849315,True,0,withdrew,2.0,False
+28,2,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,4.0,4.0,4.0,,12.0,12.0,0.0547945205479452,True,0,eliminated,4.0,False
+28,2,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,6.0,6.0,6.0,,18.0,8.0,0.0821917808219178,True,0,eliminated,6.0,False
+28,2,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,6.0,5.0,5.0,,16.0,9.0,0.0730593607305936,True,0,eliminated,9.0,False
+28,2,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,5.0,5.0,5.0,,15.0,10.5,0.0684931506849315,True,1,eliminated,2.0,False
+28,2,Lauren Alaina,Gleb Savchenko,4th Place,4,6.0,6.0,7.0,,19.0,6.5,0.0867579908675799,True,0,finished,11.0,False
+28,2,Ally Brooke,Sasha Farber,3rd Place,3,7.0,6.0,7.0,,20.0,4.0,0.091324200913242,True,0,finished,11.0,False
+28,2,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,7.0,5.0,7.0,,19.0,6.5,0.0867579908675799,True,0,eliminated,7.0,False
+28,2,Hannah Brown,Alan Bersten,1st Place,1,8.0,8.0,8.0,,24.0,1.0,0.1095890410958904,True,0,finished,11.0,False
+28,3,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,8.0,8.0,8.0,,24.0,1.5,0.1212121212121212,True,0,eliminated,8.0,False
+28,3,James Van Der Beek,Emma Slater,Eliminated Week 10,5,8.0,7.0,8.0,,23.0,3.5,0.1161616161616161,True,0,eliminated,10.0,False
+28,3,Kel Mitchell,Witney Carson,2nd Place,2,7.0,6.0,7.0,,20.0,6.5,0.101010101010101,True,0,finished,11.0,False
+28,3,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+28,3,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,4.0,4.0,4.0,,12.0,10.0,0.0606060606060606,True,0,eliminated,4.0,False
+28,3,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,7.0,8.0,8.0,,23.0,3.5,0.1161616161616161,True,0,eliminated,6.0,False
+28,3,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,5.0,5.0,5.0,,15.0,9.0,0.0757575757575757,True,0,eliminated,9.0,False
+28,3,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+28,3,Lauren Alaina,Gleb Savchenko,4th Place,4,6.0,7.0,7.0,,20.0,6.5,0.101010101010101,True,0,finished,11.0,False
+28,3,Ally Brooke,Sasha Farber,3rd Place,3,8.0,8.0,8.0,,24.0,1.5,0.1212121212121212,True,0,finished,11.0,False
+28,3,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,5.0,5.0,6.0,,16.0,8.0,0.0808080808080808,True,0,eliminated,7.0,False
+28,3,Hannah Brown,Alan Bersten,1st Place,1,7.0,7.0,7.0,,21.0,5.0,0.106060606060606,True,0,finished,11.0,False
+28,4,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,7.0,7.0,6.0,6.0,26.0,8.0,0.0921985815602836,True,0,eliminated,8.0,False
+28,4,James Van Der Beek,Emma Slater,Eliminated Week 10,5,7.0,7.0,7.0,7.0,28.0,6.5,0.0992907801418439,True,0,eliminated,10.0,False
+28,4,Kel Mitchell,Witney Carson,2nd Place,2,8.0,8.0,8.0,8.0,32.0,2.5,0.1134751773049645,True,0,finished,11.0,False
+28,4,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,0.0,0.0,,,False,0,withdrew,2.0,True
+28,4,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,5.0,7.0,4.0,4.0,20.0,10.0,0.0709219858156028,True,1,eliminated,4.0,False
+28,4,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,7.0,8.0,8.0,8.0,31.0,5.0,0.1099290780141844,True,0,eliminated,6.0,False
+28,4,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,5.0,6.0,5.0,5.0,21.0,9.0,0.0744680851063829,True,0,eliminated,9.0,False
+28,4,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+28,4,Lauren Alaina,Gleb Savchenko,4th Place,4,8.0,8.0,8.0,8.0,32.0,2.5,0.1134751773049645,True,0,finished,11.0,False
+28,4,Ally Brooke,Sasha Farber,3rd Place,3,8.0,8.0,8.0,8.0,32.0,2.5,0.1134751773049645,True,0,finished,11.0,False
+28,4,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,7.0,7.0,7.0,7.0,28.0,6.5,0.0992907801418439,True,0,eliminated,7.0,False
+28,4,Hannah Brown,Alan Bersten,1st Place,1,8.0,8.0,8.0,8.0,32.0,2.5,0.1134751773049645,True,0,finished,11.0,False
+28,5,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,8.0,8.0,8.0,,24.0,5.5,0.1116279069767441,True,0,eliminated,8.0,False
+28,5,James Van Der Beek,Emma Slater,Eliminated Week 10,5,9.0,8.0,9.0,,26.0,2.5,0.1209302325581395,True,0,eliminated,10.0,False
+28,5,Kel Mitchell,Witney Carson,2nd Place,2,9.0,8.0,9.0,,26.0,2.5,0.1209302325581395,True,0,finished,11.0,False
+28,5,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+28,5,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+28,5,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,8.0,8.0,8.0,,24.0,5.5,0.1116279069767441,True,0,eliminated,6.0,False
+28,5,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,7.0,6.0,6.0,,19.0,9.0,0.0883720930232558,True,0,eliminated,9.0,False
+28,5,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+28,5,Lauren Alaina,Gleb Savchenko,4th Place,4,8.0,7.0,8.0,,23.0,7.0,0.1069767441860465,True,0,finished,11.0,False
+28,5,Ally Brooke,Sasha Farber,3rd Place,3,9.0,9.0,9.0,,27.0,1.0,0.1255813953488372,True,0,finished,11.0,False
+28,5,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,7.0,7.0,7.0,,21.0,8.0,0.0976744186046511,True,0,eliminated,7.0,False
+28,5,Hannah Brown,Alan Bersten,1st Place,1,9.0,7.0,9.0,,25.0,4.0,0.1162790697674418,True,0,finished,11.0,False
+28,6,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,9.0,9.0,9.0,,27.0,2.0,0.1184210526315789,True,0,eliminated,8.0,False
+28,6,James Van Der Beek,Emma Slater,Eliminated Week 10,5,9.0,9.0,9.0,,27.0,2.0,0.1184210526315789,True,0,eliminated,10.0,False
+28,6,Kel Mitchell,Witney Carson,2nd Place,2,9.0,8.0,9.0,,26.0,4.5,0.1140350877192982,True,0,finished,11.0,False
+28,6,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+28,6,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+28,6,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,9.0,9.0,9.0,,27.0,2.0,0.1184210526315789,True,1,eliminated,6.0,False
+28,6,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,7.0,7.0,7.0,,21.0,9.0,0.0921052631578947,True,0,eliminated,9.0,False
+28,6,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+28,6,Lauren Alaina,Gleb Savchenko,4th Place,4,9.0,8.0,9.0,,26.0,4.5,0.1140350877192982,True,0,finished,11.0,False
+28,6,Ally Brooke,Sasha Farber,3rd Place,3,8.0,9.0,8.0,,25.0,6.5,0.1096491228070175,True,0,finished,11.0,False
+28,6,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,9.0,8.0,8.0,,25.0,6.5,0.1096491228070175,True,0,eliminated,7.0,False
+28,6,Hannah Brown,Alan Bersten,1st Place,1,8.0,8.0,8.0,,24.0,8.0,0.1052631578947368,True,0,finished,11.0,False
+28,7,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,8.0,8.0,8.0,,24.0,7.0,0.1188118811881188,True,0,eliminated,8.0,False
+28,7,James Van Der Beek,Emma Slater,Eliminated Week 10,5,9.0,9.0,9.0,,27.0,2.0,0.1336633663366336,True,0,eliminated,10.0,False
+28,7,Kel Mitchell,Witney Carson,2nd Place,2,8.5,8.5,8.5,,25.5,5.0,0.1262376237623762,True,0,finished,11.0,False
+28,7,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+28,7,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+28,7,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+28,7,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,7.0,7.0,7.0,,21.0,8.0,0.1039603960396039,True,0,eliminated,9.0,False
+28,7,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+28,7,Lauren Alaina,Gleb Savchenko,4th Place,4,9.0,9.0,9.0,,27.0,2.0,0.1336633663366336,True,0,finished,11.0,False
+28,7,Ally Brooke,Sasha Farber,3rd Place,3,9.0,9.0,9.0,,27.0,2.0,0.1336633663366336,True,0,finished,11.0,False
+28,7,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,8.5,8.0,8.0,,24.5,6.0,0.1212871287128712,True,1,eliminated,7.0,False
+28,7,Hannah Brown,Alan Bersten,1st Place,1,8.5,9.0,8.5,,26.0,4.0,0.1287128712871287,True,0,finished,11.0,False
+28,8,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,8.6666,8.6666,8.6666,,25.9998,5.0,0.1347145480395773,True,1,eliminated,8.0,False
+28,8,James Van Der Beek,Emma Slater,Eliminated Week 10,5,10.6666,10.6666,10.6666,,31.9998,1.0,0.1658027598041857,True,0,eliminated,10.0,False
+28,8,Kel Mitchell,Witney Carson,2nd Place,2,9.6666,9.6666,10.6666,,29.9998,4.0,0.1554400225493162,True,0,finished,11.0,False
+28,8,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+28,8,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+28,8,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+28,8,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,7.0,7.0,6.0,,20.0,7.0,0.1036273725486945,True,0,eliminated,9.0,False
+28,8,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+28,8,Lauren Alaina,Gleb Savchenko,4th Place,4,8.0,8.0,8.0,,24.0,6.0,0.1243528470584334,True,0,finished,11.0,False
+28,8,Ally Brooke,Sasha Farber,3rd Place,3,10.0,10.0,10.0,,30.0,3.0,0.1554410588230417,True,0,finished,11.0,False
+28,8,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+28,8,Hannah Brown,Alan Bersten,1st Place,1,10.6666,9.6666,10.6666,,30.9998,2.0,0.160621391176751,True,0,finished,11.0,False
+28,9,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,8.0,True
+28,9,James Van Der Beek,Emma Slater,Eliminated Week 10,5,9.0,8.5,9.5,9.0,36.0,3.0,0.1726618705035971,True,0,eliminated,10.0,False
+28,9,Kel Mitchell,Witney Carson,2nd Place,2,9.0,9.0,9.5,9.5,37.0,2.0,0.1774580335731415,True,0,finished,11.0,False
+28,9,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,0.0,0.0,,,False,0,withdrew,2.0,True
+28,9,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+28,9,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,6.0,True
+28,9,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,6.5,6.0,6.5,6.0,25.0,6.0,0.1199040767386091,True,1,eliminated,9.0,False
+28,9,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+28,9,Lauren Alaina,Gleb Savchenko,4th Place,4,9.0,9.0,8.5,8.5,35.0,5.0,0.1678657074340527,True,0,finished,11.0,False
+28,9,Ally Brooke,Sasha Farber,3rd Place,3,10.0,10.0,10.0,10.0,40.0,1.0,0.1918465227817745,True,0,finished,11.0,False
+28,9,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,7.0,True
+28,9,Hannah Brown,Alan Bersten,1st Place,1,9.0,8.5,9.0,9.0,35.5,4.0,0.1702637889688249,True,0,finished,11.0,False
+28,10,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+28,10,James Van Der Beek,Emma Slater,Eliminated Week 10,5,8.5,8.5,8.5,,25.5,5.0,0.1854545454545454,True,1,eliminated,10.0,False
+28,10,Kel Mitchell,Witney Carson,2nd Place,2,9.5,9.5,9.5,,28.5,2.0,0.2072727272727272,True,0,finished,11.0,False
+28,10,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+28,10,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+28,10,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+28,10,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+28,10,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+28,10,Lauren Alaina,Gleb Savchenko,4th Place,4,9.0,9.0,9.0,,27.0,3.5,0.1963636363636363,True,0,finished,11.0,False
+28,10,Ally Brooke,Sasha Farber,3rd Place,3,10.0,9.5,10.0,,29.5,1.0,0.2145454545454545,True,0,finished,11.0,False
+28,10,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+28,10,Hannah Brown,Alan Bersten,1st Place,1,9.0,9.0,9.0,,27.0,3.5,0.1963636363636363,True,0,finished,11.0,False
+28,11,Kate Flannery,Pasha Pashkov,Eliminated Week 8,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+28,11,James Van Der Beek,Emma Slater,Eliminated Week 10,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,10.0,True
+28,11,Kel Mitchell,Witney Carson,2nd Place,2,10.0,9.5,10.0,,29.5,2.0,0.2521367521367521,True,0,finished,11.0,False
+28,11,Ray Lewis,Cheryl Burke,Withdrew,11,0.0,0.0,0.0,,0.0,,,False,0,withdrew,2.0,True
+28,11,Lamar Odom,Peta Murgatroyd,Eliminated Week 4,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+28,11,Sailor Brinkley-Cook,Valentin Chmerkovskiy,Eliminated Week 6,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+28,11,Sean Spicer,Lindsay Arnold,Eliminated Week 9,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+28,11,Mary Wilson,Brandon Armstrong,Eliminated Week 2,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+28,11,Lauren Alaina,Gleb Savchenko,4th Place,4,9.5,9.5,9.5,,28.5,4.0,0.2435897435897435,True,0,finished,11.0,False
+28,11,Ally Brooke,Sasha Farber,3rd Place,3,10.0,10.0,10.0,,30.0,1.0,0.2564102564102564,True,0,finished,11.0,False
+28,11,Karamo Brown,Jenna Johnson,Eliminated Week 7,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+28,11,Hannah Brown,Alan Bersten,1st Place,1,10.0,9.5,9.5,,29.0,3.0,0.2478632478632478,True,0,finished,11.0,False

@@ -1,0 +1,155 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+34,1,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,4.0,5.0,,,9.0,13.5,0.0548780487804878,True,0,eliminated,2.0,False
+34,1,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,6.0,6.0,,,12.0,7.0,0.073170731707317,True,0,eliminated,8.0,False
+34,1,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,6.0,6.0,,,12.0,7.0,0.073170731707317,True,0,finished,11.0,False
+34,1,Baron Davis,Britt Stewart,Eliminated Week 2,13,5.0,5.0,,,10.0,10.5,0.0609756097560975,True,0,eliminated,2.0,False
+34,1,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,5.0,5.0,,,10.0,10.5,0.0609756097560975,True,0,finished,11.0,False
+34,1,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,5.0,4.0,,,9.0,13.5,0.0548780487804878,True,0,eliminated,9.0,False
+34,1,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,8.0,7.0,,,15.0,1.5,0.0914634146341463,True,0,finished,11.0,False
+34,1,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,7.0,7.0,,,14.0,3.0,0.0853658536585365,True,0,eliminated,4.0,False
+34,1,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,7.0,6.0,,,13.0,4.5,0.0792682926829268,True,0,eliminated,3.0,False
+34,1,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,5.0,5.0,,,10.0,10.5,0.0609756097560975,True,0,eliminated,6.0,False
+34,1,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,7.0,6.0,,,13.0,4.5,0.0792682926829268,True,0,finished,11.0,False
+34,1,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,6.0,6.0,,,12.0,7.0,0.073170731707317,True,0,eliminated,7.0,False
+34,1,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,7.0,8.0,,,15.0,1.5,0.0914634146341463,True,0,eliminated,10.0,False
+34,1,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,5.0,5.0,,,10.0,10.5,0.0609756097560975,True,0,finished,11.0,False
+34,2,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,5.0,5.0,5.0,,15.0,14.0,0.0539568345323741,True,1,eliminated,2.0,False
+34,2,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,7.0,6.0,6.0,,19.0,10.0,0.0683453237410072,True,0,eliminated,8.0,False
+34,2,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,7.0,7.0,7.0,,21.0,6.5,0.0755395683453237,True,0,finished,11.0,False
+34,2,Baron Davis,Britt Stewart,Eliminated Week 2,13,6.0,6.0,6.0,,18.0,11.5,0.0647482014388489,True,1,eliminated,2.0,False
+34,2,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,8.0,7.0,7.0,,22.0,2.5,0.079136690647482,True,0,finished,11.0,False
+34,2,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,6.0,5.0,5.0,,16.0,13.0,0.0575539568345323,True,0,eliminated,9.0,False
+34,2,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,8.0,7.0,7.0,,22.0,2.5,0.079136690647482,True,0,finished,11.0,False
+34,2,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,7.0,7.0,7.0,,21.0,6.5,0.0755395683453237,True,0,eliminated,4.0,False
+34,2,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,7.0,7.0,7.0,,21.0,6.5,0.0755395683453237,True,0,eliminated,3.0,False
+34,2,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,6.0,6.0,6.0,,18.0,11.5,0.0647482014388489,True,0,eliminated,6.0,False
+34,2,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,7.0,7.0,7.0,,21.0,6.5,0.0755395683453237,True,0,finished,11.0,False
+34,2,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,8.0,7.0,7.0,,22.0,2.5,0.079136690647482,True,0,eliminated,7.0,False
+34,2,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,7.0,7.0,8.0,,22.0,2.5,0.079136690647482,True,0,eliminated,10.0,False
+34,2,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,7.0,6.0,7.0,,20.0,9.0,0.0719424460431654,True,0,finished,11.0,False
+34,3,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,3,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,7.0,7.0,7.0,,21.0,8.5,0.0817120622568093,True,0,eliminated,8.0,False
+34,3,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,7.0,7.0,7.0,,21.0,8.5,0.0817120622568093,True,0,finished,11.0,False
+34,3,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,3,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,8.0,8.0,8.0,,24.0,1.5,0.0933852140077821,True,0,finished,11.0,False
+34,3,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,6.0,6.0,6.0,,18.0,11.5,0.0700389105058365,True,0,eliminated,9.0,False
+34,3,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,8.0,7.0,7.0,,22.0,6.0,0.0856031128404669,True,0,finished,11.0,False
+34,3,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,7.0,8.0,7.0,,22.0,6.0,0.0856031128404669,True,0,eliminated,4.0,False
+34,3,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,6.0,6.0,6.0,,18.0,11.5,0.0700389105058365,True,1,eliminated,3.0,False
+34,3,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,8.0,7.0,7.0,,22.0,6.0,0.0856031128404669,True,0,eliminated,6.0,False
+34,3,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,8.0,7.0,8.0,,23.0,3.5,0.0894941634241245,True,0,finished,11.0,False
+34,3,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,7.0,6.0,6.0,,19.0,10.0,0.0739299610894941,True,0,eliminated,7.0,False
+34,3,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,8.0,8.0,8.0,,24.0,1.5,0.0933852140077821,True,0,eliminated,10.0,False
+34,3,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,7.0,8.0,8.0,,23.0,3.5,0.0894941634241245,True,0,finished,11.0,False
+34,4,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,4,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,7.0,7.0,7.0,,21.0,9.5,0.0846774193548387,True,0,eliminated,8.0,False
+34,4,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,8.0,8.0,8.0,,24.0,3.0,0.0967741935483871,True,0,finished,11.0,False
+34,4,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,4,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,8.0,8.0,8.0,,24.0,3.0,0.0967741935483871,True,0,finished,11.0,False
+34,4,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,6.0,6.0,6.0,,18.0,11.0,0.0725806451612903,True,0,eliminated,9.0,False
+34,4,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,7.0,7.0,8.0,,22.0,8.0,0.0887096774193548,True,0,finished,11.0,False
+34,4,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,8.0,7.0,8.0,,23.0,6.0,0.0927419354838709,True,1,eliminated,4.0,False
+34,4,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+34,4,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,7.0,7.0,7.0,,21.0,9.5,0.0846774193548387,True,0,eliminated,6.0,False
+34,4,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,8.0,8.0,8.0,,24.0,3.0,0.0967741935483871,True,0,finished,11.0,False
+34,4,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,7.0,8.0,8.0,,23.0,6.0,0.0927419354838709,True,0,eliminated,7.0,False
+34,4,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,9.0,8.0,8.0,,25.0,1.0,0.1008064516129032,True,0,eliminated,10.0,False
+34,4,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,7.0,8.0,8.0,,23.0,6.0,0.0927419354838709,True,0,finished,11.0,False
+34,5,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,5,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,7.0,7.0,7.0,8.0,29.0,8.5,0.0926517571884984,True,0,eliminated,8.0,False
+34,5,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,8.0,7.0,7.0,8.0,30.0,6.5,0.0958466453674121,True,0,finished,11.0,False
+34,5,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,5,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,8.0,8.0,8.0,8.0,32.0,5.0,0.1022364217252396,True,0,finished,11.0,False
+34,5,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,6.0,6.0,6.0,6.0,24.0,10.0,0.0766773162939297,True,0,eliminated,9.0,False
+34,5,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,8.0,9.0,9.0,9.0,35.0,2.5,0.1118210862619808,True,0,finished,11.0,False
+34,5,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+34,5,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,3.0,True
+34,5,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,7.0,8.0,7.0,8.0,30.0,6.5,0.0958466453674121,True,0,eliminated,6.0,False
+34,5,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,8.0,9.0,9.0,9.0,35.0,2.5,0.1118210862619808,True,0,finished,11.0,False
+34,5,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,8.0,7.0,7.0,7.0,29.0,8.5,0.0926517571884984,True,0,eliminated,7.0,False
+34,5,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,9.0,8.0,8.0,8.0,33.0,4.0,0.1054313099041533,True,0,eliminated,10.0,False
+34,5,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,9.0,9.0,9.0,9.0,36.0,1.0,0.1150159744408945,True,0,finished,11.0,False
+34,6,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,6,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,9.0,9.0,9.0,9.0,36.0,4.0,0.1058823529411764,True,0,eliminated,8.0,False
+34,6,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,9.0,9.0,9.0,9.0,36.0,4.0,0.1058823529411764,True,0,finished,11.0,False
+34,6,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,6,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,10.0,9.0,10.0,10.0,39.0,1.5,0.1147058823529411,True,0,finished,11.0,False
+34,6,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,7.0,6.0,7.0,7.0,27.0,10.0,0.0794117647058823,True,0,eliminated,9.0,False
+34,6,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,9.0,9.0,9.0,9.0,36.0,4.0,0.1058823529411764,True,0,finished,11.0,False
+34,6,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+34,6,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,3.0,True
+34,6,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,7.0,7.0,7.0,7.0,28.0,9.0,0.0823529411764705,True,1,eliminated,6.0,False
+34,6,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,9.0,9.0,8.0,9.0,35.0,6.0,0.1029411764705882,True,0,finished,11.0,False
+34,6,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,8.0,8.0,8.0,8.0,32.0,7.5,0.0941176470588235,True,0,eliminated,7.0,False
+34,6,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,10.0,9.0,10.0,10.0,39.0,1.5,0.1147058823529411,True,0,eliminated,10.0,False
+34,6,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,8.0,8.0,8.0,8.0,32.0,7.5,0.0941176470588235,True,0,finished,11.0,False
+34,7,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,7,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,8.5,8.5,8.5,9.5,35.0,6.0,0.1054216867469879,True,0,eliminated,8.0,False
+34,7,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,8.0,8.0,8.0,8.0,32.0,8.0,0.0963855421686747,True,0,finished,11.0,False
+34,7,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,7,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,10.0,9.0,9.0,10.0,38.0,4.5,0.1144578313253012,True,0,finished,11.0,False
+34,7,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,7.25,7.25,7.25,7.25,29.0,9.0,0.0873493975903614,True,0,eliminated,9.0,False
+34,7,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,10.75,9.75,9.75,10.75,41.0,3.0,0.1234939759036144,True,0,finished,11.0,False
+34,7,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+34,7,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,3.0,True
+34,7,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,6.0,True
+34,7,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,11.0,11.0,10.0,11.0,43.0,1.0,0.1295180722891566,True,0,finished,11.0,False
+34,7,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,8.5,8.5,8.5,8.5,34.0,7.0,0.1024096385542168,True,1,eliminated,7.0,False
+34,7,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,10.25,10.25,10.25,11.25,42.0,2.0,0.1265060240963855,True,0,eliminated,10.0,False
+34,7,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,9.75,9.75,8.75,9.75,38.0,4.5,0.1144578313253012,True,0,finished,11.0,False
+34,8,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,8,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,9.5,9.0,9.5,9.0,37.0,7.0,0.1227197346600331,True,1,eliminated,8.0,False
+34,8,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,9.0,9.5,10.0,9.0,37.5,6.0,0.1243781094527363,True,0,finished,11.0,False
+34,8,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,8,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,10.0,9.5,10.0,9.5,39.0,2.0,0.1293532338308457,True,0,finished,11.0,False
+34,8,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,8.0,8.5,9.5,8.0,34.0,8.0,0.1127694859038142,True,0,eliminated,9.0,False
+34,8,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,9.0,9.5,10.0,9.5,38.0,4.5,0.1260364842454394,True,0,finished,11.0,False
+34,8,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+34,8,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,3.0,True
+34,8,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,6.0,True
+34,8,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,9.5,10.0,9.5,9.5,38.5,3.0,0.1276948590381426,True,0,finished,11.0,False
+34,8,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,7.0,True
+34,8,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,9.5,10.0,10.0,10.0,39.5,1.0,0.1310116086235489,True,0,eliminated,10.0,False
+34,8,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,9.0,9.5,10.0,9.5,38.0,4.5,0.1260364842454394,True,0,finished,11.0,False
+34,9,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,9,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,8.0,True
+34,9,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,9.0,9.0,9.0,9.0,36.0,6.0,0.1333333333333333,True,0,finished,11.0,False
+34,9,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,2.0,True
+34,9,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,9.5,10.5,9.5,9.5,39.0,5.0,0.1444444444444444,True,0,finished,11.0,False
+34,9,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,8.0,7.0,7.0,7.0,29.0,7.0,0.1074074074074074,True,1,eliminated,9.0,False
+34,9,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,10.5,10.5,10.5,10.5,42.0,2.0,0.1555555555555555,True,0,finished,11.0,False
+34,9,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,4.0,True
+34,9,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,3.0,True
+34,9,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,6.0,True
+34,9,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,10.0,10.0,10.0,10.0,40.0,4.0,0.1481481481481481,True,0,finished,11.0,False
+34,9,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,0.0,0.0,0.0,0.0,0.0,,,False,0,eliminated,7.0,True
+34,9,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,10.5,10.5,10.5,10.5,42.0,2.0,0.1555555555555555,True,0,eliminated,10.0,False
+34,9,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,10.5,10.5,10.5,10.5,42.0,2.0,0.1555555555555555,True,0,finished,11.0,False
+34,10,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,10,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+34,10,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,9.5,9.5,9.5,,28.5,4.5,0.1656976744186046,True,0,finished,11.0,False
+34,10,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,10,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,9.5,9.5,9.5,,28.5,4.5,0.1656976744186046,True,0,finished,11.0,False
+34,10,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+34,10,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,10.0,9.5,10.0,,29.5,1.0,0.1715116279069767,True,0,finished,11.0,False
+34,10,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+34,10,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+34,10,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+34,10,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,9.5,10.0,9.5,,29.0,2.5,0.1686046511627907,True,0,finished,11.0,False
+34,10,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+34,10,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,9.0,10.0,10.0,,29.0,2.5,0.1686046511627907,True,1,eliminated,10.0,False
+34,10,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,9.0,9.0,9.5,,27.5,6.0,0.1598837209302325,True,0,finished,11.0,False
+34,11,Corey Feldman,Jenna Johnson,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,11,Danielle Fishel,Pasha Pashkov,Eliminated Week 8,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+34,11,Elaine Hendrix,Alan Bersten (Rashad Jennings week 9),5th Place,5,9.6666,9.6666,9.6666,,28.9998,5.0,0.1963875280869962,True,0,finished,11.0,False
+34,11,Baron Davis,Britt Stewart,Eliminated Week 2,13,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+34,11,Jordan Chiles,Ezra Sosa (Apolo Anton Ohno week 9),3rd Place,3,9.6666,10.0,10.0,,29.666600000000003,2.5,0.2009031179782509,True,0,finished,11.0,False
+34,11,Andy Richter,Emma Slater/Kaitlyn Bristowe (week 9),Eliminated Week 9,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+34,11,Robert Irwin,Witney Carson (Xoshitl Gomez week 9),1st Place,1,9.6666,10.0,10.0,,29.666600000000003,2.5,0.2009031179782509,True,0,finished,11.0,False
+34,11,Hilaria Baldwin,Gleb Savchenko,Eliminated Week 4,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+34,11,Lauren Jauregui,Brandon Armstrong,Eliminated Week 3,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+34,11,Scott Hoying,Rylee Arnold,Eliminated Week 6,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+34,11,Alix Earle,Val Chmerkovskiy (Joey Graziadei week 9),2nd Place,2,10.0,10.0,10.0,,30.0,1.0,0.2031609129238783,True,0,finished,11.0,False
+34,11,Jen Affleck,Jan Ravnik,Eliminated Week 7,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+34,11,Whitney Leavitt,Mark Ballas,Eliminated Week 10,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,10.0,True
+34,11,Dylan Efron,Daniella Karagach (Rumer Willis week 9),4th Place,4,9.6666,9.6666,10.0,,29.3332,4.0,0.1986453230326235,True,0,finished,11.0,False

@@ -1,0 +1,37 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+1,1,John O'Hurley,Charlotte Jorgensen,2nd Place,2,7.0,7.0,6.0,,20.0,2.0,0.1834862385321101,True,0,finished,6.0,False
+1,1,Kelly Monaco,Alec Mazo,1st Place,1,5.0,4.0,4.0,,13.0,6.0,0.1192660550458715,True,0,finished,6.0,False
+1,1,Evander Holyfield,Edyta Sliwinska,Eliminated Week 3,5,5.0,7.0,6.0,,18.0,4.5,0.1651376146788991,True,0,eliminated,3.0,False
+1,1,Rachel Hunter,Jonathan Roberts,Eliminated Week 4,4,7.0,6.0,7.0,,20.0,2.0,0.1834862385321101,True,0,eliminated,4.0,False
+1,1,Joey McIntyre,Ashly DelGrosso,3rd Place,3,7.0,7.0,6.0,,20.0,2.0,0.1834862385321101,True,0,finished,5.0,False
+1,1,Trista Sutter,Louis van Amstel,Eliminated Week 2,6,6.0,6.0,6.0,,18.0,4.5,0.1651376146788991,True,0,eliminated,2.0,False
+1,2,John O'Hurley,Charlotte Jorgensen,2nd Place,2,8.0,9.0,9.0,,26.0,1.0,0.2148760330578512,True,0,finished,6.0,False
+1,2,Kelly Monaco,Alec Mazo,1st Place,1,5.0,6.0,6.0,,17.0,5.0,0.140495867768595,True,0,finished,6.0,False
+1,2,Evander Holyfield,Edyta Sliwinska,Eliminated Week 3,5,5.0,4.0,5.0,,14.0,6.0,0.1157024793388429,True,0,eliminated,3.0,False
+1,2,Rachel Hunter,Jonathan Roberts,Eliminated Week 4,4,8.0,8.0,8.0,,24.0,2.0,0.1983471074380165,True,0,eliminated,4.0,False
+1,2,Joey McIntyre,Ashly DelGrosso,3rd Place,3,8.0,7.0,6.0,,21.0,3.0,0.1735537190082644,True,0,finished,5.0,False
+1,2,Trista Sutter,Louis van Amstel,Eliminated Week 2,6,6.0,7.0,6.0,,19.0,4.0,0.1570247933884297,True,1,eliminated,2.0,False
+1,3,John O'Hurley,Charlotte Jorgensen,2nd Place,2,9.0,8.0,7.0,,24.0,2.0,0.2264150943396226,True,0,finished,6.0,False
+1,3,Kelly Monaco,Alec Mazo,1st Place,1,6.0,7.0,8.0,,21.0,4.0,0.1981132075471698,True,0,finished,6.0,False
+1,3,Evander Holyfield,Edyta Sliwinska,Eliminated Week 3,5,5.0,4.0,4.0,,13.0,5.0,0.1226415094339622,True,1,eliminated,3.0,False
+1,3,Rachel Hunter,Jonathan Roberts,Eliminated Week 4,4,8.0,9.0,9.0,,26.0,1.0,0.2452830188679245,True,0,eliminated,4.0,False
+1,3,Joey McIntyre,Ashly DelGrosso,3rd Place,3,7.0,7.0,8.0,,22.0,3.0,0.2075471698113207,True,0,finished,5.0,False
+1,3,Trista Sutter,Louis van Amstel,Eliminated Week 2,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+1,4,John O'Hurley,Charlotte Jorgensen,2nd Place,2,7.0,8.0,6.0,,21.0,3.0,0.2282608695652173,True,0,finished,6.0,False
+1,4,Kelly Monaco,Alec Mazo,1st Place,1,9.0,9.0,8.0,,26.0,1.0,0.2826086956521739,True,0,finished,6.0,False
+1,4,Evander Holyfield,Edyta Sliwinska,Eliminated Week 3,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+1,4,Rachel Hunter,Jonathan Roberts,Eliminated Week 4,4,7.0,9.0,9.0,,25.0,2.0,0.2717391304347826,True,1,eliminated,4.0,False
+1,4,Joey McIntyre,Ashly DelGrosso,3rd Place,3,7.0,6.0,7.0,,20.0,4.0,0.217391304347826,True,0,finished,5.0,False
+1,4,Trista Sutter,Louis van Amstel,Eliminated Week 2,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+1,5,John O'Hurley,Charlotte Jorgensen,2nd Place,2,9.0,9.0,9.0,,27.0,1.0,0.3698630136986301,True,0,finished,6.0,False
+1,5,Kelly Monaco,Alec Mazo,1st Place,1,8.5,7.5,7.5,,23.5,2.0,0.3219178082191781,True,0,finished,6.0,False
+1,5,Evander Holyfield,Edyta Sliwinska,Eliminated Week 3,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+1,5,Rachel Hunter,Jonathan Roberts,Eliminated Week 4,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+1,5,Joey McIntyre,Ashly DelGrosso,3rd Place,3,8.5,7.0,7.0,,22.5,3.0,0.3082191780821918,True,0,finished,5.0,False
+1,5,Trista Sutter,Louis van Amstel,Eliminated Week 2,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+1,6,John O'Hurley,Charlotte Jorgensen,2nd Place,2,9.0,9.0,9.0,,27.0,2.0,0.4954128440366973,True,0,finished,6.0,False
+1,6,Kelly Monaco,Alec Mazo,1st Place,1,8.5,9.5,9.5,,27.5,1.0,0.5045871559633027,True,0,finished,6.0,False
+1,6,Evander Holyfield,Edyta Sliwinska,Eliminated Week 3,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+1,6,Rachel Hunter,Jonathan Roberts,Eliminated Week 4,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+1,6,Joey McIntyre,Ashly DelGrosso,3rd Place,3,0.0,0.0,0.0,,0.0,,,False,0,finished,5.0,True
+1,6,Trista Sutter,Louis van Amstel,Eliminated Week 2,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True

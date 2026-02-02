@@ -117,12 +117,17 @@ def simulate_percent_last_two(panel_s: pd.DataFrame, pest_s: pd.DataFrame, alpha
             if len(active_set) == 0:
                 break
             if len(active_set) == 2:
-                scores = []
+                # Decide by smoothed-percent S = alpha * qJ + (1-alpha) * p_est (use percentage not raw judge rank)
+                qJ = compute_qJ_for_week(panel_s, w, active_set)
+                pmap = get_p_for_week(pest_s, w, active_set)
+                rows2 = []
                 for name in active_set:
-                    s = panel_s[(panel_s['week'] == w) & (panel_s['celebrity_name'].astype(str) == name)]['total_judge_score'].astype(float).sum()
-                    scores.append((name, float(s)))
-                scores_sorted = sorted(scores, key=lambda x: (x[1], x[0]))
-                elim_name = scores_sorted[0][0]
+                    total_j = float(panel_s[(panel_s['week'] == w) & (panel_s['celebrity_name'].astype(str) == name)]['total_judge_score'].astype(float).sum())
+                    rows2.append({'celebrity_name': name, 'qJ': qJ.get(name, 0.0), 'p_est': pmap.get(name, 0.0), 'total_judge_score': total_j})
+                df2 = pd.DataFrame(rows2)
+                df2['S'] = alpha * df2['qJ'] + (1.0 - alpha) * df2['p_est']
+                # eliminate the contestant with the lowest S (worst under smoothed-percent)
+                elim_name = df2.sort_values(by=['S', 'total_judge_score', 'p_est', 'celebrity_name'], ascending=[True, True, True, True])['celebrity_name'].iloc[0]
                 elim.append(elim_name)
                 active_set = [a for a in active_set if a != elim_name]
                 continue

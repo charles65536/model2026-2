@@ -1,0 +1,121 @@
+season,week,celebrity_name,ballroom_partner,results,placement,judge1_score,judge2_score,judge3_score,judge4_score,total_judge_score,judge_rank,judge_percent,active,true_elim_flag,exit_type,exit_week,data_anomaly_zero_score
+13,1,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,5.0,5.0,5.0,,15.0,11.0,0.0691244239631336,True,0,eliminated,2.0,False
+13,1,David Arquette,Kym Johnson,Eliminated Week 7,6,6.0,6.0,6.0,,18.0,6.0,0.0829493087557603,True,0,eliminated,7.0,False
+13,1,Ricki Lake,Derek Hough,3rd Place,3,7.0,6.0,7.0,,20.0,4.0,0.0921658986175115,True,0,finished,10.0,False
+13,1,J.R. Martinez,Karina Smirnoff,1st Place,1,8.0,7.0,7.0,,22.0,1.5,0.1013824884792626,True,0,finished,10.0,False
+13,1,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,5.0,4.0,5.0,,14.0,12.0,0.064516129032258,True,1,eliminated,1.0,False
+13,1,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,7.0,7.0,7.0,,21.0,3.0,0.0967741935483871,True,0,eliminated,9.0,False
+13,1,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,8.0,7.0,7.0,,22.0,1.5,0.1013824884792626,True,0,eliminated,4.0,False
+13,1,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,7.0,6.0,6.0,,19.0,5.0,0.0875576036866359,True,0,eliminated,3.0,False
+13,1,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,6.0,5.0,6.0,,17.0,7.5,0.0783410138248847,True,0,eliminated,5.0,False
+13,1,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,6.0,5.0,6.0,,17.0,7.5,0.0783410138248847,True,0,eliminated,6.0,False
+13,1,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,5.0,5.0,6.0,,16.0,9.5,0.0737327188940092,True,0,eliminated,8.0,False
+13,1,Rob Kardashian,Cheryl Burke,2nd Place,2,6.0,5.0,5.0,,16.0,9.5,0.0737327188940092,True,0,finished,10.0,False
+13,2,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,7.0,7.0,7.0,,21.0,5.5,0.0941704035874439,True,1,eliminated,2.0,False
+13,2,David Arquette,Kym Johnson,Eliminated Week 7,6,6.0,6.0,6.0,,18.0,9.5,0.0807174887892376,True,0,eliminated,7.0,False
+13,2,Ricki Lake,Derek Hough,3rd Place,3,8.0,7.0,8.0,,23.0,1.0,0.1031390134529148,True,0,finished,10.0,False
+13,2,J.R. Martinez,Karina Smirnoff,1st Place,1,7.0,7.0,8.0,,22.0,2.5,0.0986547085201793,True,0,finished,10.0,False
+13,2,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,2,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,6.0,7.0,6.0,,19.0,8.0,0.085201793721973,True,0,eliminated,9.0,False
+13,2,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,7.0,7.0,7.0,,21.0,5.5,0.0941704035874439,True,0,eliminated,4.0,False
+13,2,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,8.0,7.0,7.0,,22.0,2.5,0.0986547085201793,True,0,eliminated,3.0,False
+13,2,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,6.0,6.0,6.0,,18.0,9.5,0.0807174887892376,True,0,eliminated,5.0,False
+13,2,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,6.0,5.0,6.0,,17.0,11.0,0.0762331838565022,True,0,eliminated,6.0,False
+13,2,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,6.0,8.0,7.0,,21.0,5.5,0.0941704035874439,True,0,eliminated,8.0,False
+13,2,Rob Kardashian,Cheryl Burke,2nd Place,2,7.0,7.0,7.0,,21.0,5.5,0.0941704035874439,True,0,finished,10.0,False
+13,3,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,3,David Arquette,Kym Johnson,Eliminated Week 7,6,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,0,eliminated,7.0,False
+13,3,Ricki Lake,Derek Hough,3rd Place,3,9.0,9.0,9.0,,27.0,1.0,0.1139240506329113,True,0,finished,10.0,False
+13,3,J.R. Martinez,Karina Smirnoff,1st Place,1,9.0,8.0,9.0,,26.0,2.5,0.1097046413502109,True,0,finished,10.0,False
+13,3,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,3,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,0,eliminated,9.0,False
+13,3,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,8.0,9.0,9.0,,26.0,2.5,0.1097046413502109,True,0,eliminated,4.0,False
+13,3,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,1,eliminated,3.0,False
+13,3,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,8.0,7.0,8.0,,23.0,8.0,0.0970464135021097,True,0,eliminated,5.0,False
+13,3,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,6.0,6.0,6.0,,18.0,10.0,0.0759493670886076,True,0,eliminated,6.0,False
+13,3,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,7.0,7.0,7.0,,21.0,9.0,0.0886075949367088,True,0,eliminated,8.0,False
+13,3,Rob Kardashian,Cheryl Burke,2nd Place,2,8.0,8.0,8.0,,24.0,5.5,0.1012658227848101,True,0,finished,10.0,False
+13,4,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,4,David Arquette,Kym Johnson,Eliminated Week 7,6,8.0,7.0,8.0,,23.0,5.0,0.1100478468899521,True,0,eliminated,7.0,False
+13,4,Ricki Lake,Derek Hough,3rd Place,3,10.0,9.0,10.0,,29.0,1.0,0.138755980861244,True,0,finished,10.0,False
+13,4,J.R. Martinez,Karina Smirnoff,1st Place,1,8.0,9.0,9.0,,26.0,2.0,0.124401913875598,True,0,finished,10.0,False
+13,4,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,4,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,8.0,8.0,8.0,,24.0,3.5,0.1148325358851674,True,0,eliminated,9.0,False
+13,4,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,7.0,7.0,7.0,,21.0,7.0,0.1004784688995215,True,1,eliminated,4.0,False
+13,4,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+13,4,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,7.0,6.0,7.0,,20.0,9.0,0.0956937799043062,True,0,eliminated,5.0,False
+13,4,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,7.0,7.0,7.0,,21.0,7.0,0.1004784688995215,True,0,eliminated,6.0,False
+13,4,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,7.0,7.0,7.0,,21.0,7.0,0.1004784688995215,True,0,eliminated,8.0,False
+13,4,Rob Kardashian,Cheryl Burke,2nd Place,2,8.0,8.0,8.0,,24.0,3.5,0.1148325358851674,True,0,finished,10.0,False
+13,5,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,5,David Arquette,Kym Johnson,Eliminated Week 7,6,8.0,9.0,8.0,,25.0,2.5,0.1329787234042553,True,0,eliminated,7.0,False
+13,5,Ricki Lake,Derek Hough,3rd Place,3,8.0,8.0,8.0,,24.0,4.5,0.1276595744680851,True,0,finished,10.0,False
+13,5,J.R. Martinez,Karina Smirnoff,1st Place,1,9.0,9.0,10.0,,28.0,1.0,0.1489361702127659,True,0,finished,10.0,False
+13,5,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,5,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,8.0,8.0,8.0,,24.0,4.5,0.1276595744680851,True,0,eliminated,9.0,False
+13,5,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+13,5,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+13,5,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,6.0,6.0,7.0,,19.0,8.0,0.101063829787234,True,1,eliminated,5.0,False
+13,5,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,7.0,7.0,7.0,,21.0,7.0,0.1117021276595744,True,0,eliminated,6.0,False
+13,5,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,7.0,7.0,8.0,,22.0,6.0,0.1170212765957446,True,0,eliminated,8.0,False
+13,5,Rob Kardashian,Cheryl Burke,2nd Place,2,9.0,8.0,8.0,,25.0,2.5,0.1329787234042553,True,0,finished,10.0,False
+13,6,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,6,David Arquette,Kym Johnson,Eliminated Week 7,6,8.0,7.0,8.0,,23.0,4.0,0.1385542168674698,True,0,eliminated,7.0,False
+13,6,Ricki Lake,Derek Hough,3rd Place,3,10.0,9.0,10.0,,29.0,1.5,0.1746987951807229,True,0,finished,10.0,False
+13,6,J.R. Martinez,Karina Smirnoff,1st Place,1,10.0,9.0,10.0,,29.0,1.5,0.1746987951807229,True,0,finished,10.0,False
+13,6,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,6,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,7.0,6.0,7.0,,20.0,6.0,0.1204819277108433,True,0,eliminated,9.0,False
+13,6,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+13,6,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+13,6,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+13,6,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,7.0,6.0,6.0,,19.0,7.0,0.1144578313253012,True,1,eliminated,6.0,False
+13,6,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,9.0,7.0,8.0,,24.0,3.0,0.144578313253012,True,0,eliminated,8.0,False
+13,6,Rob Kardashian,Cheryl Burke,2nd Place,2,8.0,7.0,7.0,,22.0,5.0,0.1325301204819277,True,0,finished,10.0,False
+13,7,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,7,David Arquette,Kym Johnson,Eliminated Week 7,6,8.0,7.5,8.0,,23.5,5.0,0.1604095563139931,True,1,eliminated,7.0,False
+13,7,Ricki Lake,Derek Hough,3rd Place,3,9.0,8.5,9.0,,26.5,1.0,0.1808873720136518,True,0,finished,10.0,False
+13,7,J.R. Martinez,Karina Smirnoff,1st Place,1,8.5,7.5,8.0,,24.0,4.0,0.1638225255972696,True,0,finished,10.0,False
+13,7,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,7,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,8.5,8.0,8.5,,25.0,3.0,0.1706484641638225,True,0,eliminated,9.0,False
+13,7,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+13,7,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+13,7,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+13,7,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+13,7,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,7.5,7.0,7.5,,22.0,6.0,0.1501706484641638,True,0,eliminated,8.0,False
+13,7,Rob Kardashian,Cheryl Burke,2nd Place,2,9.0,8.0,8.5,,25.5,2.0,0.1740614334470989,True,0,finished,10.0,False
+13,8,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,8,David Arquette,Kym Johnson,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+13,8,Ricki Lake,Derek Hough,3rd Place,3,8.5,8.5,9.0,,26.0,2.5,0.2007722007722007,True,0,finished,10.0,False
+13,8,J.R. Martinez,Karina Smirnoff,1st Place,1,10.0,10.0,10.0,,30.0,1.0,0.2316602316602316,True,0,finished,10.0,False
+13,8,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,8,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,8.5,9.0,8.5,,26.0,2.5,0.2007722007722007,True,0,eliminated,9.0,False
+13,8,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+13,8,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+13,8,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+13,8,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+13,8,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,7.5,7.0,7.5,,22.0,5.0,0.1698841698841698,True,1,eliminated,8.0,False
+13,8,Rob Kardashian,Cheryl Burke,2nd Place,2,8.5,8.5,8.5,,25.5,4.0,0.1969111969111969,True,0,finished,10.0,False
+13,9,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,9,David Arquette,Kym Johnson,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+13,9,Ricki Lake,Derek Hough,3rd Place,3,10.8333,11.3333,11.3333,,33.4999,1.0,0.2827007708893286,True,0,finished,10.0,False
+13,9,J.R. Martinez,Karina Smirnoff,1st Place,1,9.5,9.0,9.5,,28.0,3.0,0.2362879168266533,True,0,finished,10.0,False
+13,9,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,9,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,8.1666,8.1666,8.1666,,24.4998,4.0,0.2067502394524871,True,1,eliminated,9.0,False
+13,9,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+13,9,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+13,9,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+13,9,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+13,9,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+13,9,Rob Kardashian,Cheryl Burke,2nd Place,2,11.1666,10.6666,10.6666,,32.4998,2.0,0.2742610728315309,True,0,finished,10.0,False
+13,10,Elisabetta Canalis,Valentin Chmerkovskiy,Eliminated Week 2,11,0.0,0.0,0.0,,0.0,,,False,0,eliminated,2.0,True
+13,10,David Arquette,Kym Johnson,Eliminated Week 7,6,0.0,0.0,0.0,,0.0,,,False,0,eliminated,7.0,True
+13,10,Ricki Lake,Derek Hough,3rd Place,3,9.3333,9.3333,9.3333,,27.999899999999997,3.0,0.3313613318879616,True,0,finished,10.0,False
+13,10,J.R. Martinez,Karina Smirnoff,1st Place,1,9.3333,9.1666,9.6666,,28.1665,2.0,0.3333329388541484,True,0,finished,10.0,False
+13,10,Metta World Peace (Ron),Peta Murgatroyd,Eliminated Week 1,12,0.0,0.0,0.0,,0.0,,,False,0,eliminated,1.0,True
+13,10,Hope Solo,Maksim Chmerkoskiy,Eliminated Week 9,4,0.0,0.0,0.0,,0.0,,,False,0,eliminated,9.0,True
+13,10,Chynna Phillips,Tony Dovolani,Eliminated Week 4,9,0.0,0.0,0.0,,0.0,,,False,0,eliminated,4.0,True
+13,10,Kristin Cavallari,Mark Ballas,Eliminated Week 3,10,0.0,0.0,0.0,,0.0,,,False,0,eliminated,3.0,True
+13,10,Carson Kressley,Anna Trebunskaya,Eliminated Week 5,8,0.0,0.0,0.0,,0.0,,,False,0,eliminated,5.0,True
+13,10,Chaz Bono,Lacey Schwimmer,Eliminated Week 6,7,0.0,0.0,0.0,,0.0,,,False,0,eliminated,6.0,True
+13,10,Nancy Grace,Tristan MacManus,Eliminated Week 8,5,0.0,0.0,0.0,,0.0,,,False,0,eliminated,8.0,True
+13,10,Rob Kardashian,Cheryl Burke,2nd Place,2,9.4444,9.4444,9.4444,,28.3332,1.0,0.33530572925789,True,0,finished,10.0,False

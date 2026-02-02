@@ -133,7 +133,13 @@ def solve_season_qp(panel_season: pd.DataFrame,
     if elim_col and elim_col in panel_season.columns:
         for w in weeks:
             mask = (panel_season[week_col] == w) & (panel_season[elim_col].astype(bool))
-            E_t[w] = panel_season.loc[mask, name_col].astype(str).tolist()
+            # Only keep elimination names that are present in the active participant list for that week
+            raw_elims = panel_season.loc[mask, name_col].astype(str).tolist()
+            active_names = set(A_t.get(w, []))
+            filtered = [n for n in raw_elims if n in active_names]
+            # If some elim names were not in active list, fall back to including them if they appear in panel rows for that week (best-effort)
+            # but avoid producing elimination constraints for unknown participants which causes KeyError later.
+            E_t[w] = filtered
     else:
         # No elimination info available in panel -> no elimination constraints will be used
         for w in weeks:
@@ -352,7 +358,8 @@ def main(argv: List[str]) -> None:
     p.add_argument('--alpha', type=float, default=0.5, help='Alpha weight for judges (default 0.5)')
     p.add_argument('--lambda_reg', type=float, default=1000.0, help='Lambda regularization for xi (default 1000)')
     p.add_argument('--entropy-reg', type=float, default=0.0, help='Per-week entropy regularization (default 0.0). Larger values encourage higher entropy per week (more uniform p).')
-    p.add_argument('--popularity-reg', type=float, default=0.0, help='Popularity coupling regularization (default 0.0). Larger values encourage p to be closer to judges share qJ via squared difference penalty.')
+    p.add_argument('--popularity-reg', type=float, default=0.0, help='(Deprecated) Popularity coupling regularization. Use --lambda-judge instead.')
+    p.add_argument('--lambda-judge', type=float, default=None, help='Judge-anchor penalty weight (lambda1). Adds lambda1 * sum_t sum_i (p_{i,t} - qJ_{i,t})^2 to the objective. If provided, overrides --popularity-reg.')
     p.add_argument('--name-col', default='celebrity_name', help='Column name for contestant name in panel')
     p.add_argument('--score-col', default='total_judge_score', help='Column name for judges total score in panel')
     p.add_argument('--week-col', default='week', help='Column name for week index in panel')
@@ -364,10 +371,15 @@ def main(argv: List[str]) -> None:
     p.add_argument('--margin-penalty', type=float, default=0.0, help='Penalty weight for squared hinge when margin is violated. Larger values push p_est to respect margin more.')
     args = p.parse_args(argv)
 
+    # Decide popularity / judge-anchor regularization: prefer explicit --lambda-judge
+    popularity = args.popularity_reg
+    if args.lambda_judge is not None:
+        popularity = args.lambda_judge
+
     solve_panel(args.panel, args.out_p, args.out_xi,
                 name_col=args.name_col, score_col=args.score_col, week_col=args.week_col,
                 active_col=args.active_col, elim_col=args.elim_col,
-                alpha=args.alpha, lambda_reg=args.lambda_reg, entropy_reg=args.entropy_reg, popularity_reg=args.popularity_reg, verbose=args.verbose, hard_consistency=args.hard_consistency,
+                alpha=args.alpha, lambda_reg=args.lambda_reg, entropy_reg=args.entropy_reg, popularity_reg=popularity, verbose=args.verbose, hard_consistency=args.hard_consistency,
                 margin=args.margin, margin_penalty=args.margin_penalty)
 
 
