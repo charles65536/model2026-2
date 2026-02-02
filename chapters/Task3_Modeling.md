@@ -171,6 +171,42 @@ so that more precisely identified observations exert greater influence in estima
 ### 3.8 Interpretation for Task 3
 
 Together, these models allow us to:
-- quantify the contribution of professional dancers to technical evaluations and audience preferences,
-- assess whether celebrity attributes affect judges and audiences differently,
-- determine how these effects translate into elimination risk and overall competition outcomes.
+
+**Task 3 — Modeling Summary**
+
+- **Models:** Model A (judges mixed model), Model B (audience mixed model), Model C (discrete-time elimination via GEE).
+- **Output files:** summaries and objects are in `src/eval/task3/` (see `modelA_judges_summary.txt`, `modelB_audience_summary.txt`, `modelC_elim_summary.txt`) and per-entity strengths in `src/eval/task3/` (CSV files `celebrity_strengths_*.csv`, `pro_strengths_*.csv`).
+
+- **Model A — Judges (MixedLM)**
+	- Outcome: `yJ` = logit(judge share).
+	- Fixed effects: `age`, categorical `celebrity_industry` (season fixed effects included in the main fit).
+	- Random effects: celebrity and professional (random intercepts).
+	- Key estimates (refit without `week_num`): `age` = -0.090 (SE 0.011, p < 0.001).
+	- Variance components: celebrity Var = 3.265, pro Var = 3.265, residual (scale) = 15.2148.
+	- ICCs (approx): ICC_celebrity ≈ 0.15, ICC_pro ≈ 0.15 (15% of variance each on the log-odds scale).
+
+- **Model B — Audience (MixedLM)**
+	- Outcome: `yV` = logit(p_est) (audience share from solver predictions).
+	- Fixed effects: `yJ` (logit judge share), `age`, categorical `celebrity_industry`.
+	- Random effects: celebrity and professional (random intercepts).
+	- Key estimates (refit without `week_num`): `yJ` = 0.263 (SE 0.051, p < 0.001); `age` = -0.061 (SE 0.016, p < 0.001).
+	- Variance components: celebrity Var = 8.614, pro Var = 8.614, residual (scale) = 1.7289.
+	- ICCs (approx): ICC_celebrity ≈ 0.45, ICC_pro ≈ 0.45 (about 45% of variance each).
+
+- **Model C — Elimination (GEE, Binomial)**
+	- Outcome: `E` = indicator of elimination in a given week.
+	- Estimation: GEE (Binomial) with `Exchangeable` working correlation, clustering by `ballroom_partner` (pro). Fixed effects included `yJ`, `yV`, `age`, industry and season dummies.
+	- Notes: the GEE run displayed numerical instability for the full design (some coefficients reported as `NaN` due to link overflow / separation). GEE is population-averaged and does not produce BLUPs; use Models A/B BLUPs for per-entity strength estimates.
+
+- **Per-entity strengths (BLUPs)**
+	- For Models A and B we extracted random-intercept BLUPs (per-celebrity and per-pro) and saved them as CSVs in `src/eval/task3/`:
+		- `celebrity_strengths_judges.csv`, `celebrity_strengths_audience.csv`, `pro_strengths_judges.csv`, `pro_strengths_audience.csv`.
+	- Each CSV contains `entity`, `n_obs`, `blup_logodds` and `odds_ratio = exp(blup_logodds)`.
+	- Interpretation: BLUPs are shrunken estimates of entity-specific intercepts on the log-odds scale — positive BLUP → higher-than-average baseline log-odds (judges or audience) after adjusting for covariates.
+
+- **Recommendations**
+	- Inspect top/bottom ranked entities and their `n_obs` in the strength CSVs to ensure estimates are not dominated by very small samples.
+	- If BLUPs for elimination (Model C) are required, consider fitting a logistic GLMM (random intercept) using a GLMM-capable solver (e.g., R `lme4`) as GEE does not provide BLUPs.
+	- Produce diagnostic plots for MixedLM residuals and BLUP shrinkage (I can add plotting scripts if you want).
+
+Summary files and CSVs are written to `src/eval/task3/`.
