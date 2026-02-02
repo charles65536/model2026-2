@@ -14,9 +14,10 @@ import os
 import csv
 import glob
 from typing import Dict, List, Set
+from src.tools.paths import REPLAYS_DIR, DATA_CLEAN, EVAL_DIR, ensure_dirs
 
-PANEL = 'output/data_cleaned/intermediate_weekly_panel.csv'
-EVAL_DIR = 'src/eval'
+PANEL = os.path.join(DATA_CLEAN, 'intermediate_weekly_panel.csv')
+ensure_dirs([EVAL_DIR])
 SUMMARY_OUT = os.path.join(EVAL_DIR, 'jaccard_summary_allseasons.csv')
 
 # helper to build participants per week from panel (handles contestant-level exit_week or weekly rows)
@@ -47,7 +48,10 @@ if 'true_elim_flag' not in panel.columns:
 
 seasons = sorted(panel['season'].dropna().unique(), key=lambda x: float(x) if str(x).replace('.', '', 1).isdigit() else str(x))
 # detect available replay methods by scanning replay files in the eval dir
-replay_files = glob.glob(os.path.join(EVAL_DIR, 'replay_*_season*.csv'))
+# prefer canonical replays dir, fall back to eval dir
+replay_files = glob.glob(os.path.join(REPLAYS_DIR, 'replay_*_season*.csv'))
+if not replay_files:
+    replay_files = glob.glob(os.path.join(EVAL_DIR, 'replay_*_season*.csv'))
 methods = set()
 for fp in replay_files:
     fname = os.path.basename(fp)
