@@ -1,0 +1,79 @@
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:                           E   No. Observations:                 6976
+Model:                                 GEE   No. clusters:                       60
+Method:                        Generalized   Min. cluster size:                   9
+                      Estimating Equations   Max. cluster size:                 444
+Family:                           Binomial   Mean cluster size:               116.3
+Dependence structure:         Exchangeable   Num. iterations:                    60
+Date:                     Mon, 02 Feb 2026   Scale:                           1.000
+Covariance type:                    robust   Time:                         19:28:08
+================================================================================================
+                                   coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                               nan        nan        nan        nan         nan         nan
+yJ                                  nan        nan        nan        nan         nan         nan
+yV                                  nan        nan        nan        nan         nan         nan
+age                                 nan        nan        nan        nan         nan         nan
+ind_Astronaut                       nan        nan        nan        nan         nan         nan
+ind_Athlete                         nan        nan        nan        nan         nan         nan
+ind_Beauty Pagent                   nan        nan        nan        nan         nan         nan
+ind_Comedian                        nan        nan        nan        nan         nan         nan
+ind_Con artist                      nan        nan        nan        nan         nan         nan
+ind_Conservationist                 nan        nan        nan        nan         nan         nan
+ind_Entrepreneur                    nan        nan        nan        nan         nan         nan
+ind_Fashion Designer                nan        nan        nan        nan         nan         nan
+ind_Fitness Instructor              nan        nan        nan        nan         nan         nan
+ind_Journalist                      nan        nan        nan        nan         nan         nan
+ind_Magician                        nan        nan        nan        nan         nan         nan
+ind_Military                        nan        nan        nan        nan         nan         nan
+ind_Model                           nan        nan        nan        nan         nan         nan
+ind_Motivational Speaker            nan        nan        nan        nan         nan         nan
+ind_Musician                        nan        nan        nan        nan         nan         nan
+ind_News Anchor                     nan        nan        nan        nan         nan         nan
+ind_Politician                      nan        nan        nan        nan         nan         nan
+ind_Producer                        nan        nan        nan        nan         nan         nan
+ind_Racing Driver                   nan        nan        nan        nan         nan         nan
+ind_Radio Personality               nan        nan        nan        nan         nan         nan
+ind_Singer/Rapper                   nan        nan        nan        nan         nan         nan
+ind_Social Media Personality        nan        nan        nan        nan         nan         nan
+ind_Social media personality        nan        nan        nan        nan         nan         nan
+ind_Sports Broadcaster              nan        nan        nan        nan         nan         nan
+ind_TV Personality                  nan        nan        nan        nan         nan         nan
+sea_10                              nan        nan        nan        nan         nan         nan
+sea_11                              nan        nan        nan        nan         nan         nan
+sea_12                              nan        nan        nan        nan         nan         nan
+sea_13                              nan        nan        nan        nan         nan         nan
+sea_14                              nan        nan        nan        nan         nan         nan
+sea_15                              nan        nan        nan        nan         nan         nan
+sea_16                              nan        nan        nan        nan         nan         nan
+sea_17                              nan        nan        nan        nan         nan         nan
+sea_18                              nan        nan        nan        nan         nan         nan
+sea_19                              nan        nan        nan        nan         nan         nan
+sea_2                               nan        nan        nan        nan         nan         nan
+sea_20                              nan        nan        nan        nan         nan         nan
+sea_21                              nan        nan        nan        nan         nan         nan
+sea_22                              nan        nan        nan        nan         nan         nan
+sea_23                              nan        nan        nan        nan         nan         nan
+sea_24                              nan        nan        nan        nan         nan         nan
+sea_25                              nan        nan        nan        nan         nan         nan
+sea_26                              nan        nan        nan        nan         nan         nan
+sea_27                              nan        nan        nan        nan         nan         nan
+sea_28                              nan        nan        nan        nan         nan         nan
+sea_29                              nan        nan        nan        nan         nan         nan
+sea_3                               nan        nan        nan        nan         nan         nan
+sea_30                              nan        nan        nan        nan         nan         nan
+sea_31                              nan        nan        nan        nan         nan         nan
+sea_32                              nan        nan        nan        nan         nan         nan
+sea_33                              nan        nan        nan        nan         nan         nan
+sea_34                              nan        nan        nan        nan         nan         nan
+sea_4                               nan        nan        nan        nan         nan         nan
+sea_5                               nan        nan        nan        nan         nan         nan
+sea_6                               nan        nan        nan        nan         nan         nan
+sea_7                               nan        nan        nan        nan         nan         nan
+sea_8                               nan        nan        nan        nan         nan         nan
+sea_9                               nan        nan        nan        nan         nan         nan
+==============================================================================
+Skew:                             nan   Kurtosis:                          nan
+Centered skew:                    nan   Centered kurtosis:                 nan
+==============================================================================

@@ -1,0 +1,41 @@
+                            Mixed Linear Model Regression Results
+=============================================================================================
+Model:                        MixedLM             Dependent Variable:             yJ         
+No. Observations:             6976                Method:                         REML       
+No. Groups:                   34                  Scale:                          15.2148    
+Min. group size:              62                  Log-Likelihood:                 -19786.0642
+Max. group size:              280                 Converged:                      Yes        
+Mean group size:              205.2                                                          
+---------------------------------------------------------------------------------------------
+                                                  Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+---------------------------------------------------------------------------------------------
+Intercept                                         -0.868    0.514 -1.688 0.091  -1.876  0.140
+C(celebrity_industry)[T.Astronaut]                -0.589    2.816 -0.209 0.834  -6.108  4.929
+C(celebrity_industry)[T.Athlete]                  -0.603    0.380 -1.589 0.112  -1.347  0.141
+C(celebrity_industry)[T.Beauty Pagent]            -5.106    2.790 -1.830 0.067 -10.574  0.361
+C(celebrity_industry)[T.Comedian]                 -1.045    0.836 -1.250 0.211  -2.682  0.593
+C(celebrity_industry)[T.Con artist]               -5.882    2.825 -2.082 0.037 -11.419 -0.345
+C(celebrity_industry)[T.Conservationist]           0.841    2.707  0.311 0.756  -4.465  6.146
+C(celebrity_industry)[T.Entrepreneur]             -1.472    1.403 -1.049 0.294  -4.221  1.277
+C(celebrity_industry)[T.Fashion Designer]         -0.407    2.776 -0.147 0.884  -5.848  5.035
+C(celebrity_industry)[T.Fitness Instructor]        1.726    2.712  0.636 0.525  -3.591  7.042
+C(celebrity_industry)[T.Journalist]               -2.776    2.822 -0.984 0.325  -8.306  2.754
+C(celebrity_industry)[T.Magician]                 -4.430    2.805 -1.579 0.114  -9.929  1.068
+C(celebrity_industry)[T.Military]                  0.911    2.707  0.336 0.737  -4.395  6.216
+C(celebrity_industry)[T.Model]                    -3.265    0.719 -4.544 0.000  -4.673 -1.857
+C(celebrity_industry)[T.Motivational Speaker]      1.957    2.713  0.721 0.471  -3.360  7.274
+C(celebrity_industry)[T.Musician]                  1.773    2.714  0.653 0.514  -3.546  7.091
+C(celebrity_industry)[T.News Anchor]              -0.424    1.610 -0.263 0.792  -3.581  2.732
+C(celebrity_industry)[T.Politician]               -0.876    1.613 -0.543 0.587  -4.037  2.285
+C(celebrity_industry)[T.Producer]                  1.980    2.699  0.734 0.463  -3.310  7.271
+C(celebrity_industry)[T.Racing Driver]             0.229    1.381  0.166 0.868  -2.477  2.935
+C(celebrity_industry)[T.Radio Personality]        -2.846    1.401 -2.031 0.042  -5.593 -0.100
+C(celebrity_industry)[T.Singer/Rapper]            -0.644    0.427 -1.507 0.132  -1.481  0.194
+C(celebrity_industry)[T.Social Media Personality] -0.084    1.008 -0.083 0.934  -2.059  1.891
+C(celebrity_industry)[T.Social media personality]  1.014    2.705  0.375 0.708  -4.289  6.316
+C(celebrity_industry)[T.Sports Broadcaster]       -1.863    1.981 -0.940 0.347  -5.745  2.020
+C(celebrity_industry)[T.TV Personality]           -0.615    0.416 -1.477 0.140  -1.431  0.201
+age                                               -0.090    0.011 -8.375 0.000  -0.112 -0.069
+celebrity Var                                      3.265                                     
+pro Var                                            3.265                                     
+=============================================================================================
