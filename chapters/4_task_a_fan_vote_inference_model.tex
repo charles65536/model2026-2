@@ -53,38 +53,34 @@ The smoothness term is computed only for contestants active in consecutive weeks
 apply to all active contestants and weeks. Hyperparameters $(\lambda_1,\lambda_2)$ are selected by replay-based diagnostics (Section~\ref{subsec:a_hyper_impl}).\cite{boyd2004convex,bubeck2015convex}
 
 \begin{algorithm}[H]
-\caption{Season-wise fan vote inference via constrained QP}
-\label{alg:qp_inference}
-\small  % 字号缩小，避免公式溢出
-\begin{algorithmic}[1]  % [1] 表示显示行号，algpseudocode必须加
-    % ---- 输入输出定义（algpseudocode标准写法）----
+\caption{KPI2 computation via profile optimization (per season)}
+\label{alg:kpi2}
+\small
+\begin{algorithmic}[1]  % [1] 显示行号，algpseudocode 必须加
+    % ---- 输入输出（algpseudocode 标准首字母大写）----
     \Require 
-        Weekly panel for season $s$: active sets $A_{s,t}$, judges' totals $J_{i,t}$, eliminated sets $E_{s,t}$; hyperparameters $\alpha,\lambda_1,\lambda_2$.
+        Season $s$ weekly panel: active sets $A_{s,t}$, eliminated sets $E_{s,t}$, judges' shares $q^J_{i,t}$; 
+        main-model hyperparameters $\alpha,\lambda_1,\lambda_2$; 
+        KPI2 params $\varepsilon,\delta_{\mathrm{obj}},\delta_\xi$; 
+        a slice selector $\mathcal{S}$ (set of $(i,t)$ pairs to evaluate).
     \Ensure 
-        Point estimates $\hat p_{i,t}$ and slack diagnostics $\hat \xi_t$ for all eligible weeks.
+        Interval bounds $\{p^{\min}_{i,t},p^{\max}_{i,t}\}$ and identifiability scores $\{\mathrm{ID}_{i,t}\}$ for $(i,t)\in\mathcal{S}$.
 
-    % ---- 算法步骤 ----
-    \State Compute judges' share for each week $t$: 
-    \[
-    q^J_{i,t} = \frac{J_{i,t}}{\sum_{r\in A_{s,t}} J_{r,t}}
-    \]
-    \State Define decision variables $\{p_{i,t}\}_{i\in A_{s,t}}$ with constraints:
-    \[
-    p_{i,t} \ge 0, \quad \sum_{i\in A_{s,t}} p_{i,t} = 1
-    \]
-    \State For each week $t$, define percent-based composite score $S^{(P)}_{i,t}$ and slack variable $\xi_t$:
-    \[
-    S^{(P)}_{i,t} = \alpha q^{J}_{i,t} + (1-\alpha)p_{i,t}, \quad \xi_t \ge 0
-    \]
-    \State Add elimination-consistency constraints:
-    \[
-    S^{(P)}_{e,t} \le S^{(P)}_{i,t} + \xi_t \quad \forall e\in E_{s,t}, \, i\in A_{s,t}\setminus E_{s,t}
-    \]
-    \State Solve the quadratic program (QP) to minimize the objective function:
-    \[
-    \mathcal{L} = \sum_{t=2}^{T_s}\sum_{i\in A_{s,t}\cap A_{s,t-1}} (p_{i,t}-p_{i,t-1})^2 + \lambda_1\sum_{t=1}^{T_s}\sum_{i\in A_{s,t}}(p_{i,t}-q^J_{i,t})^2 + \lambda_2\sum_{t=1}^{T_s}\xi_t^2
-    \]
-    \State Output $\hat p_{i,t}$ (inferred vote shares) and $\hat \xi_t$ (slack diagnostics); flag weeks with large $\hat \xi_t$ as potential special-episode mismatches.
+    % ---- 算法核心步骤 ----
+    \State \textbf{Solve main inference QP} for season $s$ to obtain $(\hat{\mathbf{p}},\hat{\boldsymbol{\xi}})$ and $\mathrm{OPT}_s=\mathcal{L}(\hat{\mathbf{p}},\hat{\boldsymbol{\xi}})$.
+    \State \textbf{Define common constraints}: simplex constraints \eqref{eq:kpi2_simplex}--\eqref{eq:kpi2_elim} and slack nonnegativity \eqref{eq:kpi2_slack_nonneg}.
+    \State \textbf{Add KPI2 shells}: objective shell \eqref{eq:kpi2_shell_quad} (or its SOC form) and slack cap \eqref{eq:kpi2_slack_cap}.
+    \State Choose evaluation slice $\mathcal{S}$ (e.g., late-phase weeks and/or controversial cases) to control computation.
+    
+    % 循环结构（algpseudocode 首字母大写）
+    \For{each $(i,t)\in\mathcal{S}$}
+        \State Solve profile-min optimization \eqref{eq:kpi2_profile_min} to get $p^{\min}_{i,t}$.
+        \State Solve profile-max optimization \eqref{eq:kpi2_profile_max} to get $p^{\max}_{i,t}$.
+        \State Compute width $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ and identifiability score $\mathrm{ID}_{i,t}=1/(w_{i,t}+\varepsilon)$.
+        \State Sanity check: verify $p^{\min}_{i,t}\le \hat p_{i,t}\le p^{\max}_{i,t}$; if violated, align constraints with the main QP.
+    \EndFor
+    
+    \State Aggregate $\mathrm{ID}_{i,t}$ by week/season/phase using medians and quantiles as defined in the KPI registry.
 \end{algorithmic}
 \end{algorithm}
 
@@ -227,6 +223,8 @@ We then set the interval width $w_{i,t}=p^{\max}_{i,t}-p^{\min}_{i,t}$ and ident
 \textbf{Hyperparameters and defaults.}
 Task~A uses $\alpha$ (judge weight in the percent rule), $\lambda_1$ (strength of the judge-anchor prior),
 $\lambda_2$ (penalty on constraint violations via $\xi_t$), and the KPI2 parameters $\varepsilon,\delta_{\mathrm{obj}},\delta_\xi$.
+Given the particularity of this problem, we manually set the $\alpha \in [0.3, 0.7]$. In practice, we tested all possibel values within this range at an
+interval of 0.01. To simplify the model and enhance its robustness, we ultimately selected $\alpha = 0.5$ for all subsequent tests and analyses.
 Unless otherwise stated, we set $\alpha=0.5$ as the nominal DWTS percent weighting and treat $\alpha$ as a sensitivity knob in later stress tests.
 
 We tune $(\lambda_1,\lambda_2)$ by replay-based diagnostics. Increasing $\lambda_2$ enforces stricter elimination-consistency
@@ -237,6 +235,15 @@ the observed eliminations. Practically, we tune $(\lambda_1,\lambda_2)$ on a sea
 (i) the frequency and magnitude of nonzero slacks $\hat\xi_t$,
 (ii) the stability of inferred top-$k$ vote shares across adjacent weeks, and
 (iii) downstream replay fidelity in Task~B.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{output/fig/p_sharpen_gap_boxplot.png}
+    \caption{KPI2 identifiability scores by phase across all seasons under the percent rule with $\alpha=0.5$.}
+    \label{fig:p_sharpen_gap_boxplot}
+\end{figure}
+
+
 
 \textbf{Special episodes and multi-elimination weeks.}
 Our formulation supports (a) multi-elimination weeks by allowing $|E_{s,t}|>1$ and enforcing the same pairwise inequalities against all non-eliminated contestants, and

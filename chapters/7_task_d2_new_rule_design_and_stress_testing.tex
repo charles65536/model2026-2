@@ -24,22 +24,34 @@ S_{i,t}=w_J\,q^J_{i,t} + (1-w_J)\,p_{i,t}.
 \]
 
 
-\subsubsection{Rule A (incumbent baseline): combined score determines elimination}
+\subsubsection{\textit{Bottom-2} Rule (\textit{B2 Rule}): combined Bottom-2 $\rightarrow$ judges' save}
 \label{subsubsec:d2_ruleA}
 
-Rule A represents the show's baseline mechanism, in which judges' scores and fan votes are combined into a single weekly
-decision score, and elimination is determined directly by that combined ordering:
+\textit{Bottom-2 (B2)} rule represents the show's baseline mechanism in which judges' scores and fan votes are first combined into a weekly
+ordering, after which the final elimination is decided by judges within the Bottom-2 risk set (a ``judges' save'' safeguard).
+
 \begin{enumerate}
-  \item Compute $S_{i,t}$ for all active contestants.
-  \item Eliminate the contestant with the lowest $q^J_{i,t}$.
+  \item \textbf{Combined ranking.} For each active contestant $i$, compute the combined score
+  \[S_{i,t}=w_J\,q^J_{i,t} + (1-w_J)\,p_{i,t}\] and form the combined ranking for week $t$.
+  \item \textbf{Risk set (Bottom-2).} Let $B_t$ be the set of the two lowest-ranked contestants under $S_{i,t}$.
+  \item \textbf{Judges' save.} Within $B_t$, compare judges' performance and eliminate the contestant with the lower judges' signal:
+  \[
+  \tilde{E}_{s,t}=\arg\min_{i\in B_t} q^J_{i,t}.
+  \]
+  Equivalently, the contestant with the higher judges' score within the Bottom-2 is saved.
 \end{enumerate}
-This baseline can preserve audience influence when fan weights are large, but it also permits ``popularity-only'' survival:
-a contestant with weak judges' performance may avoid elimination if fan support is sufficiently strong, which can weaken professionalism.
+
+\paragraph{Interpretation.}
+ preserves audience influence because fan support affects who enters the Bottom-2,
+while the judges' save prevents extreme popularity from overriding performance at the final decision margin.
+However, because the risk set itself is defined by the combined score, strong fan support can still keep a weak performer
+out of the Bottom-2, which limits professionalism---especially in early weeks when performance dispersion is large.
 
 
-\subsubsection{Rule B (proposed): judges-only gating $\rightarrow$ fan-aware decision within the risk set}
+\subsubsection{\textit{Professional Bottom-2} Rule (\textit{PB2}): judges-only gating $\rightarrow$ fan-aware decision within the risk set}
 \label{subsubsec:d2_ruleB}
 
+Compared to \textit{B2}, our key modification is to move the judges-only safeguard from the decision stage to the gating stage.
 Our proposed institutional change is a \emph{two-stage gate-and-decide} mechanism that makes professionalism structural:
 judges alone define who is at risk, and fan influence is applied only within that performance-defined boundary.
 
@@ -52,7 +64,7 @@ judges alone define who is at risk, and fan influence is applied only within tha
   \]
 \end{enumerate}
 
-\paragraph{Why Rule B improves professionalism.}
+\paragraph{Why \textit{Professional Bottom-2} improves professionalism.}
 By construction, elimination is always decided among the lowest-performing contestants according to judges.
 This prevents extreme popularity from overriding performance signals outside the judges-defined bottom tail,
 thereby strengthening professionalism, especially in early weeks when performance dispersion is largest.
@@ -75,10 +87,15 @@ The phase boundary ($K$ or a week threshold $t_0$) and the band size $k$ are int
 \subsubsection{Stress testing via replay}
 \label{subsubsec:d2_stress}
 
-What kind of stress test we employed to evaluate Rule B and select parameters?
+We evaluate Rule B relative to the incumbent Rule A through counterfactual replay on the canonical season--week--contestant panel,
+under the same eligibility conventions as earlier sections. The goal is not a single-point ``optimal'' parameter, but a transparent
+parameter region that is robust across season formats and vote-uncertainty scenarios.
 
 \paragraph{Parameter sweep (control knobs).}
-
+We sweep:
+(i) judge weight $w_J$,
+(ii) the phase boundary ($K$ or $t_0$) for enabling late-stage mechanisms, and
+(iii) the late-stage band size $k$ and the frequency/placement of structured multi-elimination weeks (if enabled).
 
 \paragraph{Evaluation metrics (professionalism-first).}
 We report:
@@ -94,8 +111,12 @@ We report:
 \end{itemize}
 
 \paragraph{Robustness checks.}
-We conduct those robustness checks:
-
+We conduct three robustness checks:
+\begin{enumerate}
+  \item \textbf{Vote-uncertainty perturbations:} perturb/resample $p_{i,t}$ and track elimination and winner stability.
+  \item \textbf{Phase-boundary sensitivity:} vary $K$ (or $t_0$) and late-stage strength ($k$ and multi-elimination placement) to test brittleness.
+  \item \textbf{Format variation:} include special episodes (no-elimination and multi-elimination weeks) and verify decisions remain performance-grounded.
+\end{enumerate}
 
 \noindent In summary, Rule B makes professionalism a structural property through judges-only gating, while late-stage structured mechanisms
 preserve watchability without introducing randomness. Replay-based stress testing provides an interpretable policy region rather than a single tuned setting.

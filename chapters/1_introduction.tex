@@ -5,10 +5,9 @@ The dataset \cite{comap2026_problemC_data} spans 34 seasons with contestant attr
 \textbf{Our key methodological idea is to treat DWTS as a replayable inverse problem.}
 We first construct a canonical season--week--contestant panel with an explicit active set (excluding post-exit zero-score records and flagging special episodes).
 We then infer weekly fan vote \emph{shares} by solving a constrained optimization problem: elimination-consistency constraints encode the show's rule mechanics, slack variables absorb exceptional weeks, and a temporal smoothness prior selects a stable solution among many feasible explanations.
-With inferred fan support in hand, we implement a rule replay engine that simulates eliminations week-by-week under alternative aggregation schemes (rank-based vs.\ percent-based, with optional judges' save), enabling direct counterfactual comparisons.
+With inferred fan support in hand, we implement a rule replay engine that simulates eliminations week-by-week under alternative aggregation schemes (rank-based vs.\ percent-based) and the incumbent ``combined Bottom-2 + judges' save'' mechanism, enabling direct counterfactual comparisons.
 The inference module outputs not only point estimates $\hat{p}_{i,t}$ but also uncertainty summaries (e.g., feasible ranges and sensitivity margins).
 These outputs become direct inputs to the replay engine, closing the loop from latent-vote inference to counterfactual elimination paths and to quantitative evidence for rule comparison and new-system validation.
-
 
 \textbf{We evaluate models and voting rules using replay-based metrics that align with the show's decisions.}
 For vote inference, we report elimination-consistency rates, feasible-range widths (as an identifiability proxy), and sensitivity to regularization strength.
@@ -16,6 +15,7 @@ For rule comparisons and new-system design, we quantify outcome divergence (who 
 
 \textbf{To ensure interpretability, we benchmark against simple baselines}
 (e.g., judges-only elimination and naive fan-share models) and require that any added complexity yields measurable improvements in replay fidelity and stability.
-Building on inferred votes, we fit mixed-effects models to separately explain judges' scoring and fan preference, isolating professional-dancer effects and celebrity attributes, and we use these insights to design a parameterized voting system that balances fairness, suspense, and robustness.
+Building on inferred votes, we fit mixed-effects models to separately explain judges' scoring and fan preference, isolating professional-dancer effects and celebrity attributes.
+Finally, in \textbf{Task~D2} we propose a professionalism-first institutional redesign: judges alone define a small ``at-risk'' set (gate), and fan influence is applied only within that gate; late in the season we allow structured, performance-grounded suspense (e.g., bottom-$k$ bands or limited multi-elimination) and validate these mechanisms by replay and uncertainty stress testing.
 
 The remainder of the paper is organized as follows: Section 2 formalizes tasks, assumptions, and notation; Section 3 describes data processing and feature construction; Sections 4--7 present vote inference, rule replay, mechanism analysis, and the proposed voting system with robustness tests; Section 8 concludes; and Section 9 provides a memo to management.

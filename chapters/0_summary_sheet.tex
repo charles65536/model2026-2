@@ -1,11 +1,11 @@
 \begin{center}
   \textbf{\LARGE Summary Sheet}\\[0.35em]
-  \textbf{Team Control Number: \#M2625838}
+  \textbf{Team Control Number: \# 2625838}
 \end{center}
 
-\setlength{\parskip}{0.35em}
+\setlength{\parskip}{0.1em}
 \setlength{\parindent}{0pt}
-\setlist[itemize]{itemsep=0.15em, topsep=0.2em, parsep=0em, partopsep=0em}
+\setlist[itemize]{itemsep=0.10em, topsep=0.1em, parsep=0em, partopsep=0em}
 
 \small
 We study \emph{Dancing with the Stars} (DWTS) as an inverse problem: judges' scores and weekly eliminations are observed
@@ -18,10 +18,10 @@ which drives eliminations under different aggregation rules.
     under irregular show formats (no-elimination weeks, multi-elimination weeks, varying numbers of judges, and post-exit ``zero'' encodings).
     \item A convex inference model (Task A) that reconstructs latent fan vote shares consistent with observed eliminations, and an identifiability
     measure (KPI2) quantifying how uniquely votes are determined each week.
-    \item A replay engine (Tasks B/C) that re-simulates every season under percent-based versus rank-based aggregation (optionally with a bottom-two judges' save),
-    enabling controlled counterfactual comparisons and controversy case studies.
-    \item Mixed-effects attribution models (Task D1) separating drivers of judges' scores and fan support, and a simple, interpretable new voting rule (Task D2)
-    stress-tested by replay and uncertainty perturbations.
+    \item A replay engine (Tasks B/C) that re-simulates every season under percent-based versus rank-based aggregation, and faithfully implements the incumbent ``combined Bottom-2 + judges' save'' procedure as the baseline for controlled counterfactual comparisons.
+    \item Mixed-effects attribution models (Task D1) separating drivers of judges' scores and fan support, and a professionalism-first institutional redesign (Task D2):
+    a judges-only gating risk set followed by a fan-aware decision within the gate, with late-stage structured suspense mechanisms (bottom-$k$ band / limited multi-elimination)
+    evaluated through replay and uncertainty stress tests.
 \end{itemize}
 
 \subsection*{Sanity-check evidence (data integrity)}
@@ -32,15 +32,14 @@ These rule divergences are consistent with classical observations in voting and 
 These metrics validate consistent labeling and replay mechanics and serve as a baseline---not the final inferred-vote results. When counterfactual replays require post-exit inputs, we use a conservative, minimal-information imputation
 only to complete the replay, and we do not interpret these imputed segments as forecasting contestant performance.
 
-
 \subsection*{Key deliverables for decision-making}
 \begin{itemize}
     \item Season-by-season comparisons of how often rank vs.\ percent rules change eliminations and winners, and when judges' save overturns vote-driven outcomes.
     \item Uncertainty reports showing which weeks/contestants are non-identifiable from observed eliminations alone.
-    \item A recommended voting system with two intuitive control knobs (judge--fan balance and popularity compression), selected via multi-metric stress tests
-    to improve stability without sacrificing interpretability.
+    \item A recommended voting policy with interpretable control knobs (judge-gated risk set, judge--fan balance within the gate, and late-stage suspense strength),
+    selected via replay-based robustness tests under vote uncertainty.
 \end{itemize}
 
 \subsection*{Management recommendation}
-Pilot the proposed rule in a one-season ``shadow mode'' (computed in parallel with the broadcast rule) and adopt a parameter region that preserves replay fidelity
-on eligible weeks while improving stability under vote-uncertainty perturbations.
+Pilot the proposed judges-gated two-stage rule in a one-season ``shadow mode'' (computed in parallel with the broadcast rule) and adopt a parameter region that preserves replay fidelity
+on eligible weeks while improving professionalism and robustness under vote-uncertainty perturbations.
