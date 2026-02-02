@@ -1,11 +1,11 @@
 season,method,week,m,active_count,elim_pred
 15,js_sr,1,1,13,Pamela Anderson
-15,js_sr,2,1,13,Pamela Anderson
-15,js_sr,3,2,13,Pamela Anderson;Joey Fatone
-15,js_sr,4,1,13,Pamela Anderson
-15,js_sr,5,0,13,
-15,js_sr,6,1,13,Pamela Anderson
-15,js_sr,7,0,13,
-15,js_sr,8,2,13,Pamela Anderson;Joey Fatone
-15,js_sr,9,2,13,Pamela Anderson;Joey Fatone
-15,js_sr,10,0,13,
+15,js_sr,2,1,12,Bristol Palin
+15,js_sr,3,2,12,Joey Fatone;Bristol Palin
+15,js_sr,4,1,11,Drew Lachey
+15,js_sr,5,0,10,
+15,js_sr,6,1,10,Helio Castroneves
+15,js_sr,7,0,9,
+15,js_sr,8,2,9,Bristol Palin;Sabrina Bryan
+15,js_sr,9,2,7,Kirstie Alley;Gilles Marini
+15,js_sr,10,0,5,

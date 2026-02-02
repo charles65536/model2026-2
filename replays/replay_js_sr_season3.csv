@@ -1,11 +1,11 @@
 season,method,week,m,active_count,elim_pred
 3,js_sr,1,1,11,Tucker Carlson
-3,js_sr,2,1,11,Tucker Carlson
-3,js_sr,3,1,11,Tucker Carlson
-3,js_sr,4,1,11,Tucker Carlson
-3,js_sr,5,1,11,Tucker Carlson
-3,js_sr,6,0,11,
-3,js_sr,7,1,11,Tucker Carlson
-3,js_sr,8,1,11,Tucker Carlson
-3,js_sr,9,0,11,
-3,js_sr,10,0,11,
+3,js_sr,2,1,10,Jerry Springer
+3,js_sr,3,1,10,Emmitt Smith
+3,js_sr,4,1,10,Shanna Moakler
+3,js_sr,5,2,9,Harry Hamlin;Vivica A. Fox
+3,js_sr,6,0,7,
+3,js_sr,7,1,7,Sara Evans
+3,js_sr,8,1,6,Willa Ford
+3,js_sr,9,1,5,Jerry Springer
+3,js_sr,10,0,4,
