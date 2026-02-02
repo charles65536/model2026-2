@@ -10,10 +10,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-EVAL = os.path.join(ROOT, 'src', 'eval')
-OUTFIG = os.path.join(ROOT, 'output', 'fig', 'task3')
-os.makedirs(OUTFIG, exist_ok=True)
+from src.tools.paths import EVAL_DIR as EVAL, OUTPUT_FIG_DIR, ensure_dirs
+
+OUTFIG = os.path.join(OUTPUT_FIG_DIR, 'task3')
+ensure_dirs([OUTFIG])
 
 METHODS = ['rank', 'percent', 'percent_last_two', 'professional_bottom_two']
 
