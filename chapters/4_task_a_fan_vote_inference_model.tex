@@ -127,7 +127,7 @@ S^{(P)}_{j,\tau}=\alpha q^J_{j,\tau}+(1-\alpha)p_{j,\tau}.
 \]
 
 \textbf{Base constraints.}
-We impose simplex constraints for each week:\cite{aitchison1986compositional,pawlowsky2015compositional,filzmoser2018compositional}
+We impose simplex constraints for each week:\cite{aitchison1986compositional,pawlowsky2015compositional}
 \begin{align}
 & p_{j,\tau}\ge 0,\quad \forall j\in A_{s,\tau}, \forall \tau, \label{eq:kpi2_nonneg}\\
 & \sum_{j\in A_{s,\tau}}p_{j,\tau}=1,\quad \forall \tau. \label{eq:kpi2_simplex}
@@ -261,7 +261,7 @@ Unless otherwise stated, we set $\alpha=0.5$ as the nominal DWTS percent weighti
 We tune $(\lambda_1,\lambda_2)$ by replay-based diagnostics. Increasing $\lambda_2$ enforces stricter elimination-consistency
 (smaller $\xi_t$) at the cost of reduced feasibility for irregular-format weeks; decreasing $\lambda_2$ allows the model to absorb
 format mismatches but may underfit eliminations. Increasing $\lambda_1$ pulls inferred votes toward judges' score shares and helps
-avoid near-uniform solutions, while excessively large $\lambda_1$ may suppress genuine judge--fan disagreements that are evidenced by
+avoid near-uniform solutions, while excessively large $\lambda_1$ may suppress genuine judge-fan disagreements that are evidenced by
 the observed eliminations. Practically, we tune $(\lambda_1,\lambda_2)$ on a season-by-season basis by balancing
 (i) the frequency and magnitude of nonzero slacks $\hat\xi_t$,
 (ii) the stability of inferred top-$k$ vote shares across adjacent weeks, and
@@ -269,7 +269,7 @@ the observed eliminations. Practically, we tune $(\lambda_1,\lambda_2)$ on a sea
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\linewidth]{output/fig/p_sharpen_gap_boxplot.png}
+    \includegraphics[width=0.85\linewidth]{output/fig/p_sharpen_gap_boxplot.png}
     \caption{KPI2 identifiability scores by phase across all seasons under the percent rule with $\alpha=0.5$.}
     \label{fig:p_sharpen_gap_boxplot}
 \end{figure}

@@ -9,7 +9,7 @@
 \label{subsubsec:cleaning_principles}
 
 Our preprocessing is \emph{model-driven}: we only perform transformations required to
-(i) construct a reproducible season--week--contestant panel,
+(i) construct a reproducible season-week-contestant panel,
 (ii) define eligibility/denominator rules for KPI computation, and
 (iii) enable counterfactual replay under alternative voting schemes.
 We preserve the dataset's official encodings and control their impact through an explicit
@@ -17,35 +17,6 @@ We preserve the dataset's official encodings and control their impact through an
 A conservative, minimal-information \emph{imputation} is used \emph{only} when a counterfactual replay keeps an observed-exit
 contestant active beyond the observed data horizon, solely to close the replay loop
 (\emph{not} to predict future performance)~\cite{comap2026_problemC_pdf}.
-
-\paragraph{Principle A --- Respect official encodings (0 scores, N/A, irregular season length).}
-The official problem statement clarifies that (i) weeks with no elimination or multiple eliminations exist,
-(ii) \texttt{N/A} can mean either ``no 4th judge'' or ``weeks beyond a season's actual run'',
-and (iii) a score of 0 is recorded for celebrities after elimination (post-exit padding).
-We therefore treat these as \emph{structural encodings} rather than noise~\cite{comap2026_problemC_pdf}.
-
-\paragraph{Principle B --- Eligibility controls denominators (active-set construction).}
-A contestant is considered active in $(s,t)$ if at least one judge score exists for that week and the week
-does not exceed the contestant's exit week (eliminated week parsed from \texttt{results}, or an inferred
-withdraw week). Post-elimination zeros are retained for auditability but excluded from denominators via
-\texttt{active=\textbf{false}}.
-
-\paragraph{Principle C --- Within-week aggregation only; no judge identity tracking.}
-Because judge indices are not persistent identities across weeks/seasons, we only use within-week aggregates
-(weekly total, rank, and percent) and avoid modeling judge-specific time series at the preprocessing stage~\cite{comap2026_problemC_pdf}.
-
-\paragraph{Principle D --- Special episodes are handled explicitly.}
-Weeks with zero eliminations are represented by the empty eliminated set and included in KPI computation
-via an explicit empty-set convention for Jaccard similarity; multi-elimination weeks are evaluated by
-set-based agreement on the bottom-$k$ eliminated set.
-
-
-\subsubsection{Cleaning Principles}
-\label{subsubsec:cleaning_principles}
-
-Our preprocessing is \emph{model-driven}: we only perform transformations required to build a reproducible
-season--week--contestant panel and to support eligibility-aware KPI computation and rule replays.
-We adopt the following principles (write rules, not results):
 
 \begin{enumerate}
   \item \textbf{Respect official encodings (0 vs.\ N/A).}
@@ -221,7 +192,7 @@ We keep feature engineering minimal and aligned with downstream modeling needs:
 \subsection{Synthesis of Findings}
 \label{subsec:synthesis_findings}
 
-In summary, our preprocessing produces a canonical season--week--contestant panel that
+In summary, our preprocessing produces a canonical season-week-contestant panel that
 (i) respects the official encodings of \texttt{N/A} and post-elimination zeros,
 (ii) enforces denominator correctness through an explicit active-set definition, and
 (iii) enables reproducible baseline replay consistent with our KPI definitions.

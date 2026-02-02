@@ -86,13 +86,13 @@ implementable voting rule and selects parameters via replay-based stress tests.
 To evaluate models and rule variants consistently, we use the following KPIs and slices.
 
 \textbf{KPI1: Elimination Set Agreement (Jaccard Similarity).}
-On each season--week $(s,t)$, we compute the replayed eliminated set $\hat{E}_{s,t}$ under a specified rule
+On each season-week $(s,t)$, we compute the replayed eliminated set $\hat{E}_{s,t}$ under a specified rule
 and compare it to the observed eliminated-at-end-of-week set $E_{s,t}$ parsed from results. We measure
 set-level agreement by the Jaccard similarity
 \[
 J_{s,t}=\frac{|E_{s,t}\cap \hat{E}_{s,t}|}{|E_{s,t}\cup \hat{E}_{s,t}|}.
 \]
-KPI1 is reported as the week-level mean of $J_{s,t}$ over all counted season--week instances.
+KPI1 is reported as the week-level mean of $J_{s,t}$ over all counted season-week instances.
 Weeks with no elimination yield $E_{s,t}=\varnothing$ (and possibly $\hat{E}_{s,t}=\varnothing$); we adopt the
 convention $J_{s,t}=1$ when both sets are empty and include such weeks in the mean.
 

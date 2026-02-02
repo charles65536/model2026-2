@@ -1,41 +1,45 @@
-\textbf{To: Show Management}\\
-\textbf{Subject: Recommendation for a More Professional Yet Watchable Voting System}
+\noindent \textbf{To:} Show Management \\
+\textbf{Subject:} Recommendation for a More Professional Yet Watchable Voting System
 
-Our analyses indicate that controversy risk concentrates in weeks where judges' evaluations and audience preferences diverge.
-To prioritize technical merit while preserving an audience role, we recommend piloting \textit{Professional Bottom-2} (\textit{PB2}), a judges-gated two-stage voting policy,
-validated by replay-based stress tests: (i) pairwise Jaccard similarity across Percent/Rank/B2/PB2, (ii) controversial-case replays, and (iii) a unified bias test.
+\vspace{4pt}
+\noindent \textbf{Executive message.}
+Controversy concentrates in weeks where judges' evaluations and audience preferences diverge.
+To prioritize technical merit while preserving audience agency, we recommend piloting
+\textbf{Professional Bottom-2 (PB2)}, a judges-gated two-stage policy, validated by replay-based stress tests
+(Jaccard agreement, controversial-case replays, and a unified bias test). \cite{comap2026_problemC_pdf}
 
-\paragraph{Baseline reference (current mechanism).}
-The incumbent format can be summarized as ``combined Bottom-2 + judges' save'': contestants are first ranked by a combined
-judge--fan score, the Bottom-2 form an at-risk set, and judges decide which of the two is eliminated.
+\vspace{6pt}
+\noindent \textbf{Baseline (current mechanism).}
+The incumbent format is effectively \emph{combined Bottom-2 + judges' save}:
+contestants are ranked by a combined judge--fan score; the Bottom-2 form an at-risk set; judges choose who leaves. \cite{comap2026_problemC_pdf}
 
-\paragraph{Recommended policy (PB2: \textit{Professional Bottom-2}): judges-only gate $\rightarrow$ fan-aware decision within the gate.}
-Under PB2, each week proceeds in two stages:
+\vspace{6pt}
+\noindent \textbf{Recommendation (PB2).}
 \begin{enumerate}
-  \item \textbf{Judges-only gate (risk set).} Rank contestants by judges' performance share $q^J_{i,t}$ and designate the Bottom-2
-  (or Bottom-$k$ in late-stage variants) as the at-risk set.
-  \item \textbf{Fan-aware decision within the gate.} Within the at-risk set, eliminate the contestant with the lower transparent blended score
+  \item \textbf{Judges-only gate (risk set).} Rank contestants by judges' performance share $q^{J}_{i,t}$ and designate Bottom-2
+  (optionally Bottom-$k$ late in the season) as the at-risk set.
+  \item \textbf{Fan-aware decision within the gate.} Eliminate the contestant in the gate with the lower blended score
   \[
-  S_{i,t}=w_J\, q^J_{i,t} + (1-w_J)\, p_{i,t},
+    S_{i,t}= w_J\, q^{J}_{i,t} + (1-w_J)\, p_{i,t},
   \]
-  where $p_{i,t}$ denotes the inferred/proxy fan vote share.
+  where $p_{i,t}$ is inferred/proxy fan vote share. \cite{comap2026_problemC_pdf}
 \end{enumerate}
 
-\paragraph{Why this improves professionalism.}
-Because elimination is always decided among the judges-defined bottom performers, extreme popularity cannot keep a weak performer
-out of the at-risk set. This makes professionalism a structural property of the system rather than a tunable side effect.
+\vspace{6pt}
+\noindent \textbf{Why PB2 improves professionalism.}
+Under PB2, elimination is always decided among judges-defined low performers, so extreme popularity cannot
+keep a weak performer out of the risk set; professionalism becomes a structural property, not a side effect. \cite{comap2026_problemC_pdf}
 
-\paragraph{How we preserve watchability (without randomness).}
-To maintain suspense while remaining performance-grounded, we recommend a phase-dependent schedule:
-early weeks use Bottom-2 gating to emphasize professionalism; late in the season (when remaining contestants are few and performance gaps narrow),
-management may enable structured suspense by expanding the gate to a Bottom-$k$ band and/or using a small number of structured multi-elimination weeks,
-with eliminations restricted to the judges-defined low-performance band.
+\vspace{6pt}
+\noindent \textbf{How to preserve watchability (no randomness).}
+Use a phase-dependent schedule: early weeks keep Bottom-2 gating; late in the season (few contestants, narrow gaps),
+enable structured suspense by expanding the gate to Bottom-$k$ and/or placing a small number of structured multi-elimination weeks,
+with eliminations restricted to the judges-defined low-performance band. \cite{comap2026_problemC_pdf}
 
-\paragraph{Management knobs and deployment.}
-PB2 offers interpretable control knobs:
-(i) $w_J$ (judge--fan balance within the gate),
-(ii) the late-stage trigger (e.g., remaining contestants $\le K$ or week threshold $t_0$),
-and (iii) the late-stage gate size $k$ (and optional multi-elimination placement).
-We recommend selecting a robust operating point supported by replay-based stress tests (Jaccard similarity, controversial-case replays, and a unified bias test), and deploying PB2 in a one-season
-\emph{shadow mode} computed in parallel with the broadcast rule. This yields an auditable comparison of eliminations, finalists, and winner outcomes
-before any on-air adoption, supported by a clear public explanation of the two-stage logic and the role of audience influence.
+\vspace{6pt}
+\noindent \textbf{Management knobs and deployment.}
+PB2 offers interpretable controls: (i) $w_J$ (judge--fan balance within the gate),
+(ii) a late-stage trigger (e.g., remaining contestants $\le K$ or week threshold $t_0$),
+and (iii) gate size $k$ (plus optional multi-elimination placement).
+We recommend selecting a robust operating point supported by stress tests and running PB2 in \emph{one-season shadow mode}
+computed in parallel with the broadcast rule. \cite{comap2026_problemC_pdf}

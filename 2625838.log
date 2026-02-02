@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  3 FEB 2026 03:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  3 FEB 2026 04:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1261,11 +1261,7 @@ File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 214.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 214.
- (./2625838.aux
-
-LaTeX Warning: Label `subsubsec:cleaning_principles' multiply defined.
-
-)
+ (./2625838.aux)
 \openout1 = `2625838.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 214.
@@ -1631,7 +1627,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.262 \clearpage
                  [1
 
-] (./chapters/1_introduction.tex) (./chapters/2_problem_decoposition_and_analysis.tex
+] (./chapters/1_introduction.tex
+<output/fig/task3/overview.pdf, id=281, 722.7pt x 542.025pt>
+File: output/fig/task3/overview.pdf Graphic file (type pdf)
+<use output/fig/task3/overview.pdf>
+Package pdftex.def Info: output/fig/task3/overview.pdf  used on input line 7.
+(pdftex.def)             Requested size: 306.17012pt x 229.62563pt.
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 18.
+ (c:/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.95pt on input line 18.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ntxtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1642,7 +1654,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2
 
-]
+ <./output/fig/task3/overview.pdf>] (./chapters/2_problem_decoposition_and_analysis.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1666,27 +1678,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]) (./chapters/3_data_processing_and_analysis.tex
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 23.
- (c:/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-File: t1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 23.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ntxtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 31.
- (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
-File: t1txtt.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <10.95> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 31.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `txtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1696,6 +1687,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
+<output/fig/fig3_1_judges_availability.png, id=345, 433.62pt x 289.08pt>
+File: output/fig/fig3_1_judges_availability.png Graphic file (type png)
+<use output/fig/fig3_1_judges_availability.png>
+Package pdftex.def Info: output/fig/fig3_1_judges_availability.png  used on input line 116.
+(pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
+<output/fig/fig3_3_active_vs_placeholders.png, id=347, 433.62pt x 289.08pt>
+File: output/fig/fig3_3_active_vs_placeholders.png Graphic file (type png)
+<use output/fig/fig3_3_active_vs_placeholders.png>
+Package pdftex.def Info: output/fig/fig3_3_active_vs_placeholders.png  used on input line 122.
+(pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1705,20 +1707,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-<output/fig/fig3_1_judges_availability.png, id=353, 433.62pt x 289.08pt>
-File: output/fig/fig3_1_judges_availability.png Graphic file (type png)
-<use output/fig/fig3_1_judges_availability.png>
-Package pdftex.def Info: output/fig/fig3_1_judges_availability.png  used on input line 145.
-(pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
-<output/fig/fig3_3_active_vs_placeholders.png, id=355, 433.62pt x 289.08pt>
-File: output/fig/fig3_3_active_vs_placeholders.png Graphic file (type png)
-<use output/fig/fig3_3_active_vs_placeholders.png>
-Package pdftex.def Info: output/fig/fig3_3_active_vs_placeholders.png  used on input line 151.
-(pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
-<output/fig/fig3_2_irregular_weeks_by_season.png, id=356, 578.16pt x 289.08pt>
+<output/fig/fig3_2_irregular_weeks_by_season.png, id=357, 578.16pt x 289.08pt>
 File: output/fig/fig3_2_irregular_weeks_by_season.png Graphic file (type png)
 <use output/fig/fig3_2_irregular_weeks_by_season.png>
-Package pdftex.def Info: output/fig/fig3_2_irregular_weeks_by_season.png  used on input line 162.
+Package pdftex.def Info: output/fig/fig3_2_irregular_weeks_by_season.png  used on input line 133.
 (pdftex.def)             Requested size: 433.35168pt x 216.67271pt.
 
 
@@ -1730,7 +1722,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7 <./output/fig/fig3_1_judges_availability.png> <./output/fig/fig3_3_active_vs_placeholders.png> <./output/fig/fig3_2_irregular_weeks_by_season.png>]
-Overfull \hbox (7.18495pt too wide) in paragraph at lines 215--218
+Overfull \hbox (7.18495pt too wide) in paragraph at lines 186--189
 \T1/ntxtt/m/n/10.95 ballroom_partner \T1/ntxtlf/m/n/10.95 (-20) (pro dancer iden-tity), \T1/ntxtt/m/n/10.95 celebrity_age_during_season\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 celebrity_industry\T1/ntxtlf/m/n/10.95 (-20) ,
  []
 
@@ -1861,11 +1853,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-<output/fig/p_sharpen_gap_boxplot.png, id=499, 722.7pt x 433.62pt>
+<output/fig/p_sharpen_gap_boxplot.png, id=498, 722.7pt x 433.62pt>
 File: output/fig/p_sharpen_gap_boxplot.png Graphic file (type png)
 <use output/fig/p_sharpen_gap_boxplot.png>
 Package pdftex.def Info: output/fig/p_sharpen_gap_boxplot.png  used on input line 272.
-(pdftex.def)             Requested size: 447.48218pt x 268.49095pt.
+(pdftex.def)             Requested size: 400.38295pt x 240.23187pt.
 ) (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
 
 
@@ -1876,10 +1868,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13 <./output/fig/p_sharpen_gap_boxplot.png>]
-<output/fig/fig5_1_fliprate_by_season.png, id=506, 578.16pt x 289.08pt>
+<output/fig/fig5_1_fliprate_by_season.png, id=509, 578.16pt x 289.08pt>
 File: output/fig/fig5_1_fliprate_by_season.png Graphic file (type png)
 <use output/fig/fig5_1_fliprate_by_season.png>
-Package pdftex.def Info: output/fig/fig5_1_fliprate_by_season.png  used on input line 26.
+Package pdftex.def Info: output/fig/fig5_1_fliprate_by_season.png  used on input line 30.
 (pdftex.def)             Requested size: 447.48218pt x 223.73914pt.
 
 
@@ -1892,7 +1884,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14 <./output/fig/fig5_1_fliprate_by_season.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 12.0pt on input line 81.
+(Font)              scaled to size 12.0pt on input line 85.
 
 
 
@@ -1930,26 +1922,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-<output/fig/task3/cooperate_influence.png, id=563, 433.62pt x 433.62pt>
+<output/fig/task3/cooperate_influence.png, id=566, 433.62pt x 433.62pt>
 File: output/fig/task3/cooperate_influence.png Graphic file (type png)
 <use output/fig/task3/cooperate_influence.png>
-Package pdftex.def Info: output/fig/task3/cooperate_influence.png  used on input line 137.
-(pdftex.def)             Requested size: 447.48218pt x 447.50697pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19]
-<output/fig/task3/age_influence.png, id=570, 433.62pt x 289.08pt>
+Package pdftex.def Info: output/fig/task3/cooperate_influence.png  used on input line 139.
+(pdftex.def)             Requested size: 214.78952pt x 214.79143pt.
+<output/fig/task3/age_influence.png, id=567, 433.62pt x 289.08pt>
 File: output/fig/task3/age_influence.png Graphic file (type png)
 <use output/fig/task3/age_influence.png>
-Package pdftex.def Info: output/fig/task3/age_influence.png  used on input line 148.
-(pdftex.def)             Requested size: 447.48218pt x 298.33797pt.
+Package pdftex.def Info: output/fig/task3/age_influence.png  used on input line 147.
+(pdftex.def)             Requested size: 214.78952pt x 143.19427pt.
 
 
 
@@ -1959,16 +1941,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20 <./output/fig/task3/cooperate_influence.png>]
-
-LaTeX Warning: Reference `tab:age_influence' on page 21 undefined on input line 152.
-
-<output/fig/task3/industry_influence.png, id=577, 722.7pt x 433.62pt>
+[19 <./output/fig/task3/cooperate_influence.png> <./output/fig/task3/age_influence.png>]
+<output/fig/task3/industry_influence.png, id=578, 722.7pt x 433.62pt>
 File: output/fig/task3/industry_influence.png Graphic file (type png)
 <use output/fig/task3/industry_influence.png>
-Package pdftex.def Info: output/fig/task3/industry_influence.png  used on input line 157.
+Package pdftex.def Info: output/fig/task3/industry_influence.png  used on input line 168.
 (pdftex.def)             Requested size: 447.48218pt x 268.49095pt.
-
+) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1977,7 +1956,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21 <./output/fig/task3/age_influence.png> <./output/fig/task3/industry_influence.png>]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
+[20 <./output/fig/task3/industry_influence.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 27.
@@ -1990,16 +1969,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 27.
 
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 51.
@@ -2021,25 +1990,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]
+[21]
 
-LaTeX Warning: Reference `tab:d2_jaccard_rules' on page 24 undefined on input line 119.
+LaTeX Warning: Reference `tab:d2_jaccard_rules' on page 22 undefined on input line 119.
 
-<output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png, id=611, 505.89pt x 289.08pt>
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
+<output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png, id=612, 505.89pt x 289.08pt>
 File: output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png Graphic file (type png)
 <use output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png>
 Package pdftex.def Info: output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png  used on input line 148.
 (pdftex.def)             Requested size: 282.6241pt x 161.49992pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[24 <./output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png>]) (./chapters/8_conclusion.tex) (./chapters/9_memo.tex
+) (./chapters/8_conclusion.tex)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2048,7 +2018,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]) (./2625838.bbl
+[23 <./output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png>] (./chapters/9_memo.tex) (./2625838.bbl
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2057,13 +2027,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]) (./chapters/appendix_a.tex
-<output/fig/fig5_2_cutoff_27_fliprate.png, id=653, 361.35pt x 216.81pt>
+[24]) (./chapters/appendix_a.tex
+<output/fig/fig5_2_cutoff_27_fliprate.png, id=648, 361.35pt x 216.81pt>
 File: output/fig/fig5_2_cutoff_27_fliprate.png Graphic file (type png)
 <use output/fig/fig5_2_cutoff_27_fliprate.png>
 Package pdftex.def Info: output/fig/fig5_2_cutoff_27_fliprate.png  used on input line 6.
 (pdftex.def)             Requested size: 230.80992pt x 138.48663pt.
-<output/fig/fig5_2_cutoff_29_fliprate.png, id=654, 361.35pt x 216.81pt>
+<output/fig/fig5_2_cutoff_29_fliprate.png, id=649, 361.35pt x 216.81pt>
 File: output/fig/fig5_2_cutoff_29_fliprate.png Graphic file (type png)
 <use output/fig/fig5_2_cutoff_29_fliprate.png>
 Package pdftex.def Info: output/fig/fig5_2_cutoff_29_fliprate.png  used on input line 13.
@@ -2077,9 +2047,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27 <./output/fig/fig5_2_cutoff_27_fliprate.png> <./output/fig/fig5_2_cutoff_29_fliprate.png>]
+[25 <./output/fig/fig5_2_cutoff_27_fliprate.png> <./output/fig/fig5_2_cutoff_29_fliprate.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 319.
+ (./chapters/report_on_use_ai.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 9.0pt on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 9.0pt on input line 34.
+<report_on_use_of_ai/pho/1_1.png, id=660, 1005.7575pt x 662.97687pt>
+File: report_on_use_of_ai/pho/1_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/1_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/1_1.png  used on input line 39.
+(pdftex.def)             Requested size: 423.92897pt x 279.43977pt.
+<report_on_use_of_ai/pho/1_2.png, id=661, 974.64125pt x 652.4375pt>
+File: report_on_use_of_ai/pho/1_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/1_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/1_2.png  used on input line 45.
+(pdftex.def)             Requested size: 423.92897pt x 283.77815pt.
 
 
 
@@ -2091,7 +2081,510 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-] (./2625838.aux)
+]
+<report_on_use_of_ai/pho/2_1.png, id=668, 1109.64563pt x 668.4975pt>
+File: report_on_use_of_ai/pho/2_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/2_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/2_1.png  used on input line 53.
+(pdftex.def)             Requested size: 423.92897pt x 255.38834pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
+
+ []
+
+<report_on_use_of_ai/pho/2_2.png, id=669, 1111.65312pt x 641.89813pt>
+File: report_on_use_of_ai/pho/2_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/2_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/2_2.png  used on input line 59.
+(pdftex.def)             Requested size: 423.92897pt x 244.78574pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 \end{figure}
+                  [2 <./report_on_use_of_ai/pho/1_1.png> <./report_on_use_of_ai/pho/1_2.png>]
+<report_on_use_of_ai/pho/3_1.png, id=678, 862.72313pt x 265.49188pt>
+File: report_on_use_of_ai/pho/3_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_1.png  used on input line 68.
+(pdftex.def)             Requested size: 423.92897pt x 130.45674pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \textbf{Output:}
+                      [3 <./report_on_use_of_ai/pho/2_1.png> <./report_on_use_of_ai/pho/2_2.png>]
+<report_on_use_of_ai/pho/3_2.png, id=686, 879.285pt x 649.42625pt>
+File: report_on_use_of_ai/pho/3_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_2.png  used on input line 75.
+(pdftex.def)             Requested size: 423.92897pt x 313.09846pt.
+<report_on_use_of_ai/pho/3_3.png, id=687, 961.09062pt x 580.1675pt>
+File: report_on_use_of_ai/pho/3_3.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_3.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_3.png  used on input line 81.
+(pdftex.def)             Requested size: 423.92897pt x 255.91187pt.
+<report_on_use_of_ai/pho/3_4.png, id=688, 771.38188pt x 426.59375pt>
+File: report_on_use_of_ai/pho/3_4.png Graphic file (type png)
+<use report_on_use_of_ai/pho/3_4.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/3_4.png  used on input line 87.
+(pdftex.def)             Requested size: 423.92897pt x 234.4385pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \end{figure}
+                  [4 <./report_on_use_of_ai/pho/3_1.png> <./report_on_use_of_ai/pho/3_2.png>]
+<report_on_use_of_ai/pho/4_1.png, id=697, 1000.23688pt x 658.46pt>
+File: report_on_use_of_ai/pho/4_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/4_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/4_1.png  used on input line 101.
+(pdftex.def)             Requested size: 423.92897pt x 279.07318pt.
+<report_on_use_of_ai/pho/4_2.png, id=698, 783.42688pt x 540.51938pt>
+File: report_on_use_of_ai/pho/4_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/4_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/4_2.png  used on input line 107.
+(pdftex.def)             Requested size: 423.92897pt x 292.48643pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 \end{figure}
+                   [5 <./report_on_use_of_ai/pho/3_3.png> <./report_on_use_of_ai/pho/3_4.png>]
+<report_on_use_of_ai/pho/5_1.png, id=708, 983.17313pt x 993.7125pt>
+File: report_on_use_of_ai/pho/5_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/5_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/5_1.png  used on input line 123.
+(pdftex.def)             Requested size: 423.92897pt x 428.47075pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 \end{figure}
+                   [6 <./report_on_use_of_ai/pho/4_1.png> <./report_on_use_of_ai/pho/4_2.png>]
+<report_on_use_of_ai/pho/5_2.png, id=716, 1187.93813pt x 682.04813pt>
+File: report_on_use_of_ai/pho/5_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/5_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/5_2.png  used on input line 129.
+(pdftex.def)             Requested size: 423.92897pt x 243.39325pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 
+       [7 <./report_on_use_of_ai/pho/5_1.png>]
+<report_on_use_of_ai/pho/6_1.png, id=724, 1726.19907pt x 996.72375pt>
+File: report_on_use_of_ai/pho/6_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_1.png  used on input line 139.
+(pdftex.def)             Requested size: 423.92897pt x 244.76979pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--142
+
+ []
+
+<report_on_use_of_ai/pho/6_2.png, id=725, 1714.15407pt x 1000.48781pt>
+File: report_on_use_of_ai/pho/6_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_2.png  used on input line 145.
+(pdftex.def)             Requested size: 423.92897pt x 247.43448pt.
+<report_on_use_of_ai/pho/6_3.png, id=726, 1690.81688pt x 998.22937pt>
+File: report_on_use_of_ai/pho/6_3.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_3.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_3.png  used on input line 151.
+(pdftex.def)             Requested size: 423.92897pt x 250.27261pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 \end{figure}
+                   [8 <./report_on_use_of_ai/pho/5_2.png> <./report_on_use_of_ai/pho/6_1.png>]
+<report_on_use_of_ai/pho/6_4.png, id=734, 1696.83937pt x 1014.79124pt>
+File: report_on_use_of_ai/pho/6_4.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_4.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_4.png  used on input line 157.
+(pdftex.def)             Requested size: 423.92897pt x 253.52686pt.
+<report_on_use_of_ai/pho/6_5.png, id=735, 1701.35625pt x 568.37344pt>
+File: report_on_use_of_ai/pho/6_5.png Graphic file (type png)
+<use report_on_use_of_ai/pho/6_5.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/6_5.png  used on input line 163.
+(pdftex.def)             Requested size: 423.92897pt x 141.61601pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 \end{figure}
+                   [9 <./report_on_use_of_ai/pho/6_2.png> <./report_on_use_of_ai/pho/6_3.png>]
+<report_on_use_of_ai/pho/7_1.png, id=744, 1672.74937pt x 984.67876pt>
+File: report_on_use_of_ai/pho/7_1.png Graphic file (type png)
+<use report_on_use_of_ai/pho/7_1.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/7_1.png  used on input line 175.
+(pdftex.def)             Requested size: 423.92897pt x 249.5497pt.
+<report_on_use_of_ai/pho/7_2.png, id=745, 1673.50218pt x 512.66531pt>
+File: report_on_use_of_ai/pho/7_2.png Graphic file (type png)
+<use report_on_use_of_ai/pho/7_2.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/7_2.png  used on input line 181.
+(pdftex.def)             Requested size: 423.92897pt x 129.86351pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.184 \end{figure}
+                   [10 <./report_on_use_of_ai/pho/6_4.png> <./report_on_use_of_ai/pho/6_5.png>]
+<report_on_use_of_ai/pho/81.png, id=754, 1641.13126pt x 968.11688pt>
+File: report_on_use_of_ai/pho/81.png Graphic file (type png)
+<use report_on_use_of_ai/pho/81.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/81.png  used on input line 194.
+(pdftex.def)             Requested size: 423.92897pt x 250.0795pt.
+<report_on_use_of_ai/pho/82.png, id=755, 1643.3897pt x 623.32875pt>
+File: report_on_use_of_ai/pho/82.png Graphic file (type png)
+<use report_on_use_of_ai/pho/82.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/82.png  used on input line 200.
+(pdftex.def)             Requested size: 423.92897pt x 160.78714pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.203 \end{figure}
+                   [11 <./report_on_use_of_ai/pho/7_1.png> <./report_on_use_of_ai/pho/7_2.png>]
+<report_on_use_of_ai/pho/91.png, id=765, 1621.55812pt x 829.59938pt>
+File: report_on_use_of_ai/pho/91.png Graphic file (type png)
+<use report_on_use_of_ai/pho/91.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/91.png  used on input line 211.
+(pdftex.def)             Requested size: 423.92897pt x 216.88066pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--214
+
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.215 
+       [12 <./report_on_use_of_ai/pho/81.png> <./report_on_use_of_ai/pho/82.png>]
+<report_on_use_of_ai/pho/92.png, id=773, 1642.63687pt x 956.82469pt>
+File: report_on_use_of_ai/pho/92.png Graphic file (type png)
+<use report_on_use_of_ai/pho/92.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/92.png  used on input line 219.
+(pdftex.def)             Requested size: 423.92897pt x 246.92896pt.
+<report_on_use_of_ai/pho/93.png, id=774, 1553.805pt x 847.66687pt>
+File: report_on_use_of_ai/pho/93.png Graphic file (type png)
+<use report_on_use_of_ai/pho/93.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/93.png  used on input line 225.
+(pdftex.def)             Requested size: 423.92897pt x 231.26596pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.229 
+       [13 <./report_on_use_of_ai/pho/91.png> <./report_on_use_of_ai/pho/92.png>]
+<report_on_use_of_ai/pho/101.png, id=783, 1615.53563pt x 331.2375pt>
+File: report_on_use_of_ai/pho/101.png Graphic file (type png)
+<use report_on_use_of_ai/pho/101.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/101.png  used on input line 236.
+(pdftex.def)             Requested size: 423.92897pt x 86.91829pt.
+<report_on_use_of_ai/pho/102.png, id=784, 1652.42343pt x 995.97093pt>
+File: report_on_use_of_ai/pho/102.png Graphic file (type png)
+<use report_on_use_of_ai/pho/102.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/102.png  used on input line 244.
+(pdftex.def)             Requested size: 423.92897pt x 255.51175pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 
+       [14 <./report_on_use_of_ai/pho/93.png> <./report_on_use_of_ai/pho/101.png>]
+<report_on_use_of_ai/pho/103.png, id=792, 1046.40938pt x 76.03406pt>
+File: report_on_use_of_ai/pho/103.png Graphic file (type png)
+<use report_on_use_of_ai/pho/103.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/103.png  used on input line 251.
+(pdftex.def)             Requested size: 423.92897pt x 30.80289pt.
+<report_on_use_of_ai/pho/111.png, id=794, 1550.79375pt x 911.65594pt>
+File: report_on_use_of_ai/pho/111.png Graphic file (type png)
+<use report_on_use_of_ai/pho/111.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/111.png  used on input line 262.
+(pdftex.def)             Requested size: 423.92897pt x 249.21075pt.
+<report_on_use_of_ai/pho/112.png, id=795, 1402.48969pt x 971.88094pt>
+File: report_on_use_of_ai/pho/112.png Graphic file (type png)
+<use report_on_use_of_ai/pho/112.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/112.png  used on input line 270.
+(pdftex.def)             Requested size: 423.92897pt x 293.76132pt.
+<report_on_use_of_ai/pho/113.png, id=796, 1274.51157pt x 986.9372pt>
+File: report_on_use_of_ai/pho/113.png Graphic file (type png)
+<use report_on_use_of_ai/pho/113.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/113.png  used on input line 276.
+(pdftex.def)             Requested size: 423.92897pt x 328.26544pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.279 \end{figure}
+                   [15 <./report_on_use_of_ai/pho/102.png> <./report_on_use_of_ai/pho/103.png> <./report_on_use_of_ai/pho/111.png>]
+<report_on_use_of_ai/pho/121.png, id=807, 1250.42157pt x 977.15062pt>
+File: report_on_use_of_ai/pho/121.png Graphic file (type png)
+<use report_on_use_of_ai/pho/121.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/121.png  used on input line 288.
+(pdftex.def)             Requested size: 423.92897pt x 331.27257pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.291 \end{figure}
+                   [16 <./report_on_use_of_ai/pho/112.png> <./report_on_use_of_ai/pho/113.png>]
+<report_on_use_of_ai/pho/122.png, id=815, 1611.77156pt x 803.25093pt>
+File: report_on_use_of_ai/pho/122.png Graphic file (type png)
+<use report_on_use_of_ai/pho/122.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/122.png  used on input line 296.
+(pdftex.def)             Requested size: 423.92897pt x 211.26712pt.
+<report_on_use_of_ai/pho/123.png, id=816, 1653.17625pt x 986.18437pt>
+File: report_on_use_of_ai/pho/123.png Graphic file (type png)
+<use report_on_use_of_ai/pho/123.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/123.png  used on input line 302.
+(pdftex.def)             Requested size: 423.92897pt x 252.88066pt.
+<report_on_use_of_ai/pho/124.png, id=817, 1616.28844pt x 798.73407pt>
+File: report_on_use_of_ai/pho/124.png Graphic file (type png)
+<use report_on_use_of_ai/pho/124.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/124.png  used on input line 308.
+(pdftex.def)             Requested size: 423.92897pt x 209.49411pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.311 \end{figure}
+                   [17 <./report_on_use_of_ai/pho/121.png> <./report_on_use_of_ai/pho/122.png>]
+<report_on_use_of_ai/pho/131.png, id=827, 1595.9625pt x 981.6675pt>
+File: report_on_use_of_ai/pho/131.png Graphic file (type png)
+<use report_on_use_of_ai/pho/131.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/131.png  used on input line 326.
+(pdftex.def)             Requested size: 423.92897pt x 260.75479pt.
+<report_on_use_of_ai/pho/132.png, id=828, 1168.365pt x 981.6675pt>
+File: report_on_use_of_ai/pho/132.png Graphic file (type png)
+<use report_on_use_of_ai/pho/132.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/132.png  used on input line 332.
+(pdftex.def)             Requested size: 423.92897pt x 356.18613pt.
+<report_on_use_of_ai/pho/133.png, id=829, 1571.8725pt x 926.71219pt>
+File: report_on_use_of_ai/pho/133.png Graphic file (type png)
+<use report_on_use_of_ai/pho/133.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/133.png  used on input line 338.
+(pdftex.def)             Requested size: 423.92897pt x 249.93283pt.
+<report_on_use_of_ai/pho/141.png, id=831, 1605.74907pt x 965.85844pt>
+File: report_on_use_of_ai/pho/141.png Graphic file (type png)
+<use report_on_use_of_ai/pho/141.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/141.png  used on input line 361.
+(pdftex.def)             Requested size: 423.92897pt x 254.9933pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.364 \end{figure}
+                   [18 <./report_on_use_of_ai/pho/123.png> <./report_on_use_of_ai/pho/124.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.364 \end{figure}
+                   [19 <./report_on_use_of_ai/pho/131.png> <./report_on_use_of_ai/pho/132.png>]
+<report_on_use_of_ai/pho/142.png, id=846, 1489.81593pt x 988.44281pt>
+File: report_on_use_of_ai/pho/142.png Graphic file (type png)
+<use report_on_use_of_ai/pho/142.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/142.png  used on input line 367.
+(pdftex.def)             Requested size: 423.92897pt x 281.25665pt.
+<report_on_use_of_ai/pho/143.png, id=847, 1541.00719pt x 558.58687pt>
+File: report_on_use_of_ai/pho/143.png Graphic file (type png)
+<use report_on_use_of_ai/pho/143.png>
+Package pdftex.def Info: report_on_use_of_ai/pho/143.png  used on input line 373.
+(pdftex.def)             Requested size: 423.92897pt x 153.65874pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.376 \end{figure}
+                   [20 <./report_on_use_of_ai/pho/133.png> <./report_on_use_of_ai/pho/141.png>])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{document}
+                     [21 <./report_on_use_of_ai/pho/142.png> <./report_on_use_of_ai/pho/143.png>] (./2625838.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -2100,25 +2593,22 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `2625838.out' has not changed.
-(rerunfilecheck)             Checksum: 600FFBDA5DBE13BAB017E3490A6D9145;12501.
+(rerunfilecheck)             Checksum: 38168F6A65378A660A63D70C0ADDFB95;12335.
  ) 
 Here is how much of TeX's memory you used:
- 53593 strings out of 475118
- 1202341 string characters out of 5765021
- 1780941 words of memory out of 5000000
- 75249 multiletter control sequences out of 15000+600000
- 720556 words of font info for 409 fonts, out of 8000000 for 9000
+ 53971 strings out of 475118
+ 1215497 string characters out of 5765021
+ 1783923 words of memory out of 5000000
+ 75555 multiletter control sequences out of 15000+600000
+ 727866 words of font info for 430 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,16n,117p,1048b,1260s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexas.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on 2625838.pdf (29 pages, 807746 bytes).
+ 84i,16n,117p,1048b,1238s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexas.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on 2625838.pdf (47 pages, 5057008 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
- 635 compressed objects within 7 object streams
- 196 named destinations out of 1000 (max. 500000)
- 50652 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 992 PDF objects out of 1000 (max. 8388607)
+ 742 compressed objects within 8 object streams
+ 230 named destinations out of 1000 (max. 500000)
+ 54433 words of extra memory for PDF output out of 61914 (max. 10000000)
 

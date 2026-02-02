@@ -4,14 +4,18 @@
 % =========================
 
 % ---- Chapter opening positioning paragraph (results-focused, protocol explicit)
-Following the official rule definitions, we perform season--week counterfactual replays under (i) rank-based aggregation and (ii) percent-based aggregation. We initialize each replay with the observed eligibility labels, but update the active set week-by-week according to the counterfactual eliminations under the chosen rule. When a counterfactual path keeps an observed-exit contestant active beyond the observed data horizon, we apply a conservative, minimal-information imputation solely to complete the replay (not to forecast future performance).
-As a reproducible sanity-check baseline (BL-0), we use judge-only information with a uniform fan proxy
-and report elimination hit-rate (KPI1) and the rule divergence rate (KPI3/FlipRate).
-This chapter summarizes cross-season differences (Section~5.1), explains divergences via controversial case studies (Section~5.2),
-evaluates the incremental impact of bottom-two and judges' save (Section~5.3), and synthesizes implications (Section~5.4).
+Following the official rule definitions, we conduct season--week counterfactual replays under
+(i) rank-based aggregation and (ii) percent-based aggregation.
+Each replay starts from the observed eligibility labels and updates the \texttt{active} set
+week-by-week according to the counterfactual eliminations under the chosen rule, producing a
+replay path that can be directly compared across rules and seasons.
+All panel construction conventions and any conservative completion rules are defined once in
+Section~3.1 and are not repeated here.
+This chapter summarizes cross-season differences (Section~\ref{subsec:rank_vs_percent_across_seasons}), explains divergences via controversial case studies (Section~\ref{subsubsec:replay_protocol_and_eligibility}),
+evaluates the incremental impact of bottom-two and judges' save \ref{subsubsec:cross_season_summary_metrics}, and synthesizes implications (Section~\ref{subsec:controversial_contestants_case_studies}).
 
 \subsection{Rank vs. Percent Across Seasons}\label{subsec:rank_vs_percent_across_seasons}
-Results in this section are first reported under BL-0 as a reproducible sanity check; Task A inferred votes are used in subsequent replays.
+We first report a reproducible sanity baseline (BL-0): judge-only information with a uniform fan proxy; we then run full replays using Task~A inferred votes.
 % 这里放：active set 口径、single-elim eligibility、special exits、tie-handling、以及“同一输入不同规则”的对比原则。
 % 目标：评审只看这一段就不会质疑你们分母与口径。
   

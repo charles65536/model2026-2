@@ -1,20 +1,16 @@
-In this study, we model \emph{Dancing with the Stars} as an inverse problem in which judges' scores and eliminations
-are observed while audience vote totals are withheld. Task~A provides a convex inference framework to reconstruct
-weekly fan vote shares consistent with observed eliminations and to quantify identifiability and uncertainty.
-Building on these inferred votes, Tasks~B and~C implement season--week replays that isolate the impact of aggregation
-mechanics (percent versus rank) and the incumbent ``combined Bottom-2 + judges' save'' safeguard, revealing where rule changes most strongly affect outcomes.
-When a rule change keeps an observed-exit contestant active, we extend the replay using a conservative,
-minimal-information imputation solely for counterfactual completion, not as a performance forecast.
-Task~D1 then separates the drivers of judges' evaluations and fan support using mixed-effects structures that attribute
-variation to celebrity attributes and professional partners.
+We model \emph{Dancing with the Stars} as a replayable inverse problem: judges' scores and eliminations are observed,
+while audience votes are latent. Task~A infers weekly fan vote shares consistent with observed exits and reports
+identifiability/uncertainty; Tasks~B--C use these inferred votes to replay eliminations across seasons to quantify how
+aggregation mechanics (rank vs.\ percent) and the incumbent Bottom-2 + judges' save safeguard change outcomes. Any
+completion needed when a counterfactual keeps an observed-exit contestant active is handled conservatively for replay
+closure only (not for forecasting).
 
-Finally, Task~D2 proposes a professionalism-first institutional redesign based on stage ordering: judges alone define a small risk set (gate),
-and fan influence is applied only within that performance-defined boundary via a transparent weighted blend.
-To preserve watchability without introducing randomness, we introduce late-stage structured, performance-grounded suspense mechanisms
-(e.g., expanding the judges-defined risk set to a bottom-$k$ band or using limited multi-elimination), and validate PB2 via replay-based stress tests:
-pairwise Jaccard similarity across Percent/Rank/B2/PB2, controversial-case replays, and a unified bias test.
+Building on the inferred fan signal and mechanism interpretation (Task~D1), Task~D2 proposes \emph{Professional Bottom-2} (PB2):
+judges first define a small performance-grounded risk set, and fan influence is applied only within that gate via a
+transparent weighted blend. PB2 preserves audience agency while reducing extreme reversals, and we validate it through
+replay-based stress tests (stability across rules and seasons, controversial-case replays, and a unified bias check).
 
-Collectively, our pipeline produces an auditable chain from data to mechanism interpretation to actionable rule recommendations,
-while explicitly flagging weeks and seasons where non-identifiability limits the strength of conclusions. Future work could
-incorporate richer behavioral signals (e.g., external popularity proxies) and explore alternative mechanism designs under the
-same replay-and-stress-test framework.
+Overall, the pipeline provides an auditable chain from cleaned data to interpretable mechanisms to actionable rule
+recommendations, while explicitly flagging weeks/seasons where non-identifiability limits confidence. Future work can
+incorporate additional popularity signals and evaluate alternative safeguards within the same replay-and-stress-test
+framework.

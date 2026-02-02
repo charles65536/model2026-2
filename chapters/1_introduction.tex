@@ -1,20 +1,36 @@
-\textit{Dancing With The Stars} (DWTS) combines judges' scores with audience voting to eliminate contestants weekly, yet the audience vote totals remain confidential.\cite{comap2026_problemC_pdf}
-This creates a recurring tension between ``technical merit'' and ``popular support,'' amplified by format changes across seasons (percent-based versus rank-based aggregation, and the later bottom-two judges' save).
-The dataset \cite{comap2026_problemC_data} spans 34 seasons with contestant attributes, weekly judges' scores, and realized eliminations, but it does not reveal audience votes---turning the central signal of fan preference into a latent variable.
+\textit{Dancing With The Stars} (DWTS) combines judges' scores with audience voting to eliminate contestants weekly, yet the audience vote totals remain confidential. \cite{comap2026_problemC_pdf}
+This creates a persistent tension between ``technical merit'' and ``popular support,'' further complicated by format changes across seasons (rank-based vs.\ percent-based aggregation, and the later Bottom-2 judges' save).
+The provided dataset \cite{comap2026_problemC_data} spans 34 seasons with contestant attributes, weekly judges' scores, and realized eliminations, but it does not reveal audience votes---making fan preference a latent signal that must be inferred from outcomes.
 
-\textbf{Our key methodological idea is to treat DWTS as a replayable inverse problem.}
-We first construct a canonical season--week--contestant panel with an explicit active set (excluding post-exit zero-score records and flagging special episodes).
-We then infer weekly fan vote \emph{shares} by solving a constrained optimization problem: elimination-consistency constraints encode the show's rule mechanics, slack variables absorb exceptional weeks, and a temporal smoothness prior selects a stable solution among many feasible explanations.
-With inferred fan support in hand, we implement a rule replay engine that simulates eliminations week-by-week under alternative aggregation schemes (rank-based vs.\ percent-based) and the incumbent ``combined Bottom-2 + judges' save'' mechanism, enabling direct counterfactual comparisons.
-The inference module outputs not only point estimates $\hat{p}_{i,t}$ but also uncertainty summaries (e.g., feasible ranges and sensitivity margins).
-These outputs become direct inputs to the replay engine, closing the loop from latent-vote inference to counterfactual elimination paths and to quantitative evidence for rule comparison and new-system validation.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.65\linewidth]{output/fig/task3/overview.pdf}
+  \caption{End-to-end workflow: infer latent fan support from observed eliminations, then use it to evaluate and redesign voting rules.}
+  \label{fig:workflow_overview}
+\end{figure}
 
-\textbf{We evaluate models and voting rules using replay-based metrics that align with the show's decisions.}
-For vote inference, we report elimination-consistency rates, feasible-range widths (as an identifiability proxy), and sensitivity to regularization strength.
-For rule comparisons and new-system design, we quantify outcome divergence (who would be eliminated when), shifts in finalist composition, and validate PB2 via replay-based stress tests: (i) pairwise Jaccard similarity across Percent/Rank/B2/PB2, (ii) controversial-case replays, and (iii) a unified bias test.
+\textbf{We model DWTS as a replayable inverse problem: infer latent fan support from observed eliminations, then use it to evaluate and redesign voting rules.}
+(An end-to-end workflow summary is provided in the Summary Sheet; we keep the Introduction focused on motivation and contributions.)
 
-\textbf{To ensure interpretability, we benchmark against simple baselines}
-(e.g., judges-only elimination and naive fan-share models) and require that any added complexity yields measurable improvements in replay fidelity and stability.
-Building on inferred votes, we fit mixed-effects models to separately explain judges' scoring and fan preference, isolating professional-dancer effects and celebrity attributes.
-Finally, in \textbf{Task~D2} we propose \textit{Professional Bottom-2} (\textit{PB2}): judges alone define the Bottom-2 risk set (judge Bottom-2), and fan influence is applied only within that gate via a transparent blended score; late in the season we allow structured, performance-grounded suspense (e.g., bottom-$k$ bands or limited multi-elimination) and validate PB2 by replay-based stress tests (Jaccard similarity, controversial-case replays, and a unified bias test).
-The remainder of the paper is organized as follows: Section 2 formalizes tasks, assumptions, and notation; Section 3 describes data processing and feature construction; Sections 4--7 present vote inference, rule replay, mechanism analysis, and the proposed voting system with robustness tests; Section 8 concludes; and Section 9 provides a memo to management.
+\textbf{Our contributions are as follows.}
+\begin{itemize}
+  \item \textbf{Replay-ready data representation.}
+  We build a canonical season-week-contestant panel with an explicit \texttt{active} set to ensure that all denominators and eligibility conditions match the show's mechanics (and that post-exit padding records do not contaminate comparisons).
+
+  \item \textbf{Latent vote-share inference with uncertainty.}
+  We infer weekly fan vote \emph{shares} by solving a constrained optimization problem whose feasibility encodes elimination consistency; slack handles exceptional weeks, and a smoothness prior selects stable explanations.
+  The output includes both point estimates and uncertainty summaries (feasible ranges / sensitivity margins), supporting identifiability-aware interpretation.
+
+  \item \textbf{Counterfactual rule evaluation via replay.}
+  Using the inferred fan support, we replay eliminations under alternative aggregation schemes (rank vs.\ percent) and the incumbent Bottom-2 + judges' save mechanism, and quantify outcome divergence and robustness with replay-based metrics aligned to the show's decisions.
+
+  \item \textbf{Mechanism analysis and transparent redesign (Task D2).}
+  We fit interpretable statistical models to separate drivers of judges' scoring from fan preference (e.g., professional-dancer and celebrity-attribute effects), and propose \textit{Professional Bottom-2} (PB2): judges define the Bottom-2 risk set, while fan influence is applied only within that gate via a transparent blended score.
+  PB2 is validated by replay-based stress tests (stability, controversial-case replays, and a unified bias test).
+\end{itemize}
+
+The remainder of the paper is organized as follows:
+Section~2 formalizes tasks, assumptions, and notation;
+Section~3 describes data processing and feature construction;
+Sections~4--7 present vote inference, rule replay, mechanism analysis, and PB2 with robustness tests;
+Section~8 concludes; and Section~9 provides a memo to management.

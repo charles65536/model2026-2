@@ -1,100 +1,90 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}Problem Decomposition and Analysis}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Problem Decomposition}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {2}Problem Decomposition and Analysis}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problem Decomposition}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Key Assumptions}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Key Notations}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Key Notations}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Tasks and Evaluation KPIs}{4}{subsection.2.4}%
-\contentsline {paragraph}{KPI3: Rule Divergence Rate (Rank vs.\ Percent).}{4}{paragraph*.2}%
-\contentsline {paragraph}{KPI2: Vote Identifiability (interval tightness).}{4}{paragraph*.3}%
-\contentsline {paragraph}{Reproducible baseline (BL-0).}{5}{paragraph*.4}%
+\contentsline {paragraph}{KPI3: Rule Divergence Rate (Rank vs.\ Percent).}{5}{paragraph*.3}%
+\contentsline {paragraph}{KPI2: Vote Identifiability (interval tightness).}{5}{paragraph*.4}%
+\contentsline {paragraph}{Reproducible baseline (BL-0).}{5}{paragraph*.5}%
 \contentsline {section}{\numberline {3}Data Processing and Analysis}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Data Cleaning Principles and Validation}{5}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Cleaning Principles}{5}{subsubsection.3.1.1}%
-\contentsline {paragraph}{Principle A --- Respect official encodings (0 scores, N/A, irregular season length).}{5}{paragraph*.5}%
-\contentsline {paragraph}{Principle B --- Eligibility controls denominators (active-set construction).}{5}{paragraph*.6}%
-\contentsline {paragraph}{Principle C --- Within-week aggregation only; no judge identity tracking.}{5}{paragraph*.7}%
-\contentsline {paragraph}{Principle D --- Special episodes are handled explicitly.}{5}{paragraph*.8}%
-\contentsline {subsubsection}{\numberline {3.1.2}Cleaning Principles}{5}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Data Cleaning Outcomes and Validation}{6}{subsubsection.3.1.3}%
-\contentsline {paragraph}{Outcomes (artifacts and interfaces).}{6}{paragraph*.9}%
-\contentsline {paragraph}{Validation (what we check, and why it is sufficient for P0).}{6}{paragraph*.10}%
+\contentsline {subsubsection}{\numberline {3.1.2}Data Cleaning Outcomes and Validation}{6}{subsubsection.3.1.2}%
+\contentsline {paragraph}{Outcomes (artifacts and interfaces).}{6}{paragraph*.6}%
+\contentsline {paragraph}{Validation (what we check, and why it is sufficient for P0).}{6}{paragraph*.7}%
 \contentsline {subsection}{\numberline {3.2}Panel Construction}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Empirical Findings from EDA (only what feeds models)}{7}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Data Visualization}{7}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3}Empirical Findings from EDA (only what feeds models)}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Data Visualization}{6}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Key Empirical Findings}{7}{subsubsection.3.3.2}%
-\contentsline {paragraph}{Finding 1 --- A reproducible BL-0 baseline exists and is non-trivial.}{8}{paragraph*.13}%
-\contentsline {paragraph}{Finding 2 --- Non-standard weeks materially affect set-based consistency metrics.}{8}{paragraph*.14}%
-\contentsline {paragraph}{Implementation note (KPI1: Jaccard similarity, week-level mean).}{8}{paragraph*.15}%
+\contentsline {paragraph}{Finding 1 --- A reproducible BL-0 baseline exists and is non-trivial.}{7}{paragraph*.10}%
+\contentsline {paragraph}{Finding 2 --- Non-standard weeks materially affect set-based consistency metrics.}{7}{paragraph*.11}%
+\contentsline {paragraph}{Implementation note (KPI1: Jaccard similarity, week-level mean).}{8}{paragraph*.12}%
 \contentsline {subsection}{\numberline {3.4}Feature Engineering}{8}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Synthesis of Findings}{8}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Task A: Fan Vote Inference Model}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Overview and Modeling Philosophy}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Overview and Modeling Philosophy}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Main Inference Model}{9}{subsection.4.2}%
-\contentsline {paragraph}{Objective with judge-anchor prior.}{9}{paragraph*.16}%
+\contentsline {paragraph}{Objective with judge-anchor prior.}{9}{paragraph*.13}%
 \contentsline {subsection}{\numberline {4.3}Uncertainty Quantification and Sensitivity Analysis}{10}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}KPI2: Vote Identifiability (interval tightness)}{10}{subsubsection.4.3.1}%
-\contentsline {paragraph}{Profile optimization formulation.}{10}{paragraph*.17}%
+\contentsline {paragraph}{Profile optimization formulation.}{10}{paragraph*.14}%
 \contentsline {subsubsection}{\numberline {4.3.2}Jaccard Similarity and Estimation Accuracy Analysis}{12}{subsubsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.4}Hyperparameters, tuning, and implementation details}{13}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Task B \& C: Rule Reply, Volting System, and Counterfactuals}{14}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Rank vs. Percent Across Seasons}{14}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Replay protocol and eligibility}{14}{subsubsection.5.1.1}%
-\contentsline {paragraph}{Eligibility and special episodes.}{14}{paragraph*.21}%
-\contentsline {paragraph}{Aggregation rules (rank vs. percent).}{14}{paragraph*.22}%
+\contentsline {paragraph}{Eligibility and special episodes.}{14}{paragraph*.18}%
+\contentsline {paragraph}{Aggregation rules (rank vs. percent).}{14}{paragraph*.19}%
 \contentsline {subsubsection}{\numberline {5.1.2}Cross-season summary metrics}{15}{subsubsection.5.1.2}%
-\contentsline {paragraph}{Interpretation.}{15}{paragraph*.23}%
+\contentsline {paragraph}{Interpretation.}{15}{paragraph*.20}%
 \contentsline {subsection}{\numberline {5.2}Controversial Contestants: Mechanism-driven Case Studies}{15}{subsection.5.2}%
-\contentsline {paragraph}{Selection rationale (what makes a case ``controversial'' in our framework).}{15}{paragraph*.24}%
-\contentsline {paragraph}{Protocol (kept fixed across cases).}{15}{paragraph*.25}%
-\contentsline {paragraph}{Re-rank outcomes between \textit {percentage} and \textit {rank} rules for controversial contestants.}{15}{paragraph*.26}%
-\contentsline {paragraph}{Case 1: Jerry Rice (Season~2) --- early-era aggregation sensitivity.}{15}{paragraph*.28}%
-\contentsline {paragraph}{Case 2: Billy Ray Cyrus (Season~4) --- boundary effects without outcome reversal.}{16}{paragraph*.29}%
-\contentsline {paragraph}{Case 3: Bristol Palin (Season~11) --- popularity protection under fan-sensitive boundaries.}{16}{paragraph*.30}%
-\contentsline {paragraph}{Case 4: Bobby Bones (Season~27) --- late-era mismatch and institutional interpretation.}{16}{paragraph*.31}%
-\contentsline {paragraph}{Mechanisms synthesized across cases.}{16}{paragraph*.32}%
+\contentsline {paragraph}{Selection rationale (what makes a case ``controversial'' in our framework).}{15}{paragraph*.21}%
+\contentsline {paragraph}{Protocol (kept fixed across cases).}{15}{paragraph*.22}%
+\contentsline {paragraph}{Re-rank outcomes between \textit {percentage} and \textit {rank} rules for controversial contestants.}{15}{paragraph*.23}%
+\contentsline {paragraph}{Case 1: Jerry Rice (Season~2) --- early-era aggregation sensitivity.}{15}{paragraph*.25}%
+\contentsline {paragraph}{Case 2: Billy Ray Cyrus (Season~4) --- boundary effects without outcome reversal.}{16}{paragraph*.26}%
+\contentsline {paragraph}{Case 3: Bristol Palin (Season~11) --- popularity protection under fan-sensitive boundaries.}{16}{paragraph*.27}%
+\contentsline {paragraph}{Case 4: Bobby Bones (Season~27) --- late-era mismatch and institutional interpretation.}{16}{paragraph*.28}%
+\contentsline {paragraph}{Mechanisms synthesized across cases.}{16}{paragraph*.29}%
 \contentsline {subsection}{\numberline {5.3}Bottom-two and Judges' Save Mechanism}{16}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Synthesis of Findings from Rules}{17}{subsection.5.4}%
 \contentsline {section}{\numberline {6}Task D-1: Impact Analysis: Pro Dancers \& Celebrity Attributes}{17}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Outcome definitions}{17}{subsection.6.1}%
-\contentsline {paragraph}{Judges' outcome.}{17}{paragraph*.33}%
-\contentsline {paragraph}{Fans' outcome.}{17}{paragraph*.34}%
+\contentsline {paragraph}{Judges' outcome.}{17}{paragraph*.30}%
+\contentsline {paragraph}{Fans' outcome.}{17}{paragraph*.31}%
 \contentsline {subsection}{\numberline {6.2}Modeling results: separating ``who judges reward'' vs.\ ``who fans support''}{18}{subsection.6.2}%
 \contentsline {subsubsection}{\numberline {6.2.1}Model 1: Judges' evaluation model}{18}{subsubsection.6.2.1}%
-\contentsline {paragraph}{Hypothesis test.}{18}{paragraph*.35}%
+\contentsline {paragraph}{Hypothesis test.}{18}{paragraph*.32}%
 \contentsline {subsubsection}{\numberline {6.2.2}Model 2: Fans' preference model}{18}{subsubsection.6.2.2}%
-\contentsline {paragraph}{Bridging judges to fans.}{18}{paragraph*.36}%
+\contentsline {paragraph}{Bridging judges to fans.}{18}{paragraph*.33}%
 \contentsline {subsubsection}{\numberline {6.2.3}Attribute preference gaps: judges vs.\ fans}{18}{subsubsection.6.2.3}%
-\contentsline {paragraph}{Model 3: Elimination risk (competition outcome).}{18}{paragraph*.37}%
-\contentsline {paragraph}{Quantifying professional-dancer impact (magnitude, not just significance).}{19}{paragraph*.38}%
+\contentsline {paragraph}{Model 3: Elimination risk (competition outcome).}{18}{paragraph*.34}%
+\contentsline {paragraph}{Quantifying professional-dancer impact (magnitude, not just significance).}{19}{paragraph*.35}%
 \contentsline {subsubsection}{\numberline {6.2.4}Uncertainty propagation from vote inference}{19}{subsubsection.6.2.4}%
 \contentsline {subsection}{\numberline {6.3}Impact of Dancers and Celebrities on Outcomes}{19}{subsection.6.3}%
 \contentsline {subsubsection}{\numberline {6.3.1}Dancer Effects}{19}{subsubsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.4}Impact of Celebrity Characteristics}{20}{subsection.6.4}%
-\contentsline {paragraph}{Age}{21}{paragraph*.40}%
-\contentsline {paragraph}{Industry}{21}{paragraph*.42}%
-\contentsline {paragraph}{Other Factors}{22}{paragraph*.44}%
-\contentsline {section}{\numberline {7}Task D-2: New Rule Design and Stress Testing}{22}{section.7}%
-\contentsline {subsection}{\numberline {7.1}New Rule Design}{22}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Design objective: professionalism-first, watchability as a constrained secondary goal}{22}{subsubsection.7.1.1}%
-\contentsline {paragraph}{Operational definitions.}{22}{paragraph*.45}%
-\contentsline {paragraph}{Notation.}{22}{paragraph*.46}%
-\contentsline {subsubsection}{\numberline {7.1.2}\textit {Bottom-2} Rule (\textit {B2 Rule}): combined Bottom-2 $\rightarrow $ judges' save}{22}{subsubsection.7.1.2}%
-\contentsline {paragraph}{Interpretation.}{23}{paragraph*.47}%
-\contentsline {subsubsection}{\numberline {7.1.3}\textit {Professional Bottom-2} Rule (\textit {PB2}): judges-only gating $\rightarrow $ fan-aware decision within the risk set}{23}{subsubsection.7.1.3}%
-\contentsline {paragraph}{Why \textit {Professional Bottom-2} improves professionalism.}{23}{paragraph*.48}%
-\contentsline {paragraph}{Maintaining watchability without randomness: phase-dependent structured suspense.}{23}{paragraph*.49}%
-\contentsline {subsection}{\numberline {7.2}Stress testing via replay}{23}{subsection.7.2}%
-\contentsline {paragraph}{Replay protocol.}{23}{paragraph*.50}%
-\contentsline {paragraph}{1) Pairwise rule agreement via Jaccard similarity.}{24}{paragraph*.51}%
-\contentsline {paragraph}{2) Mechanism-driven case studies: controversial contestants.}{24}{paragraph*.52}%
-\contentsline {paragraph}{3) Bias test across rules: PB2 exhibits lower bias.}{24}{paragraph*.53}%
-\contentsline {paragraph}{Takeaway.}{25}{paragraph*.55}%
-\contentsline {section}{\numberline {8}Conclusion}{25}{section.8}%
-\contentsline {section}{\numberline {9}Memo to Management}{25}{section.9}%
-\contentsline {paragraph}{Baseline reference (current mechanism).}{25}{paragraph*.56}%
-\contentsline {paragraph}{Recommended policy (PB2: \textit {Professional Bottom-2}): judges-only gate $\rightarrow $ fan-aware decision within the gate.}{25}{paragraph*.57}%
-\contentsline {paragraph}{Why this improves professionalism.}{26}{paragraph*.58}%
-\contentsline {paragraph}{How we preserve watchability (without randomness).}{26}{paragraph*.59}%
-\contentsline {paragraph}{Management knobs and deployment.}{26}{paragraph*.60}%
-\contentsline {section}{\numberline {A}Appendix: Data, Algorithms, and Reproducibility}{27}{appendix.A}%
-\contentsline {section}{\numberline {B}Complete Files for Problem B}{27}{appendix.B}%
+\contentsline {paragraph}{Age}{20}{paragraph*.37}%
+\contentsline {paragraph}{Industry}{20}{paragraph*.38}%
+\contentsline {paragraph}{Other Factors}{20}{paragraph*.40}%
+\contentsline {section}{\numberline {7}Task D-2: New Rule Design and Stress Testing}{20}{section.7}%
+\contentsline {subsection}{\numberline {7.1}New Rule Design}{20}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Design objective: professionalism-first, watchability as a constrained secondary goal}{20}{subsubsection.7.1.1}%
+\contentsline {paragraph}{Operational definitions.}{21}{paragraph*.41}%
+\contentsline {paragraph}{Notation.}{21}{paragraph*.42}%
+\contentsline {subsubsection}{\numberline {7.1.2}\textit {Bottom-2} Rule (\textit {B2 Rule}): combined Bottom-2 $\rightarrow $ judges' save}{21}{subsubsection.7.1.2}%
+\contentsline {paragraph}{Interpretation.}{21}{paragraph*.43}%
+\contentsline {subsubsection}{\numberline {7.1.3}\textit {Professional Bottom-2} Rule (\textit {PB2}): judges-only gating $\rightarrow $ fan-aware decision within the risk set}{21}{subsubsection.7.1.3}%
+\contentsline {paragraph}{Why \textit {Professional Bottom-2} improves professionalism.}{22}{paragraph*.44}%
+\contentsline {paragraph}{Maintaining watchability without randomness: phase-dependent structured suspense.}{22}{paragraph*.45}%
+\contentsline {subsection}{\numberline {7.2}Stress testing via replay}{22}{subsection.7.2}%
+\contentsline {paragraph}{Replay protocol.}{22}{paragraph*.46}%
+\contentsline {paragraph}{1) Pairwise rule agreement via Jaccard similarity.}{22}{paragraph*.47}%
+\contentsline {paragraph}{2) Mechanism-driven case studies: controversial contestants.}{22}{paragraph*.48}%
+\contentsline {paragraph}{3) Bias test across rules: PB2 exhibits lower bias.}{23}{paragraph*.49}%
+\contentsline {paragraph}{Takeaway.}{23}{paragraph*.51}%
+\contentsline {section}{\numberline {8}Conclusion}{23}{section.8}%
+\contentsline {section}{\numberline {9}Memo to Management}{24}{section.9}%
+\contentsline {section}{\numberline {A}Appendix: Data, Algorithms, and Reproducibility}{25}{appendix.A}%
+\contentsline {section}{\numberline {B}Complete Files for Problem B}{25}{appendix.B}%

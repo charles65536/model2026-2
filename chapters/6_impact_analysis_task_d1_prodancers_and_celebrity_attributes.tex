@@ -131,25 +131,36 @@ so that more identifiable (tighter-interval) weeks exert greater influence, whil
 \subsubsection{Dancer Effects}
 We first fix celebrities with comparable conditions and compare the differences in final rankings and scores across pairings with different dancers. Using the quantitative linear calculation method introduced earlier, 
 we then compare the ICC values of different dancers and find that variations in dancers significantly affect final rankings. 
-
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.95\linewidth]{output/fig/task3/cooperate_influence.png}
-    \caption{Influence of different dancers on final rankings.}
-    \label{fig:dancer_influence}
+    % 子图1：不同舞者对最终排名的影响
+    \begin{subfigure}{0.48\textwidth}  % 调整子图宽度为页面48%，适配双列排版
+        \centering
+        \includegraphics[width=0.95\linewidth]{output/fig/task3/cooperate_influence.png}
+        \caption{Influence of different dancers on final rankings.}
+        \label{fig:dancer_influence}
+    \end{subfigure}
+    \hfill  % 子图间自动填充空白（比 \quad 更适配双列）
+    % 子图2：明星年龄对最终排名的影响
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.95\linewidth]{output/fig/task3/age_influence.png}
+        \caption{Influence of celebrity age on final rankings.}
+        \label{fig:age_influence}
+    \end{subfigure}
+    
+    % 总图标题（概括所有子图核心内容）
+    \caption{Impacts of Dancer and Celebrity Age on Competition Final Rankings}
+    % 总图标签（用于全文引用）
+    \label{fig:rankings_influence}
 \end{figure}
 Such differences are practically attributed to a series of factors including experience and age; however, 
 due to the lack of corresponding supporting data in the provided dataset, we do not conduct an in-depth analysis thereof.
 \subsection{Impact of Celebrity Characteristics}
 We calculate the trait preferences for relevant indicators of celebrities and obtain statistically significant results. Herein, we select age, industry, and other factors of celebrities for analysis.
 \paragraph{Age}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\linewidth]{output/fig/task3/age_influence.png}
-    \caption{Influence of celebrity age on final rankings.}
-    \label{fig:age_influence}
-\end{figure}
-In Tabel~\ref{tab:age_influence}, we find that older celebrities exhibit a stronger tendency to receive fan votes. That may be because older celebrities have a more established fan base and greater social influence, leading to higher vote counts.
+
+In Tabel~\ref{fig:age_influence}, we find that older celebrities exhibit a stronger tendency to receive fan votes. That may be because older celebrities have a more established fan base and greater social influence, leading to higher vote counts.
 
 \paragraph{Industry}
 \begin{figure}[H]
