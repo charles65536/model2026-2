@@ -177,19 +177,7 @@ for the pipeline and as a reference point for later vote-inference models; minor
 but the purpose is to validate consistent eligibility labeling and replay mechanics. All substantive conclusions in later sections are based on 
 the inferred vote shares and the counterfactual replay framework, not on BL-0.
 
-\paragraph{Finding 2 --- Rule comparisons must be stress-tested around the season-28 cutoff.}
-We adopt the era split for rule-comparison slicing (Rank-era vs.\ Percent-era), but treat the Season-28 switch as an explicit assumption
-and stress-test adjacent cutoffs (27/28/29).
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.6\linewidth]{output/fig/fig5_2_cutoff_28_fliprate.png}
-  \caption{Cutoff at Season-28.}
-  \label{fig:cutoff_28}
-\end{figure}
-
-
-
-\paragraph{Finding 3 --- Non-standard weeks materially affect set-based consistency metrics.}
+\paragraph{Finding 2 --- Non-standard weeks materially affect set-based consistency metrics.}
 Because the dataset includes weeks with no elimination or multiple eliminations, KPI1 must handle these
 episodes explicitly (e.g., empty-set convention for no-elimination weeks and set-based comparison for
 multi-elimination weeks). Such episodes can introduce non-uniform weighting under aggregation, so we

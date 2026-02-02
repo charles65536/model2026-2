@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  3 FEB 2026 02:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.4)  3 FEB 2026 03:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1705,17 +1705,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-<output/fig/fig3_1_judges_availability.png, id=338, 433.62pt x 289.08pt>
+<output/fig/fig3_1_judges_availability.png, id=353, 433.62pt x 289.08pt>
 File: output/fig/fig3_1_judges_availability.png Graphic file (type png)
 <use output/fig/fig3_1_judges_availability.png>
 Package pdftex.def Info: output/fig/fig3_1_judges_availability.png  used on input line 145.
 (pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
-<output/fig/fig3_3_active_vs_placeholders.png, id=340, 433.62pt x 289.08pt>
+<output/fig/fig3_3_active_vs_placeholders.png, id=355, 433.62pt x 289.08pt>
 File: output/fig/fig3_3_active_vs_placeholders.png Graphic file (type png)
 <use output/fig/fig3_3_active_vs_placeholders.png>
 Package pdftex.def Info: output/fig/fig3_3_active_vs_placeholders.png  used on input line 151.
 (pdftex.def)             Requested size: 226.09497pt x 150.73268pt.
-<output/fig/fig3_2_irregular_weeks_by_season.png, id=341, 578.16pt x 289.08pt>
+<output/fig/fig3_2_irregular_weeks_by_season.png, id=356, 578.16pt x 289.08pt>
 File: output/fig/fig3_2_irregular_weeks_by_season.png Graphic file (type png)
 <use output/fig/fig3_2_irregular_weeks_by_season.png>
 Package pdftex.def Info: output/fig/fig3_2_irregular_weeks_by_season.png  used on input line 162.
@@ -1730,22 +1730,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7 <./output/fig/fig3_1_judges_availability.png> <./output/fig/fig3_3_active_vs_placeholders.png> <./output/fig/fig3_2_irregular_weeks_by_season.png>]
-<output/fig/fig5_2_cutoff_28_fliprate.png, id=351, 361.35pt x 216.81pt>
-File: output/fig/fig5_2_cutoff_28_fliprate.png Graphic file (type png)
-<use output/fig/fig5_2_cutoff_28_fliprate.png>
-Package pdftex.def Info: output/fig/fig5_2_cutoff_28_fliprate.png  used on input line 185.
-(pdftex.def)             Requested size: 282.6241pt x 169.57426pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8 <./output/fig/fig5_2_cutoff_28_fliprate.png>]
-Overfull \hbox (7.18495pt too wide) in paragraph at lines 227--230
+Overfull \hbox (7.18495pt too wide) in paragraph at lines 215--218
 \T1/ntxtt/m/n/10.95 ballroom_partner \T1/ntxtlf/m/n/10.95 (-20) (pro dancer iden-tity), \T1/ntxtt/m/n/10.95 celebrity_age_during_season\T1/ntxtlf/m/n/10.95 (-20) , \T1/ntxtt/m/n/10.95 celebrity_industry\T1/ntxtlf/m/n/10.95 (-20) ,
  []
 
@@ -1758,11 +1743,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9]
+[8]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 56.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 70.
 
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1867,12 +1861,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-<output/fig/p_sharpen_gap_boxplot.png, id=486, 722.7pt x 433.62pt>
+<output/fig/p_sharpen_gap_boxplot.png, id=499, 722.7pt x 433.62pt>
 File: output/fig/p_sharpen_gap_boxplot.png Graphic file (type png)
 <use output/fig/p_sharpen_gap_boxplot.png>
 Package pdftex.def Info: output/fig/p_sharpen_gap_boxplot.png  used on input line 272.
 (pdftex.def)             Requested size: 447.48218pt x 268.49095pt.
-
+) (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1881,8 +1875,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13 <./output/fig/p_sharpen_gap_boxplot.png>]) (./chapters/5_rule_reply_volting_system_and_counterfactuials.tex
-<output/fig/fig5_1_fliprate_by_season.png, id=495, 578.16pt x 289.08pt>
+[13 <./output/fig/p_sharpen_gap_boxplot.png>]
+<output/fig/fig5_1_fliprate_by_season.png, id=506, 578.16pt x 289.08pt>
 File: output/fig/fig5_1_fliprate_by_season.png Graphic file (type png)
 <use output/fig/fig5_1_fliprate_by_season.png>
 Package pdftex.def Info: output/fig/fig5_1_fliprate_by_season.png  used on input line 26.
@@ -1901,10 +1895,6 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
 (Font)              scaled to size 12.0pt on input line 81.
 
 
-LaTeX Warning: Reference `' on page 15 undefined on input line 83.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1921,13 +1911,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]
-<output/fig/bias_by_season_alpha0p5.png, id=527, 867.24pt x 361.35pt>
-File: output/fig/bias_by_season_alpha0p5.png Graphic file (type png)
-<use output/fig/bias_by_season_alpha0p5.png>
-Package pdftex.def Info: output/fig/bias_by_season_alpha0p5.png  used on input line 153.
-(pdftex.def)             Requested size: 447.48218pt x 186.45296pt.
-) (./chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
+[16]) (./chapters/6_impact_analysis_task_d1_prodancers_and_celebrity_attributes.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1936,7 +1920,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17 <./output/fig/bias_by_season_alpha0p5.png>]
+[17]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1945,7 +1929,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
+[18]
+<output/fig/task3/cooperate_influence.png, id=563, 433.62pt x 433.62pt>
+File: output/fig/task3/cooperate_influence.png Graphic file (type png)
+<use output/fig/task3/cooperate_influence.png>
+Package pdftex.def Info: output/fig/task3/cooperate_influence.png  used on input line 137.
+(pdftex.def)             Requested size: 447.48218pt x 447.50697pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1955,6 +1945,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
+<output/fig/task3/age_influence.png, id=570, 433.62pt x 289.08pt>
+File: output/fig/task3/age_influence.png Graphic file (type png)
+<use output/fig/task3/age_influence.png>
+Package pdftex.def Info: output/fig/task3/age_influence.png  used on input line 148.
+(pdftex.def)             Requested size: 447.48218pt x 298.33797pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20 <./output/fig/task3/cooperate_influence.png>]
+
+LaTeX Warning: Reference `tab:age_influence' on page 21 undefined on input line 152.
+
+<output/fig/task3/industry_influence.png, id=577, 722.7pt x 433.62pt>
+File: output/fig/task3/industry_influence.png Graphic file (type png)
+<use output/fig/task3/industry_influence.png>
+Package pdftex.def Info: output/fig/task3/industry_influence.png  used on input line 157.
+(pdftex.def)             Requested size: 447.48218pt x 268.49095pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21 <./output/fig/task3/age_influence.png> <./output/fig/task3/industry_influence.png>]) (./chapters/7_task_d2_new_rule_design_and_stress_testing.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 27.
@@ -1967,6 +1990,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 27.
 
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 51.
@@ -1988,35 +2021,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
+[23]
 
-LaTeX Warning: Reference `tab:d2_jaccard_rules' on page 21 undefined on input line 119.
+LaTeX Warning: Reference `tab:d2_jaccard_rules' on page 24 undefined on input line 119.
 
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[21]
-<output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png, id=585, 505.89pt x 289.08pt>
+<output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png, id=611, 505.89pt x 289.08pt>
 File: output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png Graphic file (type png)
 <use output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png>
 Package pdftex.def Info: output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png  used on input line 148.
 (pdftex.def)             Requested size: 282.6241pt x 161.49992pt.
-) (./chapters/8_conclusion.tex)
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[22 <./output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png>] (./chapters/9_memo.tex) (./2625838.bbl
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2025,13 +2039,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]) (./chapters/appendix_a.tex
-<output/fig/fig5_2_cutoff_27_fliprate.png, id=618, 361.35pt x 216.81pt>
+[24 <./output/fig/task3/bias_index_comparison_four_methods_alpha0p5.png>]) (./chapters/8_conclusion.tex) (./chapters/9_memo.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]) (./2625838.bbl
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]) (./chapters/appendix_a.tex
+<output/fig/fig5_2_cutoff_27_fliprate.png, id=653, 361.35pt x 216.81pt>
 File: output/fig/fig5_2_cutoff_27_fliprate.png Graphic file (type png)
 <use output/fig/fig5_2_cutoff_27_fliprate.png>
 Package pdftex.def Info: output/fig/fig5_2_cutoff_27_fliprate.png  used on input line 6.
 (pdftex.def)             Requested size: 230.80992pt x 138.48663pt.
-<output/fig/fig5_2_cutoff_29_fliprate.png, id=619, 361.35pt x 216.81pt>
+<output/fig/fig5_2_cutoff_29_fliprate.png, id=654, 361.35pt x 216.81pt>
 File: output/fig/fig5_2_cutoff_29_fliprate.png Graphic file (type png)
 <use output/fig/fig5_2_cutoff_29_fliprate.png>
 Package pdftex.def Info: output/fig/fig5_2_cutoff_29_fliprate.png  used on input line 13.
@@ -2045,16 +2077,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[25 <./output/fig/fig5_2_cutoff_27_fliprate.png> <./output/fig/fig5_2_cutoff_29_fliprate.png>]
+[27 <./output/fig/fig5_2_cutoff_27_fliprate.png> <./output/fig/fig5_2_cutoff_29_fliprate.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 319.
 
@@ -2081,21 +2104,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `2625838.out' has not changed.
-(rerunfilecheck)             Checksum: 6ECF5F3F5D4F937BAC60636FACF55076;11817.
+(rerunfilecheck)             Checksum: 600FFBDA5DBE13BAB017E3490A6D9145;12501.
  ) 
 Here is how much of TeX's memory you used:
- 53574 strings out of 475118
- 1201859 string characters out of 5765021
- 1779908 words of memory out of 5000000
- 75237 multiletter control sequences out of 15000+600000
- 720692 words of font info for 410 fonts, out of 8000000 for 9000
+ 53593 strings out of 475118
+ 1202341 string characters out of 5765021
+ 1780941 words of memory out of 5000000
+ 75249 multiletter control sequences out of 15000+600000
+ 720556 words of font info for 409 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,16n,117p,1048b,1239s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,117p,1048b,1260s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXBMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexas.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on 2625838.pdf (27 pages, 808538 bytes).
+Output written on 2625838.pdf (29 pages, 807746 bytes).
 PDF statistics:
- 757 PDF objects out of 1000 (max. 8388607)
- 609 compressed objects within 7 object streams
- 187 named destinations out of 1000 (max. 500000)
- 50623 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 785 PDF objects out of 1000 (max. 8388607)
+ 635 compressed objects within 7 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 50652 words of extra memory for PDF output out of 51595 (max. 10000000)
 

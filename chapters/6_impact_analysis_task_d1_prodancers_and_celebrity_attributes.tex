@@ -127,6 +127,42 @@ We set observation weights
 so that more identifiable (tighter-interval) weeks exert greater influence, while poorly identified weeks are down-weighted rather than discarded.
 
 
+\subsection{Impact of Dancers and Celebrities on Outcomes}
+\subsubsection{Dancer Effects}
+We first fix celebrities with comparable conditions and compare the differences in final rankings and scores across pairings with different dancers. Using the quantitative linear calculation method introduced earlier, 
+we then compare the ICC values of different dancers and find that variations in dancers significantly affect final rankings. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{output/fig/task3/cooperate_influence.png}
+    \caption{Influence of different dancers on final rankings.}
+    \label{fig:dancer_influence}
+\end{figure}
+Such differences are practically attributed to a series of factors including experience and age; however, 
+due to the lack of corresponding supporting data in the provided dataset, we do not conduct an in-depth analysis thereof.
+\subsection{Impact of Celebrity Characteristics}
+We calculate the trait preferences for relevant indicators of celebrities and obtain statistically significant results. Herein, we select age, industry, and other factors of celebrities for analysis.
+\paragraph{Age}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{output/fig/task3/age_influence.png}
+    \caption{Influence of celebrity age on final rankings.}
+    \label{fig:age_influence}
+\end{figure}
+In Tabel~\ref{tab:age_influence}, we find that older celebrities exhibit a stronger tendency to receive fan votes. That may be because older celebrities have a more established fan base and greater social influence, leading to higher vote counts.
+
+\paragraph{Industry}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{output/fig/task3/industry_influence.png}
+    \caption{Influence of celebrity industry on final rankings.}
+    \label{fig:industry_influence}
+\end{figure}
+We find that different industries have a significant impact on final rankings. Among these, industries listed in Table~\ref{fig:industry_influence}, exert a significant positive effect on overall performance, while others tend to have less positive effect on overall performance.
+\paragraph{Other Factors}
+Differences in factors such as a celebrity's personal influence, dance foundation, and learning ability do exist and exert an impact in real scenarios. Thus, we argue that celebrities with greater personal influence, a solid dance foundation, and strong learning ability tend to achieve better performance. Nevertheless, these factors cannot be identified in the current dataset, and therefore we do not provide a quantitative interpretation thereof.
+
+
 % ---------------- Figure/Table placeholders (insert later) ----------------
 % Fig 6.1 Coefficient comparison (beta vs gamma) for key attributes.
 % Fig 6.2 Preference gaps Delta_k with CI (bootstrap).

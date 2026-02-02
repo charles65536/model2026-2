@@ -80,22 +80,25 @@ The objective is not to ``explain away'' controversy, but to isolate the minimal
 
 \paragraph{Re-rank outcomes between \textit{percentage} and \textit{rank} rules for controversial contestants.} 
 When we re-rank Jerry Rice under the \textit{percentage} rule and re-rank Billy Ray Cyrus, Bristol Palin and Bobby Bones under the \textit{rank} rule, 
-we find that the final rankings of all four contestants drop significantly in the Tabel~\ref{}. This indicates a notable discrepancy in the tolerance for controversial 
+we find that the final rankings of all four contestants drop significantly in the Tabel~\ref{tab:rank_percent}. This indicates a notable discrepancy in the tolerance for controversial 
 contestants after the rule adjustment, and we will analyze these characteristics in the subsequent sections.
 
-% \begin{table}[H]
-%   \center
-%     \begin{tabular}{lcc}
-%         \toprule
-%         Contestant & Original Ranking & Re-ranked Position \\
-%         \midrule
-%         Jerry Rice & 2nd & 7th \\
-%         Billy Ray Cyrus & 5th & 8th \\
-%         Bristol Palin & 3rd & 9th \\
-%         Bobby Bones & 1st & 8th \\
-%         \bottomrule
-%     \end{tabular}
-% \end{table}
+\begin{table}[htbp]
+  \centering
+  \caption{Rank and Percent Data Table} % 表格标题，可自行修改
+  \begin{tabular}{lcccccc} % l=左对齐，c=居中对齐，7列对应7个字段
+    \toprule
+    name & season & canon & rank & percent & percent\_last\_two & bottom\_two \\
+    \midrule
+    Billy Ray Cyrus & 4 & 5 & 10 & 5 & 10 & 6 \\
+    Bobby Bones    & 27 & 1 & 4 & 4 & 1 & 5 \\
+    Bristol Palin  & 11 & 3 & 3 & 3 & 3 & 4 \\
+    Bristol Palin  & 15 & 9 & 13 & 9 & 13 & 12 \\
+    Jerry Rice     & 2 & 2 & 2 & 3 & 3 & 4 \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:rank_percent} % 表格交叉引用标签，可自行修改
+\end{table}
 
 \paragraph{Case 1: Jerry Rice (Season~2) --- early-era aggregation sensitivity.}
 This case illustrates how early-season aggregation semantics can amplify judge--fan discordance: a contestant can remain viable when fan support offsets weak
@@ -148,12 +151,6 @@ Bristol Palin (S11) in Week~9, and Bobby Bones (S27) in Week~8 in our replay, wh
 \textbf{Caveat.} These outcomes can change for marginal weeks under different $\alpha$ values (we chose $\alpha \in [0.3, 0.7]$ in practice), tie-breaking conventions, and the semantics of
 multi-elimination weeks (we apply eliminations sequentially when multiple eliminations occur), so we treat the above as illustrative rather than universal.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\linewidth]{output/fig/bias\_by\_season\_alpha0p5.png}
-    \caption{Average rank difference (bias) of eliminees vs. survivors across seasons by methods (percent/rank/Rule A~\ref{subsubsec:d2_ruleA}/Rule B~ \ref{subsubsec:d2_ruleB}) at $\alpha=0.5$. CHANGE TO }
-    \label{fig:bias_by_season_alpha0p5}
-\end{figure}
 
 
 
